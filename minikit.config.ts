@@ -3,11 +3,6 @@ const ROOT_URL =
   (process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`) ||
   "http://localhost:3000";
 
-/**
- * MiniApp configuration object. Must follow the mini app manifest specification.
- *
- * @see {@link https://docs.base.org/mini-apps/features/manifest}
- */
 export const minikitConfig = {
   accountAssociation: {
     header: "",
@@ -19,21 +14,21 @@ export const minikitConfig = {
   },
   miniapp: {
     version: "1",
-    name: "base-quiz",
-    subtitle: "",
-    description: "",
+    name: "Base Quiz",
+    subtitle: "Daily crypto trivia",
+    description: "Test your crypto knowledge with 5 daily questions on Base. Build your streak, climb the onchain leaderboard, and share your score!",
     screenshotUrls: [],
     iconUrl: `${ROOT_URL}/icon.png`,
     splashImageUrl: `${ROOT_URL}/splash.png`,
-    splashBackgroundColor: "#000000",
+    splashBackgroundColor: "#0a1635",
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
-    primaryCategory: "utility",
-    tags: ["example"],
+    primaryCategory: "games",
+    tags: ["quiz", "trivia", "base", "crypto", "leaderboard"],
     heroImageUrl: `${ROOT_URL}/hero.png`,
-    tagline: "",
-    ogTitle: "",
-    ogDescription: "",
+    tagline: "Daily crypto trivia on Base",
+    ogTitle: "Base Quiz - Daily Crypto Trivia",
+    ogDescription: "5 daily questions, onchain leaderboard, build your streak!",
     ogImageUrl: `${ROOT_URL}/hero.png`,
   },
 } as const;

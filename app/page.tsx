@@ -6,8 +6,7 @@ import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { CONTRACT_ADDRESS, CONTRACT_ABI } from "./contract";
 
-
-  const QUESTIONS = [
+const QUESTIONS = [
   // ---- BASE & COINBASE ----
   { q: "Which company developed Base?", a: ["Binance", "Coinbase", "Kraken", "OKX"], c: 1 },
   { q: "Base is a Layer-2 of which network?", a: ["Bitcoin", "Solana", "Ethereum", "Avalanche"], c: 2 },
@@ -101,7 +100,6 @@ function shuffle<T>(arr: T[]): T[] {
 type QuizQ = { q: string; a: string[]; c: number };
 
 function getRandomQuestions(): QuizQ[] {
-  // Rastgele 5 soru seç + her sorunun şıklarını karıştır
   const picked = shuffle(QUESTIONS).slice(0, QUIZ_SIZE);
   return picked.map((q) => {
     const correctAnswer = q.a[q.c];
@@ -132,7 +130,8 @@ const S: Record<string, CSSProperties> = {
 export default function Home() {
   const { setFrameReady, isFrameReady } = useMiniKit();
   const { composeCast } = useComposeCast();
-const { address, isConnected, chainId: walletChainId } = useAccount();  const { connect, connectors } = useConnect();
+  const { address, isConnected, chainId: walletChainId } = useAccount();
+  const { connect, connectors } = useConnect();
   const { writeContractAsync } = useWriteContract();
   const { switchChainAsync } = useSwitchChain();
   const chainId = useChainId();
@@ -197,20 +196,20 @@ const { address, isConnected, chainId: walletChainId } = useAccount();  const { 
   }
 
   function share() {
-    const text = `🧠 I scored ${score} points on today's Base Quiz! 🔥 Streak: ${streak} days\n\nThink you can beat me? 👇`;
+    const APP_URL = "https://base-quiz-v5is.vercel.app";
+    const text = `🧠 I scored ${score} points on Base Quiz! 🔥 Streak: ${streak} days\n\nThink you can beat me? 👇`;
     try {
-      composeCast({ text });
+      composeCast({ text, embeds: [APP_URL] });
     } catch {
-      navigator.clipboard.writeText(text);
-      alert("Copied! Share it on Base App.");
+      navigator.clipboard.writeText(`${text}\n\n${APP_URL}`);
+      alert("Copied! Paste it on Farcaster / Base App / X.");
     }
   }
 
- async function saveOnchain() {
+  async function saveOnchain() {
     setTxStatus("pending");
     setTxError("");
     try {
-      // Önce zincire sor: bugün zaten oynadı mı? (bedava kontrol)
       if (address) {
         const p = await publicClient.readContract({
           address: CONTRACT_ADDRESS as `0x${string}`,
@@ -226,7 +225,7 @@ const { address, isConnected, chainId: walletChainId } = useAccount();  const { 
           return;
         }
       }
- if (walletChainId !== base.id) {
+      if (walletChainId !== base.id) {
         await switchChainAsync({ chainId: base.id });
       }
       const hash = await writeContractAsync({

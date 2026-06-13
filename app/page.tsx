@@ -6,22 +6,80 @@ import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { CONTRACT_ADDRESS, CONTRACT_ABI } from "./contract";
 
-const QUESTIONS = [
+
+  const QUESTIONS = [
+  // ---- BASE & COINBASE ----
   { q: "Which company developed Base?", a: ["Binance", "Coinbase", "Kraken", "OKX"], c: 1 },
   { q: "Base is a Layer-2 of which network?", a: ["Bitcoin", "Solana", "Ethereum", "Avalanche"], c: 2 },
   { q: "Which tech stack does Base use?", a: ["OP Stack", "zkSync", "Polygon CDK", "Arbitrum Nitro"], c: 0 },
   { q: "In which year did Base mainnet launch?", a: ["2021", "2022", "2023", "2024"], c: 2 },
   { q: "Which token is used for gas fees on Base?", a: ["USDC", "BASE", "ETH", "OP"], c: 2 },
-  { q: "Who is the founder of Ethereum?", a: ["Satoshi Nakamoto", "Vitalik Buterin", "Brian Armstrong", "CZ"], c: 1 },
-  { q: "Which company issues USDC?", a: ["Tether", "Circle", "Coinbase", "Paxos"], c: 1 },
-  { q: "What does NFT stand for?", a: ["New Finance Token", "Non-Fungible Token", "Network File Transfer", "Node Function Type"], c: 1 },
-  { q: "Smart contracts on Base are written in?", a: ["Python", "Rust", "Solidity", "Go"], c: 2 },
-  { q: "What is Farcaster?", a: ["An exchange", "A decentralized social network", "A wallet", "A game"], c: 1 },
-  { q: "What is Bitcoin's max supply?", a: ["21 million", "100 million", "1 billion", "Unlimited"], c: 0 },
-  { q: "What is the main goal of Layer-2s?", a: ["Minting more tokens", "Scalability & lower fees", "Mining", "Staking"], c: 1 },
   { q: "What was Base App formerly called?", a: ["Coinbase Wallet", "MetaMask", "Rainbow", "Phantom"], c: 0 },
-  { q: "What are a wallet's secret words called?", a: ["Public key", "Seed phrase", "Hash", "Nonce"], c: 1 },
+  { q: "Who is the CEO of Coinbase?", a: ["Vitalik Buterin", "Brian Armstrong", "Changpeng Zhao", "Jesse Pollak"], c: 1 },
+  { q: "Who leads Base at Coinbase?", a: ["Brian Armstrong", "Jesse Pollak", "Hayden Adams", "Stani Kulechov"], c: 1 },
+  { q: "Which superchain does Base belong to?", a: ["Polygon Superchain", "Optimism Superchain", "Arbitrum Orbit", "zkSync Hyperchain"], c: 1 },
+  { q: "Base is best described as?", a: ["A standalone L1", "An Ethereum L2 rollup", "A sidechain", "A bridge protocol"], c: 1 },
+
+  // ---- ETHEREUM ----
+  { q: "Who is the founder of Ethereum?", a: ["Satoshi Nakamoto", "Vitalik Buterin", "Brian Armstrong", "CZ"], c: 1 },
+  { q: "Smart contracts on Base are written in?", a: ["Python", "Rust", "Solidity", "Go"], c: 2 },
   { q: "What is the smallest unit of ETH?", a: ["Satoshi", "Gwei", "Wei", "Finney"], c: 2 },
+  { q: "What is the main goal of Layer-2s?", a: ["Minting more tokens", "Scalability & lower fees", "Mining", "Staking"], c: 1 },
+  { q: "What consensus does Ethereum use?", a: ["Proof of Work", "Proof of Stake", "Proof of Authority", "Proof of History"], c: 1 },
+  { q: "What is an EVM?", a: ["A wallet type", "Ethereum's execution engine", "A token standard", "A bridge"], c: 1 },
+  { q: "Which is NOT an L2 of Ethereum?", a: ["Base", "Arbitrum", "Solana", "Optimism"], c: 2 },
+  { q: "What does 'gas' refer to?", a: ["A token", "Transaction fee unit", "A wallet", "An NFT type"], c: 1 },
+  { q: "When did Ethereum switch to PoS (The Merge)?", a: ["2020", "2021", "2022", "2023"], c: 2 },
+  { q: "What is an ERC-20?", a: ["NFT standard", "Fungible token standard", "Wallet format", "L2 standard"], c: 1 },
+
+  // ---- BITCOIN ----
+  { q: "What is Bitcoin's max supply?", a: ["21 million", "100 million", "1 billion", "Unlimited"], c: 0 },
+  { q: "Who created Bitcoin?", a: ["Vitalik Buterin", "Satoshi Nakamoto", "Hal Finney", "Nick Szabo"], c: 1 },
+  { q: "Bitcoin's smallest unit is called?", a: ["Wei", "Gwei", "Satoshi", "Finney"], c: 2 },
+  { q: "How often does Bitcoin halving occur (roughly)?", a: ["Every year", "Every 2 years", "Every 4 years", "Every 10 years"], c: 2 },
+  { q: "Bitcoin uses which consensus?", a: ["Proof of Stake", "Proof of Work", "Proof of Authority", "DPoS"], c: 1 },
+
+  // ---- DEFI ----
+  { q: "What does DeFi stand for?", a: ["Defined Finance", "Decentralized Finance", "Defaulted Finance", "Deferred Finance"], c: 1 },
+  { q: "Uniswap is primarily a?", a: ["Lending platform", "DEX (decentralized exchange)", "Wallet", "Bridge"], c: 1 },
+  { q: "What is an AMM?", a: ["Auto Market Mover", "Automated Market Maker", "Asset Management Module", "Aggregated Mint Maker"], c: 1 },
+  { q: "What does TVL mean?", a: ["Token Value Locked", "Total Value Locked", "Trade Volume Limit", "Tier Volume Level"], c: 1 },
+  { q: "Aave is primarily a?", a: ["DEX", "Lending protocol", "Stablecoin", "NFT marketplace"], c: 1 },
+  { q: "What is yield farming?", a: ["Mining crops", "Earning rewards from DeFi protocols", "A staking pool name", "An NFT minting term"], c: 1 },
+
+  // ---- STABLECOINS ----
+  { q: "Which company issues USDC?", a: ["Tether", "Circle", "Coinbase", "Paxos"], c: 1 },
+  { q: "Which company issues USDT?", a: ["Circle", "Tether", "Coinbase", "MakerDAO"], c: 1 },
+  { q: "DAI is primarily backed by?", a: ["US Dollars in a bank", "Crypto collateral", "Gold reserves", "Government bonds"], c: 1 },
+  { q: "Stablecoins try to maintain price parity with?", a: ["Bitcoin", "Ethereum", "Fiat currencies", "Gold only"], c: 2 },
+
+  // ---- NFT ----
+  { q: "What does NFT stand for?", a: ["New Finance Token", "Non-Fungible Token", "Network File Transfer", "Node Function Type"], c: 1 },
+  { q: "Which is the NFT token standard on Ethereum?", a: ["ERC-20", "ERC-721", "ERC-1155 only", "BEP-20"], c: 1 },
+  { q: "OpenSea is primarily a?", a: ["DEX", "NFT marketplace", "Wallet", "L2 chain"], c: 1 },
+  { q: "What does 'mint' mean in NFTs?", a: ["Sell an NFT", "Create a new NFT onchain", "Burn an NFT", "Transfer an NFT"], c: 1 },
+
+  // ---- WALLETS & SECURITY ----
+  { q: "What are a wallet's secret words called?", a: ["Public key", "Seed phrase", "Hash", "Nonce"], c: 1 },
+  { q: "What is a hardware wallet?", a: ["A mobile app", "A physical device for storing keys", "A browser extension", "An exchange account"], c: 1 },
+  { q: "You should NEVER share your?", a: ["Wallet address", "Seed phrase", "ENS name", "Username"], c: 1 },
+  { q: "Self-custody means?", a: ["Exchange holds your keys", "You control your private keys", "A bank holds your keys", "A friend holds your keys"], c: 1 },
+  { q: "MetaMask is primarily a?", a: ["Exchange", "Browser wallet", "Hardware wallet", "L2 chain"], c: 1 },
+
+  // ---- FARCASTER & SOCIAL ----
+  { q: "What is Farcaster?", a: ["An exchange", "A decentralized social network", "A wallet", "A game"], c: 1 },
+  { q: "Posts on Farcaster are called?", a: ["Tweets", "Casts", "Toots", "Snaps"], c: 1 },
+  { q: "Who founded Farcaster?", a: ["Vitalik Buterin", "Dan Romero & Varun Srinivasan", "Jesse Pollak", "Jack Dorsey"], c: 1 },
+  { q: "A Farcaster user identifier is called?", a: ["UID", "FID", "Handle", "Tag"], c: 1 },
+  { q: "Mini Apps on Base App are built with?", a: ["MiniKit / OnchainKit", "Flutter only", "Native iOS only", "Unity"], c: 0 },
+
+  // ---- GENERAL ----
+  { q: "A blockchain transaction hash is also called?", a: ["Nonce", "TX ID", "Block height", "Gas limit"], c: 1 },
+  { q: "What does DAO stand for?", a: ["Digital Asset Order", "Decentralized Autonomous Organization", "Distributed App Output", "Data Access Object"], c: 1 },
+  { q: "What is a 'block explorer'?", a: ["A mining tool", "A site to view onchain data", "A wallet type", "A bridge"], c: 1 },
+  { q: "What is 'slippage' in trading?", a: ["Network downtime", "Difference between expected & actual price", "A type of fee", "A wallet error"], c: 1 },
+  { q: "A 'rug pull' is?", a: ["A trading strategy", "A scam where founders abandon a project", "A staking method", "A wallet feature"], c: 1 },
+  { q: "What's a multisig wallet?", a: ["A wallet with many tokens", "A wallet needing multiple signatures to approve tx", "A wallet on multiple chains", "A wallet with a long password"], c: 1 },
 ];
 
 const QUIZ_SIZE = 5;
@@ -31,17 +89,26 @@ const publicClient = createPublicClient({ chain: base, transport: http() });
 
 type LeaderRow = { addr: string; bestScore: number; totalScore: number; streak: number };
 
-function getDailyQuestions() {
-  const today = new Date().toISOString().slice(0, 10);
-  let seed = 0;
-  for (const ch of today) seed = (seed * 31 + ch.charCodeAt(0)) % 100000;
-  const idx: number[] = [];
-  while (idx.length < QUIZ_SIZE) {
-    seed = (seed * 1103515245 + 12345) % 2147483647;
-    const i = seed % QUESTIONS.length;
-    if (!idx.includes(i)) idx.push(i);
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
   }
-  return idx.map((i) => QUESTIONS[i]);
+  return a;
+}
+
+type QuizQ = { q: string; a: string[]; c: number };
+
+function getRandomQuestions(): QuizQ[] {
+  // Rastgele 5 soru seç + her sorunun şıklarını karıştır
+  const picked = shuffle(QUESTIONS).slice(0, QUIZ_SIZE);
+  return picked.map((q) => {
+    const correctAnswer = q.a[q.c];
+    const shuffledOptions = shuffle(q.a);
+    const newCorrectIndex = shuffledOptions.indexOf(correctAnswer);
+    return { q: q.q, a: shuffledOptions, c: newCorrectIndex };
+  });
 }
 
 const S: Record<string, CSSProperties> = {
@@ -71,7 +138,7 @@ const { address, isConnected, chainId: walletChainId } = useAccount();  const { 
   const chainId = useChainId();
 
   const [screen, setScreen] = useState<"start" | "quiz" | "end" | "board">("start");
-  const [questions] = useState(getDailyQuestions);
+  const [questions, setQuestions] = useState<QuizQ[]>(getRandomQuestions);
   const [qIndex, setQIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(TIME_PER_Q);
@@ -232,7 +299,7 @@ const { address, isConnected, chainId: walletChainId } = useAccount();  const { 
           {playedToday ? (
             <p style={{ color: "#facc15", marginBottom: 16 }}>You already played today! New questions tomorrow 👀</p>
           ) : (
-            <button style={S.bigBtn} onClick={() => setScreen("quiz")}>Start</button>
+            <button style={S.bigBtn} onClick={() => { setQuestions(getRandomQuestions()); setQIndex(0); setScore(0); setSelected(null); setTimeLeft(TIME_PER_Q); setScreen("quiz"); }}>Start</button>
           )}
           <button style={S.grayBtn} onClick={loadBoard}>🏆 Leaderboard</button>
         </div>

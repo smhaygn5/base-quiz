@@ -83,6 +83,7 @@ const QUESTIONS = [
 
 const QUIZ_SIZE = 5;
 const TIME_PER_Q = 15;
+const APP_URL = "https://base-quiz-v5is.vercel.app";
 
 const publicClient = createPublicClient({ chain: base, transport: http() });
 
@@ -149,6 +150,7 @@ export default function Home() {
   const [txError, setTxError] = useState("");
   const [board, setBoard] = useState<LeaderRow[]>([]);
   const [boardLoading, setBoardLoading] = useState(false);
+  const [shareMenuOpen, setShareMenuOpen] = useState(false);
 
   useEffect(() => {
     if (!isFrameReady) setFrameReady();
@@ -195,15 +197,27 @@ export default function Home() {
     setTimeout(nextQuestion, 2000);
   }
 
-  function share() {
-    const APP_URL = "https://base-quiz-v5is.vercel.app";
-    const text = `🧠 I scored ${score} points on Base Quiz! 🔥 Streak: ${streak} days\n\nThink you can beat me? 👇`;
+  const shareText = `🧠 I scored ${score} points on Base Quiz! 🔥 Streak: ${streak} days\n\nThink you can beat me? 👇`;
+
+  function shareFarcaster() {
+    setShareMenuOpen(false);
     try {
-      composeCast({ text, embeds: [APP_URL] });
+      composeCast({ text: shareText, embeds: [APP_URL] });
     } catch {
-      navigator.clipboard.writeText(`${text}\n\n${APP_URL}`);
-      alert("Copied! Paste it on Farcaster / Base App / X.");
+      window.open(`https://farcaster.xyz/~/compose?text=${encodeURIComponent(shareText + "\n\n" + APP_URL)}`, "_blank");
     }
+  }
+
+  function shareTwitter() {
+    setShareMenuOpen(false);
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(APP_URL)}`;
+    window.open(url, "_blank");
+  }
+
+  function shareCopy() {
+    setShareMenuOpen(false);
+    navigator.clipboard.writeText(`${shareText}\n\n${APP_URL}`);
+    alert("Copied to clipboard!");
   }
 
   async function saveOnchain() {
@@ -356,7 +370,16 @@ export default function Home() {
             </div>
           )}
 
-          <button style={S.shareBtn} onClick={share}>📣 Share Your Score</button>
+          {!shareMenuOpen ? (
+            <button style={S.shareBtn} onClick={() => setShareMenuOpen(true)}>📣 Share Your Score</button>
+          ) : (
+            <div style={{ marginBottom: 12 }}>
+              <button style={{ ...S.shareBtn, background: "#8a63d2", marginBottom: 8 }} onClick={shareFarcaster}>🟣 Share on Farcaster</button>
+              <button style={{ ...S.shareBtn, background: "#1d9bf0", marginBottom: 8 }} onClick={shareTwitter}>🐦 Share on X</button>
+              <button style={S.grayBtn} onClick={shareCopy}>📋 Copy text</button>
+            </div>
+          )}
+
           <button style={S.grayBtn} onClick={loadBoard}>🏆 Leaderboard</button>
         </div>
       )}

@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback, CSSProperties } from "react";
 import { useMiniKit, useComposeCast } from "@coinbase/onchainkit/minikit";
-import { useAccount, useConnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";
-import { base } from "wagmi/chains";
+import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 
@@ -126,6 +125,34 @@ export default function Home() {
   const { composeCast } = useComposeCast();
   const { address, isConnected, chainId: walletChainId } = useAccount();
   const { connect, connectors } = useConnect();
+// Cüzdanları gruplandır
+  const findByName = (names: string[]) =>
+    connectors.find((c) => names.some((n) => c.name?.toLowerCase().includes(n.toLowerCase()) || c.id?.toLowerCase().includes(n.toLowerCase())));
+
+  const baseWallet = connectors.find((c) =>
+    c.id === "farcasterMiniApp" || c.id === "farcaster" || c.id?.toLowerCase().includes("miniapp")
+  ) || findByName(["coinbaseWalletSDK", "coinbase"]);
+
+  // İstenen sıra: MetaMask, OKX, Phantom, Rabby, Coinbase Wallet, Keplr, Trust
+  const orderedOthers = [
+    { match: ["metamask"], color: "#f6851b" },
+    { match: ["okx"], color: "#000000" },
+    { match: ["phantom"], color: "#534bb1" },
+    { match: ["rabby"], color: "#7084ff" },
+    { match: ["coinbase"], color: "#1652f0" },
+    { match: ["keplr"], color: "#1a4cd8" },
+    { match: ["trust"], color: "#3375bb" },
+  ]
+    .map((w) => ({
+      connector: connectors.find(
+        (c) =>
+          c !== baseWallet &&
+          w.match.some((m) => c.name?.toLowerCase().includes(m) || c.id?.toLowerCase().includes(m))
+      ),
+      color: w.color,
+    }))
+    .filter((w) => w.connector);
+  const { disconnect } = useDisconnect();
   const { writeContractAsync } = useWriteContract();
   const { switchChainAsync } = useSwitchChain();
   const chainId = useChainId();
@@ -151,11 +178,71 @@ export default function Home() {
   const [claimingId, setClaimingId] = useState<number | null>(null);
   const [claimError, setClaimError] = useState("");
   const [tutorialStep, setTutorialStep] = useState<number | null>(null);
+  const [soundOn, setSoundOn] = useState(true);
 
   useEffect(() => {
     if (!isFrameReady) setFrameReady();
   }, [setFrameReady, isFrameReady]);
+// Ses tercihi
+  useEffect(() => {
+    if (localStorage.getItem("soundOff") === "1") setSoundOn(false);
+  }, []);
 
+  function playSound(type: "correct" | "wrong" | "tick" | "win") {
+    if (!soundOn) return;
+    try {
+      const AudioCtx = (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext);
+      const ctx = new AudioCtx();
+      const o = ctx.createOscillator();
+      const g = ctx.createGain();
+      o.connect(g);
+      g.connect(ctx.destination);
+
+      if (type === "correct") {
+        o.frequency.setValueAtTime(880, ctx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime + 0.15);
+        g.gain.setValueAtTime(0.2, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+        o.start();
+        o.stop(ctx.currentTime + 0.3);
+      } else if (type === "wrong") {
+        o.type = "sawtooth";
+        o.frequency.setValueAtTime(200, ctx.currentTime);
+        o.frequency.exponentialRampToValueAtTime(80, ctx.currentTime + 0.25);
+        g.gain.setValueAtTime(0.15, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+        o.start();
+        o.stop(ctx.currentTime + 0.3);
+      } else if (type === "tick") {
+        o.frequency.setValueAtTime(1000, ctx.currentTime);
+        g.gain.setValueAtTime(0.08, ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.08);
+        o.start();
+        o.stop(ctx.currentTime + 0.08);
+      } else if (type === "win") {
+        // Yükselen 3 ton
+        [523, 659, 784].forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.12);
+          gain.gain.setValueAtTime(0, ctx.currentTime + i * 0.12);
+          gain.gain.linearRampToValueAtTime(0.2, ctx.currentTime + i * 0.12 + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + i * 0.12 + 0.25);
+          osc.start(ctx.currentTime + i * 0.12);
+          osc.stop(ctx.currentTime + i * 0.12 + 0.25);
+        });
+        o.stop(ctx.currentTime);
+      }
+    } catch {}
+  }
+
+  function toggleSound() {
+    const next = !soundOn;
+    setSoundOn(next);
+    localStorage.setItem("soundOff", next ? "0" : "1");
+  }
  useEffect(() => {
     const today = new Date().toISOString().slice(0, 10);
     const lastPlayed = localStorage.getItem("lastPlayed");
@@ -215,20 +302,28 @@ export default function Home() {
     }
   }, [qIndex, streak]);
 
-  useEffect(() => {
+useEffect(() => {
     if (screen !== "quiz" || selected !== null) return;
     if (timeLeft <= 0) {
       nextQuestion();
       return;
     }
+    if (timeLeft <= 3) playSound("tick");
     const t = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
     return () => clearTimeout(t);
   }, [timeLeft, screen, selected, nextQuestion]);
 
-  function answer(i: number) {
+  // Quiz bitince başarı sesi
+  useEffect(() => {
+    if (screen === "end") playSound("win");
+  }, [screen]);
+
+function answer(i: number) {
     if (selected !== null) return;
     setSelected(i);
-    if (i === questions[qIndex].c) setScore(score + 100 + timeLeft * 10);
+    const correct = i === questions[qIndex].c;
+    if (correct) setScore(score + 100 + timeLeft * 10);
+    playSound(correct ? "correct" : "wrong");
     setTimeout(nextQuestion, 2000);
   }
 
@@ -399,6 +494,24 @@ export default function Home() {
 
   return (
     <main style={S.main}>
+ <div style={{ position: "fixed", top: 16, right: 16, display: "flex", gap: 8, zIndex: 50 }}>
+        {isConnected && address && (
+          <button
+            onClick={() => disconnect()}
+            style={{ background: "rgba(31,41,55,0.7)", color: "#fff", border: "none", borderRadius: 99, padding: "0 14px", height: 40, fontSize: 13, fontWeight: 600, cursor: "pointer" }}
+            title="Disconnect wallet"
+          >
+            {shortAddr(address)} ✕
+          </button>
+        )}
+        <button
+          onClick={toggleSound}
+          style={{ background: "rgba(31,41,55,0.7)", color: "#fff", border: "none", borderRadius: 99, width: 40, height: 40, fontSize: 20, cursor: "pointer" }}
+          title={soundOn ? "Mute" : "Unmute"}
+        >
+          {soundOn ? "🔊" : "🔇"}
+        </button>
+      </div>
       {screen === "start" && (
         <div style={S.card}>
           <h1 style={S.title}>🧠 Base Quiz</h1>
@@ -446,10 +559,26 @@ export default function Home() {
           <p style={S.sub}>points</p>
           <p style={S.streak}>🔥 Streak: {streak} days</p>
 
-          {!isConnected ? (
-            <button style={S.saveBtn} onClick={() => connect({ connector: connectors[0] })}>
-              🔗 Connect Wallet to Save Score
-            </button>
+{!isConnected ? (
+            <div style={{ marginBottom: 12 }}>
+              {baseWallet && (
+                <button
+                  style={{ ...S.saveBtn, background: "linear-gradient(90deg, #0052ff, #2563eb)", marginBottom: 28 }}
+                  onClick={() => connect({ connector: baseWallet })}
+                >
+                  Base Wallet
+                </button>
+              )}
+              {orderedOthers.map((w) => (
+                <button
+                  key={w.connector!.uid}
+                  style={{ ...S.saveBtn, background: w.color, marginBottom: 8 }}
+                  onClick={() => connect({ connector: w.connector! })}
+                >
+                  {w.connector!.name}
+                </button>
+              ))}
+            </div>
           ) : txStatus === "idle" ? (
             <button style={S.saveBtn} onClick={saveOnchain}>💾 Save Score Onchain</button>
           ) : txStatus === "pending" ? (
@@ -570,8 +699,24 @@ export default function Home() {
 
           {!isConnected ? (
             <>
-              <p style={{ color: "#facc15", marginBottom: 16 }}>Connect wallet to see your badges</p>
-              <button style={S.saveBtn} onClick={() => connect({ connector: connectors[0] })}>🔗 Connect Wallet</button>
+<p style={{ color: "#facc15", marginBottom: 16 }}>Connect wallet to see your badges</p>
+              {baseWallet && (
+                <button
+                  style={{ ...S.saveBtn, background: "linear-gradient(90deg, #0052ff, #2563eb)", marginBottom: 28 }}
+                  onClick={() => connect({ connector: baseWallet })}
+                >
+                  Base Wallet
+                </button>
+              )}
+              {orderedOthers.map((w) => (
+                <button
+                  key={w.connector!.uid}
+                  style={{ ...S.saveBtn, background: w.color, marginBottom: 8 }}
+                  onClick={() => connect({ connector: w.connector! })}
+                >
+                  {w.connector!.name}
+                </button>
+              ))}
             </>
           ) : badgesLoading ? (
             <p style={S.sub}>Loading from chain...</p>

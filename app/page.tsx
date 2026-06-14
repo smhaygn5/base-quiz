@@ -139,6 +139,7 @@ export default function Home() {
   const [streak, setStreak] = useState(0);
   const [onchainStreak, setOnchainStreak] = useState(0);
   const [playedToday, setPlayedToday] = useState(false);
+  const [playedTodayOnchain, setPlayedTodayOnchain] = useState(false);
   const [txStatus, setTxStatus] = useState<"idle" | "pending" | "done" | "error">("idle");
   const [txHash, setTxHash] = useState("");
   const [txError, setTxError] = useState("");
@@ -154,12 +155,38 @@ export default function Home() {
     if (!isFrameReady) setFrameReady();
   }, [setFrameReady, isFrameReady]);
 
-  useEffect(() => {
+ useEffect(() => {
     const today = new Date().toISOString().slice(0, 10);
     const lastPlayed = localStorage.getItem("lastPlayed");
     setStreak(parseInt(localStorage.getItem("streak") || "0"));
     if (lastPlayed === today) setPlayedToday(true);
   }, []);
+
+  // Cüzdan bağlanınca zincirden "bugün kaydettim mi" kontrolü
+  useEffect(() => {
+    if (!address) {
+      setPlayedTodayOnchain(false);
+      return;
+    }
+    (async () => {
+      try {
+        const p = await publicClient.readContract({
+          address: CONTRACT_ADDRESS as `0x${string}`,
+          abi: CONTRACT_ABI,
+          functionName: "players",
+          args: [address],
+        });
+        const lastPlayedDay = Number(p[3]);
+        const todayUTC = Math.floor(Date.now() / 86400000);
+        setPlayedTodayOnchain(lastPlayedDay === todayUTC);
+        // Onchain streak'i de senkronla
+        const chainStreak = Number(p[2]);
+        if (chainStreak > 0) setStreak(chainStreak);
+      } catch {
+        setPlayedTodayOnchain(false);
+      }
+    })();
+  }, [address]);
 
   const nextQuestion = useCallback(() => {
     setSelected(null);
@@ -367,8 +394,10 @@ export default function Home() {
           <h1 style={S.title}>🧠 Base Quiz</h1>
           <p style={S.sub}>5 daily questions. Answer fast, score big!</p>
           {streak > 0 && <p style={S.streak}>🔥 {streak}-day streak</p>}
-          {playedToday ? (
-            <p style={{ color: "#facc15", marginBottom: 16 }}>You already played today! New questions tomorrow 👀</p>
+  {playedToday || playedTodayOnchain ? (
+            <p style={{ color: "#facc15", marginBottom: 16 }}>
+              {playedTodayOnchain ? "✅ Score saved today! Come back tomorrow 🔥" : "You already played today! New questions tomorrow 👀"}
+            </p>
           ) : (
             <button style={S.bigBtn} onClick={() => { setQuestions(getRandomQuestions()); setQIndex(0); setScore(0); setSelected(null); setTimeLeft(TIME_PER_Q); setScreen("quiz"); }}>Start</button>
           )}

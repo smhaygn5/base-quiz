@@ -150,6 +150,7 @@ export default function Home() {
   const [badgesLoading, setBadgesLoading] = useState(false);
   const [claimingId, setClaimingId] = useState<number | null>(null);
   const [claimError, setClaimError] = useState("");
+  const [tutorialStep, setTutorialStep] = useState<number | null>(null);
 
   useEffect(() => {
     if (!isFrameReady) setFrameReady();
@@ -160,7 +161,16 @@ export default function Home() {
     const lastPlayed = localStorage.getItem("lastPlayed");
     setStreak(parseInt(localStorage.getItem("streak") || "0"));
     if (lastPlayed === today) setPlayedToday(true);
+    // İlk kez gelen kullanıcıya tutorial göster
+    if (!localStorage.getItem("tutorialSeen")) {
+      setTutorialStep(0);
+    }
   }, []);
+
+  function closeTutorial() {
+    localStorage.setItem("tutorialSeen", "1");
+    setTutorialStep(null);
+  }
 
   // Cüzdan bağlanınca zincirden "bugün kaydettim mi" kontrolü
   useEffect(() => {
@@ -493,8 +503,67 @@ export default function Home() {
           <button style={{ ...S.grayBtn, marginTop: 12 }} onClick={() => setScreen("start")}>← Back</button>
         </div>
       )}
+{tutorialStep !== null && (
+        <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 100 }}>
+          <div style={{ ...S.card, background: "#0a1635", padding: 28, borderRadius: 20, border: "1px solid #1f2937" }}>
+            {tutorialStep === 0 && (
+              <>
+                <div style={{ fontSize: 80, marginBottom: 16 }}>🧠</div>
+                <h2 style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>Welcome to Base Quiz!</h2>
+                <p style={{ color: "#93b4f5", marginBottom: 24, lineHeight: 1.6 }}>
+                  A daily crypto trivia game on Base. Test your knowledge, build streaks, and compete with players worldwide.
+                </p>
+              </>
+            )}
+            {tutorialStep === 1 && (
+              <>
+                <div style={{ fontSize: 80, marginBottom: 16 }}>⚡</div>
+                <h2 style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>5 Questions Daily</h2>
+                <p style={{ color: "#93b4f5", marginBottom: 16, lineHeight: 1.6 }}>
+                  Answer fast — the quicker you respond, the more points you get.
+                </p>
+                <p style={{ color: "#93b4f5", marginBottom: 24, lineHeight: 1.6 }}>
+                  Save your score onchain to appear on the global leaderboard 🏆
+                </p>
+              </>
+            )}
+            {tutorialStep === 2 && (
+              <>
+                <div style={{ fontSize: 80, marginBottom: 16 }}>🏅</div>
+                <h2 style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>Earn NFT Badges</h2>
+                <p style={{ color: "#93b4f5", marginBottom: 16, lineHeight: 1.6 }}>
+                  Keep your streak alive and claim onchain NFT badges:
+                </p>
+                <p style={{ color: "#fff", marginBottom: 24, lineHeight: 1.8, textAlign: "left" }}>
+                  🥉 Bronze — 3 days<br />
+                  🥈 Silver — 7 days<br />
+                  🥇 Gold — 30 days<br />
+                  💎 Diamond — 100 days
+                </p>
+              </>
+            )}
+
+            {/* Dots */}
+            <div style={{ display: "flex", justifyContent: "center", gap: 8, marginBottom: 20 }}>
+              {[0, 1, 2].map((i) => (
+                <div key={i} style={{ width: 8, height: 8, borderRadius: 99, background: tutorialStep === i ? "#3b82f6" : "#374151" }} />
+              ))}
+            </div>
+
+            {tutorialStep < 2 ? (
+              <>
+                <button style={S.bigBtn} onClick={() => setTutorialStep(tutorialStep + 1)}>Next →</button>
+                <button style={{ ...S.grayBtn, marginBottom: 0 }} onClick={closeTutorial}>Skip</button>
+              </>
+            ) : (
+              <button style={S.bigBtn} onClick={closeTutorial}>Let&apos;s play! 🚀</button>
+            )}
+          </div>
+        </div>
+      )}
 
       {screen === "badges" && (
+      
         <div style={S.card}>
           <h1 style={{ fontSize: 30, fontWeight: 800, marginBottom: 8 }}>🏅 Badges</h1>
           <p style={S.sub}>Streak NFTs on Base</p>

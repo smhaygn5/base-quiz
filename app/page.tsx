@@ -4,10 +4,9 @@ import { useMiniKit, useComposeCast } from "@coinbase/onchainkit/minikit";
 import { useAccount, useConnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";
 import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
-import { CONTRACT_ADDRESS, CONTRACT_ABI } from "./contract";
+import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 
 const QUESTIONS = [
-  // ---- BASE & COINBASE ----
   { q: "Which company developed Base?", a: ["Binance", "Coinbase", "Kraken", "OKX"], c: 1 },
   { q: "Base is a Layer-2 of which network?", a: ["Bitcoin", "Solana", "Ethereum", "Avalanche"], c: 2 },
   { q: "Which tech stack does Base use?", a: ["OP Stack", "zkSync", "Polygon CDK", "Arbitrum Nitro"], c: 0 },
@@ -18,8 +17,6 @@ const QUESTIONS = [
   { q: "Who leads Base at Coinbase?", a: ["Brian Armstrong", "Jesse Pollak", "Hayden Adams", "Stani Kulechov"], c: 1 },
   { q: "Which superchain does Base belong to?", a: ["Polygon Superchain", "Optimism Superchain", "Arbitrum Orbit", "zkSync Hyperchain"], c: 1 },
   { q: "Base is best described as?", a: ["A standalone L1", "An Ethereum L2 rollup", "A sidechain", "A bridge protocol"], c: 1 },
-
-  // ---- ETHEREUM ----
   { q: "Who is the founder of Ethereum?", a: ["Satoshi Nakamoto", "Vitalik Buterin", "Brian Armstrong", "CZ"], c: 1 },
   { q: "Smart contracts on Base are written in?", a: ["Python", "Rust", "Solidity", "Go"], c: 2 },
   { q: "What is the smallest unit of ETH?", a: ["Satoshi", "Gwei", "Wei", "Finney"], c: 2 },
@@ -30,49 +27,35 @@ const QUESTIONS = [
   { q: "What does 'gas' refer to?", a: ["A token", "Transaction fee unit", "A wallet", "An NFT type"], c: 1 },
   { q: "When did Ethereum switch to PoS (The Merge)?", a: ["2020", "2021", "2022", "2023"], c: 2 },
   { q: "What is an ERC-20?", a: ["NFT standard", "Fungible token standard", "Wallet format", "L2 standard"], c: 1 },
-
-  // ---- BITCOIN ----
   { q: "What is Bitcoin's max supply?", a: ["21 million", "100 million", "1 billion", "Unlimited"], c: 0 },
   { q: "Who created Bitcoin?", a: ["Vitalik Buterin", "Satoshi Nakamoto", "Hal Finney", "Nick Szabo"], c: 1 },
   { q: "Bitcoin's smallest unit is called?", a: ["Wei", "Gwei", "Satoshi", "Finney"], c: 2 },
   { q: "How often does Bitcoin halving occur (roughly)?", a: ["Every year", "Every 2 years", "Every 4 years", "Every 10 years"], c: 2 },
   { q: "Bitcoin uses which consensus?", a: ["Proof of Stake", "Proof of Work", "Proof of Authority", "DPoS"], c: 1 },
-
-  // ---- DEFI ----
   { q: "What does DeFi stand for?", a: ["Defined Finance", "Decentralized Finance", "Defaulted Finance", "Deferred Finance"], c: 1 },
   { q: "Uniswap is primarily a?", a: ["Lending platform", "DEX (decentralized exchange)", "Wallet", "Bridge"], c: 1 },
   { q: "What is an AMM?", a: ["Auto Market Mover", "Automated Market Maker", "Asset Management Module", "Aggregated Mint Maker"], c: 1 },
   { q: "What does TVL mean?", a: ["Token Value Locked", "Total Value Locked", "Trade Volume Limit", "Tier Volume Level"], c: 1 },
   { q: "Aave is primarily a?", a: ["DEX", "Lending protocol", "Stablecoin", "NFT marketplace"], c: 1 },
   { q: "What is yield farming?", a: ["Mining crops", "Earning rewards from DeFi protocols", "A staking pool name", "An NFT minting term"], c: 1 },
-
-  // ---- STABLECOINS ----
   { q: "Which company issues USDC?", a: ["Tether", "Circle", "Coinbase", "Paxos"], c: 1 },
   { q: "Which company issues USDT?", a: ["Circle", "Tether", "Coinbase", "MakerDAO"], c: 1 },
   { q: "DAI is primarily backed by?", a: ["US Dollars in a bank", "Crypto collateral", "Gold reserves", "Government bonds"], c: 1 },
   { q: "Stablecoins try to maintain price parity with?", a: ["Bitcoin", "Ethereum", "Fiat currencies", "Gold only"], c: 2 },
-
-  // ---- NFT ----
   { q: "What does NFT stand for?", a: ["New Finance Token", "Non-Fungible Token", "Network File Transfer", "Node Function Type"], c: 1 },
   { q: "Which is the NFT token standard on Ethereum?", a: ["ERC-20", "ERC-721", "ERC-1155 only", "BEP-20"], c: 1 },
   { q: "OpenSea is primarily a?", a: ["DEX", "NFT marketplace", "Wallet", "L2 chain"], c: 1 },
   { q: "What does 'mint' mean in NFTs?", a: ["Sell an NFT", "Create a new NFT onchain", "Burn an NFT", "Transfer an NFT"], c: 1 },
-
-  // ---- WALLETS & SECURITY ----
   { q: "What are a wallet's secret words called?", a: ["Public key", "Seed phrase", "Hash", "Nonce"], c: 1 },
   { q: "What is a hardware wallet?", a: ["A mobile app", "A physical device for storing keys", "A browser extension", "An exchange account"], c: 1 },
   { q: "You should NEVER share your?", a: ["Wallet address", "Seed phrase", "ENS name", "Username"], c: 1 },
   { q: "Self-custody means?", a: ["Exchange holds your keys", "You control your private keys", "A bank holds your keys", "A friend holds your keys"], c: 1 },
   { q: "MetaMask is primarily a?", a: ["Exchange", "Browser wallet", "Hardware wallet", "L2 chain"], c: 1 },
-
-  // ---- FARCASTER & SOCIAL ----
   { q: "What is Farcaster?", a: ["An exchange", "A decentralized social network", "A wallet", "A game"], c: 1 },
   { q: "Posts on Farcaster are called?", a: ["Tweets", "Casts", "Toots", "Snaps"], c: 1 },
   { q: "Who founded Farcaster?", a: ["Vitalik Buterin", "Dan Romero & Varun Srinivasan", "Jesse Pollak", "Jack Dorsey"], c: 1 },
   { q: "A Farcaster user identifier is called?", a: ["UID", "FID", "Handle", "Tag"], c: 1 },
   { q: "Mini Apps on Base App are built with?", a: ["MiniKit / OnchainKit", "Flutter only", "Native iOS only", "Unity"], c: 0 },
-
-  // ---- GENERAL ----
   { q: "A blockchain transaction hash is also called?", a: ["Nonce", "TX ID", "Block height", "Gas limit"], c: 1 },
   { q: "What does DAO stand for?", a: ["Digital Asset Order", "Decentralized Autonomous Organization", "Distributed App Output", "Data Access Object"], c: 1 },
   { q: "What is a 'block explorer'?", a: ["A mining tool", "A site to view onchain data", "A wallet type", "A bridge"], c: 1 },
@@ -84,6 +67,13 @@ const QUESTIONS = [
 const QUIZ_SIZE = 5;
 const TIME_PER_Q = 15;
 const APP_URL = "https://base-quiz-v5is.vercel.app";
+
+const BADGES = [
+  { id: 1, name: "Bronze", emoji: "🥉", days: 3, color: "#cd7f32" },
+  { id: 2, name: "Silver", emoji: "🥈", days: 7, color: "#c0c0c0" },
+  { id: 3, name: "Gold", emoji: "🥇", days: 30, color: "#ffd700" },
+  { id: 4, name: "Diamond", emoji: "💎", days: 100, color: "#60a5fa" },
+];
 
 const publicClient = createPublicClient({ chain: base, transport: http() });
 
@@ -125,7 +115,10 @@ const S: Record<string, CSSProperties> = {
   streak: { color: "#fb923c", fontWeight: 600, marginBottom: 20 },
   shareBtn: { width: "100%", background: "#9333ea", color: "#fff", border: "none", padding: "16px", borderRadius: 14, fontSize: 18, fontWeight: 700, cursor: "pointer", marginBottom: 12 },
   saveBtn: { width: "100%", background: "#16a34a", color: "#fff", border: "none", padding: "16px", borderRadius: 14, fontSize: 18, fontWeight: 700, cursor: "pointer", marginBottom: 12 },
+  badgeBtn: { width: "100%", background: "linear-gradient(90deg, #f59e0b, #d97706)", color: "#fff", border: "none", padding: "14px", borderRadius: 14, fontSize: 16, fontWeight: 700, cursor: "pointer", marginBottom: 12 },
   row: { display: "flex", justifyContent: "space-between", alignItems: "center", background: "#111827", borderRadius: 12, padding: "12px 16px", marginBottom: 8, fontSize: 14 },
+  badgeCard: { background: "#111827", borderRadius: 16, padding: 16, marginBottom: 12, textAlign: "center" as const },
+  badgeEmoji: { fontSize: 60, marginBottom: 8 },
 };
 
 export default function Home() {
@@ -137,13 +130,14 @@ export default function Home() {
   const { switchChainAsync } = useSwitchChain();
   const chainId = useChainId();
 
-  const [screen, setScreen] = useState<"start" | "quiz" | "end" | "board">("start");
+  const [screen, setScreen] = useState<"start" | "quiz" | "end" | "board" | "badges">("start");
   const [questions, setQuestions] = useState<QuizQ[]>(getRandomQuestions);
   const [qIndex, setQIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(TIME_PER_Q);
   const [selected, setSelected] = useState<number | null>(null);
   const [streak, setStreak] = useState(0);
+  const [onchainStreak, setOnchainStreak] = useState(0);
   const [playedToday, setPlayedToday] = useState(false);
   const [txStatus, setTxStatus] = useState<"idle" | "pending" | "done" | "error">("idle");
   const [txHash, setTxHash] = useState("");
@@ -151,6 +145,10 @@ export default function Home() {
   const [board, setBoard] = useState<LeaderRow[]>([]);
   const [boardLoading, setBoardLoading] = useState(false);
   const [shareMenuOpen, setShareMenuOpen] = useState(false);
+  const [owned, setOwned] = useState<boolean[]>([false, false, false, false]);
+  const [badgesLoading, setBadgesLoading] = useState(false);
+  const [claimingId, setClaimingId] = useState<number | null>(null);
+  const [claimError, setClaimError] = useState("");
 
   useEffect(() => {
     if (!isFrameReady) setFrameReady();
@@ -287,6 +285,66 @@ export default function Home() {
     setBoardLoading(false);
   }
 
+  async function loadBadges() {
+    setScreen("badges");
+    setBadgesLoading(true);
+    setClaimError("");
+    try {
+      // Onchain streak'i oku
+      let chainStreak = 0;
+      if (address) {
+        const p = await publicClient.readContract({
+          address: CONTRACT_ADDRESS as `0x${string}`,
+          abi: CONTRACT_ABI,
+          functionName: "players",
+          args: [address],
+        });
+        chainStreak = Number(p[2]);
+        setOnchainStreak(chainStreak);
+
+        // Her rozet için balance kontrol
+     const balances: bigint[] = [];
+        for (const b of BADGES) {
+          const bal = await publicClient.readContract({
+            address: BADGES_ADDRESS as `0x${string}`,
+            abi: BADGES_ABI,
+            functionName: "balanceOf",
+            args: [address, BigInt(b.id)],
+          });
+          balances.push(bal as bigint);
+          await new Promise((r) => setTimeout(r, 150));
+        }
+        setOwned(balances.map((b) => Number(b) > 0));
+      }
+    } catch (e) {
+      console.error("Badges load error:", e);
+    }
+    setBadgesLoading(false);
+  }
+
+  async function claimBadge(badgeId: number) {
+    setClaimingId(badgeId);
+    setClaimError("");
+    try {
+      if (walletChainId !== base.id) {
+        await switchChainAsync({ chainId: base.id });
+      }
+      await writeContractAsync({
+        address: BADGES_ADDRESS as `0x${string}`,
+        abi: BADGES_ABI,
+        functionName: "claim",
+        args: [BigInt(badgeId)],
+        chainId: base.id,
+      });
+      // Yenile
+      await loadBadges();
+    } catch (e: unknown) {
+      const msg = e instanceof Error ? e.message : "Claim failed";
+      setClaimError(msg.slice(0, 150));
+    }
+    setClaimingId(null);
+  }
+
   function shortAddr(a: string) {
     return a.slice(0, 6) + "..." + a.slice(-4);
   }
@@ -315,6 +373,7 @@ export default function Home() {
             <button style={S.bigBtn} onClick={() => { setQuestions(getRandomQuestions()); setQIndex(0); setScore(0); setSelected(null); setTimeLeft(TIME_PER_Q); setScreen("quiz"); }}>Start</button>
           )}
           <button style={S.grayBtn} onClick={loadBoard}>🏆 Leaderboard</button>
+          <button style={S.badgeBtn} onClick={loadBadges}>🏅 My Badges</button>
         </div>
       )}
 
@@ -380,6 +439,7 @@ export default function Home() {
             </div>
           )}
 
+          <button style={S.badgeBtn} onClick={loadBadges}>🏅 My Badges</button>
           <button style={S.grayBtn} onClick={loadBoard}>🏆 Leaderboard</button>
         </div>
       )}
@@ -400,6 +460,49 @@ export default function Home() {
                 <span style={{ color: "#93b4f5" }}>{r.totalScore} pts 🔥{r.streak}</span>
               </div>
             ))
+          )}
+          <button style={{ ...S.grayBtn, marginTop: 12 }} onClick={() => setScreen("start")}>← Back</button>
+        </div>
+      )}
+
+      {screen === "badges" && (
+        <div style={S.card}>
+          <h1 style={{ fontSize: 30, fontWeight: 800, marginBottom: 8 }}>🏅 Badges</h1>
+          <p style={S.sub}>Streak NFTs on Base</p>
+
+          {!isConnected ? (
+            <>
+              <p style={{ color: "#facc15", marginBottom: 16 }}>Connect wallet to see your badges</p>
+              <button style={S.saveBtn} onClick={() => connect({ connector: connectors[0] })}>🔗 Connect Wallet</button>
+            </>
+          ) : badgesLoading ? (
+            <p style={S.sub}>Loading from chain...</p>
+          ) : (
+            <>
+              <p style={{ color: "#fb923c", marginBottom: 16, fontWeight: 600 }}>🔥 Onchain streak: {onchainStreak} days</p>
+              {claimError && <p style={{ color: "#f87171", fontSize: 13, marginBottom: 12 }}>{claimError}</p>}
+              {BADGES.map((b, i) => {
+                const hasIt = owned[i];
+                const canClaim = !hasIt && onchainStreak >= b.days;
+                const isClaiming = claimingId === b.id;
+                return (
+                  <div key={b.id} style={{ ...S.badgeCard, opacity: hasIt || canClaim ? 1 : 0.5 }}>
+                    <div style={S.badgeEmoji}>{b.emoji}</div>
+                    <div style={{ fontWeight: 700, fontSize: 18, color: b.color }}>{b.name}</div>
+                    <div style={{ color: "#93b4f5", fontSize: 13, marginBottom: 10 }}>{b.days}-day streak required</div>
+                    {hasIt ? (
+                      <p style={{ color: "#4ade80", fontWeight: 700 }}>✅ Owned</p>
+                    ) : canClaim ? (
+                      <button style={{ ...S.saveBtn, marginBottom: 0 }} onClick={() => claimBadge(b.id)} disabled={isClaiming}>
+                        {isClaiming ? "⏳ Claiming..." : "Claim 🎁"}
+                      </button>
+                    ) : (
+                      <p style={{ color: "#6b7280", fontSize: 13 }}>{b.days - onchainStreak} more days to go</p>
+                    )}
+                  </div>
+                );
+              })}
+            </>
           )}
           <button style={{ ...S.grayBtn, marginTop: 12 }} onClick={() => setScreen("start")}>← Back</button>
         </div>

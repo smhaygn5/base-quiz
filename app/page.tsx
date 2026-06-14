@@ -397,16 +397,21 @@ function answer(i: number) {
         abi: CONTRACT_ABI,
         functionName: "getPlayerCount",
       });
-      const n = Number(count);
+const n = Number(count);
       const rows: LeaderRow[] = [];
       for (let i = 0; i < n && i < 100; i++) {
-        const [addr, best, total, stk] = await publicClient.readContract({
-          address: CONTRACT_ADDRESS as `0x${string}`,
-          abi: CONTRACT_ABI,
-          functionName: "getPlayer",
-          args: [BigInt(i)],
-        });
-        rows.push({ addr, bestScore: Number(best), totalScore: Number(total), streak: Number(stk) });
+        try {
+          const [addr, best, total, stk] = await publicClient.readContract({
+            address: CONTRACT_ADDRESS as `0x${string}`,
+            abi: CONTRACT_ABI,
+            functionName: "getPlayer",
+            args: [BigInt(i)],
+          });
+          rows.push({ addr, bestScore: Number(best), totalScore: Number(total), streak: Number(stk) });
+        } catch (err) {
+          console.warn(`Skipped player ${i}:`, err);
+        }
+        await new Promise((r) => setTimeout(r, 150));
       }
       rows.sort((a, b) => b.totalScore - a.totalScore);
       setBoard(rows.slice(0, 10));

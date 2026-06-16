@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect, useCallback, CSSProperties } from "react";
 import { useMiniKit, useComposeCast } from "@coinbase/onchainkit/minikit";
-import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";import { base } from "wagmi/chains";
+import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";
+import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 
@@ -74,9 +75,30 @@ const BADGES = [
   { id: 4, name: "Diamond", emoji: "💎", days: 100, color: "#60a5fa" },
 ];
 
-const publicClient = createPublicClient({ chain: base, transport: http() });
+const T = {
+  bg: "#0E0F1A",
+  surface: "#101A35",
+  surfaceHi: "#16224a",
+  border: "#1f2d5c",
+  borderHi: "#2a3d75",
+  base: "#0052FF",
+  baseHi: "#1a6bff",
+  accent: "#FFE66D",
+  correct: "#7BFF8C",
+  wrong: "#FF5577",
+  text: "#F5F7FF",
+  textDim: "#8a96c7",
+  textDimmer: "#5a6798",
+  mono: "var(--font-plex-mono), ui-monospace, monospace",
+  sans: "var(--font-inter), system-ui, sans-serif",
+};
 
+const publicClient = createPublicClient({
+  chain: base,
+  transport: http(process.env.NEXT_PUBLIC_RPC_URL),
+});
 type LeaderRow = { addr: string; bestScore: number; totalScore: number; streak: number };
+type QuizQ = { q: string; a: string[]; c: number };
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -86,8 +108,6 @@ function shuffle<T>(arr: T[]): T[] {
   }
   return a;
 }
-
-type QuizQ = { q: string; a: string[]; c: number };
 
 function getRandomQuestions(): QuizQ[] {
   const picked = shuffle(QUESTIONS).slice(0, QUIZ_SIZE);
@@ -99,41 +119,20 @@ function getRandomQuestions(): QuizQ[] {
   });
 }
 
-const S: Record<string, CSSProperties> = {
-  main: { minHeight: "100vh", background: "linear-gradient(180deg, #0a1635 0%, #000 100%)", color: "#fff", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 24, fontFamily: "system-ui, sans-serif" },
-  card: { maxWidth: 400, width: "100%", textAlign: "center" },
-  title: { fontSize: 40, fontWeight: 800, margin: "0 0 8px" },
-  sub: { color: "#93b4f5", marginBottom: 24 },
-  bigBtn: { width: "100%", background: "#2563eb", color: "#fff", border: "none", padding: "16px", borderRadius: 14, fontSize: 20, fontWeight: 700, cursor: "pointer", marginBottom: 12 },
-  grayBtn: { width: "100%", background: "#1f2937", color: "#fff", border: "none", padding: "14px", borderRadius: 14, fontSize: 16, fontWeight: 600, cursor: "pointer", marginBottom: 12 },
-  topRow: { display: "flex", justifyContent: "space-between", color: "#93b4f5", fontSize: 14, marginBottom: 10 },
-  barBg: { width: "100%", background: "#1f2937", borderRadius: 99, height: 8, marginBottom: 20 },
-  question: { fontSize: 22, fontWeight: 700, minHeight: 64, marginBottom: 16, textAlign: "left" },
-  option: { width: "100%", padding: "14px 16px", borderRadius: 12, border: "none", textAlign: "left", fontSize: 16, fontWeight: 500, color: "#fff", cursor: "pointer", marginBottom: 12, display: "block" },
-  score: { fontSize: 56, fontWeight: 800, color: "#60a5fa", margin: "8px 0" },
-  streak: { color: "#fb923c", fontWeight: 600, marginBottom: 20 },
-  shareBtn: { width: "100%", background: "#9333ea", color: "#fff", border: "none", padding: "16px", borderRadius: 14, fontSize: 18, fontWeight: 700, cursor: "pointer", marginBottom: 12 },
-  saveBtn: { width: "100%", background: "#16a34a", color: "#fff", border: "none", padding: "16px", borderRadius: 14, fontSize: 18, fontWeight: 700, cursor: "pointer", marginBottom: 12 },
-  badgeBtn: { width: "100%", background: "linear-gradient(90deg, #f59e0b, #d97706)", color: "#fff", border: "none", padding: "14px", borderRadius: 14, fontSize: 16, fontWeight: 700, cursor: "pointer", marginBottom: 12 },
-  row: { display: "flex", justifyContent: "space-between", alignItems: "center", background: "#111827", borderRadius: 12, padding: "12px 16px", marginBottom: 8, fontSize: 14 },
-  badgeCard: { background: "#111827", borderRadius: 16, padding: 16, marginBottom: 12, textAlign: "center" as const },
-  badgeEmoji: { fontSize: 60, marginBottom: 8 },
-};
-
 export default function Home() {
   const { setFrameReady, isFrameReady } = useMiniKit();
   const { composeCast } = useComposeCast();
   const { address, isConnected, chainId: walletChainId } = useAccount();
   const { connect, connectors } = useConnect();
-// Cüzdanları gruplandır
-  const findByName = (names: string[]) =>
-    connectors.find((c) => names.some((n) => c.name?.toLowerCase().includes(n.toLowerCase()) || c.id?.toLowerCase().includes(n.toLowerCase())));
+  const { disconnect } = useDisconnect();
+  const { writeContractAsync } = useWriteContract();
+  const { switchChainAsync } = useSwitchChain();
+  const chainId = useChainId();
 
   const baseWallet = connectors.find((c) =>
     c.id === "farcasterMiniApp" || c.id === "farcaster" || c.id?.toLowerCase().includes("miniapp")
-  ) || findByName(["coinbaseWalletSDK", "coinbase"]);
+  ) || connectors.find((c) => c.name?.toLowerCase().includes("coinbase") || c.id === "coinbaseWalletSDK");
 
-  // İstenen sıra: MetaMask, OKX, Phantom, Rabby, Coinbase Wallet, Keplr, Trust
   const orderedOthers = [
     { match: ["metamask"], color: "#f6851b" },
     { match: ["okx"], color: "#000000" },
@@ -152,10 +151,6 @@ export default function Home() {
       color: w.color,
     }))
     .filter((w) => w.connector);
-  const { disconnect } = useDisconnect();
-  const { writeContractAsync } = useWriteContract();
-  const { switchChainAsync } = useSwitchChain();
-  const chainId = useChainId();
 
   const [screen, setScreen] = useState<"start" | "quiz" | "end" | "board" | "badges">("start");
   const [questions, setQuestions] = useState<QuizQ[]>(getRandomQuestions);
@@ -179,11 +174,12 @@ export default function Home() {
   const [claimError, setClaimError] = useState("");
   const [tutorialStep, setTutorialStep] = useState<number | null>(null);
   const [soundOn, setSoundOn] = useState(true);
+  const [totalPlayers, setTotalPlayers] = useState<number | null>(null);
 
   useEffect(() => {
     if (!isFrameReady) setFrameReady();
   }, [setFrameReady, isFrameReady]);
-// Ses tercihi
+
   useEffect(() => {
     if (localStorage.getItem("soundOff") === "1") setSoundOn(false);
   }, []);
@@ -197,7 +193,6 @@ export default function Home() {
       const g = ctx.createGain();
       o.connect(g);
       g.connect(ctx.destination);
-
       if (type === "correct") {
         o.frequency.setValueAtTime(880, ctx.currentTime);
         o.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime + 0.15);
@@ -220,7 +215,6 @@ export default function Home() {
         o.start();
         o.stop(ctx.currentTime + 0.08);
       } else if (type === "win") {
-        // Yükselen 3 ton
         [523, 659, 784].forEach((freq, i) => {
           const osc = ctx.createOscillator();
           const gain = ctx.createGain();
@@ -243,15 +237,13 @@ export default function Home() {
     setSoundOn(next);
     localStorage.setItem("soundOff", next ? "0" : "1");
   }
- useEffect(() => {
+
+  useEffect(() => {
     const today = new Date().toISOString().slice(0, 10);
     const lastPlayed = localStorage.getItem("lastPlayed");
     setStreak(parseInt(localStorage.getItem("streak") || "0"));
     if (lastPlayed === today) setPlayedToday(true);
-    // İlk kez gelen kullanıcıya tutorial göster
-    if (!localStorage.getItem("tutorialSeen")) {
-      setTutorialStep(0);
-    }
+    if (!localStorage.getItem("tutorialSeen")) setTutorialStep(0);
   }, []);
 
   function closeTutorial() {
@@ -259,7 +251,6 @@ export default function Home() {
     setTutorialStep(null);
   }
 
-  // Cüzdan bağlanınca zincirden "bugün kaydettim mi" kontrolü
   useEffect(() => {
     if (!address) {
       setPlayedTodayOnchain(false);
@@ -276,7 +267,6 @@ export default function Home() {
         const lastPlayedDay = Number(p[3]);
         const todayUTC = Math.floor(Date.now() / 86400000);
         setPlayedTodayOnchain(lastPlayedDay === todayUTC);
-        // Onchain streak'i de senkronla
         const chainStreak = Number(p[2]);
         if (chainStreak > 0) setStreak(chainStreak);
       } catch {
@@ -284,6 +274,19 @@ export default function Home() {
       }
     })();
   }, [address]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const count = await publicClient.readContract({
+          address: CONTRACT_ADDRESS as `0x${string}`,
+          abi: CONTRACT_ABI,
+          functionName: "getPlayerCount",
+        });
+        setTotalPlayers(Number(count));
+      } catch {}
+    })();
+  }, []);
 
   const nextQuestion = useCallback(() => {
     setSelected(null);
@@ -302,7 +305,7 @@ export default function Home() {
     }
   }, [qIndex, streak]);
 
-useEffect(() => {
+  useEffect(() => {
     if (screen !== "quiz" || selected !== null) return;
     if (timeLeft <= 0) {
       nextQuestion();
@@ -313,12 +316,20 @@ useEffect(() => {
     return () => clearTimeout(t);
   }, [timeLeft, screen, selected, nextQuestion]);
 
-  // Quiz bitince başarı sesi
   useEffect(() => {
     if (screen === "end") playSound("win");
   }, [screen]);
 
-function answer(i: number) {
+  function startGame() {
+    setQuestions(getRandomQuestions());
+    setQIndex(0);
+    setScore(0);
+    setSelected(null);
+    setTimeLeft(TIME_PER_Q);
+    setScreen("quiz");
+  }
+
+  function answer(i: number) {
     if (selected !== null) return;
     setSelected(i);
     const correct = i === questions[qIndex].c;
@@ -364,14 +375,12 @@ function answer(i: number) {
         const lastPlayedDay = Number(p[3]);
         const todayUTC = Math.floor(Date.now() / 86400000);
         if (lastPlayedDay === todayUTC) {
-          setTxError("Already saved today! Come back tomorrow.");
+          setTxError("Already saved today. Come back tomorrow.");
           setTxStatus("error");
           return;
         }
       }
-      if (walletChainId !== base.id) {
-        await switchChainAsync({ chainId: base.id });
-      }
+      if (walletChainId !== base.id) await switchChainAsync({ chainId: base.id });
       const hash = await writeContractAsync({
         address: CONTRACT_ADDRESS as `0x${string}`,
         abi: CONTRACT_ABI,
@@ -383,7 +392,7 @@ function answer(i: number) {
       setTxStatus("done");
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : "Transaction failed";
-      setTxError(msg.includes("Already played") ? "Already saved today! Come back tomorrow." : msg.slice(0, 120));
+      setTxError(msg.includes("Already played") ? "Already saved today. Come back tomorrow." : msg.slice(0, 120));
       setTxStatus("error");
     }
   }
@@ -397,7 +406,7 @@ function answer(i: number) {
         abi: CONTRACT_ABI,
         functionName: "getPlayerCount",
       });
-const n = Number(count);
+      const n = Number(count);
       const rows: LeaderRow[] = [];
       for (let i = 0; i < n && i < 100; i++) {
         try {
@@ -427,8 +436,6 @@ const n = Number(count);
     setBadgesLoading(true);
     setClaimError("");
     try {
-      // Onchain streak'i oku
-      let chainStreak = 0;
       if (address) {
         const p = await publicClient.readContract({
           address: CONTRACT_ADDRESS as `0x${string}`,
@@ -436,11 +443,9 @@ const n = Number(count);
           functionName: "players",
           args: [address],
         });
-        chainStreak = Number(p[2]);
+        const chainStreak = Number(p[2]);
         setOnchainStreak(chainStreak);
-
-        // Her rozet için balance kontrol
-     const balances: bigint[] = [];
+        const balances: bigint[] = [];
         for (const b of BADGES) {
           const bal = await publicClient.readContract({
             address: BADGES_ADDRESS as `0x${string}`,
@@ -463,9 +468,7 @@ const n = Number(count);
     setClaimingId(badgeId);
     setClaimError("");
     try {
-      if (walletChainId !== base.id) {
-        await switchChainAsync({ chainId: base.id });
-      }
+      if (walletChainId !== base.id) await switchChainAsync({ chainId: base.id });
       await writeContractAsync({
         address: BADGES_ADDRESS as `0x${string}`,
         abi: BADGES_ABI,
@@ -473,7 +476,6 @@ const n = Number(count);
         args: [BigInt(badgeId)],
         chainId: base.id,
       });
-      // Yenile
       await loadBadges();
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : "Claim failed";
@@ -483,278 +485,585 @@ const n = Number(count);
   }
 
   function shortAddr(a: string) {
-    return a.slice(0, 6) + "..." + a.slice(-4);
+    return a.slice(0, 6) + "…" + a.slice(-4);
   }
 
-  function optionStyle(i: number): CSSProperties {
-    let bg = "#1f2937";
-    let opacity = 1;
-    if (selected !== null) {
-      if (i === questions[qIndex].c) bg = "#16a34a";
-      else if (i === selected) bg = "#dc2626";
-      else opacity = 0.5;
-    }
-    return { ...S.option, background: bg, opacity };
-  }
+  const styles: Record<string, CSSProperties> = {
+    root: {
+      minHeight: "100vh",
+      background: T.bg,
+      color: T.text,
+      fontFamily: T.sans,
+      display: "flex",
+      flexDirection: "column",
+      backgroundImage: `radial-gradient(circle at 15% 0%, rgba(0,82,255,0.08), transparent 40%), radial-gradient(circle at 85% 100%, rgba(255,230,109,0.05), transparent 40%)`,
+    },
+    header: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "16px 20px",
+      borderBottom: `1px solid ${T.border}`,
+      fontFamily: T.mono,
+    },
+    brand: {
+      fontFamily: T.mono,
+      fontWeight: 700,
+      fontSize: 14,
+      letterSpacing: "0.15em",
+      textTransform: "uppercase" as const,
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+    },
+    brandDot: {
+      width: 8,
+      height: 8,
+      background: T.base,
+      boxShadow: `0 0 12px ${T.base}`,
+    },
+    headerRight: { display: "flex", gap: 8, alignItems: "center" },
+    iconBtn: {
+      background: "transparent",
+      color: T.textDim,
+      border: `1px solid ${T.border}`,
+      width: 36,
+      height: 36,
+      fontSize: 16,
+      cursor: "pointer",
+      borderRadius: 4,
+      fontFamily: T.mono,
+    },
+    walletPill: {
+      background: "transparent",
+      color: T.textDim,
+      border: `1px solid ${T.border}`,
+      padding: "0 12px",
+      height: 36,
+      fontSize: 12,
+      fontFamily: T.mono,
+      fontWeight: 600,
+      cursor: "pointer",
+      borderRadius: 4,
+      letterSpacing: "0.05em",
+    },
+    main: {
+      flex: 1,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: 24,
+    },
+    card: { width: "100%", maxWidth: 440 },
+    eyebrow: {
+      fontFamily: T.mono,
+      fontSize: 11,
+      letterSpacing: "0.25em",
+      textTransform: "uppercase" as const,
+      color: T.textDim,
+      marginBottom: 12,
+    },
+    title: {
+      fontFamily: T.mono,
+      fontSize: 56,
+      fontWeight: 700,
+      lineHeight: 0.95,
+      letterSpacing: "-0.02em",
+      margin: 0,
+      marginBottom: 20,
+    },
+    titleAccent: { color: T.accent },
+    lede: {
+      fontSize: 16,
+      lineHeight: 1.5,
+      color: T.textDim,
+      marginBottom: 32,
+      maxWidth: 360,
+    },
+    primaryBtn: {
+      width: "100%",
+      background: T.base,
+      color: "#fff",
+      border: "none",
+      padding: "18px 24px",
+      borderRadius: 4,
+      fontSize: 14,
+      fontWeight: 700,
+      fontFamily: T.mono,
+      letterSpacing: "0.15em",
+      textTransform: "uppercase" as const,
+      cursor: "pointer",
+      marginBottom: 12,
+      transition: "transform 0.1s, background 0.2s",
+    },
+    ghostBtn: {
+      width: "100%",
+      background: "transparent",
+      color: T.text,
+      border: `1px solid ${T.border}`,
+      padding: "16px 24px",
+      borderRadius: 4,
+      fontSize: 13,
+      fontWeight: 600,
+      fontFamily: T.mono,
+      letterSpacing: "0.12em",
+      textTransform: "uppercase" as const,
+      cursor: "pointer",
+      marginBottom: 10,
+    },
+    meta: {
+      fontFamily: T.mono,
+      fontSize: 11,
+      color: T.textDimmer,
+      letterSpacing: "0.1em",
+      textTransform: "uppercase" as const,
+    },
+    streakBox: {
+      display: "inline-flex",
+      alignItems: "center",
+      gap: 8,
+      padding: "6px 12px",
+      border: `1px solid ${T.borderHi}`,
+      borderRadius: 4,
+      marginBottom: 24,
+      fontFamily: T.mono,
+      fontSize: 12,
+      color: T.accent,
+      letterSpacing: "0.1em",
+    },
+    footer: {
+      padding: "12px 20px",
+      borderTop: `1px solid ${T.border}`,
+      display: "flex",
+      justifyContent: "space-between",
+      fontFamily: T.mono,
+      fontSize: 10,
+      color: T.textDimmer,
+      letterSpacing: "0.15em",
+      textTransform: "uppercase" as const,
+    },
+  };
 
   return (
-    <main style={S.main}>
- <div style={{ position: "fixed", top: 16, right: 16, display: "flex", gap: 8, zIndex: 50 }}>
-        {isConnected && address && (
-          <button
-            onClick={() => disconnect()}
-            style={{ background: "rgba(31,41,55,0.7)", color: "#fff", border: "none", borderRadius: 99, padding: "0 14px", height: 40, fontSize: 13, fontWeight: 600, cursor: "pointer" }}
-            title="Disconnect wallet"
-          >
-            {shortAddr(address)} ✕
+    <div style={styles.root}>
+      <header style={styles.header}>
+        <div style={styles.brand}>
+          <div style={styles.brandDot} />
+          <span>BASE_QUIZ</span>
+          <span style={{ color: T.textDimmer, marginLeft: 8 }}>v1.0</span>
+        </div>
+        <div style={styles.headerRight}>
+          {isConnected && address && (
+            <button style={styles.walletPill} onClick={() => disconnect()} title="Disconnect">
+              {shortAddr(address)} ×
+            </button>
+          )}
+          <button style={styles.iconBtn} onClick={toggleSound} title={soundOn ? "Mute" : "Unmute"}>
+            {soundOn ? "♪" : "×"}
           </button>
-        )}
-        <button
-          onClick={toggleSound}
-          style={{ background: "rgba(31,41,55,0.7)", color: "#fff", border: "none", borderRadius: 99, width: 40, height: 40, fontSize: 20, cursor: "pointer" }}
-          title={soundOn ? "Mute" : "Unmute"}
-        >
-          {soundOn ? "🔊" : "🔇"}
-        </button>
-      </div>
-      {screen === "start" && (
-        <div style={S.card}>
-          <h1 style={S.title}>🧠 Base Quiz</h1>
-          <p style={S.sub}>5 daily questions. Answer fast, score big!</p>
-          {streak > 0 && <p style={S.streak}>🔥 {streak}-day streak</p>}
-  {playedToday || playedTodayOnchain ? (
-            <p style={{ color: "#facc15", marginBottom: 16 }}>
-              {playedTodayOnchain ? "✅ Score saved today! Come back tomorrow 🔥" : "You already played today! New questions tomorrow 👀"}
+        </div>
+      </header>
+
+      <main style={styles.main}>
+        {screen === "start" && (
+          <div style={styles.card}>
+            <div style={styles.eyebrow}>Onchain trivia · Base mainnet</div>
+            <h1 style={styles.title}>
+              Daily<br />
+              <span style={styles.titleAccent}>crypto</span><br />
+              quiz.
+            </h1>
+            <p style={styles.lede}>
+              Five questions. Fifteen seconds each. Answer fast, save your score to the chain, climb the global board.
             </p>
-          ) : (
-            <button style={S.bigBtn} onClick={() => { setQuestions(getRandomQuestions()); setQIndex(0); setScore(0); setSelected(null); setTimeLeft(TIME_PER_Q); setScreen("quiz"); }}>Start</button>
-          )}
-          <button style={S.grayBtn} onClick={loadBoard}>🏆 Leaderboard</button>
-          <button style={S.badgeBtn} onClick={loadBadges}>🏅 My Badges</button>
-        </div>
-      )}
 
-      {screen === "quiz" && (
-        <div style={S.card}>
-          <div style={S.topRow}>
-            <span>Question {qIndex + 1}/{QUIZ_SIZE}</span>
-            <span>Score: {score}</span>
-          </div>
-          <div style={S.barBg}>
-            <div style={{ background: "#3b82f6", height: 8, borderRadius: 99, width: `${(timeLeft / TIME_PER_Q) * 100}%`, transition: "width 1s linear" }} />
-          </div>
-          <h2 style={S.question}>{questions[qIndex].q}</h2>
-          {selected !== null && (
-            <p style={{ fontWeight: 700, marginBottom: 12, color: selected === questions[qIndex].c ? "#4ade80" : "#f87171" }}>
-              {selected === questions[qIndex].c ? "✅ Correct!" : "❌ Wrong!"}
-            </p>
-          )}
-          <div>
-            {questions[qIndex].a.map((opt, i) => (
-              <button key={i} style={optionStyle(i)} onClick={() => answer(i)}>{opt}</button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {screen === "end" && (
-        <div style={S.card}>
-          <h1 style={{ fontSize: 30, fontWeight: 800 }}>🎉 Done!</h1>
-          <p style={S.score}>{score}</p>
-          <p style={S.sub}>points</p>
-          <p style={S.streak}>🔥 Streak: {streak} days</p>
-
-{!isConnected ? (
-            <div style={{ marginBottom: 12 }}>
-              {baseWallet && (
-                <button
-                  style={{ ...S.saveBtn, background: "linear-gradient(90deg, #0052ff, #2563eb)", marginBottom: 28 }}
-                  onClick={() => connect({ connector: baseWallet })}
-                >
-                  Base Wallet
-                </button>
-              )}
-              {orderedOthers.map((w) => (
-                <button
-                  key={w.connector!.uid}
-                  style={{ ...S.saveBtn, background: w.color, marginBottom: 8 }}
-                  onClick={() => connect({ connector: w.connector! })}
-                >
-                  {w.connector!.name}
-                </button>
-              ))}
-            </div>
-          ) : txStatus === "idle" ? (
-            <button style={S.saveBtn} onClick={saveOnchain}>💾 Save Score Onchain</button>
-          ) : txStatus === "pending" ? (
-            <button style={{ ...S.saveBtn, opacity: 0.6 }} disabled>⏳ Confirm in wallet...</button>
-          ) : txStatus === "done" ? (
-            <div style={{ marginBottom: 12 }}>
-              <p style={{ color: "#4ade80", fontWeight: 700 }}>✅ Saved onchain!</p>
-              <a href={`https://basescan.org/tx/${txHash}`} target="_blank" style={{ color: "#60a5fa", fontSize: 13 }}>
-                View transaction ↗
-              </a>
-            </div>
-          ) : (
-            <div style={{ marginBottom: 12 }}>
-              <p style={{ color: "#f87171", fontSize: 14 }}>{txError}</p>
-              <button style={{ ...S.grayBtn, marginTop: 8 }} onClick={saveOnchain}>Try again</button>
-            </div>
-          )}
-
-          {!shareMenuOpen ? (
-            <button style={S.shareBtn} onClick={() => setShareMenuOpen(true)}>📣 Share Your Score</button>
-          ) : (
-            <div style={{ marginBottom: 12 }}>
-              <button style={{ ...S.shareBtn, background: "#8a63d2", marginBottom: 8 }} onClick={shareFarcaster}>🟣 Share on Farcaster</button>
-              <button style={{ ...S.shareBtn, background: "#1d9bf0", marginBottom: 8 }} onClick={shareTwitter}>🐦 Share on X</button>
-              <button style={S.grayBtn} onClick={shareCopy}>📋 Copy text</button>
-            </div>
-          )}
-
-          <button style={S.badgeBtn} onClick={loadBadges}>🏅 My Badges</button>
-          <button style={S.grayBtn} onClick={loadBoard}>🏆 Leaderboard</button>
-        </div>
-      )}
-
-      {screen === "board" && (
-        <div style={S.card}>
-          <h1 style={{ fontSize: 30, fontWeight: 800, marginBottom: 20 }}>🏆 Leaderboard</h1>
-          {boardLoading ? (
-            <p style={S.sub}>Loading from chain...</p>
-          ) : board.length === 0 ? (
-            <p style={S.sub}>No scores yet. Be the first!</p>
-          ) : (
-            board.map((r, i) => (
-              <div key={r.addr} style={{ ...S.row, border: address && r.addr.toLowerCase() === address.toLowerCase() ? "1px solid #3b82f6" : "none" }}>
-                <span style={{ fontWeight: 700 }}>
-                  {i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : `${i + 1}.`} {shortAddr(r.addr)}
-                </span>
-                <span style={{ color: "#93b4f5" }}>{r.totalScore} pts 🔥{r.streak}</span>
+            {streak > 0 && (
+              <div style={styles.streakBox}>
+                <span>🔥</span>
+                <span>STREAK · {streak} {streak === 1 ? "day" : "days"}</span>
               </div>
-            ))
-          )}
-          <button style={{ ...S.grayBtn, marginTop: 12 }} onClick={() => setScreen("start")}>← Back</button>
-        </div>
-      )}
-{tutorialStep !== null && (
-        <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 100 }}>
-          <div style={{ ...S.card, background: "#0a1635", padding: 28, borderRadius: 20, border: "1px solid #1f2937" }}>
+            )}
+
+            {playedToday || playedTodayOnchain ? (
+              <div style={{ ...styles.ghostBtn, background: T.surface, cursor: "default", color: T.accent }}>
+                ✓ {playedTodayOnchain ? "Score saved today" : "Played today"} — back tomorrow
+              </div>
+            ) : (
+              <button
+                style={styles.primaryBtn}
+                onClick={startGame}
+                onMouseDown={(e) => (e.currentTarget.style.transform = "translateY(1px)")}
+                onMouseUp={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+              >
+                ▶ Start round
+              </button>
+            )}
+            <button style={styles.ghostBtn} onClick={loadBoard}>Leaderboard</button>
+            <button style={styles.ghostBtn} onClick={loadBadges}>Streak badges</button>
+          </div>
+        )}
+
+        {screen === "quiz" && (
+          <div style={{ ...styles.card, position: "relative", maxWidth: 560 }}>
+            <div
+              style={{
+                position: "absolute",
+                top: -40,
+                right: -20,
+                fontFamily: T.mono,
+                fontSize: 240,
+                fontWeight: 700,
+                lineHeight: 1,
+                color: T.border,
+                opacity: 0.5,
+                pointerEvents: "none",
+                userSelect: "none",
+                zIndex: 0,
+              }}
+            >
+              {String(qIndex + 1).padStart(2, "0")}
+            </div>
+
+            <div style={{ position: "relative", zIndex: 1 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                <span style={styles.meta}>Q{String(qIndex + 1).padStart(2, "0")} / {String(QUIZ_SIZE).padStart(2, "0")}</span>
+                <span
+                  style={{
+                    fontFamily: T.mono,
+                    fontSize: 28,
+                    fontWeight: 700,
+                    color: timeLeft <= 3 ? T.wrong : T.text,
+                    letterSpacing: "-0.02em",
+                    fontVariantNumeric: "tabular-nums",
+                  }}
+                >
+                  {String(timeLeft).padStart(2, "0")}s
+                </span>
+              </div>
+
+              <div style={{ width: "100%", height: 2, background: T.border, marginBottom: 32 }}>
+                <div
+                  style={{
+                    width: `${(timeLeft / TIME_PER_Q) * 100}%`,
+                    height: "100%",
+                    background: timeLeft <= 3 ? T.wrong : T.base,
+                    transition: "width 1s linear, background 0.3s",
+                  }}
+                />
+              </div>
+
+              <h2
+                style={{
+                  fontFamily: T.mono,
+                  fontSize: 28,
+                  fontWeight: 600,
+                  lineHeight: 1.25,
+                  letterSpacing: "-0.01em",
+                  marginBottom: 28,
+                  minHeight: 100,
+                }}
+              >
+                {questions[qIndex].q}
+              </h2>
+
+              {selected !== null && (
+                <p
+                  style={{
+                    fontFamily: T.mono,
+                    fontSize: 12,
+                    letterSpacing: "0.2em",
+                    color: selected === questions[qIndex].c ? T.correct : T.wrong,
+                    marginBottom: 16,
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {selected === questions[qIndex].c
+                    ? `✓ Correct · +${100 + timeLeft * 10}`
+                    : `✗ Wrong · answer was ${String.fromCharCode(65 + questions[qIndex].c)}`}
+                </p>
+              )}
+
+              {questions[qIndex].a.map((opt, i) => {
+                const isCorrect = i === questions[qIndex].c;
+                const isSelected = i === selected;
+                let bg = T.surface;
+                let borderColor = T.border;
+                let color = T.text;
+                let extraStyle: CSSProperties = {};
+
+                if (selected !== null) {
+                  if (isCorrect) {
+                    bg = "rgba(123, 255, 140, 0.12)";
+                    borderColor = T.correct;
+                    color = T.correct;
+                    extraStyle = { animation: "pulseGreen 0.4s ease" };
+                  } else if (isSelected) {
+                    bg = "rgba(255, 85, 119, 0.12)";
+                    borderColor = T.wrong;
+                    color = T.wrong;
+                    extraStyle = { animation: "shake 0.4s ease" };
+                  } else {
+                    bg = T.surface;
+                    borderColor = T.border;
+                    color = T.textDimmer;
+                  }
+                }
+
+                return (
+                  <button
+                    key={i}
+                    onClick={() => answer(i)}
+                    disabled={selected !== null}
+                    style={{
+                      width: "100%",
+                      background: bg,
+                      color,
+                      border: `1px solid ${borderColor}`,
+                      padding: "16px 20px",
+                      borderRadius: 4,
+                      textAlign: "left",
+                      fontSize: 15,
+                      marginBottom: 10,
+                      cursor: selected !== null ? "default" : "pointer",
+                      fontFamily: T.sans,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 16,
+                      transition: "border-color 0.2s, background 0.2s",
+                      ...extraStyle,
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily: T.mono,
+                        fontSize: 11,
+                        color: selected !== null && !isCorrect && !isSelected ? T.textDimmer : T.textDim,
+                        minWidth: 16,
+                      }}
+                    >
+                      {String.fromCharCode(65 + i)}
+                    </span>
+                    <span style={{ flex: 1 }}>{opt}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <style>{`
+              @keyframes pulseGreen {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.02); }
+                100% { transform: scale(1); }
+              }
+              @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-6px); }
+                75% { transform: translateX(6px); }
+              }
+            `}</style>
+          </div>
+        )}
+
+        {screen === "end" && (
+          <div style={styles.card}>
+            <p style={styles.eyebrow}>Round complete</p>
+            <h1 style={{ ...styles.title, fontSize: 88, color: T.accent }}>{score}</h1>
+            <p style={styles.meta}>points · streak {streak}</p>
+            <div style={{ marginTop: 32 }}>
+              {!isConnected ? (
+                <div>
+                  <p style={{ ...styles.eyebrow, marginBottom: 16 }}>Connect to save score</p>
+                  {baseWallet && (
+                    <button style={{ ...styles.primaryBtn, marginBottom: 24 }} onClick={() => connect({ connector: baseWallet })}>
+                      Base wallet
+                    </button>
+                  )}
+                  {orderedOthers.map((w) => (
+                    <button key={w.connector!.uid} style={{ ...styles.ghostBtn }} onClick={() => connect({ connector: w.connector! })}>
+                      {w.connector!.name}
+                    </button>
+                  ))}
+                </div>
+              ) : txStatus === "idle" ? (
+                <button style={styles.primaryBtn} onClick={saveOnchain}>Save score onchain</button>
+              ) : txStatus === "pending" ? (
+                <button style={{ ...styles.primaryBtn, opacity: 0.6 }} disabled>Confirming…</button>
+              ) : txStatus === "done" ? (
+                <div style={{ marginBottom: 12 }}>
+                  <p style={{ color: T.correct, fontFamily: T.mono, fontSize: 13, marginBottom: 8 }}>✓ SAVED ONCHAIN</p>
+                  <a href={`https://basescan.org/tx/${txHash}`} target="_blank" style={{ color: T.base, fontSize: 12, fontFamily: T.mono }}>
+                    View tx →
+                  </a>
+                </div>
+              ) : (
+                <div style={{ marginBottom: 12 }}>
+                  <p style={{ color: T.wrong, fontSize: 13, fontFamily: T.mono }}>{txError}</p>
+                  <button style={styles.ghostBtn} onClick={saveOnchain}>Try again</button>
+                </div>
+              )}
+              {!shareMenuOpen ? (
+                <button style={styles.ghostBtn} onClick={() => setShareMenuOpen(true)}>Share score</button>
+              ) : (
+                <div>
+                  <button style={styles.ghostBtn} onClick={shareFarcaster}>On Farcaster</button>
+                  <button style={styles.ghostBtn} onClick={shareTwitter}>On X</button>
+                  <button style={styles.ghostBtn} onClick={shareCopy}>Copy text</button>
+                </div>
+              )}
+              <button style={styles.ghostBtn} onClick={loadBadges}>Streak badges</button>
+              <button style={styles.ghostBtn} onClick={loadBoard}>Leaderboard</button>
+            </div>
+          </div>
+        )}
+
+        {screen === "board" && (
+          <div style={styles.card}>
+            <p style={styles.eyebrow}>Top players · all-time</p>
+            <h1 style={{ ...styles.title, fontSize: 40, marginBottom: 24 }}>Leaderboard</h1>
+            {boardLoading ? (
+              <p style={styles.meta}>Reading chain…</p>
+            ) : board.length === 0 ? (
+              <p style={styles.meta}>No scores yet. Be first.</p>
+            ) : (
+              board.map((r, i) => (
+                <div
+                  key={r.addr}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    padding: "14px 16px",
+                    border: `1px solid ${address && r.addr.toLowerCase() === address.toLowerCase() ? T.base : T.border}`,
+                    borderRadius: 4,
+                    marginBottom: 8,
+                    fontFamily: T.mono,
+                    fontSize: 13,
+                  }}
+                >
+                  <span><span style={{ color: T.textDim, marginRight: 12 }}>{String(i + 1).padStart(2, "0")}</span>{shortAddr(r.addr)}</span>
+                  <span style={{ color: T.accent }}>{r.totalScore} · 🔥{r.streak}</span>
+                </div>
+              ))
+            )}
+            <button style={{ ...styles.ghostBtn, marginTop: 16 }} onClick={() => setScreen("start")}>← Back</button>
+          </div>
+        )}
+
+        {screen === "badges" && (
+          <div style={styles.card}>
+            <p style={styles.eyebrow}>Streak NFTs · Base mainnet</p>
+            <h1 style={{ ...styles.title, fontSize: 40, marginBottom: 24 }}>Badges</h1>
+            {!isConnected ? (
+              <div>
+                <p style={{ ...styles.meta, marginBottom: 16 }}>Connect to view badges</p>
+                {baseWallet && (
+                  <button style={{ ...styles.primaryBtn, marginBottom: 24 }} onClick={() => connect({ connector: baseWallet })}>
+                    Base wallet
+                  </button>
+                )}
+                {orderedOthers.map((w) => (
+                  <button key={w.connector!.uid} style={styles.ghostBtn} onClick={() => connect({ connector: w.connector! })}>
+                    {w.connector!.name}
+                  </button>
+                ))}
+              </div>
+            ) : badgesLoading ? (
+              <p style={styles.meta}>Reading chain…</p>
+            ) : (
+              <>
+                <p style={{ ...styles.streakBox, marginBottom: 24 }}>🔥 ONCHAIN STREAK · {onchainStreak}</p>
+                {claimError && <p style={{ color: T.wrong, fontSize: 12, marginBottom: 12, fontFamily: T.mono }}>{claimError}</p>}
+                {BADGES.map((b, i) => {
+                  const hasIt = owned[i];
+                  const canClaim = !hasIt && onchainStreak >= b.days;
+                  const isClaiming = claimingId === b.id;
+                  return (
+                    <div
+                      key={b.id}
+                      style={{
+                        padding: 20,
+                        border: `1px solid ${hasIt ? T.correct : canClaim ? T.accent : T.border}`,
+                        borderRadius: 4,
+                        marginBottom: 10,
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        opacity: hasIt || canClaim ? 1 : 0.6,
+                      }}
+                    >
+                      <div>
+                        <div style={{ fontFamily: T.mono, fontSize: 11, color: T.textDim, letterSpacing: "0.15em" }}>TIER {String(b.id).padStart(2, "0")}</div>
+                        <div style={{ fontFamily: T.mono, fontSize: 18, fontWeight: 700, color: b.color }}>{b.emoji} {b.name}</div>
+                        <div style={{ fontFamily: T.mono, fontSize: 11, color: T.textDimmer, marginTop: 4 }}>{b.days}-DAY STREAK</div>
+                      </div>
+                      <div>
+                        {hasIt ? (
+                          <span style={{ color: T.correct, fontFamily: T.mono, fontSize: 11, letterSpacing: "0.15em" }}>✓ OWNED</span>
+                        ) : canClaim ? (
+                          <button
+                            style={{ ...styles.primaryBtn, width: "auto", padding: "10px 16px", marginBottom: 0, fontSize: 11 }}
+                            onClick={() => claimBadge(b.id)}
+                            disabled={isClaiming}
+                          >
+                            {isClaiming ? "…" : "CLAIM"}
+                          </button>
+                        ) : (
+                          <span style={{ color: T.textDimmer, fontFamily: T.mono, fontSize: 11 }}>{b.days - onchainStreak}d left</span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </>
+            )}
+            <button style={{ ...styles.ghostBtn, marginTop: 16 }} onClick={() => setScreen("start")}>← Back</button>
+          </div>
+        )}
+      </main>
+
+      <footer style={styles.footer}>
+        <span>BLOCK_DATA · BASE_MAINNET</span>
+        <span>{totalPlayers !== null ? `${totalPlayers} PLAYERS_ONCHAIN` : "···"}</span>
+      </footer>
+
+      {tutorialStep !== null && (
+        <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.92)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 100 }}>
+          <div style={{ ...styles.card, background: T.surface, padding: 32, border: `1px solid ${T.border}`, borderRadius: 4 }}>
+            <p style={styles.eyebrow}>{String(tutorialStep + 1).padStart(2, "0")} / 03</p>
             {tutorialStep === 0 && (
               <>
-                <div style={{ fontSize: 80, marginBottom: 16 }}>🧠</div>
-                <h2 style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>Welcome to Base Quiz!</h2>
-                <p style={{ color: "#93b4f5", marginBottom: 24, lineHeight: 1.6 }}>
-                  A daily crypto trivia game on Base. Test your knowledge, build streaks, and compete with players worldwide.
-                </p>
+                <h2 style={{ ...styles.title, fontSize: 36 }}>Welcome.</h2>
+                <p style={styles.lede}>A daily crypto trivia game on Base. Test your knowledge, build streaks, compete worldwide.</p>
               </>
             )}
             {tutorialStep === 1 && (
               <>
-                <div style={{ fontSize: 80, marginBottom: 16 }}>⚡</div>
-                <h2 style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>5 Questions Daily</h2>
-                <p style={{ color: "#93b4f5", marginBottom: 16, lineHeight: 1.6 }}>
-                  Answer fast — the quicker you respond, the more points you get.
-                </p>
-                <p style={{ color: "#93b4f5", marginBottom: 24, lineHeight: 1.6 }}>
-                  Save your score onchain to appear on the global leaderboard 🏆
-                </p>
+                <h2 style={{ ...styles.title, fontSize: 36 }}>5 questions.<br />Daily.</h2>
+                <p style={styles.lede}>Answer fast — quicker means more points. Save your score onchain to appear on the global leaderboard.</p>
               </>
             )}
             {tutorialStep === 2 && (
               <>
-                <div style={{ fontSize: 80, marginBottom: 16 }}>🏅</div>
-                <h2 style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>Earn NFT Badges</h2>
-                <p style={{ color: "#93b4f5", marginBottom: 16, lineHeight: 1.6 }}>
-                  Keep your streak alive and claim onchain NFT badges:
-                </p>
-                <p style={{ color: "#fff", marginBottom: 24, lineHeight: 1.8, textAlign: "left" }}>
-                  🥉 Bronze — 3 days<br />
-                  🥈 Silver — 7 days<br />
-                  🥇 Gold — 30 days<br />
-                  💎 Diamond — 100 days
-                </p>
+                <h2 style={{ ...styles.title, fontSize: 36 }}>Earn<br />NFT badges.</h2>
+                <p style={styles.lede}>Keep your streak alive and claim onchain NFTs: Bronze (3d), Silver (7d), Gold (30d), Diamond (100d).</p>
               </>
             )}
-
-            {/* Dots */}
-            <div style={{ display: "flex", justifyContent: "center", gap: 8, marginBottom: 20 }}>
+            <div style={{ display: "flex", gap: 4, marginBottom: 24 }}>
               {[0, 1, 2].map((i) => (
-                <div key={i} style={{ width: 8, height: 8, borderRadius: 99, background: tutorialStep === i ? "#3b82f6" : "#374151" }} />
+                <div key={i} style={{ flex: 1, height: 2, background: tutorialStep === i ? T.base : T.border }} />
               ))}
             </div>
-
             {tutorialStep < 2 ? (
               <>
-                <button style={S.bigBtn} onClick={() => setTutorialStep(tutorialStep + 1)}>Next →</button>
-                <button style={{ ...S.grayBtn, marginBottom: 0 }} onClick={closeTutorial}>Skip</button>
+                <button style={styles.primaryBtn} onClick={() => setTutorialStep(tutorialStep + 1)}>Next →</button>
+                <button style={styles.ghostBtn} onClick={closeTutorial}>Skip</button>
               </>
             ) : (
-              <button style={S.bigBtn} onClick={closeTutorial}>Let&apos;s play! 🚀</button>
+              <button style={styles.primaryBtn} onClick={closeTutorial}>Let&apos;s play →</button>
             )}
           </div>
         </div>
       )}
-
-      {screen === "badges" && (
-      
-        <div style={S.card}>
-          <h1 style={{ fontSize: 30, fontWeight: 800, marginBottom: 8 }}>🏅 Badges</h1>
-          <p style={S.sub}>Streak NFTs on Base</p>
-
-          {!isConnected ? (
-            <>
-<p style={{ color: "#facc15", marginBottom: 16 }}>Connect wallet to see your badges</p>
-              {baseWallet && (
-                <button
-                  style={{ ...S.saveBtn, background: "linear-gradient(90deg, #0052ff, #2563eb)", marginBottom: 28 }}
-                  onClick={() => connect({ connector: baseWallet })}
-                >
-                  Base Wallet
-                </button>
-              )}
-              {orderedOthers.map((w) => (
-                <button
-                  key={w.connector!.uid}
-                  style={{ ...S.saveBtn, background: w.color, marginBottom: 8 }}
-                  onClick={() => connect({ connector: w.connector! })}
-                >
-                  {w.connector!.name}
-                </button>
-              ))}
-            </>
-          ) : badgesLoading ? (
-            <p style={S.sub}>Loading from chain...</p>
-          ) : (
-            <>
-              <p style={{ color: "#fb923c", marginBottom: 16, fontWeight: 600 }}>🔥 Onchain streak: {onchainStreak} days</p>
-              {claimError && <p style={{ color: "#f87171", fontSize: 13, marginBottom: 12 }}>{claimError}</p>}
-              {BADGES.map((b, i) => {
-                const hasIt = owned[i];
-                const canClaim = !hasIt && onchainStreak >= b.days;
-                const isClaiming = claimingId === b.id;
-                return (
-                  <div key={b.id} style={{ ...S.badgeCard, opacity: hasIt || canClaim ? 1 : 0.5 }}>
-                    <div style={S.badgeEmoji}>{b.emoji}</div>
-                    <div style={{ fontWeight: 700, fontSize: 18, color: b.color }}>{b.name}</div>
-                    <div style={{ color: "#93b4f5", fontSize: 13, marginBottom: 10 }}>{b.days}-day streak required</div>
-                    {hasIt ? (
-                      <p style={{ color: "#4ade80", fontWeight: 700 }}>✅ Owned</p>
-                    ) : canClaim ? (
-                      <button style={{ ...S.saveBtn, marginBottom: 0 }} onClick={() => claimBadge(b.id)} disabled={isClaiming}>
-                        {isClaiming ? "⏳ Claiming..." : "Claim 🎁"}
-                      </button>
-                    ) : (
-                      <p style={{ color: "#6b7280", fontSize: 13 }}>{b.days - onchainStreak} more days to go</p>
-                    )}
-                  </div>
-                );
-              })}
-            </>
-          )}
-          <button style={{ ...S.grayBtn, marginTop: 12 }} onClick={() => setScreen("start")}>← Back</button>
-        </div>
-      )}
-    </main>
+    </div>
   );
 }

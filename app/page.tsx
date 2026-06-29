@@ -4,7 +4,25 @@ import { useMiniKit, useComposeCast } from "@coinbase/onchainkit/minikit";
 import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";
 import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
+import { namehash } from "viem/ens";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
+
+// Basenames reverse resolution on Base mainnet (L2 Resolver)
+const L2_RESOLVER_ADDRESS = "0xC6d566A56A1aFf6508b41f6c90ff131615583BCD";
+const L2_RESOLVER_ABI = [
+  {
+    inputs: [{ internalType: "bytes32", name: "node", type: "bytes32" }],
+    name: "name",
+    outputs: [{ internalType: "string", name: "", type: "string" }],
+    stateMutability: "view",
+    type: "function",
+  },
+] as const;
+
+// Base mainnet coinType = (0x80000000 | 8453) >>> 0 = 0x80002105
+function reverseNode(addr: string): `0x${string}` {
+  return namehash(`${addr.toLowerCase().slice(2)}.80002105.reverse`);
+}
 
 const QUESTIONS = [
   { q: "Which company developed Base?", a: ["Binance", "Coinbase", "Kraken", "OKX"], c: 1 },
@@ -97,7 +115,7 @@ const publicClient = createPublicClient({
   chain: base,
   transport: http(process.env.NEXT_PUBLIC_RPC_URL),
 });
-type LeaderRow = { addr: string; bestScore: number; totalScore: number; streak: number };
+type LeaderRow = { addr: string; bestScore: number; totalScore: number; streak: number; name?: string | null };
 type QuizQ = { q: string; a: string[]; c: number };
 
 function shuffle<T>(arr: T[]): T[] {
@@ -397,6 +415,20 @@ export default function Home() {
     }
   }
 
+  async function resolveBasename(addr: string): Promise<string | null> {
+    try {
+      const name = await publicClient.readContract({
+        address: L2_RESOLVER_ADDRESS as `0x${string}`,
+        abi: L2_RESOLVER_ABI,
+        functionName: "name",
+        args: [reverseNode(addr)],
+      });
+      return name && name.length > 0 ? name : null;
+    } catch {
+      return null;
+    }
+  }
+
   async function loadBoard() {
     setScreen("board");
     setBoardLoading(true);
@@ -423,7 +455,18 @@ export default function Home() {
         await new Promise((r) => setTimeout(r, 150));
       }
       rows.sort((a, b) => b.totalScore - a.totalScore);
-      setBoard(rows.slice(0, 10));
+      const top = rows.slice(0, 10);
+      setBoard(top);
+      setBoardLoading(false);
+      // Resolve Basenames for the shown rows, sequentially to respect RPC limits
+      for (const row of top) {
+        const name = await resolveBasename(row.addr);
+        if (name) {
+          setBoard((prev) => prev.map((r) => (r.addr === row.addr ? { ...r, name } : r)));
+        }
+        await new Promise((r) => setTimeout(r, 150));
+      }
+      return;
     } catch (e) {
       console.error("Leaderboard error:", e);
       setBoard([]);
@@ -940,7 +983,7 @@ export default function Home() {
                     fontSize: 13,
                   }}
                 >
-                  <span><span style={{ color: T.textDim, marginRight: 12 }}>{String(i + 1).padStart(2, "0")}</span>{shortAddr(r.addr)}</span>
+                  <span><span style={{ color: T.textDim, marginRight: 12 }}>{String(i + 1).padStart(2, "0")}</span>{r.name || shortAddr(r.addr)}</span>
                   <span style={{ color: T.accent }}>{r.totalScore} · 🔥{r.streak}</span>
                 </div>
               ))

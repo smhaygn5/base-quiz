@@ -86,6 +86,10 @@ const QUIZ_SIZE = 5;
 const TIME_PER_Q = 15;
 const APP_URL = "https://base-quiz-v5is.vercel.app";
 
+// Base Builder Code (bc_tajhkats) — appended as a calldata suffix so onchain
+// transactions are attributed to this builder for Base Builder Rewards.
+const BUILDER_CODE_SUFFIX = "0x62635f74616a686b6174730b0080218021802180218021802180218021" as const;
+
 const BADGES = [
   { id: 1, name: "Bronze", emoji: "🥉", days: 3, color: "#cd7f32" },
   { id: 2, name: "Silver", emoji: "🥈", days: 7, color: "#c0c0c0" },
@@ -405,6 +409,7 @@ export default function Home() {
         functionName: "submitScore",
         args: [BigInt(score)],
         chainId: base.id,
+        dataSuffix: BUILDER_CODE_SUFFIX,
       });
       setTxHash(hash);
       setTxStatus("done");
@@ -518,6 +523,7 @@ export default function Home() {
         functionName: "claim",
         args: [BigInt(badgeId)],
         chainId: base.id,
+        dataSuffix: BUILDER_CODE_SUFFIX,
       });
       await loadBadges();
     } catch (e: unknown) {

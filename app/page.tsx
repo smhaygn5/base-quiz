@@ -24,7 +24,7 @@ function reverseNode(addr: string): `0x${string}` {
   return namehash(`${addr.toLowerCase().slice(2)}.80002105.reverse`);
 }
 
-const QUESTIONS = [
+const CRYPTO_Q = [
   { q: "Which company developed Base?", a: ["Binance", "Coinbase", "Kraken", "OKX"], c: 1 },
   { q: "Base is a Layer-2 of which network?", a: ["Bitcoin", "Solana", "Ethereum", "Avalanche"], c: 2 },
   { q: "Which tech stack does Base use?", a: ["OP Stack", "zkSync", "Polygon CDK", "Arbitrum Nitro"], c: 0 },
@@ -82,6 +82,121 @@ const QUESTIONS = [
   { q: "What's a multisig wallet?", a: ["A wallet with many tokens", "A wallet needing multiple signatures to approve tx", "A wallet on multiple chains", "A wallet with a long password"], c: 1 },
 ];
 
+const SPORTS_Q = [
+  { q: "How many players from one soccer team are on the field?", a: ["9", "10", "11", "12"], c: 2 },
+  { q: "In which sport would you perform a slam dunk?", a: ["Tennis", "Basketball", "Golf", "Cricket"], c: 1 },
+  { q: "How often are the Summer Olympics held?", a: ["Every 2 years", "Every 3 years", "Every 4 years", "Every 5 years"], c: 2 },
+  { q: "Which country has won the most FIFA World Cups?", a: ["Germany", "Italy", "Brazil", "Argentina"], c: 2 },
+  { q: "In tennis, what is a score of zero called?", a: ["Nil", "Love", "Duck", "Blank"], c: 1 },
+  { q: "How many rings are on the Olympic flag?", a: ["4", "5", "6", "7"], c: 1 },
+  { q: "Which sport uses a shuttlecock?", a: ["Squash", "Badminton", "Table tennis", "Volleyball"], c: 1 },
+  { q: "Usain Bolt is famous for which sport?", a: ["Swimming", "Sprinting", "Cycling", "Boxing"], c: 1 },
+  { q: "How many points is a touchdown worth in American football?", a: ["3", "6", "7", "2"], c: 1 },
+  { q: "The Tour de France is a competition in which sport?", a: ["Running", "Cycling", "Rowing", "Sailing"], c: 1 },
+  { q: "Which country hosts the Wimbledon tennis tournament?", a: ["USA", "France", "England", "Australia"], c: 2 },
+  { q: "Michael Jordan is a legend of which sport?", a: ["Baseball", "Basketball", "Football", "Hockey"], c: 1 },
+  { q: "How many rounds are in a standard championship boxing match?", a: ["10", "12", "15", "9"], c: 1 },
+  { q: "Which tennis Grand Slam is played on clay courts?", a: ["Wimbledon", "US Open", "French Open", "Australian Open"], c: 2 },
+  { q: "Formula 1 is a form of which racing?", a: ["Boat", "Car", "Horse", "Bicycle"], c: 1 },
+  { q: "A marathon is approximately how long?", a: ["21 km", "42 km", "50 km", "30 km"], c: 1 },
+  { q: "How many players are on a cricket team?", a: ["9", "10", "11", "12"], c: 2 },
+  { q: "The Masters Tournament is played in which sport?", a: ["Golf", "Tennis", "Polo", "Rugby"], c: 0 },
+];
+
+const ART_Q = [
+  { q: "Who painted the Mona Lisa?", a: ["Van Gogh", "Picasso", "Leonardo da Vinci", "Michelangelo"], c: 2 },
+  { q: "Who painted 'The Starry Night'?", a: ["Monet", "Van Gogh", "Dalí", "Rembrandt"], c: 1 },
+  { q: "In which museum is the Mona Lisa displayed?", a: ["The Met", "Louvre", "Prado", "Uffizi"], c: 1 },
+  { q: "Which artist famously cut off part of his own ear?", a: ["Picasso", "Van Gogh", "Dalí", "Monet"], c: 1 },
+  { q: "Who painted the ceiling of the Sistine Chapel?", a: ["Raphael", "Michelangelo", "Da Vinci", "Donatello"], c: 1 },
+  { q: "Which art movement is Pablo Picasso associated with?", a: ["Impressionism", "Cubism", "Surrealism", "Baroque"], c: 1 },
+  { q: "Salvador Dalí is known for which art style?", a: ["Realism", "Surrealism", "Pop Art", "Gothic"], c: 1 },
+  { q: "Who painted 'The Scream'?", a: ["Munch", "Klimt", "Warhol", "Cézanne"], c: 0 },
+  { q: "Which artist is famous for painting Campbell's soup cans?", a: ["Warhol", "Pollock", "Rothko", "Bacon"], c: 0 },
+  { q: "Who painted 'Girl with a Pearl Earring'?", a: ["Vermeer", "Rembrandt", "Rubens", "Bosch"], c: 0 },
+  { q: "Mixing blue and yellow paint makes which color?", a: ["Purple", "Green", "Orange", "Brown"], c: 1 },
+  { q: "Claude Monet was a leading figure of which movement?", a: ["Impressionism", "Cubism", "Dadaism", "Realism"], c: 0 },
+  { q: "The marble statue 'David' was sculpted by?", a: ["Bernini", "Michelangelo", "Rodin", "Donatello"], c: 1 },
+  { q: "Which of these is a primary color?", a: ["Green", "Orange", "Red", "Purple"], c: 2 },
+  { q: "'Guernica' is a famous work by which artist?", a: ["Dalí", "Picasso", "Miró", "Goya"], c: 1 },
+  { q: "Painting on wet plaster is a technique called?", a: ["Fresco", "Collage", "Etching", "Mosaic"], c: 0 },
+  { q: "'The Thinker' sculpture was created by?", a: ["Rodin", "Michelangelo", "Bernini", "Calder"], c: 0 },
+  { q: "Which tool is traditionally used to apply oil paint?", a: ["Chisel", "Brush", "Pen", "Roller"], c: 1 },
+];
+
+const HISTORY_Q = [
+  { q: "In which year did World War II end?", a: ["1943", "1945", "1918", "1950"], c: 1 },
+  { q: "Who was the first President of the United States?", a: ["Lincoln", "Washington", "Jefferson", "Adams"], c: 1 },
+  { q: "The Great Pyramids were built by which ancient civilization?", a: ["Romans", "Greeks", "Egyptians", "Mayans"], c: 2 },
+  { q: "In which year did the Berlin Wall fall?", a: ["1985", "1989", "1991", "1979"], c: 1 },
+  { q: "Which philosopher was a student of Socrates?", a: ["Aristotle", "Plato", "Pythagoras", "Homer"], c: 1 },
+  { q: "Which ship sank in 1912 after hitting an iceberg?", a: ["Lusitania", "Titanic", "Bismarck", "Mayflower"], c: 1 },
+  { q: "Who reached the Americas in 1492?", a: ["Magellan", "Columbus", "Vespucci", "Cook"], c: 1 },
+  { q: "The French Revolution began in which year?", a: ["1776", "1789", "1804", "1815"], c: 1 },
+  { q: "Which empire was founded by Genghis Khan?", a: ["Ottoman", "Mongol", "Persian", "Roman"], c: 1 },
+  { q: "Who led Nazi Germany during World War II?", a: ["Mussolini", "Hitler", "Stalin", "Franco"], c: 1 },
+  { q: "The Colosseum is located in which city?", a: ["Athens", "Rome", "Cairo", "Istanbul"], c: 1 },
+  { q: "Which Egyptian queen allied with Caesar and Mark Antony?", a: ["Nefertiti", "Cleopatra", "Hatshepsut", "Isis"], c: 1 },
+  { q: "The Cold War was mainly between the USA and?", a: ["China", "USSR", "Germany", "Japan"], c: 1 },
+  { q: "In which year did humans first land on the Moon?", a: ["1965", "1969", "1972", "1959"], c: 1 },
+  { q: "The Renaissance began in which country?", a: ["France", "Italy", "England", "Spain"], c: 1 },
+  { q: "The American Civil War was fought between the North and the?", a: ["East", "South", "West", "Midwest"], c: 1 },
+  { q: "Which ancient civilization created democracy?", a: ["Rome", "Greece", "Egypt", "Persia"], c: 1 },
+  { q: "The printing press was invented by?", a: ["Newton", "Gutenberg", "Edison", "Franklin"], c: 1 },
+];
+
+const SCIENCE_Q = [
+  { q: "What is the chemical formula for water?", a: ["CO2", "H2O", "O2", "NaCl"], c: 1 },
+  { q: "How many planets are in our solar system?", a: ["7", "8", "9", "10"], c: 1 },
+  { q: "What gas do plants absorb from the air?", a: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"], c: 1 },
+  { q: "Which is the closest planet to the Sun?", a: ["Venus", "Mercury", "Earth", "Mars"], c: 1 },
+  { q: "What is known as the powerhouse of the cell?", a: ["Nucleus", "Mitochondria", "Ribosome", "Membrane"], c: 1 },
+  { q: "What is the chemical symbol for gold?", a: ["Go", "Gd", "Au", "Ag"], c: 2 },
+  { q: "How many bones are in the adult human body?", a: ["206", "150", "300", "101"], c: 0 },
+  { q: "Which planet is known as the Red Planet?", a: ["Venus", "Mars", "Jupiter", "Saturn"], c: 1 },
+  { q: "Who developed the theory of relativity?", a: ["Newton", "Einstein", "Tesla", "Darwin"], c: 1 },
+  { q: "What force pulls objects toward Earth?", a: ["Magnetism", "Gravity", "Friction", "Inertia"], c: 1 },
+  { q: "Which blood cells fight infection?", a: ["Red cells", "White cells", "Platelets", "Plasma"], c: 1 },
+  { q: "What is the largest organ in the human body?", a: ["Liver", "Skin", "Heart", "Brain"], c: 1 },
+  { q: "At sea level, water boils at what temperature (°C)?", a: ["90", "100", "120", "80"], c: 1 },
+  { q: "Animals that eat only plants are called?", a: ["Carnivores", "Herbivores", "Omnivores", "Predators"], c: 1 },
+  { q: "Which is the largest planet in our solar system?", a: ["Saturn", "Jupiter", "Neptune", "Earth"], c: 1 },
+  { q: "Plants make food from sunlight through?", a: ["Respiration", "Photosynthesis", "Digestion", "Fermentation"], c: 1 },
+  { q: "What is the chemical symbol for oxygen?", a: ["O", "Ox", "Og", "On"], c: 0 },
+  { q: "What is the hardest natural substance on Earth?", a: ["Gold", "Iron", "Diamond", "Quartz"], c: 2 },
+];
+
+const GEO_Q = [
+  { q: "What is the capital of Japan?", a: ["Seoul", "Beijing", "Tokyo", "Bangkok"], c: 2 },
+  { q: "What is the largest ocean on Earth?", a: ["Atlantic", "Indian", "Arctic", "Pacific"], c: 3 },
+  { q: "Which river is generally considered the longest in the world?", a: ["Amazon", "Nile", "Yangtze", "Mississippi"], c: 1 },
+  { q: "Mount Everest is part of which mountain range?", a: ["Andes", "Alps", "Himalayas", "Rockies"], c: 2 },
+  { q: "What is the capital of France?", a: ["Berlin", "Madrid", "Paris", "Rome"], c: 2 },
+  { q: "Which is the largest country by land area?", a: ["Canada", "China", "USA", "Russia"], c: 3 },
+  { q: "The Sahara Desert is on which continent?", a: ["Asia", "Africa", "Australia", "South America"], c: 1 },
+  { q: "What is the capital of Australia?", a: ["Sydney", "Melbourne", "Canberra", "Perth"], c: 2 },
+  { q: "Which is the smallest continent?", a: ["Europe", "Australia", "Antarctica", "South America"], c: 1 },
+  { q: "The Great Barrier Reef lies off the coast of which country?", a: ["Brazil", "Australia", "Mexico", "India"], c: 1 },
+  { q: "In which country is the Eiffel Tower?", a: ["Italy", "Spain", "France", "Belgium"], c: 2 },
+  { q: "What is the capital of Egypt?", a: ["Cairo", "Alexandria", "Giza", "Luxor"], c: 0 },
+  { q: "How many continents are there?", a: ["5", "6", "7", "8"], c: 2 },
+  { q: "Which river runs through London?", a: ["Seine", "Thames", "Danube", "Rhine"], c: 1 },
+  { q: "The Amazon rainforest is mostly located in which country?", a: ["Peru", "Colombia", "Brazil", "Venezuela"], c: 2 },
+  { q: "Which is the largest hot desert in the world?", a: ["Gobi", "Sahara", "Kalahari", "Arabian"], c: 1 },
+  { q: "What is the capital of Italy?", a: ["Milan", "Venice", "Rome", "Naples"], c: 2 },
+  { q: "Which continent is home to the Amazon River?", a: ["Africa", "Asia", "South America", "Europe"], c: 2 },
+];
+
+type Category = { id: string; name: string; emoji: string; color: string; questions: QuizQ[] };
+const CATEGORIES: Category[] = [
+  { id: "crypto", name: "Crypto", emoji: "🪙", color: "#0052FF", questions: CRYPTO_Q },
+  { id: "sports", name: "Sports", emoji: "⚽", color: "#7BFF8C", questions: SPORTS_Q },
+  { id: "art", name: "Art", emoji: "🎨", color: "#FF5577", questions: ART_Q },
+  { id: "history", name: "History", emoji: "🏛️", color: "#FFE66D", questions: HISTORY_Q },
+  { id: "science", name: "Science", emoji: "🔬", color: "#60a5fa", questions: SCIENCE_Q },
+  { id: "geography", name: "Geography", emoji: "🌍", color: "#f6851b", questions: GEO_Q },
+];
+
 const QUIZ_SIZE = 5;
 const TIME_PER_Q = 15;
 const APP_URL = "https://base-quiz-v5is.vercel.app";
@@ -131,8 +246,9 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function getRandomQuestions(): QuizQ[] {
-  const picked = shuffle(QUESTIONS).slice(0, QUIZ_SIZE);
+function getRandomQuestions(catId: string): QuizQ[] {
+  const cat = CATEGORIES.find((c) => c.id === catId) || CATEGORIES[0];
+  const picked = shuffle(cat.questions).slice(0, QUIZ_SIZE);
   return picked.map((q) => {
     const correctAnswer = q.a[q.c];
     const shuffledOptions = shuffle(q.a);
@@ -174,8 +290,9 @@ export default function Home() {
     }))
     .filter((w) => w.connector);
 
-  const [screen, setScreen] = useState<"start" | "quiz" | "end" | "board" | "badges">("start");
-  const [questions, setQuestions] = useState<QuizQ[]>(getRandomQuestions);
+  const [screen, setScreen] = useState<"start" | "categories" | "quiz" | "end" | "board" | "badges">("start");
+  const [category, setCategory] = useState<string>("crypto");
+  const [questions, setQuestions] = useState<QuizQ[]>([]);
   const [qIndex, setQIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(TIME_PER_Q);
@@ -330,12 +447,19 @@ export default function Home() {
     if (screen === "end") playSound("win");
   }, [screen]);
 
-  function startGame() {
-    setQuestions(getRandomQuestions());
+  function startGame(catId: string) {
+    setCategory(catId);
+    setQuestions(getRandomQuestions(catId));
     setQIndex(0);
     setScore(0);
     setSelected(null);
     setTimeLeft(TIME_PER_Q);
+    // Reset the previous round's save/share state so the end screen never
+    // shows a stale "saved onchain" or an old transaction link.
+    setTxStatus("idle");
+    setTxHash("");
+    setTxError("");
+    setShareMenuOpen(false);
     setScreen("quiz");
   }
 
@@ -692,11 +816,11 @@ export default function Home() {
             <div style={styles.eyebrow}>Onchain trivia · Base mainnet</div>
             <h1 style={styles.title}>
               Daily<br />
-              <span style={styles.titleAccent}>crypto</span><br />
+              <span style={styles.titleAccent}>trivia</span><br />
               quiz.
             </h1>
             <p style={styles.lede}>
-              Five questions. Fifteen seconds each. Answer fast, save your score to the chain, climb the global board.
+              Pick a category. Five questions, fifteen seconds each. Answer fast, save your score to the chain, climb the global board.
             </p>
 
             {streak > 0 && (
@@ -708,7 +832,7 @@ export default function Home() {
 
             <button
               style={styles.primaryBtn}
-              onClick={startGame}
+              onClick={() => setScreen("categories")}
               onMouseDown={(e) => (e.currentTarget.style.transform = "translateY(1px)")}
               onMouseUp={(e) => (e.currentTarget.style.transform = "translateY(0)")}
             >
@@ -716,6 +840,49 @@ export default function Home() {
             </button>
             <button style={styles.ghostBtn} onClick={loadBoard}>Leaderboard</button>
             <button style={styles.ghostBtn} onClick={loadBadges}>Streak badges</button>
+          </div>
+        )}
+
+        {screen === "categories" && (
+          <div style={styles.card}>
+            <p style={styles.eyebrow}>Pick a category</p>
+            <h1 style={{ ...styles.title, fontSize: 40, marginBottom: 24 }}>Choose your quiz</h1>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+              {CATEGORIES.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => startGame(cat.id)}
+                  style={{
+                    background: T.surface,
+                    border: `1px solid ${T.border}`,
+                    borderRadius: 4,
+                    padding: "20px 16px",
+                    cursor: "pointer",
+                    color: T.text,
+                    textAlign: "left",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 8,
+                    transition: "border-color 0.2s, background 0.2s",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = cat.color;
+                    e.currentTarget.style.background = T.surfaceHi;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = T.border;
+                    e.currentTarget.style.background = T.surface;
+                  }}
+                >
+                  <span style={{ fontSize: 32, lineHeight: 1 }}>{cat.emoji}</span>
+                  <span style={{ fontFamily: T.mono, fontSize: 16, fontWeight: 700, color: cat.color }}>{cat.name}</span>
+                  <span style={{ fontFamily: T.mono, fontSize: 10, color: T.textDimmer, letterSpacing: "0.1em" }}>
+                    {cat.questions.length} QUESTIONS
+                  </span>
+                </button>
+              ))}
+            </div>
+            <button style={{ ...styles.ghostBtn, marginTop: 16 }} onClick={() => setScreen("start")}>← Back</button>
           </div>
         )}
 
@@ -742,7 +909,9 @@ export default function Home() {
 
             <div style={{ position: "relative", zIndex: 1 }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                <span style={styles.meta}>Q{String(qIndex + 1).padStart(2, "0")} / {String(QUIZ_SIZE).padStart(2, "0")}</span>
+                <span style={styles.meta}>
+                  {CATEGORIES.find((c) => c.id === category)?.emoji} {CATEGORIES.find((c) => c.id === category)?.name.toUpperCase()} · Q{String(qIndex + 1).padStart(2, "0")}/{String(QUIZ_SIZE).padStart(2, "0")}
+                </span>
                 <span
                   style={{
                     fontFamily: T.mono,
@@ -926,6 +1095,11 @@ export default function Home() {
                   <button style={styles.ghostBtn} onClick={shareCopy}>Copy text</button>
                 </div>
               )}
+              <div style={{ height: 1, background: T.border, margin: "16px 0" }} />
+              <button style={styles.primaryBtn} onClick={() => startGame(category)}>
+                🔄 Play again · {CATEGORIES.find((c) => c.id === category)?.name}
+              </button>
+              <button style={styles.ghostBtn} onClick={() => setScreen("categories")}>Choose category</button>
               <button style={styles.ghostBtn} onClick={loadBadges}>Streak badges</button>
               <button style={styles.ghostBtn} onClick={loadBoard}>Leaderboard</button>
             </div>

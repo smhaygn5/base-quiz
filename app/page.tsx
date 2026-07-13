@@ -445,7 +445,7 @@ export default function Home() {
       });
       const n = Number(count);
       const rows: LeaderRow[] = [];
-      for (let i = 0; i < n && i < 100; i++) {
+      for (let i = 0; i < n; i++) {
         try {
           const [addr, best, total, stk] = await publicClient.readContract({
             address: CONTRACT_ADDRESS as `0x${string}`,
@@ -460,11 +460,10 @@ export default function Home() {
         await new Promise((r) => setTimeout(r, 150));
       }
       rows.sort((a, b) => b.totalScore - a.totalScore);
-      const top = rows.slice(0, 10);
-      setBoard(top);
+      setBoard(rows);
       setBoardLoading(false);
       // Resolve Basenames for the shown rows, sequentially to respect RPC limits
-      for (const row of top) {
+      for (const row of rows) {
         const name = await resolveBasename(row.addr);
         if (name) {
           setBoard((prev) => prev.map((r) => (r.addr === row.addr ? { ...r, name } : r)));

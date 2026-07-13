@@ -182,8 +182,6 @@ export default function Home() {
   const [selected, setSelected] = useState<number | null>(null);
   const [streak, setStreak] = useState(0);
   const [onchainStreak, setOnchainStreak] = useState(0);
-  const [playedToday, setPlayedToday] = useState(false);
-  const [playedTodayOnchain, setPlayedTodayOnchain] = useState(false);
   const [txStatus, setTxStatus] = useState<"idle" | "pending" | "done" | "error">("idle");
   const [txHash, setTxHash] = useState("");
   const [txError, setTxError] = useState("");
@@ -261,10 +259,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const today = new Date().toISOString().slice(0, 10);
-    const lastPlayed = localStorage.getItem("lastPlayed");
     setStreak(parseInt(localStorage.getItem("streak") || "0"));
-    if (lastPlayed === today) setPlayedToday(true);
     if (!localStorage.getItem("tutorialSeen")) setTutorialStep(0);
   }, []);
 
@@ -274,10 +269,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    if (!address) {
-      setPlayedTodayOnchain(false);
-      return;
-    }
+    if (!address) return;
     (async () => {
       try {
         const p = await publicClient.readContract({
@@ -286,14 +278,9 @@ export default function Home() {
           functionName: "players",
           args: [address],
         });
-        const lastPlayedDay = Number(p[3]);
-        const todayUTC = Math.floor(Date.now() / 86400000);
-        setPlayedTodayOnchain(lastPlayedDay === todayUTC);
         const chainStreak = Number(p[2]);
         if (chainStreak > 0) setStreak(chainStreak);
-      } catch {
-        setPlayedTodayOnchain(false);
-      }
+      } catch {}
     })();
   }, [address]);
 
@@ -319,7 +306,8 @@ export default function Home() {
       const today = new Date().toISOString().slice(0, 10);
       const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
       const lastPlayed = localStorage.getItem("lastPlayed");
-      const newStreak = lastPlayed === yesterday ? streak + 1 : 1;
+      // Day-based streak: replaying the same day keeps it, a new consecutive day increments.
+      const newStreak = lastPlayed === today ? streak : lastPlayed === yesterday ? streak + 1 : 1;
       localStorage.setItem("streak", String(newStreak));
       localStorage.setItem("lastPlayed", today);
       setStreak(newStreak);
@@ -387,21 +375,6 @@ export default function Home() {
     setTxStatus("pending");
     setTxError("");
     try {
-      if (address) {
-        const p = await publicClient.readContract({
-          address: CONTRACT_ADDRESS as `0x${string}`,
-          abi: CONTRACT_ABI,
-          functionName: "players",
-          args: [address],
-        });
-        const lastPlayedDay = Number(p[3]);
-        const todayUTC = Math.floor(Date.now() / 86400000);
-        if (lastPlayedDay === todayUTC) {
-          setTxError("Already saved today. Come back tomorrow.");
-          setTxStatus("error");
-          return;
-        }
-      }
       if (walletChainId !== base.id) await switchChainAsync({ chainId: base.id });
       const hash = await writeContractAsync({
         address: CONTRACT_ADDRESS as `0x${string}`,
@@ -733,20 +706,14 @@ export default function Home() {
               </div>
             )}
 
-            {playedToday || playedTodayOnchain ? (
-              <div style={{ ...styles.ghostBtn, background: T.surface, cursor: "default", color: T.accent }}>
-                ✓ {playedTodayOnchain ? "Score saved today" : "Played today"} — back tomorrow
-              </div>
-            ) : (
-              <button
-                style={styles.primaryBtn}
-                onClick={startGame}
-                onMouseDown={(e) => (e.currentTarget.style.transform = "translateY(1px)")}
-                onMouseUp={(e) => (e.currentTarget.style.transform = "translateY(0)")}
-              >
-                ▶ Start round
-              </button>
-            )}
+            <button
+              style={styles.primaryBtn}
+              onClick={startGame}
+              onMouseDown={(e) => (e.currentTarget.style.transform = "translateY(1px)")}
+              onMouseUp={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+            >
+              ▶ Start round
+            </button>
             <button style={styles.ghostBtn} onClick={loadBoard}>Leaderboard</button>
             <button style={styles.ghostBtn} onClick={loadBadges}>Streak badges</button>
           </div>

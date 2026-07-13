@@ -1,0 +1,112 @@
+{
+  "contract": "0xdAf977038Ce7572f82E06A3938A71bc1196E968C",
+  "badgesContract": "0x9EA48EdA97E73ebB7Fc0F750753c98f896055ef2",
+  "takenAt": "2026-07-13T22:20:23.120Z",
+  "players": [
+    {
+      "addr": "0xD03CBBD536d32e5DF9a54dEa93FCE665303c2f20",
+      "bestScore": 1190,
+      "totalScore": 10440,
+      "streak": 1,
+      "lastPlayedDay": 20643
+    },
+    {
+      "addr": "0x509549D76B75F58dfda659cFca25b234086DdD7F",
+      "bestScore": 1210,
+      "totalScore": 12760,
+      "streak": 1,
+      "lastPlayedDay": 20644
+    },
+    {
+      "addr": "0xce835359202acbB4a10d9a2f97a72E6d0B76f1e2",
+      "bestScore": 220,
+      "totalScore": 220,
+      "streak": 1,
+      "lastPlayedDay": 20617
+    },
+    {
+      "addr": "0x480e398c7E261dACB2239e1d68E08f20af89F06a",
+      "bestScore": 870,
+      "totalScore": 2250,
+      "streak": 1,
+      "lastPlayedDay": 20647
+    },
+    {
+      "addr": "0xD8a83e7C41b5a49dA16D7a73bda7a6A448477B6f",
+      "bestScore": 1040,
+      "totalScore": 1040,
+      "streak": 1,
+      "lastPlayedDay": 20618
+    },
+    {
+      "addr": "0x71AAD1110dFd8F60249cD45ce4fb05163b6f812B",
+      "bestScore": 860,
+      "totalScore": 860,
+      "streak": 1,
+      "lastPlayedDay": 20635
+    },
+    {
+      "addr": "0xa2435fD3AB620e5221bEEca3062BEb04D9B72A93",
+      "bestScore": 1060,
+      "totalScore": 5820,
+      "streak": 1,
+      "lastPlayedDay": 20644
+    },
+    {
+      "addr": "0x3185110662ceCe9585c5399016bf4AEE7AE33FCD",
+      "bestScore": 1140,
+      "totalScore": 9760,
+      "streak": 3,
+      "lastPlayedDay": 20645
+    },
+    {
+      "addr": "0x06486305d05C6ed2e940cd49341F8AD2c707a86a",
+      "bestScore": 1130,
+      "totalScore": 1130,
+      "streak": 1,
+      "lastPlayedDay": 20632
+    },
+    {
+      "addr": "0x6C169b4D43E93500849F06D1A058d6f105ab64Bc",
+      "bestScore": 1230,
+      "totalScore": 7640,
+      "streak": 1,
+      "lastPlayedDay": 20647
+    },
+    {
+      "addr": "0xF159092AD36E8D0524BE07f703866B1866d3d94D",
+      "bestScore": 1050,
+      "totalScore": 1050,
+      "streak": 1,
+      "lastPlayedDay": 20637
+    },
+    {
+      "addr": "0xBe96fB12585Bd1cd2822Ae451A69eA5E8970806F",
+      "bestScore": 780,
+      "totalScore": 780,
+      "streak": 1,
+      "lastPlayedDay": 20637
+    },
+    {
+      "addr": "0xF791813F5098D8D9aE85383aD5E18849ee32Ae04",
+      "bestScore": 770,
+      "totalScore": 770,
+      "streak": 1,
+      "lastPlayedDay": 20647
+    }
+  ],
+  "badgeOwners": [
+    {
+      "addr": "0xD03CBBD536d32e5DF9a54dEa93FCE665303c2f20",
+      "ids": [
+        1
+      ]
+    },
+    {
+      "addr": "0xa2435fD3AB620e5221bEEca3062BEb04D9B72A93",
+      "ids": [
+        1
+      ]
+    }
+  ]
+}

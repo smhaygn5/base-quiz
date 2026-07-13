@@ -10,7 +10,7 @@ export const minikitConfig = {
     signature: "",
   },
   baseBuilder: {
-    ownerAddress: "",
+    ownerAddress: "0x509549d76b75f58dfda659cfca25b234086ddd7f",
   },
   miniapp: {
     version: "1",

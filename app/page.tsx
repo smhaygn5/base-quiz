@@ -1092,6 +1092,7 @@ export default function Home() {
 
   const styles: Record<string, CSSProperties> = {
     root: {
+      position: "relative",
       minHeight: "100vh",
       background: T.bg,
       color: T.text,
@@ -1101,6 +1102,8 @@ export default function Home() {
       backgroundImage: `radial-gradient(circle at 15% 0%, rgba(59,130,246,0.10), transparent 40%), radial-gradient(circle at 85% 100%, rgba(96,165,250,0.06), transparent 40%)`,
     },
     header: {
+      position: "relative",
+      zIndex: 1,
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
@@ -1150,6 +1153,8 @@ export default function Home() {
       letterSpacing: "0.05em",
     },
     main: {
+      position: "relative",
+      zIndex: 1,
       flex: 1,
       display: "flex",
       flexDirection: "column",
@@ -1235,6 +1240,8 @@ export default function Home() {
       letterSpacing: "0.1em",
     },
     footer: {
+      position: "relative",
+      zIndex: 1,
       padding: "12px 20px",
       borderTop: `1px solid ${T.border}`,
       display: "flex",
@@ -1249,6 +1256,37 @@ export default function Home() {
 
   return (
     <div style={styles.root}>
+      {screen === "start" && (
+        <div aria-hidden style={{ position: "absolute", inset: 0, overflow: "hidden", zIndex: 0, pointerEvents: "none" }}>
+          {[
+            { w: 360, h: 90, rot: 12, grad: "rgba(99,102,241,0.20)", pos: { left: "-8%", top: "14%" }, delay: 0.2 },
+            { w: 300, h: 78, rot: -15, grad: "rgba(59,130,246,0.18)", pos: { right: "-6%", top: "66%" }, delay: 0.45 },
+            { w: 200, h: 58, rot: -8, grad: "rgba(139,92,246,0.18)", pos: { left: "4%", bottom: "8%" }, delay: 0.3 },
+            { w: 140, h: 44, rot: 20, grad: "rgba(96,165,250,0.18)", pos: { right: "14%", top: "10%" }, delay: 0.55 },
+            { w: 110, h: 34, rot: -22, grad: "rgba(56,189,248,0.18)", pos: { left: "20%", top: "6%" }, delay: 0.65 },
+          ].map((s, i) => (
+            <div
+              key={i}
+              className="hero-shape-in"
+              style={{ position: "absolute", ...s.pos, animation: `heroShapeIn 2.2s cubic-bezier(0.23,0.86,0.39,0.96) ${s.delay}s both` }}
+            >
+              <div className="hero-float" style={{ animation: `heroFloat 12s ease-in-out ${s.delay}s infinite`, willChange: "transform" }}>
+                <div
+                  style={{
+                    width: s.w,
+                    height: s.h,
+                    transform: `rotate(${s.rot}deg)`,
+                    borderRadius: 9999,
+                    background: `linear-gradient(to right, ${s.grad}, transparent)`,
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
+                  }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
       <header style={styles.header}>
         <div style={styles.brand}>
           <div style={styles.brandDot} />
@@ -1270,11 +1308,30 @@ export default function Home() {
       <main style={styles.main}>
         {screen === "start" && (
           <div style={styles.card}>
-            <div style={styles.eyebrow}>Onchain trivia · Base mainnet</div>
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                padding: "6px 14px",
+                borderRadius: 9999,
+                background: "rgba(255,255,255,0.04)",
+                border: `1px solid ${T.border}`,
+                marginBottom: 20,
+                fontFamily: T.mono,
+                fontSize: 11,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: T.textDim,
+              }}
+            >
+              <span style={{ width: 6, height: 6, borderRadius: 9999, background: T.base, boxShadow: `0 0 8px ${T.base}` }} />
+              Onchain trivia · Base
+            </div>
             <h1 style={styles.title}>
-              Daily<br />
-              <span style={styles.titleAccent}>trivia</span><br />
-              quiz.
+              <span style={{ background: "linear-gradient(to bottom, #ffffff, rgba(255,255,255,0.75))", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>Daily</span><br />
+              <span style={{ background: "linear-gradient(to right, #a5b4fc, #93c5fd, #60a5fa)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>trivia</span><br />
+              <span style={{ background: "linear-gradient(to bottom, #ffffff, rgba(255,255,255,0.75))", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>quiz.</span>
             </h1>
             <p style={styles.lede}>
               Pick a category. Five questions, fifteen seconds each. Answer fast, save your score to the chain, climb the global board.

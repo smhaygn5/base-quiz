@@ -58,3 +58,18 @@
     }
   }
 }
+
+/* Elegant floating hero shapes — compositor-only (transform/opacity), no JS.
+   Kept lightweight so navigation never janks. */
+@keyframes heroShapeIn {
+  from { opacity: 0; transform: translateY(-120px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(14px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-shape-in { animation: none !important; opacity: 1 !important; }
+  .hero-float { animation: none !important; }
+}

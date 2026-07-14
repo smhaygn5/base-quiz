@@ -1294,9 +1294,20 @@ export default function Home() {
           <span style={{ color: T.textDimmer, marginLeft: 8 }}>v1.0</span>
         </div>
         <div style={styles.headerRight}>
-          {isConnected && address && (
+          {isConnected && address ? (
             <button style={styles.walletPill} onClick={() => disconnect()} title="Disconnect">
               {shortAddr(address)} ×
+            </button>
+          ) : (
+            <button
+              style={{ ...styles.walletPill, color: T.base, borderColor: T.base }}
+              onClick={() => {
+                const c = baseWallet || connectors[0];
+                if (c) connect({ connector: c });
+              }}
+              title="Connect wallet"
+            >
+              Connect
             </button>
           )}
           <button style={styles.iconBtn} onClick={toggleSound} title={soundOn ? "Mute" : "Unmute"}>

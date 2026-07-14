@@ -762,6 +762,7 @@ export default function Home() {
   const [board, setBoard] = useState<LeaderRow[]>([]);
   const [boardLoading, setBoardLoading] = useState(false);
   const [shareMenuOpen, setShareMenuOpen] = useState(false);
+  const [connectMenuOpen, setConnectMenuOpen] = useState(false);
   const [owned, setOwned] = useState<boolean[]>([false, false, false, false]);
   const [badgesLoading, setBadgesLoading] = useState(false);
   const [claimingId, setClaimingId] = useState<number | null>(null);
@@ -773,6 +774,10 @@ export default function Home() {
   useEffect(() => {
     if (!isFrameReady) setFrameReady();
   }, [setFrameReady, isFrameReady]);
+
+  useEffect(() => {
+    if (isConnected) setConnectMenuOpen(false);
+  }, [isConnected]);
 
   useEffect(() => {
     if (localStorage.getItem("soundOff") === "1") setSoundOn(false);
@@ -1301,10 +1306,7 @@ export default function Home() {
           ) : (
             <button
               style={{ ...styles.walletPill, color: T.base, borderColor: T.base }}
-              onClick={() => {
-                const c = baseWallet || connectors[0];
-                if (c) connect({ connector: c });
-              }}
+              onClick={() => setConnectMenuOpen(true)}
               title="Connect wallet"
             >
               Connect
@@ -1739,6 +1741,41 @@ export default function Home() {
         <span>BLOCK_DATA · BASE_MAINNET</span>
         <span>{totalPlayers !== null ? `${totalPlayers} PLAYERS_ONCHAIN` : "···"}</span>
       </footer>
+
+      {connectMenuOpen && !isConnected && (
+        <div
+          style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 200 }}
+          onClick={() => setConnectMenuOpen(false)}
+        >
+          <div
+            style={{ ...styles.card, background: T.surface, padding: 28, border: `1px solid ${T.border}`, borderRadius: 4 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <p style={styles.eyebrow}>Connect wallet</p>
+            {baseWallet && (
+              <button
+                style={{ ...styles.primaryBtn, marginBottom: 20 }}
+                onClick={() => { connect({ connector: baseWallet }); setConnectMenuOpen(false); }}
+              >
+                Base wallet
+              </button>
+            )}
+            {orderedOthers.length > 0 && (
+              <p style={{ ...styles.meta, marginBottom: 10 }}>Other wallets</p>
+            )}
+            {orderedOthers.map((w) => (
+              <button
+                key={w.connector!.uid}
+                style={styles.ghostBtn}
+                onClick={() => { connect({ connector: w.connector! }); setConnectMenuOpen(false); }}
+              >
+                {w.connector!.name}
+              </button>
+            ))}
+            <button style={{ ...styles.ghostBtn, marginTop: 6 }} onClick={() => setConnectMenuOpen(false)}>Cancel</button>
+          </div>
+        </div>
+      )}
 
       {tutorialStep !== null && (
         <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.92)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 100 }}>

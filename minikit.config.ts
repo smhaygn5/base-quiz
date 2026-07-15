@@ -22,7 +22,6 @@ export const minikitConfig = {
     splashImageUrl: `${ROOT_URL}/splash.png`,
     splashBackgroundColor: "#171717",
     homeUrl: ROOT_URL,
-    webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "games",
     tags: ["quiz", "trivia", "base", "crypto", "leaderboard"],
     heroImageUrl: `${ROOT_URL}/hero.png`,

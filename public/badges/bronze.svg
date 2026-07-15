@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title description">
+  <title id="title">Base Quiz Bronze Badge</title>
+  <desc id="description">Bronze badge awarded for a three-day Base Quiz streak</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#2b3038"/>
+      <stop offset="1" stop-color="#090b0e"/>
+    </radialGradient>
+    <linearGradient id="medal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f1b07a"/>
+      <stop offset="0.48" stop-color="#b86b35"/>
+      <stop offset="1" stop-color="#6f3518"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="96" fill="url(#bg)"/>
+  <circle cx="400" cy="370" r="238" fill="#11151b" stroke="#26303d" stroke-width="8"/>
+  <circle cx="400" cy="370" r="190" fill="url(#medal)" stroke="#ffc496" stroke-width="8"/>
+  <path d="M301 345c0-76 47-129 119-129 50 0 87 19 112 57l-55 38c-14-22-31-32-55-32-34 0-57 26-57 66s23 66 57 66c24 0 41-10 55-32l55 38c-25 38-62 57-112 57-72 0-119-53-119-129Z" fill="#0a0d11"/>
+  <path d="M467 443h70l-55-54-46 42 31 31Z" fill="#0a0d11"/>
+  <text x="400" y="665" text-anchor="middle" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="8">BRONZE</text>
+  <text x="400" y="717" text-anchor="middle" fill="#b7c0cc" font-family="Arial, sans-serif" font-size="25" letter-spacing="5">3 DAY STREAK</text>
+</svg>

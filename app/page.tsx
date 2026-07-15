@@ -693,6 +693,108 @@ const publicClient = createPublicClient({
 });
 type LeaderRow = { addr: string; bestScore: number; totalScore: number; streak: number; name?: string | null };
 type QuizQ = { q: string; a: string[]; c: number };
+type WalletKind = "base" | "metamask" | "okx" | "rabby" | "phantom";
+
+const EXTENSION_WALLET_ORDER = [
+  { label: "MetaMask", kind: "metamask", match: ["metamask", "io.metamask"] },
+  { label: "OKX Wallet", kind: "okx", match: ["okx", "okex", "com.okex"] },
+  { label: "Rabby", kind: "rabby", match: ["rabby", "io.rabby"] },
+  { label: "Phantom", kind: "phantom", match: ["phantom", "app.phantom"] },
+] as const;
+
+const WALLET_FALLBACK = {
+  metamask: { label: "M", background: "#f6851b", color: "#171717" },
+  okx: { label: "OKX", background: "#050505", color: "#ffffff" },
+  rabby: { label: "R", background: "#7084ff", color: "#ffffff" },
+  phantom: { label: "P", background: "#ab9ff2", color: "#171717" },
+} as const;
+
+function WalletIcon({ kind, icon }: { kind: WalletKind; icon?: string }) {
+  if (kind === "base") {
+    return (
+      <span
+        aria-hidden="true"
+        style={{ width: 34, height: 34, borderRadius: 9, background: "#0052ff", display: "grid", placeItems: "center", flexShrink: 0 }}
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="8" fill="white" />
+          <rect x="4" y="10" width="9" height="4" fill="#0052ff" />
+        </svg>
+      </span>
+    );
+  }
+
+  if (icon) {
+    return <img src={icon} alt="" width={34} height={34} style={{ borderRadius: 9, flexShrink: 0 }} />;
+  }
+
+  const fallback = WALLET_FALLBACK[kind];
+  return (
+    <span
+      aria-hidden="true"
+      style={{
+        width: 34,
+        height: 34,
+        borderRadius: 9,
+        background: fallback.background,
+        color: fallback.color,
+        display: "grid",
+        placeItems: "center",
+        flexShrink: 0,
+        fontFamily: T.mono,
+        fontWeight: 800,
+        fontSize: kind === "okx" ? 9 : 15,
+      }}
+    >
+      {fallback.label}
+    </span>
+  );
+}
+
+function WalletOptionButton({
+  label,
+  kind,
+  icon,
+  recommended = false,
+  onClick,
+}: {
+  label: string;
+  kind: WalletKind;
+  icon?: string;
+  recommended?: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        width: "100%",
+        minHeight: 58,
+        marginBottom: 8,
+        padding: "10px 13px",
+        borderRadius: 8,
+        border: `1px solid ${recommended ? "#0052ff" : T.border}`,
+        background: recommended ? "rgba(0, 82, 255, 0.14)" : "transparent",
+        color: T.text,
+        display: "flex",
+        alignItems: "center",
+        gap: 12,
+        textAlign: "left",
+        cursor: "pointer",
+        fontFamily: T.sans,
+      }}
+    >
+      <WalletIcon kind={kind} icon={icon} />
+      <span style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+        <span style={{ fontSize: 14, fontWeight: 700 }}>{label}</span>
+        {recommended && (
+          <span style={{ color: T.baseHi, fontFamily: T.mono, fontSize: 9, letterSpacing: "0.12em" }}>RECOMMENDED</span>
+        )}
+      </span>
+    </button>
+  );
+}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -724,28 +826,18 @@ export default function Home() {
   const { switchChainAsync } = useSwitchChain();
   const chainId = useChainId();
 
-  const baseWallet = connectors.find((c) =>
-    c.id === "farcasterMiniApp" || c.id === "farcaster" || c.id?.toLowerCase().includes("miniapp")
-  ) || connectors.find((c) => c.name?.toLowerCase().includes("coinbase") || c.id === "coinbaseWalletSDK");
+  const baseWallet = connectors.find((c) => c.id === "baseAccount") ||
+    connectors.find((c) => c.name?.toLowerCase().includes("base account"));
 
-  const orderedOthers = [
-    { match: ["metamask"], color: "#f6851b" },
-    { match: ["okx"], color: "#000000" },
-    { match: ["phantom"], color: "#534bb1" },
-    { match: ["rabby"], color: "#7084ff" },
-    { match: ["coinbase"], color: "#1652f0" },
-    { match: ["keplr"], color: "#1a4cd8" },
-    { match: ["trust"], color: "#3375bb" },
-  ]
-    .map((w) => ({
-      connector: connectors.find(
-        (c) =>
-          c !== baseWallet &&
-          w.match.some((m) => c.name?.toLowerCase().includes(m) || c.id?.toLowerCase().includes(m))
-      ),
-      color: w.color,
-    }))
-    .filter((w) => w.connector);
+  const orderedOthers = EXTENSION_WALLET_ORDER.map((wallet) => ({
+    ...wallet,
+    connector: connectors.find((connector) => {
+      if (connector === baseWallet) return false;
+      const rdns = Array.isArray(connector.rdns) ? connector.rdns.join(" ") : connector.rdns || "";
+      const identity = `${connector.id} ${connector.name} ${rdns}`.toLowerCase();
+      return wallet.match.some((value) => identity.includes(value));
+    }),
+  })).filter((wallet) => wallet.connector);
 
   const [screen, setScreen] = useState<"start" | "categories" | "quiz" | "end" | "board" | "badges">("start");
   const [category, setCategory] = useState<string>("crypto");
@@ -1586,14 +1678,21 @@ export default function Home() {
                 <div>
                   <p style={{ ...styles.eyebrow, marginBottom: 16 }}>Connect to save score</p>
                   {baseWallet && (
-                    <button style={{ ...styles.primaryBtn, marginBottom: 24 }} onClick={() => connect({ connector: baseWallet })}>
-                      Base wallet
-                    </button>
+                    <WalletOptionButton
+                      label="Base Wallet"
+                      kind="base"
+                      recommended
+                      onClick={() => connect({ connector: baseWallet })}
+                    />
                   )}
-                  {orderedOthers.map((w) => (
-                    <button key={w.connector!.uid} style={{ ...styles.ghostBtn }} onClick={() => connect({ connector: w.connector! })}>
-                      {w.connector!.name}
-                    </button>
+                  {orderedOthers.map((wallet) => wallet.connector && (
+                    <WalletOptionButton
+                      key={wallet.connector.uid}
+                      label={wallet.label}
+                      kind={wallet.kind}
+                      icon={wallet.connector.icon}
+                      onClick={() => connect({ connector: wallet.connector! })}
+                    />
                   ))}
                 </div>
               ) : txStatus === "idle" ? (
@@ -1673,14 +1772,21 @@ export default function Home() {
               <div>
                 <p style={{ ...styles.meta, marginBottom: 16 }}>Connect to view badges</p>
                 {baseWallet && (
-                  <button style={{ ...styles.primaryBtn, marginBottom: 24 }} onClick={() => connect({ connector: baseWallet })}>
-                    Base wallet
-                  </button>
+                  <WalletOptionButton
+                    label="Base Wallet"
+                    kind="base"
+                    recommended
+                    onClick={() => connect({ connector: baseWallet })}
+                  />
                 )}
-                {orderedOthers.map((w) => (
-                  <button key={w.connector!.uid} style={styles.ghostBtn} onClick={() => connect({ connector: w.connector! })}>
-                    {w.connector!.name}
-                  </button>
+                {orderedOthers.map((wallet) => wallet.connector && (
+                  <WalletOptionButton
+                    key={wallet.connector.uid}
+                    label={wallet.label}
+                    kind={wallet.kind}
+                    icon={wallet.connector.icon}
+                    onClick={() => connect({ connector: wallet.connector! })}
+                  />
                 ))}
               </div>
             ) : badgesLoading ? (
@@ -1753,24 +1859,24 @@ export default function Home() {
           >
             <p style={styles.eyebrow}>Connect wallet</p>
             {baseWallet && (
-              <button
-                style={{ ...styles.primaryBtn, marginBottom: 20 }}
+              <WalletOptionButton
+                label="Base Wallet"
+                kind="base"
+                recommended
                 onClick={() => { connect({ connector: baseWallet }); setConnectMenuOpen(false); }}
-              >
-                Base wallet
-              </button>
+              />
             )}
             {orderedOthers.length > 0 && (
-              <p style={{ ...styles.meta, marginBottom: 10 }}>Other wallets</p>
+              <p style={{ ...styles.meta, marginTop: 18, marginBottom: 10 }}>Browser wallets</p>
             )}
-            {orderedOthers.map((w) => (
-              <button
-                key={w.connector!.uid}
-                style={styles.ghostBtn}
-                onClick={() => { connect({ connector: w.connector! }); setConnectMenuOpen(false); }}
-              >
-                {w.connector!.name}
-              </button>
+            {orderedOthers.map((wallet) => wallet.connector && (
+              <WalletOptionButton
+                key={wallet.connector.uid}
+                label={wallet.label}
+                kind={wallet.kind}
+                icon={wallet.connector.icon}
+                onClick={() => { connect({ connector: wallet.connector! }); setConnectMenuOpen(false); }}
+              />
             ))}
             <button style={{ ...styles.ghostBtn, marginTop: 6 }} onClick={() => setConnectMenuOpen(false)}>Cancel</button>
           </div>

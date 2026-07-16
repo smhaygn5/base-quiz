@@ -10,6 +10,7 @@ import { CategoryCarousel } from "@/components/ui/category-carousel";
 import { BadgesRoadmap } from "@/components/ui/badges-roadmap";
 import { HomeHero } from "@/components/ui/home-hero";
 import { LeaderboardTable } from "@/components/ui/leaderboard-table";
+import { QuizPanel } from "@/components/ui/quiz-panel";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 
 // Basenames reverse resolution on Base mainnet (L2 Resolver)
@@ -1529,166 +1530,19 @@ export default function Home() {
         )}
 
         {screen === "quiz" && (
-          <div style={{ ...styles.card, position: "relative", maxWidth: 560 }}>
-            <div
-              style={{
-                position: "absolute",
-                top: -40,
-                right: -20,
-                fontFamily: T.mono,
-                fontSize: 240,
-                fontWeight: 700,
-                lineHeight: 1,
-                color: T.border,
-                opacity: 0.5,
-                pointerEvents: "none",
-                userSelect: "none",
-                zIndex: 0,
-              }}
-            >
-              {String(qIndex + 1).padStart(2, "0")}
-            </div>
-
-            <div style={{ position: "relative", zIndex: 1 }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                <span style={styles.meta}>
-                  {CATEGORIES.find((c) => c.id === category)?.emoji} {CATEGORIES.find((c) => c.id === category)?.name.toUpperCase()} · Q{String(qIndex + 1).padStart(2, "0")}/{String(QUIZ_SIZE).padStart(2, "0")}
-                </span>
-                <span
-                  style={{
-                    fontFamily: T.mono,
-                    fontSize: 28,
-                    fontWeight: 700,
-                    color: timeLeft <= 3 ? T.wrong : T.text,
-                    letterSpacing: "-0.02em",
-                    fontVariantNumeric: "tabular-nums",
-                  }}
-                >
-                  {String(timeLeft).padStart(2, "0")}s
-                </span>
-              </div>
-
-              <div style={{ width: "100%", height: 2, background: T.border, marginBottom: 32 }}>
-                <div
-                  style={{
-                    width: `${(timeLeft / TIME_PER_Q) * 100}%`,
-                    height: "100%",
-                    background: timeLeft <= 3 ? T.wrong : T.base,
-                    transition: "width 1s linear, background 0.3s",
-                  }}
-                />
-              </div>
-
-              <h2
-                style={{
-                  fontFamily: T.mono,
-                  fontSize: 28,
-                  fontWeight: 600,
-                  lineHeight: 1.25,
-                  letterSpacing: "-0.01em",
-                  marginBottom: 28,
-                  minHeight: 100,
-                }}
-              >
-                {questions[qIndex].q}
-              </h2>
-
-              {selected !== null && (
-                <p
-                  style={{
-                    fontFamily: T.mono,
-                    fontSize: 12,
-                    letterSpacing: "0.2em",
-                    color: selected === questions[qIndex].c ? T.correct : T.wrong,
-                    marginBottom: 16,
-                    textTransform: "uppercase",
-                  }}
-                >
-                  {selected === questions[qIndex].c
-                    ? `✓ Correct · +${100 + timeLeft * 10}`
-                    : `✗ Wrong · answer was ${String.fromCharCode(65 + questions[qIndex].c)}`}
-                </p>
-              )}
-
-              {questions[qIndex].a.map((opt, i) => {
-                const isCorrect = i === questions[qIndex].c;
-                const isSelected = i === selected;
-                let bg = T.surface;
-                let borderColor = T.border;
-                let color = T.text;
-                let extraStyle: CSSProperties = {};
-
-                if (selected !== null) {
-                  if (isCorrect) {
-                    bg = "rgba(123, 255, 140, 0.12)";
-                    borderColor = T.correct;
-                    color = T.correct;
-                    extraStyle = { animation: "pulseGreen 0.4s ease" };
-                  } else if (isSelected) {
-                    bg = "rgba(255, 85, 119, 0.12)";
-                    borderColor = T.wrong;
-                    color = T.wrong;
-                    extraStyle = { animation: "shake 0.4s ease" };
-                  } else {
-                    bg = T.surface;
-                    borderColor = T.border;
-                    color = T.textDimmer;
-                  }
-                }
-
-                return (
-                  <button
-                    key={i}
-                    onClick={() => answer(i)}
-                    disabled={selected !== null}
-                    style={{
-                      width: "100%",
-                      background: bg,
-                      color,
-                      border: `1px solid ${borderColor}`,
-                      padding: "16px 20px",
-                      borderRadius: 4,
-                      textAlign: "left",
-                      fontSize: 15,
-                      marginBottom: 10,
-                      cursor: selected !== null ? "default" : "pointer",
-                      fontFamily: T.sans,
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 16,
-                      transition: "border-color 0.2s, background 0.2s",
-                      ...extraStyle,
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: T.mono,
-                        fontSize: 11,
-                        color: selected !== null && !isCorrect && !isSelected ? T.textDimmer : T.textDim,
-                        minWidth: 16,
-                      }}
-                    >
-                      {String.fromCharCode(65 + i)}
-                    </span>
-                    <span style={{ flex: 1 }}>{opt}</span>
-                  </button>
-                );
-              })}
-            </div>
-
-            <style>{`
-              @keyframes pulseGreen {
-                0% { transform: scale(1); }
-                50% { transform: scale(1.02); }
-                100% { transform: scale(1); }
-              }
-              @keyframes shake {
-                0%, 100% { transform: translateX(0); }
-                25% { transform: translateX(-6px); }
-                75% { transform: translateX(6px); }
-              }
-            `}</style>
-          </div>
+          <QuizPanel
+            categoryName={CATEGORIES.find((item) => item.id === category)?.name || "Quiz"}
+            categoryEmoji={CATEGORIES.find((item) => item.id === category)?.emoji || ""}
+            currentIndex={qIndex}
+            totalQuestions={QUIZ_SIZE}
+            score={score}
+            timeLeft={timeLeft}
+            question={questions[qIndex].q}
+            options={questions[qIndex].a}
+            correctIndex={questions[qIndex].c}
+            selectedIndex={selected}
+            onAnswer={answer}
+          />
         )}
 
         {screen === "end" && (

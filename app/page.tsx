@@ -1230,7 +1230,7 @@ export default function Home() {
         }
         await new Promise((r) => setTimeout(r, 150));
       }
-      rows.sort((a, b) => b.bestScore - a.bestScore || b.streak - a.streak || b.totalScore - a.totalScore);
+      rows.sort((a, b) => b.totalScore - a.totalScore || b.bestScore - a.bestScore || b.streak - a.streak);
 
       // ERC-1155 exposes a batch read, so every player's four badge balances
       // can be fetched in one RPC call instead of delaying the table row by row.

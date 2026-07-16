@@ -1585,7 +1585,7 @@
 
 .leaderboard-table {
   width: 100%;
-  min-width: 720px;
+  min-width: 850px;
   border-collapse: separate;
   border-spacing: 0;
   color: var(--bq-text);
@@ -1727,6 +1727,10 @@
   color: var(--bq-text);
   font-family: var(--font-plex-mono), ui-monospace, monospace;
   font-size: 13px;
+}
+
+.leaderboard-total-score strong {
+  color: var(--bq-base-hi);
 }
 
 .leaderboard-streak {

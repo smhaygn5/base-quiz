@@ -5,6 +5,7 @@ import type { CSSProperties } from "react";
 export type LeaderboardTableRow = {
   addr: string;
   bestScore: number;
+  totalScore: number;
   streak: number;
   name?: string | null;
   badgeIds: number[];
@@ -49,7 +50,7 @@ export function LeaderboardTable({
         <div>
           <p className="leaderboard-kicker">Base Mainnet · All time</p>
           <h1 id="leaderboard-title">Leaderboard</h1>
-          <p>Top players ranked by their best onchain score.</p>
+          <p>Top players ranked by their total onchain score.</p>
         </div>
         <button type="button" className="leaderboard-back" onClick={onBack}>
           <span aria-hidden="true">←</span> Back
@@ -70,6 +71,7 @@ export function LeaderboardTable({
                 <tr>
                   <th className="leaderboard-rank-column" scope="col">#</th>
                   <th scope="col">Player</th>
+                  <th className="leaderboard-number-column leaderboard-total-score" scope="col">Total score</th>
                   <th className="leaderboard-number-column" scope="col">Best score</th>
                   <th className="leaderboard-number-column" scope="col">Streak</th>
                   <th className="leaderboard-badges-column" scope="col">Badges</th>
@@ -98,6 +100,9 @@ export function LeaderboardTable({
                           </span>
                           {isCurrentPlayer && <span className="leaderboard-you">You</span>}
                         </div>
+                      </td>
+                      <td className="leaderboard-number-column leaderboard-total-score">
+                        <strong>{row.totalScore.toLocaleString("en-US")}</strong>
                       </td>
                       <td className="leaderboard-number-column">
                         <strong>{row.bestScore.toLocaleString("en-US")}</strong>

@@ -7,6 +7,7 @@ import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { namehash } from "viem/ens";
 import { CategoryCarousel } from "@/components/ui/category-carousel";
+import { BadgesRoadmap } from "@/components/ui/badges-roadmap";
 import { HomeHero } from "@/components/ui/home-hero";
 import { LeaderboardTable } from "@/components/ui/leaderboard-table";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
@@ -1765,12 +1766,18 @@ export default function Home() {
         )}
 
         {screen === "badges" && (
-          <div style={styles.card}>
-            <p style={styles.eyebrow}>Streak NFTs · Base mainnet</p>
-            <h1 style={{ ...styles.title, fontSize: 40, marginBottom: 24 }}>Badges</h1>
-            {!isConnected ? (
-              <div>
-                <p style={{ ...styles.meta, marginBottom: 16 }}>Connect to view badges</p>
+          <BadgesRoadmap
+            badges={BADGES}
+            connected={isConnected}
+            loading={badgesLoading}
+            streak={onchainStreak}
+            owned={isConnected ? owned : [false, false, false, false]}
+            claimingId={claimingId}
+            error={claimError}
+            onClaim={claimBadge}
+            onBack={() => setScreen("start")}
+            connectSlot={!isConnected ? (
+              <div className="badges-roadmap-wallets">
                 {baseWallet && (
                   <WalletOptionButton
                     label="Base Wallet"
@@ -1789,57 +1796,8 @@ export default function Home() {
                   />
                 ))}
               </div>
-            ) : badgesLoading ? (
-              <p style={styles.meta}>Reading chain…</p>
-            ) : (
-              <>
-                <p style={{ ...styles.streakBox, marginBottom: 24 }}>🔥 ONCHAIN STREAK · {onchainStreak}</p>
-                {claimError && <p style={{ color: T.wrong, fontSize: 12, marginBottom: 12, fontFamily: T.mono }}>{claimError}</p>}
-                {BADGES.map((b, i) => {
-                  const hasIt = owned[i];
-                  const canClaim = !hasIt && onchainStreak >= b.days;
-                  const isClaiming = claimingId === b.id;
-                  return (
-                    <div
-                      key={b.id}
-                      style={{
-                        padding: 20,
-                        border: `1px solid ${hasIt ? T.correct : canClaim ? T.accent : T.border}`,
-                        borderRadius: 4,
-                        marginBottom: 10,
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        opacity: hasIt || canClaim ? 1 : 0.6,
-                      }}
-                    >
-                      <div>
-                        <div style={{ fontFamily: T.mono, fontSize: 11, color: T.textDim, letterSpacing: "0.15em" }}>TIER {String(b.id).padStart(2, "0")}</div>
-                        <div style={{ fontFamily: T.mono, fontSize: 18, fontWeight: 700, color: b.color }}>{b.emoji} {b.name}</div>
-                        <div style={{ fontFamily: T.mono, fontSize: 11, color: T.textDimmer, marginTop: 4 }}>{b.days}-DAY STREAK</div>
-                      </div>
-                      <div>
-                        {hasIt ? (
-                          <span style={{ color: T.correct, fontFamily: T.mono, fontSize: 11, letterSpacing: "0.15em" }}>✓ OWNED</span>
-                        ) : canClaim ? (
-                          <button
-                            style={{ ...styles.primaryBtn, width: "auto", padding: "10px 16px", marginBottom: 0, fontSize: 11 }}
-                            onClick={() => claimBadge(b.id)}
-                            disabled={isClaiming}
-                          >
-                            {isClaiming ? "…" : "CLAIM"}
-                          </button>
-                        ) : (
-                          <span style={{ color: T.textDimmer, fontFamily: T.mono, fontSize: 11 }}>{b.days - onchainStreak}d left</span>
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
-              </>
-            )}
-            <button style={{ ...styles.ghostBtn, marginTop: 16 }} onClick={() => setScreen("start")}>← Back</button>
-          </div>
+            ) : undefined}
+          />
         )}
       </main>
 

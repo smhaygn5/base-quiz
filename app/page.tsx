@@ -8,6 +8,7 @@ import { createPublicClient, http } from "viem";
 import { namehash } from "viem/ens";
 import { CategoryCarousel } from "@/components/ui/category-carousel";
 import { HomeHero } from "@/components/ui/home-hero";
+import { LeaderboardTable } from "@/components/ui/leaderboard-table";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 
 // Basenames reverse resolution on Base mainnet (L2 Resolver)
@@ -752,7 +753,14 @@ const publicClient = createPublicClient({
   chain: base,
   transport: http(process.env.NEXT_PUBLIC_RPC_URL),
 });
-type LeaderRow = { addr: string; bestScore: number; totalScore: number; streak: number; name?: string | null };
+type LeaderRow = {
+  addr: string;
+  bestScore: number;
+  totalScore: number;
+  streak: number;
+  name?: string | null;
+  badgeIds: number[];
+};
 type QuizQ = { q: string; a: string[]; c: number };
 type WalletKind = "base" | "metamask" | "okx" | "rabby" | "phantom";
 
@@ -1176,13 +1184,45 @@ export default function Home() {
             functionName: "getPlayer",
             args: [BigInt(i)],
           });
-          rows.push({ addr, bestScore: Number(best), totalScore: Number(total), streak: Number(stk) });
+          rows.push({
+            addr,
+            bestScore: Number(best),
+            totalScore: Number(total),
+            streak: Number(stk),
+            badgeIds: [],
+          });
         } catch (err) {
           console.warn(`Skipped player ${i}:`, err);
         }
         await new Promise((r) => setTimeout(r, 150));
       }
-      rows.sort((a, b) => b.totalScore - a.totalScore);
+      rows.sort((a, b) => b.bestScore - a.bestScore || b.streak - a.streak || b.totalScore - a.totalScore);
+
+      // ERC-1155 exposes a batch read, so every player's four badge balances
+      // can be fetched in one RPC call instead of delaying the table row by row.
+      if (rows.length > 0) {
+        try {
+          const badgeAccounts = rows.flatMap((row) =>
+            BADGES.map(() => row.addr as `0x${string}`),
+          );
+          const badgeIds = rows.flatMap(() => BADGES.map((badge) => BigInt(badge.id)));
+          const badgeBalances = await publicClient.readContract({
+            address: BADGES_ADDRESS as `0x${string}`,
+            abi: BADGES_ABI,
+            functionName: "balanceOfBatch",
+            args: [badgeAccounts, badgeIds],
+          });
+
+          rows.forEach((row, rowIndex) => {
+            row.badgeIds = BADGES.filter((_, badgeIndex) =>
+              Number(badgeBalances[rowIndex * BADGES.length + badgeIndex]) > 0,
+            ).map((badge) => badge.id);
+          });
+        } catch (error) {
+          console.warn("Leaderboard badges could not be loaded:", error);
+        }
+      }
+
       setBoard(rows);
       setBoardLoading(false);
       // Resolve Basenames for the shown rows, sequentially to respect RPC limits
@@ -1715,35 +1755,13 @@ export default function Home() {
         )}
 
         {screen === "board" && (
-          <div style={styles.card}>
-            <p style={styles.eyebrow}>Top players · all-time</p>
-            <h1 style={{ ...styles.title, fontSize: 40, marginBottom: 24 }}>Leaderboard</h1>
-            {boardLoading ? (
-              <p style={styles.meta}>Reading chain…</p>
-            ) : board.length === 0 ? (
-              <p style={styles.meta}>No scores yet. Be first.</p>
-            ) : (
-              board.map((r, i) => (
-                <div
-                  key={r.addr}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    padding: "14px 16px",
-                    border: `1px solid ${address && r.addr.toLowerCase() === address.toLowerCase() ? T.base : T.border}`,
-                    borderRadius: 4,
-                    marginBottom: 8,
-                    fontFamily: T.mono,
-                    fontSize: 13,
-                  }}
-                >
-                  <span><span style={{ color: T.textDim, marginRight: 12 }}>{String(i + 1).padStart(2, "0")}</span>{r.name || shortAddr(r.addr)}</span>
-                  <span style={{ color: T.accent }}>{r.totalScore} · 🔥{r.streak}</span>
-                </div>
-              ))
-            )}
-            <button style={{ ...styles.ghostBtn, marginTop: 16 }} onClick={() => setScreen("start")}>← Back</button>
-          </div>
+          <LeaderboardTable
+            rows={board}
+            badges={BADGES}
+            currentAddress={address}
+            loading={boardLoading}
+            onBack={() => setScreen("start")}
+          />
         )}
 
         {screen === "badges" && (

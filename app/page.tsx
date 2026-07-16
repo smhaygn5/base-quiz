@@ -6,6 +6,7 @@ import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain
 import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { namehash } from "viem/ens";
+import { CategoryCarousel } from "@/components/ui/category-carousel";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 
 // Basenames reverse resolution on Base mainnet (L2 Resolver)
@@ -645,14 +646,70 @@ const GEO_Q = [
   { q: "Angel Falls, the tallest waterfall, is located in?", a: ["Brazil", "Venezuela", "Peru", "Colombia"], c: 1 },
 ];
 
-type Category = { id: string; name: string; emoji: string; color: string; questions: QuizQ[] };
+type Category = {
+  id: string;
+  name: string;
+  emoji: string;
+  color: string;
+  image: string;
+  description: string;
+  questions: QuizQ[];
+};
 const CATEGORIES: Category[] = [
-  { id: "crypto", name: "Crypto", emoji: "🪙", color: "#0052FF", questions: CRYPTO_Q },
-  { id: "sports", name: "Sports", emoji: "⚽", color: "#7BFF8C", questions: SPORTS_Q },
-  { id: "art", name: "Art", emoji: "🎨", color: "#FF5577", questions: ART_Q },
-  { id: "history", name: "History", emoji: "🏛️", color: "#FFE66D", questions: HISTORY_Q },
-  { id: "science", name: "Science", emoji: "🔬", color: "#60a5fa", questions: SCIENCE_Q },
-  { id: "geography", name: "Geography", emoji: "🌍", color: "#f6851b", questions: GEO_Q },
+  {
+    id: "crypto",
+    name: "Crypto",
+    emoji: "🪙",
+    color: "#0974FE",
+    image: "/categories/crypto.jpg",
+    description: "Test your knowledge of Base, Ethereum, wallets, DeFi, and the culture shaping the onchain world.",
+    questions: CRYPTO_Q,
+  },
+  {
+    id: "sports",
+    name: "Sports",
+    emoji: "⚽",
+    color: "#4ADE80",
+    image: "/categories/sports.jpg",
+    description: "From football and basketball to tennis and the Olympics — see how strong your sports memory is.",
+    questions: SPORTS_Q,
+  },
+  {
+    id: "art",
+    name: "Art",
+    emoji: "🎨",
+    color: "#FB7185",
+    image: "/categories/art.jpg",
+    description: "Explore painting, artists, movements, and the ideas that changed visual culture across generations.",
+    questions: ART_Q,
+  },
+  {
+    id: "history",
+    name: "History",
+    emoji: "🏛️",
+    color: "#FBBF24",
+    image: "/categories/history.jpg",
+    description: "Travel through civilizations, turning points, and the people whose decisions shaped the world.",
+    questions: HISTORY_Q,
+  },
+  {
+    id: "science",
+    name: "Science",
+    emoji: "🔬",
+    color: "#60A5FA",
+    image: "/categories/science.webp",
+    description: "Challenge yourself across physics, biology, chemistry, and discoveries that explain how things work.",
+    questions: SCIENCE_Q,
+  },
+  {
+    id: "geography",
+    name: "Geography",
+    emoji: "🌍",
+    color: "#F59E0B",
+    image: "/categories/geography.jpg",
+    description: "Navigate countries, capitals, oceans, and landmarks from every corner of our planet.",
+    questions: GEO_Q,
+  },
 ];
 
 const QUIZ_SIZE = 5;
@@ -1487,46 +1544,19 @@ export default function Home() {
         )}
 
         {screen === "categories" && (
-          <div style={styles.card}>
-            <p style={styles.eyebrow}>Pick a category</p>
-            <h1 style={{ ...styles.title, fontSize: 40, marginBottom: 24 }}>Choose your quiz</h1>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-              {CATEGORIES.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => startGame(cat.id)}
-                  style={{
-                    background: T.surface,
-                    border: `1px solid ${T.border}`,
-                    borderRadius: 4,
-                    padding: "20px 16px",
-                    cursor: "pointer",
-                    color: T.text,
-                    textAlign: "left",
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 8,
-                    transition: "border-color 0.2s, background 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = cat.color;
-                    e.currentTarget.style.background = T.surfaceHi;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = T.border;
-                    e.currentTarget.style.background = T.surface;
-                  }}
-                >
-                  <span style={{ fontSize: 32, lineHeight: 1 }}>{cat.emoji}</span>
-                  <span style={{ fontFamily: T.mono, fontSize: 16, fontWeight: 700, color: cat.color }}>{cat.name}</span>
-                  <span style={{ fontFamily: T.mono, fontSize: 10, color: T.textDimmer, letterSpacing: "0.1em" }}>
-                    {cat.questions.length} QUESTIONS
-                  </span>
-                </button>
-              ))}
-            </div>
-            <button style={{ ...styles.ghostBtn, marginTop: 16 }} onClick={() => setScreen("start")}>← Back</button>
-          </div>
+          <CategoryCarousel
+            items={CATEGORIES.map((cat) => ({
+              id: cat.id,
+              name: cat.name,
+              emoji: cat.emoji,
+              color: cat.color,
+              image: cat.image,
+              description: cat.description,
+              questionCount: cat.questions.length,
+            }))}
+            onStart={startGame}
+            onBack={() => setScreen("start")}
+          />
         )}
 
         {screen === "quiz" && (

@@ -673,19 +673,19 @@ const BADGES = [
 ];
 
 const T = {
-  bg: "#171717",
-  surface: "#262626",
-  surfaceHi: "#333333",
-  border: "#404040",
-  borderHi: "#525252",
-  base: "#3b82f6",
-  baseHi: "#60a5fa",
-  accent: "#93c5fd",
-  correct: "#4ade80",
-  wrong: "#ef4444",
-  text: "#e5e5e5",
-  textDim: "#a3a3a3",
-  textDimmer: "#737373",
+  bg: "var(--bq-bg)",
+  surface: "var(--bq-surface)",
+  surfaceHi: "var(--bq-surface-hi)",
+  border: "var(--bq-border)",
+  borderHi: "var(--bq-border-hi)",
+  base: "var(--bq-base)",
+  baseHi: "var(--bq-base-hi)",
+  accent: "var(--bq-accent)",
+  correct: "var(--bq-correct)",
+  wrong: "var(--bq-wrong)",
+  text: "var(--bq-text)",
+  textDim: "var(--bq-text-dim)",
+  textDimmer: "var(--bq-text-dimmer)",
   mono: "var(--font-plex-mono), ui-monospace, monospace",
   sans: "var(--font-inter), system-ui, sans-serif",
 };
@@ -864,6 +864,7 @@ export default function Home() {
   const [claimError, setClaimError] = useState("");
   const [tutorialStep, setTutorialStep] = useState<number | null>(null);
   const [soundOn, setSoundOn] = useState(true);
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
   const [totalPlayers, setTotalPlayers] = useState<number | null>(null);
 
   useEffect(() => {
@@ -876,6 +877,7 @@ export default function Home() {
 
   useEffect(() => {
     if (localStorage.getItem("soundOff") === "1") setSoundOn(false);
+    setTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark");
   }, []);
 
   function playSound(type: "correct" | "wrong" | "tick" | "win") {
@@ -930,6 +932,15 @@ export default function Home() {
     const next = !soundOn;
     setSoundOn(next);
     localStorage.setItem("soundOff", next ? "0" : "1");
+  }
+
+  function toggleTheme() {
+    const currentTheme = document.documentElement.dataset.theme === "light" ? "light" : "dark";
+    const nextTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = nextTheme;
+    document.documentElement.style.colorScheme = nextTheme;
+    localStorage.setItem("baseQuizTheme", nextTheme);
+    setTheme(nextTheme);
   }
 
   useEffect(() => {
@@ -1199,7 +1210,7 @@ export default function Home() {
       fontFamily: T.sans,
       display: "flex",
       flexDirection: "column",
-      backgroundImage: `radial-gradient(circle at 15% 0%, rgba(59,130,246,0.10), transparent 40%), radial-gradient(circle at 85% 100%, rgba(96,165,250,0.06), transparent 40%)`,
+      backgroundImage: `radial-gradient(circle at 15% 0%, var(--bq-glow-primary), transparent 40%), radial-gradient(circle at 85% 100%, var(--bq-glow-secondary), transparent 40%)`,
     },
     header: {
       position: "relative",
@@ -1349,7 +1360,7 @@ export default function Home() {
   };
 
   return (
-    <div style={styles.root}>
+    <div className="base-quiz-app" style={styles.root}>
       {screen === "start" && (
         <div aria-hidden style={{ position: "absolute", inset: 0, overflow: "hidden", zIndex: 0, pointerEvents: "none" }}>
           {[
@@ -1372,8 +1383,8 @@ export default function Home() {
                     transform: `rotate(${s.rot}deg)`,
                     borderRadius: 9999,
                     background: `linear-gradient(to right, ${s.grad}, transparent)`,
-                    border: "1px solid rgba(255,255,255,0.12)",
-                    boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
+                    border: "1px solid var(--bq-shape-border)",
+                    boxShadow: "var(--bq-shape-shadow)",
                   }}
                 />
               </div>
@@ -1393,13 +1404,14 @@ export default function Home() {
           />
           <span className="base-quiz-version" style={{ color: T.textDimmer, marginLeft: 4 }}>v1.0</span>
         </div>
-        <div style={styles.headerRight}>
+        <div className="base-quiz-header-actions" style={styles.headerRight}>
           {isConnected && address ? (
-            <button style={styles.walletPill} onClick={() => disconnect()} title="Disconnect">
+            <button className="base-quiz-wallet-button" style={styles.walletPill} onClick={() => disconnect()} title="Disconnect">
               {shortAddr(address)} ×
             </button>
           ) : (
             <button
+              className="base-quiz-wallet-button"
               style={{ ...styles.walletPill, color: T.base, borderColor: T.base }}
               onClick={() => setConnectMenuOpen(true)}
               title="Connect wallet"
@@ -1407,7 +1419,16 @@ export default function Home() {
               Connect
             </button>
           )}
-          <button style={styles.iconBtn} onClick={toggleSound} title={soundOn ? "Mute" : "Unmute"}>
+          <button
+            className="base-quiz-icon-button base-quiz-theme-button"
+            style={styles.iconBtn}
+            onClick={toggleTheme}
+            title={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+            aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+          >
+            <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
+          </button>
+          <button className="base-quiz-icon-button base-quiz-sound-button" style={styles.iconBtn} onClick={toggleSound} title={soundOn ? "Mute" : "Unmute"}>
             {soundOn ? "♪" : "×"}
           </button>
         </div>
@@ -1863,7 +1884,7 @@ export default function Home() {
 
       {connectMenuOpen && !isConnected && (
         <div
-          style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 200 }}
+          style={{ position: "fixed", inset: 0, background: "var(--bq-modal-overlay)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 200 }}
           onClick={() => setConnectMenuOpen(false)}
         >
           <div
@@ -1897,7 +1918,7 @@ export default function Home() {
       )}
 
       {tutorialStep !== null && (
-        <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.92)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 100 }}>
+        <div style={{ position: "fixed", inset: 0, background: "var(--bq-tutorial-overlay)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, zIndex: 100 }}>
           <div style={{ ...styles.card, background: T.surface, padding: 32, border: `1px solid ${T.border}`, borderRadius: 4 }}>
             <p style={styles.eyebrow}>{String(tutorialStep + 1).padStart(2, "0")} / 03</p>
             {tutorialStep === 0 && (

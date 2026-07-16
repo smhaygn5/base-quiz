@@ -5,6 +5,23 @@ import { minikitConfig } from "@/minikit.config";
 import { RootProvider } from "./rootProvider";
 import "./globals.css";
 
+const themeScript = `
+  (() => {
+    try {
+      const savedTheme = localStorage.getItem("baseQuizTheme");
+      const theme = savedTheme === "light" || savedTheme === "dark"
+        ? savedTheme
+        : window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    } catch {
+      document.documentElement.dataset.theme = "dark";
+    }
+  })();
+`;
+
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: minikitConfig.miniapp.name,
@@ -49,7 +66,10 @@ export default function RootLayout({
 }>) {
   return (
     <RootProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        </head>
         <body className={`${inter.variable} ${plexMono.variable}`}>
           <SafeArea>{children}</SafeArea>
         </body>

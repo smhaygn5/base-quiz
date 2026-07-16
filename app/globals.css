@@ -373,6 +373,111 @@
   animation: homeHeroRise 560ms 390ms ease both;
 }
 
+.entry-activation-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(0, 82, 255, 0.18), transparent 34%),
+    var(--bq-bg);
+  color: var(--bq-text);
+}
+
+.entry-activation-card {
+  width: min(100%, 520px);
+  padding: clamp(28px, 6vw, 52px);
+  border: 1px solid var(--bq-border);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--bq-surface) 94%, transparent);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+  text-align: center;
+}
+
+.entry-activation-card > img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 18px;
+}
+
+.entry-activation-kicker,
+.entry-activation-wallet,
+.entry-activation-status {
+  color: var(--bq-text-dimmer);
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.entry-activation-card h1 {
+  margin: 10px 0 14px;
+  font-family: var(--font-bricolage), var(--font-inter), sans-serif;
+  font-size: clamp(30px, 7vw, 46px);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.entry-activation-copy {
+  margin: 0 auto 28px;
+  color: var(--bq-text-dim);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.entry-activation-primary {
+  width: 100%;
+  min-height: 54px;
+  margin-top: 10px;
+  border: 1px solid var(--bq-base);
+  border-radius: 10px;
+  background: var(--bq-base);
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--font-bricolage), var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.entry-activation-primary:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.entry-activation-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 54px;
+  border: 1px solid color-mix(in srgb, var(--bq-correct) 48%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bq-correct) 12%, transparent);
+  color: var(--bq-correct);
+  font-weight: 700;
+}
+
+.entry-activation-error {
+  margin-top: 16px;
+  color: var(--bq-wrong);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.entry-activation-link,
+.entry-activation-back {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--bq-base-hi);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.entry-activation-back {
+  display: block;
+  color: var(--bq-text-dimmer);
+}
+
 @keyframes homeHeroMarkIn {
   from {
     opacity: 0;

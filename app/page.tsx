@@ -11,6 +11,7 @@ import { BadgesRoadmap } from "@/components/ui/badges-roadmap";
 import { HomeHero } from "@/components/ui/home-hero";
 import { LeaderboardTable } from "@/components/ui/leaderboard-table";
 import { QuizPanel } from "@/components/ui/quiz-panel";
+import { ResultPanel } from "@/components/ui/result-panel";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 
 // Basenames reverse resolution on Base mainnet (L2 Resolver)
@@ -1546,14 +1547,15 @@ export default function Home() {
         )}
 
         {screen === "end" && (
-          <div style={styles.card}>
-            <p style={styles.eyebrow}>Round complete</p>
-            <h1 style={{ ...styles.title, fontSize: 88, color: T.accent }}>{score}</h1>
-            <p style={styles.meta}>points · streak {streak}</p>
-            <div style={{ marginTop: 32 }}>
-              {!isConnected ? (
-                <div>
-                  <p style={{ ...styles.eyebrow, marginBottom: 16 }}>Connect to save score</p>
+          <ResultPanel
+            score={score}
+            streak={streak}
+            categoryName={CATEGORIES.find((c) => c.id === category)?.name || "Quiz"}
+            isConnected={isConnected}
+            saveStatus={txStatus}
+            saveContent={
+              !isConnected ? (
+                <div className="result-wallet-list">
                   {baseWallet && (
                     <WalletOptionButton
                       label="Base Wallet"
@@ -1573,40 +1575,45 @@ export default function Home() {
                   ))}
                 </div>
               ) : txStatus === "idle" ? (
-                <button style={styles.primaryBtn} onClick={saveOnchain}>Save score onchain</button>
+                <button type="button" className="result-inline-button is-primary" onClick={saveOnchain}>
+                  Save score onchain <span aria-hidden="true">›</span>
+                </button>
               ) : txStatus === "pending" ? (
-                <button style={{ ...styles.primaryBtn, opacity: 0.6 }} disabled>Confirming…</button>
+                <button type="button" className="result-inline-button is-primary" disabled>
+                  <span className="result-button-spinner" aria-hidden="true" /> Confirming…
+                </button>
               ) : txStatus === "done" ? (
-                <div style={{ marginBottom: 12 }}>
-                  <p style={{ color: T.correct, fontFamily: T.mono, fontSize: 13, marginBottom: 8 }}>✓ SAVED ONCHAIN</p>
-                  <a href={`https://basescan.org/tx/${txHash}`} target="_blank" style={{ color: T.base, fontSize: 12, fontFamily: T.mono }}>
-                    View tx →
+                <div className="result-save-success">
+                  <span>✓ Saved onchain</span>
+                  <a href={`https://basescan.org/tx/${txHash}`} target="_blank" rel="noreferrer">
+                    View transaction ↗
                   </a>
                 </div>
               ) : (
-                <div style={{ marginBottom: 12 }}>
-                  <p style={{ color: T.wrong, fontSize: 13, fontFamily: T.mono }}>{txError}</p>
-                  <button style={styles.ghostBtn} onClick={saveOnchain}>Try again</button>
+                <div className="result-save-error">
+                  <p>{txError}</p>
+                  <button type="button" className="result-inline-button is-secondary" onClick={saveOnchain}>
+                    Try again <span aria-hidden="true">›</span>
+                  </button>
                 </div>
               )}
-              {!shareMenuOpen ? (
-                <button style={styles.ghostBtn} onClick={() => setShareMenuOpen(true)}>Share score</button>
+            shareContent={
+              !shareMenuOpen ? (
+                <button type="button" className="result-inline-button is-secondary" onClick={() => setShareMenuOpen(true)}>
+                  Share score <span aria-hidden="true">›</span>
+                </button>
               ) : (
-                <div>
-                  <button style={styles.ghostBtn} onClick={shareFarcaster}>On Farcaster</button>
-                  <button style={styles.ghostBtn} onClick={shareTwitter}>On X</button>
-                  <button style={styles.ghostBtn} onClick={shareCopy}>Copy text</button>
+                <div className="result-share-options">
+                  <button type="button" onClick={shareFarcaster}>Farcaster</button>
+                  <button type="button" onClick={shareTwitter}>X</button>
+                  <button type="button" onClick={shareCopy}>Copy text</button>
                 </div>
               )}
-              <div style={{ height: 1, background: T.border, margin: "16px 0" }} />
-              <button style={styles.primaryBtn} onClick={() => startGame(category)}>
-                🔄 Play again · {CATEGORIES.find((c) => c.id === category)?.name}
-              </button>
-              <button style={styles.ghostBtn} onClick={() => setScreen("categories")}>Choose category</button>
-              <button style={styles.ghostBtn} onClick={loadBadges}>Streak badges</button>
-              <button style={styles.ghostBtn} onClick={loadBoard}>Leaderboard</button>
-            </div>
-          </div>
+            onPlayAgain={() => startGame(category)}
+            onChooseCategory={() => setScreen("categories")}
+            onBadges={loadBadges}
+            onLeaderboard={loadBoard}
+          />
         )}
 
         {screen === "board" && (

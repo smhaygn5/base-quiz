@@ -4,7 +4,7 @@ import { baseAccount, injected } from "wagmi/connectors";
 
 const APP_URL =
   process.env.NEXT_PUBLIC_URL?.replace(/\/$/, "") ||
-  "https://base-quiz-v5is.vercel.app";
+  "https://basequiz.xyz";
 
 const apiKey = process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY;
 const rpcUrl = apiKey

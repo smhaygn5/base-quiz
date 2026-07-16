@@ -656,7 +656,9 @@ const CATEGORIES: Category[] = [
 
 const QUIZ_SIZE = 5;
 const TIME_PER_Q = 15;
-const APP_URL = "https://base-quiz-v5is.vercel.app";
+const APP_URL =
+  process.env.NEXT_PUBLIC_URL?.replace(/\/$/, "") ||
+  "https://basequiz.xyz";
 
 // Base Builder Code (bc_tajhkats) — appended as a calldata suffix so onchain
 // transactions are attributed to this builder for Base Builder Rewards.

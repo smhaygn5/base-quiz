@@ -9,6 +9,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: minikitConfig.miniapp.name,
     description: minikitConfig.miniapp.description,
+    icons: {
+      icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+      shortcut: "/favicon.svg",
+      apple: "/icon.png",
+    },
     other: {
       "base:app_id": "6a2b4c1e0cfd412b2ab2bf1f",
       "fc:miniapp": JSON.stringify({

@@ -73,3 +73,49 @@
   .hero-shape-in { animation: none !important; opacity: 1 !important; }
   .hero-float { animation: none !important; }
 }
+
+.base-quiz-header-logo {
+  display: block;
+  width: clamp(100px, 10vw, 140px);
+  height: auto;
+}
+
+.base-quiz-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.base-quiz-footer-logo {
+  display: block;
+  width: 68px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 520px) {
+  .base-quiz-header {
+    padding-inline: 12px !important;
+  }
+
+  .base-quiz-header-logo {
+    width: clamp(82px, 27vw, 108px);
+  }
+
+  .base-quiz-version {
+    display: none;
+  }
+
+  .base-quiz-footer {
+    padding-inline: 14px !important;
+  }
+
+  .base-quiz-footer-logo {
+    width: 58px;
+  }
+
+  .base-quiz-footer-data {
+    display: none;
+  }
+}

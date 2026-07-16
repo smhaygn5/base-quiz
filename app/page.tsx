@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback, CSSProperties } from "react";
+import Image from "next/image";
 import { useMiniKit, useComposeCast } from "@coinbase/onchainkit/minikit";
 import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";
 import { base } from "wagmi/chains";
@@ -1220,12 +1221,6 @@ export default function Home() {
       alignItems: "center",
       gap: 8,
     },
-    brandDot: {
-      width: 8,
-      height: 8,
-      background: T.base,
-      boxShadow: `0 0 12px ${T.base}`,
-    },
     headerRight: { display: "flex", gap: 8, alignItems: "center" },
     iconBtn: {
       background: "transparent",
@@ -1386,11 +1381,17 @@ export default function Home() {
           ))}
         </div>
       )}
-      <header style={styles.header}>
+      <header className="base-quiz-header" style={styles.header}>
         <div style={styles.brand}>
-          <div style={styles.brandDot} />
-          <span>BASE_QUIZ</span>
-          <span style={{ color: T.textDimmer, marginLeft: 8 }}>v1.0</span>
+          <Image
+            src="/base-quiz-logo.svg"
+            alt="Base Quiz"
+            width={850}
+            height={245}
+            className="base-quiz-header-logo"
+            priority
+          />
+          <span className="base-quiz-version" style={{ color: T.textDimmer, marginLeft: 4 }}>v1.0</span>
         </div>
         <div style={styles.headerRight}>
           {isConnected && address ? (
@@ -1845,8 +1846,18 @@ export default function Home() {
         )}
       </main>
 
-      <footer style={styles.footer}>
-        <span>BLOCK_DATA · BASE_MAINNET</span>
+      <footer className="base-quiz-footer" style={styles.footer}>
+        <div className="base-quiz-footer-brand">
+          <Image
+            src="/base-quiz-logo.svg"
+            alt=""
+            aria-hidden="true"
+            width={850}
+            height={245}
+            className="base-quiz-footer-logo"
+          />
+          <span className="base-quiz-footer-data">BLOCK_DATA · BASE_MAINNET</span>
+        </div>
         <span>{totalPlayers !== null ? `${totalPlayers} PLAYERS_ONCHAIN` : "···"}</span>
       </footer>
 

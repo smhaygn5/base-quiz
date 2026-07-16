@@ -5,11 +5,20 @@ import Image from "next/image";
 type HomeHeroProps = {
   streak: number;
   onStart: () => void;
+  startPending?: boolean;
+  startError?: string;
   onLeaderboard: () => void;
   onBadges: () => void;
 };
 
-export function HomeHero({ streak, onStart, onLeaderboard, onBadges }: HomeHeroProps) {
+export function HomeHero({
+  streak,
+  onStart,
+  startPending = false,
+  startError = "",
+  onLeaderboard,
+  onBadges,
+}: HomeHeroProps) {
   return (
     <section className="home-hero" aria-labelledby="home-hero-title">
       <div className="home-hero-grid" aria-hidden="true" />
@@ -42,9 +51,15 @@ export function HomeHero({ streak, onStart, onLeaderboard, onBadges }: HomeHeroP
         )}
 
         <div className="home-hero-actions">
-          <button type="button" className="home-hero-start" onClick={onStart}>
-            <span>Start round</span>
-            <span aria-hidden="true">→</span>
+          <button
+            type="button"
+            className="home-hero-start"
+            onClick={onStart}
+            disabled={startPending}
+            aria-busy={startPending}
+          >
+            <span>{startPending ? "Confirm in wallet…" : "Start round"}</span>
+            <span aria-hidden="true">{startPending ? "·" : "→"}</span>
           </button>
           <button type="button" className="home-hero-secondary" onClick={onLeaderboard}>
             Leaderboard
@@ -53,6 +68,12 @@ export function HomeHero({ streak, onStart, onLeaderboard, onBadges }: HomeHeroP
             Streak badges
           </button>
         </div>
+
+        {startError && (
+          <p className="home-hero-start-error" role="alert">
+            {startError}
+          </p>
+        )}
 
         <p className="home-hero-facts">5 questions · 15 seconds each · scores saved onchain</p>
       </div>

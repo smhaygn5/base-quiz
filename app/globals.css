@@ -323,6 +323,12 @@
   transform: translateY(-3px);
 }
 
+.home-hero-start:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
 .home-hero-start span:last-child {
   font-size: 20px;
 }
@@ -345,6 +351,16 @@
 .home-hero-actions button:focus-visible {
   outline: 2px solid var(--bq-base-hi);
   outline-offset: 4px;
+}
+
+.home-hero-start-error {
+  max-width: 520px;
+  margin: -10px auto 18px;
+  color: var(--bq-wrong);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .home-hero-facts {

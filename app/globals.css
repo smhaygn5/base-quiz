@@ -1760,6 +1760,12 @@
   padding: clamp(12px, 3vw, 36px);
 }
 
+:root:not([data-theme="light"]) .base-quiz-main.is-category-screen,
+:root[data-theme="dark"] .base-quiz-main.is-category-screen {
+  background: #08090b;
+  background-image: none;
+}
+
 .category-stack-wrap {
   min-width: 0;
   display: flex;

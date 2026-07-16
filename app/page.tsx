@@ -1504,7 +1504,10 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="base-quiz-main" style={styles.main}>
+      <main
+        className={`base-quiz-main${screen === "categories" ? " is-category-screen" : ""}`}
+        style={styles.main}
+      >
         {screen === "start" && (
           <HomeHero
             streak={streak}

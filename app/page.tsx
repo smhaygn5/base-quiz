@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback, CSSProperties } from "react";
 import Image from "next/image";
 import { useMiniKit, useComposeCast } from "@coinbase/onchainkit/minikit";
-import { useAccount, useConnect, useDisconnect, useSendTransaction, useWriteContract, useSwitchChain, useChainId } from "wagmi";
+import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";
 import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { namehash } from "viem/ens";
@@ -13,6 +13,7 @@ import { LeaderboardTable } from "@/components/ui/leaderboard-table";
 import { QuizPanel } from "@/components/ui/quiz-panel";
 import { ResultPanel } from "@/components/ui/result-panel";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
+import { ROUND_ENTRY_ADDRESS, ROUND_ENTRY_ABI } from "./entry-contract";
 
 // Basenames reverse resolution on Base mainnet (L2 Resolver)
 const L2_RESOLVER_ADDRESS = "0xC6d566A56A1aFf6508b41f6c90ff131615583BCD";
@@ -727,10 +728,6 @@ const APP_URL =
 // transactions are attributed to this builder for Base Builder Rewards.
 const BUILDER_CODE_SUFFIX = "0x62635f74616a686b6174730b0080218021802180218021802180218021" as const;
 
-// A zero-value entry transaction is sent here from the home screen. Using a
-// plain address keeps the entry confirmation separate from score and streak data.
-const APP_ACTIVITY_ADDRESS = "0x509549d76b75f58dfda659cfca25b234086ddd7f" as const;
-
 const BADGES = [
   { id: 1, name: "Bronze", emoji: "🥉", days: 3, color: "#cd7f32" },
   { id: 2, name: "Silver", emoji: "🥈", days: 7, color: "#c0c0c0" },
@@ -898,7 +895,6 @@ export default function Home() {
   const { address, isConnected, chainId: walletChainId } = useAccount();
   const { connect, connectors } = useConnect();
   const { disconnect } = useDisconnect();
-  const { sendTransactionAsync } = useSendTransaction();
   const { writeContractAsync } = useWriteContract();
   const { switchChainAsync } = useSwitchChain();
   const chainId = useChainId();
@@ -1118,9 +1114,10 @@ export default function Home() {
     setStartTxPending(true);
     try {
       if (walletChainId !== base.id) await switchChainAsync({ chainId: base.id });
-      await sendTransactionAsync({
-        to: APP_ACTIVITY_ADDRESS,
-        value: BigInt(0),
+      await writeContractAsync({
+        address: ROUND_ENTRY_ADDRESS,
+        abi: ROUND_ENTRY_ABI,
+        functionName: "startRound",
         chainId: base.id,
         dataSuffix: BUILDER_CODE_SUFFIX,
       });

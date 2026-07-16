@@ -30,12 +30,21 @@ export default function ActivateEntryContract() {
   const [error, setError] = useState("");
   const [hash, setHash] = useState("");
 
-  const checkContract = useCallback(async () => {
+  const checkContract = useCallback(async (retries = 0) => {
     try {
-      const code = await publicClient.getCode({ address: ROUND_ENTRY_ADDRESS });
-      const deployed = Boolean(code && code !== "0x");
-      setActive(deployed);
-      return deployed;
+      for (let attempt = 0; attempt <= retries; attempt += 1) {
+        const code = await publicClient.getCode({ address: ROUND_ENTRY_ADDRESS });
+        const deployed = Boolean(code && code !== "0x");
+        if (deployed) {
+          setActive(true);
+          return true;
+        }
+        if (attempt < retries) {
+          await new Promise((resolve) => setTimeout(resolve, 1500));
+        }
+      }
+      setActive(false);
+      return false;
     } catch {
       setError("Could not check the Base contract. Please try again.");
       setActive(false);
@@ -75,7 +84,7 @@ export default function ActivateEntryContract() {
       });
       setHash(transactionHash);
       await publicClient.waitForTransactionReceipt({ hash: transactionHash });
-      const deployed = await checkContract();
+      const deployed = await checkContract(6);
       if (!deployed) throw new Error("The contract was not found after deployment.");
     } catch (caught: unknown) {
       const message = caught instanceof Error ? caught.message : "Activation failed";
@@ -139,4 +148,3 @@ export default function ActivateEntryContract() {
     </main>
   );
 }
-

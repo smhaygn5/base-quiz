@@ -1,0 +1,5586 @@
+{
+  "messages": {
+    "meta.title": "Base Quiz",
+    "common.back": "返回",
+    "common.cancel": "取消",
+    "common.next": "下一步",
+    "common.skip": "跳过",
+    "common.tryAgain": "再试一次",
+    "common.connect": "连接",
+    "common.disconnect": "断开连接",
+    "common.connectWallet": "连接钱包",
+    "common.connectBaseWallet": "连接 Base Wallet",
+    "common.browserWallets": "浏览器钱包",
+    "common.recommended": "推荐",
+    "common.selectLanguage": "选择语言",
+    "common.language": "语言",
+    "common.switchLight": "切换到浅色主题",
+    "common.switchDark": "切换到深色主题",
+    "common.mute": "静音",
+    "common.unmute": "取消静音",
+    "home.kicker": "链上知识问答 · Base",
+    "home.titleLine1": "每日知识问答。",
+    "home.titleLine2": "构建于 Base。",
+    "home.description": "选择一个类别，回答五道问题并与时间赛跑。保持连续答题记录，将分数保存到链上，并登上全球排行榜。",
+    "home.streak": "连续 {count} 天",
+    "home.confirmWallet": "在钱包中确认...",
+    "home.startRound": "开始回合",
+    "home.leaderboard": "排行榜",
+    "home.streakBadges": "连胜徽章",
+    "home.facts": "5 道题 · 每题 15 秒 · 分数保存到链上",
+    "category.pick": "选择一个类别",
+    "category.meta": "{count} 道题 · 每轮 5 道",
+    "category.start": "开始 {category} 测验",
+    "category.previous": "上一类别",
+    "category.next": "下一类别",
+    "category.imageAlt": "{category} 测验类别",
+    "category.crypto.name": "加密货币",
+    "category.crypto.description": "测试您对 Base、Ethereum、钱包、DeFi 以及塑造 onchain 世界的文化的了解。",
+    "category.sports.name": "体育运动",
+    "category.sports.description": "从足球和篮球到网球和奥运会——看看你的运动记忆有多强。",
+    "category.art.name": "艺术",
+    "category.art.description": "探索绘画、艺术家、运动以及改变几代人视觉文化的想法。",
+    "category.history.name": "历史",
+    "category.history.description": "穿越各个文明、转折点以及那些决定塑造世界的人们。",
+    "category.science.name": "科学",
+    "category.science.description": "在物理、生物、化学和解释事物运作原理的发现中挑战自己。",
+    "category.geography.name": "地理",
+    "category.geography.description": "从我们星球的每个角落导航国家、首都、海洋和地标。",
+    "quiz.fallbackName": "测验",
+    "quiz.questionProgress": "第 {current}/{total} 题",
+    "quiz.score": "分数",
+    "quiz.time": "时间",
+    "quiz.answeredAria": "{answered} 或 {total} 问题的解答",
+    "quiz.chooseCorrect": "选择正确答案",
+    "quiz.correct": "正确答案",
+    "quiz.wrong": "错误答案",
+    "quiz.points": "+{points} 积分",
+    "quiz.correctOption": "正确选项：{option}",
+    "quiz.autoNote": "回答一次·下一个问题自动加载",
+    "result.roundComplete": "回合完成",
+    "result.finalScore": "你的最终成绩",
+    "result.points": "点",
+    "result.summaryAria": "回合总结",
+    "result.categoryPill": "{category} 类别",
+    "result.streakPill": "连续 {count} 天",
+    "result.roundCompletedTitle": "回合已完成",
+    "result.roundCompletedDetail": "回答了五个问题。您的最终结果已准备就绪。",
+    "result.streakUpdatedTitle": "连胜更新",
+    "result.streakUpdatedDetail": "您现在正在进行 {count} 天的连续学习。",
+    "result.save.idle.title": "保存你的分数",
+    "result.save.idle.detail": "在 Base 上记录此结果并加入全球排行榜。",
+    "result.save.pending.title": "确认您的分数",
+    "result.save.pending.detail": "批准钱包中的交易以完成保存。",
+    "result.save.done.title": "分数已保存 onchain",
+    "result.save.done.detail": "您的结果已在 Base 上得到验证，并已准备好进入排行榜。",
+    "result.save.error.title": "保存需要注意",
+    "result.save.error.detail": "查看下面的消息，然后再次尝试交易。",
+    "result.save.disconnected.title": "连接以保存",
+    "result.save.disconnected.detail": "选择一个钱包来记录您在 Base 上的分数。",
+    "result.shareTitle": "分享你的结果",
+    "result.shareDetail": "在 Farcaster 或 X 上挑战您的朋友。",
+    "result.replayKicker": "保持势头",
+    "result.replayTitle": "准备好进行另一轮比赛了吗？",
+    "result.replayDetail": "再次玩 {category} 或选择不同的挑战。",
+    "result.playAgain": "再玩一次",
+    "result.chooseCategory": "选择类别",
+    "result.saveButton": "保存分数 onchain",
+    "result.confirming": "正在确认…",
+    "result.saved": "已保存 onchain",
+    "result.viewTransaction": "查看交易",
+    "result.shareScore": "分享分数",
+    "result.copyText": "复制文本",
+    "result.copied": "已复制到剪贴板！",
+    "leaderboard.kicker": "Base Mainnet · 历史总榜",
+    "leaderboard.title": "排行榜",
+    "leaderboard.description": "排名靠前的玩家按 onchain 总分排名。",
+    "leaderboard.loading": "读取 Base 的乐谱...",
+    "leaderboard.empty": "还没有分数。成为棋盘上的第一个玩家。",
+    "leaderboard.player": "玩家",
+    "leaderboard.totalScore": "总分",
+    "leaderboard.bestScore": "最好成绩",
+    "leaderboard.streak": "连胜",
+    "leaderboard.badges": "徽章",
+    "leaderboard.you": "你",
+    "leaderboard.noBadges": "没有徽章",
+    "leaderboard.badgeTitle": "{name} 徽章",
+    "leaderboard.players": "{count} 名玩家",
+    "leaderboard.verified": "分数和徽章已验证 onchain",
+    "badges.kicker": "连续答题 NFT · Base Mainnet",
+    "badges.title": "徽章",
+    "badges.roadmapTitle": "连胜徽章路线图",
+    "badges.roadmapDescription": "继续玩，增加你的连胜记录，并获得每个 onchain 里程碑。",
+    "badges.streak": "连续 {count} 天",
+    "badges.walletRequired": "需要钱包",
+    "badges.connectTitle": "连接以查看并领取您的徽章",
+    "badges.connectDetail": "您的连胜和 NFT 所有权直接从 Base 读取。",
+    "badges.days": "{count} 天",
+    "badges.bronze.name": "铜牌",
+    "badges.bronze.description": "完成您的第一次 3 天跑步",
+    "badges.silver.name": "银牌",
+    "badges.silver.description": "保持连续一周",
+    "badges.gold.name": "黄金",
+    "badges.gold.description": "建立持续 30 天的连续记录",
+    "badges.diamond.name": "钻石",
+    "badges.diamond.description": "达到最终的 100 天里程碑",
+    "badges.unlock": "连续解锁 {count} 天",
+    "badges.owned": "拥有",
+    "badges.claim": "领取徽章",
+    "badges.claiming": "声称…",
+    "badges.daysLeft": "{count} 剩余天数",
+    "badges.locked": "锁定",
+    "badges.loading": "读取 Base 的徽章...",
+    "wallet.connectTitle": "连接钱包",
+    "wallet.browserWallets": "浏览器钱包",
+    "wallet.recommended": "推荐",
+    "tutorial.welcomeTitle": "欢迎。",
+    "tutorial.welcomeDetail": "Base 上的每日问答游戏。测试您的知识，建立连胜，并在全球范围内竞争。",
+    "tutorial.questionsTitle": "5 个问题。日常的。",
+    "tutorial.questionsDetail": "快速回答——更快意味着更多积分。保存您的分数 onchain 以出现在全球排行榜上。",
+    "tutorial.badgesTitle": "获得 NFT 徽章。",
+    "tutorial.badgesDetail": "保持您的连胜并领取 onchain NFTs：青铜 (3d)、白银 (7d)、黄金 (30d)、钻石 (100d)。",
+    "tutorial.letsPlay": "我们来玩吧",
+    "footer.blockData": "区块数据 · BASE MAINNET",
+    "footer.playersOnchain": "{count} 名链上玩家",
+    "share.text": "🧠 我在 Base Quiz 上获得了 {score} 积分！ 🔥 连胜：{streak} 天\n\n你觉得你能打败我吗？ 👇",
+    "error.startFailed": "该回合无法开始。请再试一次。",
+    "error.startCancelled": "交易已取消。确认后即可开始回合。",
+    "error.saveFailed": "分数无法保存。请再试一次。",
+    "error.alreadyPlayed": "今天已经保存了。明天再来。",
+    "error.claimFailed": "徽章无法领取。请再试一次。",
+    "activation.kicker": "Base Quiz 设置",
+    "activation.title": "激活回合合约",
+    "activation.copy": "这一一次性 Base 交易部署了 Start Round 使用的小型合约。它不会更改分数、条纹、徽章或转移 ETH。",
+    "activation.checking": "检查合同...",
+    "activation.active": "回合合约已激活",
+    "activation.connected": "已连接：{address}",
+    "activation.confirming": "正在确认 Base...",
+    "activation.activate": "激活回合合约",
+    "activation.pendingTransaction": "查看待处理交易",
+    "activation.back": "返回 Base Quiz",
+    "activation.errorCheck": "无法检查 Base 合约，请重试。",
+    "activation.errorWallet": "未找到兼容的钱包。",
+    "activation.errorCancelled": "交易已取消。没有进行任何更改。",
+    "activation.errorFailed": "激活失败。请再试一次。"
+  },
+  "quiz": {
+    "crypto:0": {
+      "question": "哪家公司开发了 Base？",
+      "answers": {
+        "Binance": "币安",
+        "Coinbase": "Coinbase",
+        "Kraken": "海妖",
+        "OKX": "OKX"
+      }
+    },
+    "crypto:1": {
+      "question": "Base 是哪个网络的第 2 层？",
+      "answers": {
+        "Bitcoin": "比特币",
+        "Solana": "索拉纳",
+        "Ethereum": "Ethereum",
+        "Avalanche": "雪崩"
+      }
+    },
+    "crypto:2": {
+      "question": "Base 使用哪个技术堆栈？",
+      "answers": {
+        "OP Stack": "操作栈",
+        "zkSync": "zkSync",
+        "Polygon CDK": "多边形 CDK",
+        "Arbitrum Nitro": "仲裁硝基"
+      }
+    },
+    "crypto:3": {
+      "question": "Base 主网于哪一年推出？",
+      "answers": {
+        "2021": "2021 年",
+        "2022": "2022 年",
+        "2023": "2023",
+        "2024": "2024 年"
+      }
+    },
+    "crypto:4": {
+      "question": "Base 上的汽油费使用哪种代币？",
+      "answers": {
+        "USDC": "USDC",
+        "BASE": "基础",
+        "ETH": "ETH",
+        "OP": "操作"
+      }
+    },
+    "crypto:5": {
+      "question": "Base App 以前叫什么？",
+      "answers": {
+        "Coinbase Wallet": "Coinbase Wallet",
+        "MetaMask": "MetaMask",
+        "Rainbow": "彩虹",
+        "Phantom": "幻影"
+      }
+    },
+    "crypto:6": {
+      "question": "Coinbase 的首席执行官是谁？",
+      "answers": {
+        "Vitalik Buterin": "维塔利克·布特林",
+        "Brian Armstrong": "布莱恩·阿姆斯特朗",
+        "Changpeng Zhao": "赵长鹏",
+        "Jesse Pollak": "杰西·波拉克"
+      }
+    },
+    "crypto:7": {
+      "question": "谁在 Coinbase 领导 Base？",
+      "answers": {
+        "Brian Armstrong": "布莱恩·阿姆斯特朗",
+        "Jesse Pollak": "杰西·波拉克",
+        "Hayden Adams": "海登·亚当斯",
+        "Stani Kulechov": "斯坦尼·库列乔夫"
+      }
+    },
+    "crypto:8": {
+      "question": "Base 属于哪个超级链？",
+      "answers": {
+        "Polygon Superchain": "多边形超级链",
+        "Optimism Superchain": "乐观超级链",
+        "Arbitrum Orbit": "任意轨道",
+        "zkSync Hyperchain": "zkSync 超链"
+      }
+    },
+    "crypto:9": {
+      "question": "Base 最好描述为？",
+      "answers": {
+        "A standalone L1": "独立的 L1",
+        "An Ethereum L2 rollup": "Ethereum L2 汇总",
+        "A sidechain": "侧链",
+        "A bridge protocol": "桥接协议"
+      }
+    },
+    "crypto:10": {
+      "question": "Ethereum 的创始人是谁？",
+      "answers": {
+        "Satoshi Nakamoto": "中本聪",
+        "Vitalik Buterin": "维塔利克·布特林",
+        "Brian Armstrong": "布莱恩·阿姆斯特朗",
+        "CZ": "CZ"
+      }
+    },
+    "crypto:11": {
+      "question": "Base 上的智能合约是用什么编写的？",
+      "answers": {
+        "Python": "Python",
+        "Rust": "铁锈",
+        "Solidity": "坚固性",
+        "Go": "去"
+      }
+    },
+    "crypto:12": {
+      "question": "ETH 的最小单位是什么？",
+      "answers": {
+        "Satoshi": "中本聪",
+        "Gwei": "桂伟",
+        "Wei": "魏",
+        "Finney": "芬尼"
+      }
+    },
+    "crypto:13": {
+      "question": "Layer-2 解决方案的主要目标是什么？",
+      "answers": {
+        "Minting more tokens": "铸造更多代币",
+        "Scalability & lower fees": "提升扩展性并降低费用",
+        "Mining": "挖矿",
+        "Staking": "质押"
+      }
+    },
+    "crypto:14": {
+      "question": "Ethereum 使用什么共识？",
+      "answers": {
+        "Proof of Work": "工作量证明",
+        "Proof of Stake": "权益证明",
+        "Proof of Authority": "授权证明",
+        "Proof of History": "历史证明"
+      }
+    },
+    "crypto:15": {
+      "question": "什么是 EVM？",
+      "answers": {
+        "A wallet type": "钱包类型",
+        "Ethereum's execution engine": "Ethereum 的执行引擎",
+        "A token standard": "代币标准",
+        "A bridge": "一座桥"
+      }
+    },
+    "crypto:16": {
+      "question": "哪一个不是 Ethereum 的 L2？",
+      "answers": {
+        "Base": "Base",
+        "Arbitrum": "仲裁",
+        "Solana": "索拉纳",
+        "Optimism": "乐观"
+      }
+    },
+    "crypto:17": {
+      "question": "“气体”指的是什么？",
+      "answers": {
+        "A token": "令牌",
+        "Transaction fee unit": "交易手续费单位",
+        "A wallet": "钱包",
+        "An NFT type": "NFT 类型"
+      }
+    },
+    "crypto:18": {
+      "question": "Ethereum 何时切换到 PoS（合并）？",
+      "answers": {
+        "2020": "2020",
+        "2021": "2021 年",
+        "2022": "2022 年",
+        "2023": "2023"
+      }
+    },
+    "crypto:19": {
+      "question": "什么是 ERC-20？",
+      "answers": {
+        "NFT standard": "NFT 标准",
+        "Fungible token standard": "可替代代币标准",
+        "Wallet format": "钱包格式",
+        "L2 standard": "L2 标准"
+      }
+    },
+    "crypto:20": {
+      "question": "比特币的最大供应量是多少？",
+      "answers": {
+        "21 million": "2100 万",
+        "100 million": "1 亿",
+        "1 billion": "10 亿",
+        "Unlimited": "无限"
+      }
+    },
+    "crypto:21": {
+      "question": "谁创造了比特币？",
+      "answers": {
+        "Vitalik Buterin": "维塔利克·布特林",
+        "Satoshi Nakamoto": "中本聪",
+        "Hal Finney": "哈尔·芬尼",
+        "Nick Szabo": "尼克·萨博"
+      }
+    },
+    "crypto:22": {
+      "question": "比特币的最小单位叫什么？",
+      "answers": {
+        "Wei": "魏",
+        "Gwei": "桂伟",
+        "Satoshi": "中本聪",
+        "Finney": "芬尼"
+      }
+    },
+    "crypto:23": {
+      "question": "比特币减半发生的频率（大约）是多少？",
+      "answers": {
+        "Every year": "每年",
+        "Every 2 years": "每 2 年",
+        "Every 4 years": "每 4 年",
+        "Every 10 years": "每 10 年"
+      }
+    },
+    "crypto:24": {
+      "question": "比特币使用哪种共识？",
+      "answers": {
+        "Proof of Stake": "权益证明",
+        "Proof of Work": "工作证明",
+        "Proof of Authority": "授权证明",
+        "DPoS": "DPoS"
+      }
+    },
+    "crypto:25": {
+      "question": "DeFi 代表什么？",
+      "answers": {
+        "Defined Finance": "定义金融",
+        "Decentralized Finance": "去中心化金融",
+        "Defaulted Finance": "违约财务",
+        "Deferred Finance": "递延融资"
+      }
+    },
+    "crypto:26": {
+      "question": "Uniswap 主要是一个？",
+      "answers": {
+        "Lending platform": "借贷平台",
+        "DEX (decentralized exchange)": "DEX（去中心化交易所）",
+        "Wallet": "钱包",
+        "Bridge": "桥"
+      }
+    },
+    "crypto:27": {
+      "question": "什么是 AMM？",
+      "answers": {
+        "Auto Market Mover": "汽车市场推动者",
+        "Automated Market Maker": "自动做市商",
+        "Asset Management Module": "资产管理模块",
+        "Aggregated Mint Maker": "聚合铸币机"
+      }
+    },
+    "crypto:28": {
+      "question": "TVL 是什么意思？",
+      "answers": {
+        "Token Value Locked": "代币价值锁定",
+        "Total Value Locked": "锁定总价值",
+        "Trade Volume Limit": "交易量限制",
+        "Tier Volume Level": "层音量级别"
+      }
+    },
+    "crypto:29": {
+      "question": "Aave 主要是一个？",
+      "answers": {
+        "DEX": "DEX",
+        "Lending protocol": "借贷协议",
+        "Stablecoin": "稳定币",
+        "NFT marketplace": "NFT 市场"
+      }
+    },
+    "crypto:30": {
+      "question": "什么是单产农业？",
+      "answers": {
+        "Mining crops": "采矿作物",
+        "Earning rewards from DeFi protocols": "从 DeFi 协议中赚取奖励",
+        "A staking pool name": "质押池名称",
+        "An NFT minting term": "NFT 铸造术语"
+      }
+    },
+    "crypto:31": {
+      "question": "哪家公司发行 USDC？",
+      "answers": {
+        "Tether": "系链",
+        "Circle": "圆",
+        "Coinbase": "Coinbase",
+        "Paxos": "Paxos"
+      }
+    },
+    "crypto:32": {
+      "question": "哪家公司发行 USDT？",
+      "answers": {
+        "Circle": "圆",
+        "Tether": "系链",
+        "Coinbase": "Coinbase",
+        "MakerDAO": "MakerDAO"
+      }
+    },
+    "crypto:33": {
+      "question": "DAI 主要由什么支持？",
+      "answers": {
+        "US Dollars in a bank": "银行中的美元",
+        "Crypto collateral": "加密货币抵押品",
+        "Gold reserves": "黄金储备",
+        "Government bonds": "政府债券"
+      }
+    },
+    "crypto:34": {
+      "question": "稳定币试图维持价格平价？",
+      "answers": {
+        "Bitcoin": "比特币",
+        "Ethereum": "Ethereum",
+        "Fiat currencies": "法定货币",
+        "Gold only": "仅黄金"
+      }
+    },
+    "crypto:35": {
+      "question": "NFT 代表什么？",
+      "answers": {
+        "New Finance Token": "新金融代币",
+        "Non-Fungible Token": "不可替代代币",
+        "Network File Transfer": "网络文件传输",
+        "Node Function Type": "节点函数类型"
+      }
+    },
+    "crypto:36": {
+      "question": "Ethereum 上的 NFT 代币标准是什么？",
+      "answers": {
+        "ERC-20": "ERC-20",
+        "ERC-721": "ERC-721",
+        "ERC-1155 only": "仅限 ERC-1155",
+        "BEP-20": "BEP-20"
+      }
+    },
+    "crypto:37": {
+      "question": "OpenSea 主要是什么平台？",
+      "answers": {
+        "DEX": "DEX",
+        "NFT marketplace": "NFT 市场",
+        "Wallet": "钱包",
+        "L2 chain": "L2 网络"
+      }
+    },
+    "crypto:38": {
+      "question": "NFTs 中的“薄荷”是什么意思？",
+      "answers": {
+        "Sell an NFT": "出售 NFT",
+        "Create a new NFT onchain": "在链上创建一个新的 NFT",
+        "Burn an NFT": "刻录 NFT",
+        "Transfer an NFT": "传输 NFT"
+      }
+    },
+    "crypto:39": {
+      "question": "钱包的密语叫什么？",
+      "answers": {
+        "Public key": "公钥",
+        "Seed phrase": "种子短语",
+        "Hash": "哈希",
+        "Nonce": "随机数"
+      }
+    },
+    "crypto:40": {
+      "question": "什么是硬件钱包？",
+      "answers": {
+        "A mobile app": "移动应用程序",
+        "A physical device for storing keys": "用于存储密钥的物理设备",
+        "A browser extension": "浏览器扩展",
+        "An exchange account": "兑换账户"
+      }
+    },
+    "crypto:41": {
+      "question": "您永远不应该分享您的？",
+      "answers": {
+        "Wallet address": "钱包地址",
+        "Seed phrase": "种子短语",
+        "ENS name": "ENS 名称",
+        "Username": "用户名"
+      }
+    },
+    "crypto:42": {
+      "question": "自托管意味着什么？",
+      "answers": {
+        "Exchange holds your keys": "交易所持有您的密钥",
+        "You control your private keys": "您控制您的私钥",
+        "A bank holds your keys": "银行保管着您的钥匙",
+        "A friend holds your keys": "朋友保管着您的钥匙"
+      }
+    },
+    "crypto:43": {
+      "question": "MetaMask 主要是一个？",
+      "answers": {
+        "Exchange": "交换",
+        "Browser wallet": "浏览器钱包",
+        "Hardware wallet": "硬件钱包",
+        "L2 chain": "L2 链"
+      }
+    },
+    "crypto:44": {
+      "question": "Farcaster 是什么？",
+      "answers": {
+        "An exchange": "交换",
+        "A decentralized social network": "去中心化社交网络",
+        "A wallet": "钱包",
+        "A game": "一场游戏"
+      }
+    },
+    "crypto:45": {
+      "question": "Farcaster 上的帖子被称为？",
+      "answers": {
+        "Tweets": "推文",
+        "Casts": "演员表",
+        "Toots": "嘟嘟",
+        "Snaps": "快照"
+      }
+    },
+    "crypto:46": {
+      "question": "谁创立了 Farcaster？",
+      "answers": {
+        "Vitalik Buterin": "维塔利克·布特林",
+        "Dan Romero & Varun Srinivasan": "丹·罗梅罗和瓦伦·斯里尼瓦桑",
+        "Jesse Pollak": "杰西·波拉克",
+        "Jack Dorsey": "杰克·多尔西"
+      }
+    },
+    "crypto:47": {
+      "question": "Farcaster 用户标识符被调用？",
+      "answers": {
+        "UID": "UID",
+        "FID": "FID",
+        "Handle": "句柄",
+        "Tag": "标签"
+      }
+    },
+    "crypto:48": {
+      "question": "Base App 上的迷你应用程序是用什么构建的？",
+      "answers": {
+        "MiniKit / OnchainKit": "MiniKit / OnchainKit",
+        "Flutter only": "仅适用于颤振",
+        "Native iOS only": "仅限本机 iOS",
+        "Unity": "统一"
+      }
+    },
+    "crypto:49": {
+      "question": "区块链交易哈希也叫？",
+      "answers": {
+        "Nonce": "随机数",
+        "TX ID": "发送 ID",
+        "Block height": "块高度",
+        "Gas limit": "气体限制"
+      }
+    },
+    "crypto:50": {
+      "question": "DAO 代表什么？",
+      "answers": {
+        "Digital Asset Order": "数字资产订单",
+        "Decentralized Autonomous Organization": "去中心化自治组织",
+        "Distributed App Output": "分布式应用程序输出",
+        "Data Access Object": "数据访问对象"
+      }
+    },
+    "crypto:51": {
+      "question": "什么是“区块浏览器”？",
+      "answers": {
+        "A mining tool": "挖矿工具",
+        "A site to view onchain data": "查看链上数据的站点",
+        "A wallet type": "钱包类型",
+        "A bridge": "一座桥"
+      }
+    },
+    "crypto:52": {
+      "question": "什么是交易中的“滑点”？",
+      "answers": {
+        "Network downtime": "网络停机",
+        "Difference between expected & actual price": "预期价格与实际价格之间的差异",
+        "A type of fee": "一种费用",
+        "A wallet error": "钱包错误"
+      }
+    },
+    "crypto:53": {
+      "question": "“地毯拉力”是？",
+      "answers": {
+        "A trading strategy": "交易策略",
+        "A scam where founders abandon a project": "创始人放弃项目的骗局",
+        "A staking method": "一种质押方法",
+        "A wallet feature": "钱包功能"
+      }
+    },
+    "crypto:54": {
+      "question": "什么是多重签名钱包？",
+      "answers": {
+        "A wallet with many tokens": "一个有很多代币的钱包",
+        "A wallet needing multiple signatures to approve tx": "需要多个签名才能批准交易的钱包",
+        "A wallet on multiple chains": "多个链上的钱包",
+        "A wallet with a long password": "一个长密码的钱包"
+      }
+    },
+    "crypto:55": {
+      "question": "“HODL”在加密文化中意味着什么？",
+      "answers": {
+        "Sell quickly": "快速出售",
+        "Hold long-term": "长期持有",
+        "A hardware wallet": "硬件钱包",
+        "A type of token": "一种令牌"
+      }
+    },
+    "crypto:56": {
+      "question": "加密货币中的“鲸鱼”是什么？",
+      "answers": {
+        "A tiny investor": "一个小投资者",
+        "A holder of very large amounts": "持有大量资金的人",
+        "A stablecoin": "稳定币",
+        "A mining rig": "采矿设备"
+      }
+    },
+    "crypto:57": {
+      "question": "区块链上的 Gas 费用支付给谁？",
+      "answers": {
+        "Developers": "开发人员",
+        "Network validators/miners": "网络验证器/矿工",
+        "Exchanges": "交换",
+        "Banks": "银行"
+      }
+    },
+    "crypto:58": {
+      "question": "什么是智能合约？",
+      "answers": {
+        "A paper contract": "纸质合同",
+        "Self-executing code on a blockchain": "区块链上的自执行代码",
+        "A savings account": "储蓄账户",
+        "A hardware device": "硬件设备"
+      }
+    },
+    "crypto:59": {
+      "question": "“DEX”代表什么？",
+      "answers": {
+        "Digital Exchange": "数字交换",
+        "Decentralized Exchange": "去中心化交易所",
+        "Data Exchange": "数据交换",
+        "Direct Exchange": "直接交换"
+      }
+    },
+    "crypto:60": {
+      "question": "“CEX”代表什么？",
+      "answers": {
+        "Central Exchange": "中央交易所",
+        "Centralized Exchange": "中心化交易所",
+        "Crypto Exchange": "加密货币交易所",
+        "Coin Exchange": "硬币兑换"
+      }
+    },
+    "crypto:61": {
+      "question": "什么是“质押”？",
+      "answers": {
+        "Selling tokens": "出售代币",
+        "Locking tokens to support a network for rewards": "锁定代币以支持奖励网络",
+        "Mining coins": "挖矿币",
+        "Burning tokens": "燃烧代币"
+      }
+    },
+    "crypto:62": {
+      "question": "什么是“私钥”？",
+      "answers": {
+        "Your public address": "您的公共地址",
+        "A secret that controls your funds": "控制您资金的秘密",
+        "An exchange password": "交换密码",
+        "A transaction id": "交易 ID"
+      }
+    },
+    "crypto:63": {
+      "question": "“测试网”的用途是什么？",
+      "answers": {
+        "Real transactions": "真实交易",
+        "Testing without real value": "没有实际价值的测试",
+        "Storing coins": "存储硬币",
+        "Mining Bitcoin": "挖掘比特币"
+      }
+    },
+    "crypto:64": {
+      "question": "“燃烧”代币是什么意思？",
+      "answers": {
+        "Creating tokens": "创建令牌",
+        "Permanently removing tokens from supply": "从供应中永久移除代币",
+        "Staking tokens": "质押代币",
+        "Sending tokens": "发送令牌"
+      }
+    },
+    "crypto:65": {
+      "question": "什么是“牛市”？",
+      "answers": {
+        "Prices falling": "价格下跌",
+        "Prices rising": "价格上涨",
+        "No trading": "禁止交易",
+        "A type of coin": "一种硬币"
+      }
+    },
+    "crypto:66": {
+      "question": "什么是“熊市”？",
+      "answers": {
+        "Prices rising": "价格上涨",
+        "Prices falling": "价格下跌",
+        "Sideways only": "仅横向",
+        "A mining term": "采矿术语"
+      }
+    },
+    "crypto:67": {
+      "question": "什么是“空投”？",
+      "answers": {
+        "A market crash": "市场崩溃",
+        "Free distribution of tokens": "代币免费分配",
+        "A hack": "黑客攻击",
+        "A trading fee": "交易费用"
+      }
+    },
+    "crypto:68": {
+      "question": "什么是“Web3”？",
+      "answers": {
+        "The third website": "第三个网站",
+        "A decentralized internet on blockchain": "区块链上的去中心化互联网",
+        "A web browser": "网络浏览器",
+        "A programming language": "一种编程语言"
+      }
+    },
+    "crypto:69": {
+      "question": "“L1”是什么意思？",
+      "answers": {
+        "Layer 1 base blockchain": "第 1 层基础区块链",
+        "A game level": "游戏关卡",
+        "A wallet": "钱包",
+        "A token standard": "代币标准"
+      }
+    },
+    "crypto:70": {
+      "question": "Solana 是一个？",
+      "answers": {
+        "Layer-2 of Ethereum": "Ethereum 的第 2 层",
+        "Standalone Layer-1 blockchain": "独立第 1 层区块链",
+        "Wallet": "钱包",
+        "Stablecoin": "稳定币"
+      }
+    },
+    "crypto:71": {
+      "question": "工作量证明因什么而闻名？",
+      "answers": {
+        "Low energy use": "低能耗",
+        "High energy use via mining": "采矿造成的高能源消耗",
+        "Staking coins": "质押代币",
+        "No validators": "无验证器"
+      }
+    },
+    "crypto:72": {
+      "question": "“DYOR”是什么意思？",
+      "answers": {
+        "Do Your Own Research": "自己研究",
+        "Deposit Your Own Reserves": "存入您自己的储备金",
+        "Don't Yield On Returns": "不要回报",
+        "Data Yield Over Risk": "数据收益高于风险"
+      }
+    },
+    "crypto:73": {
+      "question": "什么是“冷钱包”？",
+      "answers": {
+        "Always-online wallet": "永远在线的钱包",
+        "Offline wallet for storage": "离线钱包用于存储",
+        "Exchange wallet": "兑换钱包",
+        "A stablecoin": "稳定币"
+      }
+    },
+    "crypto:74": {
+      "question": "什么是“热钱包”？",
+      "answers": {
+        "Offline wallet": "离线钱包",
+        "Internet-connected wallet": "联网钱包",
+        "Hardware wallet": "硬件钱包",
+        "Paper wallet": "纸钱包"
+      }
+    },
+    "crypto:75": {
+      "question": "'Gwei' 是用来测量的？",
+      "answers": {
+        "Token supply": "代币供应",
+        "Gas prices": "天然气价格",
+        "Block size": "块大小",
+        "Wallet balance": "钱包余额"
+      }
+    },
+    "crypto:76": {
+      "question": "“无常损失”与什么相关？",
+      "answers": {
+        "Staking": "质押",
+        "Providing liquidity": "提供流动性",
+        "Mining": "采矿",
+        "Holding": "持有"
+      }
+    },
+    "crypto:77": {
+      "question": "区块链“桥”的用途是什么？",
+      "answers": {
+        "Mine coins": "开采硬币",
+        "Move assets between blockchains": "在区块链之间移动资产",
+        "Store keys": "存储密钥",
+        "Create tokens": "创建令牌"
+      }
+    },
+    "crypto:78": {
+      "question": "什么是“验证器”？",
+      "answers": {
+        "A wallet": "钱包",
+        "A node that verifies transactions": "验证交易的节点",
+        "A token": "令牌",
+        "An exchange": "交换"
+      }
+    },
+    "crypto:79": {
+      "question": "'ATH' 代表什么？",
+      "answers": {
+        "All-Time High": "历史新高",
+        "Average Trade Height": "平均交易高度",
+        "Actual Token Holdings": "实际代币持有量",
+        "Auto Trade Handler": "自动交易处理程序"
+      }
+    },
+    "crypto:80": {
+      "question": "像 BTC 或 ETH 这样的“代码”是？",
+      "answers": {
+        "A price chart": "价格图表",
+        "A short symbol for an asset": "资产的短符号",
+        "A wallet": "钱包",
+        "A block": "一个块"
+      }
+    },
+    "crypto:81": {
+      "question": "在工作量证明中，调用确认交易？",
+      "answers": {
+        "Staking": "质押",
+        "Mining": "采矿",
+        "Bridging": "桥接",
+        "Burning": "燃烧"
+      }
+    },
+    "crypto:82": {
+      "question": "什么是“市值”？",
+      "answers": {
+        "Price × circulating supply": "价格 × 流通量",
+        "Daily trading volume": "每日交易量",
+        "Number of wallets": "钱包数量",
+        "Total gas fees": "总燃气费"
+      }
+    },
+    "crypto:83": {
+      "question": "OnchainKit 是一个开发人员工具包？",
+      "answers": {
+        "Binance": "币安",
+        "Coinbase": "Coinbase",
+        "MetaMask": "MetaMask",
+        "Uniswap": "Uniswap"
+      }
+    },
+    "crypto:84": {
+      "question": "设置“气体限制”？",
+      "answers": {
+        "Token supply": "代币供应",
+        "Max gas a transaction can use": "交易可以使用的最大气体",
+        "Wallet size": "钱包大小",
+        "Block reward": "区块奖励"
+      }
+    },
+    "crypto:85": {
+      "question": "多边形最出名的是？",
+      "answers": {
+        "A base Layer-1": "基础层 1",
+        "An Ethereum scaling solution": "Ethereum 缩放解决方案",
+        "A wallet": "钱包",
+        "An exchange": "交换"
+      }
+    },
+    "crypto:86": {
+      "question": "交易中的“FOMO”是什么意思？",
+      "answers": {
+        "Fear Of Missing Out": "害怕错过",
+        "Full Order Market Offer": "完整订单市场报价",
+        "Fixed Order Money Out": "固定订单资金支出",
+        "Fast Onchain Market Order": "快速链上市价单"
+      }
+    },
+    "crypto:87": {
+      "question": "资金池中的“流动性”是什么？",
+      "answers": {
+        "Number of users": "用户数量",
+        "Assets available to trade": "可交易的资产",
+        "Trading fees": "交易费用",
+        "Block height": "块高度"
+      }
+    },
+    "crypto:88": {
+      "question": "“第 2 层”解决方案主要旨在？",
+      "answers": {
+        "Replace Bitcoin": "替换比特币",
+        "Scale a Layer-1 with cheaper, faster txs": "通过更便宜、更快的交易扩展 Layer-1",
+        "Mine faster": "挖矿速度更快",
+        "Issue stablecoins": "发行稳定币"
+      }
+    },
+    "crypto:89": {
+      "question": "钱包“地址”一般是？",
+      "answers": {
+        "Secret, never shared": "秘密，从未共享",
+        "Public and shareable to receive funds": "公开且可共享以接收资金",
+        "Your password": "您的密码",
+        "A private key": "私钥"
+      }
+    },
+    "crypto:90": {
+      "question": "“KYC”代表什么？",
+      "answers": {
+        "Keep Your Coins": "保留你的硬币",
+        "Know Your Customer": "了解您的客户",
+        "Key Yield Contract": "关键收益合约",
+        "Known Yield Curve": "已知收益率曲线"
+      }
+    },
+    "crypto:91": {
+      "question": "交易中的 nonce 是什么？",
+      "answers": {
+        "A random word": "一个随机单词",
+        "A per-account transaction counter": "每个账户的交易计数器",
+        "A token": "一个代币",
+        "A wallet": "一个钱包"
+      }
+    },
+    "crypto:92": {
+      "question": "'PoS' 代表什么？",
+      "answers": {
+        "Proof of Speed": "速度证明",
+        "Proof of Stake": "权益证明",
+        "Point of Sale": "销售点",
+        "Proof of Storage": "存储证明"
+      }
+    },
+    "crypto:93": {
+      "question": "稳定币的设计目的是什么？",
+      "answers": {
+        "Grow fast": "快速成长",
+        "Stay near a stable value": "保持在稳定值附近",
+        "Be an NFT": "成为 NFT",
+        "Mine blocks": "矿块"
+      }
+    },
+    "crypto:94": {
+      "question": "以下哪一个是稳定币？",
+      "answers": {
+        "ETH": "ETH",
+        "USDC": "USDC",
+        "BTC": "BTC",
+        "SOL": "索尔"
+      }
+    },
+    "crypto:95": {
+      "question": "“跨链”意味着跨链操作？",
+      "answers": {
+        "One app": "一个应用程序",
+        "Multiple blockchains": "多个区块链",
+        "One wallet": "一个钱包",
+        "One token": "一个令牌"
+      }
+    },
+    "crypto:96": {
+      "question": "区块链中的“块”包含？",
+      "answers": {
+        "Only one transaction": "只有一笔交易",
+        "A batch of transactions": "一批交易",
+        "Only code": "仅代码",
+        "Nothing": "没有"
+      }
+    },
+    "crypto:97": {
+      "question": "“创世块”是？",
+      "answers": {
+        "Last block": "最后一个块",
+        "First block of a blockchain": "区块链的第一个区块",
+        "A wallet": "钱包",
+        "A token": "令牌"
+      }
+    },
+    "crypto:98": {
+      "question": "“投资回报率”代表什么？",
+      "answers": {
+        "Return On Investment": "投资回报",
+        "Rate Of Interest": "利率",
+        "Risk Of Inflation": "通货膨胀风险",
+        "Ratio Of Income": "收入比率"
+      }
+    },
+    "crypto:99": {
+      "question": "Ethereum 天然气价格通常用什么来衡量？",
+      "answers": {
+        "US dollars": "美元",
+        "Gwei": "桂伟",
+        "Bitcoin": "比特币",
+        "Bytes": "字节"
+      }
+    },
+    "sports:0": {
+      "question": "一支足球队有多少名球员在场上？",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:1": {
+      "question": "您会在哪项运动中扣篮？",
+      "answers": {
+        "Tennis": "网球",
+        "Basketball": "篮球",
+        "Golf": "高尔夫",
+        "Cricket": "板球"
+      }
+    },
+    "sports:2": {
+      "question": "夏季奥运会多久举行一次？",
+      "answers": {
+        "Every 2 years": "每 2 年",
+        "Every 3 years": "每 3 年",
+        "Every 4 years": "每 4 年",
+        "Every 5 years": "每 5 年"
+      }
+    },
+    "sports:3": {
+      "question": "哪个国家赢得最多的 FIFA 世界杯？",
+      "answers": {
+        "Germany": "德国",
+        "Italy": "意大利",
+        "Brazil": "巴西",
+        "Argentina": "阿根廷"
+      }
+    },
+    "sports:4": {
+      "question": "在网球中，零分被称为什么？",
+      "answers": {
+        "Nil": "无",
+        "Love": "爱",
+        "Duck": "鸭子",
+        "Blank": "空白"
+      }
+    },
+    "sports:5": {
+      "question": "奥林匹克会旗上有多少个圆环？",
+      "answers": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:6": {
+      "question": "哪种运动使用羽毛球？",
+      "answers": {
+        "Squash": "壁球",
+        "Badminton": "羽毛球",
+        "Table tennis": "乒乓球",
+        "Volleyball": "排球"
+      }
+    },
+    "sports:7": {
+      "question": "尤塞恩·博尔特因哪项运动而闻名？",
+      "answers": {
+        "Swimming": "游泳",
+        "Sprinting": "冲刺",
+        "Cycling": "骑自行车",
+        "Boxing": "拳击"
+      }
+    },
+    "sports:8": {
+      "question": "美式足球中一次达阵值多少分？",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:9": {
+      "question": "环法自行车赛是哪项运动的比赛？",
+      "answers": {
+        "Running": "运行",
+        "Cycling": "骑自行车",
+        "Rowing": "划船",
+        "Sailing": "航行"
+      }
+    },
+    "sports:10": {
+      "question": "哪个国家主办温布尔登网球锦标赛？",
+      "answers": {
+        "USA": "美国",
+        "France": "法国",
+        "England": "英格兰",
+        "Australia": "澳大利亚"
+      }
+    },
+    "sports:11": {
+      "question": "迈克尔乔丹是哪项运动的传奇人物？",
+      "answers": {
+        "Baseball": "棒球",
+        "Basketball": "篮球",
+        "Football": "足球",
+        "Hockey": "曲棍球"
+      }
+    },
+    "sports:12": {
+      "question": "标准冠军拳击比赛有多少轮？",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "12": "12",
+        "15": "15"
+      }
+    },
+    "sports:13": {
+      "question": "哪项网球大满贯是在红土球场上进行的？",
+      "answers": {
+        "Wimbledon": "温布尔登",
+        "US Open": "美国公开赛",
+        "French Open": "法国公开赛",
+        "Australian Open": "澳大利亚公开赛"
+      }
+    },
+    "sports:14": {
+      "question": "一级方程式赛车是哪种形式的赛车？",
+      "answers": {
+        "Boat": "船",
+        "Car": "汽车",
+        "Horse": "马",
+        "Bicycle": "自行车"
+      }
+    },
+    "sports:15": {
+      "question": "马拉松大约需要多长时间？",
+      "answers": {
+        "21 km": "21 公里",
+        "42 km": "42 公里",
+        "50 km": "50 公里",
+        "30 km": "30 公里"
+      }
+    },
+    "sports:16": {
+      "question": "板球队有多少名球员？",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:17": {
+      "question": "大师赛在哪项运动中进行？",
+      "answers": {
+        "Golf": "高尔夫",
+        "Tennis": "网球",
+        "Polo": "马球",
+        "Rugby": "橄榄球"
+      }
+    },
+    "sports:18": {
+      "question": "哪个国家赢得了 2018 年 FIFA 世界杯？",
+      "answers": {
+        "Germany": "德国",
+        "France": "法国",
+        "Brazil": "巴西",
+        "Croatia": "克罗地亚"
+      }
+    },
+    "sports:19": {
+      "question": "一场足球比赛（不包括伤停补时）有多长？",
+      "answers": {
+        "80 minutes": "80 分钟",
+        "90 minutes": "90 分钟",
+        "100 minutes": "100 分钟",
+        "120 minutes": "120 分钟"
+      }
+    },
+    "sports:20": {
+      "question": "哪张卡将足球运动员送出球场？",
+      "answers": {
+        "Yellow": "黄色",
+        "Red": "红色",
+        "Blue": "蓝色",
+        "Green": "绿色"
+      }
+    },
+    "sports:21": {
+      "question": "帽子戏法意味着一场比赛进了多少球？",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:22": {
+      "question": "克里斯蒂亚诺·罗纳尔多代表哪个国家队？",
+      "answers": {
+        "Brazil": "巴西",
+        "Spain": "西班牙",
+        "Portugal": "葡萄牙",
+        "Argentina": "阿根廷"
+      }
+    },
+    "sports:23": {
+      "question": "贝利曾为哪个国家参加过国际比赛？",
+      "answers": {
+        "Argentina": "阿根廷",
+        "Brazil": "巴西",
+        "Portugal": "葡萄牙",
+        "Italy": "意大利"
+      }
+    },
+    "sports:24": {
+      "question": "欧洲顶级俱乐部足球赛事是？",
+      "answers": {
+        "Europa League": "欧洲联赛",
+        "Champions League": "冠军联赛",
+        "Copa America": "美洲杯",
+        "FA Cup": "足总杯"
+      }
+    },
+    "sports:25": {
+      "question": "金球奖颁发给哪项运动？",
+      "answers": {
+        "Basketball": "篮球",
+        "Football/Soccer": "橄榄球/足球",
+        "Tennis": "网球",
+        "Golf": "高尔夫"
+      }
+    },
+    "sports:26": {
+      "question": "迭戈·马拉多纳是哪项运动的传奇人物？",
+      "answers": {
+        "Basketball": "篮球",
+        "Soccer": "足球",
+        "Tennis": "网球",
+        "Boxing": "拳击"
+      }
+    },
+    "sports:27": {
+      "question": "足球中的“零失球”意味着什么？",
+      "answers": {
+        "Scoring many goals": "进球很多",
+        "Conceding no goals": "不失球",
+        "Getting a red card": "获得红牌",
+        "A draw": "平局"
+      }
+    },
+    "sports:28": {
+      "question": "篮球比赛中一次罚球值多少分？",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:29": {
+      "question": "三分线外的投篮值得吗？",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:30": {
+      "question": "标准篮球框的高度是多少？",
+      "answers": {
+        "8 feet": "8 英尺",
+        "10 feet": "10 英尺",
+        "12 feet": "12 英尺",
+        "15 feet": "15 英尺"
+      }
+    },
+    "sports:31": {
+      "question": "NBA 是哪个国家的联盟？",
+      "answers": {
+        "Canada": "加拿大",
+        "USA": "美国",
+        "Spain": "西班牙",
+        "Australia": "澳大利亚"
+      }
+    },
+    "sports:32": {
+      "question": "哪个国家被认为发明了篮球？",
+      "answers": {
+        "Canada": "加拿大",
+        "USA": "美国",
+        "UK": "英国",
+        "France": "法国"
+      }
+    },
+    "sports:33": {
+      "question": "网球每年有多少场大满贯赛事？",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:34": {
+      "question": "温布尔登在哪个场地进行？",
+      "answers": {
+        "Clay": "粘土",
+        "Grass": "草",
+        "Hard court": "硬地球场",
+        "Carpet": "地毯"
+      }
+    },
+    "sports:35": {
+      "question": "罗杰·费德勒因哪项运动而闻名？",
+      "answers": {
+        "Golf": "高尔夫",
+        "Tennis": "网球",
+        "Cycling": "骑自行车",
+        "Rowing": "划船"
+      }
+    },
+    "sports:36": {
+      "question": "塞雷娜·威廉姆斯是哪项运动的冠军？",
+      "answers": {
+        "Golf": "高尔夫",
+        "Tennis": "网球",
+        "Swimming": "游泳",
+        "Athletics": "田径"
+      }
+    },
+    "sports:37": {
+      "question": "网球比赛中，平分后球员再得一分叫什么？",
+      "answers": {
+        "Game": "局",
+        "Advantage": "占先",
+        "Set": "盘",
+        "Match": "比赛"
+      }
+    },
+    "sports:38": {
+      "question": "第一届现代奥运会于哪一年举行？",
+      "answers": {
+        "1896": "1896",
+        "1900": "1900",
+        "1924": "1924 年",
+        "1936": "1936 年"
+      }
+    },
+    "sports:39": {
+      "question": "2016 年夏季奥运会在哪里举行？",
+      "answers": {
+        "London": "伦敦",
+        "Rio de Janeiro": "里约热内卢",
+        "Tokyo": "东京",
+        "Beijing": "北京"
+      }
+    },
+    "sports:40": {
+      "question": "2024 年夏季奥运会在哪里举行？",
+      "answers": {
+        "Tokyo": "东京",
+        "Paris": "巴黎",
+        "Los Angeles": "洛杉矶",
+        "London": "伦敦"
+      }
+    },
+    "sports:41": {
+      "question": "奥林匹克格言是“更快、更高、___”。",
+      "answers": {
+        "Better": "更好",
+        "Stronger": "更强",
+        "Farther": "更远",
+        "Longer": "更长"
+      }
+    },
+    "sports:42": {
+      "question": "奥林匹克圣火传统上在哪里点燃？",
+      "answers": {
+        "Italy": "意大利",
+        "Greece": "希腊",
+        "France": "法国",
+        "Egypt": "埃及"
+      }
+    },
+    "sports:43": {
+      "question": "迈克尔·菲尔普斯主宰了哪项奥林匹克运动？",
+      "answers": {
+        "Athletics": "田径",
+        "Swimming": "游泳",
+        "Diving": "潜水",
+        "Rowing": "划船"
+      }
+    },
+    "sports:44": {
+      "question": "哪项不是竞技游泳泳姿？",
+      "answers": {
+        "Butterfly": "蝴蝶",
+        "Backstroke": "仰泳",
+        "Breaststroke": "蛙泳",
+        "Sidestroke": "侧泳"
+      }
+    },
+    "sports:45": {
+      "question": "穆罕默德·阿里是一位传奇人物？",
+      "answers": {
+        "Footballer": "足球运动员",
+        "Boxer": "拳击手",
+        "Swimmer": "游泳者",
+        "Runner": "跑步者"
+      }
+    },
+    "sports:46": {
+      "question": "柔道起源于哪个国家？",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韩国",
+        "Thailand": "泰国"
+      }
+    },
+    "sports:47": {
+      "question": "跆拳道起源于哪个国家？",
+      "answers": {
+        "Japan": "日本",
+        "China": "中国",
+        "South Korea": "韩国",
+        "Vietnam": "越南"
+      }
+    },
+    "sports:48": {
+      "question": "在拳击中，“KO”代表什么？",
+      "answers": {
+        "Knockout": "淘汰赛",
+        "Keep On": "继续",
+        "Knee Out": "膝盖向外",
+        "Key Opponent": "主要对手"
+      }
+    },
+    "sports:49": {
+      "question": "相扑是一项传统运动吗？",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韩国",
+        "Mongolia": "蒙古"
+      }
+    },
+    "sports:50": {
+      "question": "在高尔夫中，一个洞中低于标准杆的一杆是？",
+      "answers": {
+        "Eagle": "老鹰",
+        "Birdie": "小鸟",
+        "Bogey": "柏忌",
+        "Par": "帕"
+      }
+    },
+    "sports:51": {
+      "question": "在高尔夫中，超过标准杆一杆是？",
+      "answers": {
+        "Birdie": "小鸟",
+        "Bogey": "柏忌",
+        "Eagle": "老鹰",
+        "Ace": "王牌"
+      }
+    },
+    "sports:52": {
+      "question": "高尔夫中的一杆进洞也称为？",
+      "answers": {
+        "Ace": "王牌",
+        "Birdie": "小鸟",
+        "Eagle": "老鹰",
+        "Par": "帕"
+      }
+    },
+    "sports:53": {
+      "question": "一轮标准高尔夫球有多少个洞？",
+      "answers": {
+        "9": "9",
+        "12": "12",
+        "18": "18",
+        "24": "24"
+      }
+    },
+    "sports:54": {
+      "question": "哪个国家是高尔夫的发源地？",
+      "answers": {
+        "USA": "美国",
+        "Scotland": "苏格兰",
+        "France": "法国",
+        "Italy": "意大利"
+      }
+    },
+    "sports:55": {
+      "question": "刘易斯·汉密尔顿参加哪项运动？",
+      "answers": {
+        "MotoGP": "摩托车大奖赛",
+        "Formula 1": "公式 1",
+        "Rally": "拉力赛",
+        "NASCAR": "纳斯卡"
+      }
+    },
+    "sports:56": {
+      "question": "一级方程式赛车在？",
+      "answers": {
+        "Field": "字段",
+        "Track/circuit": "轨道/电路",
+        "Pool": "池",
+        "Court": "球场"
+      }
+    },
+    "sports:57": {
+      "question": "在一级方程式赛车中，冠军归属于车手，而？",
+      "answers": {
+        "Fans": "粉丝",
+        "Constructors": "构造函数",
+        "Cities": "城市",
+        "Sponsors": "赞助商"
+      }
+    },
+    "sports:58": {
+      "question": "在棒球比赛中，多少次三振才算三振？",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:59": {
+      "question": "棒球是在形状像？的场地上进行的。",
+      "answers": {
+        "Circle": "圆",
+        "Diamond": "钻石",
+        "Square": "广场",
+        "Triangle": "三角形"
+      }
+    },
+    "sports:60": {
+      "question": "超级碗是哪项运动的冠军？",
+      "answers": {
+        "Basketball": "篮球",
+        "American football": "美式橄榄球",
+        "Baseball": "棒球",
+        "Ice hockey": "冰球"
+      }
+    },
+    "sports:61": {
+      "question": "美式足球场上每支球队有多少名球员？",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:62": {
+      "question": "打冰球吗？",
+      "answers": {
+        "Grass": "草",
+        "Ice": "冰",
+        "Sand": "沙子",
+        "Clay": "粘土"
+      }
+    },
+    "sports:63": {
+      "question": "斯坦利杯是哪项运动的奖杯？",
+      "answers": {
+        "Basketball": "篮球",
+        "Ice hockey": "冰球",
+        "Baseball": "棒球",
+        "Soccer": "足球"
+      }
+    },
+    "sports:64": {
+      "question": "冰球比赛中每方有多少名球员？",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:65": {
+      "question": "排球场上每队有多少名球员？",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:66": {
+      "question": "乒乓球也俗称？",
+      "answers": {
+        "Squash": "壁球",
+        "Ping pong": "乒乓球",
+        "Badminton": "羽毛球",
+        "Racquetball": "壁球"
+      }
+    },
+    "sports:67": {
+      "question": "哪个国家在国际乒乓球运动中占据主导地位？",
+      "answers": {
+        "Brazil": "巴西",
+        "China": "中国",
+        "Canada": "加拿大",
+        "Egypt": "埃及"
+      }
+    },
+    "sports:68": {
+      "question": "哪种球拍运动是在四堵墙内进行的？",
+      "answers": {
+        "Tennis": "网球",
+        "Squash": "壁球",
+        "Badminton": "羽毛球",
+        "Table tennis": "乒乓球"
+      }
+    },
+    "sports:69": {
+      "question": "新西兰国家橄榄球队被称为？",
+      "answers": {
+        "Wallabies": "小袋鼠",
+        "All Blacks": "全黑队",
+        "Springboks": "跳羚",
+        "Pumas": "美洲狮"
+      }
+    },
+    "sports:70": {
+      "question": "“争球”是哪项运动的特点？",
+      "answers": {
+        "Rugby": "橄榄球",
+        "Tennis": "网球",
+        "Golf": "高尔夫",
+        "Swimming": "游泳"
+      }
+    },
+    "sports:71": {
+      "question": "橄榄球联盟中的一次“尝试”值多少分？",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "5": "5",
+        "7": "7"
+      }
+    },
+    "sports:72": {
+      "question": "“世纪”（100 次运行）是一个术语吗？",
+      "answers": {
+        "Baseball": "棒球",
+        "Cricket": "板球",
+        "Rugby": "橄榄球",
+        "Soccer": "足球"
+      }
+    },
+    "sports:73": {
+      "question": "板球在哪个国家特别受欢迎？",
+      "answers": {
+        "USA": "美国",
+        "India": "印度",
+        "Norway": "挪威",
+        "Iceland": "冰岛"
+      }
+    },
+    "sports:74": {
+      "question": "哪项运动中投掷标枪？",
+      "answers": {
+        "Gymnastics": "体操",
+        "Athletics": "田径",
+        "Cycling": "骑自行车",
+        "Rowing": "划船"
+      }
+    },
+    "sports:75": {
+      "question": "跳远是哪项运动项目的比赛项目？",
+      "answers": {
+        "Swimming": "游泳",
+        "Athletics": "田径",
+        "Cycling": "骑自行车",
+        "Gymnastics": "体操"
+      }
+    },
+    "sports:76": {
+      "question": "奥运会上最短的冲刺距离是？",
+      "answers": {
+        "50 m": "50 m",
+        "100 m": "100 m",
+        "200 m": "200 m",
+        "400 m": "400 m"
+      }
+    },
+    "sports:77": {
+      "question": "鞍马用于哪种运动？",
+      "answers": {
+        "Athletics": "田径",
+        "Gymnastics": "体操",
+        "Swimming": "游泳",
+        "Boxing": "拳击"
+      }
+    },
+    "sports:78": {
+      "question": "“激流回旋”是哪一项运动项目的比赛项目？",
+      "answers": {
+        "Swimming": "游泳",
+        "Skiing": "滑雪",
+        "Cycling": "骑自行车",
+        "Boxing": "拳击"
+      }
+    },
+    "sports:79": {
+      "question": "滑雪通常是哪种类型的运动？",
+      "answers": {
+        "Water": "水",
+        "Winter": "冬天",
+        "Desert": "沙漠",
+        "Indoor": "室内"
+      }
+    },
+    "sports:80": {
+      "question": "速度滑冰比赛举行于？",
+      "answers": {
+        "Grass": "草",
+        "Ice": "冰",
+        "Water": "水",
+        "Sand": "沙子"
+      }
+    },
+    "sports:81": {
+      "question": "哪种运动使用术语“罢工”和“备用”？",
+      "answers": {
+        "Bowling": "保龄球",
+        "Golf": "高尔夫",
+        "Tennis": "网球",
+        "Cricket": "板球"
+      }
+    },
+    "sports:82": {
+      "question": "斯诺克的最大分球是？",
+      "answers": {
+        "100": "100",
+        "147": "147",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:83": {
+      "question": "三镖最高得分是？",
+      "answers": {
+        "120": "120",
+        "150": "150",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:84": {
+      "question": "“主部队”是指从事哪项运动的一组骑手？",
+      "answers": {
+        "Cycling": "骑自行车",
+        "Swimming": "游泳",
+        "Boxing": "拳击",
+        "Golf": "高尔夫"
+      }
+    },
+    "sports:85": {
+      "question": "环法自行车赛主要在哪里举行？",
+      "answers": {
+        "Italy": "意大利",
+        "Spain": "西班牙",
+        "France": "法国",
+        "Belgium": "比利时"
+      }
+    },
+    "sports:86": {
+      "question": "2022 年 FIFA 世界杯由？",
+      "answers": {
+        "Russia": "俄罗斯",
+        "Qatar": "卡塔尔",
+        "Brazil": "巴西",
+        "USA": "美国"
+      }
+    },
+    "sports:87": {
+      "question": "国际足联世界杯奖杯由？",
+      "answers": {
+        "UEFA": "欧足联",
+        "FIFA": "国际足联",
+        "NBA": "NBA",
+        "IOC": "国际奥委会"
+      }
+    },
+    "sports:88": {
+      "question": "足球中的点球是从什么时候开始的？",
+      "answers": {
+        "11 m": "11 m",
+        "20 m": "20 m",
+        "5 m": "5 m",
+        "30 m": "30 m"
+      }
+    },
+    "sports:89": {
+      "question": "足球场上总共有多少名球员（两队）？",
+      "answers": {
+        "18": "18",
+        "20": "20",
+        "22": "22",
+        "24": "24"
+      }
+    },
+    "sports:90": {
+      "question": "哪项运动具有“爱情”、“平局”和“王牌”？",
+      "answers": {
+        "Golf": "高尔夫",
+        "Tennis": "网球",
+        "Cricket": "板球",
+        "Rugby": "橄榄球"
+      }
+    },
+    "sports:91": {
+      "question": "继温布尔登、美国和法国网球公开赛之后的第四个网球大满贯是？",
+      "answers": {
+        "Italian Open": "意大利公开赛",
+        "Australian Open": "澳大利亚公开赛",
+        "Madrid Open": "马德里公开赛",
+        "Dubai Open": "迪拜公开赛"
+      }
+    },
+    "sports:92": {
+      "question": "花样滑冰是哪届奥运会的特色项目？",
+      "answers": {
+        "Summer": "夏天",
+        "Winter": "冬天",
+        "Both equally": "两者相等",
+        "Neither": "两者都不是"
+      }
+    },
+    "sports:93": {
+      "question": "一支棒球队在球场上有多少名球员？",
+      "answers": {
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11"
+      }
+    },
+    "sports:94": {
+      "question": "2008 年夏季奥运会由？",
+      "answers": {
+        "London": "伦敦",
+        "Beijing": "北京",
+        "Athens": "雅典",
+        "Sydney": "悉尼"
+      }
+    },
+    "sports:95": {
+      "question": "赛艇比赛在什么时间举行？",
+      "answers": {
+        "A track": "轨道",
+        "Water": "水",
+        "Ice": "冰",
+        "Grass": "草"
+      }
+    },
+    "sports:96": {
+      "question": "哪项运动使用“球童”？",
+      "answers": {
+        "Golf": "高尔夫",
+        "Tennis": "网球",
+        "Boxing": "拳击",
+        "Cycling": "骑自行车"
+      }
+    },
+    "sports:97": {
+      "question": "跳高和撑杆跳属于哪项运动？",
+      "answers": {
+        "Gymnastics": "体操",
+        "Athletics": "田径",
+        "Swimming": "游泳",
+        "Cycling": "骑自行车"
+      }
+    },
+    "sports:98": {
+      "question": "哪个国家举办夏季奥运会次数最多？",
+      "answers": {
+        "France": "法国",
+        "USA": "美国",
+        "Greece": "希腊",
+        "Japan": "日本"
+      }
+    },
+    "sports:99": {
+      "question": "击剑运动员使用？",
+      "answers": {
+        "Bat": "蝙蝠",
+        "Sword/blade": "剑/剑",
+        "Racket": "球拍",
+        "Club": "俱乐部"
+      }
+    },
+    "sports:100": {
+      "question": "罗兰加洛斯进行哪项运动？",
+      "answers": {
+        "Golf": "高尔夫",
+        "Tennis": "网球",
+        "Rugby": "橄榄球",
+        "Cycling": "骑自行车"
+      }
+    },
+    "sports:101": {
+      "question": "赢得金牌的马拉松运动员赚了？",
+      "answers": {
+        "Trophy only": "仅奖杯",
+        "Gold medal": "金牌",
+        "Cash prize only": "仅现金奖励",
+        "Belt": "腰带"
+      }
+    },
+    "art:0": {
+      "question": "《蒙娜丽莎》是谁画的？",
+      "answers": {
+        "Van Gogh": "梵高",
+        "Picasso": "毕加索",
+        "Leonardo da Vinci": "列奥纳多·达·芬奇",
+        "Michelangelo": "米开朗基罗"
+      }
+    },
+    "art:1": {
+      "question": "谁画了《星夜》？",
+      "answers": {
+        "Monet": "莫奈",
+        "Van Gogh": "梵高",
+        "Dalí": "达利",
+        "Rembrandt": "伦勃朗"
+      }
+    },
+    "art:2": {
+      "question": "《蒙娜丽莎》陈列在哪个博物馆？",
+      "answers": {
+        "The Met": "大都会博物馆",
+        "Louvre": "卢浮宫",
+        "Prado": "普拉多",
+        "Uffizi": "乌菲齐"
+      }
+    },
+    "art:3": {
+      "question": "哪位艺术家因割掉自己的一部分耳朵而闻名？",
+      "answers": {
+        "Picasso": "毕加索",
+        "Van Gogh": "梵高",
+        "Dalí": "达利",
+        "Monet": "莫奈"
+      }
+    },
+    "art:4": {
+      "question": "西斯廷教堂的天花板是谁画的？",
+      "answers": {
+        "Raphael": "拉斐尔",
+        "Michelangelo": "米开朗基罗",
+        "Da Vinci": "达芬奇",
+        "Donatello": "多纳泰罗"
+      }
+    },
+    "art:5": {
+      "question": "巴勃罗·毕加索与哪个艺术运动有关？",
+      "answers": {
+        "Impressionism": "印象派",
+        "Cubism": "立体主义",
+        "Surrealism": "超现实主义",
+        "Baroque": "巴洛克风格"
+      }
+    },
+    "art:6": {
+      "question": "萨尔瓦多·达利以哪种艺术风格而闻名？",
+      "answers": {
+        "Realism": "现实主义",
+        "Surrealism": "超现实主义",
+        "Pop Art": "波普艺术",
+        "Gothic": "哥特式"
+      }
+    },
+    "art:7": {
+      "question": "谁画了《呐喊》？",
+      "answers": {
+        "Munch": "蒙克",
+        "Klimt": "克里姆特",
+        "Warhol": "沃霍尔",
+        "Cézanne": "塞尚"
+      }
+    },
+    "art:8": {
+      "question": "哪位艺术家因绘制坎贝尔汤罐而闻名？",
+      "answers": {
+        "Warhol": "沃霍尔",
+        "Pollock": "波洛克",
+        "Rothko": "罗斯科",
+        "Bacon": "培根"
+      }
+    },
+    "art:9": {
+      "question": "谁画了《戴珍珠耳环的女孩》？",
+      "answers": {
+        "Vermeer": "维米尔",
+        "Rembrandt": "伦勃朗",
+        "Rubens": "鲁本斯",
+        "Bosch": "博世"
+      }
+    },
+    "art:10": {
+      "question": "混合蓝色和黄色颜料会产生什么颜色？",
+      "answers": {
+        "Purple": "紫色",
+        "Green": "绿色",
+        "Orange": "橙色",
+        "Brown": "棕色"
+      }
+    },
+    "art:11": {
+      "question": "克劳德·莫奈是哪个运动的领军人物？",
+      "answers": {
+        "Impressionism": "印象派",
+        "Cubism": "立体主义",
+        "Dadaism": "达达主义",
+        "Realism": "现实主义"
+      }
+    },
+    "art:12": {
+      "question": "大理石雕像“大卫”是由谁雕刻的？",
+      "answers": {
+        "Bernini": "贝尔尼尼",
+        "Michelangelo": "米开朗基罗",
+        "Rodin": "罗丹",
+        "Donatello": "多纳泰罗"
+      }
+    },
+    "art:13": {
+      "question": "以下哪一个是原色？",
+      "answers": {
+        "Green": "绿色",
+        "Orange": "橙色",
+        "Red": "红色",
+        "Purple": "紫色"
+      }
+    },
+    "art:14": {
+      "question": "《格尔尼卡》是哪位艺术家的著名作品？",
+      "answers": {
+        "Dalí": "达利",
+        "Picasso": "毕加索",
+        "Miró": "米罗",
+        "Goya": "戈雅"
+      }
+    },
+    "art:15": {
+      "question": "在湿石膏上绘画是一种称为？",
+      "answers": {
+        "Fresco": "壁画",
+        "Collage": "拼贴画",
+        "Etching": "蚀刻",
+        "Mosaic": "马赛克"
+      }
+    },
+    "art:16": {
+      "question": "“思想者”雕塑是由？",
+      "answers": {
+        "Rodin": "罗丹",
+        "Michelangelo": "米开朗基罗",
+        "Bernini": "贝尔尼尼",
+        "Calder": "考尔德"
+      }
+    },
+    "art:17": {
+      "question": "传统上使用哪种工具来涂抹油画？",
+      "answers": {
+        "Chisel": "凿子",
+        "Brush": "画笔",
+        "Pen": "笔",
+        "Roller": "滚筒"
+      }
+    },
+    "art:18": {
+      "question": "“向日葵”是著名的绘画系列？",
+      "answers": {
+        "Monet": "莫奈",
+        "Van Gogh": "梵高",
+        "Cézanne": "塞尚",
+        "Gauguin": "高更"
+      }
+    },
+    "art:19": {
+      "question": "“最后的晚餐”壁画是由谁绘制的？",
+      "answers": {
+        "Raphael": "拉斐尔",
+        "Leonardo da Vinci": "列奥纳多·达·芬奇",
+        "Caravaggio": "卡拉瓦乔",
+        "Titian": "提香"
+      }
+    },
+    "art:20": {
+      "question": "哪位艺术家以“滴画”绘画而闻名？",
+      "answers": {
+        "Jackson Pollock": "杰克逊·波洛克",
+        "Rothko": "罗斯科",
+        "Warhol": "沃霍尔",
+        "Dalí": "达利"
+      }
+    },
+    "art:21": {
+      "question": "“记忆的持久性”（融化时钟）是由？",
+      "answers": {
+        "Magritte": "马格里特",
+        "Dalí": "达利",
+        "Miró": "米罗",
+        "Ernst": "恩斯特"
+      }
+    },
+    "art:22": {
+      "question": "弗里达·卡罗 (Frida Kahlo) 最出名的是她？",
+      "answers": {
+        "Landscapes": "风景",
+        "Self-portraits": "自画像",
+        "Sculptures": "雕塑",
+        "Murals only": "仅壁画"
+      }
+    },
+    "art:23": {
+      "question": "自由女神像是送给美国的礼物？",
+      "answers": {
+        "Britain": "英国",
+        "France": "法国",
+        "Spain": "西班牙",
+        "Italy": "意大利"
+      }
+    },
+    "art:24": {
+      "question": "混合红色和黄色油漆会产生什么？",
+      "answers": {
+        "Green": "绿色",
+        "Orange": "橙色",
+        "Purple": "紫色",
+        "Brown": "棕色"
+      }
+    },
+    "art:25": {
+      "question": "混合红色和蓝色油漆会产生什么？",
+      "answers": {
+        "Green": "绿色",
+        "Purple": "紫色",
+        "Orange": "橙色",
+        "Brown": "棕色"
+      }
+    },
+    "art:26": {
+      "question": "三种主要油漆颜色是红色、黄色和？",
+      "answers": {
+        "Green": "绿色",
+        "Blue": "蓝色",
+        "Orange": "橙色",
+        "Purple": "紫色"
+      }
+    },
+    "art:27": {
+      "question": "哪位艺术家因画睡莲而闻名？",
+      "answers": {
+        "Monet": "莫奈",
+        "Manet": "马奈",
+        "Degas": "德加",
+        "Renoir": "雷诺阿"
+      }
+    },
+    "art:28": {
+      "question": "米开朗基罗著名的佛罗伦萨雕像描绘了什么？",
+      "answers": {
+        "Caesar": "凯撒",
+        "David": "大卫",
+        "Apollo": "阿波罗",
+        "Hercules": "大力士"
+      }
+    },
+    "art:29": {
+      "question": "漂亮的书法艺术叫什么？",
+      "answers": {
+        "Origami": "折纸",
+        "Calligraphy": "书法",
+        "Etching": "蚀刻",
+        "Collage": "拼贴画"
+      }
+    },
+    "art:30": {
+      "question": "一幅描绘人的画是？",
+      "answers": {
+        "Landscape": "景观",
+        "Portrait": "肖像",
+        "Still life": "静物",
+        "Mural": "壁画"
+      }
+    },
+    "art:31": {
+      "question": "水果或物体的画是？",
+      "answers": {
+        "Portrait": "肖像",
+        "Still life": "静物",
+        "Landscape": "景观",
+        "Mural": "壁画"
+      }
+    },
+    "art:32": {
+      "question": "古典雕像传统上是用什么材料雕刻的？",
+      "answers": {
+        "Marble": "大理石",
+        "Plastic": "塑料",
+        "Paper": "纸",
+        "Glass": "玻璃"
+      }
+    },
+    "art:33": {
+      "question": "安迪·沃霍尔是哪个运动的领导者？",
+      "answers": {
+        "Pop Art": "波普艺术",
+        "Cubism": "立体主义",
+        "Baroque": "巴洛克风格",
+        "Gothic": "哥特式"
+      }
+    },
+    "art:34": {
+      "question": "文森特·梵高来自哪个国家？",
+      "answers": {
+        "France": "法国",
+        "Netherlands": "荷兰",
+        "Italy": "意大利",
+        "Spain": "西班牙"
+      }
+    },
+    "art:35": {
+      "question": "巴勃罗·毕加索来自哪个国家？",
+      "answers": {
+        "Italy": "意大利",
+        "Spain": "西班牙",
+        "France": "法国",
+        "Portugal": "葡萄牙"
+      }
+    },
+    "art:36": {
+      "question": "达芬奇来自哪个国家？",
+      "answers": {
+        "France": "法国",
+        "Italy": "意大利",
+        "Spain": "西班牙",
+        "Greece": "希腊"
+      }
+    },
+    "art:37": {
+      "question": "卢浮宫博物馆位于哪个城市？",
+      "answers": {
+        "Rome": "罗马",
+        "Paris": "巴黎",
+        "Madrid": "马德里",
+        "London": "伦敦"
+      }
+    },
+    "art:38": {
+      "question": "将材料粘合到表面上以进行艺术创作被称为？",
+      "answers": {
+        "Fresco": "壁画",
+        "Collage": "拼贴画",
+        "Etching": "蚀刻",
+        "Casting": "选角"
+      }
+    },
+    "art:39": {
+      "question": "印象派始于哪个国家？",
+      "answers": {
+        "Italy": "意大利",
+        "France": "法国",
+        "Germany": "德国",
+        "Spain": "西班牙"
+      }
+    },
+    "art:40": {
+      "question": "哪一个不是油漆的原色？",
+      "answers": {
+        "Red": "红色",
+        "Blue": "蓝色",
+        "Yellow": "黄色",
+        "Green": "绿色"
+      }
+    },
+    "art:41": {
+      "question": "米开朗基罗最著名的天花板位于哪个教堂？",
+      "answers": {
+        "Sistine Chapel": "西斯廷教堂",
+        "King's Chapel": "国王礼拜堂",
+        "St Paul's": "圣保罗",
+        "Notre-Dame": "圣母院"
+      }
+    },
+    "art:42": {
+      "question": "哪位艺术家有过“蓝色时期”？",
+      "answers": {
+        "Picasso": "毕加索",
+        "Monet": "莫奈",
+        "Rembrandt": "伦勃朗",
+        "Turner": "特纳"
+      }
+    },
+    "art:43": {
+      "question": "伦勃朗是哪个国家的画家大师？",
+      "answers": {
+        "Netherlands": "荷兰",
+        "France": "法国",
+        "Italy": "意大利",
+        "England": "英格兰"
+      }
+    },
+    "art:44": {
+      "question": "《夜巡》的画者是？",
+      "answers": {
+        "Vermeer": "维米尔",
+        "Rembrandt": "伦勃朗",
+        "Rubens": "鲁本斯",
+        "Hals": "哈尔斯"
+      }
+    },
+    "art:45": {
+      "question": "绘画、雕塑和素描属于什么类型？",
+      "answers": {
+        "Music": "音乐",
+        "Visual arts": "视觉艺术",
+        "Literature": "文学",
+        "Dance": "舞蹈"
+      }
+    },
+    "art:46": {
+      "question": "水彩画是一种？",
+      "answers": {
+        "Sculpture": "雕塑",
+        "Paint": "油漆",
+        "Camera": "相机",
+        "Clay": "粘土"
+      }
+    },
+    "art:47": {
+      "question": "“画架”用来做什么？",
+      "answers": {
+        "Mix clay": "混合粘土",
+        "Hold a canvas while painting": "绘画时握住画布",
+        "Cut marble": "切割大理石",
+        "Frame photos": "相框照片"
+      }
+    },
+    "art:48": {
+      "question": "蒙娜丽莎以其神秘而闻名？",
+      "answers": {
+        "Hat": "帽子",
+        "Smile": "微笑",
+        "Dress": "连衣裙",
+        "Crown": "皇冠"
+      }
+    },
+    "art:49": {
+      "question": "班克斯因艺术家而闻名？",
+      "answers": {
+        "Classical portraits": "古典肖像",
+        "Street art": "街头艺术",
+        "Marble statues": "大理石雕像",
+        "Frescoes": "壁画"
+      }
+    },
+    "art:50": {
+      "question": "光的原色是红、绿和？",
+      "answers": {
+        "Yellow": "黄色",
+        "Blue": "蓝色",
+        "Purple": "紫色",
+        "White": "白色"
+      }
+    },
+    "art:51": {
+      "question": "立体主义代表使用？",
+      "answers": {
+        "Realistic detail": "现实细节",
+        "Geometric shapes": "几何形状",
+        "Only circles": "仅圆圈",
+        "Photographs": "照片"
+      }
+    },
+    "art:52": {
+      "question": "“壁画”是在？",
+      "answers": {
+        "Small canvas": "小画布",
+        "Wall": "墙",
+        "Plate": "板",
+        "Paper": "纸"
+      }
+    },
+    "art:53": {
+      "question": "谁画了《维纳斯的诞生》？",
+      "answers": {
+        "Botticelli": "波提切利",
+        "Raphael": "拉斐尔",
+        "Giotto": "乔托",
+        "Titian": "提香"
+      }
+    },
+    "art:54": {
+      "question": "文艺复兴艺术时期开始于？",
+      "answers": {
+        "France": "法国",
+        "Italy": "意大利",
+        "England": "英格兰",
+        "Germany": "德国"
+      }
+    },
+    "art:55": {
+      "question": "萨尔瓦多·达利以其独特的？",
+      "answers": {
+        "Beard": "胡子",
+        "Moustache": "小胡子",
+        "Hat": "帽子",
+        "Glasses": "眼镜"
+      }
+    },
+    "art:56": {
+      "question": "陶器主要由什么制成？",
+      "answers": {
+        "Metal": "金属",
+        "Clay": "粘土",
+        "Glass": "玻璃",
+        "Wood": "木材"
+      }
+    },
+    "art:57": {
+      "question": "哪种颜色被认为是暖色？",
+      "answers": {
+        "Blue": "蓝色",
+        "Red": "红色",
+        "Green": "绿色",
+        "Purple": "紫色"
+      }
+    },
+    "art:58": {
+      "question": "哪种颜色被认为是冷色？",
+      "answers": {
+        "Red": "红色",
+        "Orange": "橙色",
+        "Blue": "蓝色",
+        "Yellow": "黄色"
+      }
+    },
+    "art:59": {
+      "question": "哪位艺术家因画芭蕾舞演员而闻名？",
+      "answers": {
+        "Degas": "德加",
+        "Monet": "莫奈",
+        "Cézanne": "塞尚",
+        "Seurat": "修拉"
+      }
+    },
+    "art:60": {
+      "question": "“点画派”（用点绘画）链接到？",
+      "answers": {
+        "Seurat": "修拉",
+        "Van Gogh": "梵高",
+        "Klimt": "克里姆特",
+        "Munch": "蒙克"
+      }
+    },
+    "art:61": {
+      "question": "古斯塔夫克里姆特的《吻》著名地使用了很多？",
+      "answers": {
+        "Silver": "银牌",
+        "Gold": "黄金",
+        "Blue": "蓝色",
+        "Black": "黑色"
+      }
+    },
+    "art:62": {
+      "question": "快速草图通常是用？",
+      "answers": {
+        "Chisel": "凿子",
+        "Pencil": "铅笔",
+        "Roller": "滚筒",
+        "Clay": "粘土"
+      }
+    },
+    "art:63": {
+      "question": "抽象艺术一般不会尝试这样做？",
+      "answers": {
+        "Use color": "使用颜色",
+        "Represent reality exactly": "准确地代表现实",
+        "Use shapes": "使用形状",
+        "Be creative": "有创意"
+      }
+    },
+    "art:64": {
+      "question": "哪个城市有梵高博物馆？",
+      "answers": {
+        "Amsterdam": "阿姆斯特丹",
+        "London": "伦敦",
+        "Rome": "罗马",
+        "Madrid": "马德里"
+      }
+    },
+    "art:65": {
+      "question": "奥古斯特·罗丹主要是一个？",
+      "answers": {
+        "Painter": "画家",
+        "Sculptor": "雕塑家",
+        "Photographer": "摄影师",
+        "Architect": "建筑师"
+      }
+    },
+    "art:66": {
+      "question": "MoMA（现代艺术博物馆）位于？",
+      "answers": {
+        "Paris": "巴黎",
+        "New York": "纽约",
+        "Rome": "罗马",
+        "Tokyo": "东京"
+      }
+    },
+    "art:67": {
+      "question": "普拉多博物馆位于？",
+      "answers": {
+        "Madrid": "马德里",
+        "Paris": "巴黎",
+        "Rome": "罗马",
+        "London": "伦敦"
+      }
+    },
+    "art:68": {
+      "question": "'Chiaroscuro' 指的是强烈使用？",
+      "answers": {
+        "Bright colors": "鲜艳的色彩",
+        "Light and shadow": "光与影",
+        "Straight lines": "直线",
+        "Dots": "点"
+      }
+    },
+    "art:69": {
+      "question": "画布通常是什么形状？",
+      "answers": {
+        "Round": "回合",
+        "Rectangular": "矩形",
+        "Triangular": "三角形",
+        "Star-shaped": "星形"
+      }
+    },
+    "art:70": {
+      "question": "自画像展示？",
+      "answers": {
+        "The artist themselves": "艺术家本人",
+        "A landscape": "风景",
+        "A building": "一座建筑物",
+        "An animal": "动物"
+      }
+    },
+    "art:71": {
+      "question": "米开朗基罗、达芬奇和拉斐尔属于？",
+      "answers": {
+        "Baroque": "巴洛克风格",
+        "Renaissance": "文艺复兴",
+        "Modern era": "现代时代",
+        "Gothic": "哥特式"
+      }
+    },
+    "art:72": {
+      "question": "超现实主义经常描绘？",
+      "answers": {
+        "Everyday realism": "日常现实主义",
+        "Dreamlike, strange scenes": "梦幻般的奇异场景",
+        "Only portraits": "仅肖像",
+        "Pure geometry": "纯几何"
+      }
+    },
+    "art:73": {
+      "question": "红色和白色混合会变成什么颜色？",
+      "answers": {
+        "Blue": "蓝色",
+        "Pink": "粉色",
+        "Green": "绿色",
+        "Brown": "棕色"
+      }
+    },
+    "art:74": {
+      "question": "著名的坐着思考的人雕像叫什么？",
+      "answers": {
+        "The Dreamer": "梦想家",
+        "The Thinker": "思想家",
+        "The Watcher": "观察者",
+        "The Sitter": "保姆"
+      }
+    },
+    "art:75": {
+      "question": "摄影作为艺术使用？",
+      "answers": {
+        "Brush": "画笔",
+        "Camera": "相机",
+        "Chisel": "凿子",
+        "Loom": "织布机"
+      }
+    },
+    "art:76": {
+      "question": "“文森特”是哪位画家的名字？",
+      "answers": {
+        "Monet": "莫奈",
+        "Van Gogh": "梵高",
+        "Picasso": "毕加索",
+        "Dalí": "达利"
+      }
+    },
+    "art:77": {
+      "question": "乌菲兹美术馆位于哪个国家？",
+      "answers": {
+        "Italy": "意大利",
+        "France": "法国",
+        "Spain": "西班牙",
+        "Greece": "希腊"
+      }
+    },
+    "art:78": {
+      "question": "折纸是一门艺术？",
+      "answers": {
+        "Paper folding": "折纸",
+        "Metalwork": "金属制品",
+        "Glassblowing": "玻璃吹制",
+        "Painting": "绘画"
+      }
+    },
+    "art:79": {
+      "question": "哪位艺术家一生画过许多自画像？",
+      "answers": {
+        "Rembrandt": "伦勃朗",
+        "Botticelli": "波提切利",
+        "Raphael": "拉斐尔",
+        "Giotto": "乔托"
+      }
+    },
+    "art:80": {
+      "question": "“调色板”是用来做什么的？",
+      "answers": {
+        "Hold and mix paints": "保存并混合油漆",
+        "Cut wood": "砍柴",
+        "Frame art": "框架艺术",
+        "Fire clay": "耐火粘土"
+      }
+    },
+    "art:81": {
+      "question": "神奈川冲浪里是日本著名的？",
+      "answers": {
+        "Sculpture": "雕塑",
+        "Woodblock print": "木刻版画",
+        "Oil painting": "油画",
+        "Photograph": "照片"
+      }
+    },
+    "art:82": {
+      "question": "常见的雕塑材料有哪些？",
+      "answers": {
+        "Bronze": "铜牌",
+        "Watercolor": "水彩",
+        "Charcoal": "木炭",
+        "Ink": "墨水"
+      }
+    },
+    "art:83": {
+      "question": "“消失点”用在什么地方？",
+      "answers": {
+        "Music": "音乐",
+        "Perspective drawing": "透视图",
+        "Casting": "选角",
+        "Weaving": "编织"
+      }
+    },
+    "art:84": {
+      "question": "列奥纳多·达·芬奇也因？",
+      "answers": {
+        "Athlete": "运动员",
+        "Inventor": "发明人",
+        "Singer": "歌手",
+        "Sailor": "水手"
+      }
+    },
+    "art:85": {
+      "question": "“画廊”是一个地方？",
+      "answers": {
+        "Store food": "储存食物",
+        "Display artworks": "展示艺术品",
+        "Repair cars": "修理汽车",
+        "Grow plants": "种植植物"
+      }
+    },
+    "art:86": {
+      "question": "巴洛克艺术以什么而闻名？",
+      "answers": {
+        "Minimal and plain": "最小且简单",
+        "Dramatic and ornate": "戏剧性且华丽",
+        "Black and white only": "仅黑白",
+        "Purely geometric": "纯几何"
+      }
+    },
+    "art:87": {
+      "question": "著名的艺术品拍卖行是哪家？",
+      "answers": {
+        "Sotheby's": "苏富比",
+        "Nasdaq": "纳斯达克",
+        "Airbnb": "爱彼迎",
+        "Netflix": "Netflix"
+      }
+    },
+    "art:88": {
+      "question": "《米洛的维纳斯》是著名的古代作品吗？",
+      "answers": {
+        "Painting": "绘画",
+        "Statue": "雕像",
+        "Vase": "花瓶",
+        "Mosaic": "马赛克"
+      }
+    },
+    "art:89": {
+      "question": "彩色玻璃艺术常见于？",
+      "answers": {
+        "Cathedrals": "大教堂",
+        "Kitchens": "厨房",
+        "Garages": "车库",
+        "Stadiums": "体育场"
+      }
+    },
+    "art:90": {
+      "question": "木炭通常用于？",
+      "answers": {
+        "Painting walls": "粉刷墙壁",
+        "Drawing/sketching": "绘图/草图",
+        "Carving marble": "雕刻大理石",
+        "Printing": "打印"
+      }
+    },
+    "art:91": {
+      "question": "泰特美术馆是哪个城市的艺术博物馆？",
+      "answers": {
+        "Paris": "巴黎",
+        "London": "伦敦",
+        "Madrid": "马德里",
+        "Rome": "罗马"
+      }
+    },
+    "art:92": {
+      "question": "哪个最能描述“雕塑”？",
+      "answers": {
+        "A 2D painting": "2D 绘画",
+        "A 3D work of art": "3D 艺术作品",
+        "A song": "一首歌",
+        "A poem": "一首诗"
+      }
+    },
+    "art:93": {
+      "question": "“现代艺术”一般指艺术，大致来自？",
+      "answers": {
+        "Ancient times": "古代",
+        "The late 1800s onward": "1800 年代末期以后",
+        "Medieval times": "中世纪时期",
+        "Prehistory": "史前史"
+      }
+    },
+    "art:94": {
+      "question": "哪位艺术家与塔希提岛的绘画有关？",
+      "answers": {
+        "Gauguin": "高更",
+        "Monet": "莫奈",
+        "Rembrandt": "伦勃朗",
+        "Vermeer": "维米尔"
+      }
+    },
+    "art:95": {
+      "question": "绘制了壁画？",
+      "answers": {
+        "Canvas": "画布",
+        "Wet plaster": "湿石膏",
+        "Paper": "纸",
+        "Wood panel": "木板"
+      }
+    },
+    "art:96": {
+      "question": "西斯廷教堂位于？",
+      "answers": {
+        "Vatican City": "梵蒂冈城",
+        "Florence": "佛罗伦萨",
+        "Venice": "威尼斯",
+        "Naples": "那不勒斯"
+      }
+    },
+    "art:97": {
+      "question": "以下哪一种是艺术风格？",
+      "answers": {
+        "Impressionism": "印象派",
+        "Photosynthesis": "光合作用",
+        "Gravity": "重力",
+        "Inflation": "通货膨胀"
+      }
+    },
+    "art:98": {
+      "question": "创作雕塑的人是？",
+      "answers": {
+        "Painter": "画家",
+        "Sculptor": "雕塑家",
+        "Novelist": "小说家",
+        "Composer": "作曲家"
+      }
+    },
+    "art:99": {
+      "question": "谁画了印象派的《印象·日出》？",
+      "answers": {
+        "Monet": "莫奈",
+        "Manet": "马奈",
+        "Renoir": "雷诺阿",
+        "Degas": "德加"
+      }
+    },
+    "history:0": {
+      "question": "第二次世界大战于哪一年结束？",
+      "answers": {
+        "1918": "1918",
+        "1943": "1943 年",
+        "1945": "1945 年",
+        "1950": "1950"
+      }
+    },
+    "history:1": {
+      "question": "谁是美国第一任总统？",
+      "answers": {
+        "Lincoln": "林肯",
+        "Washington": "华盛顿",
+        "Jefferson": "杰斐逊",
+        "Adams": "亚当斯"
+      }
+    },
+    "history:2": {
+      "question": "大金字塔是由哪个古代文明建造的？",
+      "answers": {
+        "Romans": "罗马书",
+        "Greeks": "希腊人",
+        "Egyptians": "埃及人",
+        "Mayans": "玛雅人"
+      }
+    },
+    "history:3": {
+      "question": "柏林墙是哪一年倒塌的？",
+      "answers": {
+        "1979": "1979",
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991"
+      }
+    },
+    "history:4": {
+      "question": "哪位哲学家是苏格拉底的学生？",
+      "answers": {
+        "Aristotle": "亚里士多德",
+        "Plato": "柏拉图",
+        "Pythagoras": "毕达哥拉斯",
+        "Homer": "荷马"
+      }
+    },
+    "history:5": {
+      "question": "哪艘船于 1912 年撞上冰山后沉没？",
+      "answers": {
+        "Lusitania": "卢西塔尼亚",
+        "Titanic": "泰坦尼克号",
+        "Bismarck": "俾斯麦",
+        "Mayflower": "五月花号"
+      }
+    },
+    "history:6": {
+      "question": "谁于 1492 年到达美洲？",
+      "answers": {
+        "Magellan": "麦哲伦",
+        "Columbus": "哥伦布",
+        "Vespucci": "韦斯普奇",
+        "Cook": "厨师"
+      }
+    },
+    "history:7": {
+      "question": "法国大革命于哪一年开始？",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1804": "1804",
+        "1815": "1815"
+      }
+    },
+    "history:8": {
+      "question": "成吉思汗建立了哪个帝国？",
+      "answers": {
+        "Ottoman": "奥斯曼帝国",
+        "Mongol": "蒙古",
+        "Persian": "波斯语",
+        "Roman": "罗马"
+      }
+    },
+    "history:9": {
+      "question": "第二次世界大战期间谁领导了纳粹德国？",
+      "answers": {
+        "Mussolini": "墨索里尼",
+        "Hitler": "希特勒",
+        "Stalin": "斯大林",
+        "Franco": "弗朗哥"
+      }
+    },
+    "history:10": {
+      "question": "罗马斗兽场位于哪个城市？",
+      "answers": {
+        "Athens": "雅典",
+        "Rome": "罗马",
+        "Cairo": "开罗",
+        "Istanbul": "伊斯坦布尔"
+      }
+    },
+    "history:11": {
+      "question": "哪位埃及女王与凯撒和马克·安东尼结盟？",
+      "answers": {
+        "Nefertiti": "纳芙蒂蒂",
+        "Cleopatra": "克利奥帕特拉",
+        "Hatshepsut": "哈特谢普苏特",
+        "Isis": "伊希斯"
+      }
+    },
+    "history:12": {
+      "question": "冷战主要发生在美国和？",
+      "answers": {
+        "China": "中国",
+        "USSR": "苏联",
+        "Germany": "德国",
+        "Japan": "日本"
+      }
+    },
+    "history:13": {
+      "question": "人类首次登陆月球是哪一年？",
+      "answers": {
+        "1959": "1959",
+        "1965": "1965",
+        "1969": "1969",
+        "1972": "1972 年"
+      }
+    },
+    "history:14": {
+      "question": "文艺复兴始于哪个国家？",
+      "answers": {
+        "France": "法国",
+        "Italy": "意大利",
+        "England": "英格兰",
+        "Spain": "西班牙"
+      }
+    },
+    "history:15": {
+      "question": "美国内战是在北方和北方之间进行的？",
+      "answers": {
+        "East": "东",
+        "South": "南",
+        "West": "西",
+        "Midwest": "中西部"
+      }
+    },
+    "history:16": {
+      "question": "哪个古代文明创造了民主？",
+      "answers": {
+        "Rome": "罗马",
+        "Greece": "希腊",
+        "Egypt": "埃及",
+        "Persia": "波斯"
+      }
+    },
+    "history:17": {
+      "question": "印刷机是由？",
+      "answers": {
+        "Newton": "牛顿",
+        "Gutenberg": "古腾堡",
+        "Edison": "爱迪生",
+        "Franklin": "富兰克林"
+      }
+    },
+    "history:18": {
+      "question": "古长城是哪个国家修建的？",
+      "answers": {
+        "India": "印度",
+        "China": "中国",
+        "Japan": "日本",
+        "Egypt": "埃及"
+      }
+    },
+    "history:19": {
+      "question": "哪位埃及女王在柏林展出了著名的半身像？",
+      "answers": {
+        "Cleopatra": "克利奥帕特拉",
+        "Nefertiti": "纳芙蒂蒂",
+        "Hatshepsut": "哈特谢普苏特",
+        "Isis": "伊希斯"
+      }
+    },
+    "history:20": {
+      "question": "第一次世界大战于哪一年开始？",
+      "answers": {
+        "1912": "1912",
+        "1914": "1914",
+        "1918": "1918",
+        "1920": "1920"
+      }
+    },
+    "history:21": {
+      "question": "第一次世界大战于哪一年结束？",
+      "answers": {
+        "1916": "1916",
+        "1918": "1918",
+        "1920": "1920",
+        "1922": "1922"
+      }
+    },
+    "history:22": {
+      "question": "罗马帝国以哪个城市为中心？",
+      "answers": {
+        "Athens": "雅典",
+        "Rome": "罗马",
+        "Cairo": "开罗",
+        "Carthage": "迦太基"
+      }
+    },
+    "history:23": {
+      "question": "朱利叶斯·凯撒是古代的领袖？",
+      "answers": {
+        "Greece": "希腊",
+        "Rome": "罗马",
+        "Egypt": "埃及",
+        "Persia": "波斯"
+      }
+    },
+    "history:24": {
+      "question": "美国《独立宣言》已签署？",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1800": "1800",
+        "1812": "1812"
+      }
+    },
+    "history:25": {
+      "question": "拿破仑·波拿巴是哪个国家的领导人？",
+      "answers": {
+        "Spain": "西班牙",
+        "France": "法国",
+        "Italy": "意大利",
+        "Russia": "俄罗斯"
+      }
+    },
+    "history:26": {
+      "question": "众所周知，拿破仑在战役中被击败？",
+      "answers": {
+        "Hastings": "黑斯廷斯",
+        "Waterloo": "滑铁卢",
+        "Gettysburg": "葛底斯堡",
+        "Verdun": "凡尔登"
+      }
+    },
+    "history:27": {
+      "question": "柏林墙划分了哪个城市？",
+      "answers": {
+        "Munich": "慕尼黑",
+        "Berlin": "柏林",
+        "Frankfurt": "法兰克福",
+        "Vienna": "维也纳"
+      }
+    },
+    "history:28": {
+      "question": "哪个文明建造了马丘比丘？",
+      "answers": {
+        "Aztec": "阿兹特克人",
+        "Inca": "印加",
+        "Maya": "玛雅",
+        "Olmec": "奥尔梅克"
+      }
+    },
+    "history:29": {
+      "question": "吉萨金字塔位于？",
+      "answers": {
+        "Iraq": "伊拉克",
+        "Egypt": "埃及",
+        "Sudan": "苏丹",
+        "Libya": "利比亚"
+      }
+    },
+    "history:30": {
+      "question": "二战大部分时间里谁是英国首相？",
+      "answers": {
+        "Chamberlain": "张伯伦",
+        "Churchill": "丘吉尔",
+        "Attlee": "艾德礼",
+        "Thatcher": "撒切尔"
+      }
+    },
+    "history:31": {
+      "question": "泰坦尼克号沉没时正驶向哪个城市？",
+      "answers": {
+        "London": "伦敦",
+        "New York": "纽约",
+        "Boston": "波士顿",
+        "Halifax": "哈利法克斯"
+      }
+    },
+    "history:32": {
+      "question": "哪位探险家领导了第一次环球航行？",
+      "answers": {
+        "Columbus": "哥伦布",
+        "Magellan": "麦哲伦",
+        "Da Gama": "达伽马",
+        "Cook": "厨师"
+      }
+    },
+    "history:33": {
+      "question": "“文艺复兴”一词的字面意思是什么？",
+      "answers": {
+        "Rebirth": "重生",
+        "Revolution": "革命",
+        "Reform": "改革",
+        "Return": "返回"
+      }
+    },
+    "history:34": {
+      "question": "古埃及人使用？",
+      "answers": {
+        "Latin": "拉丁语",
+        "Hieroglyphics": "象形文字",
+        "Cyrillic": "西里尔字母",
+        "Runes": "符文"
+      }
+    },
+    "history:35": {
+      "question": "奥斯曼帝国以现代为中心？",
+      "answers": {
+        "Egypt": "埃及",
+        "Turkey": "土耳其",
+        "Iran": "伊朗",
+        "Greece": "希腊"
+      }
+    },
+    "history:36": {
+      "question": "君士坦丁堡是哪个城市的旧名？",
+      "answers": {
+        "Athens": "雅典",
+        "Istanbul": "伊斯坦布尔",
+        "Rome": "罗马",
+        "Cairo": "开罗"
+      }
+    },
+    "history:37": {
+      "question": "1215 年哪份文件限制了英国国王的权力？",
+      "answers": {
+        "Magna Carta": "大宪章",
+        "Bill of Rights": "权利法案",
+        "Constitution": "宪法",
+        "Domesday Book": "末日审判书"
+      }
+    },
+    "history:38": {
+      "question": "工业革命始于哪个国家？",
+      "answers": {
+        "USA": "美国",
+        "Britain": "英国",
+        "France": "法国",
+        "Germany": "德国"
+      }
+    },
+    "history:39": {
+      "question": "哪位美国总统于 1963 年被暗杀？",
+      "answers": {
+        "Lincoln": "林肯",
+        "Kennedy": "肯尼迪",
+        "Roosevelt": "罗斯福",
+        "Nixon": "尼克松"
+      }
+    },
+    "history:40": {
+      "question": "哪位美国总统出现在 1 美元纸币上？",
+      "answers": {
+        "Lincoln": "林肯",
+        "Washington": "华盛顿",
+        "Jefferson": "杰斐逊",
+        "Franklin": "富兰克林"
+      }
+    },
+    "history:41": {
+      "question": "谁领导了印度非暴力独立运动？",
+      "answers": {
+        "Nehru": "尼赫鲁",
+        "Gandhi": "甘地",
+        "Bose": "Bose",
+        "Patel": "帕特尔"
+      }
+    },
+    "history:42": {
+      "question": "柏林墙是哪一边修建的？",
+      "answers": {
+        "West Germany": "西德",
+        "East Germany": "东德",
+        "France": "法国",
+        "USA": "美国"
+      }
+    },
+    "history:43": {
+      "question": "哪个古代文明以木乃伊化而闻名？",
+      "answers": {
+        "Greek": "希腊语",
+        "Egyptian": "埃及语",
+        "Roman": "罗马",
+        "Persian": "波斯语"
+      }
+    },
+    "history:44": {
+      "question": "黑死病是毁灭性的？",
+      "answers": {
+        "War": "战争",
+        "Plague": "瘟疫",
+        "Famine": "饥荒",
+        "Earthquake": "地震"
+      }
+    },
+    "history:45": {
+      "question": "新教改革是由？",
+      "answers": {
+        "Martin Luther": "马丁·路德",
+        "Henry VIII": "亨利八世",
+        "Calvin": "卡尔文",
+        "Pope Leo": "教皇利奥"
+      }
+    },
+    "history:46": {
+      "question": "古代奥运会起源于？",
+      "answers": {
+        "Rome": "罗马",
+        "Greece": "希腊",
+        "Egypt": "埃及",
+        "Persia": "波斯"
+      }
+    },
+    "history:47": {
+      "question": "谁是第一个进入太空的人类？",
+      "answers": {
+        "Armstrong": "阿姆斯特朗",
+        "Gagarin": "加加林",
+        "Glenn": "格伦",
+        "Aldrin": "奥尔德林"
+      }
+    },
+    "history:48": {
+      "question": "尼尔·阿姆斯特朗是第一个这样做的人？",
+      "answers": {
+        "Fly a plane": "驾驶飞机",
+        "Walk on the Moon": "月球漫步",
+        "Reach the South Pole": "到达南极",
+        "Climb Everest": "攀登珠穆朗玛峰"
+      }
+    },
+    "history:49": {
+      "question": "苏联（苏联）于哪一年解体？",
+      "answers": {
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991",
+        "1993": "1993"
+      }
+    },
+    "history:50": {
+      "question": "美国《独立宣言》主要是由？",
+      "answers": {
+        "Washington": "华盛顿",
+        "Jefferson": "杰斐逊",
+        "Franklin": "富兰克林",
+        "Adams": "亚当斯"
+      }
+    },
+    "history:51": {
+      "question": "1620 年哪艘船将清教徒带到了美国？",
+      "answers": {
+        "Mayflower": "五月花号",
+        "Titanic": "泰坦尼克号",
+        "Santa Maria": "圣玛丽亚",
+        "Beagle": "比格犬"
+      }
+    },
+    "history:52": {
+      "question": "克里斯托弗·哥伦布在以下国家的旗帜下航行？",
+      "answers": {
+        "Portugal": "葡萄牙",
+        "Spain": "西班牙",
+        "Italy": "意大利",
+        "England": "英格兰"
+      }
+    },
+    "history:53": {
+      "question": "法国大革命始于对？",
+      "answers": {
+        "Louvre": "卢浮宫",
+        "Bastille": "巴士底狱",
+        "Versailles": "凡尔赛宫",
+        "Notre-Dame": "圣母院"
+      }
+    },
+    "history:54": {
+      "question": "哪个古代奇迹仍然矗立在埃及？",
+      "answers": {
+        "Great Pyramid of Giza": "吉萨大金字塔",
+        "Colosseum": "斗兽场",
+        "Parthenon": "帕台农神庙",
+        "Taj Mahal": "泰姬陵"
+      }
+    },
+    "history:55": {
+      "question": "泰姬陵位于哪个国家？",
+      "answers": {
+        "Pakistan": "巴基斯坦",
+        "India": "印度",
+        "Iran": "伊朗",
+        "Turkey": "土耳其"
+      }
+    },
+    "history:56": {
+      "question": "二战期间谁领导了苏联？",
+      "answers": {
+        "Lenin": "列宁",
+        "Stalin": "斯大林",
+        "Khrushchev": "赫鲁晓夫",
+        "Gorbachev": "戈尔巴乔夫"
+      }
+    },
+    "history:57": {
+      "question": "在第二次世界大战中，原子弹袭击了广岛，然后？",
+      "answers": {
+        "Tokyo": "东京",
+        "Nagasaki": "长崎",
+        "Osaka": "大阪",
+        "Kyoto": "京都"
+      }
+    },
+    "history:58": {
+      "question": "国际联盟是？",
+      "answers": {
+        "EU": "欧盟",
+        "United Nations": "联合国",
+        "NATO": "北约",
+        "WHO": "世界卫生组织"
+      }
+    },
+    "history:59": {
+      "question": "联合国成立于哪一年？",
+      "answers": {
+        "1919": "1919",
+        "1945": "1945 年",
+        "1950": "1950",
+        "1960": "1960"
+      }
+    },
+    "history:60": {
+      "question": "亚历山大大帝来自哪个古代王国？",
+      "answers": {
+        "Rome": "罗马",
+        "Macedonia": "马其顿",
+        "Egypt": "埃及",
+        "Persia": "波斯"
+      }
+    },
+    "history:61": {
+      "question": "哪个国家是古代斯巴达的故乡？",
+      "answers": {
+        "Italy": "意大利",
+        "Greece": "希腊",
+        "Egypt": "埃及",
+        "Turkey": "土耳其"
+      }
+    },
+    "history:62": {
+      "question": "冷战大约在哪一年结束？",
+      "answers": {
+        "1965": "1965 年",
+        "1975": "1975 年",
+        "1991": "1991",
+        "2001": "2001"
+      }
+    },
+    "history:63": {
+      "question": "莱特兄弟被认为发明了？",
+      "answers": {
+        "Car": "汽车",
+        "Airplane": "飞机",
+        "Telephone": "电话",
+        "Radio": "收音机"
+      }
+    },
+    "history:64": {
+      "question": "第二次世界大战的诺曼底登陆发生在？",
+      "answers": {
+        "Italy": "意大利",
+        "Normandy, France": "法国诺曼底",
+        "Germany": "德国",
+        "Poland": "波兰"
+      }
+    },
+    "history:65": {
+      "question": "百年战争主要是在英格兰和？",
+      "answers": {
+        "Spain": "西班牙",
+        "France": "法国",
+        "Germany": "德国",
+        "Italy": "意大利"
+      }
+    },
+    "history:66": {
+      "question": "谁是 20 世纪 80 年代英国的“铁娘子”首相？",
+      "answers": {
+        "Elizabeth II": "伊丽莎白二世",
+        "Thatcher": "撒切尔",
+        "May": "五月",
+        "Merkel": "默克尔"
+      }
+    },
+    "history:67": {
+      "question": "庞贝古城被毁？",
+      "answers": {
+        "A flood": "洪水",
+        "A volcano (Vesuvius)": "一座火山（维苏威火山）",
+        "An earthquake": "地震",
+        "A war": "一场战争"
+      }
+    },
+    "history:68": {
+      "question": "法老统治过哪个古代国家？",
+      "answers": {
+        "Greece": "希腊",
+        "Egypt": "埃及",
+        "Rome": "罗马",
+        "Persia": "波斯"
+      }
+    },
+    "history:69": {
+      "question": "哪位著名护士在克里米亚战争中服役？",
+      "answers": {
+        "Curie": "居里",
+        "Nightingale": "南丁格尔",
+        "Earhart": "埃尔哈特",
+        "Keller": "凯勒"
+      }
+    },
+    "history:70": {
+      "question": "文艺复兴与哪个意大利城市最相关？",
+      "answers": {
+        "Milan": "米兰",
+        "Florence": "佛罗伦萨",
+        "Naples": "那不勒斯",
+        "Turin": "都灵"
+      }
+    },
+    "history:71": {
+      "question": "谁是第一位获得诺贝尔奖的女性？",
+      "answers": {
+        "Curie": "居里",
+        "Franklin": "富兰克林",
+        "Meitner": "迈特纳",
+        "Lovelace": "洛夫莱斯"
+      }
+    },
+    "history:72": {
+      "question": "维京人最初来自哪里？",
+      "answers": {
+        "Scandinavia": "斯堪的纳维亚半岛",
+        "Spain": "西班牙",
+        "Greece": "希腊",
+        "Egypt": "埃及"
+      }
+    },
+    "history:73": {
+      "question": "伦敦大火发生在哪一年？",
+      "answers": {
+        "1620": "1620",
+        "1666": "1666",
+        "1700": "1700",
+        "1750": "1750"
+      }
+    },
+    "history:74": {
+      "question": "引发大萧条的华尔街崩盘发生在什么时候？",
+      "answers": {
+        "1919": "1919",
+        "1929": "1929",
+        "1939": "1939",
+        "1949": "1949"
+      }
+    },
+    "history:75": {
+      "question": "谁引入了苏联改革“开放”和“改革”？",
+      "answers": {
+        "Stalin": "斯大林",
+        "Gorbachev": "戈尔巴乔夫",
+        "Lenin": "列宁",
+        "Putin": "普京"
+      }
+    },
+    "history:76": {
+      "question": "大宪章是在哪个国家签署的？",
+      "answers": {
+        "France": "法国",
+        "England": "英格兰",
+        "Italy": "意大利",
+        "Spain": "西班牙"
+      }
+    },
+    "history:77": {
+      "question": "哪位探险家于 1498 年经海路到达印度？",
+      "answers": {
+        "Columbus": "哥伦布",
+        "Vasco da Gama": "瓦斯科·达·伽马",
+        "Magellan": "麦哲伦",
+        "Cook": "厨师"
+      }
+    },
+    "history:78": {
+      "question": "古代玛雅人主要居住在哪个地区？",
+      "answers": {
+        "Central America": "中美洲",
+        "North Africa": "北非",
+        "Southeast Asia": "东南亚",
+        "Northern Europe": "北欧"
+      }
+    },
+    "history:79": {
+      "question": "阿兹特克文明主要位于现代？",
+      "answers": {
+        "Peru": "秘鲁",
+        "Mexico": "墨西哥",
+        "Brazil": "巴西",
+        "Chile": "智利"
+      }
+    },
+    "history:80": {
+      "question": "冷战太空竞赛以登陆？",
+      "answers": {
+        "Sun": "太阳",
+        "Moon": "月亮",
+        "Mars": "火星",
+        "Venus": "金星"
+      }
+    },
+    "history:81": {
+      "question": "埃菲尔铁塔是为 1889 年世界博览会而建造的？",
+      "answers": {
+        "London": "伦敦",
+        "Paris": "巴黎",
+        "Rome": "罗马",
+        "Berlin": "柏林"
+      }
+    },
+    "history:82": {
+      "question": "谁写了“95 条论纲”？",
+      "answers": {
+        "Calvin": "卡尔文",
+        "Martin Luther": "马丁·路德",
+        "Erasmus": "伊拉斯谟",
+        "Henry VIII": "亨利八世"
+      }
+    },
+    "history:83": {
+      "question": "哪场战争（1914-1918）以广泛的堑壕战为特色？",
+      "answers": {
+        "WWII": "二战",
+        "WWI": "一战",
+        "Cold War": "冷战",
+        "Napoleonic Wars": "拿破仑战争"
+      }
+    },
+    "history:84": {
+      "question": "美国内战于哪一年结束？",
+      "answers": {
+        "1776": "1776",
+        "1812": "1812",
+        "1865": "1865",
+        "1901": "1901"
+      }
+    },
+    "history:85": {
+      "question": "谁是罗马第一位皇帝？",
+      "answers": {
+        "Julius Caesar": "朱利叶斯·凯撒",
+        "Augustus": "奥古斯都",
+        "Nero": "尼禄",
+        "Constantine": "康斯坦丁"
+      }
+    },
+    "history:86": {
+      "question": "丝绸之路将欧洲连接到？",
+      "answers": {
+        "Africa": "非洲",
+        "Asia": "亚洲",
+        "America": "美国",
+        "Australia": "澳大利亚"
+      }
+    },
+    "history:87": {
+      "question": "哪个国家将自由女神像赠送给美国？",
+      "answers": {
+        "UK": "英国",
+        "France": "法国",
+        "Spain": "西班牙",
+        "Germany": "德国"
+      }
+    },
+    "history:88": {
+      "question": "中世纪时期也被称为？",
+      "answers": {
+        "Middle Ages": "中世纪",
+        "Stone Age": "石器时代",
+        "Bronze Age": "青铜时代",
+        "Space Age": "太空时代"
+      }
+    },
+    "history:89": {
+      "question": "谁领导了古巴革命？",
+      "answers": {
+        "Guevara": "格瓦拉",
+        "Castro": "卡斯特罗",
+        "Batista": "巴蒂斯塔",
+        "Allende": "阿连德"
+      }
+    },
+    "history:90": {
+      "question": "哪个国家首先制造了原子弹？",
+      "answers": {
+        "Germany": "德国",
+        "USA": "美国",
+        "USSR": "苏联",
+        "Japan": "日本"
+      }
+    },
+    "history:91": {
+      "question": "文艺复兴是在哪个时期之后出现的？",
+      "answers": {
+        "Middle Ages": "中世纪",
+        "Modern era": "现代时代",
+        "Space Age": "太空时代",
+        "Industrial era": "工业时代"
+      }
+    },
+    "history:92": {
+      "question": "古老的帕台农神庙位于？",
+      "answers": {
+        "Rome": "罗马",
+        "Athens": "雅典",
+        "Cairo": "开罗",
+        "Istanbul": "伊斯坦布尔"
+      }
+    },
+    "history:93": {
+      "question": "波斯波利斯是哪个古代帝国的首都？",
+      "answers": {
+        "Roman": "罗马",
+        "Persian": "波斯语",
+        "Greek": "希腊语",
+        "Egyptian": "埃及语"
+      }
+    },
+    "history:94": {
+      "question": "探索时代欧洲人在寻找什么？",
+      "answers": {
+        "The Moon": "月亮",
+        "New trade routes and lands": "新贸易路线和土地",
+        "Oil": "石油",
+        "Electricity": "电力"
+      }
+    },
+    "history:95": {
+      "question": "1941 年，日本袭击了美国哪个海军基地？",
+      "answers": {
+        "San Diego": "圣地亚哥",
+        "Pearl Harbor": "珍珠港",
+        "Norfolk": "诺福克",
+        "Guam": "关岛"
+      }
+    },
+    "history:96": {
+      "question": "100 的罗马数字是？",
+      "answers": {
+        "C": "C",
+        "D": "D",
+        "M": "M",
+        "L": "L"
+      }
+    },
+    "history:97": {
+      "question": "罗塞塔石碑帮助破译了哪些古代文字？",
+      "answers": {
+        "Latin": "拉丁语",
+        "Egyptian hieroglyphs": "埃及象形文字",
+        "Runes": "符文",
+        "Sanskrit": "梵语"
+      }
+    },
+    "history:98": {
+      "question": "哪位二战美国将军后来成为美国总统？",
+      "answers": {
+        "Patton": "巴顿",
+        "Eisenhower": "艾森豪威尔",
+        "MacArthur": "麦克阿瑟",
+        "Marshall": "马歇尔"
+      }
+    },
+    "history:99": {
+      "question": "哪位女王统治英国 70 年直至 2022 年？",
+      "answers": {
+        "Victoria": "维多利亚",
+        "Elizabeth II": "伊丽莎白二世",
+        "Anne": "安妮",
+        "Mary": "玛丽"
+      }
+    },
+    "science:0": {
+      "question": "水的化学式是什么？",
+      "answers": {
+        "CO2": "二氧化碳",
+        "H2O": "H2O",
+        "O2": "O2",
+        "NaCl": "氯化钠"
+      }
+    },
+    "science:1": {
+      "question": "太阳系中有多少颗行星？",
+      "answers": {
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      }
+    },
+    "science:2": {
+      "question": "植物从空气中吸收什么气体？",
+      "answers": {
+        "Oxygen": "氧气",
+        "Carbon dioxide": "二氧化碳",
+        "Nitrogen": "氮气",
+        "Hydrogen": "氢"
+      }
+    },
+    "science:3": {
+      "question": "哪颗行星距离太阳最近？",
+      "answers": {
+        "Venus": "金星",
+        "Mercury": "水星",
+        "Earth": "地球",
+        "Mars": "火星"
+      }
+    },
+    "science:4": {
+      "question": "什么被称为细胞的发电站？",
+      "answers": {
+        "Nucleus": "核心",
+        "Mitochondria": "线粒体",
+        "Ribosome": "核糖体",
+        "Membrane": "膜"
+      }
+    },
+    "science:5": {
+      "question": "黄金的化学符号是什么？",
+      "answers": {
+        "Go": "去",
+        "Gd": "Gd",
+        "Au": "金",
+        "Ag": "银"
+      }
+    },
+    "science:6": {
+      "question": "成人体内有多少块骨头？",
+      "answers": {
+        "101": "101",
+        "150": "150",
+        "206": "206",
+        "300": "300"
+      }
+    },
+    "science:7": {
+      "question": "哪颗行星被称为红色星球？",
+      "answers": {
+        "Venus": "金星",
+        "Mars": "火星",
+        "Jupiter": "木星",
+        "Saturn": "土星"
+      }
+    },
+    "science:8": {
+      "question": "谁提出了相对论？",
+      "answers": {
+        "Newton": "牛顿",
+        "Einstein": "爱因斯坦",
+        "Tesla": "特斯拉",
+        "Darwin": "达尔文"
+      }
+    },
+    "science:9": {
+      "question": "什么力将物体拉向地球？",
+      "answers": {
+        "Magnetism": "磁性",
+        "Gravity": "重力",
+        "Friction": "摩擦力",
+        "Inertia": "惯性"
+      }
+    },
+    "science:10": {
+      "question": "哪些血细胞可以抵抗感染？",
+      "answers": {
+        "Red cells": "红细胞",
+        "White cells": "白细胞",
+        "Platelets": "血小板",
+        "Plasma": "等离子"
+      }
+    },
+    "science:11": {
+      "question": "人体最大的器官是什么？",
+      "answers": {
+        "Liver": "肝脏",
+        "Skin": "皮肤",
+        "Heart": "心",
+        "Brain": "大脑"
+      }
+    },
+    "science:12": {
+      "question": "在海平面，水的沸腾温度是多少（°C）？",
+      "answers": {
+        "80": "80",
+        "90": "90",
+        "100": "100",
+        "120": "120"
+      }
+    },
+    "science:13": {
+      "question": "只吃植物的动物叫什么？",
+      "answers": {
+        "Carnivores": "食肉动物",
+        "Herbivores": "食草动物",
+        "Omnivores": "杂食动物",
+        "Predators": "捕食者"
+      }
+    },
+    "science:14": {
+      "question": "太阳系中最大的行星是哪颗？",
+      "answers": {
+        "Saturn": "土星",
+        "Jupiter": "木星",
+        "Neptune": "海王星",
+        "Earth": "地球"
+      }
+    },
+    "science:15": {
+      "question": "植物通过阳光制造食物？",
+      "answers": {
+        "Respiration": "呼吸",
+        "Photosynthesis": "光合作用",
+        "Digestion": "消化",
+        "Fermentation": "发酵"
+      }
+    },
+    "science:16": {
+      "question": "氧的化学符号是什么？",
+      "answers": {
+        "O": "O",
+        "Ox": "牛",
+        "Og": "奥格",
+        "On": "开启"
+      }
+    },
+    "science:17": {
+      "question": "地球上最硬的天然物质是什么？",
+      "answers": {
+        "Gold": "黄金",
+        "Iron": "铁",
+        "Diamond": "钻石",
+        "Quartz": "石英"
+      }
+    },
+    "science:18": {
+      "question": "铁的化学符号是什么？",
+      "answers": {
+        "Ir": "红外线",
+        "Fe": "铁",
+        "In": "在",
+        "Io": "木卫一"
+      }
+    },
+    "science:19": {
+      "question": "钠的化学符号是什么？",
+      "answers": {
+        "So": "所以",
+        "Sd": "Sd",
+        "Na": "钠",
+        "S": "S"
+      }
+    },
+    "science:20": {
+      "question": "昆虫有多少条腿？",
+      "answers": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      }
+    },
+    "science:21": {
+      "question": "蜘蛛有几条腿？",
+      "answers": {
+        "6": "6",
+        "8": "8",
+        "10": "10",
+        "12": "12"
+      }
+    },
+    "science:22": {
+      "question": "原子的中心叫什么？",
+      "answers": {
+        "Electron": "电子",
+        "Nucleus": "核心",
+        "Proton shell": "质子壳",
+        "Orbit": "轨道"
+      }
+    },
+    "science:23": {
+      "question": "人类需要呼吸哪种气体才能生存？",
+      "answers": {
+        "Carbon dioxide": "二氧化碳",
+        "Oxygen": "氧气",
+        "Nitrogen": "氮气",
+        "Helium": "氦气"
+      }
+    },
+    "science:24": {
+      "question": "水的冰点是多少摄氏度？",
+      "answers": {
+        "0": "0",
+        "10": "10",
+        "32": "32",
+        "-10": "-10"
+      }
+    },
+    "science:25": {
+      "question": "地球绕着？",
+      "answers": {
+        "Moon": "月亮",
+        "Sun": "太阳",
+        "Mars": "火星",
+        "Jupiter": "木星"
+      }
+    },
+    "science:26": {
+      "question": "地球绕太阳运行需要多长时间？",
+      "answers": {
+        "1 day": "1 天",
+        "1 month": "1 个月",
+        "1 year": "1 年",
+        "10 years": "10 年"
+      }
+    },
+    "science:27": {
+      "question": "是什么导致了白天和黑夜？",
+      "answers": {
+        "Earth's rotation": "地球自转",
+        "The Moon": "月亮",
+        "Clouds": "云",
+        "The tides": "潮汐"
+      }
+    },
+    "science:28": {
+      "question": "太阳系中最小的行星是什么？",
+      "answers": {
+        "Mars": "火星",
+        "Mercury": "水星",
+        "Venus": "金星",
+        "Earth": "地球"
+      }
+    },
+    "science:29": {
+      "question": "我们生活在哪个星系？",
+      "answers": {
+        "Andromeda": "仙女座",
+        "Milky Way": "银河系",
+        "Whirlpool": "漩涡",
+        "Sombrero": "阔边帽"
+      }
+    },
+    "science:30": {
+      "question": "太阳主要由什么组成？",
+      "answers": {
+        "Rock": "摇滚",
+        "Hydrogen and helium": "氢和氦",
+        "Water": "水",
+        "Iron": "铁"
+      }
+    },
+    "science:31": {
+      "question": "蜜蜂从花中采集什么？",
+      "answers": {
+        "Water": "水",
+        "Nectar": "花蜜",
+        "Sand": "沙子",
+        "Leaves": "叶子"
+      }
+    },
+    "science:32": {
+      "question": "地球大气层的大部分成分是哪种气体？",
+      "answers": {
+        "Oxygen": "氧气",
+        "Nitrogen": "氮气",
+        "Carbon dioxide": "二氧化碳",
+        "Hydrogen": "氢"
+      }
+    },
+    "science:33": {
+      "question": "对生物的研究叫什么？",
+      "answers": {
+        "Physics": "物理",
+        "Biology": "生物学",
+        "Geology": "地质学",
+        "Chemistry": "化学"
+      }
+    },
+    "science:34": {
+      "question": "物质和能量的研究叫什么？",
+      "answers": {
+        "Biology": "生物学",
+        "Physics": "物理",
+        "Botany": "植物学",
+        "Zoology": "动物学"
+      }
+    },
+    "science:35": {
+      "question": "对物质和反应的研究叫什么？",
+      "answers": {
+        "Chemistry": "化学",
+        "Astronomy": "天文学",
+        "Ecology": "生态",
+        "Geology": "地质学"
+      }
+    },
+    "science:36": {
+      "question": "什么器官将血液输送到全身？",
+      "answers": {
+        "Lungs": "肺",
+        "Heart": "心",
+        "Liver": "肝脏",
+        "Kidney": "肾脏"
+      }
+    },
+    "science:37": {
+      "question": "哪个器官用于呼吸？",
+      "answers": {
+        "Heart": "心脏",
+        "Lungs": "肺",
+        "Stomach": "胃",
+        "Liver": "肝脏"
+      }
+    },
+    "science:38": {
+      "question": "人体中最硬的物质是什么？",
+      "answers": {
+        "Bone": "骨头",
+        "Tooth enamel": "牙釉质",
+        "Nails": "指甲",
+        "Cartilage": "软骨"
+      }
+    },
+    "science:39": {
+      "question": "人的心脏有多少个心室？",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "science:40": {
+      "question": "DNA 携带？",
+      "answers": {
+        "Water": "水",
+        "Genetic information": "遗传信息",
+        "Oxygen": "氧气",
+        "Energy": "能源"
+      }
+    },
+    "science:41": {
+      "question": "阳光可以帮助我们的身体产生哪种维生素？",
+      "answers": {
+        "Vitamin A": "维生素 A",
+        "Vitamin C": "维生素 C",
+        "Vitamin D": "维生素 D",
+        "Vitamin K": "维生素 K"
+      }
+    },
+    "science:42": {
+      "question": "水的沸点（华氏度）是多少？",
+      "answers": {
+        "100": "100",
+        "150": "150",
+        "180": "180",
+        "212": "212"
+      }
+    },
+    "science:43": {
+      "question": "声音在其中传播速度最快？",
+      "answers": {
+        "Vacuum": "真空",
+        "Solids": "固体",
+        "Gases": "气体",
+        "Empty space": "空白空间"
+      }
+    },
+    "science:44": {
+      "question": "光速大约是多少？",
+      "answers": {
+        "300,000 km/s": "300,000 公里/秒",
+        "1,000 km/s": "1,000 公里/秒",
+        "3,000 km/s": "3,000 公里/秒",
+        "30 km/s": "30 公里/秒"
+      }
+    },
+    "science:45": {
+      "question": "哪颗行星以其光环而闻名？",
+      "answers": {
+        "Mars": "火星",
+        "Saturn": "土星",
+        "Venus": "金星",
+        "Mercury": "水星"
+      }
+    },
+    "science:46": {
+      "question": "地球唯一的天然卫星是什么？",
+      "answers": {
+        "The Sun": "太阳",
+        "The Moon": "月亮",
+        "Mars": "火星",
+        "Venus": "金星"
+      }
+    },
+    "science:47": {
+      "question": "哪种力使行星绕太阳运行？",
+      "answers": {
+        "Magnetism": "磁性",
+        "Gravity": "重力",
+        "Friction": "摩擦力",
+        "Electricity": "电力"
+      }
+    },
+    "science:48": {
+      "question": "既吃植物又吃肉的动物叫什么？",
+      "answers": {
+        "Herbivores": "草食动物",
+        "Carnivores": "食肉动物",
+        "Omnivores": "杂食动物",
+        "Insectivores": "食虫动物"
+      }
+    },
+    "science:49": {
+      "question": "只吃肉的动物叫什么？",
+      "answers": {
+        "Herbivores": "草食动物",
+        "Carnivores": "食肉动物",
+        "Omnivores": "杂食动物",
+        "Detritivores": "食腐动物"
+      }
+    },
+    "science:50": {
+      "question": "什么过程将液态水变成蒸汽？",
+      "answers": {
+        "Condensation": "凝结",
+        "Evaporation": "蒸发",
+        "Freezing": "冻结",
+        "Melting": "熔化"
+      }
+    },
+    "science:51": {
+      "question": "什么过程将蒸汽变回液体？",
+      "answers": {
+        "Evaporation": "蒸发",
+        "Condensation": "凝结",
+        "Sublimation": "升华",
+        "Boiling": "沸腾"
+      }
+    },
+    "science:52": {
+      "question": "物质的三种常见状态是什么？",
+      "answers": {
+        "Hot, cold, warm": "热、冷、暖",
+        "Solid, liquid, gas": "固体、液体、气体",
+        "Big, small, medium": "大、小、中",
+        "Up, down, side": "上、下、侧"
+      }
+    },
+    "science:53": {
+      "question": "冰是水的 ___ 状态。",
+      "answers": {
+        "Gas": "气体",
+        "Liquid": "液体",
+        "Solid": "实心",
+        "Plasma": "等离子"
+      }
+    },
+    "science:54": {
+      "question": "哪位科学家提出了进化论？",
+      "answers": {
+        "Newton": "牛顿",
+        "Darwin": "达尔文",
+        "Einstein": "爱因斯坦",
+        "Tesla": "特斯拉"
+      }
+    },
+    "science:55": {
+      "question": "谁制定了运动定律和重力定律？",
+      "answers": {
+        "Einstein": "爱因斯坦",
+        "Newton": "牛顿",
+        "Galileo": "伽利略",
+        "Hawking": "霍金"
+      }
+    },
+    "science:56": {
+      "question": "碳的化学符号是什么？",
+      "answers": {
+        "Ca": "钙",
+        "C": "C",
+        "Co": "公司",
+        "Cn": "中国"
+      }
+    },
+    "science:57": {
+      "question": "氦的化学符号是什么？",
+      "answers": {
+        "H": "H",
+        "He": "他",
+        "Hl": "Hl",
+        "Ha": "哈"
+      }
+    },
+    "science:58": {
+      "question": "哪颗行星非常热且有厚厚的酸云？",
+      "answers": {
+        "Mars": "火星",
+        "Venus": "金星",
+        "Neptune": "海王星",
+        "Uranus": "天王星"
+      }
+    },
+    "science:59": {
+      "question": "一个典型的成年人有多少颗牙齿？",
+      "answers": {
+        "24": "24",
+        "28": "28",
+        "32": "32",
+        "36": "36"
+      }
+    },
+    "science:60": {
+      "question": "植物的哪一部分从土壤中吸收水分？",
+      "answers": {
+        "Leaves": "离开",
+        "Roots": "根",
+        "Flowers": "花",
+        "Stem": "茎"
+      }
+    },
+    "science:61": {
+      "question": "植物在光合作用过程中释放什么气体？",
+      "answers": {
+        "Carbon dioxide": "二氧化碳",
+        "Oxygen": "氧气",
+        "Nitrogen": "氮气",
+        "Methane": "甲烷"
+      }
+    },
+    "science:62": {
+      "question": "离地球最近的恒星是什么？",
+      "answers": {
+        "Polaris": "北极星",
+        "The Sun": "太阳",
+        "Sirius": "天狼星",
+        "Alpha Centauri": "半人马座阿尔法星"
+      }
+    },
+    "science:63": {
+      "question": "哪种血型是万能供血者？",
+      "answers": {
+        "A": "A",
+        "B": "B",
+        "O negative": "O 负数",
+        "AB": "AB"
+      }
+    },
+    "science:64": {
+      "question": "哪种仪器测量温度？",
+      "answers": {
+        "Barometer": "晴雨表",
+        "Thermometer": "温度计",
+        "Ruler": "标尺",
+        "Scale": "规模"
+      }
+    },
+    "science:65": {
+      "question": "使用哪种仪器来观察微小细胞？",
+      "answers": {
+        "Telescope": "望远镜",
+        "Microscope": "显微镜",
+        "Periscope": "潜望镜",
+        "Binoculars": "双筒望远镜"
+      }
+    },
+    "science:66": {
+      "question": "使用哪种仪器来观察遥远的星星？",
+      "answers": {
+        "Microscope": "显微镜",
+        "Telescope": "望远镜",
+        "Stethoscope": "听诊器",
+        "Ruler": "标尺"
+      }
+    },
+    "science:67": {
+      "question": "冷冻二氧化碳俗称？",
+      "answers": {
+        "Dry ice": "干冰",
+        "Snow": "雪",
+        "Frost": "霜冻",
+        "Hail": "冰雹"
+      }
+    },
+    "science:68": {
+      "question": "人类呼出的气体主要是哪种？",
+      "answers": {
+        "Oxygen": "氧气",
+        "Carbon dioxide": "二氧化碳",
+        "Nitrogen only": "仅氮气",
+        "Hydrogen": "氢"
+      }
+    },
+    "science:69": {
+      "question": "柑橘类水果中富含哪种维生素？",
+      "answers": {
+        "Vitamin C": "维生素 C",
+        "Vitamin D": "维生素 D",
+        "Vitamin B12": "维生素 B12",
+        "Vitamin K": "维生素 K"
+      }
+    },
+    "science:70": {
+      "question": "地球表面以下的熔岩被称为？",
+      "answers": {
+        "Lava": "熔岩",
+        "Magma": "岩浆",
+        "Ash": "灰烬",
+        "Basalt": "玄武岩"
+      }
+    },
+    "science:71": {
+      "question": "喷发到地表的熔岩叫做？",
+      "answers": {
+        "Magma": "岩浆",
+        "Lava": "熔岩",
+        "Sediment": "沉积物",
+        "Ore": "矿石"
+      }
+    },
+    "science:72": {
+      "question": "地球的核心主要是由什么构成的？",
+      "answers": {
+        "Water": "水",
+        "Iron and nickel": "铁和镍",
+        "Gold": "金",
+        "Ice": "冰"
+      }
+    },
+    "science:73": {
+      "question": "我们生活在地球的哪一层？",
+      "answers": {
+        "Core": "地核",
+        "Mantle": "地幔",
+        "Crust": "地壳",
+        "Atmosphere": "大气层"
+      }
+    },
+    "science:74": {
+      "question": "造成海洋潮汐的主要原因是什么？",
+      "answers": {
+        "Wind only": "仅风",
+        "The Moon's gravity": "月球引力",
+        "Fish": "鱼",
+        "Rivers": "河流"
+      }
+    },
+    "science:75": {
+      "question": "一组星星形成的图案是？",
+      "answers": {
+        "Galaxy": "银河",
+        "Constellation": "星座",
+        "Comet": "彗星",
+        "Nebula": "星云"
+      }
+    },
+    "science:76": {
+      "question": "“流星”实际上是？",
+      "answers": {
+        "Dying star": "垂死的恒星",
+        "Meteor": "流星",
+        "Planet": "行星",
+        "Satellite": "卫星"
+      }
+    },
+    "science:77": {
+      "question": "哪个星球有著名的“大红斑”？",
+      "answers": {
+        "Mars": "火星",
+        "Jupiter": "木星",
+        "Saturn": "土星",
+        "Neptune": "海王星"
+      }
+    },
+    "science:78": {
+      "question": "生命的基本单位是什么？",
+      "answers": {
+        "Atom": "原子",
+        "Cell": "单元格",
+        "Molecule": "分子",
+        "Organ": "风琴"
+      }
+    },
+    "science:79": {
+      "question": "哪个器官控制思想和运动？",
+      "answers": {
+        "Heart": "心",
+        "Brain": "大脑",
+        "Liver": "肝脏",
+        "Lungs": "肺"
+      }
+    },
+    "science:80": {
+      "question": "钾的化学符号是什么？",
+      "answers": {
+        "P": "P",
+        "Po": "宝",
+        "K": "K",
+        "Pt": "铂"
+      }
+    },
+    "science:81": {
+      "question": "以下哪一项是惰性气体？",
+      "answers": {
+        "Oxygen": "氧气",
+        "Helium": "氦气",
+        "Hydrogen": "氢",
+        "Nitrogen": "氮气"
+      }
+    },
+    "science:82": {
+      "question": "从云中落下的水叫什么？",
+      "answers": {
+        "Evaporation": "蒸发",
+        "Precipitation": "降水量",
+        "Condensation": "凝结",
+        "Radiation": "辐射"
+      }
+    },
+    "science:83": {
+      "question": "哪个尺度衡量地震的震级？",
+      "answers": {
+        "Celsius": "摄氏度",
+        "Richter": "里希特",
+        "Decibel": "分贝",
+        "Fahrenheit": "华氏度"
+      }
+    },
+    "science:84": {
+      "question": "哪个单位测量电流？",
+      "answers": {
+        "Volt": "伏特",
+        "Ampere": "安培",
+        "Watt": "瓦特",
+        "Ohm": "欧姆"
+      }
+    },
+    "science:85": {
+      "question": "灯泡功率的测量单位是？",
+      "answers": {
+        "Watts": "瓦",
+        "Meters": "米",
+        "Liters": "升",
+        "Grams": "克"
+      }
+    },
+    "science:86": {
+      "question": "哪颗行星侧转？",
+      "answers": {
+        "Uranus": "天王星",
+        "Mars": "火星",
+        "Venus": "金星",
+        "Earth": "地球"
+      }
+    },
+    "science:87": {
+      "question": "毛毛虫变成蝴蝶叫什么？",
+      "answers": {
+        "Evolution": "进化",
+        "Metamorphosis": "变形",
+        "Photosynthesis": "光合作用",
+        "Digestion": "消化"
+      }
+    },
+    "science:88": {
+      "question": "宇宙中含量最丰富的元素是什么？",
+      "answers": {
+        "Oxygen": "氧气",
+        "Hydrogen": "氢",
+        "Iron": "铁",
+        "Carbon": "碳"
+      }
+    },
+    "science:89": {
+      "question": "哪颗行星的大小最接近地球？",
+      "answers": {
+        "Mars": "火星",
+        "Venus": "金星",
+        "Mercury": "水星",
+        "Jupiter": "木星"
+      }
+    },
+    "science:90": {
+      "question": "人体主要由什么组成？",
+      "answers": {
+        "Bone": "骨头",
+        "Water": "水",
+        "Muscle": "肌肉",
+        "Fat": "脂肪"
+      }
+    },
+    "science:91": {
+      "question": "哪个器官负责过滤血液中的废物？",
+      "answers": {
+        "Heart": "心脏",
+        "Kidneys": "肾脏",
+        "Lungs": "肺",
+        "Brain": "大脑"
+      }
+    },
+    "science:92": {
+      "question": "哪种感觉与眼睛相关？",
+      "answers": {
+        "Hearing": "听证会",
+        "Sight": "视线",
+        "Smell": "气味",
+        "Taste": "味道"
+      }
+    },
+    "science:93": {
+      "question": "银的化学符号是什么？",
+      "answers": {
+        "Si": "硅",
+        "Ag": "银",
+        "Au": "金",
+        "Sr": "高级"
+      }
+    },
+    "science:94": {
+      "question": "哪颗行星距离太阳最远？",
+      "answers": {
+        "Saturn": "土星",
+        "Uranus": "天王星",
+        "Neptune": "海王星",
+        "Jupiter": "木星"
+      }
+    },
+    "science:95": {
+      "question": "除了阳光和水之外，植物还需要什么来制造食物？",
+      "answers": {
+        "Oxygen": "氧气",
+        "Carbon dioxide": "二氧化碳",
+        "Nitrogen gas": "氮气",
+        "Helium": "氦气"
+      }
+    },
+    "science:96": {
+      "question": "我们如何称呼研究恒星和太空的科学家？",
+      "answers": {
+        "Biologist": "生物学家",
+        "Astronomer": "天文学家",
+        "Chemist": "化学家",
+        "Geologist": "地质学家"
+      }
+    },
+    "science:97": {
+      "question": "哪颗行星被称为“晨星”或“昏星”？",
+      "answers": {
+        "Mars": "火星",
+        "Venus": "金星",
+        "Saturn": "土星",
+        "Mercury": "水星"
+      }
+    },
+    "science:98": {
+      "question": "彩虹有多少种颜色？",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "science:99": {
+      "question": "哪颗行星通常被称为“蓝色星球”？",
+      "answers": {
+        "Mars": "火星",
+        "Earth": "地球",
+        "Neptune": "海王星",
+        "Venus": "金星"
+      }
+    },
+    "geography:0": {
+      "question": "日本的首都是哪里？",
+      "answers": {
+        "Seoul": "首尔",
+        "Beijing": "北京",
+        "Tokyo": "东京",
+        "Bangkok": "曼谷"
+      }
+    },
+    "geography:1": {
+      "question": "地球上最大的海洋是什么？",
+      "answers": {
+        "Atlantic": "大西洋",
+        "Indian": "印度",
+        "Arctic": "北极",
+        "Pacific": "太平洋"
+      }
+    },
+    "geography:2": {
+      "question": "哪条河流通常被认为是世界上最长的河流？",
+      "answers": {
+        "Amazon": "亚马逊",
+        "Nile": "尼罗河",
+        "Yangtze": "长江",
+        "Mississippi": "密西西比州"
+      }
+    },
+    "geography:3": {
+      "question": "珠穆朗玛峰属于哪座山脉的一部分？",
+      "answers": {
+        "Andes": "安第斯山脉",
+        "Alps": "阿尔卑斯山",
+        "Himalayas": "喜马拉雅山",
+        "Rockies": "落基山脉"
+      }
+    },
+    "geography:4": {
+      "question": "法国的首都是哪里？",
+      "answers": {
+        "Berlin": "柏林",
+        "Madrid": "马德里",
+        "Paris": "巴黎",
+        "Rome": "罗马"
+      }
+    },
+    "geography:5": {
+      "question": "陆地面积最大的国家是哪个？",
+      "answers": {
+        "Canada": "加拿大",
+        "China": "中国",
+        "USA": "美国",
+        "Russia": "俄罗斯"
+      }
+    },
+    "geography:6": {
+      "question": "撒哈拉沙漠位于哪个洲？",
+      "answers": {
+        "Asia": "亚洲",
+        "Africa": "非洲",
+        "Australia": "澳大利亚",
+        "South America": "南美洲"
+      }
+    },
+    "geography:7": {
+      "question": "澳大利亚的首都是哪里？",
+      "answers": {
+        "Sydney": "悉尼",
+        "Melbourne": "墨尔本",
+        "Canberra": "堪培拉",
+        "Perth": "珀斯"
+      }
+    },
+    "geography:8": {
+      "question": "哪个洲是最小的？",
+      "answers": {
+        "Europe": "欧洲",
+        "Australia": "澳大利亚",
+        "Antarctica": "南极洲",
+        "South America": "南美洲"
+      }
+    },
+    "geography:9": {
+      "question": "大堡礁位于哪个国家/地区的海岸附近？",
+      "answers": {
+        "Brazil": "巴西",
+        "Australia": "澳大利亚",
+        "Mexico": "墨西哥",
+        "India": "印度"
+      }
+    },
+    "geography:10": {
+      "question": "埃菲尔铁塔在哪个国家？",
+      "answers": {
+        "Italy": "意大利",
+        "Spain": "西班牙",
+        "France": "法国",
+        "Belgium": "比利时"
+      }
+    },
+    "geography:11": {
+      "question": "埃及的首都是哪里？",
+      "answers": {
+        "Cairo": "开罗",
+        "Alexandria": "亚历山大",
+        "Giza": "吉萨",
+        "Luxor": "卢克索"
+      }
+    },
+    "geography:12": {
+      "question": "有多少个大陆？",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "geography:13": {
+      "question": "哪条河穿过伦敦？",
+      "answers": {
+        "Seine": "塞纳河",
+        "Thames": "泰晤士河",
+        "Danube": "多瑙河",
+        "Rhine": "莱茵河"
+      }
+    },
+    "geography:14": {
+      "question": "亚马逊雨林主要位于哪个国家？",
+      "answers": {
+        "Peru": "秘鲁",
+        "Colombia": "哥伦比亚",
+        "Brazil": "巴西",
+        "Venezuela": "委内瑞拉"
+      }
+    },
+    "geography:15": {
+      "question": "世界上最大的炎热沙漠是哪一个？",
+      "answers": {
+        "Gobi": "戈壁",
+        "Sahara": "撒哈拉",
+        "Kalahari": "卡拉哈里",
+        "Arabian": "阿拉伯语"
+      }
+    },
+    "geography:16": {
+      "question": "意大利的首都是哪？",
+      "answers": {
+        "Milan": "米兰",
+        "Venice": "威尼斯",
+        "Rome": "罗马",
+        "Naples": "那不勒斯"
+      }
+    },
+    "geography:17": {
+      "question": "亚马逊河位于哪个大陆？",
+      "answers": {
+        "Africa": "非洲",
+        "Asia": "亚洲",
+        "South America": "南美洲",
+        "Europe": "欧洲"
+      }
+    },
+    "geography:18": {
+      "question": "德国的首都是哪里？",
+      "answers": {
+        "Munich": "慕尼黑",
+        "Berlin": "柏林",
+        "Hamburg": "汉堡",
+        "Frankfurt": "法兰克福"
+      }
+    },
+    "geography:19": {
+      "question": "西班牙的首都是哪里？",
+      "answers": {
+        "Barcelona": "巴塞罗那",
+        "Madrid": "马德里",
+        "Seville": "塞维利亚",
+        "Valencia": "巴伦西亚"
+      }
+    },
+    "geography:20": {
+      "question": "俄罗斯的首都是哪里？",
+      "answers": {
+        "St Petersburg": "圣彼得堡",
+        "Moscow": "莫斯科",
+        "Kyiv": "基辅",
+        "Sochi": "索契"
+      }
+    },
+    "geography:21": {
+      "question": "中国的首都是哪？",
+      "answers": {
+        "Shanghai": "上海",
+        "Beijing": "北京",
+        "Hong Kong": "香港",
+        "Guangzhou": "广州"
+      }
+    },
+    "geography:22": {
+      "question": "加拿大的首都是哪？",
+      "answers": {
+        "Toronto": "多伦多",
+        "Ottawa": "渥太华",
+        "Vancouver": "温哥华",
+        "Montreal": "蒙特利尔"
+      }
+    },
+    "geography:23": {
+      "question": "美国的首都是哪？",
+      "answers": {
+        "New York": "纽约",
+        "Washington, D.C.": "华盛顿特区",
+        "Los Angeles": "洛杉矶",
+        "Chicago": "芝加哥"
+      }
+    },
+    "geography:24": {
+      "question": "英国的首都是哪里？",
+      "answers": {
+        "Manchester": "曼彻斯特",
+        "London": "伦敦",
+        "Liverpool": "利物浦",
+        "Edinburgh": "爱丁堡"
+      }
+    },
+    "geography:25": {
+      "question": "巴西的首都是哪里？",
+      "answers": {
+        "Rio de Janeiro": "里约热内卢",
+        "Brasília": "巴西利亚",
+        "São Paulo": "圣保罗",
+        "Salvador": "萨尔瓦多"
+      }
+    },
+    "geography:26": {
+      "question": "印度的首都是哪？",
+      "answers": {
+        "Mumbai": "孟买",
+        "New Delhi": "新德里",
+        "Kolkata": "加尔各答",
+        "Chennai": "钦奈"
+      }
+    },
+    "geography:27": {
+      "question": "韩国的首都是哪里？",
+      "answers": {
+        "Busan": "釜山",
+        "Seoul": "首尔",
+        "Incheon": "仁川",
+        "Daegu": "大邱"
+      }
+    },
+    "geography:28": {
+      "question": "希腊的首都是哪里？",
+      "answers": {
+        "Thessaloniki": "塞萨洛尼基",
+        "Athens": "雅典",
+        "Sparta": "斯巴达",
+        "Patras": "帕特雷"
+      }
+    },
+    "geography:29": {
+      "question": "土耳其的首都是哪里？",
+      "answers": {
+        "Istanbul": "伊斯坦布尔",
+        "Ankara": "安卡拉",
+        "Izmir": "伊兹密尔",
+        "Bursa": "布尔萨"
+      }
+    },
+    "geography:30": {
+      "question": "葡萄牙的首都是哪里？",
+      "answers": {
+        "Porto": "波尔图",
+        "Lisbon": "里斯本",
+        "Faro": "法鲁",
+        "Braga": "布拉加"
+      }
+    },
+    "geography:31": {
+      "question": "荷兰的首都是哪里？",
+      "answers": {
+        "Rotterdam": "鹿特丹",
+        "Amsterdam": "阿姆斯特丹",
+        "The Hague": "海牙",
+        "Utrecht": "乌得勒支"
+      }
+    },
+    "geography:32": {
+      "question": "墨西哥的首都是哪？",
+      "answers": {
+        "Cancún": "坎昆",
+        "Mexico City": "墨西哥城",
+        "Guadalajara": "瓜达拉哈拉",
+        "Tijuana": "蒂华纳"
+      }
+    },
+    "geography:33": {
+      "question": "阿根廷的首都是哪里？",
+      "answers": {
+        "Córdoba": "科尔多瓦",
+        "Buenos Aires": "布宜诺斯艾利斯",
+        "Rosario": "罗萨里奥",
+        "Mendoza": "门多萨"
+      }
+    },
+    "geography:34": {
+      "question": "瑞典的首都是哪？",
+      "answers": {
+        "Oslo": "奥斯陆",
+        "Stockholm": "斯德哥尔摩",
+        "Copenhagen": "哥本哈根",
+        "Helsinki": "赫尔辛基"
+      }
+    },
+    "geography:35": {
+      "question": "挪威的首都是哪里？",
+      "answers": {
+        "Oslo": "奥斯陆",
+        "Bergen": "卑尔根",
+        "Stockholm": "斯德哥尔摩",
+        "Helsinki": "赫尔辛基"
+      }
+    },
+    "geography:36": {
+      "question": "面积最大的大陆是什么？",
+      "answers": {
+        "Africa": "非洲",
+        "Asia": "亚洲",
+        "Europe": "欧洲",
+        "North America": "北美"
+      }
+    },
+    "geography:37": {
+      "question": "哪个洲最冷？",
+      "answers": {
+        "Europe": "欧洲",
+        "Antarctica": "南极洲",
+        "Asia": "亚洲",
+        "Australia": "澳大利亚"
+      }
+    },
+    "geography:38": {
+      "question": "哪个洲的国家最多？",
+      "answers": {
+        "Asia": "亚洲",
+        "Africa": "非洲",
+        "Europe": "欧洲",
+        "South America": "南美洲"
+      }
+    },
+    "geography:39": {
+      "question": "哪个海洋是最小的？",
+      "answers": {
+        "Atlantic": "大西洋",
+        "Arctic": "北极",
+        "Indian": "印度",
+        "Pacific": "太平洋"
+      }
+    },
+    "geography:40": {
+      "question": "第二大海洋是哪一个？",
+      "answers": {
+        "Atlantic": "大西洋",
+        "Indian": "印度",
+        "Arctic": "北极",
+        "Southern": "南部"
+      }
+    },
+    "geography:41": {
+      "question": "哪个国家既位于欧洲又位于亚洲？",
+      "answers": {
+        "Egypt": "埃及",
+        "Turkey": "土耳其",
+        "Greece": "希腊",
+        "Italy": "意大利"
+      }
+    },
+    "geography:42": {
+      "question": "大金字塔靠近哪个城市？",
+      "answers": {
+        "Cairo": "开罗",
+        "Alexandria": "亚历山大",
+        "Luxor": "卢克索",
+        "Aswan": "阿斯旺"
+      }
+    },
+    "geography:43": {
+      "question": "非洲最高的山是哪座？",
+      "answers": {
+        "Kilimanjaro": "乞力马扎罗",
+        "Mount Kenya": "肯尼亚山",
+        "Atlas": "阿特拉斯",
+        "Elgon": "埃尔贡"
+      }
+    },
+    "geography:44": {
+      "question": "安第斯山脉位于哪个洲？",
+      "answers": {
+        "Asia": "亚洲",
+        "Africa": "非洲",
+        "South America": "南美洲",
+        "Europe": "欧洲"
+      }
+    },
+    "geography:45": {
+      "question": "阿尔卑斯山主要位于？",
+      "answers": {
+        "Asia": "亚洲",
+        "Europe": "欧洲",
+        "Africa": "非洲",
+        "Australia": "澳大利亚"
+      }
+    },
+    "geography:46": {
+      "question": "哪个国家的形状像靴子？",
+      "answers": {
+        "Spain": "西班牙",
+        "Italy": "意大利",
+        "Greece": "希腊",
+        "France": "法国"
+      }
+    },
+    "geography:47": {
+      "question": "欧洲和非洲之间是哪片海？",
+      "answers": {
+        "Baltic Sea": "波罗的海",
+        "Mediterranean Sea": "地中海",
+        "Red Sea": "红海",
+        "Black Sea": "黑海"
+      }
+    },
+    "geography:48": {
+      "question": "哪个国家人口最多（截至 2024 年）？",
+      "answers": {
+        "China": "中国",
+        "India": "印度",
+        "USA": "美国",
+        "Indonesia": "印度尼西亚"
+      }
+    },
+    "geography:49": {
+      "question": "富士山位于哪个国家？",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韩国",
+        "Nepal": "尼泊尔"
+      }
+    },
+    "geography:50": {
+      "question": "自由女神像位于哪个城市？",
+      "answers": {
+        "Boston": "波士顿",
+        "New York": "纽约",
+        "Washington": "华盛顿",
+        "Chicago": "芝加哥"
+      }
+    },
+    "geography:51": {
+      "question": "大本钟是哪个城市的地标？",
+      "answers": {
+        "Paris": "巴黎",
+        "London": "伦敦",
+        "Berlin": "柏林",
+        "Dublin": "都柏林"
+      }
+    },
+    "geography:52": {
+      "question": "斜塔位于意大利哪个城市？",
+      "answers": {
+        "Rome": "罗马",
+        "Pisa": "比萨",
+        "Milan": "米兰",
+        "Venice": "威尼斯"
+      }
+    },
+    "geography:53": {
+      "question": "哪个国家是袋鼠的故乡？",
+      "answers": {
+        "South Africa": "南非",
+        "Australia": "澳大利亚",
+        "Brazil": "巴西",
+        "India": "印度"
+      }
+    },
+    "geography:54": {
+      "question": "奇琴伊察金字塔位于哪个国家？",
+      "answers": {
+        "Peru": "秘鲁",
+        "Mexico": "墨西哥",
+        "Egypt": "埃及",
+        "Guatemala": "危地马拉"
+      }
+    },
+    "geography:55": {
+      "question": "尼罗河流入哪片海？",
+      "answers": {
+        "Red Sea": "红海",
+        "Mediterranean Sea": "地中海",
+        "Black Sea": "黑海",
+        "Caspian Sea": "里海"
+      }
+    },
+    "geography:56": {
+      "question": "美国哪个州因好莱坞而闻名？",
+      "answers": {
+        "Texas": "德克萨斯州",
+        "California": "加利福尼亚州",
+        "Florida": "佛罗里达州",
+        "New York": "纽约"
+      }
+    },
+    "geography:57": {
+      "question": "美洲和欧洲/非洲之间是哪个大洋？",
+      "answers": {
+        "Pacific": "太平洋",
+        "Atlantic": "大西洋",
+        "Indian": "印度",
+        "Arctic": "北极"
+      }
+    },
+    "geography:58": {
+      "question": "哪个大洋位于非洲、亚洲和澳大利亚之间？",
+      "answers": {
+        "Atlantic": "大西洋",
+        "Indian": "印度",
+        "Arctic": "北极",
+        "Pacific": "太平洋"
+      }
+    },
+    "geography:59": {
+      "question": "赤道将地球分为哪两半？",
+      "answers": {
+        "East and West": "东方和西方",
+        "North and South": "南北",
+        "Up and Down": "向上和向下",
+        "Left and Right": "左和右"
+      }
+    },
+    "geography:60": {
+      "question": "0° 经度的假想线是？",
+      "answers": {
+        "Equator": "赤道",
+        "Prime Meridian": "本初子午线",
+        "Tropic of Cancer": "北回归线",
+        "Arctic Circle": "北极圈"
+      }
+    },
+    "geography:61": {
+      "question": "世界上最小的国家是哪个？",
+      "answers": {
+        "Monaco": "摩纳哥",
+        "Vatican City": "梵蒂冈城",
+        "Malta": "马耳他",
+        "San Marino": "圣马力诺"
+      }
+    },
+    "geography:62": {
+      "question": "世界上最大的沙漠是哪一个？",
+      "answers": {
+        "Sahara": "撒哈拉",
+        "Antarctic": "南极洲",
+        "Gobi": "戈壁",
+        "Kalahari": "卡拉哈里"
+      }
+    },
+    "geography:63": {
+      "question": "大峡谷位于哪个国家？",
+      "answers": {
+        "Canada": "加拿大",
+        "USA": "美国",
+        "Mexico": "墨西哥",
+        "Brazil": "巴西"
+      }
+    },
+    "geography:64": {
+      "question": "哪个国家以郁金香和风车而闻名？",
+      "answers": {
+        "Belgium": "比利时",
+        "Netherlands": "荷兰",
+        "Denmark": "丹麦",
+        "Germany": "德国"
+      }
+    },
+    "geography:65": {
+      "question": "哪座山脉将欧洲和亚洲分开？",
+      "answers": {
+        "Alps": "阿尔卑斯山",
+        "Ural": "乌拉尔",
+        "Andes": "安第斯山脉",
+        "Himalayas": "喜马拉雅山"
+      }
+    },
+    "geography:66": {
+      "question": "死海因非常著名？",
+      "answers": {
+        "Deep": "深",
+        "Salty": "咸味",
+        "Cold": "冷",
+        "Large": "大"
+      }
+    },
+    "geography:67": {
+      "question": "哪个国家有悉尼和墨尔本这两个城市？",
+      "answers": {
+        "New Zealand": "新西兰",
+        "Australia": "澳大利亚",
+        "UK": "英国",
+        "Canada": "加拿大"
+      }
+    },
+    "geography:68": {
+      "question": "哪个非洲国家基本上从未被殖民？",
+      "answers": {
+        "Kenya": "肯尼亚",
+        "Ethiopia": "埃塞俄比亚",
+        "Nigeria": "尼日利亚",
+        "Ghana": "加纳"
+      }
+    },
+    "geography:69": {
+      "question": "亚马逊是世界上最大的热带地区？",
+      "answers": {
+        "Desert": "沙漠",
+        "Rainforest": "雨林",
+        "Savanna": "稀树草原",
+        "Tundra": "苔原"
+      }
+    },
+    "geography:70": {
+      "question": "哪个国家跨越时区最多？",
+      "answers": {
+        "USA": "美国",
+        "Russia": "俄罗斯",
+        "China": "中国",
+        "Canada": "加拿大"
+      }
+    },
+    "geography:71": {
+      "question": "美国哪个城市被昵称为“大苹果”？",
+      "answers": {
+        "Los Angeles": "洛杉矶",
+        "New York": "纽约",
+        "Chicago": "芝加哥",
+        "Miami": "迈阿密"
+      }
+    },
+    "geography:72": {
+      "question": "乞力马扎罗山位于哪个国家？",
+      "answers": {
+        "Kenya": "肯尼亚",
+        "Tanzania": "坦桑尼亚",
+        "Uganda": "乌干达",
+        "Ethiopia": "埃塞俄比亚"
+      }
+    },
+    "geography:73": {
+      "question": "马丘比丘位于哪个国家？",
+      "answers": {
+        "Chile": "智利",
+        "Peru": "秘鲁",
+        "Bolivia": "玻利维亚",
+        "Ecuador": "厄瓜多尔"
+      }
+    },
+    "geography:74": {
+      "question": "哪个国家完全被南非包围？",
+      "answers": {
+        "Lesotho": "莱索托",
+        "Eswatini": "斯威士兰",
+        "Botswana": "博茨瓦纳",
+        "Namibia": "纳米比亚"
+      }
+    },
+    "geography:75": {
+      "question": "以下哪个国家是内陆国家？",
+      "answers": {
+        "Switzerland": "瑞士",
+        "Spain": "西班牙",
+        "Italy": "意大利",
+        "Portugal": "葡萄牙"
+      }
+    },
+    "geography:76": {
+      "question": "哪个国家的国旗上有枫叶？",
+      "answers": {
+        "USA": "美国",
+        "Canada": "加拿大",
+        "UK": "英国",
+        "Australia": "澳大利亚"
+      }
+    },
+    "geography:77": {
+      "question": "威尼斯这座水上城市位于哪个国家？",
+      "answers": {
+        "Spain": "西班牙",
+        "Italy": "意大利",
+        "Greece": "希腊",
+        "Croatia": "克罗地亚"
+      }
+    },
+    "geography:78": {
+      "question": "最深的海洋是哪一个？",
+      "answers": {
+        "Atlantic": "大西洋",
+        "Pacific": "太平洋",
+        "Indian": "印度",
+        "Arctic": "北极"
+      }
+    },
+    "geography:79": {
+      "question": "密西西比河主要分布在哪个国家？",
+      "answers": {
+        "Canada": "加拿大",
+        "USA": "美国",
+        "Mexico": "墨西哥",
+        "Brazil": "巴西"
+      }
+    },
+    "geography:80": {
+      "question": "巴拿马运河连接哪两个大洋？",
+      "answers": {
+        "Atlantic and Pacific": "大西洋和太平洋",
+        "Indian and Pacific": "印度和太平洋地区",
+        "Arctic and Atlantic": "北极和大西洋",
+        "Indian and Atlantic": "印度和大西洋"
+      }
+    },
+    "geography:81": {
+      "question": "苏伊士运河位于哪个国家？",
+      "answers": {
+        "Turkey": "土耳其",
+        "Egypt": "埃及",
+        "Panama": "巴拿马",
+        "Greece": "希腊"
+      }
+    },
+    "geography:82": {
+      "question": "哪个国家被称为“旭日之国”？",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韩国",
+        "Thailand": "泰国"
+      }
+    },
+    "geography:83": {
+      "question": "哪个大陆没有永久人类居民？",
+      "answers": {
+        "Australia": "澳大利亚",
+        "Antarctica": "南极洲",
+        "Africa": "非洲",
+        "Asia": "亚洲"
+      }
+    },
+    "geography:84": {
+      "question": "落基山脉位于？",
+      "answers": {
+        "Europe": "欧洲",
+        "North America": "北美",
+        "Asia": "亚洲",
+        "Africa": "非洲"
+      }
+    },
+    "geography:85": {
+      "question": "马拉喀什市位于哪个国家？",
+      "answers": {
+        "Egypt": "埃及",
+        "Morocco": "摩洛哥",
+        "Algeria": "阿尔及利亚",
+        "Tunisia": "突尼斯"
+      }
+    },
+    "geography:86": {
+      "question": "哪个斯堪的纳维亚国家以其峡湾而闻名？",
+      "answers": {
+        "Norway": "挪威",
+        "Spain": "西班牙",
+        "Italy": "意大利",
+        "Greece": "希腊"
+      }
+    },
+    "geography:87": {
+      "question": "日本的首都是哪里？",
+      "answers": {
+        "Osaka": "大阪",
+        "Tokyo": "东京",
+        "Kyoto": "京都",
+        "Nagoya": "名古屋"
+      }
+    },
+    "geography:88": {
+      "question": "埃及首都位于哪里？",
+      "answers": {
+        "Tigris River": "底格里斯河",
+        "Nile River": "尼罗河",
+        "Congo River": "刚果河",
+        "Niger River": "尼日尔河"
+      }
+    },
+    "geography:89": {
+      "question": "哪个国家因泰姬陵而闻名？",
+      "answers": {
+        "Pakistan": "巴基斯坦",
+        "India": "印度",
+        "Bangladesh": "孟加拉国",
+        "Nepal": "尼泊尔"
+      }
+    },
+    "geography:90": {
+      "question": "美国哪个州被称为“阳光之州”？",
+      "answers": {
+        "California": "加利福尼亚州",
+        "Florida": "佛罗里达州",
+        "Texas": "德克萨斯州",
+        "Nevada": "内华达州"
+      }
+    },
+    "geography:91": {
+      "question": "撒哈拉沙漠面积最大的国家是哪个国家？",
+      "answers": {
+        "Egypt": "埃及",
+        "Algeria": "阿尔及利亚",
+        "Morocco": "摩洛哥",
+        "Tunisia": "突尼斯"
+      }
+    },
+    "geography:92": {
+      "question": "水面上最长的山脉是哪一条？",
+      "answers": {
+        "Himalayas": "喜马拉雅山",
+        "Andes": "安第斯山脉",
+        "Rockies": "落基山脉",
+        "Alps": "阿尔卑斯山"
+      }
+    },
+    "geography:93": {
+      "question": "冰岛位于哪个洋区？",
+      "answers": {
+        "Pacific": "太平洋",
+        "North Atlantic": "北大西洋",
+        "Indian": "印度",
+        "Southern": "南部"
+      }
+    },
+    "geography:94": {
+      "question": "哪个大陆完全位于南半球？",
+      "answers": {
+        "Europe": "欧洲",
+        "Antarctica": "南极洲",
+        "Asia": "亚洲",
+        "North America": "北美"
+      }
+    },
+    "geography:95": {
+      "question": "泰晤士河流经哪个城市？",
+      "answers": {
+        "Paris": "巴黎",
+        "London": "伦敦",
+        "Berlin": "柏林",
+        "Rome": "罗马"
+      }
+    },
+    "geography:96": {
+      "question": "哪个国家的国旗是白底红圈（旭日）？",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "South Korea": "韩国",
+        "Vietnam": "越南"
+      }
+    },
+    "geography:97": {
+      "question": "亚马逊河注入哪个海洋？",
+      "answers": {
+        "Pacific": "太平洋",
+        "Atlantic": "大西洋",
+        "Indian": "印度",
+        "Arctic": "北极"
+      }
+    },
+    "geography:98": {
+      "question": "哪个大陆完全位于北半球？",
+      "answers": {
+        "Europe": "欧洲",
+        "Africa": "非洲",
+        "South America": "南美洲",
+        "Australia": "澳大利亚"
+      }
+    },
+    "geography:99": {
+      "question": "最高的瀑布安赫尔瀑布位于？",
+      "answers": {
+        "Brazil": "巴西",
+        "Venezuela": "委内瑞拉",
+        "Peru": "秘鲁",
+        "Colombia": "哥伦比亚"
+      }
+    }
+  }
+}

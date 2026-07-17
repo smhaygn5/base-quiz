@@ -1,0 +1,5586 @@
+{
+  "messages": {
+    "meta.title": "Base Quiz",
+    "common.back": "戻る",
+    "common.cancel": "キャンセル",
+    "common.next": "次へ",
+    "common.skip": "スキップ",
+    "common.tryAgain": "もう一度試してください",
+    "common.connect": "接続する",
+    "common.disconnect": "切断する",
+    "common.connectWallet": "ウォレットを接続する",
+    "common.connectBaseWallet": "Base Walletを接続",
+    "common.browserWallets": "ブラウザウォレット",
+    "common.recommended": "おすすめ",
+    "common.selectLanguage": "言語を選択してください",
+    "common.language": "言語",
+    "common.switchLight": "ライトテーマに切り替える",
+    "common.switchDark": "ダークテーマに切り替える",
+    "common.mute": "ミュート",
+    "common.unmute": "ミュートを解除する",
+    "home.kicker": "オンチェーンクイズ · Base",
+    "home.titleLine1": "毎日のクイズ。",
+    "home.titleLine2": "Base上に構築。",
+    "home.description": "カテゴリーを選び、5問のクイズに制限時間内で挑戦しましょう。連続記録を伸ばし、スコアをオンチェーンに保存して、世界ランキングを上りましょう。",
+    "home.streak": "{count}日連続",
+    "home.confirmWallet": "ウォレットで確認してください…",
+    "home.startRound": "ラウンドを開始する",
+    "home.leaderboard": "リーダーボード",
+    "home.streakBadges": "ストリークバッジ",
+    "home.facts": "5問 · 各15秒 · スコアはオンチェーンに保存",
+    "category.pick": "カテゴリを選択してください",
+    "category.meta": "{count}問 · 1ラウンド5問",
+    "category.start": "{category} クイズを開始する",
+    "category.previous": "前のカテゴリ",
+    "category.next": "次のカテゴリー",
+    "category.imageAlt": "{category} クイズ カテゴリ",
+    "category.crypto.name": "暗号",
+    "category.crypto.description": "Base、Ethereum、ウォレット、DeFi、および onchain の世界を形成する文化に関する知識をテストします。",
+    "category.sports.name": "スポーツ",
+    "category.sports.description": "サッカー、バスケットボールからテニス、オリンピックまで、あなたのスポーツ記憶力がどれほど強いかを見てみましょう。",
+    "category.art.name": "アート",
+    "category.art.description": "絵画、アーティスト、運動、そして世代を超えて視覚文化を変えたアイデアを探ってみましょう。",
+    "category.history.name": "歴史",
+    "category.history.description": "文明、転換点、そしてその決断が世界を形作った人々を旅しましょう。",
+    "category.science.name": "科学",
+    "category.science.description": "物理学、生物学、化学、そして物事の仕組みを説明する発見に挑戦してください。",
+    "category.geography.name": "地理",
+    "category.geography.description": "地球上のあらゆる場所から国、首都、海、ランドマークをナビゲートします。",
+    "quiz.fallbackName": "クイズ",
+    "quiz.questionProgress": "問題 {current}/{total}",
+    "quiz.score": "スコア",
+    "quiz.time": "時間",
+    "quiz.answeredAria": "{total} 件中 {answered} 件に回答",
+    "quiz.chooseCorrect": "正しい答えを選択してください",
+    "quiz.correct": "正解",
+    "quiz.wrong": "不正解",
+    "quiz.points": "+{points}ポイント",
+    "quiz.correctOption": "正しいオプション: {option}",
+    "quiz.autoNote": "一度回答すると、次の質問が自動的に読み込まれます",
+    "result.roundComplete": "ラウンド完了",
+    "result.finalScore": "あなたの最終スコア",
+    "result.points": "ポイント",
+    "result.summaryAria": "ラウンド概要",
+    "result.categoryPill": "{category} カテゴリ",
+    "result.streakPill": "{count}日連続",
+    "result.roundCompletedTitle": "ラウンド完了",
+    "result.roundCompletedDetail": "5 つの質問に回答しました。最終結果の準備が完了しました。",
+    "result.streakUpdatedTitle": "連続記録が更新されました",
+    "result.streakUpdatedDetail": "現在、{count} 日連続学習中です。",
+    "result.save.idle.title": "スコアを保存する",
+    "result.save.idle.detail": "この結果を Base に記録し、グローバル リーダーボードに参加してください。",
+    "result.save.pending.title": "スコアを確認する",
+    "result.save.pending.detail": "ウォレット内のトランザクションを承認して保存を完了します。",
+    "result.save.done.title": "スコアが保存されました onchain",
+    "result.save.done.detail": "結果は Base で検証され、リーダーボードに掲載される準備が整いました。",
+    "result.save.error.title": "保存には注意が必要です",
+    "result.save.error.detail": "以下のメッセージを確認して、トランザクションを再試行してください。",
+    "result.save.disconnected.title": "接続して保存",
+    "result.save.disconnected.detail": "Base でスコアを記録するウォレットを選択してください。",
+    "result.shareTitle": "結果を共有する",
+    "result.shareDetail": "Farcaster または X で友達に挑戦してください。",
+    "result.replayKicker": "勢いを維持し続ける",
+    "result.replayTitle": "次のラウンドの準備はできていますか?",
+    "result.replayDetail": "{category} をもう一度プレイするか、別のチャレンジを選択してください。",
+    "result.playAgain": "もう一度プレイしてください",
+    "result.chooseCategory": "カテゴリを選択してください",
+    "result.saveButton": "スコアを保存",
+    "result.confirming": "確認中…",
+    "result.saved": "保存済み",
+    "result.viewTransaction": "トランザクションの表示",
+    "result.shareScore": "スコアを共有する",
+    "result.copyText": "テキストをコピーする",
+    "result.copied": "クリップボードにコピーされました!",
+    "leaderboard.kicker": "Base Mainnet · 歴代ランキング",
+    "leaderboard.title": "リーダーボード",
+    "leaderboard.description": "トッププレイヤーはonchainの合計スコアによってランク付けされます。",
+    "leaderboard.loading": "Base からスコアを読み取り中…",
+    "leaderboard.empty": "まだスコアはありません。ボード上の最初のプレイヤーになりましょう。",
+    "leaderboard.player": "プレーヤー",
+    "leaderboard.totalScore": "合計スコア",
+    "leaderboard.bestScore": "ベストスコア",
+    "leaderboard.streak": "ストリーク",
+    "leaderboard.badges": "バッジ",
+    "leaderboard.you": "あなた",
+    "leaderboard.noBadges": "バッジはありません",
+    "leaderboard.badgeTitle": "{name} バッジ",
+    "leaderboard.players": "{count}人のプレイヤー",
+    "leaderboard.verified": "スコアとバッジが確認されました onchain",
+    "badges.kicker": "連続記録NFT · Base Mainnet",
+    "badges.title": "バッジ",
+    "badges.roadmapTitle": "ストリークバッジのロードマップ",
+    "badges.roadmapDescription": "プレイを続けて連続記録を伸ばし、onchain の各マイルストーンを獲得しましょう。",
+    "badges.streak": "{count}日連続",
+    "badges.walletRequired": "ウォレットが必要です",
+    "badges.connectTitle": "接続してバッジを表示し、受け取ります",
+    "badges.connectDetail": "ストリークと NFT の所有権は、Base から直接読み取られます。",
+    "badges.days": "{count} 日",
+    "badges.bronze.name": "ブロンズ",
+    "badges.bronze.description": "最初の 3 日間のランニングを完了する",
+    "badges.silver.name": "シルバー",
+    "badges.silver.description": "連続記録を 1 週間維持する",
+    "badges.gold.name": "ゴールド",
+    "badges.gold.description": "一貫した 30 日間の連続記録を達成する",
+    "badges.diamond.name": "ダイヤモンド",
+    "badges.diamond.description": "究極の 100 日マイルストーンに到達する",
+    "badges.unlock": "{count} 日連続でロック解除",
+    "badges.owned": "所有",
+    "badges.claim": "バッジを請求する",
+    "badges.claiming": "主張中…",
+    "badges.daysLeft": "{count}残り日",
+    "badges.locked": "ロックされています",
+    "badges.loading": "Base からバッジを読み取り中…",
+    "wallet.connectTitle": "ウォレットを接続する",
+    "wallet.browserWallets": "ブラウザウォレット",
+    "wallet.recommended": "おすすめ",
+    "tutorial.welcomeTitle": "ようこそ。",
+    "tutorial.welcomeDetail": "Base の毎日のトリビア ゲーム。自分の知識をテストし、連続記録を築き、世界中で競争しましょう。",
+    "tutorial.questionsTitle": "5つの質問。毎日。",
+    "tutorial.questionsDetail": "早く答えてください — 早く答えれば、より多くのポイントが得られます。スコア onchain を保存すると、グローバル リーダーボードに表示されます。",
+    "tutorial.badgesTitle": "NFT バッジを獲得します。",
+    "tutorial.badgesDetail": "連続記録を維持して onchain NFTs を獲得しましょう: ブロンズ (3 日間)、シルバー (7 日間)、ゴールド (30 日間)、ダイヤモンド (100 日間)。",
+    "tutorial.letsPlay": "遊ぼう",
+    "footer.blockData": "ブロックデータ · BASE MAINNET",
+    "footer.playersOnchain": "オンチェーンプレイヤー {count}人",
+    "share.text": "🧠 Base Quiz で {score} ポイントを獲得しました! 🔥 連続記録: {streak} 日\n\n私に勝てると思いますか？ 👇",
+    "error.startFailed": "ラウンドを開始できませんでした。もう一度試してください。",
+    "error.startCancelled": "取引がキャンセルされました。確認してラウンドを開始します。",
+    "error.saveFailed": "スコアを保存できませんでした。もう一度試してください。",
+    "error.alreadyPlayed": "今日はすでに保存されています。明日また来てね。",
+    "error.claimFailed": "バッジは受け取れませんでした。もう一度試してください。",
+    "activation.kicker": "Base Quizのセットアップ",
+    "activation.title": "ラウンドコントラクトを有効化",
+    "activation.copy": "この 1 回限りの Base トランザクションは、Start Round で使用される小規模なコントラクトをデプロイします。スコア、ストリーク、バッジは変更されず、ETH も転送されません。",
+    "activation.checking": "契約書を確認中…",
+    "activation.active": "ラウンドコントラクトは有効です",
+    "activation.connected": "接続済み: {address}",
+    "activation.confirming": "Base で確認中…",
+    "activation.activate": "ラウンドコントラクトを有効化",
+    "activation.pendingTransaction": "保留中のトランザクションを表示する",
+    "activation.back": "Base Quizに戻る",
+    "activation.errorCheck": "Baseコントラクトを確認できませんでした。もう一度お試しください。",
+    "activation.errorWallet": "互換性のあるウォレットが見つかりませんでした。",
+    "activation.errorCancelled": "取引がキャンセルされました。変更は行われませんでした。",
+    "activation.errorFailed": "アクティベーションに失敗しました。もう一度試してください。"
+  },
+  "quiz": {
+    "crypto:0": {
+      "question": "Base を開発した会社はどこですか?",
+      "answers": {
+        "Binance": "バイナンス",
+        "Coinbase": "Coinbase",
+        "Kraken": "クラーケン",
+        "OKX": "OKX"
+      }
+    },
+    "crypto:1": {
+      "question": "Base はどのネットワークのレイヤ 2 ですか?",
+      "answers": {
+        "Bitcoin": "ビットコイン",
+        "Solana": "ソラナ",
+        "Ethereum": "Ethereum",
+        "Avalanche": "雪崩"
+      }
+    },
+    "crypto:2": {
+      "question": "Base はどの技術スタックを使用しますか?",
+      "answers": {
+        "OP Stack": "OP スタック",
+        "zkSync": "zkSync",
+        "Polygon CDK": "ポリゴン CDK",
+        "Arbitrum Nitro": "アービトラム ニトロ"
+      }
+    },
+    "crypto:3": {
+      "question": "Base メインネットが開始されたのは何年ですか?",
+      "answers": {
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023",
+        "2024": "2024"
+      }
+    },
+    "crypto:4": {
+      "question": "Base のガス料金にはどのトークンが使用されますか?",
+      "answers": {
+        "USDC": "USDC",
+        "BASE": "ベース",
+        "ETH": "ETH",
+        "OP": "OP"
+      }
+    },
+    "crypto:5": {
+      "question": "Base App は以前は何と呼ばれていましたか?",
+      "answers": {
+        "Coinbase Wallet": "Coinbase Wallet",
+        "MetaMask": "MetaMask",
+        "Rainbow": "レインボー",
+        "Phantom": "ファントム"
+      }
+    },
+    "crypto:6": {
+      "question": "Coinbase の CEO は誰ですか?",
+      "answers": {
+        "Vitalik Buterin": "ヴィタリック・ブテリン",
+        "Brian Armstrong": "ブライアン・アームストロング",
+        "Changpeng Zhao": "趙昌鵬",
+        "Jesse Pollak": "ジェシー・ポラック"
+      }
+    },
+    "crypto:7": {
+      "question": "Coinbase で Base をリードするのは誰ですか?",
+      "answers": {
+        "Brian Armstrong": "ブライアン・アームストロング",
+        "Jesse Pollak": "ジェシー・ポラック",
+        "Hayden Adams": "ヘイデン・アダムス",
+        "Stani Kulechov": "スタニ・クレチョフ"
+      }
+    },
+    "crypto:8": {
+      "question": "Base はどのスーパーチェーンに属していますか?",
+      "answers": {
+        "Polygon Superchain": "ポリゴン スーパーチェーン",
+        "Optimism Superchain": "オプティミズム スーパーチェーン",
+        "Arbitrum Orbit": "アービトラム軌道",
+        "zkSync Hyperchain": "zkSync ハイパーチェーン"
+      }
+    },
+    "crypto:9": {
+      "question": "Base は次のように説明するのが最適ですか?",
+      "answers": {
+        "A standalone L1": "スタンドアロン L1",
+        "An Ethereum L2 rollup": "Ethereum L2 ロールアップ",
+        "A sidechain": "サイドチェーン",
+        "A bridge protocol": "ブリッジプロトコル"
+      }
+    },
+    "crypto:10": {
+      "question": "Ethereum の創設者は誰ですか?",
+      "answers": {
+        "Satoshi Nakamoto": "サトシ・ナカモト",
+        "Vitalik Buterin": "ヴィタリック・ブテリン",
+        "Brian Armstrong": "ブライアン・アームストロング",
+        "CZ": "CZ"
+      }
+    },
+    "crypto:11": {
+      "question": "Base のスマート コントラクトは書き込まれていますか?",
+      "answers": {
+        "Python": "Python",
+        "Rust": "錆び",
+        "Solidity": "堅牢性",
+        "Go": "行く"
+      }
+    },
+    "crypto:12": {
+      "question": "ETH の最小単位は何ですか?",
+      "answers": {
+        "Satoshi": "サトシ",
+        "Gwei": "グウェイ",
+        "Wei": "ウェイ",
+        "Finney": "フィニー"
+      }
+    },
+    "crypto:13": {
+      "question": "Layer-2ソリューションの主な目的は何ですか？",
+      "answers": {
+        "Minting more tokens": "より多くのトークンを発行する",
+        "Scalability & lower fees": "拡張性の向上と手数料の削減",
+        "Mining": "マイニング",
+        "Staking": "ステーキング"
+      }
+    },
+    "crypto:14": {
+      "question": "Ethereum はどのようなコンセンサスを使用しますか?",
+      "answers": {
+        "Proof of Work": "作業証明",
+        "Proof of Stake": "ステークの証拠",
+        "Proof of Authority": "権限の証明",
+        "Proof of History": "歴史の証明"
+      }
+    },
+    "crypto:15": {
+      "question": "EVM とは何ですか?",
+      "answers": {
+        "A wallet type": "ウォレットのタイプ",
+        "Ethereum's execution engine": "Ethereum の実行エンジン",
+        "A token standard": "トークン標準",
+        "A bridge": "橋"
+      }
+    },
+    "crypto:16": {
+      "question": "Ethereum のうち L2 ではないものはどれですか?",
+      "answers": {
+        "Base": "Base",
+        "Arbitrum": "裁定",
+        "Solana": "ソラナ",
+        "Optimism": "楽観主義"
+      }
+    },
+    "crypto:17": {
+      "question": "「ガス」とは何を指しますか?",
+      "answers": {
+        "A token": "トークン",
+        "Transaction fee unit": "取引手数料単位",
+        "A wallet": "ウォレット",
+        "An NFT type": "NFT 型"
+      }
+    },
+    "crypto:18": {
+      "question": "Ethereum から PoS (マージ) に切り替えたのはいつですか?",
+      "answers": {
+        "2020": "2020",
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023"
+      }
+    },
+    "crypto:19": {
+      "question": "ERC-20 とは何ですか?",
+      "answers": {
+        "NFT standard": "NFT 標準",
+        "Fungible token standard": "代替可能なトークン標準",
+        "Wallet format": "ウォレットの形式",
+        "L2 standard": "L2 標準"
+      }
+    },
+    "crypto:20": {
+      "question": "ビットコインの最大供給量はいくらですか?",
+      "answers": {
+        "21 million": "2,100 万",
+        "100 million": "1億",
+        "1 billion": "10億",
+        "Unlimited": "無制限"
+      }
+    },
+    "crypto:21": {
+      "question": "ビットコインを作成したのは誰ですか?",
+      "answers": {
+        "Vitalik Buterin": "ヴィタリック・ブテリン",
+        "Satoshi Nakamoto": "サトシ・ナカモト",
+        "Hal Finney": "ハル・フィニー",
+        "Nick Szabo": "ニック・サボ"
+      }
+    },
+    "crypto:22": {
+      "question": "ビットコインの最小単位は何と呼ばれますか?",
+      "answers": {
+        "Wei": "ウェイ",
+        "Gwei": "グウェイ",
+        "Satoshi": "サトシ",
+        "Finney": "フィニー"
+      }
+    },
+    "crypto:23": {
+      "question": "ビットコインの半減期は (おおよそ) どのくらいの頻度で起こりますか?",
+      "answers": {
+        "Every year": "毎年",
+        "Every 2 years": "2年ごと",
+        "Every 4 years": "4年ごと",
+        "Every 10 years": "10 年ごと"
+      }
+    },
+    "crypto:24": {
+      "question": "ビットコインはどのコンセンサスを使用しますか?",
+      "answers": {
+        "Proof of Stake": "ステークの証拠",
+        "Proof of Work": "作業証明",
+        "Proof of Authority": "権限の証明",
+        "DPoS": "DPoS"
+      }
+    },
+    "crypto:25": {
+      "question": "DeFi とは何の略ですか?",
+      "answers": {
+        "Defined Finance": "財務の定義",
+        "Decentralized Finance": "分散型金融",
+        "Defaulted Finance": "デフォルトの財務",
+        "Deferred Finance": "繰延融資"
+      }
+    },
+    "crypto:26": {
+      "question": "Uniswap は主に?",
+      "answers": {
+        "Lending platform": "融資プラットフォーム",
+        "DEX (decentralized exchange)": "DEX (分散型取引所)",
+        "Wallet": "ウォレット",
+        "Bridge": "ブリッジ"
+      }
+    },
+    "crypto:27": {
+      "question": "AMM とは何ですか?",
+      "answers": {
+        "Auto Market Mover": "自動車市場の動かし手",
+        "Automated Market Maker": "自動マーケットメーカー",
+        "Asset Management Module": "資産管理モジュール",
+        "Aggregated Mint Maker": "集約ミントメーカー"
+      }
+    },
+    "crypto:28": {
+      "question": "TVL とはどういう意味ですか?",
+      "answers": {
+        "Token Value Locked": "トークン値がロックされました",
+        "Total Value Locked": "合計値がロックされました",
+        "Trade Volume Limit": "取引量制限",
+        "Tier Volume Level": "階層ボリューム レベル"
+      }
+    },
+    "crypto:29": {
+      "question": "Aave は主に?",
+      "answers": {
+        "DEX": "DEX",
+        "Lending protocol": "貸出プロトコル",
+        "Stablecoin": "ステーブルコイン",
+        "NFT marketplace": "NFT マーケットプレイス"
+      }
+    },
+    "crypto:30": {
+      "question": "収量農業とは何ですか?",
+      "answers": {
+        "Mining crops": "作物の採掘",
+        "Earning rewards from DeFi protocols": "DeFi プロトコルから報酬を獲得する",
+        "A staking pool name": "ステーキングプール名",
+        "An NFT minting term": "NFT 鋳造用語"
+      }
+    },
+    "crypto:31": {
+      "question": "USDC を発行している会社はどこですか?",
+      "answers": {
+        "Tether": "テザー",
+        "Circle": "サークル",
+        "Coinbase": "Coinbase",
+        "Paxos": "パクソス"
+      }
+    },
+    "crypto:32": {
+      "question": "USDT を発行している会社はどこですか?",
+      "answers": {
+        "Circle": "サークル",
+        "Tether": "テザー",
+        "Coinbase": "Coinbase",
+        "MakerDAO": "メーカーダオ"
+      }
+    },
+    "crypto:33": {
+      "question": "DAI の主な支援先は?",
+      "answers": {
+        "US Dollars in a bank": "銀行にある米ドル",
+        "Crypto collateral": "暗号担保",
+        "Gold reserves": "金埋蔵量",
+        "Government bonds": "国債"
+      }
+    },
+    "crypto:34": {
+      "question": "ステーブルコインは価格同等性を維持しようとしますか?",
+      "answers": {
+        "Bitcoin": "ビットコイン",
+        "Ethereum": "Ethereum",
+        "Fiat currencies": "法定通貨",
+        "Gold only": "ゴールドのみ"
+      }
+    },
+    "crypto:35": {
+      "question": "NFT は何の略ですか?",
+      "answers": {
+        "New Finance Token": "新しい金融トークン",
+        "Non-Fungible Token": "代替不可能なトークン",
+        "Network File Transfer": "ネットワーク ファイル転送",
+        "Node Function Type": "ノード関数のタイプ"
+      }
+    },
+    "crypto:36": {
+      "question": "Ethereum の NFT トークン標準はどれですか?",
+      "answers": {
+        "ERC-20": "ERC-20",
+        "ERC-721": "ERC-721",
+        "ERC-1155 only": "ERC-1155 のみ",
+        "BEP-20": "BEP-20"
+      }
+    },
+    "crypto:37": {
+      "question": "OpenSeaは主に何のサービスですか？",
+      "answers": {
+        "DEX": "DEX",
+        "NFT marketplace": "NFTマーケットプレイス",
+        "Wallet": "ウォレット",
+        "L2 chain": "L2チェーン"
+      }
+    },
+    "crypto:38": {
+      "question": "NFTs の「ミント」は何を意味しますか?",
+      "answers": {
+        "Sell an NFT": "NFT を販売する",
+        "Create a new NFT onchain": "新しい NFT オンチェーンを作成します",
+        "Burn an NFT": "NFT を書き込む",
+        "Transfer an NFT": "NFT を転送する"
+      }
+    },
+    "crypto:39": {
+      "question": "ウォレットの秘密の単語は何と呼ばれますか?",
+      "answers": {
+        "Public key": "公開鍵",
+        "Seed phrase": "シードフレーズ",
+        "Hash": "ハッシュ",
+        "Nonce": "ノンス"
+      }
+    },
+    "crypto:40": {
+      "question": "ハードウェアウォレットとは何ですか?",
+      "answers": {
+        "A mobile app": "モバイル アプリ",
+        "A physical device for storing keys": "キーを保存するための物理デバイス",
+        "A browser extension": "ブラウザ拡張機能",
+        "An exchange account": "Exchange アカウント"
+      }
+    },
+    "crypto:41": {
+      "question": "決して共有しないでください?",
+      "answers": {
+        "Wallet address": "ウォレットアドレス",
+        "Seed phrase": "シードフレーズ",
+        "ENS name": "ENS 名",
+        "Username": "ユーザー名"
+      }
+    },
+    "crypto:42": {
+      "question": "自己監護とは？",
+      "answers": {
+        "Exchange holds your keys": "Exchange が鍵を保持します",
+        "You control your private keys": "秘密鍵はあなたが管理します",
+        "A bank holds your keys": "銀行があなたの鍵を保管します",
+        "A friend holds your keys": "友人があなたの鍵を握っています"
+      }
+    },
+    "crypto:43": {
+      "question": "MetaMask は主に?",
+      "answers": {
+        "Exchange": "交換",
+        "Browser wallet": "ブラウザウォレット",
+        "Hardware wallet": "ハードウェア ウォレット",
+        "L2 chain": "L2 チェーン"
+      }
+    },
+    "crypto:44": {
+      "question": "Farcaster とは何ですか?",
+      "answers": {
+        "An exchange": "交換",
+        "A decentralized social network": "分散型ソーシャル ネットワーク",
+        "A wallet": "ウォレット",
+        "A game": "ゲーム"
+      }
+    },
+    "crypto:45": {
+      "question": "Farcaster の投稿は呼び出されますか?",
+      "answers": {
+        "Tweets": "ツイート",
+        "Casts": "キャスト",
+        "Toots": "トゥート",
+        "Snaps": "スナップ"
+      }
+    },
+    "crypto:46": {
+      "question": "Farcaster を設立したのは誰ですか?",
+      "answers": {
+        "Vitalik Buterin": "ヴィタリック・ブテリン",
+        "Dan Romero & Varun Srinivasan": "ダン・ロメロ & ヴァルン・スリニバサン",
+        "Jesse Pollak": "ジェシー・ポラック",
+        "Jack Dorsey": "ジャック・ドーシー"
+      }
+    },
+    "crypto:47": {
+      "question": "Farcaster ユーザー識別子が呼び出されますか?",
+      "answers": {
+        "UID": "UID",
+        "FID": "FID",
+        "Handle": "ハンドル",
+        "Tag": "タグ"
+      }
+    },
+    "crypto:48": {
+      "question": "Base App のミニアプリは何で構築されていますか?",
+      "answers": {
+        "MiniKit / OnchainKit": "MiniKit / OnchainKit",
+        "Flutter only": "フラッターのみ",
+        "Native iOS only": "ネイティブ iOS のみ",
+        "Unity": "ユニティ"
+      }
+    },
+    "crypto:49": {
+      "question": "ブロックチェーン トランザクション ハッシュとも呼ばれますか?",
+      "answers": {
+        "Nonce": "ノンス",
+        "TX ID": "送信 ID",
+        "Block height": "ブロックの高さ",
+        "Gas limit": "ガス制限"
+      }
+    },
+    "crypto:50": {
+      "question": "DAO は何の略ですか?",
+      "answers": {
+        "Digital Asset Order": "デジタル資産の注文",
+        "Decentralized Autonomous Organization": "分散型自律組織",
+        "Distributed App Output": "分散アプリの出力",
+        "Data Access Object": "データ アクセス オブジェクト"
+      }
+    },
+    "crypto:51": {
+      "question": "「ブロック エクスプローラー」とは何ですか?",
+      "answers": {
+        "A mining tool": "マイニング ツール",
+        "A site to view onchain data": "オンチェーン データを表示するサイト",
+        "A wallet type": "ウォレットのタイプ",
+        "A bridge": "橋"
+      }
+    },
+    "crypto:52": {
+      "question": "取引における「スリッページ」とは何ですか?",
+      "answers": {
+        "Network downtime": "ネットワークのダウンタイム",
+        "Difference between expected & actual price": "予想価格と実際の価格の差",
+        "A type of fee": "料金の種類",
+        "A wallet error": "ウォレットエラー"
+      }
+    },
+    "crypto:53": {
+      "question": "「ラグプル」とは何ですか?",
+      "answers": {
+        "A trading strategy": "取引戦略",
+        "A scam where founders abandon a project": "創設者がプロジェクトを放棄する詐欺",
+        "A staking method": "ステーキング方法",
+        "A wallet feature": "ウォレット機能"
+      }
+    },
+    "crypto:54": {
+      "question": "マルチシグ ウォレットとは何ですか?",
+      "answers": {
+        "A wallet with many tokens": "多くのトークンを含むウォレット",
+        "A wallet needing multiple signatures to approve tx": "ウォレットは送信を承認するために複数の署名を必要とします",
+        "A wallet on multiple chains": "複数のチェーン上のウォレット",
+        "A wallet with a long password": "長いパスワードを持つウォレット"
+      }
+    },
+    "crypto:55": {
+      "question": "暗号通貨文化における「HODL」は何を意味しますか?",
+      "answers": {
+        "Sell quickly": "すぐに売りましょう",
+        "Hold long-term": "長期保有",
+        "A hardware wallet": "ハードウェアウォレット",
+        "A type of token": "トークンの一種"
+      }
+    },
+    "crypto:56": {
+      "question": "暗号通貨における「クジラ」とは何ですか?",
+      "answers": {
+        "A tiny investor": "小さな投資家",
+        "A holder of very large amounts": "非常に多額の資金を保有している人",
+        "A stablecoin": "ステーブルコイン",
+        "A mining rig": "採掘装置"
+      }
+    },
+    "crypto:57": {
+      "question": "ブロックチェーン上のガス料金は何に支払われますか?",
+      "answers": {
+        "Developers": "開発者",
+        "Network validators/miners": "ネットワークバリデータ/マイナー",
+        "Exchanges": "交換",
+        "Banks": "銀行"
+      }
+    },
+    "crypto:58": {
+      "question": "スマート コントラクトとは何ですか?",
+      "answers": {
+        "A paper contract": "紙の契約書",
+        "Self-executing code on a blockchain": "ブロックチェーン上の自己実行コード",
+        "A savings account": "普通預金口座",
+        "A hardware device": "ハードウェア デバイス"
+      }
+    },
+    "crypto:59": {
+      "question": "「DEX」は何の略ですか?",
+      "answers": {
+        "Digital Exchange": "デジタル交換",
+        "Decentralized Exchange": "分散型取引所",
+        "Data Exchange": "データ交換",
+        "Direct Exchange": "直接交換"
+      }
+    },
+    "crypto:60": {
+      "question": "「CEX」は何の略ですか?",
+      "answers": {
+        "Central Exchange": "中央交換局",
+        "Centralized Exchange": "集中型交換",
+        "Crypto Exchange": "暗号交換",
+        "Coin Exchange": "コイン交換所"
+      }
+    },
+    "crypto:61": {
+      "question": "「ステーキング」とは何ですか?",
+      "answers": {
+        "Selling tokens": "トークンの販売",
+        "Locking tokens to support a network for rewards": "報酬を得るためにネットワークをサポートするためのトークンをロックする",
+        "Mining coins": "コインのマイニング",
+        "Burning tokens": "トークンの燃焼"
+      }
+    },
+    "crypto:62": {
+      "question": "「秘密鍵」とは何ですか?",
+      "answers": {
+        "Your public address": "公開アドレス",
+        "A secret that controls your funds": "資金を管理する秘密",
+        "An exchange password": "交換パスワード",
+        "A transaction id": "トランザクション ID"
+      }
+    },
+    "crypto:63": {
+      "question": "「テストネット」は何のために使用されますか?",
+      "answers": {
+        "Real transactions": "実際のトランザクション",
+        "Testing without real value": "実際の値を使用しないテスト",
+        "Storing coins": "コインの保管",
+        "Mining Bitcoin": "ビットコインのマイニング"
+      }
+    },
+    "crypto:64": {
+      "question": "トークンを「燃やす」とはどういう意味ですか?",
+      "answers": {
+        "Creating tokens": "トークンの作成",
+        "Permanently removing tokens from supply": "供給からトークンを永久に削除します",
+        "Staking tokens": "トークンのステーキング",
+        "Sending tokens": "トークンの送信"
+      }
+    },
+    "crypto:65": {
+      "question": "「強気市場」とは何ですか?",
+      "answers": {
+        "Prices falling": "価格下落",
+        "Prices rising": "価格上昇",
+        "No trading": "取引禁止",
+        "A type of coin": "コインの一種"
+      }
+    },
+    "crypto:66": {
+      "question": "「弱気市場」とは何ですか?",
+      "answers": {
+        "Prices rising": "価格上昇",
+        "Prices falling": "価格下落",
+        "Sideways only": "横向きのみ",
+        "A mining term": "マイニング用語"
+      }
+    },
+    "crypto:67": {
+      "question": "「エアドロップ」とは何ですか?",
+      "answers": {
+        "A market crash": "市場の暴落",
+        "Free distribution of tokens": "トークンの無料配布",
+        "A hack": "ハッキング",
+        "A trading fee": "取引手数料"
+      }
+    },
+    "crypto:68": {
+      "question": "「Web3」とは何ですか?",
+      "answers": {
+        "The third website": "3 番目の Web サイト",
+        "A decentralized internet on blockchain": "ブロックチェーン上の分散型インターネット",
+        "A web browser": "Web ブラウザ",
+        "A programming language": "プログラミング言語"
+      }
+    },
+    "crypto:69": {
+      "question": "「L1」とはどういう意味ですか?",
+      "answers": {
+        "Layer 1 base blockchain": "レイヤ 1 ベースのブロックチェーン",
+        "A game level": "ゲームレベル",
+        "A wallet": "ウォレット",
+        "A token standard": "トークン標準"
+      }
+    },
+    "crypto:70": {
+      "question": "ソラナは?",
+      "answers": {
+        "Layer-2 of Ethereum": "Ethereum のレイヤー 2",
+        "Standalone Layer-1 blockchain": "スタンドアロンのレイヤー 1 ブロックチェーン",
+        "Wallet": "ウォレット",
+        "Stablecoin": "ステーブルコイン"
+      }
+    },
+    "crypto:71": {
+      "question": "Proof of Work は何で知られていますか?",
+      "answers": {
+        "Low energy use": "低エネルギー使用",
+        "High energy use via mining": "マイニングによる高エネルギー使用",
+        "Staking coins": "コインをステーキングする",
+        "No validators": "バリデータがありません"
+      }
+    },
+    "crypto:72": {
+      "question": "「DYOR」とはどういう意味ですか?",
+      "answers": {
+        "Do Your Own Research": "自分で調査してください",
+        "Deposit Your Own Reserves": "自分の準備金を入金する",
+        "Don't Yield On Returns": "返品を譲らないでください",
+        "Data Yield Over Risk": "リスクに対するデータの収量"
+      }
+    },
+    "crypto:73": {
+      "question": "「コールドウォレット」とは何ですか?",
+      "answers": {
+        "Always-online wallet": "常時オンラインのウォレット",
+        "Offline wallet for storage": "ストレージ用のオフラインウォレット",
+        "Exchange wallet": "Exchange ウォレット",
+        "A stablecoin": "ステーブルコイン"
+      }
+    },
+    "crypto:74": {
+      "question": "「ホットウォレット」とは何ですか?",
+      "answers": {
+        "Offline wallet": "オフラインウォレット",
+        "Internet-connected wallet": "インターネットに接続されたウォレット",
+        "Hardware wallet": "ハードウェア ウォレット",
+        "Paper wallet": "ペーパーウォレット"
+      }
+    },
+    "crypto:75": {
+      "question": "「Gwei」は測定に使用されますか?",
+      "answers": {
+        "Token supply": "トークンの供給",
+        "Gas prices": "ガス価格",
+        "Block size": "ブロックサイズ",
+        "Wallet balance": "ウォレットの残高"
+      }
+    },
+    "crypto:76": {
+      "question": "「永久損失」は関連していますか?",
+      "answers": {
+        "Staking": "ステーキング",
+        "Providing liquidity": "流動性の提供",
+        "Mining": "マイニング",
+        "Holding": "開催中"
+      }
+    },
+    "crypto:77": {
+      "question": "ブロックチェーンの「ブリッジ」は何に使用されますか?",
+      "answers": {
+        "Mine coins": "コインを採掘する",
+        "Move assets between blockchains": "ブロックチェーン間で資産を移動する",
+        "Store keys": "キーを保存する",
+        "Create tokens": "トークンの作成"
+      }
+    },
+    "crypto:78": {
+      "question": "「バリデーター」とは何ですか?",
+      "answers": {
+        "A wallet": "ウォレット",
+        "A node that verifies transactions": "トランザクションを検証するノード",
+        "A token": "トークン",
+        "An exchange": "交換"
+      }
+    },
+    "crypto:79": {
+      "question": "「ATH」はの略ですか?",
+      "answers": {
+        "All-Time High": "過去最高",
+        "Average Trade Height": "平均取引高さ",
+        "Actual Token Holdings": "実際のトークン保有数",
+        "Auto Trade Handler": "自動取引ハンドラー"
+      }
+    },
+    "crypto:80": {
+      "question": "BTC や ETH のような「ティッカー」とは何ですか?",
+      "answers": {
+        "A price chart": "価格チャート",
+        "A short symbol for an asset": "資産の短いシンボル",
+        "A wallet": "ウォレット",
+        "A block": "ブロック"
+      }
+    },
+    "crypto:81": {
+      "question": "Proof of Work では、トランザクションの確認が呼び出されますか?",
+      "answers": {
+        "Staking": "ステーキング",
+        "Mining": "マイニング",
+        "Bridging": "ブリッジング",
+        "Burning": "燃えています"
+      }
+    },
+    "crypto:82": {
+      "question": "「時価総額」とは何ですか?",
+      "answers": {
+        "Price × circulating supply": "価格 × 流通供給量",
+        "Daily trading volume": "日次取引高",
+        "Number of wallets": "ウォレットの数",
+        "Total gas fees": "ガス料金の合計"
+      }
+    },
+    "crypto:83": {
+      "question": "OnchainKit は開発者ツールキットですか?",
+      "answers": {
+        "Binance": "バイナンス",
+        "Coinbase": "Coinbase",
+        "MetaMask": "MetaMask",
+        "Uniswap": "Uniswap"
+      }
+    },
+    "crypto:84": {
+      "question": "「ガス制限」が設定されていますか?",
+      "answers": {
+        "Token supply": "トークンの供給",
+        "Max gas a transaction can use": "トランザクションで使用できる最大ガス",
+        "Wallet size": "財布のサイズ",
+        "Block reward": "ブロック報酬"
+      }
+    },
+    "crypto:85": {
+      "question": "ポリゴンは最もよく知られていますか?",
+      "answers": {
+        "A base Layer-1": "基本レイヤー 1",
+        "An Ethereum scaling solution": "Ethereum スケーリング ソリューション",
+        "A wallet": "ウォレット",
+        "An exchange": "交換"
+      }
+    },
+    "crypto:86": {
+      "question": "取引における「FOMO」とは何を意味しますか?",
+      "answers": {
+        "Fear Of Missing Out": "チャンスを逃すことへの恐怖",
+        "Full Order Market Offer": "フルオーダー マーケット オファー",
+        "Fixed Order Money Out": "固定注文出金",
+        "Fast Onchain Market Order": "高速オンチェーン マーケットオーダー"
+      }
+    },
+    "crypto:87": {
+      "question": "プールの「流動性」とは何ですか?",
+      "answers": {
+        "Number of users": "ユーザー数",
+        "Assets available to trade": "取引可能な資産",
+        "Trading fees": "取引手数料",
+        "Block height": "ブロックの高さ"
+      }
+    },
+    "crypto:88": {
+      "question": "「レイヤー 2」ソリューションの主な目的は?",
+      "answers": {
+        "Replace Bitcoin": "ビットコインを置き換える",
+        "Scale a Layer-1 with cheaper, faster txs": "より安価で高速な TXS を使用してレイヤー 1 を拡張する",
+        "Mine faster": "より速く採掘する",
+        "Issue stablecoins": "ステーブルコインを発行する"
+      }
+    },
+    "crypto:89": {
+      "question": "ウォレットの「アドレス」とは一般的に何ですか?",
+      "answers": {
+        "Secret, never shared": "秘密、決して共有されない",
+        "Public and shareable to receive funds": "資金を受け取るために公開および共有可能",
+        "Your password": "あなたのパスワード",
+        "A private key": "秘密鍵"
+      }
+    },
+    "crypto:90": {
+      "question": "「KYC」は何の略ですか?",
+      "answers": {
+        "Keep Your Coins": "コインを保管してください",
+        "Know Your Customer": "顧客を知る",
+        "Key Yield Contract": "キー利回り契約",
+        "Known Yield Curve": "既知の利回り曲線"
+      }
+    },
+    "crypto:91": {
+      "question": "トランザクションにおけるnonceとは何ですか？",
+      "answers": {
+        "A random word": "ランダムな単語",
+        "A per-account transaction counter": "アカウントごとのトランザクションカウンター",
+        "A token": "トークン",
+        "A wallet": "ウォレット"
+      }
+    },
+    "crypto:92": {
+      "question": "「PoS」はの略ですか?",
+      "answers": {
+        "Proof of Speed": "スピードの証明",
+        "Proof of Stake": "ステークの証拠",
+        "Point of Sale": "販売時点管理",
+        "Proof of Storage": "保管証明"
+      }
+    },
+    "crypto:93": {
+      "question": "ステーブルコインは次のように設計されていますか?",
+      "answers": {
+        "Grow fast": "急速に成長する",
+        "Stay near a stable value": "安定した値の近くに留まります",
+        "Be an NFT": "NFT になる",
+        "Mine blocks": "ブロックを採掘する"
+      }
+    },
+    "crypto:94": {
+      "question": "ステーブルコインは次のうちどれですか?",
+      "answers": {
+        "ETH": "ETH",
+        "USDC": "USDC",
+        "BTC": "BTC",
+        "SOL": "ソル"
+      }
+    },
+    "crypto:95": {
+      "question": "「クロスチェーン」とは、複数の場所にまたがって操作することを意味しますか?",
+      "answers": {
+        "One app": "1 つのアプリ",
+        "Multiple blockchains": "複数のブロックチェーン",
+        "One wallet": "ウォレット 1 つ",
+        "One token": "トークン 1 つ"
+      }
+    },
+    "crypto:96": {
+      "question": "ブロックチェーン内の「ブロック」には次のものが含まれますか?",
+      "answers": {
+        "Only one transaction": "トランザクションは 1 つだけ",
+        "A batch of transactions": "トランザクションのバッチ",
+        "Only code": "コードのみ",
+        "Nothing": "なし"
+      }
+    },
+    "crypto:97": {
+      "question": "「ジェネシス ブロック」とは?",
+      "answers": {
+        "Last block": "最後のブロック",
+        "First block of a blockchain": "ブロックチェーンの最初のブロック",
+        "A wallet": "ウォレット",
+        "A token": "トークン"
+      }
+    },
+    "crypto:98": {
+      "question": "「ROI」とは何の略ですか?",
+      "answers": {
+        "Return On Investment": "投資収益率",
+        "Rate Of Interest": "金利",
+        "Risk Of Inflation": "インフレのリスク",
+        "Ratio Of Income": "収入の比率"
+      }
+    },
+    "crypto:99": {
+      "question": "Ethereum ガソリン価格は通常何単位で測定されますか?",
+      "answers": {
+        "US dollars": "米ドル",
+        "Gwei": "グウェイ",
+        "Bitcoin": "ビットコイン",
+        "Bytes": "バイト"
+      }
+    },
+    "sports:0": {
+      "question": "1 つのサッカー チームからフィールドには何人の選手がいますか?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:1": {
+      "question": "あなたならどのスポーツでスラムダンクを披露しますか?",
+      "answers": {
+        "Tennis": "テニス",
+        "Basketball": "バスケットボール",
+        "Golf": "ゴルフ",
+        "Cricket": "クリケット"
+      }
+    },
+    "sports:2": {
+      "question": "夏季オリンピックはどのくらいの頻度で開催されますか?",
+      "answers": {
+        "Every 2 years": "2年ごと",
+        "Every 3 years": "3年ごと",
+        "Every 4 years": "4年ごと",
+        "Every 5 years": "5年ごと"
+      }
+    },
+    "sports:3": {
+      "question": "FIFA ワールドカップで最も多く優勝した国はどこですか?",
+      "answers": {
+        "Germany": "ドイツ",
+        "Italy": "イタリア",
+        "Brazil": "ブラジル",
+        "Argentina": "アルゼンチン"
+      }
+    },
+    "sports:4": {
+      "question": "テニスでスコアがゼロのことを何といいますか?",
+      "answers": {
+        "Nil": "なし",
+        "Love": "愛",
+        "Duck": "アヒル",
+        "Blank": "空白"
+      }
+    },
+    "sports:5": {
+      "question": "オリンピック旗にはリングが何個ありますか?",
+      "answers": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:6": {
+      "question": "シャトルコックを使用するスポーツはどれですか?",
+      "answers": {
+        "Squash": "スカッシュ",
+        "Badminton": "バドミントン",
+        "Table tennis": "卓球",
+        "Volleyball": "バレーボール"
+      }
+    },
+    "sports:7": {
+      "question": "ウサイン・ボルトはどのスポーツで有名ですか?",
+      "answers": {
+        "Swimming": "水泳",
+        "Sprinting": "スプリント",
+        "Cycling": "サイクリング",
+        "Boxing": "ボクシング"
+      }
+    },
+    "sports:8": {
+      "question": "アメリカンフットボールのタッチダウンは何ポイントに相当しますか?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:9": {
+      "question": "ツール・ド・フランスはどのスポーツの競技ですか?",
+      "answers": {
+        "Running": "実行中",
+        "Cycling": "サイクリング",
+        "Rowing": "ローイング",
+        "Sailing": "セーリング"
+      }
+    },
+    "sports:10": {
+      "question": "ウィンブルドン テニス トーナメントが開催される国はどこですか?",
+      "answers": {
+        "USA": "米国",
+        "France": "フランス",
+        "England": "イングランド",
+        "Australia": "オーストラリア"
+      }
+    },
+    "sports:11": {
+      "question": "マイケル ジョーダンはどのスポーツのレジェンドですか?",
+      "answers": {
+        "Baseball": "野球",
+        "Basketball": "バスケットボール",
+        "Football": "サッカー",
+        "Hockey": "ホッケー"
+      }
+    },
+    "sports:12": {
+      "question": "標準的なチャンピオンシップ ボクシングの試合は何ラウンドですか?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "12": "12",
+        "15": "15"
+      }
+    },
+    "sports:13": {
+      "question": "クレーコートで行われるテニスのグランドスラムはどれですか?",
+      "answers": {
+        "Wimbledon": "ウィンブルドン",
+        "US Open": "全米オープン",
+        "French Open": "全仏オープン",
+        "Australian Open": "全豪オープン"
+      }
+    },
+    "sports:14": {
+      "question": "Formula 1 はどのレース形式ですか?",
+      "answers": {
+        "Boat": "ボート",
+        "Car": "車",
+        "Horse": "馬",
+        "Bicycle": "自転車"
+      }
+    },
+    "sports:15": {
+      "question": "マラソンの時間はおよそどのくらいですか?",
+      "answers": {
+        "21 km": "21 km",
+        "42 km": "42 km",
+        "50 km": "50 km",
+        "30 km": "30 km"
+      }
+    },
+    "sports:16": {
+      "question": "クリケット チームには何人の選手がいますか?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:17": {
+      "question": "マスターズ トーナメントはどのスポーツで行われますか?",
+      "answers": {
+        "Golf": "ゴルフ",
+        "Tennis": "テニス",
+        "Polo": "ポロ",
+        "Rugby": "ラグビー"
+      }
+    },
+    "sports:18": {
+      "question": "2018 FIFA ワールドカップで優勝した国はどこですか?",
+      "answers": {
+        "Germany": "ドイツ",
+        "France": "フランス",
+        "Brazil": "ブラジル",
+        "Croatia": "クロアチア"
+      }
+    },
+    "sports:19": {
+      "question": "サッカーの試合時間はロスタイムを除いてどれくらいですか?",
+      "answers": {
+        "80 minutes": "80 分",
+        "90 minutes": "90 分",
+        "100 minutes": "100 分",
+        "120 minutes": "120 分"
+      }
+    },
+    "sports:20": {
+      "question": "サッカー選手をフィールドから退場させるカードはどれですか?",
+      "answers": {
+        "Yellow": "黄色",
+        "Red": "赤",
+        "Blue": "ブルー",
+        "Green": "緑"
+      }
+    },
+    "sports:21": {
+      "question": "ハットトリックとは、1 試合で何ゴールを達成することを意味しますか?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:22": {
+      "question": "クリスティアーノ・ロナウドはどの代表チームを代表していますか?",
+      "answers": {
+        "Brazil": "ブラジル",
+        "Spain": "スペイン",
+        "Portugal": "ポルトガル",
+        "Argentina": "アルゼンチン"
+      }
+    },
+    "sports:23": {
+      "question": "ペレはどの国で国際的にプレーしましたか?",
+      "answers": {
+        "Argentina": "アルゼンチン",
+        "Brazil": "ブラジル",
+        "Portugal": "ポルトガル",
+        "Italy": "イタリア"
+      }
+    },
+    "sports:24": {
+      "question": "ヨーロッパのトップクラブサッカー大会は何ですか?",
+      "answers": {
+        "Europa League": "ヨーロッパ リーグ",
+        "Champions League": "チャンピオンズ リーグ",
+        "Copa America": "コパ・アメリカ",
+        "FA Cup": "FA カップ"
+      }
+    },
+    "sports:25": {
+      "question": "バロンドールはどのスポーツで授与されますか?",
+      "answers": {
+        "Basketball": "バスケットボール",
+        "Football/Soccer": "フットボール/サッカー",
+        "Tennis": "テニス",
+        "Golf": "ゴルフ"
+      }
+    },
+    "sports:26": {
+      "question": "ディエゴ マラドーナはどのスポーツのレジェンドでしたか?",
+      "answers": {
+        "Basketball": "バスケットボール",
+        "Soccer": "サッカー",
+        "Tennis": "テニス",
+        "Boxing": "ボクシング"
+      }
+    },
+    "sports:27": {
+      "question": "サッカーにおける「クリーンシート」とは何ですか?",
+      "answers": {
+        "Scoring many goals": "多くのゴールを決める",
+        "Conceding no goals": "失点なし",
+        "Getting a red card": "レッドカードを受ける",
+        "A draw": "引き分け"
+      }
+    },
+    "sports:28": {
+      "question": "バスケットボールのフリースローは何点に相当しますか?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:29": {
+      "question": "3 点弧を越えたバスケットには価値がありますか?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:30": {
+      "question": "標準的なバスケットボールのフープはどの高さに設定されていますか?",
+      "answers": {
+        "8 feet": "8 フィート",
+        "10 feet": "10 フィート",
+        "12 feet": "12 フィート",
+        "15 feet": "15 フィート"
+      }
+    },
+    "sports:31": {
+      "question": "NBA はどこの国に本拠地を置くリーグですか?",
+      "answers": {
+        "Canada": "カナダ",
+        "USA": "米国",
+        "Spain": "スペイン",
+        "Australia": "オーストラリア"
+      }
+    },
+    "sports:32": {
+      "question": "バスケットボールを発明したとされている国はどこですか?",
+      "answers": {
+        "Canada": "カナダ",
+        "USA": "米国",
+        "UK": "英国",
+        "France": "フランス"
+      }
+    },
+    "sports:33": {
+      "question": "テニスでは毎年何回グランドスラム大会が開催されますか?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:34": {
+      "question": "ウィンブルドンはどのサーフェスでプレーされますか?",
+      "answers": {
+        "Clay": "粘土",
+        "Grass": "草",
+        "Hard court": "ハードコート",
+        "Carpet": "カーペット"
+      }
+    },
+    "sports:35": {
+      "question": "ロジャー・フェデラーはどのスポーツで有名ですか?",
+      "answers": {
+        "Golf": "ゴルフ",
+        "Tennis": "テニス",
+        "Cycling": "サイクリング",
+        "Rowing": "ローイング"
+      }
+    },
+    "sports:36": {
+      "question": "セリーナ ウィリアムズはどのスポーツのチャンピオンですか?",
+      "answers": {
+        "Golf": "ゴルフ",
+        "Tennis": "テニス",
+        "Swimming": "水泳",
+        "Athletics": "陸上競技"
+      }
+    },
+    "sports:37": {
+      "question": "テニスで、デュースの後に選手が次のポイントを取ると何になりますか？",
+      "answers": {
+        "Game": "ゲーム",
+        "Advantage": "アドバンテージ",
+        "Set": "セット",
+        "Match": "マッチ"
+      }
+    },
+    "sports:38": {
+      "question": "最初の近代オリンピックが開催されたのは何年ですか?",
+      "answers": {
+        "1896": "1896",
+        "1900": "1900",
+        "1924": "1924",
+        "1936": "1936"
+      }
+    },
+    "sports:39": {
+      "question": "2016 年の夏季オリンピックはどこで開催されましたか?",
+      "answers": {
+        "London": "ロンドン",
+        "Rio de Janeiro": "リオデジャネイロ",
+        "Tokyo": "東京",
+        "Beijing": "北京"
+      }
+    },
+    "sports:40": {
+      "question": "2024 年夏季オリンピックはどこで開催されましたか?",
+      "answers": {
+        "Tokyo": "東京",
+        "Paris": "パリ",
+        "Los Angeles": "ロサンゼルス",
+        "London": "ロンドン"
+      }
+    },
+    "sports:41": {
+      "question": "オリンピックのモットーは「より速く、より高く、__」です。",
+      "answers": {
+        "Better": "より良い",
+        "Stronger": "より強力",
+        "Farther": "さらに遠くへ",
+        "Longer": "より長い"
+      }
+    },
+    "sports:42": {
+      "question": "オリンピックの聖火は伝統的にどこで点火されますか?",
+      "answers": {
+        "Italy": "イタリア",
+        "Greece": "ギリシャ",
+        "France": "フランス",
+        "Egypt": "エジプト"
+      }
+    },
+    "sports:43": {
+      "question": "マイケル・フェルプスが優勝したオリンピック競技はどれですか?",
+      "answers": {
+        "Athletics": "陸上競技",
+        "Swimming": "水泳",
+        "Diving": "ダイビング",
+        "Rowing": "ローイング"
+      }
+    },
+    "sports:44": {
+      "question": "競泳の泳法ではないものはどれですか?",
+      "answers": {
+        "Butterfly": "バタフライ",
+        "Backstroke": "背泳ぎ",
+        "Breaststroke": "平泳ぎ",
+        "Sidestroke": "横泳ぎ"
+      }
+    },
+    "sports:45": {
+      "question": "モハメド・アリは伝説的人物でしたか?",
+      "answers": {
+        "Footballer": "サッカー選手",
+        "Boxer": "ボクサー",
+        "Swimmer": "水泳選手",
+        "Runner": "ランナー"
+      }
+    },
+    "sports:46": {
+      "question": "柔道の発祥はどこの国ですか?",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韓国",
+        "Thailand": "タイ"
+      }
+    },
+    "sports:47": {
+      "question": "テコンドーの発祥の地はどこですか?",
+      "answers": {
+        "Japan": "日本",
+        "China": "中国",
+        "South Korea": "韓国",
+        "Vietnam": "ベトナム"
+      }
+    },
+    "sports:48": {
+      "question": "ボクシングで「KO」は何の略ですか?",
+      "answers": {
+        "Knockout": "ノックアウト",
+        "Keep On": "続けてください",
+        "Knee Out": "ニーアウト",
+        "Key Opponent": "主要な対戦相手"
+      }
+    },
+    "sports:49": {
+      "question": "相撲は伝統的なスポーツですか?",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韓国",
+        "Mongolia": "モンゴル"
+      }
+    },
+    "sports:50": {
+      "question": "ゴルフでは、ホールでの 1 打アンダーパーとは何ですか?",
+      "answers": {
+        "Eagle": "イーグル",
+        "Birdie": "バーディー",
+        "Bogey": "ボギー",
+        "Par": "パー"
+      }
+    },
+    "sports:51": {
+      "question": "ゴルフでは、パーを超える 1 ストロークは?",
+      "answers": {
+        "Birdie": "バーディー",
+        "Bogey": "ボギー",
+        "Eagle": "イーグル",
+        "Ace": "エース"
+      }
+    },
+    "sports:52": {
+      "question": "ゴルフのホールインワンはアン?とも呼ばれます。",
+      "answers": {
+        "Ace": "エース",
+        "Birdie": "バーディー",
+        "Eagle": "イーグル",
+        "Par": "パー"
+      }
+    },
+    "sports:53": {
+      "question": "ゴルフの標準ラウンドには何ホールありますか?",
+      "answers": {
+        "9": "9",
+        "12": "12",
+        "18": "18",
+        "24": "24"
+      }
+    },
+    "sports:54": {
+      "question": "ゴルフ発祥の国はどこですか?",
+      "answers": {
+        "USA": "米国",
+        "Scotland": "スコットランド",
+        "France": "フランス",
+        "Italy": "イタリア"
+      }
+    },
+    "sports:55": {
+      "question": "ルイス・ハミルトンはどのスポーツに出場しますか?",
+      "answers": {
+        "MotoGP": "MotoGP",
+        "Formula 1": "式 1",
+        "Rally": "ラリー",
+        "NASCAR": "ナスカー"
+      }
+    },
+    "sports:56": {
+      "question": "フォーミュラ 1 カーは何でレースしますか?",
+      "answers": {
+        "Field": "フィールド",
+        "Track/circuit": "トラック/サーキット",
+        "Pool": "プール",
+        "Court": "法廷"
+      }
+    },
+    "sports:57": {
+      "question": "F1 では、タイトルはドライバーに与えられます。",
+      "answers": {
+        "Fans": "ファン",
+        "Constructors": "コンストラクター",
+        "Cities": "都市",
+        "Sponsors": "スポンサー"
+      }
+    },
+    "sports:58": {
+      "question": "野球では何ストライクで三振になりますか?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:59": {
+      "question": "野球は?の形をしたフィールドでプレーされます。",
+      "answers": {
+        "Circle": "サークル",
+        "Diamond": "ダイヤモンド",
+        "Square": "スクエア",
+        "Triangle": "三角形"
+      }
+    },
+    "sports:60": {
+      "question": "スーパー ボウルはどのスポーツのチャンピオンシップですか?",
+      "answers": {
+        "Basketball": "バスケットボール",
+        "American football": "アメリカン フットボール",
+        "Baseball": "野球",
+        "Ice hockey": "アイスホッケー"
+      }
+    },
+    "sports:61": {
+      "question": "アメリカン フットボールのフィールドには 1 チームあたり何人の選手がいますか?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:62": {
+      "question": "アイスホッケーは行われますか?",
+      "answers": {
+        "Grass": "草",
+        "Ice": "アイス",
+        "Sand": "砂",
+        "Clay": "粘土"
+      }
+    },
+    "sports:63": {
+      "question": "スタンレー カップはどのスポーツのトロフィーですか?",
+      "answers": {
+        "Basketball": "バスケットボール",
+        "Ice hockey": "アイスホッケー",
+        "Baseball": "野球",
+        "Soccer": "サッカー"
+      }
+    },
+    "sports:64": {
+      "question": "アイスホッケーでは、各チームの氷上に何人のプレーヤーがいますか?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:65": {
+      "question": "バレーボール コートには 1 チームあたり何人のプレーヤーがいますか?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:66": {
+      "question": "俗に言う卓球？",
+      "answers": {
+        "Squash": "スカッシュ",
+        "Ping pong": "ピンポン",
+        "Badminton": "バドミントン",
+        "Racquetball": "ラケットボール"
+      }
+    },
+    "sports:67": {
+      "question": "国際卓球を独占している国はどこですか?",
+      "answers": {
+        "Brazil": "ブラジル",
+        "China": "中国",
+        "Canada": "カナダ",
+        "Egypt": "エジプト"
+      }
+    },
+    "sports:68": {
+      "question": "四方の壁の中で行われるラケット スポーツはどれですか?",
+      "answers": {
+        "Tennis": "テニス",
+        "Squash": "スカッシュ",
+        "Badminton": "バドミントン",
+        "Table tennis": "卓球"
+      }
+    },
+    "sports:69": {
+      "question": "ニュージーランドのラグビー代表チームは?として知られています?",
+      "answers": {
+        "Wallabies": "ワラビー",
+        "All Blacks": "オールブラックス",
+        "Springboks": "スプリングボクス",
+        "Pumas": "ピューマ"
+      }
+    },
+    "sports:70": {
+      "question": "「スクラム」はどのスポーツの特徴ですか?",
+      "answers": {
+        "Rugby": "ラグビー",
+        "Tennis": "テニス",
+        "Golf": "ゴルフ",
+        "Swimming": "水泳"
+      }
+    },
+    "sports:71": {
+      "question": "ラグビーユニオンの「トライ」は何点の価値がありますか?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "5": "5",
+        "7": "7"
+      }
+    },
+    "sports:72": {
+      "question": "「世紀」(100 回の実行) は 1 つの用語ですか?",
+      "answers": {
+        "Baseball": "野球",
+        "Cricket": "クリケット",
+        "Rugby": "ラグビー",
+        "Soccer": "サッカー"
+      }
+    },
+    "sports:73": {
+      "question": "クリケットが特に人気がある国はどこですか?",
+      "answers": {
+        "USA": "米国",
+        "India": "インド",
+        "Norway": "ノルウェー",
+        "Iceland": "アイスランド"
+      }
+    },
+    "sports:74": {
+      "question": "やり投げはどのスポーツで投げられますか?",
+      "answers": {
+        "Gymnastics": "体操",
+        "Athletics": "陸上競技",
+        "Cycling": "サイクリング",
+        "Rowing": "ローイング"
+      }
+    },
+    "sports:75": {
+      "question": "走り幅跳びはどのスポーツの種目ですか?",
+      "answers": {
+        "Swimming": "水泳",
+        "Athletics": "陸上競技",
+        "Cycling": "サイクリング",
+        "Gymnastics": "体操"
+      }
+    },
+    "sports:76": {
+      "question": "オリンピックのスプリントの最短距離は何ですか?",
+      "answers": {
+        "50 m": "50 m",
+        "100 m": "100m",
+        "200 m": "200 m",
+        "400 m": "400m"
+      }
+    },
+    "sports:77": {
+      "question": "あん馬はどのスポーツで使用されますか?",
+      "answers": {
+        "Athletics": "陸上競技",
+        "Gymnastics": "体操",
+        "Swimming": "水泳",
+        "Boxing": "ボクシング"
+      }
+    },
+    "sports:78": {
+      "question": "「スラローム」はどのスポーツの種目ですか?",
+      "answers": {
+        "Swimming": "水泳",
+        "Skiing": "スキー",
+        "Cycling": "サイクリング",
+        "Boxing": "ボクシング"
+      }
+    },
+    "sports:79": {
+      "question": "スキーは一般的にどの種類のスポーツですか?",
+      "answers": {
+        "Water": "水",
+        "Winter": "冬",
+        "Desert": "砂漠",
+        "Indoor": "屋内"
+      }
+    },
+    "sports:80": {
+      "question": "スピードスケートは何で行われますか?",
+      "answers": {
+        "Grass": "草",
+        "Ice": "アイス",
+        "Water": "水",
+        "Sand": "砂"
+      }
+    },
+    "sports:81": {
+      "question": "「ストライク」と「スペア」という用語を使用するスポーツはどれですか?",
+      "answers": {
+        "Bowling": "ボウリング",
+        "Golf": "ゴルフ",
+        "Tennis": "テニス",
+        "Cricket": "クリケット"
+      }
+    },
+    "sports:82": {
+      "question": "スヌーカーの最大ブレイクは何ですか?",
+      "answers": {
+        "100": "100",
+        "147": "147",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:83": {
+      "question": "ダーツ3本での最大スコアは？",
+      "answers": {
+        "120": "120",
+        "150": "150",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:84": {
+      "question": "「ペロトン」とはどのスポーツのライダーのグループですか?",
+      "answers": {
+        "Cycling": "サイクリング",
+        "Swimming": "水泳",
+        "Boxing": "ボクシング",
+        "Golf": "ゴルフ"
+      }
+    },
+    "sports:85": {
+      "question": "ツール・ド・フランスは主にどこで開催されますか?",
+      "answers": {
+        "Italy": "イタリア",
+        "Spain": "スペイン",
+        "France": "フランス",
+        "Belgium": "ベルギー"
+      }
+    },
+    "sports:86": {
+      "question": "2022 FIFA ワールドカップの主催者は?",
+      "answers": {
+        "Russia": "ロシア",
+        "Qatar": "カタール",
+        "Brazil": "ブラジル",
+        "USA": "米国"
+      }
+    },
+    "sports:87": {
+      "question": "FIFA ワールドカップのトロフィーは誰によって授与されますか?",
+      "answers": {
+        "UEFA": "UEFA",
+        "FIFA": "FIFA",
+        "NBA": "NBA",
+        "IOC": "IOC"
+      }
+    },
+    "sports:88": {
+      "question": "サッカーのペナルティーキックは約?から行われます。",
+      "answers": {
+        "11 m": "11 m",
+        "20 m": "20 m",
+        "5 m": "5 m",
+        "30 m": "30 m"
+      }
+    },
+    "sports:89": {
+      "question": "サッカー ピッチでスタートする選手は合計で何人ですか (両チーム)?",
+      "answers": {
+        "18": "18",
+        "20": "20",
+        "22": "22",
+        "24": "24"
+      }
+    },
+    "sports:90": {
+      "question": "「ラブ」、「デュース」、「エース」を特徴とするスポーツはどれですか?",
+      "answers": {
+        "Golf": "ゴルフ",
+        "Tennis": "テニス",
+        "Cricket": "クリケット",
+        "Rugby": "ラグビー"
+      }
+    },
+    "sports:91": {
+      "question": "ウィンブルドン、全米オープン、全仏オープンと並ぶテニスの 4 番目のグランドスラムは何ですか?",
+      "answers": {
+        "Italian Open": "イタリアオープン",
+        "Australian Open": "全豪オープン",
+        "Madrid Open": "マドリッドオープン",
+        "Dubai Open": "ドバイオープン"
+      }
+    },
+    "sports:92": {
+      "question": "フィギュアスケートがオリンピックで取り上げられるのはどれですか?",
+      "answers": {
+        "Summer": "夏",
+        "Winter": "冬",
+        "Both equally": "どちらも同等",
+        "Neither": "どちらでもない"
+      }
+    },
+    "sports:93": {
+      "question": "野球チームのフィールドには何人の選手がいますか?",
+      "answers": {
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11"
+      }
+    },
+    "sports:94": {
+      "question": "2008 年の夏季オリンピックはどこで開催されましたか?",
+      "answers": {
+        "London": "ロンドン",
+        "Beijing": "北京",
+        "Athens": "アテネ",
+        "Sydney": "シドニー"
+      }
+    },
+    "sports:95": {
+      "question": "ボートレースは何で開催されますか?",
+      "answers": {
+        "A track": "トラック",
+        "Water": "水",
+        "Ice": "アイス",
+        "Grass": "草"
+      }
+    },
+    "sports:96": {
+      "question": "「キャディ」を使用するスポーツはどれですか?",
+      "answers": {
+        "Golf": "ゴルフ",
+        "Tennis": "テニス",
+        "Boxing": "ボクシング",
+        "Cycling": "サイクリング"
+      }
+    },
+    "sports:97": {
+      "question": "走り高跳びと棒高跳びはどのスポーツに属しますか?",
+      "answers": {
+        "Gymnastics": "体操",
+        "Athletics": "陸上競技",
+        "Swimming": "水泳",
+        "Cycling": "サイクリング"
+      }
+    },
+    "sports:98": {
+      "question": "夏季オリンピックを最も多く開催した国はどこですか?",
+      "answers": {
+        "France": "フランス",
+        "USA": "米国",
+        "Greece": "ギリシャ",
+        "Japan": "日本"
+      }
+    },
+    "sports:99": {
+      "question": "フェンシング競技者は?",
+      "answers": {
+        "Bat": "コウモリ",
+        "Sword/blade": "剣/ブレード",
+        "Racket": "ラケット",
+        "Club": "クラブ"
+      }
+    },
+    "sports:100": {
+      "question": "ローランギャロスではどのスポーツが行われますか?",
+      "answers": {
+        "Golf": "ゴルフ",
+        "Tennis": "テニス",
+        "Rugby": "ラグビー",
+        "Cycling": "サイクリング"
+      }
+    },
+    "sports:101": {
+      "question": "金メダルを獲得したマラソンランナーの収入は?",
+      "answers": {
+        "Trophy only": "トロフィーのみ",
+        "Gold medal": "金メダル",
+        "Cash prize only": "賞金のみ",
+        "Belt": "ベルト"
+      }
+    },
+    "art:0": {
+      "question": "モナリザを描いたのは誰ですか?",
+      "answers": {
+        "Van Gogh": "ゴッホ",
+        "Picasso": "ピカソ",
+        "Leonardo da Vinci": "レオナルド・ダ・ヴィンチ",
+        "Michelangelo": "ミケランジェロ"
+      }
+    },
+    "art:1": {
+      "question": "「星月夜」を描いたのは誰ですか?",
+      "answers": {
+        "Monet": "モネ",
+        "Van Gogh": "ゴッホ",
+        "Dalí": "ダリ",
+        "Rembrandt": "レンブラント"
+      }
+    },
+    "art:2": {
+      "question": "モナリザはどこの美術館に展示されていますか?",
+      "answers": {
+        "The Met": "メット",
+        "Louvre": "ルーブル美術館",
+        "Prado": "プラド",
+        "Uffizi": "ウフィツィ"
+      }
+    },
+    "art:3": {
+      "question": "自分の耳の一部を切り落としたことで有名なアーティストは誰ですか?",
+      "answers": {
+        "Picasso": "ピカソ",
+        "Van Gogh": "ゴッホ",
+        "Dalí": "ダリ",
+        "Monet": "モネ"
+      }
+    },
+    "art:4": {
+      "question": "システィーナ礼拝堂の天井を描いたのは誰ですか?",
+      "answers": {
+        "Raphael": "ラファエル",
+        "Michelangelo": "ミケランジェロ",
+        "Da Vinci": "ダ・ヴィンチ",
+        "Donatello": "ドナテロ"
+      }
+    },
+    "art:5": {
+      "question": "パブロ・ピカソはどの芸術運動に関連していますか?",
+      "answers": {
+        "Impressionism": "印象派",
+        "Cubism": "キュビズム",
+        "Surrealism": "シュルレアリスム",
+        "Baroque": "バロック様式"
+      }
+    },
+    "art:6": {
+      "question": "サルバドール・ダリはどの芸術スタイルで知られていますか?",
+      "answers": {
+        "Realism": "リアリズム",
+        "Surrealism": "シュルレアリスム",
+        "Pop Art": "ポップアート",
+        "Gothic": "ゴシック"
+      }
+    },
+    "art:7": {
+      "question": "「叫び」を描いたのは誰ですか?",
+      "answers": {
+        "Munch": "ムンク",
+        "Klimt": "クリムト",
+        "Warhol": "ウォーホル",
+        "Cézanne": "セザンヌ"
+      }
+    },
+    "art:8": {
+      "question": "キャンベルスープ缶の絵を描いたことで有名なアーティストは誰ですか?",
+      "answers": {
+        "Warhol": "ウォーホル",
+        "Pollock": "ポロック",
+        "Rothko": "ロスコ",
+        "Bacon": "ベーコン"
+      }
+    },
+    "art:9": {
+      "question": "「真珠の耳飾りの少女」を描いたのは誰ですか?",
+      "answers": {
+        "Vermeer": "フェルメール",
+        "Rembrandt": "レンブラント",
+        "Rubens": "ルーベンス",
+        "Bosch": "ボッシュ"
+      }
+    },
+    "art:10": {
+      "question": "青と黄色の絵の具を混ぜると何色になりますか?",
+      "answers": {
+        "Purple": "パープル",
+        "Green": "緑",
+        "Orange": "オレンジ",
+        "Brown": "ブラウン"
+      }
+    },
+    "art:11": {
+      "question": "クロード・モネはどの運動の主導的人物でしたか?",
+      "answers": {
+        "Impressionism": "印象派",
+        "Cubism": "キュビズム",
+        "Dadaism": "ダダイズム",
+        "Realism": "リアリズム"
+      }
+    },
+    "art:12": {
+      "question": "大理石の像「ダビデ」を彫刻したのは?",
+      "answers": {
+        "Bernini": "ベルニーニ",
+        "Michelangelo": "ミケランジェロ",
+        "Rodin": "ロダン",
+        "Donatello": "ドナテロ"
+      }
+    },
+    "art:13": {
+      "question": "原色は次のうちどれですか?",
+      "answers": {
+        "Green": "緑",
+        "Orange": "オレンジ",
+        "Red": "赤",
+        "Purple": "パープル"
+      }
+    },
+    "art:14": {
+      "question": "「ゲルニカ」はどの画家の有名な作品ですか?",
+      "answers": {
+        "Dalí": "ダリ",
+        "Picasso": "ピカソ",
+        "Miró": "ミロ",
+        "Goya": "ゴヤ"
+      }
+    },
+    "art:15": {
+      "question": "濡れた漆喰に絵を描く技法を何というのでしょうか？",
+      "answers": {
+        "Fresco": "フレスコ画",
+        "Collage": "コラージュ",
+        "Etching": "エッチング",
+        "Mosaic": "モザイク"
+      }
+    },
+    "art:16": {
+      "question": "「考える人」の彫刻は何によって作成されましたか?",
+      "answers": {
+        "Rodin": "ロダン",
+        "Michelangelo": "ミケランジェロ",
+        "Bernini": "ベルニーニ",
+        "Calder": "カルダー"
+      }
+    },
+    "art:17": {
+      "question": "油絵の具を塗るために伝統的に使用されている道具はどれですか?",
+      "answers": {
+        "Chisel": "ノミ",
+        "Brush": "ブラシ",
+        "Pen": "ペン",
+        "Roller": "ローラー"
+      }
+    },
+    "art:18": {
+      "question": "「ひまわり」は?による有名な絵画シリーズです。",
+      "answers": {
+        "Monet": "モネ",
+        "Van Gogh": "ゴッホ",
+        "Cézanne": "セザンヌ",
+        "Gauguin": "ゴーギャン"
+      }
+    },
+    "art:19": {
+      "question": "「最後の晩餐」の壁画は誰によって描かれましたか?",
+      "answers": {
+        "Raphael": "ラファエル",
+        "Leonardo da Vinci": "レオナルド・ダ・ヴィンチ",
+        "Caravaggio": "カラヴァッジョ",
+        "Titian": "ティツィアーノ"
+      }
+    },
+    "art:20": {
+      "question": "「ドリップ」ペインティングで有名なアーティストは誰ですか?",
+      "answers": {
+        "Jackson Pollock": "ジャクソン ポロック",
+        "Rothko": "ロスコ",
+        "Warhol": "ウォーホル",
+        "Dalí": "ダリ"
+      }
+    },
+    "art:21": {
+      "question": "「記憶の永続性」（溶ける時計）は何者ですか？",
+      "answers": {
+        "Magritte": "マグリット",
+        "Dalí": "ダリ",
+        "Miró": "ミロ",
+        "Ernst": "エルンスト"
+      }
+    },
+    "art:22": {
+      "question": "フリーダ カーロは彼女で最もよく知られていますか?",
+      "answers": {
+        "Landscapes": "風景",
+        "Self-portraits": "セルフポートレート",
+        "Sculptures": "彫刻",
+        "Murals only": "壁画のみ"
+      }
+    },
+    "art:23": {
+      "question": "自由の女神はアメリカからの贈り物ですか?",
+      "answers": {
+        "Britain": "英国",
+        "France": "フランス",
+        "Spain": "スペイン",
+        "Italy": "イタリア"
+      }
+    },
+    "art:24": {
+      "question": "赤と黄色の絵の具を混ぜると？",
+      "answers": {
+        "Green": "緑",
+        "Orange": "オレンジ",
+        "Purple": "パープル",
+        "Brown": "ブラウン"
+      }
+    },
+    "art:25": {
+      "question": "赤と青の絵の具を混ぜるとどうなりますか?",
+      "answers": {
+        "Green": "緑",
+        "Purple": "パープル",
+        "Orange": "オレンジ",
+        "Brown": "ブラウン"
+      }
+    },
+    "art:26": {
+      "question": "ペイントの三原色は赤、黄色、そして?",
+      "answers": {
+        "Green": "緑",
+        "Blue": "ブルー",
+        "Orange": "オレンジ",
+        "Purple": "パープル"
+      }
+    },
+    "art:27": {
+      "question": "睡蓮を描くことで有名な画家は誰ですか?",
+      "answers": {
+        "Monet": "モネ",
+        "Manet": "マネ",
+        "Degas": "ドガ",
+        "Renoir": "ルノワール"
+      }
+    },
+    "art:28": {
+      "question": "ミケランジェロの有名なフィレンツェの彫像は?",
+      "answers": {
+        "Caesar": "シーザー",
+        "David": "デビッド",
+        "Apollo": "アポロ",
+        "Hercules": "ヘラクレス"
+      }
+    },
+    "art:29": {
+      "question": "美しい手書きの芸術を何といいますか？",
+      "answers": {
+        "Origami": "折り紙",
+        "Calligraphy": "カリグラフィー",
+        "Etching": "エッチング",
+        "Collage": "コラージュ"
+      }
+    },
+    "art:30": {
+      "question": "人物を描いた絵は何ですか?",
+      "answers": {
+        "Landscape": "風景",
+        "Portrait": "ポートレート",
+        "Still life": "静物画",
+        "Mural": "壁画"
+      }
+    },
+    "art:31": {
+      "question": "果物や物体の絵は?",
+      "answers": {
+        "Portrait": "ポートレート",
+        "Still life": "静物画",
+        "Landscape": "風景",
+        "Mural": "壁画"
+      }
+    },
+    "art:32": {
+      "question": "古典的な彫像は伝統的に何から彫られていますか?",
+      "answers": {
+        "Marble": "大理石",
+        "Plastic": "プラスチック",
+        "Paper": "紙",
+        "Glass": "ガラス"
+      }
+    },
+    "art:33": {
+      "question": "アンディ ウォーホルはどの運動のリーダーでしたか?",
+      "answers": {
+        "Pop Art": "ポップアート",
+        "Cubism": "キュビズム",
+        "Baroque": "バロック様式",
+        "Gothic": "ゴシック"
+      }
+    },
+    "art:34": {
+      "question": "フィンセント・ファン・ゴッホはどこの国の出身ですか?",
+      "answers": {
+        "France": "フランス",
+        "Netherlands": "オランダ",
+        "Italy": "イタリア",
+        "Spain": "スペイン"
+      }
+    },
+    "art:35": {
+      "question": "パブロ・ピカソはどこの国の出身ですか?",
+      "answers": {
+        "Italy": "イタリア",
+        "Spain": "スペイン",
+        "France": "フランス",
+        "Portugal": "ポルトガル"
+      }
+    },
+    "art:36": {
+      "question": "レオナルド・ダ・ヴィンチはどこの国の出身ですか?",
+      "answers": {
+        "France": "フランス",
+        "Italy": "イタリア",
+        "Spain": "スペイン",
+        "Greece": "ギリシャ"
+      }
+    },
+    "art:37": {
+      "question": "ルーブル美術館はどの都市にありますか?",
+      "answers": {
+        "Rome": "ローマ",
+        "Paris": "パリ",
+        "Madrid": "マドリッド",
+        "London": "ロンドン"
+      }
+    },
+    "art:38": {
+      "question": "材料を表面に貼り付けてアートを作成することを何といいますか?",
+      "answers": {
+        "Fresco": "フレスコ画",
+        "Collage": "コラージュ",
+        "Etching": "エッチング",
+        "Casting": "キャスティング"
+      }
+    },
+    "art:39": {
+      "question": "印象派はどこの国で始まりましたか?",
+      "answers": {
+        "Italy": "イタリア",
+        "France": "フランス",
+        "Germany": "ドイツ",
+        "Spain": "スペイン"
+      }
+    },
+    "art:40": {
+      "question": "絵の具の原色ではないものはどれですか?",
+      "answers": {
+        "Red": "赤",
+        "Blue": "ブルー",
+        "Yellow": "黄色",
+        "Green": "緑"
+      }
+    },
+    "art:41": {
+      "question": "ミケランジェロの最も有名な天井はどの礼拝堂にありますか?",
+      "answers": {
+        "Sistine Chapel": "システィーナ礼拝堂",
+        "King's Chapel": "キングス チャペル",
+        "St Paul's": "セントポールズ",
+        "Notre-Dame": "ノートルダム"
+      }
+    },
+    "art:42": {
+      "question": "「ブルーピリオド」を持ったアーティストは誰ですか?",
+      "answers": {
+        "Picasso": "ピカソ",
+        "Monet": "モネ",
+        "Rembrandt": "レンブラント",
+        "Turner": "ターナー"
+      }
+    },
+    "art:43": {
+      "question": "レンブラントはどこの国の巨匠画家でしたか?",
+      "answers": {
+        "Netherlands": "オランダ",
+        "France": "フランス",
+        "Italy": "イタリア",
+        "England": "イングランド"
+      }
+    },
+    "art:44": {
+      "question": "「夜警」を描いたのは?",
+      "answers": {
+        "Vermeer": "フェルメール",
+        "Rembrandt": "レンブラント",
+        "Rubens": "ルーベンス",
+        "Hals": "ハルス"
+      }
+    },
+    "art:45": {
+      "question": "絵画、彫刻、ドローイングはどのような種類ですか?",
+      "answers": {
+        "Music": "音楽",
+        "Visual arts": "ビジュアル アート",
+        "Literature": "文学",
+        "Dance": "ダンス"
+      }
+    },
+    "art:46": {
+      "question": "水彩画の種類は何ですか?",
+      "answers": {
+        "Sculpture": "彫刻",
+        "Paint": "ペイント",
+        "Camera": "カメラ",
+        "Clay": "粘土"
+      }
+    },
+    "art:47": {
+      "question": "「イーゼル」は使い慣れていますか?",
+      "answers": {
+        "Mix clay": "粘土を混ぜる",
+        "Hold a canvas while painting": "ペイント中にキャンバスを持ちます",
+        "Cut marble": "カット大理石",
+        "Frame photos": "フレーム写真"
+      }
+    },
+    "art:48": {
+      "question": "モナリザは神秘的なことで有名ですか?",
+      "answers": {
+        "Hat": "帽子",
+        "Smile": "スマイル",
+        "Dress": "ドレス",
+        "Crown": "クラウン"
+      }
+    },
+    "art:49": {
+      "question": "バンクシーで知られるアーティストは?",
+      "answers": {
+        "Classical portraits": "古典的な肖像画",
+        "Street art": "ストリート アート",
+        "Marble statues": "大理石の彫像",
+        "Frescoes": "フレスコ画"
+      }
+    },
+    "art:50": {
+      "question": "光の原色は赤、緑、そして?",
+      "answers": {
+        "Yellow": "黄色",
+        "Blue": "ブルー",
+        "Purple": "パープル",
+        "White": "ホワイト"
+      }
+    },
+    "art:51": {
+      "question": "キュビズムは主題を次のように表現しますか?",
+      "answers": {
+        "Realistic detail": "リアルなディテール",
+        "Geometric shapes": "幾何学的形状",
+        "Only circles": "サークルのみ",
+        "Photographs": "写真"
+      }
+    },
+    "art:52": {
+      "question": "「壁画」とは、壁に描かれた絵画のことですか?",
+      "answers": {
+        "Small canvas": "小さなキャンバス",
+        "Wall": "壁",
+        "Plate": "プレート",
+        "Paper": "紙"
+      }
+    },
+    "art:53": {
+      "question": "「ヴィーナスの誕生」を描いたのは誰ですか?",
+      "answers": {
+        "Botticelli": "ボッティチェリ",
+        "Raphael": "ラファエル",
+        "Giotto": "ジョット",
+        "Titian": "ティツィアーノ"
+      }
+    },
+    "art:54": {
+      "question": "ルネサンス芸術の時代は何年に始まりましたか?",
+      "answers": {
+        "France": "フランス",
+        "Italy": "イタリア",
+        "England": "イングランド",
+        "Germany": "ドイツ"
+      }
+    },
+    "art:55": {
+      "question": "サルバドール・ダリは、独特の作品で知られていました?",
+      "answers": {
+        "Beard": "ひげ",
+        "Moustache": "口ひげ",
+        "Hat": "帽子",
+        "Glasses": "メガネ"
+      }
+    },
+    "art:56": {
+      "question": "陶器は主に何から作られますか?",
+      "answers": {
+        "Metal": "金属",
+        "Clay": "粘土",
+        "Glass": "ガラス",
+        "Wood": "木材"
+      }
+    },
+    "art:57": {
+      "question": "暖色系の色はどれですか?",
+      "answers": {
+        "Blue": "ブルー",
+        "Red": "赤",
+        "Green": "緑",
+        "Purple": "パープル"
+      }
+    },
+    "art:58": {
+      "question": "クールな色はどれですか?",
+      "answers": {
+        "Red": "赤",
+        "Orange": "オレンジ",
+        "Blue": "ブルー",
+        "Yellow": "黄色"
+      }
+    },
+    "art:59": {
+      "question": "バレエ ダンサーを描いた画家で有名なのは誰ですか?",
+      "answers": {
+        "Degas": "ドガ",
+        "Monet": "モネ",
+        "Cézanne": "セザンヌ",
+        "Seurat": "スーラ"
+      }
+    },
+    "art:60": {
+      "question": "「点描」（点による絵画）と関係があるのでしょうか？",
+      "answers": {
+        "Seurat": "スーラ",
+        "Van Gogh": "ゴッホ",
+        "Klimt": "クリムト",
+        "Munch": "ムンク"
+      }
+    },
+    "art:61": {
+      "question": "グスタフ クリムトの「接吻」では、有名な言葉がたくさん使われています。",
+      "answers": {
+        "Silver": "シルバー",
+        "Gold": "ゴールド",
+        "Blue": "ブルー",
+        "Black": "ブラック"
+      }
+    },
+    "art:62": {
+      "question": "簡単なスケッチは通常、? を使用して作成されます。",
+      "answers": {
+        "Chisel": "ノミ",
+        "Pencil": "鉛筆",
+        "Roller": "ローラー",
+        "Clay": "粘土"
+      }
+    },
+    "art:63": {
+      "question": "抽象芸術は一般的にそうしようとしませんか?",
+      "answers": {
+        "Use color": "色を使用する",
+        "Represent reality exactly": "現実を正確に表現",
+        "Use shapes": "シェイプを使用する",
+        "Be creative": "クリエイティブになる"
+      }
+    },
+    "art:64": {
+      "question": "ゴッホをテーマにした美術館がある都市はどこですか?",
+      "answers": {
+        "Amsterdam": "アムステルダム",
+        "London": "ロンドン",
+        "Rome": "ローマ",
+        "Madrid": "マドリッド"
+      }
+    },
+    "art:65": {
+      "question": "オーギュスト・ロダンは主に?",
+      "answers": {
+        "Painter": "画家",
+        "Sculptor": "彫刻家",
+        "Photographer": "写真家",
+        "Architect": "建築家"
+      }
+    },
+    "art:66": {
+      "question": "MoMA (近代美術館) は何にありますか?",
+      "answers": {
+        "Paris": "パリ",
+        "New York": "ニューヨーク",
+        "Rome": "ローマ",
+        "Tokyo": "東京"
+      }
+    },
+    "art:67": {
+      "question": "プラド美術館はどこにありますか?",
+      "answers": {
+        "Madrid": "マドリッド",
+        "Paris": "パリ",
+        "Rome": "ローマ",
+        "London": "ロンドン"
+      }
+    },
+    "art:68": {
+      "question": "「キアロスクーロ」とは、?の強い使用法を指します。",
+      "answers": {
+        "Bright colors": "明るい色",
+        "Light and shadow": "光と影",
+        "Straight lines": "直線",
+        "Dots": "ドット"
+      }
+    },
+    "art:69": {
+      "question": "絵画用キャンバスは通常どのような形をしていますか?",
+      "answers": {
+        "Round": "ラウンド",
+        "Rectangular": "長方形",
+        "Triangular": "三角形",
+        "Star-shaped": "星型"
+      }
+    },
+    "art:70": {
+      "question": "自画像は表示されますか?",
+      "answers": {
+        "The artist themselves": "アーティスト自身",
+        "A landscape": "風景",
+        "A building": "建物",
+        "An animal": "動物"
+      }
+    },
+    "art:71": {
+      "question": "ミケランジェロ、レオナルド、ラファエロは?に属します。",
+      "answers": {
+        "Baroque": "バロック様式",
+        "Renaissance": "ルネッサンス",
+        "Modern era": "現代",
+        "Gothic": "ゴシック"
+      }
+    },
+    "art:72": {
+      "question": "シュルレアリスムでよく描かれる？",
+      "answers": {
+        "Everyday realism": "日常のリアリズム",
+        "Dreamlike, strange scenes": "夢のような奇妙な光景",
+        "Only portraits": "ポートレートのみ",
+        "Pure geometry": "純粋なジオメトリ"
+      }
+    },
+    "art:73": {
+      "question": "赤と白を混ぜると何色になりますか？",
+      "answers": {
+        "Blue": "青",
+        "Pink": "ピンク",
+        "Green": "緑",
+        "Brown": "茶色"
+      }
+    },
+    "art:74": {
+      "question": "座って考えている人の有名な像は何と呼ばれますか?",
+      "answers": {
+        "The Dreamer": "夢想家",
+        "The Thinker": "考える人",
+        "The Watcher": "ウォッチャー",
+        "The Sitter": "シッター"
+      }
+    },
+    "art:75": {
+      "question": "アートとしての写真は、?",
+      "answers": {
+        "Brush": "ブラシ",
+        "Camera": "カメラ",
+        "Chisel": "ノミ",
+        "Loom": "織機"
+      }
+    },
+    "art:76": {
+      "question": "「ヴィンセント」はどの画家のファーストネームですか?",
+      "answers": {
+        "Monet": "モネ",
+        "Van Gogh": "ゴッホ",
+        "Picasso": "ピカソ",
+        "Dalí": "ダリ"
+      }
+    },
+    "art:77": {
+      "question": "ウフィツィ美術館はどこの国にありますか?",
+      "answers": {
+        "Italy": "イタリア",
+        "France": "フランス",
+        "Spain": "スペイン",
+        "Greece": "ギリシャ"
+      }
+    },
+    "art:78": {
+      "question": "折り紙は芸術ですか?",
+      "answers": {
+        "Paper folding": "紙の折り方",
+        "Metalwork": "金属加工品",
+        "Glassblowing": "吹きガラス",
+        "Painting": "絵画"
+      }
+    },
+    "art:79": {
+      "question": "生涯にわたって多くの自画像を描いた芸術家は誰ですか?",
+      "answers": {
+        "Rembrandt": "レンブラント",
+        "Botticelli": "ボッティチェリ",
+        "Raphael": "ラファエル",
+        "Giotto": "ジョット"
+      }
+    },
+    "art:80": {
+      "question": "「パレット」とは何ですか?",
+      "answers": {
+        "Hold and mix paints": "絵の具を持って混ぜる",
+        "Cut wood": "木材を切る",
+        "Frame art": "フレームアート",
+        "Fire clay": "耐火粘土"
+      }
+    },
+    "art:81": {
+      "question": "「神奈川沖浪裏」は日本で有名ですか？",
+      "answers": {
+        "Sculpture": "彫刻",
+        "Woodblock print": "木版画",
+        "Oil painting": "油絵",
+        "Photograph": "写真"
+      }
+    },
+    "art:82": {
+      "question": "一般的な彫刻材料はどれですか?",
+      "answers": {
+        "Bronze": "ブロンズ",
+        "Watercolor": "水彩",
+        "Charcoal": "木炭",
+        "Ink": "インク"
+      }
+    },
+    "art:83": {
+      "question": "「消失点」は何で使用されますか?",
+      "answers": {
+        "Music": "音楽",
+        "Perspective drawing": "パース図",
+        "Casting": "キャスティング",
+        "Weaving": "織り"
+      }
+    },
+    "art:84": {
+      "question": "レオナルド・ダ・ヴィンチは?としても有名でした。",
+      "answers": {
+        "Athlete": "アスリート",
+        "Inventor": "発明者",
+        "Singer": "歌手",
+        "Sailor": "セーラー"
+      }
+    },
+    "art:85": {
+      "question": "「ギャラリー」とは何かをする場所ですか？",
+      "answers": {
+        "Store food": "食料を保管する",
+        "Display artworks": "作品を展示する",
+        "Repair cars": "車を修理する",
+        "Grow plants": "植物を育てる"
+      }
+    },
+    "art:86": {
+      "question": "バロック芸術は次のようなもので知られていますか?",
+      "answers": {
+        "Minimal and plain": "ミニマルかつプレーン",
+        "Dramatic and ornate": "ドラマチックで華やか",
+        "Black and white only": "白黒のみ",
+        "Purely geometric": "純粋に幾何学模様"
+      }
+    },
+    "art:87": {
+      "question": "有名なアートオークションハウスはどこですか?",
+      "answers": {
+        "Sotheby's": "サザビーズ",
+        "Nasdaq": "ナスダック",
+        "Airbnb": "Airbnb",
+        "Netflix": "Netflix"
+      }
+    },
+    "art:88": {
+      "question": "「ミロのヴィーナス」は古代の有名な作品ですか？",
+      "answers": {
+        "Painting": "絵画",
+        "Statue": "像",
+        "Vase": "花瓶",
+        "Mosaic": "モザイク"
+      }
+    },
+    "art:89": {
+      "question": "ステンド グラス アートはよく見られますか?",
+      "answers": {
+        "Cathedrals": "大聖堂",
+        "Kitchens": "キッチン",
+        "Garages": "ガレージ",
+        "Stadiums": "スタジアム"
+      }
+    },
+    "art:90": {
+      "question": "木炭は通常何に使用されますか?",
+      "answers": {
+        "Painting walls": "壁の塗装",
+        "Drawing/sketching": "描画/スケッチ",
+        "Carving marble": "大理石の彫刻",
+        "Printing": "印刷"
+      }
+    },
+    "art:91": {
+      "question": "テートはどの都市にある美術館ですか?",
+      "answers": {
+        "Paris": "パリ",
+        "London": "ロンドン",
+        "Madrid": "マドリッド",
+        "Rome": "ローマ"
+      }
+    },
+    "art:92": {
+      "question": "「彫刻」を最もよく表すのはどれですか?",
+      "answers": {
+        "A 2D painting": "2D 絵画",
+        "A 3D work of art": "3D アート作品",
+        "A song": "歌",
+        "A poem": "詩"
+      }
+    },
+    "art:93": {
+      "question": "「現代アート」とは、一般的には大まかに言って、何世紀頃の芸術を指しますか？",
+      "answers": {
+        "Ancient times": "古代",
+        "The late 1800s onward": "1800 年代後半以降",
+        "Medieval times": "中世",
+        "Prehistory": "先史時代"
+      }
+    },
+    "art:94": {
+      "question": "タヒチの絵画に関係のあるアーティストは誰ですか?",
+      "answers": {
+        "Gauguin": "ゴーギャン",
+        "Monet": "モネ",
+        "Rembrandt": "レンブラント",
+        "Vermeer": "フェルメール"
+      }
+    },
+    "art:95": {
+      "question": "フレスコ画が描かれていますか?",
+      "answers": {
+        "Canvas": "キャンバス",
+        "Wet plaster": "湿った石膏",
+        "Paper": "紙",
+        "Wood panel": "ウッドパネル"
+      }
+    },
+    "art:96": {
+      "question": "システィーナ礼拝堂はどこにありますか?",
+      "answers": {
+        "Vatican City": "バチカン市国",
+        "Florence": "フィレンツェ",
+        "Venice": "ヴェネツィア",
+        "Naples": "ナポリ"
+      }
+    },
+    "art:97": {
+      "question": "アート スタイルは次のうちどれですか?",
+      "answers": {
+        "Impressionism": "印象派",
+        "Photosynthesis": "光合成",
+        "Gravity": "重力",
+        "Inflation": "インフレ"
+      }
+    },
+    "art:98": {
+      "question": "彫刻を作る人は何ですか?",
+      "answers": {
+        "Painter": "画家",
+        "Sculptor": "彫刻家",
+        "Novelist": "小説家",
+        "Composer": "作曲家"
+      }
+    },
+    "art:99": {
+      "question": "印象派と名付けられた「印象、日の出」を描いたのは誰ですか?",
+      "answers": {
+        "Monet": "モネ",
+        "Manet": "マネ",
+        "Renoir": "ルノワール",
+        "Degas": "ドガ"
+      }
+    },
+    "history:0": {
+      "question": "第二次世界大戦が終わったのは何年ですか?",
+      "answers": {
+        "1918": "1918",
+        "1943": "1943",
+        "1945": "1945",
+        "1950": "1950"
+      }
+    },
+    "history:1": {
+      "question": "アメリカ合衆国の初代大統領は誰ですか?",
+      "answers": {
+        "Lincoln": "リンカーン",
+        "Washington": "ワシントン",
+        "Jefferson": "ジェファーソン",
+        "Adams": "アダムス"
+      }
+    },
+    "history:2": {
+      "question": "大ピラミッドはどの古代文明によって建設されましたか?",
+      "answers": {
+        "Romans": "ローマ人",
+        "Greeks": "ギリシャ人",
+        "Egyptians": "エジプト人",
+        "Mayans": "マヤ人"
+      }
+    },
+    "history:3": {
+      "question": "ベルリンの壁が崩壊したのは何年ですか?",
+      "answers": {
+        "1979": "1979",
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991"
+      }
+    },
+    "history:4": {
+      "question": "ソクラテスの生徒だった哲学者は誰ですか?",
+      "answers": {
+        "Aristotle": "アリストテレス",
+        "Plato": "プラトン",
+        "Pythagoras": "ピタゴラス",
+        "Homer": "ホーマー"
+      }
+    },
+    "history:5": {
+      "question": "1912 年に氷山に衝突して沈没した船はどれですか?",
+      "answers": {
+        "Lusitania": "ルシタニア",
+        "Titanic": "タイタニック",
+        "Bismarck": "ビスマルク",
+        "Mayflower": "メイフラワー"
+      }
+    },
+    "history:6": {
+      "question": "1492 年にアメリカ大陸に到達したのは誰ですか?",
+      "answers": {
+        "Magellan": "マゼラン",
+        "Columbus": "コロンバス",
+        "Vespucci": "ヴェスプッチ",
+        "Cook": "クック"
+      }
+    },
+    "history:7": {
+      "question": "フランス革命は何年に始まりましたか?",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1804": "1804",
+        "1815": "1815"
+      }
+    },
+    "history:8": {
+      "question": "チンギス カーンによって設立された帝国はどれですか?",
+      "answers": {
+        "Ottoman": "オットマン",
+        "Mongol": "モンゴル語",
+        "Persian": "ペルシア語",
+        "Roman": "ローマン"
+      }
+    },
+    "history:9": {
+      "question": "第二次世界大戦中にナチスドイツを率いたのは誰ですか?",
+      "answers": {
+        "Mussolini": "ムッソリーニ",
+        "Hitler": "ヒトラー",
+        "Stalin": "スターリン",
+        "Franco": "フランコ"
+      }
+    },
+    "history:10": {
+      "question": "コロッセオはどの都市にありますか?",
+      "answers": {
+        "Athens": "アテネ",
+        "Rome": "ローマ",
+        "Cairo": "カイロ",
+        "Istanbul": "イスタンブール"
+      }
+    },
+    "history:11": {
+      "question": "カエサルとマーク・アントニーと同盟を結んだエジプトの女王は誰ですか?",
+      "answers": {
+        "Nefertiti": "ネフェルティティ",
+        "Cleopatra": "クレオパトラ",
+        "Hatshepsut": "ハトシェプスト女王",
+        "Isis": "イシス"
+      }
+    },
+    "history:12": {
+      "question": "冷戦は主に米国との間で起きました。",
+      "answers": {
+        "China": "中国",
+        "USSR": "ソ連",
+        "Germany": "ドイツ",
+        "Japan": "日本"
+      }
+    },
+    "history:13": {
+      "question": "人類が初めて月面に着陸したのは何年ですか?",
+      "answers": {
+        "1959": "1959",
+        "1965": "1965",
+        "1969": "1969",
+        "1972": "1972"
+      }
+    },
+    "history:14": {
+      "question": "ルネッサンスはどこの国で始まりましたか?",
+      "answers": {
+        "France": "フランス",
+        "Italy": "イタリア",
+        "England": "イングランド",
+        "Spain": "スペイン"
+      }
+    },
+    "history:15": {
+      "question": "アメリカ南北戦争は北部と?の間で戦われました。",
+      "answers": {
+        "East": "東",
+        "South": "南",
+        "West": "西",
+        "Midwest": "中西部"
+      }
+    },
+    "history:16": {
+      "question": "民主主義を生み出した古代文明はどれですか?",
+      "answers": {
+        "Rome": "ローマ",
+        "Greece": "ギリシャ",
+        "Egypt": "エジプト",
+        "Persia": "ペルシャ"
+      }
+    },
+    "history:17": {
+      "question": "印刷機を発明したのは?",
+      "answers": {
+        "Newton": "ニュートン",
+        "Gutenberg": "グーテンベルク",
+        "Edison": "エジソン",
+        "Franklin": "フランクリン"
+      }
+    },
+    "history:18": {
+      "question": "古代の万里の長城はどこの国で建てられましたか?",
+      "answers": {
+        "India": "インド",
+        "China": "中国",
+        "Japan": "日本",
+        "Egypt": "エジプト"
+      }
+    },
+    "history:19": {
+      "question": "ベルリンに有名な胸像が展示されているエジプトの女王は誰ですか?",
+      "answers": {
+        "Cleopatra": "クレオパトラ",
+        "Nefertiti": "ネフェルティティ",
+        "Hatshepsut": "ハトシェプスト女王",
+        "Isis": "イシス"
+      }
+    },
+    "history:20": {
+      "question": "第一次世界大戦は何年に始まりましたか?",
+      "answers": {
+        "1912": "1912",
+        "1914": "1914",
+        "1918": "1918",
+        "1920": "1920"
+      }
+    },
+    "history:21": {
+      "question": "第一次世界大戦が終わったのは何年ですか?",
+      "answers": {
+        "1916": "1916",
+        "1918": "1918",
+        "1920": "1920",
+        "1922": "1922"
+      }
+    },
+    "history:22": {
+      "question": "ローマ帝国の中心はどの都市でしたか?",
+      "answers": {
+        "Athens": "アテネ",
+        "Rome": "ローマ",
+        "Cairo": "カイロ",
+        "Carthage": "カルタゴ"
+      }
+    },
+    "history:23": {
+      "question": "ジュリアス・シーザーは古代の指導者でしたか?",
+      "answers": {
+        "Greece": "ギリシャ",
+        "Rome": "ローマ",
+        "Egypt": "エジプト",
+        "Persia": "ペルシャ"
+      }
+    },
+    "history:24": {
+      "question": "米国独立宣言は署名されましたか?",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1800": "1800",
+        "1812": "1812"
+      }
+    },
+    "history:25": {
+      "question": "ナポレオン・ボナパルトはどの国の指導者でしたか?",
+      "answers": {
+        "Spain": "スペイン",
+        "France": "フランス",
+        "Italy": "イタリア",
+        "Russia": "ロシア"
+      }
+    },
+    "history:26": {
+      "question": "ナポレオンが敗北したのは有名ですか?",
+      "answers": {
+        "Hastings": "ヘイスティングス",
+        "Waterloo": "ウォータールー",
+        "Gettysburg": "ゲティスバーグ",
+        "Verdun": "ヴェルダン"
+      }
+    },
+    "history:27": {
+      "question": "ベルリンの壁が分割したのはどの都市ですか?",
+      "answers": {
+        "Munich": "ミュンヘン",
+        "Berlin": "ベルリン",
+        "Frankfurt": "フランクフルト",
+        "Vienna": "ウィーン"
+      }
+    },
+    "history:28": {
+      "question": "マチュピチュを築いたのはどの文明ですか?",
+      "answers": {
+        "Aztec": "アステカ",
+        "Inca": "インカ",
+        "Maya": "マヤ",
+        "Olmec": "オルメカ"
+      }
+    },
+    "history:29": {
+      "question": "ギザのピラミッドはどこにありますか?",
+      "answers": {
+        "Iraq": "イラク",
+        "Egypt": "エジプト",
+        "Sudan": "スーダン",
+        "Libya": "リビア"
+      }
+    },
+    "history:30": {
+      "question": "第二次世界大戦中、イギリスの首相を務めたのは誰ですか?",
+      "answers": {
+        "Chamberlain": "チェンバレン",
+        "Churchill": "チャーチル",
+        "Attlee": "アトリー",
+        "Thatcher": "サッチャー"
+      }
+    },
+    "history:31": {
+      "question": "タイタニック号が沈没したとき、どの都市に向かって航行していましたか?",
+      "answers": {
+        "London": "ロンドン",
+        "New York": "ニューヨーク",
+        "Boston": "ボストン",
+        "Halifax": "ハリファックス"
+      }
+    },
+    "history:32": {
+      "question": "最初の世界一周を率いた探検家は誰ですか?",
+      "answers": {
+        "Columbus": "コロンバス",
+        "Magellan": "マゼラン",
+        "Da Gama": "ダ ガマ",
+        "Cook": "クック"
+      }
+    },
+    "history:33": {
+      "question": "「ルネッサンス」という言葉は文字通りどういう意味ですか?",
+      "answers": {
+        "Rebirth": "復活",
+        "Revolution": "革命",
+        "Reform": "改革",
+        "Return": "戻る"
+      }
+    },
+    "history:34": {
+      "question": "古代エジプト人は使用して書きましたか?",
+      "answers": {
+        "Latin": "ラテン語",
+        "Hieroglyphics": "象形文字",
+        "Cyrillic": "キリル文字",
+        "Runes": "ルーン文字"
+      }
+    },
+    "history:35": {
+      "question": "現代の中心はオスマン帝国ですか?",
+      "answers": {
+        "Egypt": "エジプト",
+        "Turkey": "トルコ",
+        "Iran": "イラン",
+        "Greece": "ギリシャ"
+      }
+    },
+    "history:36": {
+      "question": "コンスタンティノープルはどの都市の古い名前ですか?",
+      "answers": {
+        "Athens": "アテネ",
+        "Istanbul": "イスタンブール",
+        "Rome": "ローマ",
+        "Cairo": "カイロ"
+      }
+    },
+    "history:37": {
+      "question": "1215 年に英国王の権力を制限した文書はどれですか?",
+      "answers": {
+        "Magna Carta": "マグナ カルタ",
+        "Bill of Rights": "権利章典",
+        "Constitution": "憲法",
+        "Domesday Book": "ドゥームズデイブック"
+      }
+    },
+    "history:38": {
+      "question": "産業革命はどの国で始まりましたか?",
+      "answers": {
+        "USA": "米国",
+        "Britain": "英国",
+        "France": "フランス",
+        "Germany": "ドイツ"
+      }
+    },
+    "history:39": {
+      "question": "1963 年に暗殺されたアメリカ大統領は誰でしょう?",
+      "answers": {
+        "Lincoln": "リンカーン",
+        "Kennedy": "ケネディ",
+        "Roosevelt": "ルーズベルト",
+        "Nixon": "ニクソン"
+      }
+    },
+    "history:40": {
+      "question": "1 ドル紙幣に描かれているアメリカ大統領は誰ですか?",
+      "answers": {
+        "Lincoln": "リンカーン",
+        "Washington": "ワシントン",
+        "Jefferson": "ジェファーソン",
+        "Franklin": "フランクリン"
+      }
+    },
+    "history:41": {
+      "question": "インドの非暴力独立運動を主導したのは誰ですか?",
+      "answers": {
+        "Nehru": "ネルー",
+        "Gandhi": "ガンジー",
+        "Bose": "ボーズ",
+        "Patel": "パテル"
+      }
+    },
+    "history:42": {
+      "question": "ベルリンの壁はどちら側によって建てられましたか?",
+      "answers": {
+        "West Germany": "西ドイツ",
+        "East Germany": "東ドイツ",
+        "France": "フランス",
+        "USA": "米国"
+      }
+    },
+    "history:43": {
+      "question": "ミイラ作りで有名な古代文明はどれですか?",
+      "answers": {
+        "Greek": "ギリシャ語",
+        "Egyptian": "エジプト人",
+        "Roman": "ローマン",
+        "Persian": "ペルシア語"
+      }
+    },
+    "history:44": {
+      "question": "黒死病は壊滅的なものでしたか?",
+      "answers": {
+        "War": "戦争",
+        "Plague": "ペスト",
+        "Famine": "飢餓",
+        "Earthquake": "地震"
+      }
+    },
+    "history:45": {
+      "question": "プロテスタントの宗教改革は何によって始められましたか?",
+      "answers": {
+        "Martin Luther": "マルティン・ルーサー",
+        "Henry VIII": "ヘンリー 8 世",
+        "Calvin": "カルビン",
+        "Pope Leo": "教皇レオ"
+      }
+    },
+    "history:46": {
+      "question": "古代オリンピックの起源は何ですか?",
+      "answers": {
+        "Rome": "ローマ",
+        "Greece": "ギリシャ",
+        "Egypt": "エジプト",
+        "Persia": "ペルシャ"
+      }
+    },
+    "history:47": {
+      "question": "最初に宇宙に行った人類は誰ですか?",
+      "answers": {
+        "Armstrong": "アームストロング",
+        "Gagarin": "ガガーリン",
+        "Glenn": "グレン",
+        "Aldrin": "アルドリン"
+      }
+    },
+    "history:48": {
+      "question": "ニール・アームストロングが最初の人でしたか?",
+      "answers": {
+        "Fly a plane": "飛行機を操縦する",
+        "Walk on the Moon": "月の上を歩く",
+        "Reach the South Pole": "南極点に到達する",
+        "Climb Everest": "エベレストに登る"
+      }
+    },
+    "history:49": {
+      "question": "ソビエト連邦 (USSR) が解体したのは何年ですか?",
+      "answers": {
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991",
+        "1993": "1993"
+      }
+    },
+    "history:50": {
+      "question": "米国独立宣言は主に?によって書かれました?",
+      "answers": {
+        "Washington": "ワシントン",
+        "Jefferson": "ジェファーソン",
+        "Franklin": "フランクリン",
+        "Adams": "アダムス"
+      }
+    },
+    "history:51": {
+      "question": "1620 年にピルグリムをアメリカに連れて行った船はどれですか?",
+      "answers": {
+        "Mayflower": "メイフラワー",
+        "Titanic": "タイタニック",
+        "Santa Maria": "サンタマリア",
+        "Beagle": "ビーグル"
+      }
+    },
+    "history:52": {
+      "question": "クリストファー・コロンブスはの旗の下で航海しましたか?",
+      "answers": {
+        "Portugal": "ポルトガル",
+        "Spain": "スペイン",
+        "Italy": "イタリア",
+        "England": "イングランド"
+      }
+    },
+    "history:53": {
+      "question": "フランス革命は?の襲撃から始まりました。",
+      "answers": {
+        "Louvre": "ルーブル美術館",
+        "Bastille": "バスティーユ",
+        "Versailles": "ベルサイユ",
+        "Notre-Dame": "ノートルダム"
+      }
+    },
+    "history:54": {
+      "question": "エジプトに今も残る古代の驚異はどれですか?",
+      "answers": {
+        "Great Pyramid of Giza": "ギザの大ピラミッド",
+        "Colosseum": "コロシアム",
+        "Parthenon": "パルテノン神殿",
+        "Taj Mahal": "タージ マハル"
+      }
+    },
+    "history:55": {
+      "question": "タージ マハルはどこの国にありますか?",
+      "answers": {
+        "Pakistan": "パキスタン",
+        "India": "インド",
+        "Iran": "イラン",
+        "Turkey": "トルコ"
+      }
+    },
+    "history:56": {
+      "question": "第二次世界大戦中にソ連を指導したのは誰ですか?",
+      "answers": {
+        "Lenin": "レーニン",
+        "Stalin": "スターリン",
+        "Khrushchev": "フルシチョフ",
+        "Gorbachev": "ゴルバチョフ"
+      }
+    },
+    "history:57": {
+      "question": "第二次世界大戦中、広島に原爆が投下されました。",
+      "answers": {
+        "Tokyo": "東京",
+        "Nagasaki": "長崎",
+        "Osaka": "大阪",
+        "Kyoto": "京都"
+      }
+    },
+    "history:58": {
+      "question": "国際連盟は?",
+      "answers": {
+        "EU": "EU",
+        "United Nations": "国連",
+        "NATO": "NATO",
+        "WHO": "誰"
+      }
+    },
+    "history:59": {
+      "question": "国連が設立されたのは何年ですか?",
+      "answers": {
+        "1919": "1919",
+        "1945": "1945",
+        "1950": "1950",
+        "1960": "1960"
+      }
+    },
+    "history:60": {
+      "question": "アレキサンダー大王はどの古代王国の出身ですか?",
+      "answers": {
+        "Rome": "ローマ",
+        "Macedonia": "マケドニア",
+        "Egypt": "エジプト",
+        "Persia": "ペルシャ"
+      }
+    },
+    "history:61": {
+      "question": "古代スパルタがあった国はどこですか?",
+      "answers": {
+        "Italy": "イタリア",
+        "Greece": "ギリシャ",
+        "Egypt": "エジプト",
+        "Turkey": "トルコ"
+      }
+    },
+    "history:62": {
+      "question": "冷戦は何年頃に終結しましたか?",
+      "answers": {
+        "1965": "1965",
+        "1975": "1975",
+        "1991": "1991",
+        "2001": "2001"
+      }
+    },
+    "history:63": {
+      "question": "ライト兄弟は?を発明したとされています。",
+      "answers": {
+        "Car": "車",
+        "Airplane": "飛行機",
+        "Telephone": "電話",
+        "Radio": "ラジオ"
+      }
+    },
+    "history:64": {
+      "question": "第二次世界大戦の D デイ上陸作戦が行われたのは?",
+      "answers": {
+        "Italy": "イタリア",
+        "Normandy, France": "フランス、ノルマンディー",
+        "Germany": "ドイツ",
+        "Poland": "ポーランド"
+      }
+    },
+    "history:65": {
+      "question": "百年戦争は主にイギリスと?の間で行われました。",
+      "answers": {
+        "Spain": "スペイン",
+        "France": "フランス",
+        "Germany": "ドイツ",
+        "Italy": "イタリア"
+      }
+    },
+    "history:66": {
+      "question": "1980 年代の英国の「鉄の女」首相は誰ですか?",
+      "answers": {
+        "Elizabeth II": "エリザベス 2 世",
+        "Thatcher": "サッチャー",
+        "May": "5月",
+        "Merkel": "メルケル首相"
+      }
+    },
+    "history:67": {
+      "question": "古代都市ポンペイを破壊したのは?",
+      "answers": {
+        "A flood": "洪水",
+        "A volcano (Vesuvius)": "火山 (ヴェスヴィオ山)",
+        "An earthquake": "地震",
+        "A war": "戦争"
+      }
+    },
+    "history:68": {
+      "question": "ファラオによって統治された古代の国はどこですか?",
+      "answers": {
+        "Greece": "ギリシャ",
+        "Egypt": "エジプト",
+        "Rome": "ローマ",
+        "Persia": "ペルシャ"
+      }
+    },
+    "history:69": {
+      "question": "クリミア戦争に従軍した有名な看護師は誰ですか?",
+      "answers": {
+        "Curie": "キュリー",
+        "Nightingale": "ナイチンゲール",
+        "Earhart": "イアハート",
+        "Keller": "ケラー"
+      }
+    },
+    "history:70": {
+      "question": "ルネッサンスといえばイタリアのどの都市と最も関係があるでしょうか?",
+      "answers": {
+        "Milan": "ミラノ",
+        "Florence": "フィレンツェ",
+        "Naples": "ナポリ",
+        "Turin": "トリノ"
+      }
+    },
+    "history:71": {
+      "question": "ノーベル賞を受賞した最初の女性は誰ですか?",
+      "answers": {
+        "Curie": "キュリー",
+        "Franklin": "フランクリン",
+        "Meitner": "マイトナー",
+        "Lovelace": "ラブレス"
+      }
+    },
+    "history:72": {
+      "question": "バイキングスの出身地は?",
+      "answers": {
+        "Scandinavia": "スカンジナビア",
+        "Spain": "スペイン",
+        "Greece": "ギリシャ",
+        "Egypt": "エジプト"
+      }
+    },
+    "history:73": {
+      "question": "ロンドン大火は何年に発生しましたか?",
+      "answers": {
+        "1620": "1620",
+        "1666": "1666",
+        "1700": "1700",
+        "1750": "1750"
+      }
+    },
+    "history:74": {
+      "question": "大恐慌の始まりとなったウォール街の暴落は何ですか?",
+      "answers": {
+        "1919": "1919 年",
+        "1929": "1929",
+        "1939": "1939 年",
+        "1949": "1949"
+      }
+    },
+    "history:75": {
+      "question": "ソ連の改革「グラスノスチ」と「ペレストロイカ」を導入したのは誰ですか?",
+      "answers": {
+        "Stalin": "スターリン",
+        "Gorbachev": "ゴルバチョフ",
+        "Lenin": "レーニン",
+        "Putin": "プーチン大統領"
+      }
+    },
+    "history:76": {
+      "question": "マグナカルタはどの国で署名されましたか?",
+      "answers": {
+        "France": "フランス",
+        "England": "イングランド",
+        "Italy": "イタリア",
+        "Spain": "スペイン"
+      }
+    },
+    "history:77": {
+      "question": "1498 年に海路でインドに到達した探検家は誰でしょう?",
+      "answers": {
+        "Columbus": "コロンバス",
+        "Vasco da Gama": "バスコ ダ ガマ",
+        "Magellan": "マゼラン",
+        "Cook": "クック"
+      }
+    },
+    "history:78": {
+      "question": "古代マヤ人は主にどの地域に住んでいましたか?",
+      "answers": {
+        "Central America": "中央アメリカ",
+        "North Africa": "北アフリカ",
+        "Southeast Asia": "東南アジア",
+        "Northern Europe": "北欧"
+      }
+    },
+    "history:79": {
+      "question": "アステカ文明は主に現代に位置していましたか?",
+      "answers": {
+        "Peru": "ペルー",
+        "Mexico": "メキシコ",
+        "Brazil": "ブラジル",
+        "Chile": "チリ"
+      }
+    },
+    "history:80": {
+      "question": "冷戦時代の宇宙開発競争は、宇宙への着陸で終わったことは有名です。",
+      "answers": {
+        "Sun": "日",
+        "Moon": "月",
+        "Mars": "火星",
+        "Venus": "金星"
+      }
+    },
+    "history:81": {
+      "question": "エッフェル塔は 1889 年の万国博覧会のために建てられました?",
+      "answers": {
+        "London": "ロンドン",
+        "Paris": "パリ",
+        "Rome": "ローマ",
+        "Berlin": "ベルリン"
+      }
+    },
+    "history:82": {
+      "question": "「95 ヶ条の論文」を書いたのは誰ですか?",
+      "answers": {
+        "Calvin": "カルビン",
+        "Martin Luther": "マルティン・ルーサー",
+        "Erasmus": "エラスムス",
+        "Henry VIII": "ヘンリー 8 世"
+      }
+    },
+    "history:83": {
+      "question": "広範な塹壕戦が行われた戦争 (1914 ～ 1918 年) はどれですか?",
+      "answers": {
+        "WWII": "第二次世界大戦",
+        "WWI": "第一次世界大戦",
+        "Cold War": "冷戦",
+        "Napoleonic Wars": "ナポレオン戦争"
+      }
+    },
+    "history:84": {
+      "question": "アメリカ南北戦争が終わったのは何年ですか?",
+      "answers": {
+        "1776": "1776",
+        "1812": "1812",
+        "1865": "1865",
+        "1901": "1901"
+      }
+    },
+    "history:85": {
+      "question": "ローマの初代皇帝は誰ですか?",
+      "answers": {
+        "Julius Caesar": "ジュリアス・シーザー",
+        "Augustus": "オーガスタス",
+        "Nero": "ネロ",
+        "Constantine": "コンスタンティン"
+      }
+    },
+    "history:86": {
+      "question": "ヨーロッパを繋いだシルクロード?",
+      "answers": {
+        "Africa": "アフリカ",
+        "Asia": "アジア",
+        "America": "アメリカ",
+        "Australia": "オーストラリア"
+      }
+    },
+    "history:87": {
+      "question": "自由の女神をアメリカに贈った国はどこですか?",
+      "answers": {
+        "UK": "英国",
+        "France": "フランス",
+        "Spain": "スペイン",
+        "Germany": "ドイツ"
+      }
+    },
+    "history:88": {
+      "question": "中世は、? とも呼ばれます。",
+      "answers": {
+        "Middle Ages": "中世",
+        "Stone Age": "石器時代",
+        "Bronze Age": "青銅器時代",
+        "Space Age": "宇宙時代"
+      }
+    },
+    "history:89": {
+      "question": "キューバ革命を主導したのは誰ですか?",
+      "answers": {
+        "Guevara": "ゲバラ",
+        "Castro": "カストロ",
+        "Batista": "バティスタ",
+        "Allende": "アジェンデ"
+      }
+    },
+    "history:90": {
+      "question": "最初に原子爆弾を製造した国はどこですか?",
+      "answers": {
+        "Germany": "ドイツ",
+        "USA": "米国",
+        "USSR": "ソ連",
+        "Japan": "日本"
+      }
+    },
+    "history:91": {
+      "question": "ルネサンスはどの時代の直後に起こりましたか?",
+      "answers": {
+        "Middle Ages": "中世",
+        "Modern era": "現代",
+        "Space Age": "宇宙時代",
+        "Industrial era": "産業時代"
+      }
+    },
+    "history:92": {
+      "question": "古代パルテノン神殿はどこにありますか?",
+      "answers": {
+        "Rome": "ローマ",
+        "Athens": "アテネ",
+        "Cairo": "カイロ",
+        "Istanbul": "イスタンブール"
+      }
+    },
+    "history:93": {
+      "question": "ペルセポリスはどの古代帝国の首都でしたか?",
+      "answers": {
+        "Roman": "ローマン",
+        "Persian": "ペルシア語",
+        "Greek": "ギリシャ語",
+        "Egyptian": "エジプト人"
+      }
+    },
+    "history:94": {
+      "question": "大航海時代、ヨーロッパ人は何を探していましたか?",
+      "answers": {
+        "The Moon": "月",
+        "New trade routes and lands": "新しい交易路と土地",
+        "Oil": "オイル",
+        "Electricity": "電気"
+      }
+    },
+    "history:95": {
+      "question": "1941 年、日本が攻撃したのはどのアメリカ海軍基地ですか?",
+      "answers": {
+        "San Diego": "サンディエゴ",
+        "Pearl Harbor": "真珠湾",
+        "Norfolk": "ノーフォーク",
+        "Guam": "グアム"
+      }
+    },
+    "history:96": {
+      "question": "ローマ数字の 100 は何ですか?",
+      "answers": {
+        "C": "C",
+        "D": "D",
+        "M": "M",
+        "L": "L"
+      }
+    },
+    "history:97": {
+      "question": "ロゼッタ ストーンが解読に役立った古代文字はどれですか?",
+      "answers": {
+        "Latin": "ラテン語",
+        "Egyptian hieroglyphs": "エジプトの象形文字",
+        "Runes": "ルーン文字",
+        "Sanskrit": "サンスクリット語"
+      }
+    },
+    "history:98": {
+      "question": "第二次世界大戦中のアメリカの将軍で、後にアメリカ大統領になったのは誰でしょう?",
+      "answers": {
+        "Patton": "パットン",
+        "Eisenhower": "アイゼンハワー",
+        "MacArthur": "マッカーサー",
+        "Marshall": "マーシャル"
+      }
+    },
+    "history:99": {
+      "question": "2022 年まで 70 年間英国に君臨した女王は誰でしょう?",
+      "answers": {
+        "Victoria": "ビクトリア",
+        "Elizabeth II": "エリザベス 2 世",
+        "Anne": "アン",
+        "Mary": "メアリー"
+      }
+    },
+    "science:0": {
+      "question": "水の化学式は何ですか?",
+      "answers": {
+        "CO2": "CO2",
+        "H2O": "H2O",
+        "O2": "O2",
+        "NaCl": "塩化ナトリウム"
+      }
+    },
+    "science:1": {
+      "question": "私たちの太陽系には惑星が何個ありますか?",
+      "answers": {
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      }
+    },
+    "science:2": {
+      "question": "植物は空気からどのようなガスを吸収しますか?",
+      "answers": {
+        "Oxygen": "酸素",
+        "Carbon dioxide": "二酸化炭素",
+        "Nitrogen": "窒素",
+        "Hydrogen": "水素"
+      }
+    },
+    "science:3": {
+      "question": "太陽に最も近い惑星はどれですか?",
+      "answers": {
+        "Venus": "金星",
+        "Mercury": "水星",
+        "Earth": "地球",
+        "Mars": "火星"
+      }
+    },
+    "science:4": {
+      "question": "細胞の動力源として知られているものは何ですか?",
+      "answers": {
+        "Nucleus": "核",
+        "Mitochondria": "ミトコンドリア",
+        "Ribosome": "リボソーム",
+        "Membrane": "メンブレン"
+      }
+    },
+    "science:5": {
+      "question": "金の元素記号は何ですか?",
+      "answers": {
+        "Go": "行く",
+        "Gd": "Gd",
+        "Au": "金",
+        "Ag": "銀"
+      }
+    },
+    "science:6": {
+      "question": "成人の体には骨が何本ありますか?",
+      "answers": {
+        "101": "101",
+        "150": "150",
+        "206": "206",
+        "300": "300"
+      }
+    },
+    "science:7": {
+      "question": "赤い惑星として知られている惑星はどれですか?",
+      "answers": {
+        "Venus": "金星",
+        "Mars": "火星",
+        "Jupiter": "ジュピター",
+        "Saturn": "土星"
+      }
+    },
+    "science:8": {
+      "question": "相対性理論を開発したのは誰ですか?",
+      "answers": {
+        "Newton": "ニュートン",
+        "Einstein": "アインシュタイン",
+        "Tesla": "テスラ",
+        "Darwin": "ダーウィン"
+      }
+    },
+    "science:9": {
+      "question": "物体を地球に向かって引き寄せる力は何ですか?",
+      "answers": {
+        "Magnetism": "磁性",
+        "Gravity": "重力",
+        "Friction": "摩擦",
+        "Inertia": "慣性"
+      }
+    },
+    "science:10": {
+      "question": "感染症と戦う血球はどれですか?",
+      "answers": {
+        "Red cells": "赤血球",
+        "White cells": "白セル",
+        "Platelets": "血小板",
+        "Plasma": "プラズマ"
+      }
+    },
+    "science:11": {
+      "question": "人体で最大の臓器は何ですか?",
+      "answers": {
+        "Liver": "肝臓",
+        "Skin": "スキン",
+        "Heart": "ハート",
+        "Brain": "脳"
+      }
+    },
+    "science:12": {
+      "question": "海面では、水は何度の温度 (°C) で沸騰しますか?",
+      "answers": {
+        "80": "80",
+        "90": "90",
+        "100": "100",
+        "120": "120"
+      }
+    },
+    "science:13": {
+      "question": "植物だけを食べる動物を何と呼びますか？",
+      "answers": {
+        "Carnivores": "肉食動物",
+        "Herbivores": "草食動物",
+        "Omnivores": "雑食動物",
+        "Predators": "捕食動物"
+      }
+    },
+    "science:14": {
+      "question": "太陽系で最大の惑星はどれですか?",
+      "answers": {
+        "Saturn": "土星",
+        "Jupiter": "ジュピター",
+        "Neptune": "ネプチューン",
+        "Earth": "地球"
+      }
+    },
+    "science:15": {
+      "question": "植物は太陽光を利用して食物を作りますか?",
+      "answers": {
+        "Respiration": "呼吸",
+        "Photosynthesis": "光合成",
+        "Digestion": "ダイジェスト",
+        "Fermentation": "発酵"
+      }
+    },
+    "science:16": {
+      "question": "酸素の元素記号は何ですか?",
+      "answers": {
+        "O": "O",
+        "Ox": "オックス",
+        "Og": "オグ",
+        "On": "オン"
+      }
+    },
+    "science:17": {
+      "question": "地球上で最も硬い天然物質は何ですか?",
+      "answers": {
+        "Gold": "ゴールド",
+        "Iron": "アイロン",
+        "Diamond": "ダイヤモンド",
+        "Quartz": "クォーツ"
+      }
+    },
+    "science:18": {
+      "question": "鉄の化学記号は何ですか?",
+      "answers": {
+        "Ir": "Ir",
+        "Fe": "フェ",
+        "In": "で",
+        "Io": "イオ"
+      }
+    },
+    "science:19": {
+      "question": "ナトリウムの元素記号は何ですか?",
+      "answers": {
+        "So": "それで",
+        "Sd": "SD",
+        "Na": "ナ",
+        "S": "S"
+      }
+    },
+    "science:20": {
+      "question": "昆虫の足は何本ありますか?",
+      "answers": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      }
+    },
+    "science:21": {
+      "question": "クモの足は何本ありますか?",
+      "answers": {
+        "6": "6",
+        "8": "8",
+        "10": "10",
+        "12": "12"
+      }
+    },
+    "science:22": {
+      "question": "原子の中心は何と呼ばれますか?",
+      "answers": {
+        "Electron": "電子",
+        "Nucleus": "核",
+        "Proton shell": "プロトンシェル",
+        "Orbit": "オービット"
+      }
+    },
+    "science:23": {
+      "question": "人間が生きていくために吸わなければならないガスはどれですか?",
+      "answers": {
+        "Carbon dioxide": "二酸化炭素",
+        "Oxygen": "酸素",
+        "Nitrogen": "窒素",
+        "Helium": "ヘリウム"
+      }
+    },
+    "science:24": {
+      "question": "水の凝固点は摂氏何度ですか?",
+      "answers": {
+        "0": "0",
+        "10": "10",
+        "32": "32",
+        "-10": "-10"
+      }
+    },
+    "science:25": {
+      "question": "地球は?の周りを回っています?",
+      "answers": {
+        "Moon": "月",
+        "Sun": "日",
+        "Mars": "火星",
+        "Jupiter": "ジュピター"
+      }
+    },
+    "science:26": {
+      "question": "地球が太陽の周りを一周するのにどれくらい時間がかかりますか?",
+      "answers": {
+        "1 day": "1 日",
+        "1 month": "1 か月",
+        "1 year": "1 年",
+        "10 years": "10年"
+      }
+    },
+    "science:27": {
+      "question": "昼と夜が変わる原因は何ですか?",
+      "answers": {
+        "Earth's rotation": "地球の自転",
+        "The Moon": "月",
+        "Clouds": "雲",
+        "The tides": "潮汐"
+      }
+    },
+    "science:28": {
+      "question": "太陽系で最も小さな惑星は何ですか?",
+      "answers": {
+        "Mars": "火星",
+        "Mercury": "水星",
+        "Venus": "金星",
+        "Earth": "地球"
+      }
+    },
+    "science:29": {
+      "question": "私たちが住んでいる銀河はどれですか?",
+      "answers": {
+        "Andromeda": "アンドロメダ",
+        "Milky Way": "天の川",
+        "Whirlpool": "ワールプール",
+        "Sombrero": "ソンブレロ"
+      }
+    },
+    "science:30": {
+      "question": "太陽は主に何で構成されていますか?",
+      "answers": {
+        "Rock": "ロック",
+        "Hydrogen and helium": "水素とヘリウム",
+        "Water": "水",
+        "Iron": "アイロン"
+      }
+    },
+    "science:31": {
+      "question": "ミツバチは花から何を集めますか?",
+      "answers": {
+        "Water": "水",
+        "Nectar": "ネクター",
+        "Sand": "砂",
+        "Leaves": "葉"
+      }
+    },
+    "science:32": {
+      "question": "地球の大気の大部分を占めるガスは何ですか?",
+      "answers": {
+        "Oxygen": "酸素",
+        "Nitrogen": "窒素",
+        "Carbon dioxide": "二酸化炭素",
+        "Hydrogen": "水素"
+      }
+    },
+    "science:33": {
+      "question": "生き物の研究を何といいますか?",
+      "answers": {
+        "Physics": "物理学",
+        "Biology": "生物学",
+        "Geology": "地質学",
+        "Chemistry": "化学"
+      }
+    },
+    "science:34": {
+      "question": "物質とエネルギーの研究は何と呼ばれますか?",
+      "answers": {
+        "Biology": "生物学",
+        "Physics": "物理学",
+        "Botany": "植物学",
+        "Zoology": "動物学"
+      }
+    },
+    "science:35": {
+      "question": "物質と反応の研究を何といいますか?",
+      "answers": {
+        "Chemistry": "化学",
+        "Astronomy": "天文学",
+        "Ecology": "エコロジー",
+        "Geology": "地質学"
+      }
+    },
+    "science:36": {
+      "question": "体中に血液を送り出す器官は何ですか?",
+      "answers": {
+        "Lungs": "肺",
+        "Heart": "ハート",
+        "Liver": "肝臓",
+        "Kidney": "腎臓"
+      }
+    },
+    "science:37": {
+      "question": "呼吸に使われる器官はどれですか？",
+      "answers": {
+        "Heart": "心臓",
+        "Lungs": "肺",
+        "Stomach": "胃",
+        "Liver": "肝臓"
+      }
+    },
+    "science:38": {
+      "question": "人体の中で最も硬い物質は何ですか?",
+      "answers": {
+        "Bone": "ボーン",
+        "Tooth enamel": "歯のエナメル質",
+        "Nails": "ネイル",
+        "Cartilage": "軟骨"
+      }
+    },
+    "science:39": {
+      "question": "人間の心臓にはいくつの部屋がありますか?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "science:40": {
+      "question": "DNA は運ぶ?",
+      "answers": {
+        "Water": "水",
+        "Genetic information": "遺伝情報",
+        "Oxygen": "酸素",
+        "Energy": "エネルギー"
+      }
+    },
+    "science:41": {
+      "question": "日光が私たちの体の生成を助けるビタミンはどれですか?",
+      "answers": {
+        "Vitamin A": "ビタミン A",
+        "Vitamin C": "ビタミンC",
+        "Vitamin D": "ビタミンD",
+        "Vitamin K": "ビタミンK"
+      }
+    },
+    "science:42": {
+      "question": "水の沸点は華氏何度ですか?",
+      "answers": {
+        "100": "100",
+        "150": "150",
+        "180": "180",
+        "212": "212"
+      }
+    },
+    "science:43": {
+      "question": "音は最も速く伝わりますか?",
+      "answers": {
+        "Vacuum": "真空",
+        "Solids": "ソリッド",
+        "Gases": "ガス",
+        "Empty space": "空きスペース"
+      }
+    },
+    "science:44": {
+      "question": "光のおおよその速度はどれくらいですか?",
+      "answers": {
+        "300,000 km/s": "300,000 km/秒",
+        "1,000 km/s": "1,000 km/秒",
+        "3,000 km/s": "3,000 km/秒",
+        "30 km/s": "30 km/秒"
+      }
+    },
+    "science:45": {
+      "question": "環があることで有名な惑星はどれですか?",
+      "answers": {
+        "Mars": "火星",
+        "Saturn": "土星",
+        "Venus": "金星",
+        "Mercury": "水星"
+      }
+    },
+    "science:46": {
+      "question": "地球の唯一の天然衛星は何ですか?",
+      "answers": {
+        "The Sun": "太陽",
+        "The Moon": "月",
+        "Mars": "火星",
+        "Venus": "金星"
+      }
+    },
+    "science:47": {
+      "question": "惑星が太陽の周りを周回しているのはどの力ですか?",
+      "answers": {
+        "Magnetism": "磁性",
+        "Gravity": "重力",
+        "Friction": "摩擦",
+        "Electricity": "電気"
+      }
+    },
+    "science:48": {
+      "question": "植物と肉の両方を食べる動物を何と呼びますか?",
+      "answers": {
+        "Herbivores": "草食動物",
+        "Carnivores": "肉食動物",
+        "Omnivores": "雑食動物",
+        "Insectivores": "食虫動物"
+      }
+    },
+    "science:49": {
+      "question": "肉だけを食べる動物を何という？",
+      "answers": {
+        "Herbivores": "草食動物",
+        "Carnivores": "肉食動物",
+        "Omnivores": "雑食動物",
+        "Detritivores": "デトリボー"
+      }
+    },
+    "science:50": {
+      "question": "液体の水が蒸気に変わるプロセスは何ですか?",
+      "answers": {
+        "Condensation": "結露",
+        "Evaporation": "蒸発",
+        "Freezing": "フリーズ",
+        "Melting": "溶ける"
+      }
+    },
+    "science:51": {
+      "question": "蒸気を液体に戻すプロセスは何ですか?",
+      "answers": {
+        "Evaporation": "蒸発",
+        "Condensation": "結露",
+        "Sublimation": "昇華",
+        "Boiling": "沸騰中"
+      }
+    },
+    "science:52": {
+      "question": "物質の 3 つの一般的な状態は何ですか?",
+      "answers": {
+        "Hot, cold, warm": "暑い、寒い、暖かい",
+        "Solid, liquid, gas": "固体、液体、気体",
+        "Big, small, medium": "大、小、中",
+        "Up, down, side": "上、下、横"
+      }
+    },
+    "science:53": {
+      "question": "氷は水の ___ 状態です。",
+      "answers": {
+        "Gas": "ガス",
+        "Liquid": "液体",
+        "Solid": "ソリッド",
+        "Plasma": "プラズマ"
+      }
+    },
+    "science:54": {
+      "question": "進化論を提唱した科学者は誰ですか?",
+      "answers": {
+        "Newton": "ニュートン",
+        "Darwin": "ダーウィン",
+        "Einstein": "アインシュタイン",
+        "Tesla": "テスラ"
+      }
+    },
+    "science:55": {
+      "question": "運動と重力の法則を定式化したのは誰ですか?",
+      "answers": {
+        "Einstein": "アインシュタイン",
+        "Newton": "ニュートン",
+        "Galileo": "ガリレオ",
+        "Hawking": "ホーキング博士"
+      }
+    },
+    "science:56": {
+      "question": "炭素の元素記号は何ですか?",
+      "answers": {
+        "Ca": "Ca",
+        "C": "C",
+        "Co": "コ",
+        "Cn": "Cn"
+      }
+    },
+    "science:57": {
+      "question": "ヘリウムの化学記号は何ですか?",
+      "answers": {
+        "H": "H",
+        "He": "彼",
+        "Hl": "Hl",
+        "Ha": "はぁ"
+      }
+    },
+    "science:58": {
+      "question": "厚い酸の雲があり、とても暑い惑星はどれですか?",
+      "answers": {
+        "Mars": "火星",
+        "Venus": "金星",
+        "Neptune": "ネプチューン",
+        "Uranus": "天王星"
+      }
+    },
+    "science:59": {
+      "question": "一般的な成人には歯が何本ありますか?",
+      "answers": {
+        "24": "24",
+        "28": "28",
+        "32": "32",
+        "36": "36"
+      }
+    },
+    "science:60": {
+      "question": "植物のどの部分が土壌から水を吸収しますか?",
+      "answers": {
+        "Leaves": "葉",
+        "Roots": "ルーツ",
+        "Flowers": "花",
+        "Stem": "ステム"
+      }
+    },
+    "science:61": {
+      "question": "植物が光合成中に放出するガスは何ですか?",
+      "answers": {
+        "Carbon dioxide": "二酸化炭素",
+        "Oxygen": "酸素",
+        "Nitrogen": "窒素",
+        "Methane": "メタン"
+      }
+    },
+    "science:62": {
+      "question": "地球に最も近い星は何ですか?",
+      "answers": {
+        "Polaris": "ポラリス",
+        "The Sun": "太陽",
+        "Sirius": "シリウス",
+        "Alpha Centauri": "アルファ ケンタウリ"
+      }
+    },
+    "science:63": {
+      "question": "普遍的なドナーはどの血液型ですか?",
+      "answers": {
+        "A": "A",
+        "B": "B",
+        "O negative": "O マイナス",
+        "AB": "AB"
+      }
+    },
+    "science:64": {
+      "question": "温度を測定する機器はどれですか?",
+      "answers": {
+        "Barometer": "バロメーター",
+        "Thermometer": "温度計",
+        "Ruler": "定規",
+        "Scale": "スケール"
+      }
+    },
+    "science:65": {
+      "question": "小さな細胞を観察するために使用される機器はどれですか?",
+      "answers": {
+        "Telescope": "望遠鏡",
+        "Microscope": "顕微鏡",
+        "Periscope": "ペリスコープ",
+        "Binoculars": "双眼鏡"
+      }
+    },
+    "science:66": {
+      "question": "遠くの星を見るために使用される機器はどれですか?",
+      "answers": {
+        "Microscope": "顕微鏡",
+        "Telescope": "望遠鏡",
+        "Stethoscope": "聴診器",
+        "Ruler": "定規"
+      }
+    },
+    "science:67": {
+      "question": "一般に凍結二酸化炭素と呼ばれていますか?",
+      "answers": {
+        "Dry ice": "ドライアイス",
+        "Snow": "雪",
+        "Frost": "フロスト",
+        "Hail": "あられ"
+      }
+    },
+    "science:68": {
+      "question": "人間が主に吐き出すガスはどれですか?",
+      "answers": {
+        "Oxygen": "酸素",
+        "Carbon dioxide": "二酸化炭素",
+        "Nitrogen only": "窒素のみ",
+        "Hydrogen": "水素"
+      }
+    },
+    "science:69": {
+      "question": "柑橘類に豊富に含まれるビタミンはどれですか?",
+      "answers": {
+        "Vitamin C": "ビタミンC",
+        "Vitamin D": "ビタミンD",
+        "Vitamin B12": "ビタミン B12",
+        "Vitamin K": "ビタミンK"
+      }
+    },
+    "science:70": {
+      "question": "地表下の溶岩を何と呼びますか?",
+      "answers": {
+        "Lava": "溶岩",
+        "Magma": "マグマ",
+        "Ash": "アッシュ",
+        "Basalt": "玄武岩"
+      }
+    },
+    "science:71": {
+      "question": "地表に噴出する溶岩を何といいますか?",
+      "answers": {
+        "Magma": "マグマ",
+        "Lava": "溶岩",
+        "Sediment": "堆積物",
+        "Ore": "鉱石"
+      }
+    },
+    "science:72": {
+      "question": "地球の核は主に何でできていますか?",
+      "answers": {
+        "Water": "水",
+        "Iron and nickel": "鉄とニッケル",
+        "Gold": "ゴールド",
+        "Ice": "アイス"
+      }
+    },
+    "science:73": {
+      "question": "私たちは地球のどの層に住んでいますか？",
+      "answers": {
+        "Core": "核",
+        "Mantle": "マントル",
+        "Crust": "地殻",
+        "Atmosphere": "大気"
+      }
+    },
+    "science:74": {
+      "question": "海の潮汐の主な原因は何ですか?",
+      "answers": {
+        "Wind only": "風のみ",
+        "The Moon's gravity": "月の重力",
+        "Fish": "魚",
+        "Rivers": "川"
+      }
+    },
+    "science:75": {
+      "question": "星の集まりが模様を形成しているのは?",
+      "answers": {
+        "Galaxy": "ギャラクシー",
+        "Constellation": "星座",
+        "Comet": "彗星",
+        "Nebula": "星雲"
+      }
+    },
+    "science:76": {
+      "question": "「流れ星」って実際は？",
+      "answers": {
+        "Dying star": "ダイイングスター",
+        "Meteor": "流星",
+        "Planet": "惑星",
+        "Satellite": "衛星"
+      }
+    },
+    "science:77": {
+      "question": "有名な「大赤斑」がある惑星はどれですか?",
+      "answers": {
+        "Mars": "火星",
+        "Jupiter": "ジュピター",
+        "Saturn": "土星",
+        "Neptune": "ネプチューン"
+      }
+    },
+    "science:78": {
+      "question": "生命の基本単位は何ですか?",
+      "answers": {
+        "Atom": "アトム",
+        "Cell": "セル",
+        "Molecule": "分子",
+        "Organ": "オルガン"
+      }
+    },
+    "science:79": {
+      "question": "思考と運動を制御する器官はどれですか?",
+      "answers": {
+        "Heart": "ハート",
+        "Brain": "脳",
+        "Liver": "肝臓",
+        "Lungs": "肺"
+      }
+    },
+    "science:80": {
+      "question": "カリウムの元素記号は何ですか?",
+      "answers": {
+        "P": "P",
+        "Po": "ポ",
+        "K": "K",
+        "Pt": "ポイント"
+      }
+    },
+    "science:81": {
+      "question": "希ガスは次のうちどれですか?",
+      "answers": {
+        "Oxygen": "酸素",
+        "Helium": "ヘリウム",
+        "Hydrogen": "水素",
+        "Nitrogen": "窒素"
+      }
+    },
+    "science:82": {
+      "question": "雲から落ちる水を何という？",
+      "answers": {
+        "Evaporation": "蒸発",
+        "Precipitation": "降水量",
+        "Condensation": "結露",
+        "Radiation": "放射線"
+      }
+    },
+    "science:83": {
+      "question": "地震の規模を測る尺度はどれですか?",
+      "answers": {
+        "Celsius": "摂氏",
+        "Richter": "リヒター",
+        "Decibel": "デシベル",
+        "Fahrenheit": "華氏"
+      }
+    },
+    "science:84": {
+      "question": "電流を測定するユニットはどれですか?",
+      "answers": {
+        "Volt": "ボルト",
+        "Ampere": "アンペア",
+        "Watt": "ワット",
+        "Ohm": "オーム"
+      }
+    },
+    "science:85": {
+      "question": "電球の電力は何で測定されますか?",
+      "answers": {
+        "Watts": "ワット",
+        "Meters": "メートル",
+        "Liters": "リットル",
+        "Grams": "グラム"
+      }
+    },
+    "science:86": {
+      "question": "横向きに回転する惑星はどれですか?",
+      "answers": {
+        "Uranus": "天王星",
+        "Mars": "火星",
+        "Venus": "金星",
+        "Earth": "地球"
+      }
+    },
+    "science:87": {
+      "question": "芋虫が蝶になることを何という？",
+      "answers": {
+        "Evolution": "進化",
+        "Metamorphosis": "変身",
+        "Photosynthesis": "光合成",
+        "Digestion": "ダイジェスト"
+      }
+    },
+    "science:88": {
+      "question": "宇宙で最も豊富な元素は何ですか?",
+      "answers": {
+        "Oxygen": "酸素",
+        "Hydrogen": "水素",
+        "Iron": "アイロン",
+        "Carbon": "カーボン"
+      }
+    },
+    "science:89": {
+      "question": "大きさが地球に最も近い惑星はどれですか?",
+      "answers": {
+        "Mars": "火星",
+        "Venus": "金星",
+        "Mercury": "水星",
+        "Jupiter": "ジュピター"
+      }
+    },
+    "science:90": {
+      "question": "人間の体のほとんどは何で構成されていますか?",
+      "answers": {
+        "Bone": "ボーン",
+        "Water": "水",
+        "Muscle": "筋肉",
+        "Fat": "ファット"
+      }
+    },
+    "science:91": {
+      "question": "血液中の老廃物をろ過する臓器はどれですか？",
+      "answers": {
+        "Heart": "心臓",
+        "Kidneys": "腎臓",
+        "Lungs": "肺",
+        "Brain": "脳"
+      }
+    },
+    "science:92": {
+      "question": "目につながる感覚はどれですか？",
+      "answers": {
+        "Hearing": "聴覚",
+        "Sight": "視力",
+        "Smell": "匂い",
+        "Taste": "味"
+      }
+    },
+    "science:93": {
+      "question": "銀の元素記号は何ですか?",
+      "answers": {
+        "Si": "シ",
+        "Ag": "銀",
+        "Au": "金",
+        "Sr": "シニア"
+      }
+    },
+    "science:94": {
+      "question": "太陽から最も遠い惑星はどれですか?",
+      "answers": {
+        "Saturn": "土星",
+        "Uranus": "天王星",
+        "Neptune": "ネプチューン",
+        "Jupiter": "ジュピター"
+      }
+    },
+    "science:95": {
+      "question": "植物が食物を作るには、日光と水のほかに何が必要ですか?",
+      "answers": {
+        "Oxygen": "酸素",
+        "Carbon dioxide": "二酸化炭素",
+        "Nitrogen gas": "窒素ガス",
+        "Helium": "ヘリウム"
+      }
+    },
+    "science:96": {
+      "question": "星や宇宙を研究する科学者を何と呼びますか?",
+      "answers": {
+        "Biologist": "生物学者",
+        "Astronomer": "天文学者",
+        "Chemist": "化学者",
+        "Geologist": "地質学者"
+      }
+    },
+    "science:97": {
+      "question": "「明けの明星」または「宵の明星」として知られている惑星はどれですか?",
+      "answers": {
+        "Mars": "火星",
+        "Venus": "金星",
+        "Saturn": "土星",
+        "Mercury": "水星"
+      }
+    },
+    "science:98": {
+      "question": "虹には何色がありますか?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "science:99": {
+      "question": "よく「青い惑星」と呼ばれる惑星はどれですか?",
+      "answers": {
+        "Mars": "火星",
+        "Earth": "地球",
+        "Neptune": "ネプチューン",
+        "Venus": "金星"
+      }
+    },
+    "geography:0": {
+      "question": "日本の首都はどこですか?",
+      "answers": {
+        "Seoul": "ソウル",
+        "Beijing": "北京",
+        "Tokyo": "東京",
+        "Bangkok": "バンコク"
+      }
+    },
+    "geography:1": {
+      "question": "地球上で最大の海はどこですか?",
+      "answers": {
+        "Atlantic": "アトランティック",
+        "Indian": "インド人",
+        "Arctic": "北極",
+        "Pacific": "パシフィック"
+      }
+    },
+    "geography:2": {
+      "question": "一般的に世界で最も長いと考えられている川はどれですか?",
+      "answers": {
+        "Amazon": "アマゾン",
+        "Nile": "ナイル",
+        "Yangtze": "長江",
+        "Mississippi": "ミシシッピ州"
+      }
+    },
+    "geography:3": {
+      "question": "エベレスト山はどの山脈の一部ですか?",
+      "answers": {
+        "Andes": "アンデス",
+        "Alps": "アルプス",
+        "Himalayas": "ヒマラヤ",
+        "Rockies": "ロッキーズ"
+      }
+    },
+    "geography:4": {
+      "question": "フランスの首都はどこですか?",
+      "answers": {
+        "Berlin": "ベルリン",
+        "Madrid": "マドリッド",
+        "Paris": "パリ",
+        "Rome": "ローマ"
+      }
+    },
+    "geography:5": {
+      "question": "陸地面積が最も大きい国はどこですか?",
+      "answers": {
+        "Canada": "カナダ",
+        "China": "中国",
+        "USA": "米国",
+        "Russia": "ロシア"
+      }
+    },
+    "geography:6": {
+      "question": "サハラ砂漠はどの大陸にありますか?",
+      "answers": {
+        "Asia": "アジア",
+        "Africa": "アフリカ",
+        "Australia": "オーストラリア",
+        "South America": "南アメリカ"
+      }
+    },
+    "geography:7": {
+      "question": "オーストラリアの首都はどこですか?",
+      "answers": {
+        "Sydney": "シドニー",
+        "Melbourne": "メルボルン",
+        "Canberra": "キャンベラ",
+        "Perth": "パース"
+      }
+    },
+    "geography:8": {
+      "question": "最小の大陸はどれですか?",
+      "answers": {
+        "Europe": "ヨーロッパ",
+        "Australia": "オーストラリア",
+        "Antarctica": "南極大陸",
+        "South America": "南アメリカ"
+      }
+    },
+    "geography:9": {
+      "question": "グレート バリア リーフはどこの国の海岸沖にありますか?",
+      "answers": {
+        "Brazil": "ブラジル",
+        "Australia": "オーストラリア",
+        "Mexico": "メキシコ",
+        "India": "インド"
+      }
+    },
+    "geography:10": {
+      "question": "エッフェル塔はどこの国にありますか?",
+      "answers": {
+        "Italy": "イタリア",
+        "Spain": "スペイン",
+        "France": "フランス",
+        "Belgium": "ベルギー"
+      }
+    },
+    "geography:11": {
+      "question": "エジプトの首都はどこですか?",
+      "answers": {
+        "Cairo": "カイロ",
+        "Alexandria": "アレクサンドリア",
+        "Giza": "ギザ",
+        "Luxor": "ルクソール"
+      }
+    },
+    "geography:12": {
+      "question": "大陸はいくつありますか?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "geography:13": {
+      "question": "ロンドンを流れる川はどれですか?",
+      "answers": {
+        "Seine": "セーヌ川",
+        "Thames": "テムズ川",
+        "Danube": "ドナウ川",
+        "Rhine": "ライン川"
+      }
+    },
+    "geography:14": {
+      "question": "アマゾンの熱帯雨林の大部分はどの国にありますか?",
+      "answers": {
+        "Peru": "ペルー",
+        "Colombia": "コロンビア",
+        "Brazil": "ブラジル",
+        "Venezuela": "ベネズエラ"
+      }
+    },
+    "geography:15": {
+      "question": "世界最大の熱い砂漠はどれですか?",
+      "answers": {
+        "Gobi": "ゴビ",
+        "Sahara": "サハラ",
+        "Kalahari": "カラハリ砂漠",
+        "Arabian": "アラビアン"
+      }
+    },
+    "geography:16": {
+      "question": "イタリアの首都はどこですか?",
+      "answers": {
+        "Milan": "ミラノ",
+        "Venice": "ヴェネツィア",
+        "Rome": "ローマ",
+        "Naples": "ナポリ"
+      }
+    },
+    "geography:17": {
+      "question": "アマゾン川のある大陸はどれですか?",
+      "answers": {
+        "Africa": "アフリカ",
+        "Asia": "アジア",
+        "South America": "南アメリカ",
+        "Europe": "ヨーロッパ"
+      }
+    },
+    "geography:18": {
+      "question": "ドイツの首都はどこですか?",
+      "answers": {
+        "Munich": "ミュンヘン",
+        "Berlin": "ベルリン",
+        "Hamburg": "ハンブルク",
+        "Frankfurt": "フランクフルト"
+      }
+    },
+    "geography:19": {
+      "question": "スペインの首都はどこですか?",
+      "answers": {
+        "Barcelona": "バルセロナ",
+        "Madrid": "マドリッド",
+        "Seville": "セビリア",
+        "Valencia": "バレンシア"
+      }
+    },
+    "geography:20": {
+      "question": "ロシアの首都はどこですか?",
+      "answers": {
+        "St Petersburg": "サンクトペテルブルク",
+        "Moscow": "モスクワ",
+        "Kyiv": "キエフ",
+        "Sochi": "ソチ"
+      }
+    },
+    "geography:21": {
+      "question": "中国の首都はどこですか?",
+      "answers": {
+        "Shanghai": "上海",
+        "Beijing": "北京",
+        "Hong Kong": "香港",
+        "Guangzhou": "広州"
+      }
+    },
+    "geography:22": {
+      "question": "カナダの首都はどこですか?",
+      "answers": {
+        "Toronto": "トロント",
+        "Ottawa": "オタワ",
+        "Vancouver": "バンクーバー",
+        "Montreal": "モントリオール"
+      }
+    },
+    "geography:23": {
+      "question": "米国の首都はどこですか?",
+      "answers": {
+        "New York": "ニューヨーク",
+        "Washington, D.C.": "ワシントン D.C.",
+        "Los Angeles": "ロサンゼルス",
+        "Chicago": "シカゴ"
+      }
+    },
+    "geography:24": {
+      "question": "イギリスの首都はどこですか?",
+      "answers": {
+        "Manchester": "マンチェスター",
+        "London": "ロンドン",
+        "Liverpool": "リバプール",
+        "Edinburgh": "エディンバラ"
+      }
+    },
+    "geography:25": {
+      "question": "ブラジルの首都はどこですか?",
+      "answers": {
+        "Rio de Janeiro": "リオデジャネイロ",
+        "Brasília": "ブラジリア",
+        "São Paulo": "サンパウロ",
+        "Salvador": "サルバドール"
+      }
+    },
+    "geography:26": {
+      "question": "インドの首都はどこですか?",
+      "answers": {
+        "Mumbai": "ムンバイ",
+        "New Delhi": "ニューデリー",
+        "Kolkata": "コルカタ",
+        "Chennai": "チェンナイ"
+      }
+    },
+    "geography:27": {
+      "question": "韓国の首都はどこですか?",
+      "answers": {
+        "Busan": "釜山",
+        "Seoul": "ソウル",
+        "Incheon": "仁川",
+        "Daegu": "大邱"
+      }
+    },
+    "geography:28": {
+      "question": "ギリシャの首都はどこですか?",
+      "answers": {
+        "Thessaloniki": "テッサロニキ",
+        "Athens": "アテネ",
+        "Sparta": "スパルタ",
+        "Patras": "パトラス"
+      }
+    },
+    "geography:29": {
+      "question": "トルコの首都はどこですか?",
+      "answers": {
+        "Istanbul": "イスタンブール",
+        "Ankara": "アンカラ",
+        "Izmir": "イズミル",
+        "Bursa": "ブルサ"
+      }
+    },
+    "geography:30": {
+      "question": "ポルトガルの首都はどこですか?",
+      "answers": {
+        "Porto": "ポルト",
+        "Lisbon": "リスボン",
+        "Faro": "ファロ",
+        "Braga": "ブラガ"
+      }
+    },
+    "geography:31": {
+      "question": "オランダの首都はどこですか?",
+      "answers": {
+        "Rotterdam": "ロッテルダム",
+        "Amsterdam": "アムステルダム",
+        "The Hague": "ハーグ",
+        "Utrecht": "ユトレヒト"
+      }
+    },
+    "geography:32": {
+      "question": "メキシコの首都はどこですか?",
+      "answers": {
+        "Cancún": "カンクン",
+        "Mexico City": "メキシコシティ",
+        "Guadalajara": "グアダラハラ",
+        "Tijuana": "ティファナ"
+      }
+    },
+    "geography:33": {
+      "question": "アルゼンチンの首都はどこですか?",
+      "answers": {
+        "Córdoba": "コルドバ",
+        "Buenos Aires": "ブエノスアイレス",
+        "Rosario": "ロザリオ",
+        "Mendoza": "メンドーサ"
+      }
+    },
+    "geography:34": {
+      "question": "スウェーデンの首都はどこですか?",
+      "answers": {
+        "Oslo": "オスロ",
+        "Stockholm": "ストックホルム",
+        "Copenhagen": "コペンハーゲン",
+        "Helsinki": "ヘルシンキ"
+      }
+    },
+    "geography:35": {
+      "question": "ノルウェーの首都はどこですか?",
+      "answers": {
+        "Oslo": "オスロ",
+        "Bergen": "ベルゲン",
+        "Stockholm": "ストックホルム",
+        "Helsinki": "ヘルシンキ"
+      }
+    },
+    "geography:36": {
+      "question": "面積で最大の大陸はどこですか?",
+      "answers": {
+        "Africa": "アフリカ",
+        "Asia": "アジア",
+        "Europe": "ヨーロッパ",
+        "North America": "北米"
+      }
+    },
+    "geography:37": {
+      "question": "最も寒い大陸はどれですか?",
+      "answers": {
+        "Europe": "ヨーロッパ",
+        "Antarctica": "南極大陸",
+        "Asia": "アジア",
+        "Australia": "オーストラリア"
+      }
+    },
+    "geography:38": {
+      "question": "最も多くの国が存在する大陸はどれですか?",
+      "answers": {
+        "Asia": "アジア",
+        "Africa": "アフリカ",
+        "Europe": "ヨーロッパ",
+        "South America": "南アメリカ"
+      }
+    },
+    "geography:39": {
+      "question": "最も小さい海はどれですか?",
+      "answers": {
+        "Atlantic": "アトランティック",
+        "Arctic": "北極",
+        "Indian": "インド人",
+        "Pacific": "パシフィック"
+      }
+    },
+    "geography:40": {
+      "question": "2 番目に大きい海はどれですか?",
+      "answers": {
+        "Atlantic": "アトランティック",
+        "Indian": "インド人",
+        "Arctic": "北極",
+        "Southern": "南部"
+      }
+    },
+    "geography:41": {
+      "question": "ヨーロッパとアジアの両方に位置する国はどこですか?",
+      "answers": {
+        "Egypt": "エジプト",
+        "Turkey": "トルコ",
+        "Greece": "ギリシャ",
+        "Italy": "イタリア"
+      }
+    },
+    "geography:42": {
+      "question": "大ピラミッドはどの都市の近くにありますか?",
+      "answers": {
+        "Cairo": "カイロ",
+        "Alexandria": "アレクサンドリア",
+        "Luxor": "ルクソール",
+        "Aswan": "アスワン"
+      }
+    },
+    "geography:43": {
+      "question": "アフリカで一番高い山はどれですか?",
+      "answers": {
+        "Kilimanjaro": "キリマンジャロ",
+        "Mount Kenya": "ケニア山",
+        "Atlas": "アトラス",
+        "Elgon": "エルゴン"
+      }
+    },
+    "geography:44": {
+      "question": "アンデス山脈はどの大陸にありますか?",
+      "answers": {
+        "Asia": "アジア",
+        "Africa": "アフリカ",
+        "South America": "南アメリカ",
+        "Europe": "ヨーロッパ"
+      }
+    },
+    "geography:45": {
+      "question": "アルプスは主に?",
+      "answers": {
+        "Asia": "アジア",
+        "Europe": "ヨーロッパ",
+        "Africa": "アフリカ",
+        "Australia": "オーストラリア"
+      }
+    },
+    "geography:46": {
+      "question": "ブーツのような形をしている国はどこですか?",
+      "answers": {
+        "Spain": "スペイン",
+        "Italy": "イタリア",
+        "Greece": "ギリシャ",
+        "France": "フランス"
+      }
+    },
+    "geography:47": {
+      "question": "ヨーロッパとアフリカの間にある海はどれですか?",
+      "answers": {
+        "Baltic Sea": "バルト海",
+        "Mediterranean Sea": "地中海",
+        "Red Sea": "紅海",
+        "Black Sea": "黒海"
+      }
+    },
+    "geography:48": {
+      "question": "(2024 年現在) 人口が最も多い国はどこですか?",
+      "answers": {
+        "China": "中国",
+        "India": "インド",
+        "USA": "米国",
+        "Indonesia": "インドネシア"
+      }
+    },
+    "geography:49": {
+      "question": "富士山はどこの国にありますか?",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韓国",
+        "Nepal": "ネパール"
+      }
+    },
+    "geography:50": {
+      "question": "自由の女神はどの都市にありますか?",
+      "answers": {
+        "Boston": "ボストン",
+        "New York": "ニューヨーク",
+        "Washington": "ワシントン",
+        "Chicago": "シカゴ"
+      }
+    },
+    "geography:51": {
+      "question": "ビッグ ベンはどの都市のランドマークですか?",
+      "answers": {
+        "Paris": "パリ",
+        "London": "ロンドン",
+        "Berlin": "ベルリン",
+        "Dublin": "ダブリン"
+      }
+    },
+    "geography:52": {
+      "question": "斜塔はイタリアのどの都市にありますか?",
+      "answers": {
+        "Rome": "ローマ",
+        "Pisa": "ピサ",
+        "Milan": "ミラノ",
+        "Venice": "ヴェネツィア"
+      }
+    },
+    "geography:53": {
+      "question": "カンガルーが生息している国はどこですか?",
+      "answers": {
+        "South Africa": "南アフリカ",
+        "Australia": "オーストラリア",
+        "Brazil": "ブラジル",
+        "India": "インド"
+      }
+    },
+    "geography:54": {
+      "question": "チチェン・イッツァのピラミッドはどこの国にありますか?",
+      "answers": {
+        "Peru": "ペルー",
+        "Mexico": "メキシコ",
+        "Egypt": "エジプト",
+        "Guatemala": "グアテマラ"
+      }
+    },
+    "geography:55": {
+      "question": "ナイル川はどの海に流れ込みますか?",
+      "answers": {
+        "Red Sea": "紅海",
+        "Mediterranean Sea": "地中海",
+        "Black Sea": "黒海",
+        "Caspian Sea": "カスピ海"
+      }
+    },
+    "geography:56": {
+      "question": "ハリウッドで有名な米国の州はどこですか?",
+      "answers": {
+        "Texas": "テキサス",
+        "California": "カリフォルニア",
+        "Florida": "フロリダ",
+        "New York": "ニューヨーク"
+      }
+    },
+    "geography:57": {
+      "question": "アメリカ大陸とヨーロッパ/アフリカの間にある海はどれですか?",
+      "answers": {
+        "Pacific": "パシフィック",
+        "Atlantic": "アトランティック",
+        "Indian": "インド人",
+        "Arctic": "北極"
+      }
+    },
+    "geography:58": {
+      "question": "アフリカ、アジア、オーストラリアの間にある海はどれですか?",
+      "answers": {
+        "Atlantic": "アトランティック",
+        "Indian": "インド人",
+        "Arctic": "北極",
+        "Pacific": "パシフィック"
+      }
+    },
+    "geography:59": {
+      "question": "赤道は地球をどの半分に分けますか?",
+      "answers": {
+        "East and West": "東と西",
+        "North and South": "北と南",
+        "Up and Down": "上と下",
+        "Left and Right": "左と右"
+      }
+    },
+    "geography:60": {
+      "question": "経度 0° の仮想線は?",
+      "answers": {
+        "Equator": "赤道",
+        "Prime Meridian": "本初子午線",
+        "Tropic of Cancer": "北回帰線",
+        "Arctic Circle": "北極圏"
+      }
+    },
+    "geography:61": {
+      "question": "世界で一番小さい国はどこですか?",
+      "answers": {
+        "Monaco": "モナコ",
+        "Vatican City": "バチカン市国",
+        "Malta": "マルタ",
+        "San Marino": "サンマリノ"
+      }
+    },
+    "geography:62": {
+      "question": "世界最大の砂漠はどれですか?",
+      "answers": {
+        "Sahara": "サハラ",
+        "Antarctic": "南極",
+        "Gobi": "ゴビ",
+        "Kalahari": "カラハリ砂漠"
+      }
+    },
+    "geography:63": {
+      "question": "グランド キャニオンはどこの国にありますか?",
+      "answers": {
+        "Canada": "カナダ",
+        "USA": "米国",
+        "Mexico": "メキシコ",
+        "Brazil": "ブラジル"
+      }
+    },
+    "geography:64": {
+      "question": "チューリップと風車で有名な国はどこですか?",
+      "answers": {
+        "Belgium": "ベルギー",
+        "Netherlands": "オランダ",
+        "Denmark": "デンマーク",
+        "Germany": "ドイツ"
+      }
+    },
+    "geography:65": {
+      "question": "ヨーロッパとアジアを隔てている山脈はどれですか?",
+      "answers": {
+        "Alps": "アルプス",
+        "Ural": "ウラル",
+        "Andes": "アンデス",
+        "Himalayas": "ヒマラヤ"
+      }
+    },
+    "geography:66": {
+      "question": "死海はとても有名ですよね？",
+      "answers": {
+        "Deep": "深い",
+        "Salty": "しょっぱい",
+        "Cold": "寒い",
+        "Large": "大"
+      }
+    },
+    "geography:67": {
+      "question": "シドニーとメルボルンという都市がある国はどこですか?",
+      "answers": {
+        "New Zealand": "ニュージーランド",
+        "Australia": "オーストラリア",
+        "UK": "英国",
+        "Canada": "カナダ"
+      }
+    },
+    "geography:68": {
+      "question": "ほとんど植民地化されなかったアフリカの国はどこですか?",
+      "answers": {
+        "Kenya": "ケニア",
+        "Ethiopia": "エチオピア",
+        "Nigeria": "ナイジェリア",
+        "Ghana": "ガーナ"
+      }
+    },
+    "geography:69": {
+      "question": "アマゾンは世界最大の熱帯ですか?",
+      "answers": {
+        "Desert": "砂漠",
+        "Rainforest": "熱帯雨林",
+        "Savanna": "サバンナ",
+        "Tundra": "ツンドラ"
+      }
+    },
+    "geography:70": {
+      "question": "最も多くのタイムゾーンにまたがる国はどこですか?",
+      "answers": {
+        "USA": "米国",
+        "Russia": "ロシア",
+        "China": "中国",
+        "Canada": "カナダ"
+      }
+    },
+    "geography:71": {
+      "question": "「ビッグアップル」という愛称を持つ米国の都市はどこですか?",
+      "answers": {
+        "Los Angeles": "ロサンゼルス",
+        "New York": "ニューヨーク",
+        "Chicago": "シカゴ",
+        "Miami": "マイアミ"
+      }
+    },
+    "geography:72": {
+      "question": "キリマンジャロ山はどこの国にありますか?",
+      "answers": {
+        "Kenya": "ケニア",
+        "Tanzania": "タンザニア",
+        "Uganda": "ウガンダ",
+        "Ethiopia": "エチオピア"
+      }
+    },
+    "geography:73": {
+      "question": "マチュピチュはどこの国にありますか?",
+      "answers": {
+        "Chile": "チリ",
+        "Peru": "ペルー",
+        "Bolivia": "ボリビア",
+        "Ecuador": "エクアドル"
+      }
+    },
+    "geography:74": {
+      "question": "南アフリカに完全に囲まれている国はどこですか?",
+      "answers": {
+        "Lesotho": "レソト",
+        "Eswatini": "エスワティニ",
+        "Botswana": "ボツワナ",
+        "Namibia": "ナミビア"
+      }
+    },
+    "geography:75": {
+      "question": "内陸国は次のうちどれですか?",
+      "answers": {
+        "Switzerland": "スイス",
+        "Spain": "スペイン",
+        "Italy": "イタリア",
+        "Portugal": "ポルトガル"
+      }
+    },
+    "geography:76": {
+      "question": "国旗にカエデの葉がある国はどこですか?",
+      "answers": {
+        "USA": "米国",
+        "Canada": "カナダ",
+        "UK": "英国",
+        "Australia": "オーストラリア"
+      }
+    },
+    "geography:77": {
+      "question": "水の上に築かれた都市ヴェネツィアはどこの国にありますか?",
+      "answers": {
+        "Spain": "スペイン",
+        "Italy": "イタリア",
+        "Greece": "ギリシャ",
+        "Croatia": "クロアチア"
+      }
+    },
+    "geography:78": {
+      "question": "最も深い海はどれですか?",
+      "answers": {
+        "Atlantic": "アトランティック",
+        "Pacific": "パシフィック",
+        "Indian": "インド人",
+        "Arctic": "北極"
+      }
+    },
+    "geography:79": {
+      "question": "ミシシッピ川は主にどこの国にありますか?",
+      "answers": {
+        "Canada": "カナダ",
+        "USA": "米国",
+        "Mexico": "メキシコ",
+        "Brazil": "ブラジル"
+      }
+    },
+    "geography:80": {
+      "question": "パナマ運河が繋ぐ 2 つの海はどれですか?",
+      "answers": {
+        "Atlantic and Pacific": "大西洋と太平洋",
+        "Indian and Pacific": "インドおよび太平洋",
+        "Arctic and Atlantic": "北極と大西洋",
+        "Indian and Atlantic": "インドと大西洋"
+      }
+    },
+    "geography:81": {
+      "question": "スエズ運河はどこの国にありますか?",
+      "answers": {
+        "Turkey": "トルコ",
+        "Egypt": "エジプト",
+        "Panama": "パナマ",
+        "Greece": "ギリシャ"
+      }
+    },
+    "geography:82": {
+      "question": "「日出ずる国」として知られる国はどこですか?",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "Korea": "韓国",
+        "Thailand": "タイ"
+      }
+    },
+    "geography:83": {
+      "question": "人間の定住者がいない大陸はどれですか?",
+      "answers": {
+        "Australia": "オーストラリア",
+        "Antarctica": "南極大陸",
+        "Africa": "アフリカ",
+        "Asia": "アジア"
+      }
+    },
+    "geography:84": {
+      "question": "ロッキー山脈はどこにありますか?",
+      "answers": {
+        "Europe": "ヨーロッパ",
+        "North America": "北米",
+        "Asia": "アジア",
+        "Africa": "アフリカ"
+      }
+    },
+    "geography:85": {
+      "question": "マラケシュの都市はどこの国にありますか?",
+      "answers": {
+        "Egypt": "エジプト",
+        "Morocco": "モロッコ",
+        "Algeria": "アルジェリア",
+        "Tunisia": "チュニジア"
+      }
+    },
+    "geography:86": {
+      "question": "フィヨルドで有名なスカンジナビアの国はどこですか?",
+      "answers": {
+        "Norway": "ノルウェー",
+        "Spain": "スペイン",
+        "Italy": "イタリア",
+        "Greece": "ギリシャ"
+      }
+    },
+    "geography:87": {
+      "question": "日本の首都はどこですか?",
+      "answers": {
+        "Osaka": "大阪",
+        "Tokyo": "東京",
+        "Kyoto": "京都",
+        "Nagoya": "名古屋"
+      }
+    },
+    "geography:88": {
+      "question": "エジプトの首都は何沿いにありますか?",
+      "answers": {
+        "Tigris River": "チグリス川",
+        "Nile River": "ナイル川",
+        "Congo River": "コンゴ川",
+        "Niger River": "ニジェール川"
+      }
+    },
+    "geography:89": {
+      "question": "タージマハルで有名な国はどこですか?",
+      "answers": {
+        "Pakistan": "パキスタン",
+        "India": "インド",
+        "Bangladesh": "バングラデシュ",
+        "Nepal": "ネパール"
+      }
+    },
+    "geography:90": {
+      "question": "「サンシャインステート」という愛称を持つ米国の州はどこですか?",
+      "answers": {
+        "California": "カリフォルニア",
+        "Florida": "フロリダ",
+        "Texas": "テキサス",
+        "Nevada": "ネバダ州"
+      }
+    },
+    "geography:91": {
+      "question": "サハラ砂漠が最も多い国はどこですか?",
+      "answers": {
+        "Egypt": "エジプト",
+        "Algeria": "アルジェリア",
+        "Morocco": "モロッコ",
+        "Tunisia": "チュニジア"
+      }
+    },
+    "geography:92": {
+      "question": "水上にある最も長い山脈はどれですか?",
+      "answers": {
+        "Himalayas": "ヒマラヤ",
+        "Andes": "アンデス",
+        "Rockies": "ロッキーズ",
+        "Alps": "アルプス"
+      }
+    },
+    "geography:93": {
+      "question": "アイスランドはどの海域にありますか?",
+      "answers": {
+        "Pacific": "パシフィック",
+        "North Atlantic": "北大西洋",
+        "Indian": "インド人",
+        "Southern": "南部"
+      }
+    },
+    "geography:94": {
+      "question": "完全に南半球に完全に存在する大陸はどれですか?",
+      "answers": {
+        "Europe": "ヨーロッパ",
+        "Antarctica": "南極大陸",
+        "Asia": "アジア",
+        "North America": "北米"
+      }
+    },
+    "geography:95": {
+      "question": "テムズ川はどの都市を流れていますか?",
+      "answers": {
+        "Paris": "パリ",
+        "London": "ロンドン",
+        "Berlin": "ベルリン",
+        "Rome": "ローマ"
+      }
+    },
+    "geography:96": {
+      "question": "白地に赤い丸(日の丸)の国旗がある国はどこでしょう?",
+      "answers": {
+        "China": "中国",
+        "Japan": "日本",
+        "South Korea": "韓国",
+        "Vietnam": "ベトナム"
+      }
+    },
+    "geography:97": {
+      "question": "アマゾン川はどの海に注ぎますか?",
+      "answers": {
+        "Pacific": "パシフィック",
+        "Atlantic": "アトランティック",
+        "Indian": "インド人",
+        "Arctic": "北極"
+      }
+    },
+    "geography:98": {
+      "question": "完全に北半球にある大陸はどれですか?",
+      "answers": {
+        "Europe": "ヨーロッパ",
+        "Africa": "アフリカ",
+        "South America": "南アメリカ",
+        "Australia": "オーストラリア"
+      }
+    },
+    "geography:99": {
+      "question": "最も高い滝であるエンジェル フォールはどこにありますか?",
+      "answers": {
+        "Brazil": "ブラジル",
+        "Venezuela": "ベネズエラ",
+        "Peru": "ペルー",
+        "Colombia": "コロンビア"
+      }
+    }
+  }
+}

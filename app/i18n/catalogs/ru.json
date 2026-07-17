@@ -1,0 +1,5586 @@
+{
+  "messages": {
+    "meta.title": "Base Quiz",
+    "common.back": "Назад",
+    "common.cancel": "Отмена",
+    "common.next": "Далее",
+    "common.skip": "Пропустить",
+    "common.tryAgain": "Попробуйте еще раз",
+    "common.connect": "Подключиться",
+    "common.disconnect": "Отключить",
+    "common.connectWallet": "Подключить кошелек",
+    "common.connectBaseWallet": "Подключить Base Wallet",
+    "common.browserWallets": "Браузерные кошельки",
+    "common.recommended": "Рекомендуется",
+    "common.selectLanguage": "Выберите язык",
+    "common.language": "Язык",
+    "common.switchLight": "Переключиться на светлую тему",
+    "common.switchDark": "Переключиться на темную тему",
+    "common.mute": "Отключить звук",
+    "common.unmute": "Включить звук",
+    "home.kicker": "Ончейн-викторина · Base",
+    "home.titleLine1": "Ежедневная викторина.",
+    "home.titleLine2": "Создано на Base.",
+    "home.description": "Выберите категорию, ответьте на пять вопросов и сыграйте на время. Увеличивайте серию, сохраняйте результат в блокчейне и поднимайтесь в глобальной таблице лидеров.",
+    "home.streak": "Серия: {count} дней",
+    "home.confirmWallet": "Подтвердите в кошельке…",
+    "home.startRound": "Начать раунд",
+    "home.leaderboard": "Таблица лидеров",
+    "home.streakBadges": "Полоса значков",
+    "home.facts": "5 вопросов · по 15 секунд · результаты сохраняются в блокчейне",
+    "category.pick": "Выберите категорию",
+    "category.meta": "{count} вопросов · 5 за раунд",
+    "category.start": "Начать викторину {category}",
+    "category.previous": "Предыдущая категория",
+    "category.next": "Следующая категория",
+    "category.imageAlt": "Категория викторины {category}",
+    "category.crypto.name": "Крипто",
+    "category.crypto.description": "Проверьте свои знания о Base, Ethereum, кошельках, DeFi и культуре, формирующей мир onchain.",
+    "category.sports.name": "Спорт",
+    "category.sports.description": "От футбола и баскетбола до тенниса и Олимпийских игр — посмотрите, насколько сильна ваша спортивная память.",
+    "category.art.name": "Искусство",
+    "category.art.description": "Изучите живопись, художников, движения и идеи, которые меняли визуальную культуру на протяжении поколений.",
+    "category.history.name": "История",
+    "category.history.description": "Путешествуйте по цивилизациям, поворотным моментам и людям, чьи решения сформировали мир.",
+    "category.science.name": "Наука",
+    "category.science.description": "Испытайте себя в физике, биологии, химии и открытиях, объясняющих, как все работает.",
+    "category.geography.name": "География",
+    "category.geography.description": "Путешествуйте по странам, столицам, океанам и достопримечательностям со всех уголков нашей планеты.",
+    "quiz.fallbackName": "Викторина",
+    "quiz.questionProgress": "Вопрос {current} из {total}",
+    "quiz.score": "Оценка",
+    "quiz.time": "Время",
+    "quiz.answeredAria": "Ответы на вопросы {answered} из {total}",
+    "quiz.chooseCorrect": "Выберите правильный ответ",
+    "quiz.correct": "Правильный ответ",
+    "quiz.wrong": "Неправильный ответ",
+    "quiz.points": "+{points} баллов",
+    "quiz.correctOption": "Правильный вариант: {option}.",
+    "quiz.autoNote": "Ответьте один раз · следующий вопрос загружается автоматически",
+    "result.roundComplete": "Раунд завершен",
+    "result.finalScore": "Ваш окончательный результат",
+    "result.points": "очки",
+    "result.summaryAria": "Итоги раунда",
+    "result.categoryPill": "Категория {category}",
+    "result.streakPill": "Серия: {count} дней",
+    "result.roundCompletedTitle": "Раунд завершен",
+    "result.roundCompletedDetail": "Ответы на пять вопросов. Ваш окончательный результат готов.",
+    "result.streakUpdatedTitle": "Полоса обновлена",
+    "result.streakUpdatedDetail": "Сейчас вы находитесь на этапе обучения {count}.",
+    "result.save.idle.title": "Сохраните свой результат",
+    "result.save.idle.detail": "Зафиксируйте этот результат на Base и присоединяйтесь к глобальной таблице лидеров.",
+    "result.save.pending.title": "Подтвердите свой результат",
+    "result.save.pending.detail": "Подтвердите транзакцию в своем кошельке, чтобы завершить сохранение.",
+    "result.save.done.title": "Счет сохранен onchain",
+    "result.save.done.detail": "Ваш результат проверен на Base и готов к попаданию в таблицу лидеров.",
+    "result.save.error.title": "Сохранение требует внимания",
+    "result.save.error.detail": "Прочтите сообщение ниже и повторите попытку.",
+    "result.save.disconnected.title": "Подключитесь, чтобы сохранить",
+    "result.save.disconnected.detail": "Выберите кошелек для записи своего результата на Base.",
+    "result.shareTitle": "Поделитесь своим результатом",
+    "result.shareDetail": "Бросьте вызов своим друзьям на Farcaster или X.",
+    "result.replayKicker": "Продолжайте набирать обороты",
+    "result.replayTitle": "Готовы к следующему раунду?",
+    "result.replayDetail": "Сыграйте в {category} еще раз или выберите другое испытание.",
+    "result.playAgain": "Играй еще раз",
+    "result.chooseCategory": "Выберите категорию",
+    "result.saveButton": "Сохранить счет onchain",
+    "result.confirming": "Подтверждение…",
+    "result.saved": "Сохранено onchain.",
+    "result.viewTransaction": "Посмотреть транзакцию",
+    "result.shareScore": "Поделиться счетом",
+    "result.copyText": "Копировать текст",
+    "result.copied": "Скопировано в буфер обмена!",
+    "leaderboard.kicker": "Base Mainnet · За всё время",
+    "leaderboard.title": "Таблица лидеров",
+    "leaderboard.description": "Лучшие игроки, ранжированные по общему количеству очков onchain.",
+    "leaderboard.loading": "Чтение результатов Base…",
+    "leaderboard.empty": "Оценок пока нет. Будьте первым игроком на доске.",
+    "leaderboard.player": "Игрок",
+    "leaderboard.totalScore": "Общий балл",
+    "leaderboard.bestScore": "Лучший результат",
+    "leaderboard.streak": "Полоса",
+    "leaderboard.badges": "Значки",
+    "leaderboard.you": "ты",
+    "leaderboard.noBadges": "Нет значков",
+    "leaderboard.badgeTitle": "Значок {name}",
+    "leaderboard.players": "Игроков: {count}",
+    "leaderboard.verified": "Очки и значки подтверждены onchain",
+    "badges.kicker": "NFT за серии · Base Mainnet",
+    "badges.title": "Значки",
+    "badges.roadmapTitle": "Дорожная карта Streak Badge",
+    "badges.roadmapDescription": "Продолжайте играть, наращивайте свою результативность и побеждайте в каждой вехе onchain.",
+    "badges.streak": "Серия: {count} дней",
+    "badges.walletRequired": "Требуется кошелек",
+    "badges.connectTitle": "Подключитесь, чтобы просмотреть и получить свои значки",
+    "badges.connectDetail": "Ваша серия и владение NFT считываются непосредственно из Base.",
+    "badges.days": "{count} дней",
+    "badges.bronze.name": "Бронза",
+    "badges.bronze.description": "Завершите свой первый трехдневный забег",
+    "badges.silver.name": "Серебро",
+    "badges.silver.description": "Сохраняйте полосу активной в течение недели",
+    "badges.gold.name": "Золото",
+    "badges.gold.description": "Создайте последовательную 30-дневную серию",
+    "badges.diamond.name": "Алмаз",
+    "badges.diamond.description": "Достигните конечного 100-дневного рубежа",
+    "badges.unlock": "Разблокировка после серии {count}-дня.",
+    "badges.owned": "В собственности",
+    "badges.claim": "Получить значок",
+    "badges.claiming": "Утверждение…",
+    "badges.daysLeft": "Осталось {count} дн.",
+    "badges.locked": "Заблокировано",
+    "badges.loading": "Чтение значков от Base…",
+    "wallet.connectTitle": "Подключить кошелек",
+    "wallet.browserWallets": "Браузерные кошельки",
+    "wallet.recommended": "Рекомендуется",
+    "tutorial.welcomeTitle": "Добро пожаловать.",
+    "tutorial.welcomeDetail": "Ежедневная викторина на Base. Проверьте свои знания, набирайте очки и соревнуйтесь по всему миру.",
+    "tutorial.questionsTitle": "5 вопросов. Ежедневно.",
+    "tutorial.questionsDetail": "Отвечайте быстро — быстрее означает больше очков. Сохраните свой результат onchain, чтобы появиться в глобальной таблице лидеров.",
+    "tutorial.badgesTitle": "Зарабатывайте значки NFT.",
+    "tutorial.badgesDetail": "Поддерживайте свою серию и получайте onchain NFTs: бронзу (3 д), серебро (7 д), золото (30 д), бриллиант (100 дн).",
+    "tutorial.letsPlay": "Давайте поиграем",
+    "footer.blockData": "ДАННЫЕ БЛОКЧЕЙНА · BASE MAINNET",
+    "footer.playersOnchain": "ИГРОКОВ В БЛОКЧЕЙНЕ: {count}",
+    "share.text": "🧠 Я набрал {score} очков в Base Quiz! 🔥 Серия: {streak} дней\n\nСможешь меня обойти? 👇",
+    "error.startFailed": "Не удалось начать раунд. Пожалуйста, попробуйте еще раз.",
+    "error.startCancelled": "Транзакция отменена. Подтвердите это, чтобы начать раунд.",
+    "error.saveFailed": "Счет спасти не удалось. Пожалуйста, попробуйте еще раз.",
+    "error.alreadyPlayed": "Сегодня уже сохранился. Возвращайся завтра.",
+    "error.claimFailed": "Значок не может быть востребован. Пожалуйста, попробуйте еще раз.",
+    "activation.kicker": "Настройка Base Quiz",
+    "activation.title": "Активировать контракт раундов",
+    "activation.copy": "Эта одноразовая транзакция Base развертывает небольшой контракт, используемый Start Round. Он не меняет оценки, серии, значки и не переносит ETH.",
+    "activation.checking": "Проверка договора…",
+    "activation.active": "Контракт раундов активен",
+    "activation.connected": "Подключено: {address}",
+    "activation.confirming": "Подтверждаем Base…",
+    "activation.activate": "Активировать контракт раундов",
+    "activation.pendingTransaction": "Посмотреть ожидающую транзакцию",
+    "activation.back": "Вернуться в Base Quiz",
+    "activation.errorCheck": "Не удалось проверить контракт Base. Попробуйте ещё раз.",
+    "activation.errorWallet": "Совместимый кошелек не найден.",
+    "activation.errorCancelled": "Транзакция отменена. Никаких изменений не произошло.",
+    "activation.errorFailed": "Активация не удалась. Пожалуйста, попробуйте еще раз."
+  },
+  "quiz": {
+    "crypto:0": {
+      "question": "Какая компания разработала Base?",
+      "answers": {
+        "Binance": "Бинанс",
+        "Coinbase": "Coinbase",
+        "Kraken": "Кракен",
+        "OKX": "ОКХ"
+      }
+    },
+    "crypto:1": {
+      "question": "Base — это уровень 2 какой сети?",
+      "answers": {
+        "Bitcoin": "Биткойн",
+        "Solana": "Солана",
+        "Ethereum": "Ethereum",
+        "Avalanche": "Лавина"
+      }
+    },
+    "crypto:2": {
+      "question": "Какой технологический стек использует Base?",
+      "answers": {
+        "OP Stack": "Стек ОП",
+        "zkSync": "zkSync",
+        "Polygon CDK": "Полигон CDK",
+        "Arbitrum Nitro": "Арбитрум Нитро"
+      }
+    },
+    "crypto:3": {
+      "question": "В каком году была запущена основная сеть Base?",
+      "answers": {
+        "2021": "2021 г.",
+        "2022": "2022 г.",
+        "2023": "2023 г.",
+        "2024": "2024 г."
+      }
+    },
+    "crypto:4": {
+      "question": "Какой токен используется для оплаты газа на Base?",
+      "answers": {
+        "USDC": "USDC",
+        "BASE": "БАЗА",
+        "ETH": "ETH",
+        "OP": "ОП"
+      }
+    },
+    "crypto:5": {
+      "question": "Как раньше назывался Base App?",
+      "answers": {
+        "Coinbase Wallet": "Coinbase Wallet",
+        "MetaMask": "MetaMask",
+        "Rainbow": "Радуга",
+        "Phantom": "Фантом"
+      }
+    },
+    "crypto:6": {
+      "question": "Кто является генеральным директором Coinbase?",
+      "answers": {
+        "Vitalik Buterin": "Виталик Бутерин",
+        "Brian Armstrong": "Брайан Армстронг",
+        "Changpeng Zhao": "Чанпэн Чжао",
+        "Jesse Pollak": "Джесси Поллак"
+      }
+    },
+    "crypto:7": {
+      "question": "Кто возглавляет Base на Coinbase?",
+      "answers": {
+        "Brian Armstrong": "Брайан Армстронг",
+        "Jesse Pollak": "Джесси Поллак",
+        "Hayden Adams": "Хайден Адамс",
+        "Stani Kulechov": "Стани Кулечов"
+      }
+    },
+    "crypto:8": {
+      "question": "Какой суперцепочке принадлежит Base?",
+      "answers": {
+        "Polygon Superchain": "Полигональная суперцепочка",
+        "Optimism Superchain": "Суперчейн Оптимизма",
+        "Arbitrum Orbit": "Арбитральная орбита",
+        "zkSync Hyperchain": "Гиперцепочка zkSync"
+      }
+    },
+    "crypto:9": {
+      "question": "Base лучше всего описать как?",
+      "answers": {
+        "A standalone L1": "Автономный L1",
+        "An Ethereum L2 rollup": "Объединение Ethereum L2",
+        "A sidechain": "Боковая цепь",
+        "A bridge protocol": "Протокол моста"
+      }
+    },
+    "crypto:10": {
+      "question": "Кто является основателем Ethereum?",
+      "answers": {
+        "Satoshi Nakamoto": "Сатоши Накамото",
+        "Vitalik Buterin": "Виталик Бутерин",
+        "Brian Armstrong": "Брайан Армстронг",
+        "CZ": "Чехия"
+      }
+    },
+    "crypto:11": {
+      "question": "Смарт-контракты на Base записаны?",
+      "answers": {
+        "Python": "Питон",
+        "Rust": "Ржавчина",
+        "Solidity": "Плотность",
+        "Go": "Перейти"
+      }
+    },
+    "crypto:12": {
+      "question": "Какова наименьшая единица измерения ETH?",
+      "answers": {
+        "Satoshi": "Сатоши",
+        "Gwei": "Гвэй",
+        "Wei": "Вэй",
+        "Finney": "Финни"
+      }
+    },
+    "crypto:13": {
+      "question": "Какова главная цель решений Layer-2?",
+      "answers": {
+        "Minting more tokens": "Выпуск большего числа токенов",
+        "Scalability & lower fees": "Масштабируемость и более низкие комиссии",
+        "Mining": "Майнинг",
+        "Staking": "Стейкинг"
+      }
+    },
+    "crypto:14": {
+      "question": "Какой консенсус использует Ethereum?",
+      "answers": {
+        "Proof of Work": "Доказательство работы",
+        "Proof of Stake": "Доказательство доли",
+        "Proof of Authority": "Подтверждение полномочий",
+        "Proof of History": "Доказательство истории"
+      }
+    },
+    "crypto:15": {
+      "question": "Что такое EVM?",
+      "answers": {
+        "A wallet type": "Тип кошелька",
+        "Ethereum's execution engine": "Механизм выполнения Ethereum",
+        "A token standard": "Стандарт токена",
+        "A bridge": "Мост"
+      }
+    },
+    "crypto:16": {
+      "question": "Что НЕ является L2 из Ethereum?",
+      "answers": {
+        "Base": "Base",
+        "Arbitrum": "Арбитраж",
+        "Solana": "Солана",
+        "Optimism": "Оптимизм"
+      }
+    },
+    "crypto:17": {
+      "question": "Что означает «газ»?",
+      "answers": {
+        "A token": "Токен",
+        "Transaction fee unit": "Единица комиссии за транзакцию",
+        "A wallet": "Кошелек",
+        "An NFT type": "Тип NFT"
+      }
+    },
+    "crypto:18": {
+      "question": "Когда Ethereum переключился на PoS (Слияние)?",
+      "answers": {
+        "2020": "2020 г.",
+        "2021": "2021 г.",
+        "2022": "2022 г.",
+        "2023": "2023 г."
+      }
+    },
+    "crypto:19": {
+      "question": "Что такое ERC-20?",
+      "answers": {
+        "NFT standard": "NFT стандарт",
+        "Fungible token standard": "Стандарт взаимозаменяемого токена",
+        "Wallet format": "Формат кошелька",
+        "L2 standard": "L2 стандарт"
+      }
+    },
+    "crypto:20": {
+      "question": "Какова максимальная эмиссия биткойнов?",
+      "answers": {
+        "21 million": "21 миллион",
+        "100 million": "100 миллионов",
+        "1 billion": "1 миллиард",
+        "Unlimited": "Неограниченно"
+      }
+    },
+    "crypto:21": {
+      "question": "Кто создал Биткойн?",
+      "answers": {
+        "Vitalik Buterin": "Виталик Бутерин",
+        "Satoshi Nakamoto": "Сатоши Накамото",
+        "Hal Finney": "Хэл Финни",
+        "Nick Szabo": "Ник Сабо"
+      }
+    },
+    "crypto:22": {
+      "question": "Как называется наименьшая единица Биткойна?",
+      "answers": {
+        "Wei": "Вэй",
+        "Gwei": "Гвэй",
+        "Satoshi": "Сатоши",
+        "Finney": "Финни"
+      }
+    },
+    "crypto:23": {
+      "question": "Как часто происходит халвинг биткойнов (примерно)?",
+      "answers": {
+        "Every year": "Каждый год",
+        "Every 2 years": "Каждые 2 года",
+        "Every 4 years": "Каждые 4 года",
+        "Every 10 years": "Каждые 10 лет"
+      }
+    },
+    "crypto:24": {
+      "question": "Какой консенсус использует Биткойн?",
+      "answers": {
+        "Proof of Stake": "Доказательство доли",
+        "Proof of Work": "Доказательство работы",
+        "Proof of Authority": "Подтверждение полномочий",
+        "DPoS": "DPoS"
+      }
+    },
+    "crypto:25": {
+      "question": "Что означает DeFi?",
+      "answers": {
+        "Defined Finance": "Определенные финансы",
+        "Decentralized Finance": "Децентрализованные финансы",
+        "Defaulted Finance": "Дефолтные финансы",
+        "Deferred Finance": "Отложенное финансирование"
+      }
+    },
+    "crypto:26": {
+      "question": "Uniswap — это прежде всего?",
+      "answers": {
+        "Lending platform": "Кредитная платформа",
+        "DEX (decentralized exchange)": "DEX (децентрализованная биржа)",
+        "Wallet": "Кошелек",
+        "Bridge": "Мост"
+      }
+    },
+    "crypto:27": {
+      "question": "Что такое AMM?",
+      "answers": {
+        "Auto Market Mover": "Движитель автомобильного рынка",
+        "Automated Market Maker": "Автоматизированный маркет-мейкер",
+        "Asset Management Module": "Модуль управления активами",
+        "Aggregated Mint Maker": "Агрегированная мятная машина"
+      }
+    },
+    "crypto:28": {
+      "question": "Что означает TVL?",
+      "answers": {
+        "Token Value Locked": "Значение токена заблокировано",
+        "Total Value Locked": "Общая сумма заблокирована",
+        "Trade Volume Limit": "Лимит объема сделки",
+        "Tier Volume Level": "Уровень громкости"
+      }
+    },
+    "crypto:29": {
+      "question": "Aave — это прежде всего?",
+      "answers": {
+        "DEX": "DEX",
+        "Lending protocol": "Протокол кредитования",
+        "Stablecoin": "Стейблкоин",
+        "NFT marketplace": "Торговая площадка NFT"
+      }
+    },
+    "crypto:30": {
+      "question": "Что такое урожайное земледелие?",
+      "answers": {
+        "Mining crops": "Горные культуры",
+        "Earning rewards from DeFi protocols": "Получение вознаграждений от протоколов DeFi",
+        "A staking pool name": "Название пула ставок",
+        "An NFT minting term": "Срок чеканки NFT"
+      }
+    },
+    "crypto:31": {
+      "question": "Какая компания выпускает USDC?",
+      "answers": {
+        "Tether": "Привязь",
+        "Circle": "Круг",
+        "Coinbase": "Coinbase",
+        "Paxos": "Паксос"
+      }
+    },
+    "crypto:32": {
+      "question": "Какая компания выпускает USDT?",
+      "answers": {
+        "Circle": "Круг",
+        "Tether": "Привязь",
+        "Coinbase": "Coinbase",
+        "MakerDAO": "MakerDAO"
+      }
+    },
+    "crypto:33": {
+      "question": "DAI в первую очередь поддерживается?",
+      "answers": {
+        "US Dollars in a bank": "Доллары США в банке",
+        "Crypto collateral": "Криптовалютное обеспечение",
+        "Gold reserves": "Золотые запасы",
+        "Government bonds": "Государственные облигации"
+      }
+    },
+    "crypto:34": {
+      "question": "Стейблкоины пытаются поддерживать паритет цен?",
+      "answers": {
+        "Bitcoin": "Биткойн",
+        "Ethereum": "Ethereum",
+        "Fiat currencies": "Фиатные валюты",
+        "Gold only": "Только золото"
+      }
+    },
+    "crypto:35": {
+      "question": "Что означает NFT?",
+      "answers": {
+        "New Finance Token": "Новый финансовый токен",
+        "Non-Fungible Token": "Невзаимозаменяемый токен",
+        "Network File Transfer": "Передача файлов по сети",
+        "Node Function Type": "Тип функции узла"
+      }
+    },
+    "crypto:36": {
+      "question": "Каков стандарт токена NFT на Ethereum?",
+      "answers": {
+        "ERC-20": "ERC-20",
+        "ERC-721": "ERC-721",
+        "ERC-1155 only": "Только ERC-1155",
+        "BEP-20": "БЭП-20"
+      }
+    },
+    "crypto:37": {
+      "question": "Что представляет собой OpenSea?",
+      "answers": {
+        "DEX": "DEX",
+        "NFT marketplace": "NFT-маркетплейс",
+        "Wallet": "Кошелёк",
+        "L2 chain": "Сеть L2"
+      }
+    },
+    "crypto:38": {
+      "question": "Что означает «мят» в NFTs?",
+      "answers": {
+        "Sell an NFT": "Продать NFT",
+        "Create a new NFT onchain": "Создайте новый блокчейн NFT.",
+        "Burn an NFT": "Запишите NFT",
+        "Transfer an NFT": "Передача NFT"
+      }
+    },
+    "crypto:39": {
+      "question": "Как называются секретные слова кошелька?",
+      "answers": {
+        "Public key": "Открытый ключ",
+        "Seed phrase": "Начальная фраза",
+        "Hash": "Хэш",
+        "Nonce": "Одноразовый номер"
+      }
+    },
+    "crypto:40": {
+      "question": "Что такое аппаратный кошелек?",
+      "answers": {
+        "A mobile app": "Мобильное приложение",
+        "A physical device for storing keys": "Физическое устройство для хранения ключей",
+        "A browser extension": "Расширение для браузера.",
+        "An exchange account": "Биржевой счет"
+      }
+    },
+    "crypto:41": {
+      "question": "НИКОГДА не следует делиться своими?",
+      "answers": {
+        "Wallet address": "Адрес кошелька",
+        "Seed phrase": "Начальная фраза",
+        "ENS name": "Имя ENS",
+        "Username": "Имя пользователя"
+      }
+    },
+    "crypto:42": {
+      "question": "Самостоятельное хранение означает?",
+      "answers": {
+        "Exchange holds your keys": "Exchange хранит ваши ключи",
+        "You control your private keys": "Вы контролируете свои личные ключи",
+        "A bank holds your keys": "Ваши ключи хранятся в банке.",
+        "A friend holds your keys": "Ваши ключи хранятся у друга"
+      }
+    },
+    "crypto:43": {
+      "question": "MetaMask — это прежде всего?",
+      "answers": {
+        "Exchange": "Обмен",
+        "Browser wallet": "Браузерный кошелек",
+        "Hardware wallet": "Аппаратный кошелек",
+        "L2 chain": "Цепочка L2"
+      }
+    },
+    "crypto:44": {
+      "question": "Что такое Farcaster?",
+      "answers": {
+        "An exchange": "Обмен",
+        "A decentralized social network": "Децентрализованная социальная сеть",
+        "A wallet": "Кошелек",
+        "A game": "Игра"
+      }
+    },
+    "crypto:45": {
+      "question": "Посты на Farcaster называются?",
+      "answers": {
+        "Tweets": "Твиты",
+        "Casts": "Приведение",
+        "Toots": "Тутс",
+        "Snaps": "Привязки"
+      }
+    },
+    "crypto:46": {
+      "question": "Кто основал Farcaster?",
+      "answers": {
+        "Vitalik Buterin": "Виталик Бутерин",
+        "Dan Romero & Varun Srinivasan": "Дэн Ромеро и Варун Шринивасан",
+        "Jesse Pollak": "Джесси Поллак",
+        "Jack Dorsey": "Джек Дорси"
+      }
+    },
+    "crypto:47": {
+      "question": "Идентификатор пользователя Farcaster называется?",
+      "answers": {
+        "UID": "UID",
+        "FID": "ПИД",
+        "Handle": "Дескриптор",
+        "Tag": "Тег"
+      }
+    },
+    "crypto:48": {
+      "question": "Мини-приложения на Base App созданы с помощью?",
+      "answers": {
+        "MiniKit / OnchainKit": "MiniKit / OnchainKit",
+        "Flutter only": "Только флаттер",
+        "Native iOS only": "Только встроенная версия iOS",
+        "Unity": "Единство"
+      }
+    },
+    "crypto:49": {
+      "question": "Хеш транзакции блокчейна также называется?",
+      "answers": {
+        "Nonce": "Одноразовый номер",
+        "TX ID": "Идентификатор передачи",
+        "Block height": "Высота блока",
+        "Gas limit": "Предел газа"
+      }
+    },
+    "crypto:50": {
+      "question": "Что означает DAO?",
+      "answers": {
+        "Digital Asset Order": "Заказ цифровых активов",
+        "Decentralized Autonomous Organization": "Децентрализованная автономная организация",
+        "Distributed App Output": "Распределенный вывод приложения",
+        "Data Access Object": "Объект доступа к данным"
+      }
+    },
+    "crypto:51": {
+      "question": "Что такое «обозреватель блоков»?",
+      "answers": {
+        "A mining tool": "Инструмент для добычи полезных ископаемых",
+        "A site to view onchain data": "Сайт для просмотра данных ончейна",
+        "A wallet type": "Тип кошелька",
+        "A bridge": "Мост"
+      }
+    },
+    "crypto:52": {
+      "question": "Что такое «проскальзывание» в трейдинге?",
+      "answers": {
+        "Network downtime": "Время простоя сети",
+        "Difference between expected & actual price": "Разница между ожидаемой и фактической ценой",
+        "A type of fee": "Тип комиссии",
+        "A wallet error": "Ошибка кошелька"
+      }
+    },
+    "crypto:53": {
+      "question": "«коврик» — это?",
+      "answers": {
+        "A trading strategy": "Торговая стратегия",
+        "A scam where founders abandon a project": "Мошенничество, когда основатели покидают проект",
+        "A staking method": "Метод ставок",
+        "A wallet feature": "Функция кошелька"
+      }
+    },
+    "crypto:54": {
+      "question": "Что такое мультиподписной кошелек?",
+      "answers": {
+        "A wallet with many tokens": "Кошелек с множеством токенов",
+        "A wallet needing multiple signatures to approve tx": "Кошелек, требующий нескольких подписей для подтверждения передачи",
+        "A wallet on multiple chains": "Кошелек на нескольких цепочках",
+        "A wallet with a long password": "Кошелек с длинным паролем"
+      }
+    },
+    "crypto:55": {
+      "question": "Что означает «HODL» в криптокультуре?",
+      "answers": {
+        "Sell quickly": "Продать быстро",
+        "Hold long-term": "Держите долгосрочно",
+        "A hardware wallet": "Аппаратный кошелек",
+        "A type of token": "Тип токена"
+      }
+    },
+    "crypto:56": {
+      "question": "Что такое «кит» в криптовалюте?",
+      "answers": {
+        "A tiny investor": "Крошечный инвестор",
+        "A holder of very large amounts": "Держатель очень крупных сумм",
+        "A stablecoin": "Стейблкоин",
+        "A mining rig": "Горнодобывающая установка"
+      }
+    },
+    "crypto:57": {
+      "question": "Плата за газ в блокчейне выплачивается?",
+      "answers": {
+        "Developers": "Разработчики",
+        "Network validators/miners": "Сетевые валидаторы/майнеры",
+        "Exchanges": "Обмены",
+        "Banks": "Банки"
+      }
+    },
+    "crypto:58": {
+      "question": "Что такое смарт-контракт?",
+      "answers": {
+        "A paper contract": "Бумажный договор",
+        "Self-executing code on a blockchain": "Самоисполняющийся код в блокчейне",
+        "A savings account": "Сберегательный счет",
+        "A hardware device": "Аппаратное устройство"
+      }
+    },
+    "crypto:59": {
+      "question": "Что означает «DEX»?",
+      "answers": {
+        "Digital Exchange": "Цифровая биржа",
+        "Decentralized Exchange": "Децентрализованная биржа",
+        "Data Exchange": "Обмен данными",
+        "Direct Exchange": "Прямой обмен"
+      }
+    },
+    "crypto:60": {
+      "question": "Что означает «CEX»?",
+      "answers": {
+        "Central Exchange": "Центральная биржа",
+        "Centralized Exchange": "Централизованная биржа",
+        "Crypto Exchange": "Криптовалютная биржа",
+        "Coin Exchange": "Обмен монет"
+      }
+    },
+    "crypto:61": {
+      "question": "Что такое «ставка»?",
+      "answers": {
+        "Selling tokens": "Продажа токенов",
+        "Locking tokens to support a network for rewards": "Блокировка токенов для поддержки сети за вознаграждение",
+        "Mining coins": "Майнинг монет",
+        "Burning tokens": "Сжигание жетонов"
+      }
+    },
+    "crypto:62": {
+      "question": "Что такое «закрытый ключ»?",
+      "answers": {
+        "Your public address": "Ваш публичный адрес",
+        "A secret that controls your funds": "Секрет, который контролирует ваши средства",
+        "An exchange password": "Пароль обмена",
+        "A transaction id": "Идентификатор транзакции"
+      }
+    },
+    "crypto:63": {
+      "question": "Для чего используется «тестовая сеть»?",
+      "answers": {
+        "Real transactions": "Реальные транзакции",
+        "Testing without real value": "Тестирование без реальной ценности",
+        "Storing coins": "Хранение монет",
+        "Mining Bitcoin": "Майнинг биткойнов"
+      }
+    },
+    "crypto:64": {
+      "question": "Что означает «сжигание» токенов?",
+      "answers": {
+        "Creating tokens": "Создание токенов",
+        "Permanently removing tokens from supply": "Постоянное удаление токенов из поставки",
+        "Staking tokens": "Стейкинг токенов",
+        "Sending tokens": "Отправка токенов"
+      }
+    },
+    "crypto:65": {
+      "question": "Что такое «бычий рынок»?",
+      "answers": {
+        "Prices falling": "Цены падают",
+        "Prices rising": "Цены растут",
+        "No trading": "Нет торговли",
+        "A type of coin": "Тип монеты"
+      }
+    },
+    "crypto:66": {
+      "question": "Что такое «медвежий рынок»?",
+      "answers": {
+        "Prices rising": "Цены растут",
+        "Prices falling": "Цены падают",
+        "Sideways only": "Только сбоку",
+        "A mining term": "Термин майнинга"
+      }
+    },
+    "crypto:67": {
+      "question": "Что такое «аирдроп»?",
+      "answers": {
+        "A market crash": "Обвал рынка",
+        "Free distribution of tokens": "Бесплатное распространение токенов",
+        "A hack": "Взлом",
+        "A trading fee": "Торговая комиссия"
+      }
+    },
+    "crypto:68": {
+      "question": "Что такое «Web3»?",
+      "answers": {
+        "The third website": "Третий сайт",
+        "A decentralized internet on blockchain": "Децентрализованный Интернет на блокчейне",
+        "A web browser": "Веб-браузер",
+        "A programming language": "Язык программирования"
+      }
+    },
+    "crypto:69": {
+      "question": "Что означает «L1»?",
+      "answers": {
+        "Layer 1 base blockchain": "Базовый блокчейн уровня 1",
+        "A game level": "Игровой уровень",
+        "A wallet": "Кошелек",
+        "A token standard": "Стандарт токена"
+      }
+    },
+    "crypto:70": {
+      "question": "Солана — это?",
+      "answers": {
+        "Layer-2 of Ethereum": "Уровень 2 Ethereum",
+        "Standalone Layer-1 blockchain": "Автономный блокчейн уровня 1",
+        "Wallet": "Кошелек",
+        "Stablecoin": "Стейблкоин"
+      }
+    },
+    "crypto:71": {
+      "question": "Чем известно доказательство работы?",
+      "answers": {
+        "Low energy use": "Низкое энергопотребление",
+        "High energy use via mining": "Высокое потребление энергии при майнинге",
+        "Staking coins": "Ставка монет",
+        "No validators": "Нет валидаторов"
+      }
+    },
+    "crypto:72": {
+      "question": "Что означает «DYOR»?",
+      "answers": {
+        "Do Your Own Research": "Проведите собственное исследование",
+        "Deposit Your Own Reserves": "Внесите свои собственные резервы",
+        "Don't Yield On Returns": "Не уступайте при возврате",
+        "Data Yield Over Risk": "Выход данных выше риска"
+      }
+    },
+    "crypto:73": {
+      "question": "Что такое «холодный кошелек»?",
+      "answers": {
+        "Always-online wallet": "Всегда онлайн-кошелек",
+        "Offline wallet for storage": "Автономный кошелек для хранения",
+        "Exchange wallet": "Биржевой кошелек",
+        "A stablecoin": "Стейблкоин"
+      }
+    },
+    "crypto:74": {
+      "question": "Что такое «горячий кошелек»?",
+      "answers": {
+        "Offline wallet": "Автономный кошелек",
+        "Internet-connected wallet": "Кошелек, подключенный к Интернету",
+        "Hardware wallet": "Аппаратный кошелек",
+        "Paper wallet": "Бумажный кошелек"
+      }
+    },
+    "crypto:75": {
+      "question": "«Gwei» используется для измерения?",
+      "answers": {
+        "Token supply": "Предоставление токена",
+        "Gas prices": "Цены на газ",
+        "Block size": "Размер блока",
+        "Wallet balance": "Баланс кошелька"
+      }
+    },
+    "crypto:76": {
+      "question": "«Непостоянная потеря» связана с?",
+      "answers": {
+        "Staking": "Ставка",
+        "Providing liquidity": "Обеспечение ликвидности",
+        "Mining": "Горное дело",
+        "Holding": "Холдинг"
+      }
+    },
+    "crypto:77": {
+      "question": "«Мост» блокчейна используется?",
+      "answers": {
+        "Mine coins": "Добывайте монеты",
+        "Move assets between blockchains": "Перемещение активов между блокчейнами",
+        "Store keys": "Ключи хранилища",
+        "Create tokens": "Создание токенов"
+      }
+    },
+    "crypto:78": {
+      "question": "Что такое «валидатор»?",
+      "answers": {
+        "A wallet": "Кошелек",
+        "A node that verifies transactions": "Узел, проверяющий транзакции",
+        "A token": "Токен",
+        "An exchange": "Обмен"
+      }
+    },
+    "crypto:79": {
+      "question": "«ATH» означает?",
+      "answers": {
+        "All-Time High": "Рекордный максимум",
+        "Average Trade Height": "Средняя высота сделки",
+        "Actual Token Holdings": "Фактические запасы токенов",
+        "Auto Trade Handler": "Обработчик автоматической торговли"
+      }
+    },
+    "crypto:80": {
+      "question": "«Тикер», такой как BTC или ETH, это?",
+      "answers": {
+        "A price chart": "График цен",
+        "A short symbol for an asset": "Короткий символ актива",
+        "A wallet": "Кошелек",
+        "A block": "Блок"
+      }
+    },
+    "crypto:81": {
+      "question": "В Proof of Work подтверждение транзакций называется?",
+      "answers": {
+        "Staking": "Ставка",
+        "Mining": "Горное дело",
+        "Bridging": "Соединение",
+        "Burning": "Горение"
+      }
+    },
+    "crypto:82": {
+      "question": "Что такое «рыночная капитализация»?",
+      "answers": {
+        "Price × circulating supply": "Цена × оборотное предложение",
+        "Daily trading volume": "Ежедневный объем торгов",
+        "Number of wallets": "Количество кошельков",
+        "Total gas fees": "Общая плата за газ"
+      }
+    },
+    "crypto:83": {
+      "question": "OnchainKit — это набор инструментов для разработчиков?",
+      "answers": {
+        "Binance": "Бинанс",
+        "Coinbase": "Coinbase",
+        "MetaMask": "MetaMask",
+        "Uniswap": "Uniswap"
+      }
+    },
+    "crypto:84": {
+      "question": "Установлен «предел газа»?",
+      "answers": {
+        "Token supply": "Предоставление токена",
+        "Max gas a transaction can use": "Максимальное количество газа, которое может использовать транзакция",
+        "Wallet size": "Размер кошелька",
+        "Block reward": "Награда за блок"
+      }
+    },
+    "crypto:85": {
+      "question": "Как наиболее известен полигон?",
+      "answers": {
+        "A base Layer-1": "Базовый уровень-1",
+        "An Ethereum scaling solution": "Решение для масштабирования Ethereum",
+        "A wallet": "Кошелек",
+        "An exchange": "Обмен"
+      }
+    },
+    "crypto:86": {
+      "question": "Что означает «FOMO» в трейдинге?",
+      "answers": {
+        "Fear Of Missing Out": "Страх пропустить",
+        "Full Order Market Offer": "Рыночное предложение полного заказа",
+        "Fixed Order Money Out": "Выплата фиксированного ордера",
+        "Fast Onchain Market Order": "Быстрый рыночный ордер ончейн"
+      }
+    },
+    "crypto:87": {
+      "question": "Что такое «ликвидность» в пуле?",
+      "answers": {
+        "Number of users": "Количество пользователей",
+        "Assets available to trade": "Активы, доступные для торговли",
+        "Trading fees": "Торговые комиссии",
+        "Block height": "Высота блока"
+      }
+    },
+    "crypto:88": {
+      "question": "Решения «уровня 2» в основном направлены на?",
+      "answers": {
+        "Replace Bitcoin": "Заменить биткойн",
+        "Scale a Layer-1 with cheaper, faster txs": "Масштабируйте уровень 1 с помощью более дешевой и быстрой передачи данных",
+        "Mine faster": "Майните быстрее",
+        "Issue stablecoins": "Выпуск стейблкоинов"
+      }
+    },
+    "crypto:89": {
+      "question": "«Адрес» кошелька обычно?",
+      "answers": {
+        "Secret, never shared": "Секрет, никогда не разглашается",
+        "Public and shareable to receive funds": "Общедоступный и доступный для получения средств",
+        "Your password": "Ваш пароль",
+        "A private key": "Закрытый ключ"
+      }
+    },
+    "crypto:90": {
+      "question": "Что означает «KYC»?",
+      "answers": {
+        "Keep Your Coins": "Сохраните свои монеты",
+        "Know Your Customer": "Знай своего клиента",
+        "Key Yield Contract": "Контракт на ключевую доходность",
+        "Known Yield Curve": "Известная кривая доходности"
+      }
+    },
+    "crypto:91": {
+      "question": "Что такое nonce в транзакции?",
+      "answers": {
+        "A random word": "Случайное слово",
+        "A per-account transaction counter": "Счётчик транзакций для каждого аккаунта",
+        "A token": "Токен",
+        "A wallet": "Кошелёк"
+      }
+    },
+    "crypto:92": {
+      "question": "'PoS' означает?",
+      "answers": {
+        "Proof of Speed": "Доказательство скорости",
+        "Proof of Stake": "Доказательство доли",
+        "Point of Sale": "Точка продажи",
+        "Proof of Storage": "Доказательство хранения"
+      }
+    },
+    "crypto:93": {
+      "question": "Предназначена ли стейблкоин?",
+      "answers": {
+        "Grow fast": "Быстро расти",
+        "Stay near a stable value": "Оставайтесь около стабильного значения",
+        "Be an NFT": "Быть NFT",
+        "Mine blocks": "Минные блоки"
+      }
+    },
+    "crypto:94": {
+      "question": "Что из этого является стейблкоином?",
+      "answers": {
+        "ETH": "ETH",
+        "USDC": "USDC",
+        "BTC": "BTC",
+        "SOL": "СОЛ."
+      }
+    },
+    "crypto:95": {
+      "question": "«Кроссчейн» означает работу через?",
+      "answers": {
+        "One app": "Одно приложение",
+        "Multiple blockchains": "Несколько блокчейнов",
+        "One wallet": "Один кошелек",
+        "One token": "Один токен"
+      }
+    },
+    "crypto:96": {
+      "question": "«Блок» в блокчейне содержит?",
+      "answers": {
+        "Only one transaction": "Только одна транзакция",
+        "A batch of transactions": "Пакет транзакций",
+        "Only code": "Только код",
+        "Nothing": "Ничего"
+      }
+    },
+    "crypto:97": {
+      "question": "«Блок генезиса» — это?",
+      "answers": {
+        "Last block": "Последний блок",
+        "First block of a blockchain": "Первый блок блокчейна",
+        "A wallet": "Кошелек",
+        "A token": "Токен"
+      }
+    },
+    "crypto:98": {
+      "question": "Что означает «ROI»?",
+      "answers": {
+        "Return On Investment": "Рентабельность инвестиций",
+        "Rate Of Interest": "Процентная ставка",
+        "Risk Of Inflation": "Риск инфляции",
+        "Ratio Of Income": "Коэффициент дохода"
+      }
+    },
+    "crypto:99": {
+      "question": "Ethereum цены на газ обычно измеряются в?",
+      "answers": {
+        "US dollars": "долларов США",
+        "Gwei": "Гвэй",
+        "Bitcoin": "Биткойн",
+        "Bytes": "байт"
+      }
+    },
+    "sports:0": {
+      "question": "Сколько игроков одной футбольной команды находится на поле?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:1": {
+      "question": "В каком виде спорта вы бы выполнили слэм-данк?",
+      "answers": {
+        "Tennis": "Теннис",
+        "Basketball": "Баскетбол",
+        "Golf": "Гольф",
+        "Cricket": "Крикет"
+      }
+    },
+    "sports:2": {
+      "question": "Как часто проводятся летние Олимпийские игры?",
+      "answers": {
+        "Every 2 years": "Каждые 2 года",
+        "Every 3 years": "Каждые 3 года",
+        "Every 4 years": "Каждые 4 года",
+        "Every 5 years": "Каждые 5 лет"
+      }
+    },
+    "sports:3": {
+      "question": "Какая страна выиграла больше всего чемпионатов мира по футболу?",
+      "answers": {
+        "Germany": "Германия",
+        "Italy": "Италия",
+        "Brazil": "Бразилия",
+        "Argentina": "Аргентина"
+      }
+    },
+    "sports:4": {
+      "question": "Как в теннисе называется нулевой результат?",
+      "answers": {
+        "Nil": "Ноль",
+        "Love": "Любовь",
+        "Duck": "Утка",
+        "Blank": "Пусто"
+      }
+    },
+    "sports:5": {
+      "question": "Сколько колец на олимпийском флаге?",
+      "answers": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:6": {
+      "question": "В каком виде спорта используется волан?",
+      "answers": {
+        "Squash": "Сквош",
+        "Badminton": "Бадминтон",
+        "Table tennis": "Настольный теннис",
+        "Volleyball": "Волейбол"
+      }
+    },
+    "sports:7": {
+      "question": "Каким видом спорта славится Усэйн Болт?",
+      "answers": {
+        "Swimming": "Плавание",
+        "Sprinting": "Спринт",
+        "Cycling": "Езда на велосипеде",
+        "Boxing": "Бокс"
+      }
+    },
+    "sports:8": {
+      "question": "Сколько очков приносит тачдаун в американском футболе?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:9": {
+      "question": "В каком виде спорта проводится Тур де Франс?",
+      "answers": {
+        "Running": "Выполняется",
+        "Cycling": "Велоспорт",
+        "Rowing": "Гребля",
+        "Sailing": "Парусный спорт"
+      }
+    },
+    "sports:10": {
+      "question": "Какая страна принимает теннисный турнир Уимблдон?",
+      "answers": {
+        "USA": "США",
+        "France": "Франция",
+        "England": "Англия",
+        "Australia": "Австралия"
+      }
+    },
+    "sports:11": {
+      "question": "Майкл Джордан – легенда какого спорта?",
+      "answers": {
+        "Baseball": "Бейсбол",
+        "Basketball": "Баскетбол",
+        "Football": "Футбол",
+        "Hockey": "Хоккей"
+      }
+    },
+    "sports:12": {
+      "question": "Сколько раундов в стандартном поединке чемпионата по боксу?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "12": "12",
+        "15": "15"
+      }
+    },
+    "sports:13": {
+      "question": "В каком теннисном турнире Большого шлема играют на грунтовых кортах?",
+      "answers": {
+        "Wimbledon": "Уимблдон",
+        "US Open": "Открытый чемпионат США",
+        "French Open": "Открытый чемпионат Франции",
+        "Australian Open": "Открытый чемпионат Австралии"
+      }
+    },
+    "sports:14": {
+      "question": "Какие гонки представляют собой Формулу 1?",
+      "answers": {
+        "Boat": "Лодка",
+        "Car": "Автомобиль",
+        "Horse": "Лошадь",
+        "Bicycle": "Велосипед"
+      }
+    },
+    "sports:15": {
+      "question": "Какова примерно продолжительность марафона?",
+      "answers": {
+        "21 km": "21 км",
+        "42 km": "42 км",
+        "50 km": "50 км",
+        "30 km": "30 км"
+      }
+    },
+    "sports:16": {
+      "question": "Сколько игроков в команде по крикету?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:17": {
+      "question": "По какому виду спорта проводится турнир мастеров?",
+      "answers": {
+        "Golf": "Гольф",
+        "Tennis": "Теннис",
+        "Polo": "Поло",
+        "Rugby": "Регби"
+      }
+    },
+    "sports:18": {
+      "question": "Какая страна выиграла чемпионат мира по футболу 2018 года?",
+      "answers": {
+        "Germany": "Германия",
+        "France": "Франция",
+        "Brazil": "Бразилия",
+        "Croatia": "Хорватия"
+      }
+    },
+    "sports:19": {
+      "question": "Сколько длится футбольный матч без учета добавленного времени?",
+      "answers": {
+        "80 minutes": "80 минут",
+        "90 minutes": "90 минут",
+        "100 minutes": "100 минут",
+        "120 minutes": "120 минут"
+      }
+    },
+    "sports:20": {
+      "question": "Какая карта отправляет футболиста с поля?",
+      "answers": {
+        "Yellow": "Желтый",
+        "Red": "Красный",
+        "Blue": "Синий",
+        "Green": "Зеленый"
+      }
+    },
+    "sports:21": {
+      "question": "Хет-трик означает, сколько голов забито в матче?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:22": {
+      "question": "Криштиану Роналду представляет какую национальную сборную?",
+      "answers": {
+        "Brazil": "Бразилия",
+        "Spain": "Испания",
+        "Portugal": "Португалия",
+        "Argentina": "Аргентина"
+      }
+    },
+    "sports:23": {
+      "question": "За какую страну Пеле играл на международном уровне?",
+      "answers": {
+        "Argentina": "Аргентина",
+        "Brazil": "Бразилия",
+        "Portugal": "Португалия",
+        "Italy": "Италия"
+      }
+    },
+    "sports:24": {
+      "question": "Ведущее клубное футбольное соревнование Европы?",
+      "answers": {
+        "Europa League": "Лига Европы",
+        "Champions League": "Лига чемпионов",
+        "Copa America": "Кубок Америки",
+        "FA Cup": "Кубок Англии"
+      }
+    },
+    "sports:25": {
+      "question": "В каком виде спорта вручается Золотой мяч?",
+      "answers": {
+        "Basketball": "Баскетбол",
+        "Football/Soccer": "Футбол/футбол",
+        "Tennis": "Теннис",
+        "Golf": "Гольф"
+      }
+    },
+    "sports:26": {
+      "question": "Легендой какого вида спорта был Диего Марадона?",
+      "answers": {
+        "Basketball": "Баскетбол",
+        "Soccer": "Футбол",
+        "Tennis": "Теннис",
+        "Boxing": "Бокс"
+      }
+    },
+    "sports:27": {
+      "question": "«Чистый лист» в футболе означает?",
+      "answers": {
+        "Scoring many goals": "Забивает много голов",
+        "Conceding no goals": "Не пропущено ни одного гола",
+        "Getting a red card": "Получение красной карточки",
+        "A draw": "Ничья"
+      }
+    },
+    "sports:28": {
+      "question": "Сколько очков приносит штрафной бросок в баскетболе?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:29": {
+      "question": "Корзина из-за трехочковой дуги стоит?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:30": {
+      "question": "На какой высоте установлены стандартные баскетбольные кольца?",
+      "answers": {
+        "8 feet": "8 футов",
+        "10 feet": "10 футов",
+        "12 feet": "12 футов",
+        "15 feet": "15 футов"
+      }
+    },
+    "sports:31": {
+      "question": "НБА — лига, базирующаяся в какой стране?",
+      "answers": {
+        "Canada": "Канада",
+        "USA": "США",
+        "Spain": "Испания",
+        "Australia": "Австралия"
+      }
+    },
+    "sports:32": {
+      "question": "Какой стране приписывают изобретение баскетбола?",
+      "answers": {
+        "Canada": "Канада",
+        "USA": "США",
+        "UK": "Великобритания",
+        "France": "Франция"
+      }
+    },
+    "sports:33": {
+      "question": "Сколько турниров Большого шлема проводится в теннисе каждый год?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:34": {
+      "question": "На каком покрытии проводится Уимблдон?",
+      "answers": {
+        "Clay": "Глина",
+        "Grass": "Трава",
+        "Hard court": "Корт с твердым покрытием",
+        "Carpet": "Ковер"
+      }
+    },
+    "sports:35": {
+      "question": "Каким видом спорта прославился Роджер Федерер?",
+      "answers": {
+        "Golf": "Гольф",
+        "Tennis": "Теннис",
+        "Cycling": "Езда на велосипеде",
+        "Rowing": "Гребля"
+      }
+    },
+    "sports:36": {
+      "question": "Серена Уильямс – чемпионка в каком виде спорта?",
+      "answers": {
+        "Golf": "Гольф",
+        "Tennis": "Теннис",
+        "Swimming": "Плавание",
+        "Athletics": "Легкая атлетика"
+      }
+    },
+    "sports:37": {
+      "question": "Что следует в теннисе после счёта «ровно», если игрок выигрывает следующий розыгрыш?",
+      "answers": {
+        "Game": "Гейм",
+        "Advantage": "Преимущество",
+        "Set": "Сет",
+        "Match": "Матч"
+      }
+    },
+    "sports:38": {
+      "question": "В каком году были проведены первые современные Олимпийские игры?",
+      "answers": {
+        "1896": "1896 г.",
+        "1900": "1900 г.",
+        "1924": "1924 г.",
+        "1936": "1936 г."
+      }
+    },
+    "sports:39": {
+      "question": "Летние Олимпийские игры 2016 года проводились?",
+      "answers": {
+        "London": "Лондон",
+        "Rio de Janeiro": "Рио-де-Жанейро",
+        "Tokyo": "Токио",
+        "Beijing": "Пекин"
+      }
+    },
+    "sports:40": {
+      "question": "Где проходили летние Олимпийские игры 2024 года?",
+      "answers": {
+        "Tokyo": "Токио",
+        "Paris": "Париж",
+        "Los Angeles": "Лос-Анджелес",
+        "London": "Лондон"
+      }
+    },
+    "sports:41": {
+      "question": "Олимпийский девиз: «Быстрее, выше, ___».",
+      "answers": {
+        "Better": "Лучше",
+        "Stronger": "Сильнее",
+        "Farther": "Дальше",
+        "Longer": "дольше"
+      }
+    },
+    "sports:42": {
+      "question": "Где традиционно зажигается олимпийский огонь?",
+      "answers": {
+        "Italy": "Италия",
+        "Greece": "Греция",
+        "France": "Франция",
+        "Egypt": "Египет"
+      }
+    },
+    "sports:43": {
+      "question": "В каком олимпийском виде спорта доминировал Майкл Фелпс?",
+      "answers": {
+        "Athletics": "Легкая атлетика",
+        "Swimming": "Плавание",
+        "Diving": "Дайвинг",
+        "Rowing": "Гребля"
+      }
+    },
+    "sports:44": {
+      "question": "Какой вид плавания НЕ является соревновательным?",
+      "answers": {
+        "Butterfly": "Бабочка",
+        "Backstroke": "Плавание на спине",
+        "Breaststroke": "Брасс",
+        "Sidestroke": "Боковой ход"
+      }
+    },
+    "sports:45": {
+      "question": "Мухаммед Али был легендой?",
+      "answers": {
+        "Footballer": "Футболист",
+        "Boxer": "Боксёр",
+        "Swimmer": "Пловец",
+        "Runner": "Бегун"
+      }
+    },
+    "sports:46": {
+      "question": "В какой стране зародилось дзюдо?",
+      "answers": {
+        "China": "Китай",
+        "Japan": "Япония",
+        "Korea": "Корея",
+        "Thailand": "Таиланд"
+      }
+    },
+    "sports:47": {
+      "question": "В какой стране зародилось тхэквондо?",
+      "answers": {
+        "Japan": "Япония",
+        "China": "Китай",
+        "South Korea": "Южная Корея",
+        "Vietnam": "Вьетнам"
+      }
+    },
+    "sports:48": {
+      "question": "В боксе «КО» означает?",
+      "answers": {
+        "Knockout": "Нокаут",
+        "Keep On": "Продолжайте",
+        "Knee Out": "На коленях",
+        "Key Opponent": "Ключевой противник"
+      }
+    },
+    "sports:49": {
+      "question": "Борьба сумо – традиционный вид спорта?",
+      "answers": {
+        "China": "Китай",
+        "Japan": "Япония",
+        "Korea": "Корея",
+        "Mongolia": "Монголия"
+      }
+    },
+    "sports:50": {
+      "question": "В гольфе один удар на лунке ниже номинала — это?",
+      "answers": {
+        "Eagle": "Орел",
+        "Birdie": "Птичка",
+        "Bogey": "Богги",
+        "Par": "Пар."
+      }
+    },
+    "sports:51": {
+      "question": "В гольфе один удар больше номинала?",
+      "answers": {
+        "Birdie": "Птичка",
+        "Bogey": "Богги",
+        "Eagle": "Орел",
+        "Ace": "Туз"
+      }
+    },
+    "sports:52": {
+      "question": "Лунку в гольфе также называют?",
+      "answers": {
+        "Ace": "Туз",
+        "Birdie": "Птичка",
+        "Eagle": "Орел",
+        "Par": "Пар."
+      }
+    },
+    "sports:53": {
+      "question": "Сколько лунок имеет стандартный раунд игры в гольф?",
+      "answers": {
+        "9": "9",
+        "12": "12",
+        "18": "18",
+        "24": "24"
+      }
+    },
+    "sports:54": {
+      "question": "Какая страна является родиной гольфа?",
+      "answers": {
+        "USA": "США",
+        "Scotland": "Шотландия",
+        "France": "Франция",
+        "Italy": "Италия"
+      }
+    },
+    "sports:55": {
+      "question": "В каком виде спорта занимается Льюис Хэмилтон?",
+      "answers": {
+        "MotoGP": "МотоГП",
+        "Formula 1": "Формула 1",
+        "Rally": "Ралли",
+        "NASCAR": "НАСКАР"
+      }
+    },
+    "sports:56": {
+      "question": "Автомобили Формулы 1 участвуют в гонках?",
+      "answers": {
+        "Field": "Поле",
+        "Track/circuit": "Трек/цепь",
+        "Pool": "Пул",
+        "Court": "Суд"
+      }
+    },
+    "sports:57": {
+      "question": "В Формуле 1 титулы достаются гонщикам и?",
+      "answers": {
+        "Fans": "Фанаты",
+        "Constructors": "Конструкторы",
+        "Cities": "Города",
+        "Sponsors": "Спонсоры"
+      }
+    },
+    "sports:58": {
+      "question": "Сколько ударов составляет аут в бейсболе?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:59": {
+      "question": "В бейсбол играют на поле, имеющем форму?",
+      "answers": {
+        "Circle": "Круг",
+        "Diamond": "Алмаз",
+        "Square": "Квадрат",
+        "Triangle": "Треугольник"
+      }
+    },
+    "sports:60": {
+      "question": "Супербоул — чемпионат по какому виду спорта?",
+      "answers": {
+        "Basketball": "Баскетбол",
+        "American football": "Американский футбол",
+        "Baseball": "Бейсбол",
+        "Ice hockey": "Хоккей"
+      }
+    },
+    "sports:61": {
+      "question": "Сколько игроков в каждой команде находится на поле в американском футболе?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:62": {
+      "question": "Играют в хоккей с шайбой?",
+      "answers": {
+        "Grass": "Трава",
+        "Ice": "Лед",
+        "Sand": "Песок",
+        "Clay": "Глина"
+      }
+    },
+    "sports:63": {
+      "question": "Кубок Стэнли является трофеем какого вида спорта?",
+      "answers": {
+        "Basketball": "Баскетбол",
+        "Ice hockey": "Хоккей",
+        "Baseball": "Бейсбол",
+        "Soccer": "Футбол"
+      }
+    },
+    "sports:64": {
+      "question": "Сколько игроков с каждой стороны находится на льду в хоккее?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:65": {
+      "question": "Сколько игроков от каждой команды находится на волейбольной площадке?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:66": {
+      "question": "Настольный теннис также обычно называют?",
+      "answers": {
+        "Squash": "Сквош",
+        "Ping pong": "Пинг-понг",
+        "Badminton": "Бадминтон",
+        "Racquetball": "Ракетбол"
+      }
+    },
+    "sports:67": {
+      "question": "Какая страна доминирует в международном настольном теннисе?",
+      "answers": {
+        "Brazil": "Бразилия",
+        "China": "Китай",
+        "Canada": "Канада",
+        "Egypt": "Египет"
+      }
+    },
+    "sports:68": {
+      "question": "В какой вид спорта с ракеткой играют в четырех стенах?",
+      "answers": {
+        "Tennis": "Теннис",
+        "Squash": "Сквош",
+        "Badminton": "Бадминтон",
+        "Table tennis": "Настольный теннис"
+      }
+    },
+    "sports:69": {
+      "question": "Национальная сборная Новой Зеландии по регби известна как?",
+      "answers": {
+        "Wallabies": "Валлаби",
+        "All Blacks": "Все черные",
+        "Springboks": "Спрингбоксы",
+        "Pumas": "Пумы"
+      }
+    },
+    "sports:70": {
+      "question": "Особенностью какого вида спорта является схватка?",
+      "answers": {
+        "Rugby": "Регби",
+        "Tennis": "Теннис",
+        "Golf": "Гольф",
+        "Swimming": "Плавание"
+      }
+    },
+    "sports:71": {
+      "question": "Сколько очков стоит «попытка» в регби?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "5": "5",
+        "7": "7"
+      }
+    },
+    "sports:72": {
+      "question": "«Век» (100 серий) — это термин?",
+      "answers": {
+        "Baseball": "Бейсбол",
+        "Cricket": "Крикет",
+        "Rugby": "Регби",
+        "Soccer": "Футбол"
+      }
+    },
+    "sports:73": {
+      "question": "В какой стране крикет особенно популярен?",
+      "answers": {
+        "USA": "США",
+        "India": "Индия",
+        "Norway": "Норвегия",
+        "Iceland": "Исландия"
+      }
+    },
+    "sports:74": {
+      "question": "В каком виде спорта метают копье?",
+      "answers": {
+        "Gymnastics": "Гимнастика",
+        "Athletics": "Легкая атлетика",
+        "Cycling": "Езда на велосипеде",
+        "Rowing": "Гребля"
+      }
+    },
+    "sports:75": {
+      "question": "В каком виде спорта относятся прыжки в длину?",
+      "answers": {
+        "Swimming": "Плавание",
+        "Athletics": "Легкая атлетика",
+        "Cycling": "Езда на велосипеде",
+        "Gymnastics": "Гимнастика"
+      }
+    },
+    "sports:76": {
+      "question": "Самая короткая спринтерская дистанция на Олимпийских играх?",
+      "answers": {
+        "50 m": "50 м",
+        "100 m": "100 м",
+        "200 m": "200 м",
+        "400 m": "400 м"
+      }
+    },
+    "sports:77": {
+      "question": "В каком виде спорта используется конь?",
+      "answers": {
+        "Athletics": "Легкая атлетика",
+        "Gymnastics": "Гимнастика",
+        "Swimming": "Плавание",
+        "Boxing": "Бокс"
+      }
+    },
+    "sports:78": {
+      "question": "В каком виде спорта называется «Слалом»?",
+      "answers": {
+        "Swimming": "Плавание",
+        "Skiing": "Катание на лыжах",
+        "Cycling": "Езда на велосипеде",
+        "Boxing": "Бокс"
+      }
+    },
+    "sports:79": {
+      "question": "Каким видом спорта обычно является катание на лыжах?",
+      "answers": {
+        "Water": "Вода",
+        "Winter": "Зима",
+        "Desert": "Пустыня",
+        "Indoor": "В помещении"
+      }
+    },
+    "sports:80": {
+      "question": "Проходит конькобежный спорт?",
+      "answers": {
+        "Grass": "Трава",
+        "Ice": "Лед",
+        "Water": "Вода",
+        "Sand": "Песок"
+      }
+    },
+    "sports:81": {
+      "question": "В каком виде спорта используются термины «удар» и «запасной»?",
+      "answers": {
+        "Bowling": "Боулинг",
+        "Golf": "Гольф",
+        "Tennis": "Теннис",
+        "Cricket": "Крикет"
+      }
+    },
+    "sports:82": {
+      "question": "Максимальный брейк в снукере?",
+      "answers": {
+        "100": "100",
+        "147": "147",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:83": {
+      "question": "Максимальный результат при игре в три дротика?",
+      "answers": {
+        "120": "120",
+        "150": "150",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:84": {
+      "question": "«Пелотон» — это группа гонщиков, занимающихся каким видом спорта?",
+      "answers": {
+        "Cycling": "Велоспорт",
+        "Swimming": "Плавание",
+        "Boxing": "Бокс",
+        "Golf": "Гольф"
+      }
+    },
+    "sports:85": {
+      "question": "Тур де Франс в основном проходит в?",
+      "answers": {
+        "Italy": "Италия",
+        "Spain": "Испания",
+        "France": "Франция",
+        "Belgium": "Бельгия"
+      }
+    },
+    "sports:86": {
+      "question": "Чемпионат мира по футболу FIFA 2022 принимал?",
+      "answers": {
+        "Russia": "Россия",
+        "Qatar": "Катар",
+        "Brazil": "Бразилия",
+        "USA": "США"
+      }
+    },
+    "sports:87": {
+      "question": "Кубок чемпионата мира по футболу FIFA вручается?",
+      "answers": {
+        "UEFA": "УЕФА",
+        "FIFA": "ФИФА",
+        "NBA": "НБА",
+        "IOC": "МОК"
+      }
+    },
+    "sports:88": {
+      "question": "Пенальти в футболе исполняется примерно?",
+      "answers": {
+        "11 m": "11 м",
+        "20 m": "20 м",
+        "5 m": "5 м",
+        "30 m": "30 м"
+      }
+    },
+    "sports:89": {
+      "question": "Сколько всего игроков выходит на футбольное поле (обе команды)?",
+      "answers": {
+        "18": "18",
+        "20": "20",
+        "22": "22",
+        "24": "24"
+      }
+    },
+    "sports:90": {
+      "question": "В каком виде спорта есть «любовь», «двойка» и «туз»?",
+      "answers": {
+        "Golf": "Гольф",
+        "Tennis": "Теннис",
+        "Cricket": "Крикет",
+        "Rugby": "Регби"
+      }
+    },
+    "sports:91": {
+      "question": "Четвертый турнир Большого шлема по теннису наряду с Уимблдоном, Открытым чемпионатом США и Франции - это?",
+      "answers": {
+        "Italian Open": "Открытый чемпионат Италии",
+        "Australian Open": "Открытый чемпионат Австралии",
+        "Madrid Open": "Открытый чемпионат Мадрида",
+        "Dubai Open": "Открытый чемпионат Дубая"
+      }
+    },
+    "sports:92": {
+      "question": "В каких Олимпийских играх участвует фигурное катание?",
+      "answers": {
+        "Summer": "Лето",
+        "Winter": "Зима",
+        "Both equally": "Оба поровну",
+        "Neither": "Ни то, ни другое."
+      }
+    },
+    "sports:93": {
+      "question": "Сколько игроков в бейсбольной команде находится на поле?",
+      "answers": {
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11"
+      }
+    },
+    "sports:94": {
+      "question": "Летние Олимпийские игры 2008 года проводились?",
+      "answers": {
+        "London": "Лондон",
+        "Beijing": "Пекин",
+        "Athens": "Афины",
+        "Sydney": "Сидней"
+      }
+    },
+    "sports:95": {
+      "question": "Проходят ли гребные гонки?",
+      "answers": {
+        "A track": "Трек",
+        "Water": "Вода",
+        "Ice": "Лед",
+        "Grass": "Трава"
+      }
+    },
+    "sports:96": {
+      "question": "В каком виде спорта используется «кэдди»?",
+      "answers": {
+        "Golf": "Гольф",
+        "Tennis": "Теннис",
+        "Boxing": "Бокс",
+        "Cycling": "Езда на велосипеде"
+      }
+    },
+    "sports:97": {
+      "question": "К какому виду спорта относятся прыжки в высоту и прыжки с шестом?",
+      "answers": {
+        "Gymnastics": "Гимнастика",
+        "Athletics": "Легкая атлетика",
+        "Swimming": "Плавание",
+        "Cycling": "Езда на велосипеде"
+      }
+    },
+    "sports:98": {
+      "question": "Какая страна чаще всего принимала летние Олимпийские игры?",
+      "answers": {
+        "France": "Франция",
+        "USA": "США",
+        "Greece": "Греция",
+        "Japan": "Япония"
+      }
+    },
+    "sports:99": {
+      "question": "Участники фехтования используют?",
+      "answers": {
+        "Bat": "Летучая мышь",
+        "Sword/blade": "Меч/клинок",
+        "Racket": "Ракетка",
+        "Club": "Клуб"
+      }
+    },
+    "sports:100": {
+      "question": "Каким видом спорта занимаются на Ролан Гаррос?",
+      "answers": {
+        "Golf": "Гольф",
+        "Tennis": "Теннис",
+        "Rugby": "Регби",
+        "Cycling": "Езда на велосипеде"
+      }
+    },
+    "sports:101": {
+      "question": "Марафонец, выигравший золото, зарабатывает?",
+      "answers": {
+        "Trophy only": "Только трофей",
+        "Gold medal": "Золотая медаль",
+        "Cash prize only": "Только денежный приз",
+        "Belt": "Ремень"
+      }
+    },
+    "art:0": {
+      "question": "Кто нарисовал Мону Лизу?",
+      "answers": {
+        "Van Gogh": "Ван Гог",
+        "Picasso": "Пикассо",
+        "Leonardo da Vinci": "Леонардо да Винчи",
+        "Michelangelo": "Микеланджело"
+      }
+    },
+    "art:1": {
+      "question": "Кто написал «Звездную ночь»?",
+      "answers": {
+        "Monet": "Моне",
+        "Van Gogh": "Ван Гог",
+        "Dalí": "Дали",
+        "Rembrandt": "Рембрандт"
+      }
+    },
+    "art:2": {
+      "question": "В каком музее выставлена Мона Лиза?",
+      "answers": {
+        "The Met": "Метрополитен",
+        "Louvre": "Лувр",
+        "Prado": "Прадо",
+        "Uffizi": "Уффици"
+      }
+    },
+    "art:3": {
+      "question": "Какой художник отрезал себе часть уха?",
+      "answers": {
+        "Picasso": "Пикассо",
+        "Van Gogh": "Ван Гог",
+        "Dalí": "Дали",
+        "Monet": "Моне"
+      }
+    },
+    "art:4": {
+      "question": "Кто расписал потолок Сикстинской капеллы?",
+      "answers": {
+        "Raphael": "Рафаэль",
+        "Michelangelo": "Микеланджело",
+        "Da Vinci": "Да Винчи",
+        "Donatello": "Донателло"
+      }
+    },
+    "art:5": {
+      "question": "С каким художественным направлением связан Пабло Пикассо?",
+      "answers": {
+        "Impressionism": "Импрессионизм",
+        "Cubism": "Кубизм",
+        "Surrealism": "Сюрреализм",
+        "Baroque": "Барокко"
+      }
+    },
+    "art:6": {
+      "question": "Каким художественным стилем известен Сальвадор Дали?",
+      "answers": {
+        "Realism": "Реализм",
+        "Surrealism": "Сюрреализм",
+        "Pop Art": "Поп-арт",
+        "Gothic": "Готика"
+      }
+    },
+    "art:7": {
+      "question": "Кто написал «Крик»?",
+      "answers": {
+        "Munch": "Мунк",
+        "Klimt": "Климт",
+        "Warhol": "Уорхол",
+        "Cézanne": "Сезанн"
+      }
+    },
+    "art:8": {
+      "question": "Какой художник известен тем, что расписал банки с супом Кэмпбелл?",
+      "answers": {
+        "Warhol": "Уорхол",
+        "Pollock": "Минтай",
+        "Rothko": "Ротко",
+        "Bacon": "Бекон"
+      }
+    },
+    "art:9": {
+      "question": "Кто нарисовал «Девушку с жемчужной сережкой»?",
+      "answers": {
+        "Vermeer": "Вермеер",
+        "Rembrandt": "Рембрандт",
+        "Rubens": "Рубенс",
+        "Bosch": "Бош"
+      }
+    },
+    "art:10": {
+      "question": "Какой цвет получится при смешивании синей и желтой краски?",
+      "answers": {
+        "Purple": "Фиолетовый",
+        "Green": "Зеленый",
+        "Orange": "Оранжевый",
+        "Brown": "Коричневый"
+      }
+    },
+    "art:11": {
+      "question": "Клод Моне был ведущим деятелем какого движения?",
+      "answers": {
+        "Impressionism": "Импрессионизм",
+        "Cubism": "Кубизм",
+        "Dadaism": "Дадаизм",
+        "Realism": "Реализм"
+      }
+    },
+    "art:12": {
+      "question": "Автор мраморной статуи «Давид»?",
+      "answers": {
+        "Bernini": "Бернини",
+        "Michelangelo": "Микеланджело",
+        "Rodin": "Роден",
+        "Donatello": "Донателло"
+      }
+    },
+    "art:13": {
+      "question": "Какой из этих цветов является основным?",
+      "answers": {
+        "Green": "Зеленый",
+        "Orange": "Оранжевый",
+        "Red": "Красный",
+        "Purple": "Фиолетовый"
+      }
+    },
+    "art:14": {
+      "question": "«Герника» — известное произведение какого художника?",
+      "answers": {
+        "Dalí": "Дали",
+        "Picasso": "Пикассо",
+        "Miró": "Миро",
+        "Goya": "Гойя"
+      }
+    },
+    "art:15": {
+      "question": "Как называется техника рисования по мокрой штукатурке?",
+      "answers": {
+        "Fresco": "Фреска",
+        "Collage": "Коллаж",
+        "Etching": "Офорт",
+        "Mosaic": "Мозаика"
+      }
+    },
+    "art:16": {
+      "question": "Автор скульптуры «Мыслитель»?",
+      "answers": {
+        "Rodin": "Роден",
+        "Michelangelo": "Микеланджело",
+        "Bernini": "Бернини",
+        "Calder": "Колдер"
+      }
+    },
+    "art:17": {
+      "question": "Какой инструмент традиционно используется для нанесения масляной краски?",
+      "answers": {
+        "Chisel": "Долото",
+        "Brush": "Кисть",
+        "Pen": "Ручка",
+        "Roller": "Ролик"
+      }
+    },
+    "art:18": {
+      "question": "«Подсолнухи» — известная серия картин?",
+      "answers": {
+        "Monet": "Моне",
+        "Van Gogh": "Ван Гог",
+        "Cézanne": "Сезанн",
+        "Gauguin": "Гоген"
+      }
+    },
+    "art:19": {
+      "question": "Автор фрески «Тайная вечеря»?",
+      "answers": {
+        "Raphael": "Рафаэль",
+        "Leonardo da Vinci": "Леонардо да Винчи",
+        "Caravaggio": "Караваджо",
+        "Titian": "Тициан"
+      }
+    },
+    "art:20": {
+      "question": "Какой художник известен своими «капельными» картинами?",
+      "answers": {
+        "Jackson Pollock": "Джексон Поллок",
+        "Rothko": "Ротко",
+        "Warhol": "Уорхол",
+        "Dalí": "Дали"
+      }
+    },
+    "art:21": {
+      "question": "«Постоянство памяти» (плавящиеся часы) уже прошло?",
+      "answers": {
+        "Magritte": "Магритт",
+        "Dalí": "Дали",
+        "Miró": "Миро",
+        "Ernst": "Эрнст"
+      }
+    },
+    "art:22": {
+      "question": "Фрида Кало больше всего известна благодаря ей?",
+      "answers": {
+        "Landscapes": "Пейзажи",
+        "Self-portraits": "Автопортреты",
+        "Sculptures": "Скульптуры",
+        "Murals only": "Только фрески"
+      }
+    },
+    "art:23": {
+      "question": "Статуя Свободы была подарком США?",
+      "answers": {
+        "Britain": "Великобритания",
+        "France": "Франция",
+        "Spain": "Испания",
+        "Italy": "Италия"
+      }
+    },
+    "art:24": {
+      "question": "Смешав красную и желтую краску, получится?",
+      "answers": {
+        "Green": "Зеленый",
+        "Orange": "Оранжевый",
+        "Purple": "Фиолетовый",
+        "Brown": "Коричневый"
+      }
+    },
+    "art:25": {
+      "question": "Смешивание красной и синей краски дает?",
+      "answers": {
+        "Green": "Зеленый",
+        "Purple": "Фиолетовый",
+        "Orange": "Оранжевый",
+        "Brown": "Коричневый"
+      }
+    },
+    "art:26": {
+      "question": "Три основных цвета краски: красный, желтый и?",
+      "answers": {
+        "Green": "Зеленый",
+        "Blue": "Синий",
+        "Orange": "Оранжевый",
+        "Purple": "Фиолетовый"
+      }
+    },
+    "art:27": {
+      "question": "Какой художник известен тем, что рисовал кувшинки?",
+      "answers": {
+        "Monet": "Моне",
+        "Manet": "Мане",
+        "Degas": "Дега",
+        "Renoir": "Ренуар"
+      }
+    },
+    "art:28": {
+      "question": "Изображена знаменитая статуя Микеланджело во Флоренции?",
+      "answers": {
+        "Caesar": "Цезарь",
+        "David": "Дэвид",
+        "Apollo": "Аполлон",
+        "Hercules": "Геркулес"
+      }
+    },
+    "art:29": {
+      "question": "Искусство красивого почерка называется?",
+      "answers": {
+        "Origami": "Оригами",
+        "Calligraphy": "Каллиграфия",
+        "Etching": "Офорт",
+        "Collage": "Коллаж"
+      }
+    },
+    "art:30": {
+      "question": "Картина, изображающая человека, — это?",
+      "answers": {
+        "Landscape": "Пейзаж",
+        "Portrait": "Портрет",
+        "Still life": "Натюрморт",
+        "Mural": "Фреска"
+      }
+    },
+    "art:31": {
+      "question": "Картина с изображением фруктов или предметов — это?",
+      "answers": {
+        "Portrait": "Портрет",
+        "Still life": "Натюрморт",
+        "Landscape": "Пейзаж",
+        "Mural": "Фреска"
+      }
+    },
+    "art:32": {
+      "question": "Классические статуи традиционно вырезаются из?",
+      "answers": {
+        "Marble": "Мрамор",
+        "Plastic": "Пластик",
+        "Paper": "Бумага",
+        "Glass": "Стекло"
+      }
+    },
+    "art:33": {
+      "question": "Лидером какого движения был Энди Уорхол?",
+      "answers": {
+        "Pop Art": "Поп-арт",
+        "Cubism": "Кубизм",
+        "Baroque": "Барокко",
+        "Gothic": "Готика"
+      }
+    },
+    "art:34": {
+      "question": "Винсент Ван Гог был родом из какой страны?",
+      "answers": {
+        "France": "Франция",
+        "Netherlands": "Нидерланды",
+        "Italy": "Италия",
+        "Spain": "Испания"
+      }
+    },
+    "art:35": {
+      "question": "Пабло Пикассо был родом из какой страны?",
+      "answers": {
+        "Italy": "Италия",
+        "Spain": "Испания",
+        "France": "Франция",
+        "Portugal": "Португалия"
+      }
+    },
+    "art:36": {
+      "question": "Леонардо да Винчи был выходцем из какой страны?",
+      "answers": {
+        "France": "Франция",
+        "Italy": "Италия",
+        "Spain": "Испания",
+        "Greece": "Греция"
+      }
+    },
+    "art:37": {
+      "question": "В каком городе находится Лувр?",
+      "answers": {
+        "Rome": "Рим",
+        "Paris": "Париж",
+        "Madrid": "Мадрид",
+        "London": "Лондон"
+      }
+    },
+    "art:38": {
+      "question": "Как называется наклеивание материалов на поверхность для создания произведений искусства?",
+      "answers": {
+        "Fresco": "Фреска",
+        "Collage": "Коллаж",
+        "Etching": "Офорт",
+        "Casting": "Кастинг"
+      }
+    },
+    "art:39": {
+      "question": "В какой стране зародился импрессионизм?",
+      "answers": {
+        "Italy": "Италия",
+        "France": "Франция",
+        "Germany": "Германия",
+        "Spain": "Испания"
+      }
+    },
+    "art:40": {
+      "question": "Какой цвет НЕ является основным цветом краски?",
+      "answers": {
+        "Red": "Красный",
+        "Blue": "Синий",
+        "Yellow": "Желтый",
+        "Green": "Зеленый"
+      }
+    },
+    "art:41": {
+      "question": "В какой капелле находится самый знаменитый потолок Микеланджело?",
+      "answers": {
+        "Sistine Chapel": "Сикстинская капелла",
+        "King's Chapel": "Королевская часовня",
+        "St Paul's": "Собор Святого Павла",
+        "Notre-Dame": "Нотр-Дам"
+      }
+    },
+    "art:42": {
+      "question": "У какого художника был «голубой период»?",
+      "answers": {
+        "Picasso": "Пикассо",
+        "Monet": "Моне",
+        "Rembrandt": "Рембрандт",
+        "Turner": "Тернер"
+      }
+    },
+    "art:43": {
+      "question": "Рембрандт был мастером-художником какой страны?",
+      "answers": {
+        "Netherlands": "Нидерланды",
+        "France": "Франция",
+        "Italy": "Италия",
+        "England": "Англия"
+      }
+    },
+    "art:44": {
+      "question": "Автор картины «Ночной дозор»?",
+      "answers": {
+        "Vermeer": "Вермеер",
+        "Rembrandt": "Рембрандт",
+        "Rubens": "Рубенс",
+        "Hals": "Галс"
+      }
+    },
+    "art:45": {
+      "question": "Живопись, скульптура и рисунок являются видами?",
+      "answers": {
+        "Music": "Музыка",
+        "Visual arts": "Изобразительное искусство",
+        "Literature": "Литература",
+        "Dance": "Танец"
+      }
+    },
+    "art:46": {
+      "question": "Акварель – это разновидность?",
+      "answers": {
+        "Sculpture": "Скульптура",
+        "Paint": "Краска",
+        "Camera": "Камера",
+        "Clay": "Глина"
+      }
+    },
+    "art:47": {
+      "question": "К «мольберту» привыкли?",
+      "answers": {
+        "Mix clay": "Смешать глину",
+        "Hold a canvas while painting": "Держите холст во время рисования.",
+        "Cut marble": "Резной мрамор",
+        "Frame photos": "Рамка для фотографий"
+      }
+    },
+    "art:48": {
+      "question": "Мона Лиза славится своей загадочностью?",
+      "answers": {
+        "Hat": "Шляпа",
+        "Smile": "Улыбка",
+        "Dress": "Платье",
+        "Crown": "Корона"
+      }
+    },
+    "art:49": {
+      "question": "Чем известен художник Бэнкси?",
+      "answers": {
+        "Classical portraits": "Классические портреты",
+        "Street art": "Стрит-арт",
+        "Marble statues": "Мраморные статуи",
+        "Frescoes": "Фрески"
+      }
+    },
+    "art:50": {
+      "question": "Основные цвета света: красный, зеленый и?",
+      "answers": {
+        "Yellow": "Желтый",
+        "Blue": "Синий",
+        "Purple": "Фиолетовый",
+        "White": "Белый"
+      }
+    },
+    "art:51": {
+      "question": "Кубизм представляет собой предметы, использующие?",
+      "answers": {
+        "Realistic detail": "Реалистичная детализация",
+        "Geometric shapes": "Геометрические фигуры",
+        "Only circles": "Только круги",
+        "Photographs": "Фотографии"
+      }
+    },
+    "art:52": {
+      "question": "«Фреска» — это картина, написанная на?",
+      "answers": {
+        "Small canvas": "Маленькое полотно",
+        "Wall": "Стена",
+        "Plate": "Пластина",
+        "Paper": "Бумага"
+      }
+    },
+    "art:53": {
+      "question": "Кто написал «Рождение Венеры»?",
+      "answers": {
+        "Botticelli": "Боттичелли",
+        "Raphael": "Рафаэль",
+        "Giotto": "Джотто",
+        "Titian": "Тициан"
+      }
+    },
+    "art:54": {
+      "question": "Период искусства Возрождения начался?",
+      "answers": {
+        "France": "Франция",
+        "Italy": "Италия",
+        "England": "Англия",
+        "Germany": "Германия"
+      }
+    },
+    "art:55": {
+      "question": "Сальвадор Дали был известен своей самобытностью?",
+      "answers": {
+        "Beard": "Борода",
+        "Moustache": "Усы",
+        "Hat": "Шляпа",
+        "Glasses": "Очки"
+      }
+    },
+    "art:56": {
+      "question": "Керамика изготавливается в основном из?",
+      "answers": {
+        "Metal": "Металл",
+        "Clay": "Глина",
+        "Glass": "Стекло",
+        "Wood": "Дерево"
+      }
+    },
+    "art:57": {
+      "question": "Какой цвет считается теплым?",
+      "answers": {
+        "Blue": "Синий",
+        "Red": "Красный",
+        "Green": "Зеленый",
+        "Purple": "Фиолетовый"
+      }
+    },
+    "art:58": {
+      "question": "Какой цвет считается крутым?",
+      "answers": {
+        "Red": "Красный",
+        "Orange": "Оранжевый",
+        "Blue": "Синий",
+        "Yellow": "Желтый"
+      }
+    },
+    "art:59": {
+      "question": "Какой художник известен тем, что рисовал артистов балета?",
+      "answers": {
+        "Degas": "Дега",
+        "Monet": "Моне",
+        "Cézanne": "Сезанн",
+        "Seurat": "Сёра"
+      }
+    },
+    "art:60": {
+      "question": "С чем связан «Пуантилизм» (живопись точками)?",
+      "answers": {
+        "Seurat": "Сёра",
+        "Van Gogh": "Ван Гог",
+        "Klimt": "Климт",
+        "Munch": "Мунк"
+      }
+    },
+    "art:61": {
+      "question": "В «Поцелуе» Густава Климта широко используется много?",
+      "answers": {
+        "Silver": "Серебро",
+        "Gold": "Золото",
+        "Blue": "Синий",
+        "Black": "Черный"
+      }
+    },
+    "art:62": {
+      "question": "Быстрый набросок обычно делается с помощью?",
+      "answers": {
+        "Chisel": "Долото",
+        "Pencil": "Карандаш",
+        "Roller": "Ролик",
+        "Clay": "Глина"
+      }
+    },
+    "art:63": {
+      "question": "Абстрактное искусство вообще НЕ пытается?",
+      "answers": {
+        "Use color": "Использовать цвет",
+        "Represent reality exactly": "Точно представляет реальность",
+        "Use shapes": "Использование фигур",
+        "Be creative": "Будьте изобретательны"
+      }
+    },
+    "art:64": {
+      "question": "В каком городе есть музей, посвященный Ван Гогу?",
+      "answers": {
+        "Amsterdam": "Амстердам",
+        "London": "Лондон",
+        "Rome": "Рим",
+        "Madrid": "Мадрид"
+      }
+    },
+    "art:65": {
+      "question": "Огюст Роден был прежде всего?",
+      "answers": {
+        "Painter": "Художник",
+        "Sculptor": "Скульптор",
+        "Photographer": "Фотограф",
+        "Architect": "Архитектор"
+      }
+    },
+    "art:66": {
+      "question": "MoMA (Музей современного искусства) находится в?",
+      "answers": {
+        "Paris": "Париж",
+        "New York": "Нью-Йорк",
+        "Rome": "Рим",
+        "Tokyo": "Токио"
+      }
+    },
+    "art:67": {
+      "question": "Музей Прадо находится?",
+      "answers": {
+        "Madrid": "Мадрид",
+        "Paris": "Париж",
+        "Rome": "Рим",
+        "London": "Лондон"
+      }
+    },
+    "art:68": {
+      "question": "«Светотень» означает интенсивное использование?",
+      "answers": {
+        "Bright colors": "Яркие цвета",
+        "Light and shadow": "Свет и тень",
+        "Straight lines": "Прямые линии",
+        "Dots": "Точки"
+      }
+    },
+    "art:69": {
+      "question": "Какой формы обычно бывает холст для рисования?",
+      "answers": {
+        "Round": "Раунд",
+        "Rectangular": "Прямоугольный",
+        "Triangular": "Треугольный",
+        "Star-shaped": "Звездообразный"
+      }
+    },
+    "art:70": {
+      "question": "Автопортрет показывает?",
+      "answers": {
+        "The artist themselves": "Сам художник",
+        "A landscape": "Пейзаж",
+        "A building": "Здание",
+        "An animal": "Животное"
+      }
+    },
+    "art:71": {
+      "question": "Микеланджело, Леонардо и Рафаэль принадлежат?",
+      "answers": {
+        "Baroque": "Барокко",
+        "Renaissance": "Ренессанс",
+        "Modern era": "Современная эпоха",
+        "Gothic": "Готика"
+      }
+    },
+    "art:72": {
+      "question": "Сюрреализм часто изображает?",
+      "answers": {
+        "Everyday realism": "Повседневный реализм",
+        "Dreamlike, strange scenes": "Сказочные, странные сцены",
+        "Only portraits": "Только портреты",
+        "Pure geometry": "Чистая геометрия"
+      }
+    },
+    "art:73": {
+      "question": "Какой цвет получится, если смешать красный и белый?",
+      "answers": {
+        "Blue": "Синий",
+        "Pink": "Розовый",
+        "Green": "Зелёный",
+        "Brown": "Коричневый"
+      }
+    },
+    "art:74": {
+      "question": "Как называется знаменитая статуя сидящего думающего человека?",
+      "answers": {
+        "The Dreamer": "Мечтатель",
+        "The Thinker": "Мыслитель",
+        "The Watcher": "Наблюдатель",
+        "The Sitter": "Няня"
+      }
+    },
+    "art:75": {
+      "question": "Фотография как искусство фиксирует изображения с помощью?",
+      "answers": {
+        "Brush": "Кисть",
+        "Camera": "Камера",
+        "Chisel": "Долото",
+        "Loom": "Ткацкий станок"
+      }
+    },
+    "art:76": {
+      "question": "Имя какого художника «Винсент»?",
+      "answers": {
+        "Monet": "Моне",
+        "Van Gogh": "Ван Гог",
+        "Picasso": "Пикассо",
+        "Dalí": "Дали"
+      }
+    },
+    "art:77": {
+      "question": "В какой стране находится галерея Уффици?",
+      "answers": {
+        "Italy": "Италия",
+        "France": "Франция",
+        "Spain": "Испания",
+        "Greece": "Греция"
+      }
+    },
+    "art:78": {
+      "question": "Оригами – это искусство?",
+      "answers": {
+        "Paper folding": "Складывание бумаги",
+        "Metalwork": "Металлообработка",
+        "Glassblowing": "Стеклодувное дело",
+        "Painting": "Живопись"
+      }
+    },
+    "art:79": {
+      "question": "Какой художник за свою жизнь написал много автопортретов?",
+      "answers": {
+        "Rembrandt": "Рембрандт",
+        "Botticelli": "Боттичелли",
+        "Raphael": "Рафаэль",
+        "Giotto": "Джотто"
+      }
+    },
+    "art:80": {
+      "question": "«Палитра» используется?",
+      "answers": {
+        "Hold and mix paints": "Держите и смешивайте краски",
+        "Cut wood": "Рубить дерево",
+        "Frame art": "Рамка",
+        "Fire clay": "Шамотная глина"
+      }
+    },
+    "art:81": {
+      "question": "Большая волна у Канагавы — знаменитый японец?",
+      "answers": {
+        "Sculpture": "Скульптура",
+        "Woodblock print": "Гравюра на дереве",
+        "Oil painting": "Картина маслом",
+        "Photograph": "Фотография"
+      }
+    },
+    "art:82": {
+      "question": "Какой материал является распространенным в скульптуре?",
+      "answers": {
+        "Bronze": "Бронза",
+        "Watercolor": "Акварель",
+        "Charcoal": "Древесный уголь",
+        "Ink": "Чернила"
+      }
+    },
+    "art:83": {
+      "question": "«Точка схода» используется?",
+      "answers": {
+        "Music": "Музыка",
+        "Perspective drawing": "Перспективный рисунок",
+        "Casting": "Кастинг",
+        "Weaving": "Ткачество"
+      }
+    },
+    "art:84": {
+      "question": "Леонардо да Винчи был также известен как?",
+      "answers": {
+        "Athlete": "Спортсмен",
+        "Inventor": "Изобретатель",
+        "Singer": "Певец",
+        "Sailor": "Моряк"
+      }
+    },
+    "art:85": {
+      "question": "«Галерея» — это место?",
+      "answers": {
+        "Store food": "Магазин продуктов питания",
+        "Display artworks": "Показать иллюстрации",
+        "Repair cars": "Ремонт автомобилей",
+        "Grow plants": "Выращивание растений"
+      }
+    },
+    "art:86": {
+      "question": "Искусство барокко известно своим существованием?",
+      "answers": {
+        "Minimal and plain": "Минимальный и простой",
+        "Dramatic and ornate": "Драматический и богато украшенный",
+        "Black and white only": "Только черно-белый",
+        "Purely geometric": "Чисто геометрический"
+      }
+    },
+    "art:87": {
+      "question": "Какой известный аукционный дом произведений искусства?",
+      "answers": {
+        "Sotheby's": "Сотбис",
+        "Nasdaq": "Насдак",
+        "Airbnb": "Airbnb",
+        "Netflix": "Netflix"
+      }
+    },
+    "art:88": {
+      "question": "«Венера Милосская» — знаменитое древнее произведение?",
+      "answers": {
+        "Painting": "Живопись",
+        "Statue": "Статуя",
+        "Vase": "Ваза",
+        "Mosaic": "Мозаика"
+      }
+    },
+    "art:89": {
+      "question": "Витражи часто встречаются?",
+      "answers": {
+        "Cathedrals": "Соборы",
+        "Kitchens": "Кухни",
+        "Garages": "Гаражи",
+        "Stadiums": "Стадионы"
+      }
+    },
+    "art:90": {
+      "question": "Обычно используется древесный уголь?",
+      "answers": {
+        "Painting walls": "Покраска стен",
+        "Drawing/sketching": "Рисование/эскиз",
+        "Carving marble": "Резьба по мрамору",
+        "Printing": "Печать"
+      }
+    },
+    "art:91": {
+      "question": "В каком городе Тейт — художественный музей?",
+      "answers": {
+        "Paris": "Париж",
+        "London": "Лондон",
+        "Madrid": "Мадрид",
+        "Rome": "Рим"
+      }
+    },
+    "art:92": {
+      "question": "Что лучше всего описывает «скульптуру»?",
+      "answers": {
+        "A 2D painting": "2D-картина",
+        "A 3D work of art": "3D-произведение искусства",
+        "A song": "Песня",
+        "A poem": "Стихотворение"
+      }
+    },
+    "art:93": {
+      "question": "«Современное искусство» обычно относится к искусству примерно?",
+      "answers": {
+        "Ancient times": "Древние времена",
+        "The late 1800s onward": "Конец 1800-х годов и позднее",
+        "Medieval times": "Средневековые времена",
+        "Prehistory": "Предыстория"
+      }
+    },
+    "art:94": {
+      "question": "Какой художник ассоциируется с картинами Таити?",
+      "answers": {
+        "Gauguin": "Гоген",
+        "Monet": "Моне",
+        "Rembrandt": "Рембрандт",
+        "Vermeer": "Вермеер"
+      }
+    },
+    "art:95": {
+      "question": "Нарисована фреска?",
+      "answers": {
+        "Canvas": "Холст",
+        "Wet plaster": "Мокрая штукатурка",
+        "Paper": "Бумага",
+        "Wood panel": "Деревянная панель"
+      }
+    },
+    "art:96": {
+      "question": "Где находится Сикстинская капелла?",
+      "answers": {
+        "Vatican City": "Ватикан",
+        "Florence": "Флоренция",
+        "Venice": "Венеция",
+        "Naples": "Неаполь"
+      }
+    },
+    "art:97": {
+      "question": "Что из этого является художественным стилем?",
+      "answers": {
+        "Impressionism": "Импрессионизм",
+        "Photosynthesis": "Фотосинтез",
+        "Gravity": "Гравитация",
+        "Inflation": "Инфляция"
+      }
+    },
+    "art:98": {
+      "question": "Человек, создающий скульптуры – это?",
+      "answers": {
+        "Painter": "Художник",
+        "Sculptor": "Скульптор",
+        "Novelist": "Писатель",
+        "Composer": "Композитор"
+      }
+    },
+    "art:99": {
+      "question": "Кто написал картину «Впечатление, восход солнца», названную импрессионизмом?",
+      "answers": {
+        "Monet": "Моне",
+        "Manet": "Мане",
+        "Renoir": "Ренуар",
+        "Degas": "Дега"
+      }
+    },
+    "history:0": {
+      "question": "В каком году закончилась Вторая мировая война?",
+      "answers": {
+        "1918": "1918 г.",
+        "1943": "1943 г.",
+        "1945": "1945 г.",
+        "1950": "1950 г."
+      }
+    },
+    "history:1": {
+      "question": "Кто был первым президентом Соединенных Штатов?",
+      "answers": {
+        "Lincoln": "Линкольн",
+        "Washington": "Вашингтон",
+        "Jefferson": "Джефферсон",
+        "Adams": "Адамс"
+      }
+    },
+    "history:2": {
+      "question": "Какой древней цивилизацией были построены Великие пирамиды?",
+      "answers": {
+        "Romans": "Римляне",
+        "Greeks": "Греки",
+        "Egyptians": "Египтяне",
+        "Mayans": "Майя"
+      }
+    },
+    "history:3": {
+      "question": "В каком году пала Берлинская стена?",
+      "answers": {
+        "1979": "1979 г.",
+        "1985": "1985 г.",
+        "1989": "1989 г.",
+        "1991": "1991 г."
+      }
+    },
+    "history:4": {
+      "question": "Какой философ был учеником Сократа?",
+      "answers": {
+        "Aristotle": "Аристотель",
+        "Plato": "Платон",
+        "Pythagoras": "Пифагор",
+        "Homer": "Гомер"
+      }
+    },
+    "history:5": {
+      "question": "Какой корабль затонул в 1912 году после столкновения с айсбергом?",
+      "answers": {
+        "Lusitania": "Лузитания",
+        "Titanic": "Титаник",
+        "Bismarck": "Бисмарк",
+        "Mayflower": "Мэйфлауэр"
+      }
+    },
+    "history:6": {
+      "question": "Кто достиг Америки в 1492 году?",
+      "answers": {
+        "Magellan": "Магеллан",
+        "Columbus": "Колумбус",
+        "Vespucci": "Веспуччи",
+        "Cook": "Кук"
+      }
+    },
+    "history:7": {
+      "question": "В каком году началась Французская революция?",
+      "answers": {
+        "1776": "1776 г.",
+        "1789": "1789 г.",
+        "1804": "1804 г.",
+        "1815": "1815 г."
+      }
+    },
+    "history:8": {
+      "question": "Какую империю основал Чингисхан?",
+      "answers": {
+        "Ottoman": "Османский",
+        "Mongol": "Монгол",
+        "Persian": "Персидский",
+        "Roman": "Роман"
+      }
+    },
+    "history:9": {
+      "question": "Кто возглавлял нацистскую Германию во время Второй мировой войны?",
+      "answers": {
+        "Mussolini": "Муссолини",
+        "Hitler": "Гитлер",
+        "Stalin": "Сталин",
+        "Franco": "Франко"
+      }
+    },
+    "history:10": {
+      "question": "В каком городе находится Колизей?",
+      "answers": {
+        "Athens": "Афины",
+        "Rome": "Рим",
+        "Cairo": "Каир",
+        "Istanbul": "Стамбул"
+      }
+    },
+    "history:11": {
+      "question": "Какая египетская царица была в союзе с Цезарем и Марком Антонием?",
+      "answers": {
+        "Nefertiti": "Нефертити",
+        "Cleopatra": "Клеопатра",
+        "Hatshepsut": "Хатшепсут",
+        "Isis": "Исида"
+      }
+    },
+    "history:12": {
+      "question": "Холодная война велась в основном между США и?",
+      "answers": {
+        "China": "Китай",
+        "USSR": "СССР",
+        "Germany": "Германия",
+        "Japan": "Япония"
+      }
+    },
+    "history:13": {
+      "question": "В каком году люди впервые высадились на Луне?",
+      "answers": {
+        "1959": "1959 г.",
+        "1965": "1965 г.",
+        "1969": "1969 г.",
+        "1972": "1972 г."
+      }
+    },
+    "history:14": {
+      "question": "В какой стране началось Возрождение?",
+      "answers": {
+        "France": "Франция",
+        "Italy": "Италия",
+        "England": "Англия",
+        "Spain": "Испания"
+      }
+    },
+    "history:15": {
+      "question": "Гражданская война в США велась между Севером и?",
+      "answers": {
+        "East": "Восток",
+        "South": "Юг",
+        "West": "Запад",
+        "Midwest": "Средний Запад"
+      }
+    },
+    "history:16": {
+      "question": "Какая древняя цивилизация создала демократию?",
+      "answers": {
+        "Rome": "Рим",
+        "Greece": "Греция",
+        "Egypt": "Египет",
+        "Persia": "Персия"
+      }
+    },
+    "history:17": {
+      "question": "Кем был изобретен печатный станок?",
+      "answers": {
+        "Newton": "Ньютон",
+        "Gutenberg": "Гутенберг",
+        "Edison": "Эдисон",
+        "Franklin": "Франклин"
+      }
+    },
+    "history:18": {
+      "question": "В какой стране была построена древняя Великая стена?",
+      "answers": {
+        "India": "Индия",
+        "China": "Китай",
+        "Japan": "Япония",
+        "Egypt": "Египет"
+      }
+    },
+    "history:19": {
+      "question": "Знаменитый бюст какой египетской царицы выставлен в Берлине?",
+      "answers": {
+        "Cleopatra": "Клеопатра",
+        "Nefertiti": "Нефертити",
+        "Hatshepsut": "Хатшепсут",
+        "Isis": "Исида"
+      }
+    },
+    "history:20": {
+      "question": "В каком году началась Первая мировая война?",
+      "answers": {
+        "1912": "1912 г.",
+        "1914": "1914 г.",
+        "1918": "1918 г.",
+        "1920": "1920 г."
+      }
+    },
+    "history:21": {
+      "question": "В каком году закончилась Первая мировая война?",
+      "answers": {
+        "1916": "1916 г.",
+        "1918": "1918 г.",
+        "1920": "1920 г.",
+        "1922": "1922 г."
+      }
+    },
+    "history:22": {
+      "question": "Какой город был центром Римской империи?",
+      "answers": {
+        "Athens": "Афины",
+        "Rome": "Рим",
+        "Cairo": "Каир",
+        "Carthage": "Карфаген"
+      }
+    },
+    "history:23": {
+      "question": "Юлий Цезарь был древним лидером?",
+      "answers": {
+        "Greece": "Греция",
+        "Rome": "Рим",
+        "Egypt": "Египет",
+        "Persia": "Персия"
+      }
+    },
+    "history:24": {
+      "question": "Была подписана Декларация независимости США?",
+      "answers": {
+        "1776": "1776 г.",
+        "1789": "1789 г.",
+        "1800": "1800 г.",
+        "1812": "1812 г."
+      }
+    },
+    "history:25": {
+      "question": "Наполеон Бонапарт был лидером какой страны?",
+      "answers": {
+        "Spain": "Испания",
+        "France": "Франция",
+        "Italy": "Италия",
+        "Russia": "Россия"
+      }
+    },
+    "history:26": {
+      "question": "Наполеон потерпел знаменитое поражение в битве при?",
+      "answers": {
+        "Hastings": "Гастингс",
+        "Waterloo": "Ватерлоо",
+        "Gettysburg": "Геттисберг",
+        "Verdun": "Верден"
+      }
+    },
+    "history:27": {
+      "question": "Какой город разделила Берлинская стена?",
+      "answers": {
+        "Munich": "Мюнхен",
+        "Berlin": "Берлин",
+        "Frankfurt": "Франкфурт",
+        "Vienna": "Вена"
+      }
+    },
+    "history:28": {
+      "question": "Какая цивилизация построила Мачу-Пикчу?",
+      "answers": {
+        "Aztec": "Ацтекский",
+        "Inca": "Инка",
+        "Maya": "Майя",
+        "Olmec": "Ольмеки"
+      }
+    },
+    "history:29": {
+      "question": "Пирамиды Гизы расположены?",
+      "answers": {
+        "Iraq": "Ирак",
+        "Egypt": "Египет",
+        "Sudan": "Судан",
+        "Libya": "Ливия"
+      }
+    },
+    "history:30": {
+      "question": "Кто был премьер-министром Великобритании на протяжении большей части Второй мировой войны?",
+      "answers": {
+        "Chamberlain": "Чемберлен",
+        "Churchill": "Черчилль",
+        "Attlee": "Эттли",
+        "Thatcher": "Тэтчер"
+      }
+    },
+    "history:31": {
+      "question": "В какой город направлялся «Титаник», когда затонул?",
+      "answers": {
+        "London": "Лондон",
+        "New York": "Нью-Йорк",
+        "Boston": "Бостон",
+        "Halifax": "Галифакс"
+      }
+    },
+    "history:32": {
+      "question": "Какой путешественник совершил первое кругосветное плавание?",
+      "answers": {
+        "Columbus": "Колумбус",
+        "Magellan": "Магеллан",
+        "Da Gama": "Да Гама",
+        "Cook": "Кук"
+      }
+    },
+    "history:33": {
+      "question": "Слово «Ренессанс» буквально означает?",
+      "answers": {
+        "Rebirth": "Возрождение",
+        "Revolution": "Революция",
+        "Reform": "Реформа",
+        "Return": "Возврат"
+      }
+    },
+    "history:34": {
+      "question": "Древние египтяне писали, используя?",
+      "answers": {
+        "Latin": "латиница",
+        "Hieroglyphics": "Иероглифы",
+        "Cyrillic": "Кириллица",
+        "Runes": "Руны"
+      }
+    },
+    "history:35": {
+      "question": "Центр Османской империи находился в наши дни?",
+      "answers": {
+        "Egypt": "Египет",
+        "Turkey": "Турция",
+        "Iran": "Иран",
+        "Greece": "Греция"
+      }
+    },
+    "history:36": {
+      "question": "Старое название какого города — Константинополь?",
+      "answers": {
+        "Athens": "Афины",
+        "Istanbul": "Стамбул",
+        "Rome": "Рим",
+        "Cairo": "Каир"
+      }
+    },
+    "history:37": {
+      "question": "Какой документ ограничивал власть английского короля в 1215 году?",
+      "answers": {
+        "Magna Carta": "Великая хартия вольностей",
+        "Bill of Rights": "Билль о правах",
+        "Constitution": "Конституция",
+        "Domesday Book": "Книга Судного дня"
+      }
+    },
+    "history:38": {
+      "question": "В какой стране началась промышленная революция?",
+      "answers": {
+        "USA": "США",
+        "Britain": "Великобритания",
+        "France": "Франция",
+        "Germany": "Германия"
+      }
+    },
+    "history:39": {
+      "question": "Какой президент США был убит в 1963 году?",
+      "answers": {
+        "Lincoln": "Линкольн",
+        "Kennedy": "Кеннеди",
+        "Roosevelt": "Рузвельт",
+        "Nixon": "Никсон"
+      }
+    },
+    "history:40": {
+      "question": "Какой президент США изображен на купюре в 1 доллар?",
+      "answers": {
+        "Lincoln": "Линкольн",
+        "Washington": "Вашингтон",
+        "Jefferson": "Джефферсон",
+        "Franklin": "Франклин"
+      }
+    },
+    "history:41": {
+      "question": "Кто возглавил ненасильственное движение за независимость Индии?",
+      "answers": {
+        "Nehru": "Неру",
+        "Gandhi": "Ганди",
+        "Bose": "Бозе",
+        "Patel": "Патель"
+      }
+    },
+    "history:42": {
+      "question": "На какой стороне была построена Берлинская стена?",
+      "answers": {
+        "West Germany": "Западная Германия",
+        "East Germany": "Восточная Германия",
+        "France": "Франция",
+        "USA": "США"
+      }
+    },
+    "history:43": {
+      "question": "Какая древняя цивилизация известна мумификацией?",
+      "answers": {
+        "Greek": "Греческий",
+        "Egyptian": "Египетский",
+        "Roman": "Роман",
+        "Persian": "Персидский"
+      }
+    },
+    "history:44": {
+      "question": "Черная смерть была разрушительной?",
+      "answers": {
+        "War": "Война",
+        "Plague": "Чума",
+        "Famine": "Голод",
+        "Earthquake": "Землетрясение"
+      }
+    },
+    "history:45": {
+      "question": "Протестантская Реформация была начата?",
+      "answers": {
+        "Martin Luther": "Мартин Лютер",
+        "Henry VIII": "Генрих VIII",
+        "Calvin": "Кальвин",
+        "Pope Leo": "Папа Лев"
+      }
+    },
+    "history:46": {
+      "question": "Древние Олимпийские игры возникли?",
+      "answers": {
+        "Rome": "Рим",
+        "Greece": "Греция",
+        "Egypt": "Египет",
+        "Persia": "Персия"
+      }
+    },
+    "history:47": {
+      "question": "Кто был первым человеком, побывавшим в космосе?",
+      "answers": {
+        "Armstrong": "Армстронг",
+        "Gagarin": "Гагарин",
+        "Glenn": "Гленн",
+        "Aldrin": "Олдрин"
+      }
+    },
+    "history:48": {
+      "question": "Нил Армстронг был первым, кто это сделал?",
+      "answers": {
+        "Fly a plane": "Управляйте самолетом",
+        "Walk on the Moon": "Прогулка по Луне",
+        "Reach the South Pole": "Достичь Южного полюса",
+        "Climb Everest": "Подняться на Эверест"
+      }
+    },
+    "history:49": {
+      "question": "В каком году распался Советский Союз (СССР)?",
+      "answers": {
+        "1985": "1985 г.",
+        "1989": "1989 г.",
+        "1991": "1991 г.",
+        "1993": "1993 г."
+      }
+    },
+    "history:50": {
+      "question": "Декларацию независимости США в основном написал?",
+      "answers": {
+        "Washington": "Вашингтон",
+        "Jefferson": "Джефферсон",
+        "Franklin": "Франклин",
+        "Adams": "Адамс"
+      }
+    },
+    "history:51": {
+      "question": "Какой корабль доставил паломников в Америку в 1620 году?",
+      "answers": {
+        "Mayflower": "Мэйфлауэр",
+        "Titanic": "Титаник",
+        "Santa Maria": "Санта-Мария",
+        "Beagle": "Бигль"
+      }
+    },
+    "history:52": {
+      "question": "Христофор Колумб плавал под флагом?",
+      "answers": {
+        "Portugal": "Португалия",
+        "Spain": "Испания",
+        "Italy": "Италия",
+        "England": "Англия"
+      }
+    },
+    "history:53": {
+      "question": "Французская революция началась со штурма?",
+      "answers": {
+        "Louvre": "Лувр",
+        "Bastille": "Бастилия",
+        "Versailles": "Версаль",
+        "Notre-Dame": "Нотр-Дам"
+      }
+    },
+    "history:54": {
+      "question": "Какое древнее чудо все еще стоит в Египте?",
+      "answers": {
+        "Great Pyramid of Giza": "Великая пирамида в Гизе",
+        "Colosseum": "Колизей",
+        "Parthenon": "Парфенон",
+        "Taj Mahal": "Тадж-Махал"
+      }
+    },
+    "history:55": {
+      "question": "В какой стране находится Тадж-Махал?",
+      "answers": {
+        "Pakistan": "Пакистан",
+        "India": "Индия",
+        "Iran": "Иран",
+        "Turkey": "Турция"
+      }
+    },
+    "history:56": {
+      "question": "Кто руководил Советским Союзом во время Второй мировой войны?",
+      "answers": {
+        "Lenin": "Ленин",
+        "Stalin": "Сталин",
+        "Khrushchev": "Хрущев",
+        "Gorbachev": "Горбачев"
+      }
+    },
+    "history:57": {
+      "question": "Во время Второй мировой войны атомные бомбы ударили по Хиросиме и?",
+      "answers": {
+        "Tokyo": "Токио",
+        "Nagasaki": "Нагасаки",
+        "Osaka": "Осака",
+        "Kyoto": "Киото"
+      }
+    },
+    "history:58": {
+      "question": "Лига Наций была предшественницей?",
+      "answers": {
+        "EU": "ЕС",
+        "United Nations": "Организация Объединенных Наций",
+        "NATO": "НАТО",
+        "WHO": "КТО"
+      }
+    },
+    "history:59": {
+      "question": "В каком году была основана Организация Объединенных Наций?",
+      "answers": {
+        "1919": "1919 г.",
+        "1945": "1945 г.",
+        "1950": "1950 г.",
+        "1960": "1960 г."
+      }
+    },
+    "history:60": {
+      "question": "Из какого древнего царства происходил Александр Македонский?",
+      "answers": {
+        "Rome": "Рим",
+        "Macedonia": "Македония",
+        "Egypt": "Египет",
+        "Persia": "Персия"
+      }
+    },
+    "history:61": {
+      "question": "Какая страна была родиной древней Спарты?",
+      "answers": {
+        "Italy": "Италия",
+        "Greece": "Греция",
+        "Egypt": "Египет",
+        "Turkey": "Турция"
+      }
+    },
+    "history:62": {
+      "question": "Примерно в каком году закончилась холодная война?",
+      "answers": {
+        "1965": "1965 г.",
+        "1975": "1975 г.",
+        "1991": "1991 г.",
+        "2001": "2001 г."
+      }
+    },
+    "history:63": {
+      "question": "Братьям Райт приписывают изобретение?",
+      "answers": {
+        "Car": "Автомобиль",
+        "Airplane": "Самолет",
+        "Telephone": "Телефон",
+        "Radio": "Радио"
+      }
+    },
+    "history:64": {
+      "question": "Где произошла высадка в день Д во время Второй мировой войны?",
+      "answers": {
+        "Italy": "Италия",
+        "Normandy, France": "Нормандия, Франция",
+        "Germany": "Германия",
+        "Poland": "Польша"
+      }
+    },
+    "history:65": {
+      "question": "Столетняя война велась в основном между Англией и?",
+      "answers": {
+        "Spain": "Испания",
+        "France": "Франция",
+        "Germany": "Германия",
+        "Italy": "Италия"
+      }
+    },
+    "history:66": {
+      "question": "Кто был премьер-министром Великобритании в 1980-х годах?",
+      "answers": {
+        "Elizabeth II": "Елизавета II",
+        "Thatcher": "Тэтчер",
+        "May": "май",
+        "Merkel": "Меркель"
+      }
+    },
+    "history:67": {
+      "question": "Древний город Помпеи был разрушен?",
+      "answers": {
+        "A flood": "Наводнение",
+        "A volcano (Vesuvius)": "Вулкан (Везувий)",
+        "An earthquake": "Землетрясение",
+        "A war": "Война"
+      }
+    },
+    "history:68": {
+      "question": "Какой древней страной правили фараоны?",
+      "answers": {
+        "Greece": "Греция",
+        "Egypt": "Египет",
+        "Rome": "Рим",
+        "Persia": "Персия"
+      }
+    },
+    "history:69": {
+      "question": "Какая известная медсестра участвовала в Крымской войне?",
+      "answers": {
+        "Curie": "Кюри",
+        "Nightingale": "Соловей",
+        "Earhart": "Эрхарт",
+        "Keller": "Келлер"
+      }
+    },
+    "history:70": {
+      "question": "С каким итальянским городом больше всего ассоциируется эпоха Возрождения?",
+      "answers": {
+        "Milan": "Милан",
+        "Florence": "Флоренция",
+        "Naples": "Неаполь",
+        "Turin": "Турин"
+      }
+    },
+    "history:71": {
+      "question": "Кто была первой женщиной, получившей Нобелевскую премию?",
+      "answers": {
+        "Curie": "Кюри",
+        "Franklin": "Франклин",
+        "Meitner": "Мейтнер",
+        "Lovelace": "Ловелас"
+      }
+    },
+    "history:72": {
+      "question": "Откуда произошли викинги?",
+      "answers": {
+        "Scandinavia": "Скандинавия",
+        "Spain": "Испания",
+        "Greece": "Греция",
+        "Egypt": "Египет"
+      }
+    },
+    "history:73": {
+      "question": "В каком году произошел Великий лондонский пожар?",
+      "answers": {
+        "1620": "1620 г.",
+        "1666": "1666 г.",
+        "1700": "1700",
+        "1750": "1750 г."
+      }
+    },
+    "history:74": {
+      "question": "Был ли крах Уолл-стрит, положивший начало Великой депрессии?",
+      "answers": {
+        "1919": "1919 г.",
+        "1929": "1929 г.",
+        "1939": "1939 г.",
+        "1949": "1949 г."
+      }
+    },
+    "history:75": {
+      "question": "Кто ввел советские реформы «гласность» и «перестройку»?",
+      "answers": {
+        "Stalin": "Сталин",
+        "Gorbachev": "Горбачев",
+        "Lenin": "Ленин",
+        "Putin": "Путин"
+      }
+    },
+    "history:76": {
+      "question": "В какой стране была подписана Великая хартия вольностей?",
+      "answers": {
+        "France": "Франция",
+        "England": "Англия",
+        "Italy": "Италия",
+        "Spain": "Испания"
+      }
+    },
+    "history:77": {
+      "question": "Какой путешественник достиг Индии морским путем в 1498 году?",
+      "answers": {
+        "Columbus": "Колумбус",
+        "Vasco da Gama": "Васко да Гама",
+        "Magellan": "Магеллан",
+        "Cook": "Кук"
+      }
+    },
+    "history:78": {
+      "question": "В каком регионе преимущественно жили древние майя?",
+      "answers": {
+        "Central America": "Центральная Америка",
+        "North Africa": "Северная Африка",
+        "Southeast Asia": "Юго-Восточная Азия",
+        "Northern Europe": "Северная Европа"
+      }
+    },
+    "history:79": {
+      "question": "Цивилизация ацтеков располагалась преимущественно в современном?",
+      "answers": {
+        "Peru": "Перу",
+        "Mexico": "Мексика",
+        "Brazil": "Бразилия",
+        "Chile": "Чили"
+      }
+    },
+    "history:80": {
+      "question": "Космическая гонка времен Холодной войны, как известно, закончилась посадкой на?",
+      "answers": {
+        "Sun": "Вс",
+        "Moon": "Луна",
+        "Mars": "Марс",
+        "Venus": "Венера"
+      }
+    },
+    "history:81": {
+      "question": "Эйфелева башня была построена к Всемирной выставке 1889 года?",
+      "answers": {
+        "London": "Лондон",
+        "Paris": "Париж",
+        "Rome": "Рим",
+        "Berlin": "Берлин"
+      }
+    },
+    "history:82": {
+      "question": "Кто написал «95 тезисов»?",
+      "answers": {
+        "Calvin": "Кальвин",
+        "Martin Luther": "Мартин Лютер",
+        "Erasmus": "Эразм",
+        "Henry VIII": "Генрих VIII"
+      }
+    },
+    "history:83": {
+      "question": "В какой войне (1914–1918 гг.) широко распространена была позиционная война?",
+      "answers": {
+        "WWII": "Вторая мировая война",
+        "WWI": "Первая мировая война",
+        "Cold War": "Холодная война",
+        "Napoleonic Wars": "Наполеоновские войны"
+      }
+    },
+    "history:84": {
+      "question": "В каком году закончилась Гражданская война в США?",
+      "answers": {
+        "1776": "1776 г.",
+        "1812": "1812 г.",
+        "1865": "1865 г.",
+        "1901": "1901 г."
+      }
+    },
+    "history:85": {
+      "question": "Кто был первым императором Рима?",
+      "answers": {
+        "Julius Caesar": "Юлий Цезарь",
+        "Augustus": "Август",
+        "Nero": "Нерон",
+        "Constantine": "Константин"
+      }
+    },
+    "history:86": {
+      "question": "Шелковый путь соединял Европу?",
+      "answers": {
+        "Africa": "Африка",
+        "Asia": "Азия",
+        "America": "Америка",
+        "Australia": "Австралия"
+      }
+    },
+    "history:87": {
+      "question": "Какая страна подарила США Статую Свободы?",
+      "answers": {
+        "UK": "Великобритания",
+        "France": "Франция",
+        "Spain": "Испания",
+        "Germany": "Германия"
+      }
+    },
+    "history:88": {
+      "question": "Средневековый период также известен как?",
+      "answers": {
+        "Middle Ages": "Средневековье",
+        "Stone Age": "Каменный век",
+        "Bronze Age": "Бронзовый век",
+        "Space Age": "Космическая эра"
+      }
+    },
+    "history:89": {
+      "question": "Кто возглавил Кубинскую революцию?",
+      "answers": {
+        "Guevara": "Гевара",
+        "Castro": "Кастро",
+        "Batista": "Батиста",
+        "Allende": "Альенде"
+      }
+    },
+    "history:90": {
+      "question": "Какая страна первой создала атомную бомбу?",
+      "answers": {
+        "Germany": "Германия",
+        "USA": "США",
+        "USSR": "СССР",
+        "Japan": "Япония"
+      }
+    },
+    "history:91": {
+      "question": "После какого периода наступило Возрождение?",
+      "answers": {
+        "Middle Ages": "Средневековье",
+        "Modern era": "Современная эпоха",
+        "Space Age": "Космическая эра",
+        "Industrial era": "Индустриальная эпоха"
+      }
+    },
+    "history:92": {
+      "question": "Древний храм Парфенон расположен?",
+      "answers": {
+        "Rome": "Рим",
+        "Athens": "Афины",
+        "Cairo": "Каир",
+        "Istanbul": "Стамбул"
+      }
+    },
+    "history:93": {
+      "question": "Столицей какой древней империи был Персеполь?",
+      "answers": {
+        "Roman": "Роман",
+        "Persian": "Персидский",
+        "Greek": "греческий",
+        "Egyptian": "Египетский"
+      }
+    },
+    "history:94": {
+      "question": "В эпоху географических открытий европейцы искали?",
+      "answers": {
+        "The Moon": "Луна",
+        "New trade routes and lands": "Новые торговые пути и земли",
+        "Oil": "Масло",
+        "Electricity": "Электричество"
+      }
+    },
+    "history:95": {
+      "question": "На какую военно-морскую базу США в 1941 году напала Япония?",
+      "answers": {
+        "San Diego": "Сан-Диего",
+        "Pearl Harbor": "Перл-Харбор",
+        "Norfolk": "Норфолк",
+        "Guam": "Гуам"
+      }
+    },
+    "history:96": {
+      "question": "Римская цифра 100?",
+      "answers": {
+        "C": "С",
+        "D": "Д",
+        "M": "М",
+        "L": "Л"
+      }
+    },
+    "history:97": {
+      "question": "Какую древнюю письменность помог расшифровать Розеттский камень?",
+      "answers": {
+        "Latin": "латиница",
+        "Egyptian hieroglyphs": "Египетские иероглифы",
+        "Runes": "Руны",
+        "Sanskrit": "Санскрит"
+      }
+    },
+    "history:98": {
+      "question": "Какой американский генерал времен Второй мировой войны позже стал президентом США?",
+      "answers": {
+        "Patton": "Паттон",
+        "Eisenhower": "Эйзенхауэр",
+        "MacArthur": "Макартур",
+        "Marshall": "Маршалл"
+      }
+    },
+    "history:99": {
+      "question": "Какая королева правила Великобританией 70 лет до 2022 года?",
+      "answers": {
+        "Victoria": "Виктория",
+        "Elizabeth II": "Елизавета II",
+        "Anne": "Анна",
+        "Mary": "Мэри"
+      }
+    },
+    "science:0": {
+      "question": "Какова химическая формула воды?",
+      "answers": {
+        "CO2": "CO2",
+        "H2O": "H2O",
+        "O2": "O2",
+        "NaCl": "NaCl"
+      }
+    },
+    "science:1": {
+      "question": "Сколько планет в нашей солнечной системе?",
+      "answers": {
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      }
+    },
+    "science:2": {
+      "question": "Какой газ растения поглощают из воздуха?",
+      "answers": {
+        "Oxygen": "Кислород",
+        "Carbon dioxide": "Углекислый газ",
+        "Nitrogen": "Азот",
+        "Hydrogen": "Водород"
+      }
+    },
+    "science:3": {
+      "question": "Какая планета ближе всего к Солнцу?",
+      "answers": {
+        "Venus": "Венера",
+        "Mercury": "Меркурий",
+        "Earth": "Земля",
+        "Mars": "Марс"
+      }
+    },
+    "science:4": {
+      "question": "Что называют электростанцией клетки?",
+      "answers": {
+        "Nucleus": "Ядро",
+        "Mitochondria": "Митохондрии",
+        "Ribosome": "Рибосома",
+        "Membrane": "Мембрана"
+      }
+    },
+    "science:5": {
+      "question": "Каков химический символ золота?",
+      "answers": {
+        "Go": "Перейти",
+        "Gd": "Б-г",
+        "Au": "Ау",
+        "Ag": "Ag"
+      }
+    },
+    "science:6": {
+      "question": "Сколько костей у взрослого человека?",
+      "answers": {
+        "101": "101",
+        "150": "150",
+        "206": "206",
+        "300": "300"
+      }
+    },
+    "science:7": {
+      "question": "Какая планета известна как Красная планета?",
+      "answers": {
+        "Venus": "Венера",
+        "Mars": "Марс",
+        "Jupiter": "Юпитер",
+        "Saturn": "Сатурн"
+      }
+    },
+    "science:8": {
+      "question": "Кто разработал теорию относительности?",
+      "answers": {
+        "Newton": "Ньютон",
+        "Einstein": "Эйнштейн",
+        "Tesla": "Тесла",
+        "Darwin": "Дарвин"
+      }
+    },
+    "science:9": {
+      "question": "Какая сила притягивает объекты к Земле?",
+      "answers": {
+        "Magnetism": "Магнетизм",
+        "Gravity": "Гравитация",
+        "Friction": "Трение",
+        "Inertia": "Инерция"
+      }
+    },
+    "science:10": {
+      "question": "Какие клетки крови борются с инфекцией?",
+      "answers": {
+        "Red cells": "Красные клетки",
+        "White cells": "Белые клетки",
+        "Platelets": "Тромбоциты",
+        "Plasma": "Плазма"
+      }
+    },
+    "science:11": {
+      "question": "Какой орган в организме человека является самым большим?",
+      "answers": {
+        "Liver": "Печень",
+        "Skin": "Скин",
+        "Heart": "Сердце",
+        "Brain": "Мозг"
+      }
+    },
+    "science:12": {
+      "question": "При какой температуре (°C) на уровне моря кипит вода?",
+      "answers": {
+        "80": "80",
+        "90": "90",
+        "100": "100",
+        "120": "120"
+      }
+    },
+    "science:13": {
+      "question": "Как называются животные, которые питаются только растениями?",
+      "answers": {
+        "Carnivores": "Плотоядные",
+        "Herbivores": "Травоядные",
+        "Omnivores": "Всеядные",
+        "Predators": "Хищники"
+      }
+    },
+    "science:14": {
+      "question": "Какая планета в нашей солнечной системе является самой большой?",
+      "answers": {
+        "Saturn": "Сатурн",
+        "Jupiter": "Юпитер",
+        "Neptune": "Нептун",
+        "Earth": "Земля"
+      }
+    },
+    "science:15": {
+      "question": "Растения производят пищу из солнечного света?",
+      "answers": {
+        "Respiration": "Дыхание",
+        "Photosynthesis": "Фотосинтез",
+        "Digestion": "Пищеварение",
+        "Fermentation": "Ферментация"
+      }
+    },
+    "science:16": {
+      "question": "Каков химический символ кислорода?",
+      "answers": {
+        "O": "О",
+        "Ox": "Бык",
+        "Og": "Ог",
+        "On": "Включено"
+      }
+    },
+    "science:17": {
+      "question": "Какое самое твердое природное вещество на Земле?",
+      "answers": {
+        "Gold": "Золото",
+        "Iron": "Железо",
+        "Diamond": "Алмаз",
+        "Quartz": "Кварц"
+      }
+    },
+    "science:18": {
+      "question": "Каков химический символ железа?",
+      "answers": {
+        "Ir": "Ир",
+        "Fe": "Фе",
+        "In": "В",
+        "Io": "Ио"
+      }
+    },
+    "science:19": {
+      "question": "Каков химический символ натрия?",
+      "answers": {
+        "So": "Итак",
+        "Sd": "Сд",
+        "Na": "Нет",
+        "S": "С"
+      }
+    },
+    "science:20": {
+      "question": "Сколько ног у насекомого?",
+      "answers": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      }
+    },
+    "science:21": {
+      "question": "Сколько ног у паука?",
+      "answers": {
+        "6": "6",
+        "8": "8",
+        "10": "10",
+        "12": "12"
+      }
+    },
+    "science:22": {
+      "question": "Как называется центр атома?",
+      "answers": {
+        "Electron": "Электрон",
+        "Nucleus": "Ядро",
+        "Proton shell": "Протонная оболочка",
+        "Orbit": "Орбита"
+      }
+    },
+    "science:23": {
+      "question": "Каким газом нужно дышать человеку, чтобы выжить?",
+      "answers": {
+        "Carbon dioxide": "Углекислый газ",
+        "Oxygen": "Кислород",
+        "Nitrogen": "Азот",
+        "Helium": "Гелий"
+      }
+    },
+    "science:24": {
+      "question": "Какова температура замерзания воды по Цельсию?",
+      "answers": {
+        "0": "0",
+        "10": "10",
+        "32": "32",
+        "-10": "-10"
+      }
+    },
+    "science:25": {
+      "question": "Земля вращается вокруг?",
+      "answers": {
+        "Moon": "Луна",
+        "Sun": "Вс",
+        "Mars": "Марс",
+        "Jupiter": "Юпитер"
+      }
+    },
+    "science:26": {
+      "question": "Сколько времени нужно Земле, чтобы совершить оборот вокруг Солнца?",
+      "answers": {
+        "1 day": "1 день",
+        "1 month": "1 месяц",
+        "1 year": "1 год",
+        "10 years": "10 лет"
+      }
+    },
+    "science:27": {
+      "question": "Что вызывает смену дня и ночи?",
+      "answers": {
+        "Earth's rotation": "Вращение Земли",
+        "The Moon": "Луна",
+        "Clouds": "Облака",
+        "The tides": "Приливы"
+      }
+    },
+    "science:28": {
+      "question": "Какая самая маленькая планета в нашей солнечной системе?",
+      "answers": {
+        "Mars": "Марс",
+        "Mercury": "Меркурий",
+        "Venus": "Венера",
+        "Earth": "Земля"
+      }
+    },
+    "science:29": {
+      "question": "В какой галактике мы живем?",
+      "answers": {
+        "Andromeda": "Андромеда",
+        "Milky Way": "Млечный Путь",
+        "Whirlpool": "Водоворот",
+        "Sombrero": "Сомбреро"
+      }
+    },
+    "science:30": {
+      "question": "Солнце в основном состоит из?",
+      "answers": {
+        "Rock": "Рок",
+        "Hydrogen and helium": "Водород и гелий",
+        "Water": "Вода",
+        "Iron": "Железо"
+      }
+    },
+    "science:31": {
+      "question": "Что пчелы собирают с цветов?",
+      "answers": {
+        "Water": "Вода",
+        "Nectar": "Нектар",
+        "Sand": "Песок",
+        "Leaves": "Листья"
+      }
+    },
+    "science:32": {
+      "question": "Какой газ составляет большую часть атмосферы Земли?",
+      "answers": {
+        "Oxygen": "Кислород",
+        "Nitrogen": "Азот",
+        "Carbon dioxide": "Углекислый газ",
+        "Hydrogen": "Водород"
+      }
+    },
+    "science:33": {
+      "question": "Как называется изучение живого?",
+      "answers": {
+        "Physics": "Физика",
+        "Biology": "Биология",
+        "Geology": "Геология",
+        "Chemistry": "Химия"
+      }
+    },
+    "science:34": {
+      "question": "Как называется изучение материи и энергии?",
+      "answers": {
+        "Biology": "Биология",
+        "Physics": "Физика",
+        "Botany": "Ботаника",
+        "Zoology": "Зоология"
+      }
+    },
+    "science:35": {
+      "question": "Как называется наука о веществах и реакциях?",
+      "answers": {
+        "Chemistry": "Химия",
+        "Astronomy": "Астрономия",
+        "Ecology": "Экология",
+        "Geology": "Геология"
+      }
+    },
+    "science:36": {
+      "question": "Какой орган перекачивает кровь по всему телу?",
+      "answers": {
+        "Lungs": "Легкие",
+        "Heart": "Сердце",
+        "Liver": "Печень",
+        "Kidney": "Почка"
+      }
+    },
+    "science:37": {
+      "question": "Какой орган используется для дыхания?",
+      "answers": {
+        "Heart": "Сердце",
+        "Lungs": "Лёгкие",
+        "Stomach": "Желудок",
+        "Liver": "Печень"
+      }
+    },
+    "science:38": {
+      "question": "Какое самое твердое вещество в организме человека?",
+      "answers": {
+        "Bone": "Кость",
+        "Tooth enamel": "Зубная эмаль",
+        "Nails": "Ногти",
+        "Cartilage": "Хрящ"
+      }
+    },
+    "science:39": {
+      "question": "Сколько камер имеет сердце человека?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "science:40": {
+      "question": "ДНК несет?",
+      "answers": {
+        "Water": "Вода",
+        "Genetic information": "Генетическая информация",
+        "Oxygen": "Кислород",
+        "Energy": "Энергия"
+      }
+    },
+    "science:41": {
+      "question": "Какой витамин солнечный свет помогает нашему организму вырабатывать?",
+      "answers": {
+        "Vitamin A": "Витамин А",
+        "Vitamin C": "Витамин С",
+        "Vitamin D": "Витамин D",
+        "Vitamin K": "Витамин К"
+      }
+    },
+    "science:42": {
+      "question": "Какова температура кипения воды в градусах Фаренгейта?",
+      "answers": {
+        "100": "100",
+        "150": "150",
+        "180": "180",
+        "212": "212"
+      }
+    },
+    "science:43": {
+      "question": "Звук распространяется быстрее всего?",
+      "answers": {
+        "Vacuum": "Вакуум",
+        "Solids": "Твердые тела",
+        "Gases": "Газы",
+        "Empty space": "Пустое место"
+      }
+    },
+    "science:44": {
+      "question": "Какова примерная скорость света?",
+      "answers": {
+        "300,000 km/s": "300 000 км/с",
+        "1,000 km/s": "1000 км/с",
+        "3,000 km/s": "3000 км/с",
+        "30 km/s": "30 км/с"
+      }
+    },
+    "science:45": {
+      "question": "Какая планета известна своими кольцами?",
+      "answers": {
+        "Mars": "Марс",
+        "Saturn": "Сатурн",
+        "Venus": "Венера",
+        "Mercury": "Меркурий"
+      }
+    },
+    "science:46": {
+      "question": "Какой единственный естественный спутник Земли?",
+      "answers": {
+        "The Sun": "Солнце",
+        "The Moon": "Луна",
+        "Mars": "Марс",
+        "Venus": "Венера"
+      }
+    },
+    "science:47": {
+      "question": "Какая сила заставляет планеты вращаться вокруг Солнца?",
+      "answers": {
+        "Magnetism": "Магнетизм",
+        "Gravity": "Гравитация",
+        "Friction": "Трение",
+        "Electricity": "Электричество"
+      }
+    },
+    "science:48": {
+      "question": "Как называются животные, питающиеся и растениями, и мясом?",
+      "answers": {
+        "Herbivores": "Травоядные",
+        "Carnivores": "Хищники",
+        "Omnivores": "Всеядные",
+        "Insectivores": "Насекомоядные"
+      }
+    },
+    "science:49": {
+      "question": "Как называются животные, питающиеся только мясом?",
+      "answers": {
+        "Herbivores": "Травоядные",
+        "Carnivores": "Хищники",
+        "Omnivores": "Всеядные",
+        "Detritivores": "Детритоядные"
+      }
+    },
+    "science:50": {
+      "question": "Какой процесс превращает жидкую воду в пар?",
+      "answers": {
+        "Condensation": "Конденсация",
+        "Evaporation": "Испарение",
+        "Freezing": "Замораживание",
+        "Melting": "Плавление"
+      }
+    },
+    "science:51": {
+      "question": "Какой процесс превращает пар обратно в жидкость?",
+      "answers": {
+        "Evaporation": "Испарение",
+        "Condensation": "Конденсация",
+        "Sublimation": "Сублимация",
+        "Boiling": "Кипение"
+      }
+    },
+    "science:52": {
+      "question": "Каковы три общих состояния материи?",
+      "answers": {
+        "Hot, cold, warm": "Горячее, холодное, теплое",
+        "Solid, liquid, gas": "Твердое тело, жидкость, газ",
+        "Big, small, medium": "Большой, маленький, средний",
+        "Up, down, side": "Вверх, вниз, в сторону"
+      }
+    },
+    "science:53": {
+      "question": "Лед — это ___ состояние воды.",
+      "answers": {
+        "Gas": "Газ",
+        "Liquid": "Жидкость",
+        "Solid": "Сплошной",
+        "Plasma": "Плазма"
+      }
+    },
+    "science:54": {
+      "question": "Какой учёный предложил теорию эволюции?",
+      "answers": {
+        "Newton": "Ньютон",
+        "Darwin": "Дарвин",
+        "Einstein": "Эйнштейн",
+        "Tesla": "Тесла"
+      }
+    },
+    "science:55": {
+      "question": "Кто сформулировал законы движения и гравитации?",
+      "answers": {
+        "Einstein": "Эйнштейн",
+        "Newton": "Ньютон",
+        "Galileo": "Галилей",
+        "Hawking": "Хокинг"
+      }
+    },
+    "science:56": {
+      "question": "Каков химический символ углерода?",
+      "answers": {
+        "Ca": "Калифорния",
+        "C": "С",
+        "Co": "Компания",
+        "Cn": "Сп"
+      }
+    },
+    "science:57": {
+      "question": "Каков химический символ гелия?",
+      "answers": {
+        "H": "Ч",
+        "He": "Он",
+        "Hl": "Хл",
+        "Ha": "Ха"
+      }
+    },
+    "science:58": {
+      "question": "Какая планета очень горячая и покрыта густыми кислотными облаками?",
+      "answers": {
+        "Mars": "Марс",
+        "Venus": "Венера",
+        "Neptune": "Нептун",
+        "Uranus": "Уран"
+      }
+    },
+    "science:59": {
+      "question": "Сколько зубов у типичного взрослого человека?",
+      "answers": {
+        "24": "24",
+        "28": "28",
+        "32": "32",
+        "36": "36"
+      }
+    },
+    "science:60": {
+      "question": "Какая часть растения поглощает воду из почвы?",
+      "answers": {
+        "Leaves": "Листья",
+        "Roots": "Корни",
+        "Flowers": "Цветы",
+        "Stem": "Стебель"
+      }
+    },
+    "science:61": {
+      "question": "Какой газ выделяют растения во время фотосинтеза?",
+      "answers": {
+        "Carbon dioxide": "Углекислый газ",
+        "Oxygen": "Кислород",
+        "Nitrogen": "Азот",
+        "Methane": "Метан"
+      }
+    },
+    "science:62": {
+      "question": "Какая звезда ближе всего к Земле?",
+      "answers": {
+        "Polaris": "Полярная звезда",
+        "The Sun": "Солнце",
+        "Sirius": "Сириус",
+        "Alpha Centauri": "Альфа Центавра"
+      }
+    },
+    "science:63": {
+      "question": "Какая группа крови является универсальным донором?",
+      "answers": {
+        "A": "А",
+        "B": "Б",
+        "O negative": "O отрицательный",
+        "AB": "АБ"
+      }
+    },
+    "science:64": {
+      "question": "Какой прибор измеряет температуру?",
+      "answers": {
+        "Barometer": "Барометр",
+        "Thermometer": "Термометр",
+        "Ruler": "Линейка",
+        "Scale": "Масштаб"
+      }
+    },
+    "science:65": {
+      "question": "Какой прибор используется для наблюдения за крошечными клетками?",
+      "answers": {
+        "Telescope": "Телескоп",
+        "Microscope": "Микроскоп",
+        "Periscope": "Перископ",
+        "Binoculars": "Бинокль"
+      }
+    },
+    "science:66": {
+      "question": "Какой прибор используется для наблюдения за далекими звездами?",
+      "answers": {
+        "Microscope": "Микроскоп",
+        "Telescope": "Телескоп",
+        "Stethoscope": "Стетоскоп",
+        "Ruler": "Линейка"
+      }
+    },
+    "science:67": {
+      "question": "Замороженный углекислый газ обычно называют?",
+      "answers": {
+        "Dry ice": "Сухой лед",
+        "Snow": "Снег",
+        "Frost": "Мороз",
+        "Hail": "Приветствую"
+      }
+    },
+    "science:68": {
+      "question": "Какой газ в основном выдыхают люди?",
+      "answers": {
+        "Oxygen": "Кислород",
+        "Carbon dioxide": "Углекислый газ",
+        "Nitrogen only": "Только азот",
+        "Hydrogen": "Водород"
+      }
+    },
+    "science:69": {
+      "question": "Какой витамин содержится в цитрусовых?",
+      "answers": {
+        "Vitamin C": "Витамин С",
+        "Vitamin D": "Витамин D",
+        "Vitamin B12": "Витамин B12",
+        "Vitamin K": "Витамин К"
+      }
+    },
+    "science:70": {
+      "question": "Как называется расплавленная горная порода под поверхностью Земли?",
+      "answers": {
+        "Lava": "Лава",
+        "Magma": "Магма",
+        "Ash": "Ясень",
+        "Basalt": "Базальт"
+      }
+    },
+    "science:71": {
+      "question": "Как называется расплавленная порода, извергающаяся на поверхность?",
+      "answers": {
+        "Magma": "Магма",
+        "Lava": "Лава",
+        "Sediment": "Осадки",
+        "Ore": "Руда"
+      }
+    },
+    "science:72": {
+      "question": "Ядро Земли состоит в основном из?",
+      "answers": {
+        "Water": "Вода",
+        "Iron and nickel": "Железо и никель",
+        "Gold": "Золото",
+        "Ice": "Лед"
+      }
+    },
+    "science:73": {
+      "question": "На каком слое Земли мы живём?",
+      "answers": {
+        "Core": "Ядро",
+        "Mantle": "Мантия",
+        "Crust": "Земная кора",
+        "Atmosphere": "Атмосфера"
+      }
+    },
+    "science:74": {
+      "question": "Что в основном вызывает океанские приливы?",
+      "answers": {
+        "Wind only": "Только ветер",
+        "The Moon's gravity": "Гравитация Луны",
+        "Fish": "Рыба",
+        "Rivers": "Реки"
+      }
+    },
+    "science:75": {
+      "question": "Группа звезд, образующая узор – это?",
+      "answers": {
+        "Galaxy": "Галактика",
+        "Constellation": "Созвездие",
+        "Comet": "Комета",
+        "Nebula": "Туманность"
+      }
+    },
+    "science:76": {
+      "question": "«Падающая звезда» на самом деле?",
+      "answers": {
+        "Dying star": "Умирающая звезда",
+        "Meteor": "Метеор",
+        "Planet": "Планета",
+        "Satellite": "Спутник"
+      }
+    },
+    "science:77": {
+      "question": "На какой планете находится знаменитое «Большое красное пятно»?",
+      "answers": {
+        "Mars": "Марс",
+        "Jupiter": "Юпитер",
+        "Saturn": "Сатурн",
+        "Neptune": "Нептун"
+      }
+    },
+    "science:78": {
+      "question": "Что является основной единицей жизни?",
+      "answers": {
+        "Atom": "Атом",
+        "Cell": "Ячейка",
+        "Molecule": "Молекула",
+        "Organ": "Орган"
+      }
+    },
+    "science:79": {
+      "question": "Какой орган контролирует мышление и движение?",
+      "answers": {
+        "Heart": "Сердце",
+        "Brain": "Мозг",
+        "Liver": "Печень",
+        "Lungs": "Легкие"
+      }
+    },
+    "science:80": {
+      "question": "Какой химический символ калия?",
+      "answers": {
+        "P": "П",
+        "Po": "По",
+        "K": "К",
+        "Pt": "Пт"
+      }
+    },
+    "science:81": {
+      "question": "Какой из этих газов является благородным?",
+      "answers": {
+        "Oxygen": "Кислород",
+        "Helium": "Гелий",
+        "Hydrogen": "Водород",
+        "Nitrogen": "Азот"
+      }
+    },
+    "science:82": {
+      "question": "Как называется вода, падающая с облаков?",
+      "answers": {
+        "Evaporation": "Испарение",
+        "Precipitation": "Осадки",
+        "Condensation": "Конденсация",
+        "Radiation": "Радиация"
+      }
+    },
+    "science:83": {
+      "question": "Какая шкала измеряет силу землетрясений?",
+      "answers": {
+        "Celsius": "Цельсия",
+        "Richter": "Рихтер",
+        "Decibel": "Децибел",
+        "Fahrenheit": "по Фаренгейту"
+      }
+    },
+    "science:84": {
+      "question": "Какая единица измеряет электрический ток?",
+      "answers": {
+        "Volt": "Вольт",
+        "Ampere": "Ампер",
+        "Watt": "Ватт",
+        "Ohm": "Ом"
+      }
+    },
+    "science:85": {
+      "question": "Мощность лампочки измеряется?",
+      "answers": {
+        "Watts": "Вт",
+        "Meters": "метров",
+        "Liters": "литров",
+        "Grams": "Грамм"
+      }
+    },
+    "science:86": {
+      "question": "Какая планета вращается на боку?",
+      "answers": {
+        "Uranus": "Уран",
+        "Mars": "Марс",
+        "Venus": "Венера",
+        "Earth": "Земля"
+      }
+    },
+    "science:87": {
+      "question": "Как называется гусеница, превращающаяся в бабочку?",
+      "answers": {
+        "Evolution": "Эволюция",
+        "Metamorphosis": "Метаморфоза",
+        "Photosynthesis": "Фотосинтез",
+        "Digestion": "Пищеварение"
+      }
+    },
+    "science:88": {
+      "question": "Какой элемент во Вселенной наиболее распространен?",
+      "answers": {
+        "Oxygen": "Кислород",
+        "Hydrogen": "Водород",
+        "Iron": "Железо",
+        "Carbon": "Углерод"
+      }
+    },
+    "science:89": {
+      "question": "Какая планета по размеру ближе всего к Земле?",
+      "answers": {
+        "Mars": "Марс",
+        "Venus": "Венера",
+        "Mercury": "Меркурий",
+        "Jupiter": "Юпитер"
+      }
+    },
+    "science:90": {
+      "question": "Человеческое тело состоит в основном из?",
+      "answers": {
+        "Bone": "Кость",
+        "Water": "Вода",
+        "Muscle": "Мышца",
+        "Fat": "Жир"
+      }
+    },
+    "science:91": {
+      "question": "Какой орган фильтрует отходы из крови?",
+      "answers": {
+        "Heart": "Сердце",
+        "Kidneys": "Почки",
+        "Lungs": "Легкие",
+        "Brain": "Мозг"
+      }
+    },
+    "science:92": {
+      "question": "Какое чувство связано с глазами?",
+      "answers": {
+        "Hearing": "Слушание",
+        "Sight": "Прицел",
+        "Smell": "Запах",
+        "Taste": "Вкус"
+      }
+    },
+    "science:93": {
+      "question": "Каков химический символ серебра?",
+      "answers": {
+        "Si": "Си",
+        "Ag": "Ag",
+        "Au": "Ау",
+        "Sr": "старший"
+      }
+    },
+    "science:94": {
+      "question": "Какая планета находится дальше всего от Солнца?",
+      "answers": {
+        "Saturn": "Сатурн",
+        "Uranus": "Уран",
+        "Neptune": "Нептун",
+        "Jupiter": "Юпитер"
+      }
+    },
+    "science:95": {
+      "question": "Что нужно растениям для питания, помимо солнечного света и воды?",
+      "answers": {
+        "Oxygen": "Кислород",
+        "Carbon dioxide": "Углекислый газ",
+        "Nitrogen gas": "Газообразный азот",
+        "Helium": "Гелий"
+      }
+    },
+    "science:96": {
+      "question": "Как мы называем учёного, изучающего звёзды и космос?",
+      "answers": {
+        "Biologist": "Биолог",
+        "Astronomer": "Астроном",
+        "Chemist": "Химик",
+        "Geologist": "Геолог"
+      }
+    },
+    "science:97": {
+      "question": "Какая планета известна как «утренняя звезда» или «вечерняя звезда»?",
+      "answers": {
+        "Mars": "Марс",
+        "Venus": "Венера",
+        "Saturn": "Сатурн",
+        "Mercury": "Меркурий"
+      }
+    },
+    "science:98": {
+      "question": "Сколько цветов в радуге?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "science:99": {
+      "question": "Какую планету часто называют «Голубой планетой»?",
+      "answers": {
+        "Mars": "Марс",
+        "Earth": "Земля",
+        "Neptune": "Нептун",
+        "Venus": "Венера"
+      }
+    },
+    "geography:0": {
+      "question": "Какая столица Японии?",
+      "answers": {
+        "Seoul": "Сеул",
+        "Beijing": "Пекин",
+        "Tokyo": "Токио",
+        "Bangkok": "Бангкок"
+      }
+    },
+    "geography:1": {
+      "question": "Какой океан на Земле является самым большим?",
+      "answers": {
+        "Atlantic": "Атлантика",
+        "Indian": "Индийский",
+        "Arctic": "Арктика",
+        "Pacific": "Тихий океан"
+      }
+    },
+    "geography:2": {
+      "question": "Какая река считается самой длинной в мире?",
+      "answers": {
+        "Amazon": "Амазонка",
+        "Nile": "Нил",
+        "Yangtze": "Янцзы",
+        "Mississippi": "Миссисипи"
+      }
+    },
+    "geography:3": {
+      "question": "Частью какого горного хребта является Эверест?",
+      "answers": {
+        "Andes": "Анды",
+        "Alps": "Альпы",
+        "Himalayas": "Гималаи",
+        "Rockies": "Скалистые горы"
+      }
+    },
+    "geography:4": {
+      "question": "Какая столица Франции?",
+      "answers": {
+        "Berlin": "Берлин",
+        "Madrid": "Мадрид",
+        "Paris": "Париж",
+        "Rome": "Рим"
+      }
+    },
+    "geography:5": {
+      "question": "Какая страна является самой большой по площади?",
+      "answers": {
+        "Canada": "Канада",
+        "China": "Китай",
+        "USA": "США",
+        "Russia": "Россия"
+      }
+    },
+    "geography:6": {
+      "question": "На каком континенте находится пустыня Сахара?",
+      "answers": {
+        "Asia": "Азия",
+        "Africa": "Африка",
+        "Australia": "Австралия",
+        "South America": "Южная Америка"
+      }
+    },
+    "geography:7": {
+      "question": "Какая столица Австралии?",
+      "answers": {
+        "Sydney": "Сидней",
+        "Melbourne": "Мельбурн",
+        "Canberra": "Канберра",
+        "Perth": "Перт"
+      }
+    },
+    "geography:8": {
+      "question": "Какой континент является самым маленьким?",
+      "answers": {
+        "Europe": "Европа",
+        "Australia": "Австралия",
+        "Antarctica": "Антарктида",
+        "South America": "Южная Америка"
+      }
+    },
+    "geography:9": {
+      "question": "У берегов какой страны расположен Большой Барьерный риф?",
+      "answers": {
+        "Brazil": "Бразилия",
+        "Australia": "Австралия",
+        "Mexico": "Мексика",
+        "India": "Индия"
+      }
+    },
+    "geography:10": {
+      "question": "В какой стране находится Эйфелева башня?",
+      "answers": {
+        "Italy": "Италия",
+        "Spain": "Испания",
+        "France": "Франция",
+        "Belgium": "Бельгия"
+      }
+    },
+    "geography:11": {
+      "question": "Какая столица Египта?",
+      "answers": {
+        "Cairo": "Каир",
+        "Alexandria": "Александрия",
+        "Giza": "Гиза",
+        "Luxor": "Луксор"
+      }
+    },
+    "geography:12": {
+      "question": "Сколько существует континентов?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "geography:13": {
+      "question": "Какая река протекает через Лондон?",
+      "answers": {
+        "Seine": "Сена",
+        "Thames": "Темза",
+        "Danube": "Дунай",
+        "Rhine": "Рейн"
+      }
+    },
+    "geography:14": {
+      "question": "В какой стране расположена большая часть тропических лесов Амазонки?",
+      "answers": {
+        "Peru": "Перу",
+        "Colombia": "Колумбия",
+        "Brazil": "Бразилия",
+        "Venezuela": "Венесуэла"
+      }
+    },
+    "geography:15": {
+      "question": "Какая самая большая жаркая пустыня в мире?",
+      "answers": {
+        "Gobi": "Гоби",
+        "Sahara": "Сахара",
+        "Kalahari": "Калахари",
+        "Arabian": "арабский"
+      }
+    },
+    "geography:16": {
+      "question": "Какая столица Италии?",
+      "answers": {
+        "Milan": "Милан",
+        "Venice": "Венеция",
+        "Rome": "Рим",
+        "Naples": "Неаполь"
+      }
+    },
+    "geography:17": {
+      "question": "На каком континенте протекает река Амазонка?",
+      "answers": {
+        "Africa": "Африка",
+        "Asia": "Азия",
+        "South America": "Южная Америка",
+        "Europe": "Европа"
+      }
+    },
+    "geography:18": {
+      "question": "Какая столица Германии?",
+      "answers": {
+        "Munich": "Мюнхен",
+        "Berlin": "Берлин",
+        "Hamburg": "Гамбург",
+        "Frankfurt": "Франкфурт"
+      }
+    },
+    "geography:19": {
+      "question": "Какая столица Испании?",
+      "answers": {
+        "Barcelona": "Барселона",
+        "Madrid": "Мадрид",
+        "Seville": "Севилья",
+        "Valencia": "Валенсия"
+      }
+    },
+    "geography:20": {
+      "question": "Какая столица России?",
+      "answers": {
+        "St Petersburg": "Санкт-Петербург",
+        "Moscow": "Москва",
+        "Kyiv": "Киев",
+        "Sochi": "Сочи"
+      }
+    },
+    "geography:21": {
+      "question": "Какая столица Китая?",
+      "answers": {
+        "Shanghai": "Шанхай",
+        "Beijing": "Пекин",
+        "Hong Kong": "Гонконг",
+        "Guangzhou": "Гуанчжоу"
+      }
+    },
+    "geography:22": {
+      "question": "Какая столица Канады?",
+      "answers": {
+        "Toronto": "Торонто",
+        "Ottawa": "Оттава",
+        "Vancouver": "Ванкувер",
+        "Montreal": "Монреаль"
+      }
+    },
+    "geography:23": {
+      "question": "Какая столица США?",
+      "answers": {
+        "New York": "Нью-Йорк",
+        "Washington, D.C.": "Вашингтон, округ Колумбия",
+        "Los Angeles": "Лос-Анджелес",
+        "Chicago": "Чикаго"
+      }
+    },
+    "geography:24": {
+      "question": "Какая столица Соединенного Королевства?",
+      "answers": {
+        "Manchester": "Манчестер",
+        "London": "Лондон",
+        "Liverpool": "Ливерпуль",
+        "Edinburgh": "Эдинбург"
+      }
+    },
+    "geography:25": {
+      "question": "Какая столица Бразилии?",
+      "answers": {
+        "Rio de Janeiro": "Рио-де-Жанейро",
+        "Brasília": "Бразилиа",
+        "São Paulo": "Сан-Паулу",
+        "Salvador": "Сальвадор"
+      }
+    },
+    "geography:26": {
+      "question": "Какая столица Индии?",
+      "answers": {
+        "Mumbai": "Мумбаи",
+        "New Delhi": "Нью-Дели",
+        "Kolkata": "Калькутта",
+        "Chennai": "Ченнаи"
+      }
+    },
+    "geography:27": {
+      "question": "Какая столица Южной Кореи?",
+      "answers": {
+        "Busan": "Пусан",
+        "Seoul": "Сеул",
+        "Incheon": "Инчхон",
+        "Daegu": "Тэгу"
+      }
+    },
+    "geography:28": {
+      "question": "Какая столица Греции?",
+      "answers": {
+        "Thessaloniki": "Салоники",
+        "Athens": "Афины",
+        "Sparta": "Спарта",
+        "Patras": "Патры"
+      }
+    },
+    "geography:29": {
+      "question": "Какая столица Турции?",
+      "answers": {
+        "Istanbul": "Стамбул",
+        "Ankara": "Анкара",
+        "Izmir": "Измир",
+        "Bursa": "Бурса"
+      }
+    },
+    "geography:30": {
+      "question": "Какая столица Португалии?",
+      "answers": {
+        "Porto": "Порту",
+        "Lisbon": "Лиссабон",
+        "Faro": "Фару",
+        "Braga": "Брага"
+      }
+    },
+    "geography:31": {
+      "question": "Какая столица Нидерландов?",
+      "answers": {
+        "Rotterdam": "Роттердам",
+        "Amsterdam": "Амстердам",
+        "The Hague": "Гаага",
+        "Utrecht": "Утрехт"
+      }
+    },
+    "geography:32": {
+      "question": "Какая столица Мексики?",
+      "answers": {
+        "Cancún": "Канкун",
+        "Mexico City": "Мехико",
+        "Guadalajara": "Гвадалахара",
+        "Tijuana": "Тихуана"
+      }
+    },
+    "geography:33": {
+      "question": "Какая столица Аргентины?",
+      "answers": {
+        "Córdoba": "Кордова",
+        "Buenos Aires": "Буэнос-Айрес",
+        "Rosario": "Росарио",
+        "Mendoza": "Мендоса"
+      }
+    },
+    "geography:34": {
+      "question": "Какая столица Швеции?",
+      "answers": {
+        "Oslo": "Осло",
+        "Stockholm": "Стокгольм",
+        "Copenhagen": "Копенгаген",
+        "Helsinki": "Хельсинки"
+      }
+    },
+    "geography:35": {
+      "question": "Какая столица Норвегии?",
+      "answers": {
+        "Oslo": "Осло",
+        "Bergen": "Берген",
+        "Stockholm": "Стокгольм",
+        "Helsinki": "Хельсинки"
+      }
+    },
+    "geography:36": {
+      "question": "Какой континент является самым большим по площади?",
+      "answers": {
+        "Africa": "Африка",
+        "Asia": "Азия",
+        "Europe": "Европа",
+        "North America": "Северная Америка"
+      }
+    },
+    "geography:37": {
+      "question": "Какой континент самый холодный?",
+      "answers": {
+        "Europe": "Европа",
+        "Antarctica": "Антарктида",
+        "Asia": "Азия",
+        "Australia": "Австралия"
+      }
+    },
+    "geography:38": {
+      "question": "На каком континенте больше всего стран?",
+      "answers": {
+        "Asia": "Азия",
+        "Africa": "Африка",
+        "Europe": "Европа",
+        "South America": "Южная Америка"
+      }
+    },
+    "geography:39": {
+      "question": "Какой океан самый маленький?",
+      "answers": {
+        "Atlantic": "Атлантика",
+        "Arctic": "Арктика",
+        "Indian": "Индийский",
+        "Pacific": "Тихий океан"
+      }
+    },
+    "geography:40": {
+      "question": "Какой океан является вторым по величине?",
+      "answers": {
+        "Atlantic": "Атлантика",
+        "Indian": "Индийский",
+        "Arctic": "Арктика",
+        "Southern": "Южный"
+      }
+    },
+    "geography:41": {
+      "question": "Какая страна расположена одновременно в Европе и Азии?",
+      "answers": {
+        "Egypt": "Египет",
+        "Turkey": "Турция",
+        "Greece": "Греция",
+        "Italy": "Италия"
+      }
+    },
+    "geography:42": {
+      "question": "Рядом с каким городом находятся Великие пирамиды?",
+      "answers": {
+        "Cairo": "Каир",
+        "Alexandria": "Александрия",
+        "Luxor": "Луксор",
+        "Aswan": "Асуан"
+      }
+    },
+    "geography:43": {
+      "question": "Какая гора в Африке самая высокая?",
+      "answers": {
+        "Kilimanjaro": "Килиманджаро",
+        "Mount Kenya": "Гора Кения",
+        "Atlas": "Атлас",
+        "Elgon": "Элгон"
+      }
+    },
+    "geography:44": {
+      "question": "На каком континенте находятся Анды?",
+      "answers": {
+        "Asia": "Азия",
+        "Africa": "Африка",
+        "South America": "Южная Америка",
+        "Europe": "Европа"
+      }
+    },
+    "geography:45": {
+      "question": "Альпы расположены в основном в?",
+      "answers": {
+        "Asia": "Азия",
+        "Europe": "Европа",
+        "Africa": "Африка",
+        "Australia": "Австралия"
+      }
+    },
+    "geography:46": {
+      "question": "Какая страна имеет форму сапога?",
+      "answers": {
+        "Spain": "Испания",
+        "Italy": "Италия",
+        "Greece": "Греция",
+        "France": "Франция"
+      }
+    },
+    "geography:47": {
+      "question": "Какое море находится между Европой и Африкой?",
+      "answers": {
+        "Baltic Sea": "Балтийское море",
+        "Mediterranean Sea": "Средиземное море",
+        "Red Sea": "Красное море",
+        "Black Sea": "Черное море"
+      }
+    },
+    "geography:48": {
+      "question": "Какая страна имеет самое большое население (по состоянию на 2024 год)?",
+      "answers": {
+        "China": "Китай",
+        "India": "Индия",
+        "USA": "США",
+        "Indonesia": "Индонезия"
+      }
+    },
+    "geography:49": {
+      "question": "В какой стране находится гора Фудзи?",
+      "answers": {
+        "China": "Китай",
+        "Japan": "Япония",
+        "Korea": "Корея",
+        "Nepal": "Непал"
+      }
+    },
+    "geography:50": {
+      "question": "В каком городе находится Статуя Свободы?",
+      "answers": {
+        "Boston": "Бостон",
+        "New York": "Нью-Йорк",
+        "Washington": "Вашингтон",
+        "Chicago": "Чикаго"
+      }
+    },
+    "geography:51": {
+      "question": "Биг Бен — достопримечательность какого города?",
+      "answers": {
+        "Paris": "Париж",
+        "London": "Лондон",
+        "Berlin": "Берлин",
+        "Dublin": "Дублин"
+      }
+    },
+    "geography:52": {
+      "question": "В каком итальянском городе находится Падающая башня?",
+      "answers": {
+        "Rome": "Рим",
+        "Pisa": "Пиза",
+        "Milan": "Милан",
+        "Venice": "Венеция"
+      }
+    },
+    "geography:53": {
+      "question": "В какой стране обитают кенгуру?",
+      "answers": {
+        "South Africa": "Южная Африка",
+        "Australia": "Австралия",
+        "Brazil": "Бразилия",
+        "India": "Индия"
+      }
+    },
+    "geography:54": {
+      "question": "В какой стране находятся пирамиды Чичен-Ицы?",
+      "answers": {
+        "Peru": "Перу",
+        "Mexico": "Мексика",
+        "Egypt": "Египет",
+        "Guatemala": "Гватемала"
+      }
+    },
+    "geography:55": {
+      "question": "В какое море впадает Нил?",
+      "answers": {
+        "Red Sea": "Красное море",
+        "Mediterranean Sea": "Средиземное море",
+        "Black Sea": "Черное море",
+        "Caspian Sea": "Каспийское море"
+      }
+    },
+    "geography:56": {
+      "question": "Какой штат США известен своим Голливудом?",
+      "answers": {
+        "Texas": "Техас",
+        "California": "Калифорния",
+        "Florida": "Флорида",
+        "New York": "Нью-Йорк"
+      }
+    },
+    "geography:57": {
+      "question": "Какой океан находится между Америкой и Европой/Африкой?",
+      "answers": {
+        "Pacific": "Тихий океан",
+        "Atlantic": "Атлантика",
+        "Indian": "Индийский",
+        "Arctic": "Арктика"
+      }
+    },
+    "geography:58": {
+      "question": "Какой океан находится между Африкой, Азией и Австралией?",
+      "answers": {
+        "Atlantic": "Атлантика",
+        "Indian": "Индийский",
+        "Arctic": "Арктика",
+        "Pacific": "Тихий океан"
+      }
+    },
+    "geography:59": {
+      "question": "На какие половины Землю делит экватор?",
+      "answers": {
+        "East and West": "Восток и Запад",
+        "North and South": "Север и Юг",
+        "Up and Down": "Вверх и вниз",
+        "Left and Right": "Влево и вправо"
+      }
+    },
+    "geography:60": {
+      "question": "Воображаемая линия на долготе 0° — это?",
+      "answers": {
+        "Equator": "Экватор",
+        "Prime Meridian": "Нулевой меридиан",
+        "Tropic of Cancer": "Тропик Рака",
+        "Arctic Circle": "Полярный круг"
+      }
+    },
+    "geography:61": {
+      "question": "Какая страна в мире самая маленькая?",
+      "answers": {
+        "Monaco": "Монако",
+        "Vatican City": "Ватикан",
+        "Malta": "Мальта",
+        "San Marino": "Сан-Марино"
+      }
+    },
+    "geography:62": {
+      "question": "Какая пустыня в мире самая большая?",
+      "answers": {
+        "Sahara": "Сахара",
+        "Antarctic": "Антарктика",
+        "Gobi": "Гоби",
+        "Kalahari": "Калахари"
+      }
+    },
+    "geography:63": {
+      "question": "В какой стране расположен Гранд-Каньон?",
+      "answers": {
+        "Canada": "Канада",
+        "USA": "США",
+        "Mexico": "Мексика",
+        "Brazil": "Бразилия"
+      }
+    },
+    "geography:64": {
+      "question": "Какая страна славится тюльпанами и ветряными мельницами?",
+      "answers": {
+        "Belgium": "Бельгия",
+        "Netherlands": "Нидерланды",
+        "Denmark": "Дания",
+        "Germany": "Германия"
+      }
+    },
+    "geography:65": {
+      "question": "Какой горный массив разделяет Европу и Азию?",
+      "answers": {
+        "Alps": "Альпы",
+        "Ural": "Урал",
+        "Andes": "Анды",
+        "Himalayas": "Гималаи"
+      }
+    },
+    "geography:66": {
+      "question": "Мертвое море знаменито тем, что оно очень?",
+      "answers": {
+        "Deep": "Глубокий",
+        "Salty": "Соленый",
+        "Cold": "Холодный",
+        "Large": "Большой"
+      }
+    },
+    "geography:67": {
+      "question": "В какой стране есть города Сидней и Мельбурн?",
+      "answers": {
+        "New Zealand": "Новая Зеландия",
+        "Australia": "Австралия",
+        "UK": "Великобритания",
+        "Canada": "Канада"
+      }
+    },
+    "geography:68": {
+      "question": "Какая африканская страна практически никогда не была колонизирована?",
+      "answers": {
+        "Kenya": "Кения",
+        "Ethiopia": "Эфиопия",
+        "Nigeria": "Нигерия",
+        "Ghana": "Гана"
+      }
+    },
+    "geography:69": {
+      "question": "Амазонка — самый большой тропический регион в мире?",
+      "answers": {
+        "Desert": "Пустыня",
+        "Rainforest": "Тропический лес",
+        "Savanna": "Саванна",
+        "Tundra": "Тундра"
+      }
+    },
+    "geography:70": {
+      "question": "Какая страна охватывает наибольшее количество часовых поясов?",
+      "answers": {
+        "USA": "США",
+        "Russia": "Россия",
+        "China": "Китай",
+        "Canada": "Канада"
+      }
+    },
+    "geography:71": {
+      "question": "Какой город в США называют «Большим Яблоком»?",
+      "answers": {
+        "Los Angeles": "Лос-Анджелес",
+        "New York": "Нью-Йорк",
+        "Chicago": "Чикаго",
+        "Miami": "Майами"
+      }
+    },
+    "geography:72": {
+      "question": "В какой стране находится гора Килиманджаро?",
+      "answers": {
+        "Kenya": "Кения",
+        "Tanzania": "Танзания",
+        "Uganda": "Уганда",
+        "Ethiopia": "Эфиопия"
+      }
+    },
+    "geography:73": {
+      "question": "В какой стране находится Мачу-Пикчу?",
+      "answers": {
+        "Chile": "Чили",
+        "Peru": "Перу",
+        "Bolivia": "Боливия",
+        "Ecuador": "Эквадор"
+      }
+    },
+    "geography:74": {
+      "question": "Какая страна полностью окружена Южной Африкой?",
+      "answers": {
+        "Lesotho": "Лесото",
+        "Eswatini": "Эсватини",
+        "Botswana": "Ботсвана",
+        "Namibia": "Намибия"
+      }
+    },
+    "geography:75": {
+      "question": "Какая из этих стран не имеет выхода к морю?",
+      "answers": {
+        "Switzerland": "Швейцария",
+        "Spain": "Испания",
+        "Italy": "Италия",
+        "Portugal": "Португалия"
+      }
+    },
+    "geography:76": {
+      "question": "На флаге какой страны изображен кленовый лист?",
+      "answers": {
+        "USA": "США",
+        "Canada": "Канада",
+        "UK": "Великобритания",
+        "Australia": "Австралия"
+      }
+    },
+    "geography:77": {
+      "question": "В какой стране находится Венеция, город, построенный на воде?",
+      "answers": {
+        "Spain": "Испания",
+        "Italy": "Италия",
+        "Greece": "Греция",
+        "Croatia": "Хорватия"
+      }
+    },
+    "geography:78": {
+      "question": "Какой океан самый глубокий?",
+      "answers": {
+        "Atlantic": "Атлантика",
+        "Pacific": "Тихий океан",
+        "Indian": "Индийский",
+        "Arctic": "Арктика"
+      }
+    },
+    "geography:79": {
+      "question": "В какой стране протекает река Миссисипи?",
+      "answers": {
+        "Canada": "Канада",
+        "USA": "США",
+        "Mexico": "Мексика",
+        "Brazil": "Бразилия"
+      }
+    },
+    "geography:80": {
+      "question": "Какие два океана соединяет Панамский канал?",
+      "answers": {
+        "Atlantic and Pacific": "Атлантический и Тихий океан",
+        "Indian and Pacific": "Индийский и Тихоокеанский регион",
+        "Arctic and Atlantic": "Арктика и Атлантика",
+        "Indian and Atlantic": "Индийская и Атлантическая"
+      }
+    },
+    "geography:81": {
+      "question": "В какой стране расположен Суэцкий канал?",
+      "answers": {
+        "Turkey": "Турция",
+        "Egypt": "Египет",
+        "Panama": "Панама",
+        "Greece": "Греция"
+      }
+    },
+    "geography:82": {
+      "question": "Какая страна известна как «Страна восходящего солнца»?",
+      "answers": {
+        "China": "Китай",
+        "Japan": "Япония",
+        "Korea": "Корея",
+        "Thailand": "Таиланд"
+      }
+    },
+    "geography:83": {
+      "question": "На каком континенте нет постоянных жителей?",
+      "answers": {
+        "Australia": "Австралия",
+        "Antarctica": "Антарктида",
+        "Africa": "Африка",
+        "Asia": "Азия"
+      }
+    },
+    "geography:84": {
+      "question": "Скалистые горы расположены?",
+      "answers": {
+        "Europe": "Европа",
+        "North America": "Северная Америка",
+        "Asia": "Азия",
+        "Africa": "Африка"
+      }
+    },
+    "geography:85": {
+      "question": "В какой стране находится город Марракеш?",
+      "answers": {
+        "Egypt": "Египет",
+        "Morocco": "Марокко",
+        "Algeria": "Алжир",
+        "Tunisia": "Тунис"
+      }
+    },
+    "geography:86": {
+      "question": "Какая скандинавская страна известна своими фьордами?",
+      "answers": {
+        "Norway": "Норвегия",
+        "Spain": "Испания",
+        "Italy": "Италия",
+        "Greece": "Греция"
+      }
+    },
+    "geography:87": {
+      "question": "Какая столица Японии?",
+      "answers": {
+        "Osaka": "Осака",
+        "Tokyo": "Токио",
+        "Kyoto": "Киото",
+        "Nagoya": "Нагоя"
+      }
+    },
+    "geography:88": {
+      "question": "Вдоль чего расположена столица Египта?",
+      "answers": {
+        "Tigris River": "Река Тигр",
+        "Nile River": "Река Нил",
+        "Congo River": "Река Конго",
+        "Niger River": "Река Нигер"
+      }
+    },
+    "geography:89": {
+      "question": "Какая страна знаменита Тадж-Махалом?",
+      "answers": {
+        "Pakistan": "Пакистан",
+        "India": "Индия",
+        "Bangladesh": "Бангладеш",
+        "Nepal": "Непал"
+      }
+    },
+    "geography:90": {
+      "question": "Какой штат США называют «Солнечным штатом»?",
+      "answers": {
+        "California": "Калифорния",
+        "Florida": "Флорида",
+        "Texas": "Техас",
+        "Nevada": "Невада"
+      }
+    },
+    "geography:91": {
+      "question": "В какой стране находится наибольшая часть Сахары?",
+      "answers": {
+        "Egypt": "Египет",
+        "Algeria": "Алжир",
+        "Morocco": "Марокко",
+        "Tunisia": "Тунис"
+      }
+    },
+    "geography:92": {
+      "question": "Какая горная цепь над водой самая длинная?",
+      "answers": {
+        "Himalayas": "Гималаи",
+        "Andes": "Анды",
+        "Rockies": "Скалистые горы",
+        "Alps": "Альпы"
+      }
+    },
+    "geography:93": {
+      "question": "В каком районе океана находится Исландия?",
+      "answers": {
+        "Pacific": "Тихий океан",
+        "North Atlantic": "Северная Атлантика",
+        "Indian": "Индийский",
+        "Southern": "Южный"
+      }
+    },
+    "geography:94": {
+      "question": "Какой континент полностью расположен в Южном полушарии?",
+      "answers": {
+        "Europe": "Европа",
+        "Antarctica": "Антарктида",
+        "Asia": "Азия",
+        "North America": "Северная Америка"
+      }
+    },
+    "geography:95": {
+      "question": "Через какой город протекает река Темза?",
+      "answers": {
+        "Paris": "Париж",
+        "London": "Лондон",
+        "Berlin": "Берлин",
+        "Rome": "Рим"
+      }
+    },
+    "geography:96": {
+      "question": "Флаг какой страны имеет красный круг на белом фоне (восходящее солнце)?",
+      "answers": {
+        "China": "Китай",
+        "Japan": "Япония",
+        "South Korea": "Южная Корея",
+        "Vietnam": "Вьетнам"
+      }
+    },
+    "geography:97": {
+      "question": "В какой океан впадает река Амазонка?",
+      "answers": {
+        "Pacific": "Тихий океан",
+        "Atlantic": "Атлантика",
+        "Indian": "Индийский",
+        "Arctic": "Арктика"
+      }
+    },
+    "geography:98": {
+      "question": "Какой континент полностью находится в Северном полушарии?",
+      "answers": {
+        "Europe": "Европа",
+        "Africa": "Африка",
+        "South America": "Южная Америка",
+        "Australia": "Австралия"
+      }
+    },
+    "geography:99": {
+      "question": "Водопад Анхель, самый высокий водопад, находится в?",
+      "answers": {
+        "Brazil": "Бразилия",
+        "Venezuela": "Венесуэла",
+        "Peru": "Перу",
+        "Colombia": "Колумбия"
+      }
+    }
+  }
+}

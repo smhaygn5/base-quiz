@@ -16,6 +16,18 @@ const themeScript = `
           : "dark";
       document.documentElement.dataset.theme = theme;
       document.documentElement.style.colorScheme = theme;
+
+      const supportedLocales = ["en", "tr", "es", "pt", "fr", "de", "ru", "ar", "zh", "ja", "ko"];
+      const savedLocale = localStorage.getItem("baseQuizLocale");
+      const browserLocale = (navigator.languages?.[0] || navigator.language || "en").toLowerCase();
+      const normalizedLocale = browserLocale.startsWith("zh") ? "zh" : browserLocale.split("-")[0];
+      const locale = savedLocale && supportedLocales.includes(savedLocale)
+        ? savedLocale
+        : supportedLocales.includes(normalizedLocale)
+          ? normalizedLocale
+          : "en";
+      document.documentElement.lang = locale === "zh" ? "zh-CN" : locale;
+      document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
     } catch {
       document.documentElement.dataset.theme = "dark";
     }
@@ -72,7 +84,7 @@ export default function RootLayout({
 }>) {
   return (
     <RootProvider>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" dir="ltr" suppressHydrationWarning>
         <head>
           <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         </head>

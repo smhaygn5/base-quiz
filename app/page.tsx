@@ -9,9 +9,11 @@ import { namehash } from "viem/ens";
 import { CategoryCarousel } from "@/components/ui/category-carousel";
 import { BadgesRoadmap } from "@/components/ui/badges-roadmap";
 import { HomeHero } from "@/components/ui/home-hero";
+import { LanguageMenu } from "@/components/ui/language-menu";
 import { LeaderboardTable } from "@/components/ui/leaderboard-table";
 import { QuizPanel } from "@/components/ui/quiz-panel";
 import { ResultPanel } from "@/components/ui/result-panel";
+import { useI18n } from "./i18n/context";
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BADGES_ADDRESS, BADGES_ABI } from "./contract";
 import { ROUND_ENTRY_ADDRESS, ROUND_ENTRY_ABI } from "./entry-contract";
 
@@ -652,6 +654,7 @@ const GEO_Q = [
   { q: "Angel Falls, the tallest waterfall, is located in?", a: ["Brazil", "Venezuela", "Peru", "Colombia"], c: 1 },
 ];
 
+type QuizSource = { q: string; a: string[]; c: number };
 type Category = {
   id: string;
   name: string;
@@ -659,7 +662,7 @@ type Category = {
   color: string;
   image: string;
   description: string;
-  questions: QuizQ[];
+  questions: QuizSource[];
 };
 const CATEGORIES: Category[] = [
   {
@@ -765,7 +768,7 @@ type LeaderRow = {
   name?: string | null;
   badgeIds: number[];
 };
-type QuizQ = { q: string; a: string[]; c: number };
+type QuizQ = QuizSource & { id: string };
 type WalletKind = "base" | "metamask" | "okx" | "rabby" | "phantom";
 
 const EXTENSION_WALLET_ORDER = [
@@ -837,6 +840,8 @@ function WalletOptionButton({
   recommended?: boolean;
   onClick: () => void;
 }) {
+  const { t } = useI18n();
+
   return (
     <button
       type="button"
@@ -862,7 +867,9 @@ function WalletOptionButton({
       <span style={{ display: "flex", flexDirection: "column", gap: 3 }}>
         <span style={{ fontSize: 14, fontWeight: 700 }}>{label}</span>
         {recommended && (
-          <span style={{ color: T.baseHi, fontFamily: T.mono, fontSize: 9, letterSpacing: "0.12em" }}>RECOMMENDED</span>
+          <span style={{ color: T.baseHi, fontFamily: T.mono, fontSize: 9, letterSpacing: "0.12em" }}>
+            {t("wallet.recommended")}
+          </span>
         )}
       </span>
     </button>
@@ -880,16 +887,26 @@ function shuffle<T>(arr: T[]): T[] {
 
 function getRandomQuestions(catId: string): QuizQ[] {
   const cat = CATEGORIES.find((c) => c.id === catId) || CATEGORIES[0];
-  const picked = shuffle(cat.questions).slice(0, QUIZ_SIZE);
+  const picked = shuffle(cat.questions.map((question, index) => ({
+    ...question,
+    id: `${cat.id}:${index}`,
+  }))).slice(0, QUIZ_SIZE);
   return picked.map((q) => {
     const correctAnswer = q.a[q.c];
     const shuffledOptions = shuffle(q.a);
     const newCorrectIndex = shuffledOptions.indexOf(correctAnswer);
-    return { q: q.q, a: shuffledOptions, c: newCorrectIndex };
+    return { id: q.id, q: q.q, a: shuffledOptions, c: newCorrectIndex };
   });
 }
 
 export default function Home() {
+  const {
+    formatNumber,
+    locale,
+    t,
+    translateQuizAnswer,
+    translateQuizQuestion,
+  } = useI18n();
   const { setFrameReady, isFrameReady } = useMiniKit();
   const { composeCast } = useComposeCast();
   const { address, isConnected, chainId: walletChainId } = useAccount();
@@ -911,6 +928,24 @@ export default function Home() {
       return wallet.match.some((value) => identity.includes(value));
     }),
   })).filter((wallet) => wallet.connector);
+
+  const localizedCategories = CATEGORIES.map((item) => ({
+    ...item,
+    name: t(`category.${item.id}.name`),
+    description: t(`category.${item.id}.description`),
+  }));
+  const localizedBadges = BADGES.map((badge) => ({
+    ...badge,
+    name: t(
+      badge.id === 1
+        ? "badges.bronze.name"
+        : badge.id === 2
+          ? "badges.silver.name"
+          : badge.id === 3
+            ? "badges.gold.name"
+            : "badges.diamond.name",
+    ),
+  }));
 
   const [screen, setScreen] = useState<"start" | "categories" | "quiz" | "end" | "board" | "badges">("start");
   const [category, setCategory] = useState<string>("crypto");
@@ -951,6 +986,12 @@ export default function Home() {
     if (localStorage.getItem("soundOff") === "1") setSoundOn(false);
     setTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark");
   }, []);
+
+  useEffect(() => {
+    setStartTxError("");
+    setTxError("");
+    setClaimError("");
+  }, [locale]);
 
   function playSound(type: "correct" | "wrong" | "tick" | "win") {
     if (!soundOn) return;
@@ -1123,9 +1164,9 @@ export default function Home() {
       });
       setScreen("categories");
     } catch (e: unknown) {
-      const message = e instanceof Error ? e.message : "Start transaction failed";
+      const message = e instanceof Error ? e.message : "";
       const rejected = /rejected|denied|declined|cancelled|canceled/i.test(message);
-      setStartTxError(rejected ? "Transaction cancelled. Confirm it to start the round." : message.slice(0, 140));
+      setStartTxError(rejected ? t("error.startCancelled") : t("error.startFailed"));
     } finally {
       setStartTxPending(false);
     }
@@ -1140,7 +1181,10 @@ export default function Home() {
     setTimeout(nextQuestion, 2000);
   }
 
-  const shareText = `🧠 I scored ${score} points on Base Quiz! 🔥 Streak: ${streak} days\n\nThink you can beat me? 👇`;
+  const shareText = t("share.text", {
+    score: formatNumber(score),
+    streak: formatNumber(streak),
+  });
 
   function shareFarcaster() {
     setShareMenuOpen(false);
@@ -1160,7 +1204,7 @@ export default function Home() {
   function shareCopy() {
     setShareMenuOpen(false);
     navigator.clipboard.writeText(`${shareText}\n\n${APP_URL}`);
-    alert("Copied to clipboard!");
+    alert(t("result.copied"));
   }
 
   async function saveOnchain() {
@@ -1179,8 +1223,8 @@ export default function Home() {
       setTxHash(hash);
       setTxStatus("done");
     } catch (e: unknown) {
-      const msg = e instanceof Error ? e.message : "Transaction failed";
-      setTxError(msg.includes("Already played") ? "Already saved today. Come back tomorrow." : msg.slice(0, 120));
+      const msg = e instanceof Error ? e.message : "";
+      setTxError(msg.includes("Already played") ? t("error.alreadyPlayed") : t("error.saveFailed"));
       setTxStatus("error");
     }
   }
@@ -1323,8 +1367,8 @@ export default function Home() {
       });
       await loadBadges();
     } catch (e: unknown) {
-      const msg = e instanceof Error ? e.message : "Claim failed";
-      setClaimError(msg.slice(0, 150));
+      console.error("Badge claim error:", e);
+      setClaimError(t("error.claimFailed"));
     }
     setClaimingId(null);
   }
@@ -1507,7 +1551,7 @@ export default function Home() {
         </div>
         <div className="base-quiz-header-actions" style={styles.headerRight}>
           {isConnected && address ? (
-            <button className="base-quiz-wallet-button" style={styles.walletPill} onClick={() => disconnect()} title="Disconnect">
+            <button className="base-quiz-wallet-button" style={styles.walletPill} onClick={() => disconnect()} title={t("common.disconnect")}>
               {shortAddr(address)} ×
             </button>
           ) : (
@@ -1515,21 +1559,28 @@ export default function Home() {
               className="base-quiz-wallet-button"
               style={{ ...styles.walletPill, color: T.base, borderColor: T.base }}
               onClick={() => setConnectMenuOpen(true)}
-              title="Connect wallet"
+              title={t("common.connectWallet")}
             >
-              Connect
+              {t("common.connect")}
             </button>
           )}
+          <LanguageMenu />
           <button
             className="base-quiz-icon-button base-quiz-theme-button"
             style={styles.iconBtn}
             onClick={toggleTheme}
-            title={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
-            aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+            title={theme === "dark" ? t("common.switchLight") : t("common.switchDark")}
+            aria-label={theme === "dark" ? t("common.switchLight") : t("common.switchDark")}
           >
             <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
           </button>
-          <button className="base-quiz-icon-button base-quiz-sound-button" style={styles.iconBtn} onClick={toggleSound} title={soundOn ? "Mute" : "Unmute"}>
+          <button
+            className="base-quiz-icon-button base-quiz-sound-button"
+            style={styles.iconBtn}
+            onClick={toggleSound}
+            title={soundOn ? t("common.mute") : t("common.unmute")}
+            aria-label={soundOn ? t("common.mute") : t("common.unmute")}
+          >
             {soundOn ? "♪" : "×"}
           </button>
         </div>
@@ -1552,7 +1603,7 @@ export default function Home() {
 
         {screen === "categories" && (
           <CategoryCarousel
-            items={CATEGORIES.map((cat) => ({
+            items={localizedCategories.map((cat) => ({
               id: cat.id,
               name: cat.name,
               emoji: cat.emoji,
@@ -1568,14 +1619,16 @@ export default function Home() {
 
         {screen === "quiz" && (
           <QuizPanel
-            categoryName={CATEGORIES.find((item) => item.id === category)?.name || "Quiz"}
+            categoryName={localizedCategories.find((item) => item.id === category)?.name || t("quiz.fallbackName")}
             categoryEmoji={CATEGORIES.find((item) => item.id === category)?.emoji || ""}
             currentIndex={qIndex}
             totalQuestions={QUIZ_SIZE}
             score={score}
             timeLeft={timeLeft}
-            question={questions[qIndex].q}
-            options={questions[qIndex].a}
+            question={translateQuizQuestion(questions[qIndex].id, questions[qIndex].q)}
+            options={questions[qIndex].a.map((answerText) => (
+              translateQuizAnswer(questions[qIndex].id, answerText)
+            ))}
             correctIndex={questions[qIndex].c}
             selectedIndex={selected}
             onAnswer={answer}
@@ -1586,7 +1639,7 @@ export default function Home() {
           <ResultPanel
             score={score}
             streak={streak}
-            categoryName={CATEGORIES.find((c) => c.id === category)?.name || "Quiz"}
+            categoryName={localizedCategories.find((c) => c.id === category)?.name || t("quiz.fallbackName")}
             isConnected={isConnected}
             saveStatus={txStatus}
             saveContent={
@@ -1612,37 +1665,37 @@ export default function Home() {
                 </div>
               ) : txStatus === "idle" ? (
                 <button type="button" className="result-inline-button is-primary" onClick={saveOnchain}>
-                  Save score onchain <span aria-hidden="true">›</span>
+                  {t("result.saveButton")} <span aria-hidden="true">›</span>
                 </button>
               ) : txStatus === "pending" ? (
                 <button type="button" className="result-inline-button is-primary" disabled>
-                  <span className="result-button-spinner" aria-hidden="true" /> Confirming…
+                  <span className="result-button-spinner" aria-hidden="true" /> {t("result.confirming")}
                 </button>
               ) : txStatus === "done" ? (
                 <div className="result-save-success">
-                  <span>✓ Saved onchain</span>
+                  <span>✓ {t("result.saved")}</span>
                   <a href={`https://basescan.org/tx/${txHash}`} target="_blank" rel="noreferrer">
-                    View transaction ↗
+                    {t("result.viewTransaction")} ↗
                   </a>
                 </div>
               ) : (
                 <div className="result-save-error">
                   <p>{txError}</p>
                   <button type="button" className="result-inline-button is-secondary" onClick={saveOnchain}>
-                    Try again <span aria-hidden="true">›</span>
+                    {t("common.tryAgain")} <span aria-hidden="true">›</span>
                   </button>
                 </div>
               )}
             shareContent={
               !shareMenuOpen ? (
                 <button type="button" className="result-inline-button is-secondary" onClick={() => setShareMenuOpen(true)}>
-                  Share score <span aria-hidden="true">›</span>
+                  {t("result.shareScore")} <span aria-hidden="true">›</span>
                 </button>
               ) : (
                 <div className="result-share-options">
                   <button type="button" onClick={shareFarcaster}>Farcaster</button>
                   <button type="button" onClick={shareTwitter}>X</button>
-                  <button type="button" onClick={shareCopy}>Copy text</button>
+                  <button type="button" onClick={shareCopy}>{t("result.copyText")}</button>
                 </div>
               )}
             onPlayAgain={() => startGame(category)}
@@ -1655,7 +1708,7 @@ export default function Home() {
         {screen === "board" && (
           <LeaderboardTable
             rows={board}
-            badges={BADGES}
+            badges={localizedBadges}
             currentAddress={address}
             loading={boardLoading}
             onBack={() => setScreen("start")}
@@ -1664,7 +1717,7 @@ export default function Home() {
 
         {screen === "badges" && (
           <BadgesRoadmap
-            badges={BADGES}
+            badges={localizedBadges}
             connected={isConnected}
             loading={badgesLoading}
             streak={onchainStreak}
@@ -1708,9 +1761,11 @@ export default function Home() {
             height={245}
             className="base-quiz-footer-logo"
           />
-          <span className="base-quiz-footer-data">BLOCK_DATA · BASE_MAINNET</span>
+          <span className="base-quiz-footer-data">{t("footer.blockData")}</span>
         </div>
-        <span>{totalPlayers !== null ? `${totalPlayers} PLAYERS_ONCHAIN` : "···"}</span>
+        <span>{totalPlayers !== null
+          ? t("footer.playersOnchain", { count: formatNumber(totalPlayers) })
+          : "···"}</span>
       </footer>
 
       {connectMenuOpen && !isConnected && (
@@ -1722,7 +1777,7 @@ export default function Home() {
             style={{ ...styles.card, background: T.surface, padding: 28, border: `1px solid ${T.border}`, borderRadius: 4 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <p style={styles.eyebrow}>Connect wallet</p>
+            <p style={styles.eyebrow}>{t("wallet.connectTitle")}</p>
             {baseWallet && (
               <WalletOptionButton
                 label="Base Wallet"
@@ -1732,7 +1787,7 @@ export default function Home() {
               />
             )}
             {orderedOthers.length > 0 && (
-              <p style={{ ...styles.meta, marginTop: 18, marginBottom: 10 }}>Browser wallets</p>
+              <p style={{ ...styles.meta, marginTop: 18, marginBottom: 10 }}>{t("wallet.browserWallets")}</p>
             )}
             {orderedOthers.map((wallet) => wallet.connector && (
               <WalletOptionButton
@@ -1743,7 +1798,9 @@ export default function Home() {
                 onClick={() => { connect({ connector: wallet.connector! }); setConnectMenuOpen(false); }}
               />
             ))}
-            <button style={{ ...styles.ghostBtn, marginTop: 6 }} onClick={() => setConnectMenuOpen(false)}>Cancel</button>
+            <button style={{ ...styles.ghostBtn, marginTop: 6 }} onClick={() => setConnectMenuOpen(false)}>
+              {t("common.cancel")}
+            </button>
           </div>
         </div>
       )}
@@ -1754,20 +1811,20 @@ export default function Home() {
             <p style={styles.eyebrow}>{String(tutorialStep + 1).padStart(2, "0")} / 03</p>
             {tutorialStep === 0 && (
               <>
-                <h2 style={{ ...styles.title, fontSize: 36 }}>Welcome.</h2>
-                <p style={styles.lede}>A daily crypto trivia game on Base. Test your knowledge, build streaks, compete worldwide.</p>
+                <h2 style={{ ...styles.title, fontSize: 36 }}>{t("tutorial.welcomeTitle")}</h2>
+                <p style={styles.lede}>{t("tutorial.welcomeDetail")}</p>
               </>
             )}
             {tutorialStep === 1 && (
               <>
-                <h2 style={{ ...styles.title, fontSize: 36 }}>5 questions.<br />Daily.</h2>
-                <p style={styles.lede}>Answer fast — quicker means more points. Save your score onchain to appear on the global leaderboard.</p>
+                <h2 style={{ ...styles.title, fontSize: 36 }}>{t("tutorial.questionsTitle")}</h2>
+                <p style={styles.lede}>{t("tutorial.questionsDetail")}</p>
               </>
             )}
             {tutorialStep === 2 && (
               <>
-                <h2 style={{ ...styles.title, fontSize: 36 }}>Earn<br />NFT badges.</h2>
-                <p style={styles.lede}>Keep your streak alive and claim onchain NFTs: Bronze (3d), Silver (7d), Gold (30d), Diamond (100d).</p>
+                <h2 style={{ ...styles.title, fontSize: 36 }}>{t("tutorial.badgesTitle")}</h2>
+                <p style={styles.lede}>{t("tutorial.badgesDetail")}</p>
               </>
             )}
             <div style={{ display: "flex", gap: 4, marginBottom: 24 }}>
@@ -1777,11 +1834,13 @@ export default function Home() {
             </div>
             {tutorialStep < 2 ? (
               <>
-                <button style={styles.primaryBtn} onClick={() => setTutorialStep(tutorialStep + 1)}>Next →</button>
-                <button style={styles.ghostBtn} onClick={closeTutorial}>Skip</button>
+                <button style={styles.primaryBtn} onClick={() => setTutorialStep(tutorialStep + 1)}>
+                  {t("common.next")} →
+                </button>
+                <button style={styles.ghostBtn} onClick={closeTutorial}>{t("common.skip")}</button>
               </>
             ) : (
-              <button style={styles.primaryBtn} onClick={closeTutorial}>Let&apos;s play →</button>
+              <button style={styles.primaryBtn} onClick={closeTutorial}>{t("tutorial.letsPlay")} →</button>
             )}
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useI18n } from "@/app/i18n/context";
 
 export type CategoryCarouselItem = {
   id: string;
@@ -27,6 +28,7 @@ function signedDistance(index: number, active: number, length: number) {
 }
 
 export function CategoryCarousel({ items, onStart, onBack }: CategoryCarouselProps) {
+  const { t } = useI18n();
   const [active, setActive] = useState(0);
 
   if (items.length === 0) return null;
@@ -66,7 +68,7 @@ export function CategoryCarousel({ items, onStart, onBack }: CategoryCarouselPro
               >
                 <Image
                   src={item.image}
-                  alt={isActive ? `${item.name} quiz category` : ""}
+                  alt={isActive ? t("category.imageAlt", { category: item.name }) : ""}
                   fill
                   sizes="(max-width: 760px) 86vw, 430px"
                   priority={index === 0}
@@ -87,12 +89,12 @@ export function CategoryCarousel({ items, onStart, onBack }: CategoryCarouselPro
 
       <div className="category-details">
         <div key={activeItem.id} className="category-details-enter">
-          <p className="category-kicker">Pick a category</p>
+          <p className="category-kicker">{t("category.pick")}</p>
           <h1 id="category-carousel-title" className="category-name">
             {activeItem.name}
           </h1>
           <p className="category-meta" style={{ color: activeItem.color }}>
-            {activeItem.questionCount} questions · 5 per round
+            {t("category.meta", { count: activeItem.questionCount })}
           </p>
           <p className="category-description">{activeItem.description}</p>
           <button
@@ -100,19 +102,19 @@ export function CategoryCarousel({ items, onStart, onBack }: CategoryCarouselPro
             className="category-start-button"
             onClick={() => onStart(activeItem.id)}
           >
-            Start {activeItem.name} quiz <span aria-hidden="true">→</span>
+            {t("category.start", { category: activeItem.name })} <span aria-hidden="true">→</span>
           </button>
         </div>
 
         <div className="category-controls">
-          <button type="button" onClick={showPrevious} aria-label="Previous category">
+          <button type="button" onClick={showPrevious} aria-label={t("category.previous")}>
             <span aria-hidden="true">←</span>
           </button>
-          <button type="button" onClick={showNext} aria-label="Next category">
+          <button type="button" onClick={showNext} aria-label={t("category.next")}>
             <span aria-hidden="true">→</span>
           </button>
           <button type="button" className="category-back-button" onClick={onBack}>
-            Back
+            {t("common.back")}
           </button>
         </div>
       </div>

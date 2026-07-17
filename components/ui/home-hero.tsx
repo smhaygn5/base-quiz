@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useI18n } from "@/app/i18n/context";
 
 type HomeHeroProps = {
   streak: number;
@@ -19,6 +20,8 @@ export function HomeHero({
   onLeaderboard,
   onBadges,
 }: HomeHeroProps) {
+  const { t } = useI18n();
+
   return (
     <section className="home-hero" aria-labelledby="home-hero-title">
       <div className="home-hero-grid" aria-hidden="true" />
@@ -30,23 +33,22 @@ export function HomeHero({
         </div>
 
         <p className="home-hero-kicker">
-          <span /> Onchain trivia · Base
+          <span /> {t("home.kicker")}
         </p>
 
         <h1 id="home-hero-title" className="home-hero-title">
-          <span>Daily trivia.</span>
-          <span className="home-hero-title-accent">Built on Base.</span>
+          <span>{t("home.titleLine1")}</span>
+          <span className="home-hero-title-accent">{t("home.titleLine2")}</span>
         </h1>
 
         <p className="home-hero-description">
-          Pick a category, answer five questions, and race the clock. Build your streak,
-          save your score onchain, and climb the global leaderboard.
+          {t("home.description")}
         </p>
 
         {streak > 0 && (
           <div className="home-hero-streak">
             <span aria-hidden="true">🔥</span>
-            {streak}-day streak
+            {t("home.streak", { count: streak })}
           </div>
         )}
 
@@ -58,14 +60,14 @@ export function HomeHero({
             disabled={startPending}
             aria-busy={startPending}
           >
-            <span>{startPending ? "Confirm in wallet…" : "Start round"}</span>
+            <span>{startPending ? t("home.confirmWallet") : t("home.startRound")}</span>
             <span aria-hidden="true">{startPending ? "·" : "→"}</span>
           </button>
           <button type="button" className="home-hero-secondary" onClick={onLeaderboard}>
-            Leaderboard
+            {t("home.leaderboard")}
           </button>
           <button type="button" className="home-hero-secondary" onClick={onBadges}>
-            Streak badges
+            {t("home.streakBadges")}
           </button>
         </div>
 
@@ -75,7 +77,7 @@ export function HomeHero({
           </p>
         )}
 
-        <p className="home-hero-facts">5 questions · 15 seconds each · scores saved onchain</p>
+        <p className="home-hero-facts">{t("home.facts")}</p>
       </div>
     </section>
   );

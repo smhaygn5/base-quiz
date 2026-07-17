@@ -1,5 +1,7 @@
 "use client";
 
+import { useI18n } from "@/app/i18n/context";
+
 type QuizPanelProps = {
   categoryName: string;
   categoryEmoji: string;
@@ -27,6 +29,7 @@ export function QuizPanel({
   selectedIndex,
   onAnswer,
 }: QuizPanelProps) {
+  const { formatNumber, t } = useI18n();
   const answeredCount = currentIndex + (selectedIndex !== null ? 1 : 0);
   const progress = (answeredCount / totalQuestions) * 100;
   const isCorrectAnswer = selectedIndex === correctIndex;
@@ -36,15 +39,15 @@ export function QuizPanel({
       <div className="quiz-panel-topline">
         <div>
           <p className="quiz-panel-category">{categoryEmoji} {categoryName}</p>
-          <strong>Question {currentIndex + 1} of {totalQuestions}</strong>
+          <strong>{t("quiz.questionProgress", { current: currentIndex + 1, total: totalQuestions })}</strong>
         </div>
         <div className="quiz-panel-stats">
-          <span>Score <strong>{score.toLocaleString("en-US")}</strong></span>
-          <span className={timeLeft <= 3 ? "is-urgent" : undefined}>Time <strong>{String(timeLeft).padStart(2, "0")}s</strong></span>
+          <span>{t("quiz.score")} <strong>{formatNumber(score)}</strong></span>
+          <span className={timeLeft <= 3 ? "is-urgent" : undefined}>{t("quiz.time")} <strong>{String(timeLeft).padStart(2, "0")}s</strong></span>
         </div>
       </div>
 
-      <div className="quiz-steps" aria-label={`${answeredCount} of ${totalQuestions} questions answered`}>
+      <div className="quiz-steps" aria-label={t("quiz.answeredAria", { answered: answeredCount, total: totalQuestions })}>
         {Array.from({ length: totalQuestions }, (_, index) => {
           const isAnswered = index < currentIndex || (index === currentIndex && selectedIndex !== null);
           const isCurrent = index === currentIndex && selectedIndex === null;
@@ -69,7 +72,7 @@ export function QuizPanel({
       </div>
 
       <div className="quiz-question-block">
-        <p>Choose the correct answer</p>
+        <p>{t("quiz.chooseCorrect")}</p>
         <h1 id="quiz-question-title">{question}</h1>
       </div>
 
@@ -77,8 +80,10 @@ export function QuizPanel({
         <div className={`quiz-feedback${isCorrectAnswer ? " is-correct" : " is-wrong"}`} role="status" aria-live="polite">
           <span aria-hidden="true">{isCorrectAnswer ? "✓" : "×"}</span>
           <div>
-            <strong>{isCorrectAnswer ? "Correct answer" : "Wrong answer"}</strong>
-            <p>{isCorrectAnswer ? `+${100 + timeLeft * 10} points` : `Correct option: ${String.fromCharCode(65 + correctIndex)}`}</p>
+            <strong>{isCorrectAnswer ? t("quiz.correct") : t("quiz.wrong")}</strong>
+            <p>{isCorrectAnswer
+              ? t("quiz.points", { points: formatNumber(100 + timeLeft * 10) })
+              : t("quiz.correctOption", { option: String.fromCharCode(65 + correctIndex) })}</p>
           </div>
         </div>
       )}
@@ -115,7 +120,7 @@ export function QuizPanel({
         })}
       </div>
 
-      <p className="quiz-auto-note">Answer once · next question loads automatically</p>
+      <p className="quiz-auto-note">{t("quiz.autoNote")}</p>
     </section>
   );
 }

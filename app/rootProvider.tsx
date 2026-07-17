@@ -5,6 +5,7 @@ import { base } from "wagmi/chains";
 import { WagmiProvider } from "wagmi";
 import { OnchainKitProvider } from "@coinbase/onchainkit";
 import { wagmiConfig } from "./wagmi";
+import { I18nProvider } from "./i18n/context";
 import "@coinbase/onchainkit/styles.css";
 
 export function RootProvider({ children }: { children: ReactNode }) {
@@ -33,7 +34,7 @@ export function RootProvider({ children }: { children: ReactNode }) {
             notificationProxyUrl: undefined,
           }}
         >
-          {children}
+          <I18nProvider>{children}</I18nProvider>
         </OnchainKitProvider>
       </QueryClientProvider>
     </WagmiProvider>

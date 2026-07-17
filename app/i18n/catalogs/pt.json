@@ -1,0 +1,5586 @@
+{
+  "messages": {
+    "meta.title": "Base Quiz",
+    "common.back": "Voltar",
+    "common.cancel": "Cancelar",
+    "common.next": "Próximo",
+    "common.skip": "Pular",
+    "common.tryAgain": "Tente novamente",
+    "common.connect": "Conectar",
+    "common.disconnect": "Desconectar",
+    "common.connectWallet": "Conectar carteira",
+    "common.connectBaseWallet": "Conectar Base Wallet",
+    "common.browserWallets": "Carteiras de navegador",
+    "common.recommended": "Recomendado",
+    "common.selectLanguage": "Selecione o idioma",
+    "common.language": "Idioma",
+    "common.switchLight": "Mudar para tema claro",
+    "common.switchDark": "Mudar para tema escuro",
+    "common.mute": "Silenciar",
+    "common.unmute": "Ativar som",
+    "home.kicker": "Quiz onchain · Base",
+    "home.titleLine1": "Quiz diário.",
+    "home.titleLine2": "Criado na Base.",
+    "home.description": "Escolha uma categoria, responda a cinco perguntas e corra contra o relógio. Aumente sua sequência, salve sua pontuação onchain e suba no ranking global.",
+    "home.streak": "Sequência de {count} dias",
+    "home.confirmWallet": "Confirme na carteira…",
+    "home.startRound": "Começar a rodada",
+    "home.leaderboard": "Tabela de classificação",
+    "home.streakBadges": "Emblemas de sequência",
+    "home.facts": "5 perguntas · 15 segundos cada · pontuações salvas onchain",
+    "category.pick": "Escolha uma categoria",
+    "category.meta": "{count} perguntas · 5 por rodada",
+    "category.start": "Iniciar teste {category}",
+    "category.previous": "Categoria anterior",
+    "category.next": "Próxima categoria",
+    "category.imageAlt": "Categoria do questionário {category}",
+    "category.crypto.name": "Cripto",
+    "category.crypto.description": "Teste seu conhecimento sobre Base, Ethereum, carteiras, DeFi e a cultura que molda o mundo onchain.",
+    "category.sports.name": "Esportes",
+    "category.sports.description": "Do futebol e basquete ao tênis e às Olimpíadas - veja quão forte é sua memória esportiva.",
+    "category.art.name": "Arte",
+    "category.art.description": "Explore a pintura, os artistas, os movimentos e as ideias que mudaram a cultura visual ao longo das gerações.",
+    "category.history.name": "História",
+    "category.history.description": "Viaje pelas civilizações, pelos momentos decisivos e pelas pessoas cujas decisões moldaram o mundo.",
+    "category.science.name": "Ciência",
+    "category.science.description": "Desafie-se na física, biologia, química e descobertas que explicam como as coisas funcionam.",
+    "category.geography.name": "Geografia",
+    "category.geography.description": "Navegue por países, capitais, oceanos e pontos de referência de todos os cantos do nosso planeta.",
+    "quiz.fallbackName": "Questionário",
+    "quiz.questionProgress": "Pergunta {current} de {total}",
+    "quiz.score": "Pontuação",
+    "quiz.time": "Tempo",
+    "quiz.answeredAria": "{answered} de {total} perguntas respondidas",
+    "quiz.chooseCorrect": "Escolha a resposta correta",
+    "quiz.correct": "Resposta correta",
+    "quiz.wrong": "Resposta errada",
+    "quiz.points": "+{points} pontos",
+    "quiz.correctOption": "Opção correta: {option}",
+    "quiz.autoNote": "Responda uma vez · a próxima pergunta carrega automaticamente",
+    "result.roundComplete": "Rodada concluída",
+    "result.finalScore": "Sua pontuação final",
+    "result.points": "pontos",
+    "result.summaryAria": "Resumo da rodada",
+    "result.categoryPill": "Categoria {category}",
+    "result.streakPill": "Sequência de {count} dias",
+    "result.roundCompletedTitle": "Rodada concluída",
+    "result.roundCompletedDetail": "Cinco perguntas respondidas. Seu resultado final está pronto.",
+    "result.streakUpdatedTitle": "Sequência atualizada",
+    "result.streakUpdatedDetail": "Agora você está em uma sequência de aprendizado de {count} dias.",
+    "result.save.idle.title": "Salve sua pontuação",
+    "result.save.idle.detail": "Grave este resultado no Base e junte-se à tabela de classificação global.",
+    "result.save.pending.title": "Confirme sua pontuação",
+    "result.save.pending.detail": "Aprove a transação na sua carteira para concluir o salvamento.",
+    "result.save.done.title": "Pontuação salva onchain",
+    "result.save.done.detail": "Seu resultado é verificado em Base e está pronto para a tabela de classificação.",
+    "result.save.error.title": "Salvar precisa de atenção",
+    "result.save.error.detail": "Revise a mensagem abaixo e tente a transação novamente.",
+    "result.save.disconnected.title": "Conecte-se para salvar",
+    "result.save.disconnected.detail": "Escolha uma carteira para registrar sua pontuação no Base.",
+    "result.shareTitle": "Compartilhe seu resultado",
+    "result.shareDetail": "Desafie seus amigos no Farcaster ou X.",
+    "result.replayKicker": "Mantenha o ritmo",
+    "result.replayTitle": "Pronto para mais uma rodada?",
+    "result.replayDetail": "Jogue {category} novamente ou escolha um desafio diferente.",
+    "result.playAgain": "Jogue novamente",
+    "result.chooseCategory": "Escolha a categoria",
+    "result.saveButton": "Salvar pontuação onchain",
+    "result.confirming": "Confirmando…",
+    "result.saved": "onchain salvo",
+    "result.viewTransaction": "Ver transação",
+    "result.shareScore": "Compartilhar pontuação",
+    "result.copyText": "Copiar texto",
+    "result.copied": "Copiado para a área de transferência!",
+    "leaderboard.kicker": "Base Mainnet · Ranking histórico",
+    "leaderboard.title": "Tabela de classificação",
+    "leaderboard.description": "Os melhores jogadores classificados pela pontuação total onchain.",
+    "leaderboard.loading": "Lendo pontuações de Base…",
+    "leaderboard.empty": "Ainda não há pontuações. Seja o primeiro jogador no tabuleiro.",
+    "leaderboard.player": "Jogador",
+    "leaderboard.totalScore": "Pontuação total",
+    "leaderboard.bestScore": "Melhor pontuação",
+    "leaderboard.streak": "Sequência",
+    "leaderboard.badges": "Emblemas",
+    "leaderboard.you": "Você",
+    "leaderboard.noBadges": "Sem emblemas",
+    "leaderboard.badgeTitle": "Selo {name}",
+    "leaderboard.players": "{count} jogadores",
+    "leaderboard.verified": "Pontuações e emblemas verificados onchain",
+    "badges.kicker": "NFTs de sequência · Base Mainnet",
+    "badges.title": "Emblemas",
+    "badges.roadmapTitle": "Roteiro do emblema Streak",
+    "badges.roadmapDescription": "Continue jogando, aumente sua sequência e conquiste cada marco onchain.",
+    "badges.streak": "Sequência de {count} dias",
+    "badges.walletRequired": "Carteira necessária",
+    "badges.connectTitle": "Conecte-se para visualizar e reivindicar seus emblemas",
+    "badges.connectDetail": "Sua sequência e propriedade do NFT são lidas diretamente do Base.",
+    "badges.days": "{count} dias",
+    "badges.bronze.name": "Bronze",
+    "badges.bronze.description": "Conclua sua primeira corrida de 3 dias",
+    "badges.silver.name": "Prata",
+    "badges.silver.description": "Mantenha a seqüência viva por uma semana",
+    "badges.gold.name": "Ouro",
+    "badges.gold.description": "Crie uma sequência consistente de 30 dias",
+    "badges.diamond.name": "Diamante",
+    "badges.diamond.description": "Alcance o marco final de 100 dias",
+    "badges.unlock": "Desbloqueie em uma sequência de dias {count}",
+    "badges.owned": "Obtido",
+    "badges.claim": "Resgatar emblema",
+    "badges.claiming": "Reivindicando…",
+    "badges.daysLeft": "{count} dias restantes",
+    "badges.locked": "Bloqueado",
+    "badges.loading": "Lendo emblemas de Base…",
+    "wallet.connectTitle": "Conectar carteira",
+    "wallet.browserWallets": "Carteiras de navegador",
+    "wallet.recommended": "Recomendado",
+    "tutorial.welcomeTitle": "Bem-vindo.",
+    "tutorial.welcomeDetail": "Um jogo diário de perguntas e respostas no Base. Teste seus conhecimentos, construa sequências e compita em todo o mundo.",
+    "tutorial.questionsTitle": "5 perguntas. Diário.",
+    "tutorial.questionsDetail": "Responda rápido – mais rápido significa mais pontos. Salve sua pontuação onchain para aparecer na tabela de classificação global.",
+    "tutorial.badgesTitle": "Ganhe emblemas NFT.",
+    "tutorial.badgesDetail": "Mantenha sua seqüência viva e reivindique onchain NFTs: Bronze (3d), Prata (7d), Ouro (30d), Diamante (100d).",
+    "tutorial.letsPlay": "Vamos jogar",
+    "footer.blockData": "BLOCO DE DADOS · BASE MAINNET",
+    "footer.playersOnchain": "{count} JOGADORES ONCHAIN",
+    "share.text": "🧠 Fiz {score} pontos no Base Quiz! 🔥 Sequência: {streak} dias\n\nAcha que consegue me superar? 👇",
+    "error.startFailed": "A rodada não pôde ser iniciada. Por favor, tente novamente.",
+    "error.startCancelled": "Transação cancelada. Confirme para iniciar a rodada.",
+    "error.saveFailed": "A pontuação não pôde ser salva. Por favor, tente novamente.",
+    "error.alreadyPlayed": "Já salvo hoje. Volte amanhã.",
+    "error.claimFailed": "O distintivo não pôde ser reivindicado. Por favor, tente novamente.",
+    "activation.kicker": "Configuração do Base Quiz",
+    "activation.title": "Ativar o contrato de rodadas",
+    "activation.copy": "Esta transação Base única implanta o pequeno contrato usado por Start Round. Não altera pontuações, sequências, emblemas ou transferência ETH.",
+    "activation.checking": "Verificando contrato…",
+    "activation.active": "O contrato de rodadas está ativo",
+    "activation.connected": "Conectado: {address}",
+    "activation.confirming": "Confirmando em Base…",
+    "activation.activate": "Ativar contrato de rodadas",
+    "activation.pendingTransaction": "Ver transação pendente",
+    "activation.back": "Voltar ao Base Quiz",
+    "activation.errorCheck": "Não foi possível verificar o contrato da Base. Tente novamente.",
+    "activation.errorWallet": "Nenhuma carteira compatível foi encontrada.",
+    "activation.errorCancelled": "Transação cancelada. Nenhuma alteração foi feita.",
+    "activation.errorFailed": "Falha na ativação. Por favor, tente novamente."
+  },
+  "quiz": {
+    "crypto:0": {
+      "question": "Qual empresa desenvolveu o Base?",
+      "answers": {
+        "Binance": "Binância",
+        "Coinbase": "Coinbase",
+        "Kraken": "Kraken",
+        "OKX": "OKX"
+      }
+    },
+    "crypto:1": {
+      "question": "Base é uma camada 2 de qual rede?",
+      "answers": {
+        "Bitcoin": "Bitcoin",
+        "Solana": "Solana",
+        "Ethereum": "Ethereum",
+        "Avalanche": "Avalanche"
+      }
+    },
+    "crypto:2": {
+      "question": "Qual pilha de tecnologia o Base usa?",
+      "answers": {
+        "OP Stack": "Pilha OP",
+        "zkSync": "zkSync",
+        "Polygon CDK": "CDK polígono",
+        "Arbitrum Nitro": "Arbitragem Nitro"
+      }
+    },
+    "crypto:3": {
+      "question": "Em que ano a rede principal Base foi lançada?",
+      "answers": {
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023",
+        "2024": "2024"
+      }
+    },
+    "crypto:4": {
+      "question": "Qual token é usado para taxas de gás em Base?",
+      "answers": {
+        "USDC": "USDC",
+        "BASE": "BASE",
+        "ETH": "ETH",
+        "OP": "OP"
+      }
+    },
+    "crypto:5": {
+      "question": "Como era chamado Base App anteriormente?",
+      "answers": {
+        "Coinbase Wallet": "Coinbase Wallet",
+        "MetaMask": "MetaMask",
+        "Rainbow": "Arco-íris",
+        "Phantom": "Fantasma"
+      }
+    },
+    "crypto:6": {
+      "question": "Quem é o CEO da Coinbase?",
+      "answers": {
+        "Vitalik Buterin": "Vitalik Buterin",
+        "Brian Armstrong": "Brian Armstrong",
+        "Changpeng Zhao": "Changpeng Zhao",
+        "Jesse Pollak": "Jesse Pollak"
+      }
+    },
+    "crypto:7": {
+      "question": "Quem lidera Base em Coinbase?",
+      "answers": {
+        "Brian Armstrong": "Brian Armstrong",
+        "Jesse Pollak": "Jesse Pollak",
+        "Hayden Adams": "Hayden Adams",
+        "Stani Kulechov": "Stani Kulechov"
+      }
+    },
+    "crypto:8": {
+      "question": "A qual superchain Base pertence?",
+      "answers": {
+        "Polygon Superchain": "Supercadeia poligonal",
+        "Optimism Superchain": "Supercadeia de Otimismo",
+        "Arbitrum Orbit": "Órbita Arbitral",
+        "zkSync Hyperchain": "hiperchain zkSync"
+      }
+    },
+    "crypto:9": {
+      "question": "Base é melhor descrito como?",
+      "answers": {
+        "A standalone L1": "Um L1 independente",
+        "An Ethereum L2 rollup": "Um acúmulo Ethereum L2",
+        "A sidechain": "Uma cadeia lateral",
+        "A bridge protocol": "Um protocolo de ponte"
+      }
+    },
+    "crypto:10": {
+      "question": "Quem é o fundador do Ethereum?",
+      "answers": {
+        "Satoshi Nakamoto": "Satoshi Nakamoto",
+        "Vitalik Buterin": "Vitalik Buterin",
+        "Brian Armstrong": "Brian Armstrong",
+        "CZ": "CZ"
+      }
+    },
+    "crypto:11": {
+      "question": "Contratos inteligentes em Base estão escritos?",
+      "answers": {
+        "Python": "Python",
+        "Rust": "Ferrugem",
+        "Solidity": "Solidez",
+        "Go": "Vá"
+      }
+    },
+    "crypto:12": {
+      "question": "Qual é a menor unidade de ETH?",
+      "answers": {
+        "Satoshi": "Satoshi",
+        "Gwei": "Gwei",
+        "Wei": "Wei",
+        "Finney": "Finney"
+      }
+    },
+    "crypto:13": {
+      "question": "Qual é o principal objetivo das soluções Layer-2?",
+      "answers": {
+        "Minting more tokens": "Criar mais tokens",
+        "Scalability & lower fees": "Escalabilidade e taxas menores",
+        "Mining": "Mineração",
+        "Staking": "Staking"
+      }
+    },
+    "crypto:14": {
+      "question": "Qual consenso Ethereum usa?",
+      "answers": {
+        "Proof of Work": "Comprovante de Trabalho",
+        "Proof of Stake": "Prova de Participação",
+        "Proof of Authority": "Prova de Autoridade",
+        "Proof of History": "Prova de Histórico"
+      }
+    },
+    "crypto:15": {
+      "question": "O que é um EVM?",
+      "answers": {
+        "A wallet type": "Um tipo de carteira",
+        "Ethereum's execution engine": "Mecanismo de execução do Ethereum",
+        "A token standard": "Um padrão de token",
+        "A bridge": "Uma ponte"
+      }
+    },
+    "crypto:16": {
+      "question": "Qual NÃO é um L2 de Ethereum?",
+      "answers": {
+        "Base": "Base",
+        "Arbitrum": "Arbitragem",
+        "Solana": "Solana",
+        "Optimism": "Otimismo"
+      }
+    },
+    "crypto:17": {
+      "question": "A que se refere 'gás'?",
+      "answers": {
+        "A token": "Um token",
+        "Transaction fee unit": "Unidade de taxa de transação",
+        "A wallet": "Uma carteira",
+        "An NFT type": "Um tipo NFT"
+      }
+    },
+    "crypto:18": {
+      "question": "Quando Ethereum mudou para PoS (The Merge)?",
+      "answers": {
+        "2020": "2020",
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023"
+      }
+    },
+    "crypto:19": {
+      "question": "O que é um ERC-20?",
+      "answers": {
+        "NFT standard": "Padrão NFT",
+        "Fungible token standard": "Padrão de token fungível",
+        "Wallet format": "Formato da carteira",
+        "L2 standard": "Padrão L2"
+      }
+    },
+    "crypto:20": {
+      "question": "Qual é o suprimento máximo de Bitcoin?",
+      "answers": {
+        "21 million": "21 milhões",
+        "100 million": "100 milhões",
+        "1 billion": "1 bilhão",
+        "Unlimited": "Ilimitado"
+      }
+    },
+    "crypto:21": {
+      "question": "Quem criou o Bitcoin?",
+      "answers": {
+        "Vitalik Buterin": "Vitalik Buterin",
+        "Satoshi Nakamoto": "Satoshi Nakamoto",
+        "Hal Finney": "Hal Finney",
+        "Nick Szabo": "Nick Szabo"
+      }
+    },
+    "crypto:22": {
+      "question": "A menor unidade do Bitcoin é chamada?",
+      "answers": {
+        "Wei": "Wei",
+        "Gwei": "Gwei",
+        "Satoshi": "Satoshi",
+        "Finney": "Finney"
+      }
+    },
+    "crypto:23": {
+      "question": "Com que frequência ocorre o halving do Bitcoin (aproximadamente)?",
+      "answers": {
+        "Every year": "Todos os anos",
+        "Every 2 years": "A cada 2 anos",
+        "Every 4 years": "A cada 4 anos",
+        "Every 10 years": "A cada 10 anos"
+      }
+    },
+    "crypto:24": {
+      "question": "Bitcoin usa qual consenso?",
+      "answers": {
+        "Proof of Stake": "Prova de Participação",
+        "Proof of Work": "Comprovante de Trabalho",
+        "Proof of Authority": "Prova de Autoridade",
+        "DPoS": "DPoS"
+      }
+    },
+    "crypto:25": {
+      "question": "O que significa DeFi?",
+      "answers": {
+        "Defined Finance": "Finanças Definidas",
+        "Decentralized Finance": "Finanças Descentralizadas",
+        "Defaulted Finance": "Finanças padrão",
+        "Deferred Finance": "Financiamento Diferido"
+      }
+    },
+    "crypto:26": {
+      "question": "Uniswap é principalmente um?",
+      "answers": {
+        "Lending platform": "Plataforma de empréstimo",
+        "DEX (decentralized exchange)": "DEX (troca descentralizada)",
+        "Wallet": "Carteira",
+        "Bridge": "Ponte"
+      }
+    },
+    "crypto:27": {
+      "question": "O que é um AMM?",
+      "answers": {
+        "Auto Market Mover": "Movimentador do mercado automotivo",
+        "Automated Market Maker": "Formador de mercado automatizado",
+        "Asset Management Module": "Módulo de gerenciamento de ativos",
+        "Aggregated Mint Maker": "Fabricante de Casa da Moeda Agregado"
+      }
+    },
+    "crypto:28": {
+      "question": "O que significa TVL?",
+      "answers": {
+        "Token Value Locked": "Valor do token bloqueado",
+        "Total Value Locked": "Valor total bloqueado",
+        "Trade Volume Limit": "Limite de volume comercial",
+        "Tier Volume Level": "Nível de volume da camada"
+      }
+    },
+    "crypto:29": {
+      "question": "Aave é principalmente um?",
+      "answers": {
+        "DEX": "DEX",
+        "Lending protocol": "Protocolo de empréstimo",
+        "Stablecoin": "Moeda Estável",
+        "NFT marketplace": "Mercado NFT"
+      }
+    },
+    "crypto:30": {
+      "question": "O que é agricultura produtiva?",
+      "answers": {
+        "Mining crops": "Culturas de mineração",
+        "Earning rewards from DeFi protocols": "Ganhar recompensas com protocolos DeFi",
+        "A staking pool name": "Um nome de pool de piquetagem",
+        "An NFT minting term": "Um termo de cunhagem NFT"
+      }
+    },
+    "crypto:31": {
+      "question": "Qual empresa emite USDC?",
+      "answers": {
+        "Tether": "Amarração",
+        "Circle": "Círculo",
+        "Coinbase": "Coinbase",
+        "Paxos": "Paxos"
+      }
+    },
+    "crypto:32": {
+      "question": "Qual empresa emite USDT?",
+      "answers": {
+        "Circle": "Círculo",
+        "Tether": "Amarração",
+        "Coinbase": "Coinbase",
+        "MakerDAO": "MakerDAO"
+      }
+    },
+    "crypto:33": {
+      "question": "DAI é apoiado principalmente por?",
+      "answers": {
+        "US Dollars in a bank": "Dólares americanos em um banco",
+        "Crypto collateral": "Garantia criptográfica",
+        "Gold reserves": "Reservas de ouro",
+        "Government bonds": "Títulos governamentais"
+      }
+    },
+    "crypto:34": {
+      "question": "Stablecoins tentam manter a paridade de preços com?",
+      "answers": {
+        "Bitcoin": "Bitcoin",
+        "Ethereum": "Ethereum",
+        "Fiat currencies": "Moedas fiduciárias",
+        "Gold only": "Somente ouro"
+      }
+    },
+    "crypto:35": {
+      "question": "O que significa NFT?",
+      "answers": {
+        "New Finance Token": "Novo token financeiro",
+        "Non-Fungible Token": "Token Não Fungível",
+        "Network File Transfer": "Transferência de arquivos de rede",
+        "Node Function Type": "Tipo de Função do Nó"
+      }
+    },
+    "crypto:36": {
+      "question": "Qual é o padrão do token NFT em Ethereum?",
+      "answers": {
+        "ERC-20": "ERC-20",
+        "ERC-721": "ERC-721",
+        "ERC-1155 only": "Somente ERC-1155",
+        "BEP-20": "BEP-20"
+      }
+    },
+    "crypto:37": {
+      "question": "O que é principalmente a OpenSea?",
+      "answers": {
+        "DEX": "DEX",
+        "NFT marketplace": "Mercado de NFT",
+        "Wallet": "Carteira",
+        "L2 chain": "Rede L2"
+      }
+    },
+    "crypto:38": {
+      "question": "O que significa 'hortelã' em NFTs?",
+      "answers": {
+        "Sell an NFT": "Venda um NFT",
+        "Create a new NFT onchain": "Crie um novo NFT na cadeia",
+        "Burn an NFT": "Gravar um NFT",
+        "Transfer an NFT": "Transferir um NFT"
+      }
+    },
+    "crypto:39": {
+      "question": "Como são chamadas as palavras secretas de uma carteira?",
+      "answers": {
+        "Public key": "Chave pública",
+        "Seed phrase": "Frase-semente",
+        "Hash": "Hash",
+        "Nonce": "Nonce"
+      }
+    },
+    "crypto:40": {
+      "question": "O que é uma carteira de hardware?",
+      "answers": {
+        "A mobile app": "Um aplicativo móvel",
+        "A physical device for storing keys": "Um dispositivo físico para armazenar chaves",
+        "A browser extension": "Uma extensão do navegador",
+        "An exchange account": "Uma conta de câmbio"
+      }
+    },
+    "crypto:41": {
+      "question": "Você NUNCA deve compartilhar seu?",
+      "answers": {
+        "Wallet address": "Endereço da carteira",
+        "Seed phrase": "Frase-semente",
+        "ENS name": "Nome ENS",
+        "Username": "Nome de usuário"
+      }
+    },
+    "crypto:42": {
+      "question": "Autocustódia significa?",
+      "answers": {
+        "Exchange holds your keys": "Exchange guarda suas chaves",
+        "You control your private keys": "Você controla suas chaves privadas",
+        "A bank holds your keys": "Um banco guarda suas chaves",
+        "A friend holds your keys": "Um amigo está com suas chaves"
+      }
+    },
+    "crypto:43": {
+      "question": "MetaMask é principalmente um?",
+      "answers": {
+        "Exchange": "Troca",
+        "Browser wallet": "Carteira do navegador",
+        "Hardware wallet": "Carteira de hardware",
+        "L2 chain": "Cadeia L2"
+      }
+    },
+    "crypto:44": {
+      "question": "O que é Farcaster?",
+      "answers": {
+        "An exchange": "Uma troca",
+        "A decentralized social network": "Uma rede social descentralizada",
+        "A wallet": "Uma carteira",
+        "A game": "Um jogo"
+      }
+    },
+    "crypto:45": {
+      "question": "As postagens em Farcaster são chamadas?",
+      "answers": {
+        "Tweets": "Tweets",
+        "Casts": "Lança",
+        "Toots": "Toots",
+        "Snaps": "Instantâneos"
+      }
+    },
+    "crypto:46": {
+      "question": "Quem fundou o Farcaster?",
+      "answers": {
+        "Vitalik Buterin": "Vitalik Buterin",
+        "Dan Romero & Varun Srinivasan": "Dan Romero e Varun Srinivasan",
+        "Jesse Pollak": "Jesse Pollak",
+        "Jack Dorsey": "Jack Dorsey"
+      }
+    },
+    "crypto:47": {
+      "question": "Um identificador de usuário Farcaster é chamado?",
+      "answers": {
+        "UID": "UID",
+        "FID": "FID",
+        "Handle": "Alça",
+        "Tag": "Etiqueta"
+      }
+    },
+    "crypto:48": {
+      "question": "Mini aplicativos em Base App são desenvolvidos com?",
+      "answers": {
+        "MiniKit / OnchainKit": "MiniKit/OnchainKit",
+        "Flutter only": "Apenas vibração",
+        "Native iOS only": "Somente iOS nativo",
+        "Unity": "Unidade"
+      }
+    },
+    "crypto:49": {
+      "question": "Um hash de transação blockchain também é chamado?",
+      "answers": {
+        "Nonce": "Nonce",
+        "TX ID": "ID do TX",
+        "Block height": "Altura do bloco",
+        "Gas limit": "Limite de gás"
+      }
+    },
+    "crypto:50": {
+      "question": "O que significa DAO?",
+      "answers": {
+        "Digital Asset Order": "Pedido de ativos digitais",
+        "Decentralized Autonomous Organization": "Organização Autônoma Descentralizada",
+        "Distributed App Output": "Saída de aplicativo distribuído",
+        "Data Access Object": "Objeto de acesso a dados"
+      }
+    },
+    "crypto:51": {
+      "question": "O que é um 'explorador de blocos'?",
+      "answers": {
+        "A mining tool": "Uma ferramenta de mineração",
+        "A site to view onchain data": "Um site para visualizar dados onchain",
+        "A wallet type": "Um tipo de carteira",
+        "A bridge": "Uma ponte"
+      }
+    },
+    "crypto:52": {
+      "question": "O que é 'derrapagem' na negociação?",
+      "answers": {
+        "Network downtime": "Tempo de inatividade da rede",
+        "Difference between expected & actual price": "Diferença entre o preço esperado e o preço real",
+        "A type of fee": "Um tipo de taxa",
+        "A wallet error": "Um erro de carteira"
+      }
+    },
+    "crypto:53": {
+      "question": "Um 'puxar tapete' é?",
+      "answers": {
+        "A trading strategy": "Uma estratégia de negociação",
+        "A scam where founders abandon a project": "Um golpe em que os fundadores abandonam um projeto",
+        "A staking method": "Um método de piquetagem",
+        "A wallet feature": "Um recurso de carteira"
+      }
+    },
+    "crypto:54": {
+      "question": "O que é uma carteira multisig?",
+      "answers": {
+        "A wallet with many tokens": "Uma carteira com muitos tokens",
+        "A wallet needing multiple signatures to approve tx": "Uma carteira que precisa de múltiplas assinaturas para aprovar o tx",
+        "A wallet on multiple chains": "Uma carteira em múltiplas cadeias",
+        "A wallet with a long password": "Uma carteira com uma senha longa"
+      }
+    },
+    "crypto:55": {
+      "question": "O que significa 'HODL' na cultura criptográfica?",
+      "answers": {
+        "Sell quickly": "Venda rapidamente",
+        "Hold long-term": "Manter a longo prazo",
+        "A hardware wallet": "Uma carteira de hardware",
+        "A type of token": "Um tipo de token"
+      }
+    },
+    "crypto:56": {
+      "question": "O que é uma 'baleia' na criptografia?",
+      "answers": {
+        "A tiny investor": "Um pequeno investidor",
+        "A holder of very large amounts": "Detentor de quantias muito grandes",
+        "A stablecoin": "Uma moeda estável",
+        "A mining rig": "Uma plataforma de mineração"
+      }
+    },
+    "crypto:57": {
+      "question": "As taxas de gás em um blockchain são pagas?",
+      "answers": {
+        "Developers": "Desenvolvedores",
+        "Network validators/miners": "Validadores/mineradores de rede",
+        "Exchanges": "Trocas",
+        "Banks": "Bancos"
+      }
+    },
+    "crypto:58": {
+      "question": "O que é um contrato inteligente?",
+      "answers": {
+        "A paper contract": "Um contrato em papel",
+        "Self-executing code on a blockchain": "Código autoexecutável em um blockchain",
+        "A savings account": "Uma conta poupança",
+        "A hardware device": "Um dispositivo de hardware"
+      }
+    },
+    "crypto:59": {
+      "question": "O que significa 'DEX'?",
+      "answers": {
+        "Digital Exchange": "Troca Digital",
+        "Decentralized Exchange": "Troca Descentralizada",
+        "Data Exchange": "Troca de dados",
+        "Direct Exchange": "Troca Direta"
+      }
+    },
+    "crypto:60": {
+      "question": "O que significa 'CEX'?",
+      "answers": {
+        "Central Exchange": "Central de Troca",
+        "Centralized Exchange": "Troca Centralizada",
+        "Crypto Exchange": "Troca de criptografia",
+        "Coin Exchange": "Troca de moedas"
+      }
+    },
+    "crypto:61": {
+      "question": "O que é 'staking'?",
+      "answers": {
+        "Selling tokens": "Vendendo tokens",
+        "Locking tokens to support a network for rewards": "Bloqueio de tokens para apoiar uma rede de recompensas",
+        "Mining coins": "Mineração de moedas",
+        "Burning tokens": "Queimando fichas"
+      }
+    },
+    "crypto:62": {
+      "question": "O que é uma 'chave privada'?",
+      "answers": {
+        "Your public address": "Seu endereço público",
+        "A secret that controls your funds": "Um segredo que controla seus fundos",
+        "An exchange password": "Uma senha de troca",
+        "A transaction id": "Um ID de transação"
+      }
+    },
+    "crypto:63": {
+      "question": "Um 'testnet' é usado para?",
+      "answers": {
+        "Real transactions": "Transações reais",
+        "Testing without real value": "Teste sem valor real",
+        "Storing coins": "Armazenando moedas",
+        "Mining Bitcoin": "Mineração de Bitcoins"
+      }
+    },
+    "crypto:64": {
+      "question": "O que significa 'queimar' tokens?",
+      "answers": {
+        "Creating tokens": "Criando tokens",
+        "Permanently removing tokens from supply": "Removendo tokens permanentemente do fornecimento",
+        "Staking tokens": "Tokens de piquetagem",
+        "Sending tokens": "Enviando tokens"
+      }
+    },
+    "crypto:65": {
+      "question": "O que é um 'mercado em alta'?",
+      "answers": {
+        "Prices falling": "Preços em queda",
+        "Prices rising": "Preços subindo",
+        "No trading": "Sem negociação",
+        "A type of coin": "Um tipo de moeda"
+      }
+    },
+    "crypto:66": {
+      "question": "O que é um 'mercado em baixa'?",
+      "answers": {
+        "Prices rising": "Preços subindo",
+        "Prices falling": "Preços em queda",
+        "Sideways only": "Somente lateralmente",
+        "A mining term": "Um termo de mineração"
+      }
+    },
+    "crypto:67": {
+      "question": "O que é um 'lançamento aéreo'?",
+      "answers": {
+        "A market crash": "Uma quebra do mercado",
+        "Free distribution of tokens": "Distribuição gratuita de tokens",
+        "A hack": "Um truque",
+        "A trading fee": "Uma taxa de negociação"
+      }
+    },
+    "crypto:68": {
+      "question": "O que é 'Web3'?",
+      "answers": {
+        "The third website": "O terceiro site",
+        "A decentralized internet on blockchain": "Uma internet descentralizada em blockchain",
+        "A web browser": "Um navegador da web",
+        "A programming language": "Uma linguagem de programação"
+      }
+    },
+    "crypto:69": {
+      "question": "O que significa 'L1'?",
+      "answers": {
+        "Layer 1 base blockchain": "Blockchain base da camada 1",
+        "A game level": "Um nível de jogo",
+        "A wallet": "Uma carteira",
+        "A token standard": "Um padrão de token"
+      }
+    },
+    "crypto:70": {
+      "question": "Solana é uma?",
+      "answers": {
+        "Layer-2 of Ethereum": "Camada 2 de Ethereum",
+        "Standalone Layer-1 blockchain": "Blockchain autônomo de camada 1",
+        "Wallet": "Carteira",
+        "Stablecoin": "Moeda Estável"
+      }
+    },
+    "crypto:71": {
+      "question": "Prova de Trabalho é conhecida?",
+      "answers": {
+        "Low energy use": "Baixo consumo de energia",
+        "High energy use via mining": "Alto uso de energia via mineração",
+        "Staking coins": "Estacar moedas",
+        "No validators": "Sem validadores"
+      }
+    },
+    "crypto:72": {
+      "question": "O que significa 'DYOR'?",
+      "answers": {
+        "Do Your Own Research": "Faça sua própria pesquisa",
+        "Deposit Your Own Reserves": "Deposite suas próprias reservas",
+        "Don't Yield On Returns": "Não ceda nas devoluções",
+        "Data Yield Over Risk": "Rendimento de dados acima do risco"
+      }
+    },
+    "crypto:73": {
+      "question": "O que é uma 'carteira fria'?",
+      "answers": {
+        "Always-online wallet": "Carteira sempre online",
+        "Offline wallet for storage": "Carteira offline para armazenamento",
+        "Exchange wallet": "Carteira de troca",
+        "A stablecoin": "Uma moeda estável"
+      }
+    },
+    "crypto:74": {
+      "question": "O que é uma 'carteira quente'?",
+      "answers": {
+        "Offline wallet": "Carteira off-line",
+        "Internet-connected wallet": "Carteira conectada à Internet",
+        "Hardware wallet": "Carteira de hardware",
+        "Paper wallet": "Carteira de papel"
+      }
+    },
+    "crypto:75": {
+      "question": "'Gwei' é usado para medir?",
+      "answers": {
+        "Token supply": "Fornecimento de token",
+        "Gas prices": "Preços do gás",
+        "Block size": "Tamanho do bloco",
+        "Wallet balance": "Saldo da carteira"
+      }
+    },
+    "crypto:76": {
+      "question": "'Perda impermanente' está associada a?",
+      "answers": {
+        "Staking": "Estaqueamento",
+        "Providing liquidity": "Fornecimento de liquidez",
+        "Mining": "Mineração",
+        "Holding": "Retenção"
+      }
+    },
+    "crypto:77": {
+      "question": "Uma 'ponte' blockchain é usada para?",
+      "answers": {
+        "Mine coins": "Extrair moedas",
+        "Move assets between blockchains": "Mover ativos entre blockchains",
+        "Store keys": "Armazenar chaves",
+        "Create tokens": "Criar tokens"
+      }
+    },
+    "crypto:78": {
+      "question": "O que é um 'validador'?",
+      "answers": {
+        "A wallet": "Uma carteira",
+        "A node that verifies transactions": "Um nó que verifica transações",
+        "A token": "Um token",
+        "An exchange": "Uma troca"
+      }
+    },
+    "crypto:79": {
+      "question": "'ATH' significa?",
+      "answers": {
+        "All-Time High": "Máximo histórico",
+        "Average Trade Height": "Altura Média de Negociação",
+        "Actual Token Holdings": "Participações reais de token",
+        "Auto Trade Handler": "Manipulador de negociação automática"
+      }
+    },
+    "crypto:80": {
+      "question": "Um 'ticker' como BTC ou ETH é?",
+      "answers": {
+        "A price chart": "Um gráfico de preços",
+        "A short symbol for an asset": "Um símbolo curto para um ativo",
+        "A wallet": "Uma carteira",
+        "A block": "Um bloco"
+      }
+    },
+    "crypto:81": {
+      "question": "Em Prova de Trabalho, a confirmação de transações é chamada?",
+      "answers": {
+        "Staking": "Estaqueamento",
+        "Mining": "Mineração",
+        "Bridging": "Ponte",
+        "Burning": "Queimando"
+      }
+    },
+    "crypto:82": {
+      "question": "O que é 'valor de mercado'?",
+      "answers": {
+        "Price × circulating supply": "Preço × oferta circulante",
+        "Daily trading volume": "Volume diário de negociação",
+        "Number of wallets": "Número de carteiras",
+        "Total gas fees": "Total de taxas de gás"
+      }
+    },
+    "crypto:83": {
+      "question": "OnchainKit é um kit de ferramentas para desenvolvedores?",
+      "answers": {
+        "Binance": "Binância",
+        "Coinbase": "Coinbase",
+        "MetaMask": "MetaMask",
+        "Uniswap": "Uniswap"
+      }
+    },
+    "crypto:84": {
+      "question": "Um 'limite de gás' definido?",
+      "answers": {
+        "Token supply": "Fornecimento de token",
+        "Max gas a transaction can use": "Máximo de gás que uma transação pode usar",
+        "Wallet size": "Tamanho da carteira",
+        "Block reward": "Bloquear recompensa"
+      }
+    },
+    "crypto:85": {
+      "question": "Polígono é mais conhecido como?",
+      "answers": {
+        "A base Layer-1": "Uma camada base 1",
+        "An Ethereum scaling solution": "Uma solução de escalonamento Ethereum",
+        "A wallet": "Uma carteira",
+        "An exchange": "Uma troca"
+      }
+    },
+    "crypto:86": {
+      "question": "O que significa 'FOMO' na negociação?",
+      "answers": {
+        "Fear Of Missing Out": "Medo de perder",
+        "Full Order Market Offer": "Oferta de mercado de pedido completo",
+        "Fixed Order Money Out": "Saída de dinheiro de ordem fixa",
+        "Fast Onchain Market Order": "Ordem rápida de mercado on-chain"
+      }
+    },
+    "crypto:87": {
+      "question": "O que é 'liquidez' em um pool?",
+      "answers": {
+        "Number of users": "Número de usuários",
+        "Assets available to trade": "Ativos disponíveis para negociação",
+        "Trading fees": "Taxas de negociação",
+        "Block height": "Altura do bloco"
+      }
+    },
+    "crypto:88": {
+      "question": "As soluções 'Layer-2' visam principalmente?",
+      "answers": {
+        "Replace Bitcoin": "Substituir Bitcoin",
+        "Scale a Layer-1 with cheaper, faster txs": "Dimensione uma camada 1 com txs mais baratos e mais rápidos",
+        "Mine faster": "Minere mais rápido",
+        "Issue stablecoins": "Emitir stablecoins"
+      }
+    },
+    "crypto:89": {
+      "question": "O 'endereço' de uma carteira geralmente é?",
+      "answers": {
+        "Secret, never shared": "Segredo, nunca compartilhado",
+        "Public and shareable to receive funds": "Público e compartilhável para receber fundos",
+        "Your password": "Sua senha",
+        "A private key": "Uma chave privada"
+      }
+    },
+    "crypto:90": {
+      "question": "O que significa 'KYC'?",
+      "answers": {
+        "Keep Your Coins": "Guarde suas moedas",
+        "Know Your Customer": "Conheça seu cliente",
+        "Key Yield Contract": "Contrato de rendimento principal",
+        "Known Yield Curve": "Curva de rendimento conhecida"
+      }
+    },
+    "crypto:91": {
+      "question": "O que é um nonce em uma transação?",
+      "answers": {
+        "A random word": "Uma palavra aleatória",
+        "A per-account transaction counter": "Um contador de transações por conta",
+        "A token": "Um token",
+        "A wallet": "Uma carteira"
+      }
+    },
+    "crypto:92": {
+      "question": "'PoS' significa?",
+      "answers": {
+        "Proof of Speed": "Prova de Velocidade",
+        "Proof of Stake": "Prova de Participação",
+        "Point of Sale": "Ponto de Venda",
+        "Proof of Storage": "Comprovante de armazenamento"
+      }
+    },
+    "crypto:93": {
+      "question": "Um stablecoin foi projetado para?",
+      "answers": {
+        "Grow fast": "Cresça rápido",
+        "Stay near a stable value": "Fique perto de um valor estável",
+        "Be an NFT": "Seja um NFT",
+        "Mine blocks": "Blocos de minas"
+      }
+    },
+    "crypto:94": {
+      "question": "Qual destas é uma stablecoin?",
+      "answers": {
+        "ETH": "ETH",
+        "USDC": "USDC",
+        "BTC": "BTC",
+        "SOL": "SOL"
+      }
+    },
+    "crypto:95": {
+      "question": "'Cross-chain' significa operar transversalmente?",
+      "answers": {
+        "One app": "Um aplicativo",
+        "Multiple blockchains": "Múltiplos blockchains",
+        "One wallet": "Uma carteira",
+        "One token": "Um token"
+      }
+    },
+    "crypto:96": {
+      "question": "Um 'bloco' em uma blockchain contém?",
+      "answers": {
+        "Only one transaction": "Apenas uma transação",
+        "A batch of transactions": "Um lote de transações",
+        "Only code": "Somente código",
+        "Nothing": "Nada"
+      }
+    },
+    "crypto:97": {
+      "question": "O 'bloco de gênese' é o?",
+      "answers": {
+        "Last block": "Último bloco",
+        "First block of a blockchain": "Primeiro bloco de uma blockchain",
+        "A wallet": "Uma carteira",
+        "A token": "Um token"
+      }
+    },
+    "crypto:98": {
+      "question": "O que significa 'ROI'?",
+      "answers": {
+        "Return On Investment": "Retorno do investimento",
+        "Rate Of Interest": "Taxa de juros",
+        "Risk Of Inflation": "Risco de inflação",
+        "Ratio Of Income": "Proporção de renda"
+      }
+    },
+    "crypto:99": {
+      "question": "Os preços do gás Ethereum são geralmente medidos em?",
+      "answers": {
+        "US dollars": "dólares americanos",
+        "Gwei": "Gwei",
+        "Bitcoin": "Bitcoins",
+        "Bytes": "Bytes"
+      }
+    },
+    "sports:0": {
+      "question": "Quantos jogadores de um time de futebol estão em campo?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:1": {
+      "question": "Em qual esporte você faria uma enterrada?",
+      "answers": {
+        "Tennis": "Tênis",
+        "Basketball": "Basquete",
+        "Golf": "Golfe",
+        "Cricket": "Críquete"
+      }
+    },
+    "sports:2": {
+      "question": "Com que frequência são realizados os Jogos Olímpicos de Verão?",
+      "answers": {
+        "Every 2 years": "A cada 2 anos",
+        "Every 3 years": "A cada 3 anos",
+        "Every 4 years": "A cada 4 anos",
+        "Every 5 years": "A cada 5 anos"
+      }
+    },
+    "sports:3": {
+      "question": "Qual país ganhou mais Copas do Mundo FIFA?",
+      "answers": {
+        "Germany": "Alemanha",
+        "Italy": "Itália",
+        "Brazil": "Brasil",
+        "Argentina": "Argentina"
+      }
+    },
+    "sports:4": {
+      "question": "No tênis, como é chamado um placar zero?",
+      "answers": {
+        "Nil": "Zero",
+        "Love": "Amor",
+        "Duck": "Pato",
+        "Blank": "Em branco"
+      }
+    },
+    "sports:5": {
+      "question": "Quantos anéis há na bandeira olímpica?",
+      "answers": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:6": {
+      "question": "Qual esporte usa peteca?",
+      "answers": {
+        "Squash": "Abóbora",
+        "Badminton": "Badminton",
+        "Table tennis": "Tênis de mesa",
+        "Volleyball": "Voleibol"
+      }
+    },
+    "sports:7": {
+      "question": "Usain Bolt é famoso por qual esporte?",
+      "answers": {
+        "Swimming": "Natação",
+        "Sprinting": "Corrida",
+        "Cycling": "Ciclismo",
+        "Boxing": "Boxe"
+      }
+    },
+    "sports:8": {
+      "question": "Quantos pontos vale um touchdown no futebol americano?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:9": {
+      "question": "O Tour de France é uma competição de qual esporte?",
+      "answers": {
+        "Running": "Em execução",
+        "Cycling": "Ciclismo",
+        "Rowing": "Remo",
+        "Sailing": "Vela"
+      }
+    },
+    "sports:10": {
+      "question": "Qual país hospeda o torneio de tênis de Wimbledon?",
+      "answers": {
+        "USA": "EUA",
+        "France": "França",
+        "England": "Inglaterra",
+        "Australia": "Austrália"
+      }
+    },
+    "sports:11": {
+      "question": "Michael Jordan é uma lenda de qual esporte?",
+      "answers": {
+        "Baseball": "Beisebol",
+        "Basketball": "Basquete",
+        "Football": "Futebol",
+        "Hockey": "Hóquei"
+      }
+    },
+    "sports:12": {
+      "question": "Quantos rounds existem em uma luta de campeonato de boxe padrão?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "12": "12",
+        "15": "15"
+      }
+    },
+    "sports:13": {
+      "question": "Qual Grand Slam de tênis é jogado em quadras de saibro?",
+      "answers": {
+        "Wimbledon": "Wimbledon",
+        "US Open": "Aberto dos EUA",
+        "French Open": "Aberto da França",
+        "Australian Open": "Aberto da Austrália"
+      }
+    },
+    "sports:14": {
+      "question": "A Fórmula 1 é uma forma de qual corrida?",
+      "answers": {
+        "Boat": "Barco",
+        "Car": "Carro",
+        "Horse": "Cavalo",
+        "Bicycle": "Bicicleta"
+      }
+    },
+    "sports:15": {
+      "question": "Uma maratona dura aproximadamente quanto tempo?",
+      "answers": {
+        "21 km": "21 km",
+        "42 km": "42 km",
+        "50 km": "50 km",
+        "30 km": "30 km"
+      }
+    },
+    "sports:16": {
+      "question": "Quantos jogadores há em um time de críquete?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:17": {
+      "question": "O Torneio Masters é disputado em qual esporte?",
+      "answers": {
+        "Golf": "Golfe",
+        "Tennis": "Tênis",
+        "Polo": "Polo",
+        "Rugby": "Rúgbi"
+      }
+    },
+    "sports:18": {
+      "question": "Qual país ganhou a Copa do Mundo FIFA 2018?",
+      "answers": {
+        "Germany": "Alemanha",
+        "France": "França",
+        "Brazil": "Brasil",
+        "Croatia": "Croácia"
+      }
+    },
+    "sports:19": {
+      "question": "Quanto tempo dura uma partida de futebol, excluindo os acréscimos?",
+      "answers": {
+        "80 minutes": "80 minutos",
+        "90 minutes": "90 minutos",
+        "100 minutes": "100 minutos",
+        "120 minutes": "120 minutos"
+      }
+    },
+    "sports:20": {
+      "question": "Qual carta manda um jogador de futebol para fora do campo?",
+      "answers": {
+        "Yellow": "Amarelo",
+        "Red": "Vermelho",
+        "Blue": "Azul",
+        "Green": "Verde"
+      }
+    },
+    "sports:21": {
+      "question": "Um hat-trick significa marcar quantos gols em uma partida?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:22": {
+      "question": "Cristiano Ronaldo representa qual seleção?",
+      "answers": {
+        "Brazil": "Brasil",
+        "Spain": "Espanha",
+        "Portugal": "Portugal",
+        "Argentina": "Argentina"
+      }
+    },
+    "sports:23": {
+      "question": "Pelé jogou internacionalmente por qual país?",
+      "answers": {
+        "Argentina": "Argentina",
+        "Brazil": "Brasil",
+        "Portugal": "Portugal",
+        "Italy": "Itália"
+      }
+    },
+    "sports:24": {
+      "question": "A principal competição de futebol de clubes da Europa é a?",
+      "answers": {
+        "Europa League": "Liga Europa",
+        "Champions League": "Liga dos Campeões",
+        "Copa America": "Copa América",
+        "FA Cup": "Copa da Inglaterra"
+      }
+    },
+    "sports:25": {
+      "question": "A Bola de Ouro é concedida em qual esporte?",
+      "answers": {
+        "Basketball": "Basquete",
+        "Football/Soccer": "Futebol/Futebol",
+        "Tennis": "Tênis",
+        "Golf": "Golfe"
+      }
+    },
+    "sports:26": {
+      "question": "Diego Maradona foi uma lenda de qual esporte?",
+      "answers": {
+        "Basketball": "Basquete",
+        "Soccer": "Futebol",
+        "Tennis": "Tênis",
+        "Boxing": "Boxe"
+      }
+    },
+    "sports:27": {
+      "question": "Uma 'ficha limpa' no futebol significa?",
+      "answers": {
+        "Scoring many goals": "Marcando muitos gols",
+        "Conceding no goals": "Não sofrendo gols",
+        "Getting a red card": "Recebendo cartão vermelho",
+        "A draw": "Empate"
+      }
+    },
+    "sports:28": {
+      "question": "Um lance livre no basquete vale quantos pontos?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:29": {
+      "question": "Vale uma cesta além do arco de três pontos?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:30": {
+      "question": "Os aros de basquete padrão são colocados em que altura?",
+      "answers": {
+        "8 feet": "8 pés",
+        "10 feet": "10 pés",
+        "12 feet": "12 pés",
+        "15 feet": "15 pés"
+      }
+    },
+    "sports:31": {
+      "question": "A NBA é uma liga baseada em qual país?",
+      "answers": {
+        "Canada": "Canadá",
+        "USA": "EUA",
+        "Spain": "Espanha",
+        "Australia": "Austrália"
+      }
+    },
+    "sports:32": {
+      "question": "Qual país é responsável pela invenção do basquete?",
+      "answers": {
+        "Canada": "Canadá",
+        "USA": "EUA",
+        "UK": "Reino Unido",
+        "France": "França"
+      }
+    },
+    "sports:33": {
+      "question": "Quantos eventos de Grand Slam acontecem no tênis a cada ano?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:34": {
+      "question": "Em que superfície Wimbledon é jogado?",
+      "answers": {
+        "Clay": "Argila",
+        "Grass": "Grama",
+        "Hard court": "Quadra dura",
+        "Carpet": "Tapete"
+      }
+    },
+    "sports:35": {
+      "question": "Roger Federer é famoso por qual esporte?",
+      "answers": {
+        "Golf": "Golfe",
+        "Tennis": "Tênis",
+        "Cycling": "Ciclismo",
+        "Rowing": "Remo"
+      }
+    },
+    "sports:36": {
+      "question": "Serena Williams é campeã em qual esporte?",
+      "answers": {
+        "Golf": "Golfe",
+        "Tennis": "Tênis",
+        "Swimming": "Natação",
+        "Athletics": "Atletismo"
+      }
+    },
+    "sports:37": {
+      "question": "No tênis, o que vem depois do deuce quando um jogador ganha o ponto seguinte?",
+      "answers": {
+        "Game": "Game",
+        "Advantage": "Vantagem",
+        "Set": "Set",
+        "Match": "Partida"
+      }
+    },
+    "sports:38": {
+      "question": "Os primeiros Jogos Olímpicos modernos foram realizados em que ano?",
+      "answers": {
+        "1896": "1896",
+        "1900": "1900",
+        "1924": "1924",
+        "1936": "1936"
+      }
+    },
+    "sports:39": {
+      "question": "Os Jogos Olímpicos de Verão de 2016 foram realizados em?",
+      "answers": {
+        "London": "Londres",
+        "Rio de Janeiro": "Rio de Janeiro",
+        "Tokyo": "Tóquio",
+        "Beijing": "Pequim"
+      }
+    },
+    "sports:40": {
+      "question": "Os Jogos Olímpicos de Verão de 2024 foram realizados em?",
+      "answers": {
+        "Tokyo": "Tóquio",
+        "Paris": "Paris",
+        "Los Angeles": "Los Angeles",
+        "London": "Londres"
+      }
+    },
+    "sports:41": {
+      "question": "O lema olímpico é 'Mais rápido, mais alto, ___'.",
+      "answers": {
+        "Better": "Melhor",
+        "Stronger": "Mais forte",
+        "Farther": "Mais longe",
+        "Longer": "Mais longo"
+      }
+    },
+    "sports:42": {
+      "question": "Onde é tradicionalmente acesa a chama olímpica?",
+      "answers": {
+        "Italy": "Itália",
+        "Greece": "Grécia",
+        "France": "França",
+        "Egypt": "Egito"
+      }
+    },
+    "sports:43": {
+      "question": "Michael Phelps dominou qual esporte olímpico?",
+      "answers": {
+        "Athletics": "Atletismo",
+        "Swimming": "Natação",
+        "Diving": "Mergulho",
+        "Rowing": "Remo"
+      }
+    },
+    "sports:44": {
+      "question": "Qual NÃO é uma braçada de natação competitiva?",
+      "answers": {
+        "Butterfly": "Borboleta",
+        "Backstroke": "Nado Costas",
+        "Breaststroke": "Nado peito",
+        "Sidestroke": "Golpe lateral"
+      }
+    },
+    "sports:45": {
+      "question": "Muhammad Ali era um lendário?",
+      "answers": {
+        "Footballer": "Jogador de futebol",
+        "Boxer": "Boxeador",
+        "Swimmer": "Nadador",
+        "Runner": "Corredor"
+      }
+    },
+    "sports:46": {
+      "question": "O judô se originou em qual país?",
+      "answers": {
+        "China": "China",
+        "Japan": "Japão",
+        "Korea": "Coreia",
+        "Thailand": "Tailândia"
+      }
+    },
+    "sports:47": {
+      "question": "O Taekwondo se originou em qual país?",
+      "answers": {
+        "Japan": "Japão",
+        "China": "China",
+        "South Korea": "Coreia do Sul",
+        "Vietnam": "Vietnã"
+      }
+    },
+    "sports:48": {
+      "question": "No boxe, 'KO' significa?",
+      "answers": {
+        "Knockout": "Nocaute",
+        "Keep On": "Continue",
+        "Knee Out": "Joelho para fora",
+        "Key Opponent": "Oponente principal"
+      }
+    },
+    "sports:49": {
+      "question": "A luta de sumô é um esporte tradicional de?",
+      "answers": {
+        "China": "China",
+        "Japan": "Japão",
+        "Korea": "Coreia",
+        "Mongolia": "Mongólia"
+      }
+    },
+    "sports:50": {
+      "question": "No golfe, uma tacada abaixo do par em um buraco é uma?",
+      "answers": {
+        "Eagle": "Águia",
+        "Birdie": "Passarinho",
+        "Bogey": "Bogey",
+        "Par": "Paridade"
+      }
+    },
+    "sports:51": {
+      "question": "No golfe, uma tacada acima do par é?",
+      "answers": {
+        "Birdie": "Passarinho",
+        "Bogey": "Bogey",
+        "Eagle": "Águia",
+        "Ace": "Ás"
+      }
+    },
+    "sports:52": {
+      "question": "Um hole-in-one no golfe também é chamado de?",
+      "answers": {
+        "Ace": "Ás",
+        "Birdie": "Passarinho",
+        "Eagle": "Águia",
+        "Par": "Paridade"
+      }
+    },
+    "sports:53": {
+      "question": "Uma partida de golfe padrão tem quantos buracos?",
+      "answers": {
+        "9": "9",
+        "12": "12",
+        "18": "18",
+        "24": "24"
+      }
+    },
+    "sports:54": {
+      "question": "Qual país é o berço do golfe?",
+      "answers": {
+        "USA": "EUA",
+        "Scotland": "Escócia",
+        "France": "França",
+        "Italy": "Itália"
+      }
+    },
+    "sports:55": {
+      "question": "Lewis Hamilton compete em qual esporte?",
+      "answers": {
+        "MotoGP": "MotoGP",
+        "Formula 1": "Fórmula 1",
+        "Rally": "Rali",
+        "NASCAR": "NASCAR"
+      }
+    },
+    "sports:56": {
+      "question": "Carros de Fórmula 1 correm em um?",
+      "answers": {
+        "Field": "Campo",
+        "Track/circuit": "Pista/circuito",
+        "Pool": "Conjunto",
+        "Court": "Tribunal"
+      }
+    },
+    "sports:57": {
+      "question": "Na Fórmula 1, os títulos vão para os pilotos e?",
+      "answers": {
+        "Fans": "Fãs",
+        "Constructors": "Construtores",
+        "Cities": "Cidades",
+        "Sponsors": "Patrocinadores"
+      }
+    },
+    "sports:58": {
+      "question": "Quantos strikes resultam em um strikeout no beisebol?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:59": {
+      "question": "O beisebol é jogado em um campo com formato de?",
+      "answers": {
+        "Circle": "Círculo",
+        "Diamond": "Diamante",
+        "Square": "Quadrado",
+        "Triangle": "Triângulo"
+      }
+    },
+    "sports:60": {
+      "question": "O Super Bowl é o campeonato de qual esporte?",
+      "answers": {
+        "Basketball": "Basquete",
+        "American football": "Futebol americano",
+        "Baseball": "Beisebol",
+        "Ice hockey": "Hóquei no gelo"
+      }
+    },
+    "sports:61": {
+      "question": "Quantos jogadores por equipe estão em campo no futebol americano?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:62": {
+      "question": "O hóquei no gelo é jogado?",
+      "answers": {
+        "Grass": "Grama",
+        "Ice": "Gelo",
+        "Sand": "Areia",
+        "Clay": "Argila"
+      }
+    },
+    "sports:63": {
+      "question": "A Stanley Cup é o troféu de qual esporte?",
+      "answers": {
+        "Basketball": "Basquete",
+        "Ice hockey": "Hóquei no gelo",
+        "Baseball": "Beisebol",
+        "Soccer": "Futebol"
+      }
+    },
+    "sports:64": {
+      "question": "Quantos jogadores de cada lado estão no gelo no hóquei no gelo?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:65": {
+      "question": "Quantos jogadores por equipe estão em uma quadra de vôlei?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:66": {
+      "question": "O tênis de mesa também é comumente chamado?",
+      "answers": {
+        "Squash": "Abóbora",
+        "Ping pong": "Pingue-pongue",
+        "Badminton": "Badminton",
+        "Racquetball": "Raquetebol"
+      }
+    },
+    "sports:67": {
+      "question": "Qual país domina o tênis de mesa internacional?",
+      "answers": {
+        "Brazil": "Brasil",
+        "China": "China",
+        "Canada": "Canadá",
+        "Egypt": "Egito"
+      }
+    },
+    "sports:68": {
+      "question": "Qual esporte de raquete é praticado dentro de quatro paredes?",
+      "answers": {
+        "Tennis": "Tênis",
+        "Squash": "Abóbora",
+        "Badminton": "Badminton",
+        "Table tennis": "Tênis de mesa"
+      }
+    },
+    "sports:69": {
+      "question": "A seleção nacional de rugby da Nova Zelândia é conhecida como?",
+      "answers": {
+        "Wallabies": "Wallabies",
+        "All Blacks": "Todos negros",
+        "Springboks": "Gazelas",
+        "Pumas": "Pumas"
+      }
+    },
+    "sports:70": {
+      "question": "Um 'scrum' é uma característica de qual esporte?",
+      "answers": {
+        "Rugby": "Rúgbi",
+        "Tennis": "Tênis",
+        "Golf": "Golfe",
+        "Swimming": "Natação"
+      }
+    },
+    "sports:71": {
+      "question": "Uma 'tentativa' no rugby union vale quantos pontos?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "5": "5",
+        "7": "7"
+      }
+    },
+    "sports:72": {
+      "question": "Um 'século' (100 execuções) é um termo em?",
+      "answers": {
+        "Baseball": "Beisebol",
+        "Cricket": "Críquete",
+        "Rugby": "Rúgbi",
+        "Soccer": "Futebol"
+      }
+    },
+    "sports:73": {
+      "question": "O críquete é especialmente popular em qual país?",
+      "answers": {
+        "USA": "EUA",
+        "India": "Índia",
+        "Norway": "Noruega",
+        "Iceland": "Islândia"
+      }
+    },
+    "sports:74": {
+      "question": "O lançamento do dardo é realizado em qual esporte?",
+      "answers": {
+        "Gymnastics": "Ginástica",
+        "Athletics": "Atletismo",
+        "Cycling": "Ciclismo",
+        "Rowing": "Remo"
+      }
+    },
+    "sports:75": {
+      "question": "O salto em distância é uma prova de qual esporte?",
+      "answers": {
+        "Swimming": "Natação",
+        "Athletics": "Atletismo",
+        "Cycling": "Ciclismo",
+        "Gymnastics": "Ginástica"
+      }
+    },
+    "sports:76": {
+      "question": "A distância de sprint mais curta nas Olimpíadas é?",
+      "answers": {
+        "50 m": "50 m",
+        "100 m": "100 m",
+        "200 m": "200 m",
+        "400 m": "400 m"
+      }
+    },
+    "sports:77": {
+      "question": "Um cavalo com alças é usado em qual esporte?",
+      "answers": {
+        "Athletics": "Atletismo",
+        "Gymnastics": "Ginástica",
+        "Swimming": "Natação",
+        "Boxing": "Boxe"
+      }
+    },
+    "sports:78": {
+      "question": "'Slalom' é uma prova de qual esporte?",
+      "answers": {
+        "Swimming": "Natação",
+        "Skiing": "Esqui",
+        "Cycling": "Ciclismo",
+        "Boxing": "Boxe"
+      }
+    },
+    "sports:79": {
+      "question": "Qual tipo de esporte normalmente é esqui?",
+      "answers": {
+        "Water": "Água",
+        "Winter": "Inverno",
+        "Desert": "Deserto",
+        "Indoor": "Interior"
+      }
+    },
+    "sports:80": {
+      "question": "A patinação de velocidade acontece em?",
+      "answers": {
+        "Grass": "Grama",
+        "Ice": "Gelo",
+        "Water": "Água",
+        "Sand": "Areia"
+      }
+    },
+    "sports:81": {
+      "question": "Qual esporte usa os termos 'strike' e 'spare'?",
+      "answers": {
+        "Bowling": "Boliche",
+        "Golf": "Golfe",
+        "Tennis": "Tênis",
+        "Cricket": "Críquete"
+      }
+    },
+    "sports:82": {
+      "question": "O intervalo máximo na sinuca é?",
+      "answers": {
+        "100": "100",
+        "147": "147",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:83": {
+      "question": "A pontuação máxima com três dardos é?",
+      "answers": {
+        "120": "120",
+        "150": "150",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:84": {
+      "question": "Um 'pelotão' é um grupo de cavaleiros que praticam qual esporte?",
+      "answers": {
+        "Cycling": "Ciclismo",
+        "Swimming": "Natação",
+        "Boxing": "Boxe",
+        "Golf": "Golfe"
+      }
+    },
+    "sports:85": {
+      "question": "O Tour de France acontece principalmente em?",
+      "answers": {
+        "Italy": "Itália",
+        "Spain": "Espanha",
+        "France": "França",
+        "Belgium": "Bélgica"
+      }
+    },
+    "sports:86": {
+      "question": "A Copa do Mundo FIFA 2022 foi organizada por?",
+      "answers": {
+        "Russia": "Rússia",
+        "Qatar": "Catar",
+        "Brazil": "Brasil",
+        "USA": "EUA"
+      }
+    },
+    "sports:87": {
+      "question": "O troféu da Copa do Mundo FIFA é concedido por?",
+      "answers": {
+        "UEFA": "UEFA",
+        "FIFA": "FIFA",
+        "NBA": "NBA",
+        "IOC": "COI"
+      }
+    },
+    "sports:88": {
+      "question": "Um pênalti no futebol é cobrado de cerca de?",
+      "answers": {
+        "11 m": "11 m",
+        "20 m": "20 m",
+        "5 m": "5m",
+        "30 m": "30 m"
+      }
+    },
+    "sports:89": {
+      "question": "Quantos jogadores iniciam em um campo de futebol no total (ambas as equipes)?",
+      "answers": {
+        "18": "18",
+        "20": "20",
+        "22": "22",
+        "24": "24"
+      }
+    },
+    "sports:90": {
+      "question": "Qual esporte apresenta 'amor', 'deuce' e 'ace'?",
+      "answers": {
+        "Golf": "Golfe",
+        "Tennis": "Tênis",
+        "Cricket": "Críquete",
+        "Rugby": "Rúgbi"
+      }
+    },
+    "sports:91": {
+      "question": "O quarto Grand Slam de tênis ao lado de Wimbledon, Aberto dos Estados Unidos e Aberto da França é o?",
+      "answers": {
+        "Italian Open": "Aberto da Itália",
+        "Australian Open": "Aberto da Austrália",
+        "Madrid Open": "Aberto de Madri",
+        "Dubai Open": "Aberto de Dubai"
+      }
+    },
+    "sports:92": {
+      "question": "A patinação artística é destaque em quais Olimpíadas?",
+      "answers": {
+        "Summer": "Verão",
+        "Winter": "Inverno",
+        "Both equally": "Ambos igualmente",
+        "Neither": "Nenhum dos dois"
+      }
+    },
+    "sports:93": {
+      "question": "Quantos jogadores estão em campo em um time de beisebol?",
+      "answers": {
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11"
+      }
+    },
+    "sports:94": {
+      "question": "Os Jogos Olímpicos de Verão de 2008 foram organizados por?",
+      "answers": {
+        "London": "Londres",
+        "Beijing": "Pequim",
+        "Athens": "Atenas",
+        "Sydney": "Sidney"
+      }
+    },
+    "sports:95": {
+      "question": "As corridas de remo acontecem em?",
+      "answers": {
+        "A track": "Uma faixa",
+        "Water": "Água",
+        "Ice": "Gelo",
+        "Grass": "Grama"
+      }
+    },
+    "sports:96": {
+      "question": "Qual esporte usa um 'caddie'?",
+      "answers": {
+        "Golf": "Golfe",
+        "Tennis": "Tênis",
+        "Boxing": "Boxe",
+        "Cycling": "Ciclismo"
+      }
+    },
+    "sports:97": {
+      "question": "O salto em altura e o salto com vara pertencem a qual esporte?",
+      "answers": {
+        "Gymnastics": "Ginástica",
+        "Athletics": "Atletismo",
+        "Swimming": "Natação",
+        "Cycling": "Ciclismo"
+      }
+    },
+    "sports:98": {
+      "question": "Qual país sediou os Jogos Olímpicos de Verão mais vezes?",
+      "answers": {
+        "France": "França",
+        "USA": "EUA",
+        "Greece": "Grécia",
+        "Japan": "Japão"
+      }
+    },
+    "sports:99": {
+      "question": "Os competidores de esgrima usam um?",
+      "answers": {
+        "Bat": "Morcego",
+        "Sword/blade": "Espada/lâmina",
+        "Racket": "Raquete",
+        "Club": "Clube"
+      }
+    },
+    "sports:100": {
+      "question": "Qual esporte é praticado em Roland Garros?",
+      "answers": {
+        "Golf": "Golfe",
+        "Tennis": "Tênis",
+        "Rugby": "Rúgbi",
+        "Cycling": "Ciclismo"
+      }
+    },
+    "sports:101": {
+      "question": "Um maratonista que ganha ouro ganha um?",
+      "answers": {
+        "Trophy only": "Apenas troféu",
+        "Gold medal": "Medalha de ouro",
+        "Cash prize only": "Prêmio somente em dinheiro",
+        "Belt": "Cinto"
+      }
+    },
+    "art:0": {
+      "question": "Quem pintou a Mona Lisa?",
+      "answers": {
+        "Van Gogh": "Van Gogh",
+        "Picasso": "Picasso",
+        "Leonardo da Vinci": "Leonardo da Vinci",
+        "Michelangelo": "Michelangelo"
+      }
+    },
+    "art:1": {
+      "question": "Quem pintou 'A Noite Estrelada'?",
+      "answers": {
+        "Monet": "Monet",
+        "Van Gogh": "Van Gogh",
+        "Dalí": "Dalí",
+        "Rembrandt": "Rembrandt"
+      }
+    },
+    "art:2": {
+      "question": "Em qual museu a Mona Lisa está exposta?",
+      "answers": {
+        "The Met": "O Encontro",
+        "Louvre": "Louvre",
+        "Prado": "Prado",
+        "Uffizi": "Galeria Uffizi"
+      }
+    },
+    "art:3": {
+      "question": "Qual artista ficou famoso por cortar parte de sua própria orelha?",
+      "answers": {
+        "Picasso": "Picasso",
+        "Van Gogh": "Van Gogh",
+        "Dalí": "Dalí",
+        "Monet": "Monet"
+      }
+    },
+    "art:4": {
+      "question": "Quem pintou o teto da Capela Sistina?",
+      "answers": {
+        "Raphael": "Rafael",
+        "Michelangelo": "Michelangelo",
+        "Da Vinci": "Da Vinci",
+        "Donatello": "Donatello"
+      }
+    },
+    "art:5": {
+      "question": "A qual movimento artístico Pablo Picasso está associado?",
+      "answers": {
+        "Impressionism": "Impressionismo",
+        "Cubism": "Cubismo",
+        "Surrealism": "Surrealismo",
+        "Baroque": "Barroco"
+      }
+    },
+    "art:6": {
+      "question": "Salvador Dalí é conhecido por qual estilo de arte?",
+      "answers": {
+        "Realism": "Realismo",
+        "Surrealism": "Surrealismo",
+        "Pop Art": "Arte Pop",
+        "Gothic": "Gótico"
+      }
+    },
+    "art:7": {
+      "question": "Quem pintou 'O Grito'?",
+      "answers": {
+        "Munch": "Mastigar",
+        "Klimt": "Klimt",
+        "Warhol": "Warhol",
+        "Cézanne": "Cézanne"
+      }
+    },
+    "art:8": {
+      "question": "Qual artista é famoso por pintar latas de sopa Campbell's?",
+      "answers": {
+        "Warhol": "Warhol",
+        "Pollock": "Pollock",
+        "Rothko": "Rothko",
+        "Bacon": "Bacon"
+      }
+    },
+    "art:9": {
+      "question": "Quem pintou 'Garota com Brinco de Pérola'?",
+      "answers": {
+        "Vermeer": "Vermeer",
+        "Rembrandt": "Rembrandt",
+        "Rubens": "Rubens",
+        "Bosch": "Bosch"
+      }
+    },
+    "art:10": {
+      "question": "Misturar tinta azul e amarela resulta em qual cor?",
+      "answers": {
+        "Purple": "Roxo",
+        "Green": "Verde",
+        "Orange": "Laranja",
+        "Brown": "Marrom"
+      }
+    },
+    "art:11": {
+      "question": "Claude Monet foi uma figura importante de qual movimento?",
+      "answers": {
+        "Impressionism": "Impressionismo",
+        "Cubism": "Cubismo",
+        "Dadaism": "Dadaísmo",
+        "Realism": "Realismo"
+      }
+    },
+    "art:12": {
+      "question": "A estátua de mármore 'David' foi esculpida por?",
+      "answers": {
+        "Bernini": "Bernini",
+        "Michelangelo": "Michelangelo",
+        "Rodin": "Rodin",
+        "Donatello": "Donatello"
+      }
+    },
+    "art:13": {
+      "question": "Qual destas é uma cor primária?",
+      "answers": {
+        "Green": "Verde",
+        "Orange": "Laranja",
+        "Red": "Vermelho",
+        "Purple": "Roxo"
+      }
+    },
+    "art:14": {
+      "question": "'Guernica' é uma obra famosa de qual artista?",
+      "answers": {
+        "Dalí": "Dalí",
+        "Picasso": "Picasso",
+        "Miró": "Miró",
+        "Goya": "Goya"
+      }
+    },
+    "art:15": {
+      "question": "Pintura em gesso úmido é uma técnica chamada?",
+      "answers": {
+        "Fresco": "Afresco",
+        "Collage": "Colagem",
+        "Etching": "Gravura",
+        "Mosaic": "Mosaico"
+      }
+    },
+    "art:16": {
+      "question": "A escultura 'O Pensador' foi criada por?",
+      "answers": {
+        "Rodin": "Rodin",
+        "Michelangelo": "Michelangelo",
+        "Bernini": "Bernini",
+        "Calder": "Calder"
+      }
+    },
+    "art:17": {
+      "question": "Qual ferramenta é tradicionalmente usada para aplicar tinta a óleo?",
+      "answers": {
+        "Chisel": "Cinzel",
+        "Brush": "Pincel",
+        "Pen": "Caneta",
+        "Roller": "Rolo"
+      }
+    },
+    "art:18": {
+      "question": "'Girassóis' é uma famosa série de pinturas de?",
+      "answers": {
+        "Monet": "Monet",
+        "Van Gogh": "Van Gogh",
+        "Cézanne": "Cézanne",
+        "Gauguin": "Gauguin"
+      }
+    },
+    "art:19": {
+      "question": "O mural da 'Última Ceia' foi pintado por?",
+      "answers": {
+        "Raphael": "Rafael",
+        "Leonardo da Vinci": "Leonardo da Vinci",
+        "Caravaggio": "Caravaggio",
+        "Titian": "Ticiano"
+      }
+    },
+    "art:20": {
+      "question": "Qual artista é famoso pelas pinturas 'gotejantes'?",
+      "answers": {
+        "Jackson Pollock": "Jackson Pollock",
+        "Rothko": "Rothko",
+        "Warhol": "Warhol",
+        "Dalí": "Dalí"
+      }
+    },
+    "art:21": {
+      "question": "'A Persistência da Memória' (relógios derretendo) já passou?",
+      "answers": {
+        "Magritte": "Magritte",
+        "Dalí": "Dalí",
+        "Miró": "Miró",
+        "Ernst": "Ernesto"
+      }
+    },
+    "art:22": {
+      "question": "Frida Kahlo é mais conhecida por ela?",
+      "answers": {
+        "Landscapes": "Paisagens",
+        "Self-portraits": "Autorretratos",
+        "Sculptures": "Esculturas",
+        "Murals only": "Somente murais"
+      }
+    },
+    "art:23": {
+      "question": "A Estátua da Liberdade foi um presente de?",
+      "answers": {
+        "Britain": "Grã-Bretanha",
+        "France": "França",
+        "Spain": "Espanha",
+        "Italy": "Itália"
+      }
+    },
+    "art:24": {
+      "question": "Misturar tinta vermelha e amarela faz?",
+      "answers": {
+        "Green": "Verde",
+        "Orange": "Laranja",
+        "Purple": "Roxo",
+        "Brown": "Marrom"
+      }
+    },
+    "art:25": {
+      "question": "Misturar tinta vermelha e azul faz?",
+      "answers": {
+        "Green": "Verde",
+        "Purple": "Roxo",
+        "Orange": "Laranja",
+        "Brown": "Marrom"
+      }
+    },
+    "art:26": {
+      "question": "As três cores primárias de tinta são vermelho, amarelo e?",
+      "answers": {
+        "Green": "Verde",
+        "Blue": "Azul",
+        "Orange": "Laranja",
+        "Purple": "Roxo"
+      }
+    },
+    "art:27": {
+      "question": "Qual artista é famoso por pintar nenúfares?",
+      "answers": {
+        "Monet": "Monet",
+        "Manet": "Manet",
+        "Degas": "Desgaseificar",
+        "Renoir": "Renoir"
+      }
+    },
+    "art:28": {
+      "question": "A famosa estátua de Florença de Michelangelo retrata?",
+      "answers": {
+        "Caesar": "César",
+        "David": "David",
+        "Apollo": "Apolo",
+        "Hercules": "Hércules"
+      }
+    },
+    "art:29": {
+      "question": "Chama-se a arte da bela caligrafia?",
+      "answers": {
+        "Origami": "Origami",
+        "Calligraphy": "Caligrafia",
+        "Etching": "Gravura",
+        "Collage": "Colagem"
+      }
+    },
+    "art:30": {
+      "question": "Uma pintura representando uma pessoa é um?",
+      "answers": {
+        "Landscape": "Paisagem",
+        "Portrait": "Retrato",
+        "Still life": "Natureza morta",
+        "Mural": "Mural"
+      }
+    },
+    "art:31": {
+      "question": "Uma pintura de frutas ou objetos é uma?",
+      "answers": {
+        "Portrait": "Retrato",
+        "Still life": "Natureza morta",
+        "Landscape": "Paisagem",
+        "Mural": "Mural"
+      }
+    },
+    "art:32": {
+      "question": "As estátuas clássicas são tradicionalmente esculpidas?",
+      "answers": {
+        "Marble": "Mármore",
+        "Plastic": "Plástico",
+        "Paper": "Artigo",
+        "Glass": "Vidro"
+      }
+    },
+    "art:33": {
+      "question": "Andy Warhol foi líder de qual movimento?",
+      "answers": {
+        "Pop Art": "Arte Pop",
+        "Cubism": "Cubismo",
+        "Baroque": "Barroco",
+        "Gothic": "Gótico"
+      }
+    },
+    "art:34": {
+      "question": "Vincent van Gogh era de qual país?",
+      "answers": {
+        "France": "França",
+        "Netherlands": "Holanda",
+        "Italy": "Itália",
+        "Spain": "Espanha"
+      }
+    },
+    "art:35": {
+      "question": "Pablo Picasso era de qual país?",
+      "answers": {
+        "Italy": "Itália",
+        "Spain": "Espanha",
+        "France": "França",
+        "Portugal": "Portugal"
+      }
+    },
+    "art:36": {
+      "question": "Leonardo da Vinci era de qual país?",
+      "answers": {
+        "France": "França",
+        "Italy": "Itália",
+        "Spain": "Espanha",
+        "Greece": "Grécia"
+      }
+    },
+    "art:37": {
+      "question": "O museu do Louvre está localizado em qual cidade?",
+      "answers": {
+        "Rome": "Roma",
+        "Paris": "Paris",
+        "Madrid": "Madri",
+        "London": "Londres"
+      }
+    },
+    "art:38": {
+      "question": "Chama-se colar materiais em uma superfície para fazer arte?",
+      "answers": {
+        "Fresco": "Afresco",
+        "Collage": "Colagem",
+        "Etching": "Gravura",
+        "Casting": "Elenco"
+      }
+    },
+    "art:39": {
+      "question": "O impressionismo começou em que país?",
+      "answers": {
+        "Italy": "Itália",
+        "France": "França",
+        "Germany": "Alemanha",
+        "Spain": "Espanha"
+      }
+    },
+    "art:40": {
+      "question": "Qual NÃO é uma cor primária de tinta?",
+      "answers": {
+        "Red": "Vermelho",
+        "Blue": "Azul",
+        "Yellow": "Amarelo",
+        "Green": "Verde"
+      }
+    },
+    "art:41": {
+      "question": "O teto mais famoso de Michelangelo fica em qual capela?",
+      "answers": {
+        "Sistine Chapel": "Capela Sistina",
+        "King's Chapel": "Capela do Rei",
+        "St Paul's": "São Paulo",
+        "Notre-Dame": "Notre Dame"
+      }
+    },
+    "art:42": {
+      "question": "Qual artista teve um 'Período Azul'?",
+      "answers": {
+        "Picasso": "Picasso",
+        "Monet": "Monet",
+        "Rembrandt": "Rembrandt",
+        "Turner": "Turner"
+      }
+    },
+    "art:43": {
+      "question": "Rembrandt foi um mestre pintor de que país?",
+      "answers": {
+        "Netherlands": "Holanda",
+        "France": "França",
+        "Italy": "Itália",
+        "England": "Inglaterra"
+      }
+    },
+    "art:44": {
+      "question": "'The Night Watch' foi pintado por?",
+      "answers": {
+        "Vermeer": "Vermeer",
+        "Rembrandt": "Rembrandt",
+        "Rubens": "Rubens",
+        "Hals": "Hals"
+      }
+    },
+    "art:45": {
+      "question": "Pintura, escultura e desenho são tipos de?",
+      "answers": {
+        "Music": "Música",
+        "Visual arts": "Artes visuais",
+        "Literature": "Literatura",
+        "Dance": "Dança"
+      }
+    },
+    "art:46": {
+      "question": "Aquarela é um tipo de?",
+      "answers": {
+        "Sculpture": "Escultura",
+        "Paint": "Pintar",
+        "Camera": "Câmera",
+        "Clay": "Argila"
+      }
+    },
+    "art:47": {
+      "question": "Um 'cavalete' está acostumado?",
+      "answers": {
+        "Mix clay": "Misture argila",
+        "Hold a canvas while painting": "Segure uma tela enquanto pinta",
+        "Cut marble": "Cortar mármore",
+        "Frame photos": "Fotos emolduradas"
+      }
+    },
+    "art:48": {
+      "question": "A Mona Lisa é famosa por seu mistério?",
+      "answers": {
+        "Hat": "Chapéu",
+        "Smile": "Sorriso",
+        "Dress": "Vestido",
+        "Crown": "Coroa"
+      }
+    },
+    "art:49": {
+      "question": "O artista pelo qual Banksy é conhecido?",
+      "answers": {
+        "Classical portraits": "Retratos clássicos",
+        "Street art": "Arte de rua",
+        "Marble statues": "Estátuas de mármore",
+        "Frescoes": "Afrescos"
+      }
+    },
+    "art:50": {
+      "question": "As cores primárias da luz são vermelho, verde e?",
+      "answers": {
+        "Yellow": "Amarelo",
+        "Blue": "Azul",
+        "Purple": "Roxo",
+        "White": "Branco"
+      }
+    },
+    "art:51": {
+      "question": "O cubismo representa sujeitos usando?",
+      "answers": {
+        "Realistic detail": "Detalhe realista",
+        "Geometric shapes": "Formas geométricas",
+        "Only circles": "Somente círculos",
+        "Photographs": "Fotografias"
+      }
+    },
+    "art:52": {
+      "question": "Um 'mural' é uma pintura feita em um?",
+      "answers": {
+        "Small canvas": "Tela pequena",
+        "Wall": "Parede",
+        "Plate": "Placa",
+        "Paper": "Artigo"
+      }
+    },
+    "art:53": {
+      "question": "Quem pintou 'O Nascimento de Vênus'?",
+      "answers": {
+        "Botticelli": "Botticelli",
+        "Raphael": "Rafael",
+        "Giotto": "Giotto",
+        "Titian": "Ticiano"
+      }
+    },
+    "art:54": {
+      "question": "O período da arte renascentista começou em?",
+      "answers": {
+        "France": "França",
+        "Italy": "Itália",
+        "England": "Inglaterra",
+        "Germany": "Alemanha"
+      }
+    },
+    "art:55": {
+      "question": "Salvador Dalí era conhecido por seu distintivo?",
+      "answers": {
+        "Beard": "Barba",
+        "Moustache": "Bigode",
+        "Hat": "Chapéu",
+        "Glasses": "Óculos"
+      }
+    },
+    "art:56": {
+      "question": "A cerâmica é feita principalmente de?",
+      "answers": {
+        "Metal": "Metal",
+        "Clay": "Argila",
+        "Glass": "Vidro",
+        "Wood": "Madeira"
+      }
+    },
+    "art:57": {
+      "question": "Qual é considerada uma cor quente?",
+      "answers": {
+        "Blue": "Azul",
+        "Red": "Vermelho",
+        "Green": "Verde",
+        "Purple": "Roxo"
+      }
+    },
+    "art:58": {
+      "question": "Qual é considerada uma cor fria?",
+      "answers": {
+        "Red": "Vermelho",
+        "Orange": "Laranja",
+        "Blue": "Azul",
+        "Yellow": "Amarelo"
+      }
+    },
+    "art:59": {
+      "question": "Qual artista é famoso por pintar bailarinas?",
+      "answers": {
+        "Degas": "Desgaseificar",
+        "Monet": "Monet",
+        "Cézanne": "Cézanne",
+        "Seurat": "Seurat"
+      }
+    },
+    "art:60": {
+      "question": "'Pontilhismo' (pintura com pontos) está vinculado?",
+      "answers": {
+        "Seurat": "Seurat",
+        "Van Gogh": "Van Gogh",
+        "Klimt": "Klimt",
+        "Munch": "Mastigar"
+      }
+    },
+    "art:61": {
+      "question": "'O Beijo' de Gustav Klimt usa muito?",
+      "answers": {
+        "Silver": "Prata",
+        "Gold": "Ouro",
+        "Blue": "Azul",
+        "Black": "Preto"
+      }
+    },
+    "art:62": {
+      "question": "Um esboço rápido geralmente é feito com um?",
+      "answers": {
+        "Chisel": "Cinzel",
+        "Pencil": "Lápis",
+        "Roller": "Rolo",
+        "Clay": "Argila"
+      }
+    },
+    "art:63": {
+      "question": "A arte abstrata geralmente NÃO tenta?",
+      "answers": {
+        "Use color": "Usar cor",
+        "Represent reality exactly": "Representa exatamente a realidade",
+        "Use shapes": "Usar formas",
+        "Be creative": "Seja criativo"
+      }
+    },
+    "art:64": {
+      "question": "Qual cidade possui um museu dedicado a Van Gogh?",
+      "answers": {
+        "Amsterdam": "Amsterdã",
+        "London": "Londres",
+        "Rome": "Roma",
+        "Madrid": "Madri"
+      }
+    },
+    "art:65": {
+      "question": "Auguste Rodin foi principalmente um?",
+      "answers": {
+        "Painter": "Pintor",
+        "Sculptor": "Escultor",
+        "Photographer": "Fotógrafo",
+        "Architect": "Arquiteto"
+      }
+    },
+    "art:66": {
+      "question": "MoMA (Museu de Arte Moderna) está localizado em?",
+      "answers": {
+        "Paris": "Paris",
+        "New York": "Nova York",
+        "Rome": "Roma",
+        "Tokyo": "Tóquio"
+      }
+    },
+    "art:67": {
+      "question": "O Museu do Prado está localizado em?",
+      "answers": {
+        "Madrid": "Madri",
+        "Paris": "Paris",
+        "Rome": "Roma",
+        "London": "Londres"
+      }
+    },
+    "art:68": {
+      "question": "'Chiaroscuro' refere-se ao uso forte de?",
+      "answers": {
+        "Bright colors": "Cores brilhantes",
+        "Light and shadow": "Luz e sombra",
+        "Straight lines": "Linhas retas",
+        "Dots": "Pontos"
+      }
+    },
+    "art:69": {
+      "question": "Uma tela de pintura geralmente tem qual formato?",
+      "answers": {
+        "Round": "Rodada",
+        "Rectangular": "Retangular",
+        "Triangular": "Triangular",
+        "Star-shaped": "Em forma de estrela"
+      }
+    },
+    "art:70": {
+      "question": "Um autorretrato mostra?",
+      "answers": {
+        "The artist themselves": "O próprio artista",
+        "A landscape": "Uma paisagem",
+        "A building": "Um edifício",
+        "An animal": "Um animal"
+      }
+    },
+    "art:71": {
+      "question": "Michelangelo, Leonardo e Rafael pertencem ao?",
+      "answers": {
+        "Baroque": "Barroco",
+        "Renaissance": "Renascença",
+        "Modern era": "Era moderna",
+        "Gothic": "Gótico"
+      }
+    },
+    "art:72": {
+      "question": "O surrealismo costuma retratar?",
+      "answers": {
+        "Everyday realism": "Realismo cotidiano",
+        "Dreamlike, strange scenes": "Cenas estranhas e oníricas",
+        "Only portraits": "Somente retratos",
+        "Pure geometry": "Geometria pura"
+      }
+    },
+    "art:73": {
+      "question": "Que cor se obtém ao misturar vermelho e branco?",
+      "answers": {
+        "Blue": "Azul",
+        "Pink": "Rosa",
+        "Green": "Verde",
+        "Brown": "Marrom"
+      }
+    },
+    "art:74": {
+      "question": "Chama-se a famosa estátua de um homem pensante sentado?",
+      "answers": {
+        "The Dreamer": "O Sonhador",
+        "The Thinker": "O Pensador",
+        "The Watcher": "O Observador",
+        "The Sitter": "A babá"
+      }
+    },
+    "art:75": {
+      "question": "A fotografia como arte captura imagens usando um?",
+      "answers": {
+        "Brush": "Pincel",
+        "Camera": "Câmera",
+        "Chisel": "Cinzel",
+        "Loom": "Tear"
+      }
+    },
+    "art:76": {
+      "question": "'Vincent' é o primeiro nome de qual pintor?",
+      "answers": {
+        "Monet": "Monet",
+        "Van Gogh": "Van Gogh",
+        "Picasso": "Picasso",
+        "Dalí": "Dalí"
+      }
+    },
+    "art:77": {
+      "question": "A Galeria Uffizi está localizada em que país?",
+      "answers": {
+        "Italy": "Itália",
+        "France": "França",
+        "Spain": "Espanha",
+        "Greece": "Grécia"
+      }
+    },
+    "art:78": {
+      "question": "Origami é a arte de?",
+      "answers": {
+        "Paper folding": "Dobragem de papel",
+        "Metalwork": "Metalurgia",
+        "Glassblowing": "Sopro de vidro",
+        "Painting": "Pintura"
+      }
+    },
+    "art:79": {
+      "question": "Qual artista pintou muitos autorretratos ao longo de sua vida?",
+      "answers": {
+        "Rembrandt": "Rembrandt",
+        "Botticelli": "Botticelli",
+        "Raphael": "Rafael",
+        "Giotto": "Giotto"
+      }
+    },
+    "art:80": {
+      "question": "Uma 'paleta' está acostumada?",
+      "answers": {
+        "Hold and mix paints": "Segure e misture tintas",
+        "Cut wood": "Cortar madeira",
+        "Frame art": "Arte da moldura",
+        "Fire clay": "Argila de fogo"
+      }
+    },
+    "art:81": {
+      "question": "A Grande Onda de Kanagawa é um japonês famoso?",
+      "answers": {
+        "Sculpture": "Escultura",
+        "Woodblock print": "Impressão em xilogravura",
+        "Oil painting": "Pintura a óleo",
+        "Photograph": "Fotografia"
+      }
+    },
+    "art:82": {
+      "question": "Qual é um material de escultura comum?",
+      "answers": {
+        "Bronze": "Bronze",
+        "Watercolor": "Aquarela",
+        "Charcoal": "Carvão",
+        "Ink": "Tinta"
+      }
+    },
+    "art:83": {
+      "question": "O 'ponto de fuga' é usado em?",
+      "answers": {
+        "Music": "Música",
+        "Perspective drawing": "Desenho em perspectiva",
+        "Casting": "Elenco",
+        "Weaving": "Tecelagem"
+      }
+    },
+    "art:84": {
+      "question": "Leonardo da Vinci também era famoso como?",
+      "answers": {
+        "Athlete": "Atleta",
+        "Inventor": "Inventor",
+        "Singer": "Cantor",
+        "Sailor": "Marinheiro"
+      }
+    },
+    "art:85": {
+      "question": "Uma 'galeria' é um lugar para?",
+      "answers": {
+        "Store food": "Armazenar alimentos",
+        "Display artworks": "Exibir obras de arte",
+        "Repair cars": "Consertar carros",
+        "Grow plants": "Cultivar plantas"
+      }
+    },
+    "art:86": {
+      "question": "A arte barroca é conhecida por ser?",
+      "answers": {
+        "Minimal and plain": "Mínimo e simples",
+        "Dramatic and ornate": "Dramático e ornamentado",
+        "Black and white only": "Somente preto e branco",
+        "Purely geometric": "Puramente geométrico"
+      }
+    },
+    "art:87": {
+      "question": "Qual é uma casa de leilões de arte famosa?",
+      "answers": {
+        "Sotheby's": "Sotheby's",
+        "Nasdaq": "Nasdaq",
+        "Airbnb": "Airbnb",
+        "Netflix": "Netflix"
+      }
+    },
+    "art:88": {
+      "question": "A 'Vênus de Milo' é uma famosa antiga?",
+      "answers": {
+        "Painting": "Pintura",
+        "Statue": "Estátua",
+        "Vase": "Vaso",
+        "Mosaic": "Mosaico"
+      }
+    },
+    "art:89": {
+      "question": "A arte em vitrais é comumente encontrada em?",
+      "answers": {
+        "Cathedrals": "Catedrais",
+        "Kitchens": "Cozinhas",
+        "Garages": "Garagens",
+        "Stadiums": "Estádios"
+      }
+    },
+    "art:90": {
+      "question": "O carvão é normalmente usado para?",
+      "answers": {
+        "Painting walls": "Pintando paredes",
+        "Drawing/sketching": "Desenho/esboço",
+        "Carving marble": "Escultura em mármore",
+        "Printing": "Impressão"
+      }
+    },
+    "art:91": {
+      "question": "O Tate é um museu de arte em qual cidade?",
+      "answers": {
+        "Paris": "Paris",
+        "London": "Londres",
+        "Madrid": "Madri",
+        "Rome": "Roma"
+      }
+    },
+    "art:92": {
+      "question": "O que melhor descreve 'escultura'?",
+      "answers": {
+        "A 2D painting": "Uma pintura 2D",
+        "A 3D work of art": "Uma obra de arte 3D",
+        "A song": "Uma música",
+        "A poem": "Um poema"
+      }
+    },
+    "art:93": {
+      "question": "'Arte moderna' geralmente se refere aproximadamente à arte?",
+      "answers": {
+        "Ancient times": "Tempos antigos",
+        "The late 1800s onward": "Final de 1800 em diante",
+        "Medieval times": "Tempos medievais",
+        "Prehistory": "Pré-história"
+      }
+    },
+    "art:94": {
+      "question": "Qual artista está associado às pinturas do Taiti?",
+      "answers": {
+        "Gauguin": "Gauguin",
+        "Monet": "Monet",
+        "Rembrandt": "Rembrandt",
+        "Vermeer": "Vermeer"
+      }
+    },
+    "art:95": {
+      "question": "Um afresco é pintado?",
+      "answers": {
+        "Canvas": "Tela",
+        "Wet plaster": "Gesso úmido",
+        "Paper": "Artigo",
+        "Wood panel": "Painel de madeira"
+      }
+    },
+    "art:96": {
+      "question": "A Capela Sistina está localizada em?",
+      "answers": {
+        "Vatican City": "Cidade do Vaticano",
+        "Florence": "Florença",
+        "Venice": "Veneza",
+        "Naples": "Nápoles"
+      }
+    },
+    "art:97": {
+      "question": "Qual destes é um estilo de arte?",
+      "answers": {
+        "Impressionism": "Impressionismo",
+        "Photosynthesis": "Fotossíntese",
+        "Gravity": "Gravidade",
+        "Inflation": "Inflação"
+      }
+    },
+    "art:98": {
+      "question": "Uma pessoa que cria esculturas é um?",
+      "answers": {
+        "Painter": "Pintor",
+        "Sculptor": "Escultor",
+        "Novelist": "Romancista",
+        "Composer": "Compositor"
+      }
+    },
+    "art:99": {
+      "question": "Quem pintou 'Impression, Sunrise', que deu o nome de Impressionismo?",
+      "answers": {
+        "Monet": "Monet",
+        "Manet": "Manet",
+        "Renoir": "Renoir",
+        "Degas": "Desgaseificar"
+      }
+    },
+    "history:0": {
+      "question": "Em que ano terminou a Segunda Guerra Mundial?",
+      "answers": {
+        "1918": "1918",
+        "1943": "1943",
+        "1945": "1945",
+        "1950": "1950"
+      }
+    },
+    "history:1": {
+      "question": "Quem foi o primeiro presidente dos Estados Unidos?",
+      "answers": {
+        "Lincoln": "Lincoln",
+        "Washington": "Washington",
+        "Jefferson": "Jefferson",
+        "Adams": "Adams"
+      }
+    },
+    "history:2": {
+      "question": "As Grandes Pirâmides foram construídas por qual civilização antiga?",
+      "answers": {
+        "Romans": "Romanos",
+        "Greeks": "Gregos",
+        "Egyptians": "Egípcios",
+        "Mayans": "Maias"
+      }
+    },
+    "history:3": {
+      "question": "Em que ano caiu o Muro de Berlim?",
+      "answers": {
+        "1979": "1979",
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991"
+      }
+    },
+    "history:4": {
+      "question": "Qual filósofo foi aluno de Sócrates?",
+      "answers": {
+        "Aristotle": "Aristóteles",
+        "Plato": "Platão",
+        "Pythagoras": "Pitágoras",
+        "Homer": "Homero"
+      }
+    },
+    "history:5": {
+      "question": "Qual navio afundou em 1912 após atingir um iceberg?",
+      "answers": {
+        "Lusitania": "Lusitânia",
+        "Titanic": "Titânico",
+        "Bismarck": "Bismarck",
+        "Mayflower": "Flor de Maio"
+      }
+    },
+    "history:6": {
+      "question": "Quem chegou às Américas em 1492?",
+      "answers": {
+        "Magellan": "Magalhães",
+        "Columbus": "Colombo",
+        "Vespucci": "Vespúcio",
+        "Cook": "Cozinheiro"
+      }
+    },
+    "history:7": {
+      "question": "A Revolução Francesa começou em que ano?",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1804": "1804",
+        "1815": "1815"
+      }
+    },
+    "history:8": {
+      "question": "Qual império foi fundado por Genghis Khan?",
+      "answers": {
+        "Ottoman": "Otomano",
+        "Mongol": "Mongol",
+        "Persian": "Persa",
+        "Roman": "Romano"
+      }
+    },
+    "history:9": {
+      "question": "Quem liderou a Alemanha nazista durante a Segunda Guerra Mundial?",
+      "answers": {
+        "Mussolini": "Mussolini",
+        "Hitler": "Hitler",
+        "Stalin": "Stálin",
+        "Franco": "Franco"
+      }
+    },
+    "history:10": {
+      "question": "O Coliseu está localizado em qual cidade?",
+      "answers": {
+        "Athens": "Atenas",
+        "Rome": "Roma",
+        "Cairo": "Cairo",
+        "Istanbul": "Istambul"
+      }
+    },
+    "history:11": {
+      "question": "Qual rainha egípcia aliou-se a César e Marco Antônio?",
+      "answers": {
+        "Nefertiti": "Nefertite",
+        "Cleopatra": "Cleópatra",
+        "Hatshepsut": "Hatshepsut",
+        "Isis": "Ísis"
+      }
+    },
+    "history:12": {
+      "question": "A Guerra Fria foi principalmente entre os EUA e?",
+      "answers": {
+        "China": "China",
+        "USSR": "URSS",
+        "Germany": "Alemanha",
+        "Japan": "Japão"
+      }
+    },
+    "history:13": {
+      "question": "Em que ano os humanos pousaram pela primeira vez na Lua?",
+      "answers": {
+        "1959": "1959",
+        "1965": "1965",
+        "1969": "1969",
+        "1972": "1972"
+      }
+    },
+    "history:14": {
+      "question": "O Renascimento começou em que país?",
+      "answers": {
+        "France": "França",
+        "Italy": "Itália",
+        "England": "Inglaterra",
+        "Spain": "Espanha"
+      }
+    },
+    "history:15": {
+      "question": "A Guerra Civil Americana foi travada entre o Norte e o?",
+      "answers": {
+        "East": "Leste",
+        "South": "Sul",
+        "West": "Oeste",
+        "Midwest": "Centro-Oeste"
+      }
+    },
+    "history:16": {
+      "question": "Qual civilização antiga criou a democracia?",
+      "answers": {
+        "Rome": "Roma",
+        "Greece": "Grécia",
+        "Egypt": "Egito",
+        "Persia": "Pérsia"
+      }
+    },
+    "history:17": {
+      "question": "A impressora foi inventada por?",
+      "answers": {
+        "Newton": "Newton",
+        "Gutenberg": "Gutemberg",
+        "Edison": "Edison",
+        "Franklin": "Franklin"
+      }
+    },
+    "history:18": {
+      "question": "A antiga Grande Muralha foi construída em que país?",
+      "answers": {
+        "India": "Índia",
+        "China": "China",
+        "Japan": "Japão",
+        "Egypt": "Egito"
+      }
+    },
+    "history:19": {
+      "question": "Qual rainha egípcia tem um busto famoso exibido em Berlim?",
+      "answers": {
+        "Cleopatra": "Cleópatra",
+        "Nefertiti": "Nefertite",
+        "Hatshepsut": "Hatshepsut",
+        "Isis": "Ísis"
+      }
+    },
+    "history:20": {
+      "question": "A Primeira Guerra Mundial começou em que ano?",
+      "answers": {
+        "1912": "1912",
+        "1914": "1914",
+        "1918": "1918",
+        "1920": "1920"
+      }
+    },
+    "history:21": {
+      "question": "A Primeira Guerra Mundial terminou em que ano?",
+      "answers": {
+        "1916": "1916",
+        "1918": "1918",
+        "1920": "1920",
+        "1922": "1922"
+      }
+    },
+    "history:22": {
+      "question": "O Império Romano estava centrado em qual cidade?",
+      "answers": {
+        "Athens": "Atenas",
+        "Rome": "Roma",
+        "Cairo": "Cairo",
+        "Carthage": "Cartago"
+      }
+    },
+    "history:23": {
+      "question": "Júlio César foi um líder da antiguidade?",
+      "answers": {
+        "Greece": "Grécia",
+        "Rome": "Roma",
+        "Egypt": "Egito",
+        "Persia": "Pérsia"
+      }
+    },
+    "history:24": {
+      "question": "A Declaração de Independência dos EUA foi assinada?",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1800": "1800",
+        "1812": "1812"
+      }
+    },
+    "history:25": {
+      "question": "Napoleão Bonaparte foi líder de qual país?",
+      "answers": {
+        "Spain": "Espanha",
+        "France": "França",
+        "Italy": "Itália",
+        "Russia": "Rússia"
+      }
+    },
+    "history:26": {
+      "question": "Napoleão foi notoriamente derrotado na Batalha de?",
+      "answers": {
+        "Hastings": "Hastings",
+        "Waterloo": "Waterloo",
+        "Gettysburg": "Gettysburg",
+        "Verdun": "Verdun"
+      }
+    },
+    "history:27": {
+      "question": "O Muro de Berlim dividiu qual cidade?",
+      "answers": {
+        "Munich": "Munique",
+        "Berlin": "Berlim",
+        "Frankfurt": "Frankfurt",
+        "Vienna": "Viena"
+      }
+    },
+    "history:28": {
+      "question": "Qual civilização construiu Machu Picchu?",
+      "answers": {
+        "Aztec": "Asteca",
+        "Inca": "Inca",
+        "Maya": "Maia",
+        "Olmec": "Olmeca"
+      }
+    },
+    "history:29": {
+      "question": "As pirâmides de Gizé estão localizadas em?",
+      "answers": {
+        "Iraq": "Iraque",
+        "Egypt": "Egito",
+        "Sudan": "Sudão",
+        "Libya": "Líbia"
+      }
+    },
+    "history:30": {
+      "question": "Quem foi o primeiro-ministro britânico durante a maior parte da Segunda Guerra Mundial?",
+      "answers": {
+        "Chamberlain": "Camareiro",
+        "Churchill": "Churchill",
+        "Attlee": "Jogador",
+        "Thatcher": "Thatcher"
+      }
+    },
+    "history:31": {
+      "question": "O Titanic estava navegando para qual cidade quando afundou?",
+      "answers": {
+        "London": "Londres",
+        "New York": "Nova York",
+        "Boston": "Boston",
+        "Halifax": "Halifax"
+      }
+    },
+    "history:32": {
+      "question": "Qual explorador liderou a primeira circunavegação do globo?",
+      "answers": {
+        "Columbus": "Colombo",
+        "Magellan": "Magalhães",
+        "Da Gama": "Da Gama",
+        "Cook": "Cozinheiro"
+      }
+    },
+    "history:33": {
+      "question": "A palavra 'Renascença' significa literalmente?",
+      "answers": {
+        "Rebirth": "Renascimento",
+        "Revolution": "Revolução",
+        "Reform": "Reforma",
+        "Return": "Retorno"
+      }
+    },
+    "history:34": {
+      "question": "Os antigos egípcios escreviam usando?",
+      "answers": {
+        "Latin": "Latim",
+        "Hieroglyphics": "Hieróglifos",
+        "Cyrillic": "Cirílico",
+        "Runes": "Runas"
+      }
+    },
+    "history:35": {
+      "question": "O Império Otomano estava centrado nos dias modernos?",
+      "answers": {
+        "Egypt": "Egito",
+        "Turkey": "Turquia",
+        "Iran": "Irã",
+        "Greece": "Grécia"
+      }
+    },
+    "history:36": {
+      "question": "Constantinopla é o antigo nome de qual cidade?",
+      "answers": {
+        "Athens": "Atenas",
+        "Istanbul": "Istambul",
+        "Rome": "Roma",
+        "Cairo": "Cairo"
+      }
+    },
+    "history:37": {
+      "question": "Qual documento limitou o poder do rei inglês em 1215?",
+      "answers": {
+        "Magna Carta": "Carta Magna",
+        "Bill of Rights": "Declaração de Direitos",
+        "Constitution": "Constituição",
+        "Domesday Book": "Livro Domesday"
+      }
+    },
+    "history:38": {
+      "question": "A Revolução Industrial começou em que país?",
+      "answers": {
+        "USA": "EUA",
+        "Britain": "Grã-Bretanha",
+        "France": "França",
+        "Germany": "Alemanha"
+      }
+    },
+    "history:39": {
+      "question": "Qual presidente dos EUA foi assassinado em 1963?",
+      "answers": {
+        "Lincoln": "Lincoln",
+        "Kennedy": "Kennedy",
+        "Roosevelt": "Roosevelt",
+        "Nixon": "Nixon"
+      }
+    },
+    "history:40": {
+      "question": "Qual presidente dos EUA aparece na nota de US$ 1?",
+      "answers": {
+        "Lincoln": "Lincoln",
+        "Washington": "Washington",
+        "Jefferson": "Jefferson",
+        "Franklin": "Franklin"
+      }
+    },
+    "history:41": {
+      "question": "Quem liderou o movimento de independência não violento da Índia?",
+      "answers": {
+        "Nehru": "Nehru",
+        "Gandhi": "Gandhi",
+        "Bose": "Bose",
+        "Patel": "Patel"
+      }
+    },
+    "history:42": {
+      "question": "O Muro de Berlim foi construído de que lado?",
+      "answers": {
+        "West Germany": "Alemanha Ocidental",
+        "East Germany": "Alemanha Oriental",
+        "France": "França",
+        "USA": "EUA"
+      }
+    },
+    "history:43": {
+      "question": "Qual civilização antiga é famosa pela mumificação?",
+      "answers": {
+        "Greek": "Grego",
+        "Egyptian": "Egípcio",
+        "Roman": "Romano",
+        "Persian": "Persa"
+      }
+    },
+    "history:44": {
+      "question": "A Peste Negra foi devastadora?",
+      "answers": {
+        "War": "Guerra",
+        "Plague": "Praga",
+        "Famine": "Fome",
+        "Earthquake": "Terremoto"
+      }
+    },
+    "history:45": {
+      "question": "A Reforma Protestante foi iniciada por?",
+      "answers": {
+        "Martin Luther": "Martinho Lutero",
+        "Henry VIII": "Henrique VIII",
+        "Calvin": "Calvino",
+        "Pope Leo": "Papa Leão"
+      }
+    },
+    "history:46": {
+      "question": "Os antigos Jogos Olímpicos tiveram origem?",
+      "answers": {
+        "Rome": "Roma",
+        "Greece": "Grécia",
+        "Egypt": "Egito",
+        "Persia": "Pérsia"
+      }
+    },
+    "history:47": {
+      "question": "Quem foi o primeiro humano no espaço?",
+      "answers": {
+        "Armstrong": "Armstrong",
+        "Gagarin": "Gagarin",
+        "Glenn": "Glenn",
+        "Aldrin": "Aldrin"
+      }
+    },
+    "history:48": {
+      "question": "Neil Armstrong foi a primeira pessoa a fazer isso?",
+      "answers": {
+        "Fly a plane": "Pilotar um avião",
+        "Walk on the Moon": "Caminhada na Lua",
+        "Reach the South Pole": "Alcance o Pólo Sul",
+        "Climb Everest": "Escalar o Everest"
+      }
+    },
+    "history:49": {
+      "question": "A União Soviética (URSS) foi dissolvida em que ano?",
+      "answers": {
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991",
+        "1993": "1993"
+      }
+    },
+    "history:50": {
+      "question": "A Declaração de Independência dos EUA foi escrita principalmente por?",
+      "answers": {
+        "Washington": "Washington",
+        "Jefferson": "Jefferson",
+        "Franklin": "Franklin",
+        "Adams": "Adams"
+      }
+    },
+    "history:51": {
+      "question": "Qual navio trouxe os peregrinos para a América em 1620?",
+      "answers": {
+        "Mayflower": "Flor de Maio",
+        "Titanic": "Titânico",
+        "Santa Maria": "Santa Maria",
+        "Beagle": "Beagle"
+      }
+    },
+    "history:52": {
+      "question": "Cristóvão Colombo navegou sob a bandeira de?",
+      "answers": {
+        "Portugal": "Portugal",
+        "Spain": "Espanha",
+        "Italy": "Itália",
+        "England": "Inglaterra"
+      }
+    },
+    "history:53": {
+      "question": "A Revolução Francesa começou com a tomada do?",
+      "answers": {
+        "Louvre": "Louvre",
+        "Bastille": "Bastilha",
+        "Versailles": "Versalhes",
+        "Notre-Dame": "Notre Dame"
+      }
+    },
+    "history:54": {
+      "question": "Que maravilha antiga ainda existe no Egito?",
+      "answers": {
+        "Great Pyramid of Giza": "Grande Pirâmide de Gizé",
+        "Colosseum": "Coliseu",
+        "Parthenon": "Partenon",
+        "Taj Mahal": "Taj Mahal"
+      }
+    },
+    "history:55": {
+      "question": "O Taj Mahal está localizado em que país?",
+      "answers": {
+        "Pakistan": "Paquistão",
+        "India": "Índia",
+        "Iran": "Irã",
+        "Turkey": "Turquia"
+      }
+    },
+    "history:56": {
+      "question": "Quem liderou a União Soviética durante a Segunda Guerra Mundial?",
+      "answers": {
+        "Lenin": "Lênin",
+        "Stalin": "Stálin",
+        "Khrushchev": "Khrushchev",
+        "Gorbachev": "Gorbachev"
+      }
+    },
+    "history:57": {
+      "question": "Na Segunda Guerra Mundial, as bombas atômicas atingiram Hiroshima e?",
+      "answers": {
+        "Tokyo": "Tóquio",
+        "Nagasaki": "Nagasaki",
+        "Osaka": "Osaca",
+        "Kyoto": "Quioto"
+      }
+    },
+    "history:58": {
+      "question": "A Liga das Nações foi uma precursora da?",
+      "answers": {
+        "EU": "UE",
+        "United Nations": "Nações Unidas",
+        "NATO": "OTAN",
+        "WHO": "QUEM"
+      }
+    },
+    "history:59": {
+      "question": "As Nações Unidas foram fundadas em que ano?",
+      "answers": {
+        "1919": "1919",
+        "1945": "1945",
+        "1950": "1950",
+        "1960": "1960"
+      }
+    },
+    "history:60": {
+      "question": "Alexandre, o Grande, veio de qual reino antigo?",
+      "answers": {
+        "Rome": "Roma",
+        "Macedonia": "Macedônia",
+        "Egypt": "Egito",
+        "Persia": "Pérsia"
+      }
+    },
+    "history:61": {
+      "question": "Qual país foi o lar da antiga Esparta?",
+      "answers": {
+        "Italy": "Itália",
+        "Greece": "Grécia",
+        "Egypt": "Egito",
+        "Turkey": "Turquia"
+      }
+    },
+    "history:62": {
+      "question": "A Guerra Fria terminou por volta de que ano?",
+      "answers": {
+        "1965": "1965",
+        "1975": "1975",
+        "1991": "1991",
+        "2001": "2001"
+      }
+    },
+    "history:63": {
+      "question": "Os irmãos Wright são responsáveis pela invenção do?",
+      "answers": {
+        "Car": "Carro",
+        "Airplane": "Avião",
+        "Telephone": "Telefone",
+        "Radio": "Rádio"
+      }
+    },
+    "history:64": {
+      "question": "Os desembarques do Dia D da Segunda Guerra Mundial ocorreram em?",
+      "answers": {
+        "Italy": "Itália",
+        "Normandy, France": "Normandia, França",
+        "Germany": "Alemanha",
+        "Poland": "Polônia"
+      }
+    },
+    "history:65": {
+      "question": "A Guerra dos Cem Anos foi principalmente entre a Inglaterra e?",
+      "answers": {
+        "Spain": "Espanha",
+        "France": "França",
+        "Germany": "Alemanha",
+        "Italy": "Itália"
+      }
+    },
+    "history:66": {
+      "question": "Quem foi a primeira-ministra da 'Dama de Ferro' do Reino Unido na década de 1980?",
+      "answers": {
+        "Elizabeth II": "Isabel II",
+        "Thatcher": "Thatcher",
+        "May": "maio",
+        "Merkel": "Merkel"
+      }
+    },
+    "history:67": {
+      "question": "A antiga cidade de Pompéia foi destruída por?",
+      "answers": {
+        "A flood": "Uma inundação",
+        "A volcano (Vesuvius)": "Um vulcão (Vesúvio)",
+        "An earthquake": "Um terremoto",
+        "A war": "Uma guerra"
+      }
+    },
+    "history:68": {
+      "question": "Qual país antigo foi governado por faraós?",
+      "answers": {
+        "Greece": "Grécia",
+        "Egypt": "Egito",
+        "Rome": "Roma",
+        "Persia": "Pérsia"
+      }
+    },
+    "history:69": {
+      "question": "Qual enfermeira famosa serviu na Guerra da Crimeia?",
+      "answers": {
+        "Curie": "Curie",
+        "Nightingale": "Rouxinol",
+        "Earhart": "Earhart",
+        "Keller": "Keller"
+      }
+    },
+    "history:70": {
+      "question": "O Renascimento está mais associado a qual cidade italiana?",
+      "answers": {
+        "Milan": "Milão",
+        "Florence": "Florença",
+        "Naples": "Nápoles",
+        "Turin": "Turim"
+      }
+    },
+    "history:71": {
+      "question": "Quem foi a primeira mulher a ganhar um Prêmio Nobel?",
+      "answers": {
+        "Curie": "Curie",
+        "Franklin": "Franklin",
+        "Meitner": "Meitner",
+        "Lovelace": "Amor"
+      }
+    },
+    "history:72": {
+      "question": "De onde vieram originalmente os Vikings?",
+      "answers": {
+        "Scandinavia": "Escandinávia",
+        "Spain": "Espanha",
+        "Greece": "Grécia",
+        "Egypt": "Egito"
+      }
+    },
+    "history:73": {
+      "question": "O Grande Incêndio de Londres ocorreu em que ano?",
+      "answers": {
+        "1620": "1620",
+        "1666": "1666",
+        "1700": "1700",
+        "1750": "1750"
+      }
+    },
+    "history:74": {
+      "question": "A Queda de Wall Street que deu início à Grande Depressão ocorreu?",
+      "answers": {
+        "1919": "1919",
+        "1929": "1929",
+        "1939": "1939",
+        "1949": "1949"
+      }
+    },
+    "history:75": {
+      "question": "Quem introduziu as reformas soviéticas 'glasnost' e 'perestroika'?",
+      "answers": {
+        "Stalin": "Stálin",
+        "Gorbachev": "Gorbachev",
+        "Lenin": "Lênin",
+        "Putin": "Putin"
+      }
+    },
+    "history:76": {
+      "question": "A Carta Magna foi assinada em que país?",
+      "answers": {
+        "France": "França",
+        "England": "Inglaterra",
+        "Italy": "Itália",
+        "Spain": "Espanha"
+      }
+    },
+    "history:77": {
+      "question": "Qual explorador chegou à Índia por mar em 1498?",
+      "answers": {
+        "Columbus": "Colombo",
+        "Vasco da Gama": "Vasco da Gama",
+        "Magellan": "Magalhães",
+        "Cook": "Cozinheiro"
+      }
+    },
+    "history:78": {
+      "question": "Os antigos maias viviam principalmente em que região?",
+      "answers": {
+        "Central America": "América Central",
+        "North Africa": "Norte da África",
+        "Southeast Asia": "Sudeste Asiático",
+        "Northern Europe": "Norte da Europa"
+      }
+    },
+    "history:79": {
+      "question": "A civilização asteca estava localizada principalmente nos dias modernos?",
+      "answers": {
+        "Peru": "Peru",
+        "Mexico": "México",
+        "Brazil": "Brasil",
+        "Chile": "Chile"
+      }
+    },
+    "history:80": {
+      "question": "A famosa corrida espacial da Guerra Fria terminou com um pouso no?",
+      "answers": {
+        "Sun": "Dom",
+        "Moon": "Lua",
+        "Mars": "Marte",
+        "Venus": "Vênus"
+      }
+    },
+    "history:81": {
+      "question": "A Torre Eiffel foi construída para a Feira Mundial de 1889 em?",
+      "answers": {
+        "London": "Londres",
+        "Paris": "Paris",
+        "Rome": "Roma",
+        "Berlin": "Berlim"
+      }
+    },
+    "history:82": {
+      "question": "Quem escreveu as '95 Teses'?",
+      "answers": {
+        "Calvin": "Calvino",
+        "Martin Luther": "Martinho Lutero",
+        "Erasmus": "Erasmo",
+        "Henry VIII": "Henrique VIII"
+      }
+    },
+    "history:83": {
+      "question": "Que guerra (1914-1918) caracterizou uma guerra de trincheiras generalizada?",
+      "answers": {
+        "WWII": "Segunda Guerra Mundial",
+        "WWI": "Primeira Guerra Mundial",
+        "Cold War": "Guerra Fria",
+        "Napoleonic Wars": "Guerras Napoleônicas"
+      }
+    },
+    "history:84": {
+      "question": "A Guerra Civil Americana terminou em que ano?",
+      "answers": {
+        "1776": "1776",
+        "1812": "1812",
+        "1865": "1865",
+        "1901": "1901"
+      }
+    },
+    "history:85": {
+      "question": "Quem foi o primeiro imperador de Roma?",
+      "answers": {
+        "Julius Caesar": "Júlio César",
+        "Augustus": "Augusto",
+        "Nero": "Nero",
+        "Constantine": "Constantino"
+      }
+    },
+    "history:86": {
+      "question": "A Rota da Seda conectou a Europa?",
+      "answers": {
+        "Africa": "África",
+        "Asia": "Ásia",
+        "America": "América",
+        "Australia": "Austrália"
+      }
+    },
+    "history:87": {
+      "question": "Qual país presenteou os EUA com a Estátua da Liberdade?",
+      "answers": {
+        "UK": "Reino Unido",
+        "France": "França",
+        "Spain": "Espanha",
+        "Germany": "Alemanha"
+      }
+    },
+    "history:88": {
+      "question": "O período medieval também é conhecido como?",
+      "answers": {
+        "Middle Ages": "Idade Média",
+        "Stone Age": "Idade da Pedra",
+        "Bronze Age": "Idade do Bronze",
+        "Space Age": "Era Espacial"
+      }
+    },
+    "history:89": {
+      "question": "Quem liderou a Revolução Cubana?",
+      "answers": {
+        "Guevara": "Guevara",
+        "Castro": "Castro",
+        "Batista": "Batista",
+        "Allende": "Allende"
+      }
+    },
+    "history:90": {
+      "question": "Qual país construiu primeiro uma bomba atômica?",
+      "answers": {
+        "Germany": "Alemanha",
+        "USA": "EUA",
+        "USSR": "URSS",
+        "Japan": "Japão"
+      }
+    },
+    "history:91": {
+      "question": "O Renascimento veio logo após qual período?",
+      "answers": {
+        "Middle Ages": "Idade Média",
+        "Modern era": "Era moderna",
+        "Space Age": "Era Espacial",
+        "Industrial era": "Era industrial"
+      }
+    },
+    "history:92": {
+      "question": "O antigo templo do Partenon está localizado em?",
+      "answers": {
+        "Rome": "Roma",
+        "Athens": "Atenas",
+        "Cairo": "Cairo",
+        "Istanbul": "Istambul"
+      }
+    },
+    "history:93": {
+      "question": "Persépolis era a capital de qual antigo império?",
+      "answers": {
+        "Roman": "Romano",
+        "Persian": "Persa",
+        "Greek": "Grego",
+        "Egyptian": "Egípcio"
+      }
+    },
+    "history:94": {
+      "question": "A Era da Exploração viu os europeus procurarem?",
+      "answers": {
+        "The Moon": "A Lua",
+        "New trade routes and lands": "Novas rotas comerciais e terras",
+        "Oil": "Óleo",
+        "Electricity": "Eletricidade"
+      }
+    },
+    "history:95": {
+      "question": "Em 1941, o Japão atacou qual base naval dos EUA?",
+      "answers": {
+        "San Diego": "São Diego",
+        "Pearl Harbor": "Pearl Harbor",
+        "Norfolk": "Norfolk",
+        "Guam": "Guam"
+      }
+    },
+    "history:96": {
+      "question": "O algarismo romano para 100 é?",
+      "answers": {
+        "C": "C",
+        "D": "D",
+        "M": "M",
+        "L": "L"
+      }
+    },
+    "history:97": {
+      "question": "A Pedra de Roseta ajudou a decodificar qual escrita antiga?",
+      "answers": {
+        "Latin": "Latim",
+        "Egyptian hieroglyphs": "Hieróglifos egípcios",
+        "Runes": "Runas",
+        "Sanskrit": "Sânscrito"
+      }
+    },
+    "history:98": {
+      "question": "Qual general dos EUA na Segunda Guerra Mundial mais tarde se tornou presidente dos EUA?",
+      "answers": {
+        "Patton": "Patton",
+        "Eisenhower": "Eisenhower",
+        "MacArthur": "MacArthur",
+        "Marshall": "Marechal"
+      }
+    },
+    "history:99": {
+      "question": "Qual rainha reinou no Reino Unido por 70 anos até 2022?",
+      "answers": {
+        "Victoria": "Vitória",
+        "Elizabeth II": "Isabel II",
+        "Anne": "Ana",
+        "Mary": "Maria"
+      }
+    },
+    "science:0": {
+      "question": "Qual é a fórmula química da água?",
+      "answers": {
+        "CO2": "CO2",
+        "H2O": "H2O",
+        "O2": "O2",
+        "NaCl": "NaCl"
+      }
+    },
+    "science:1": {
+      "question": "Quantos planetas existem em nosso sistema solar?",
+      "answers": {
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      }
+    },
+    "science:2": {
+      "question": "Que gás as plantas absorvem do ar?",
+      "answers": {
+        "Oxygen": "Oxigênio",
+        "Carbon dioxide": "Dióxido de carbono",
+        "Nitrogen": "Nitrogênio",
+        "Hydrogen": "Hidrogênio"
+      }
+    },
+    "science:3": {
+      "question": "Qual é o planeta mais próximo do Sol?",
+      "answers": {
+        "Venus": "Vênus",
+        "Mercury": "Mercúrio",
+        "Earth": "Terra",
+        "Mars": "Marte"
+      }
+    },
+    "science:4": {
+      "question": "O que é conhecido como a potência da célula?",
+      "answers": {
+        "Nucleus": "Núcleo",
+        "Mitochondria": "Mitocôndrias",
+        "Ribosome": "Ribossomo",
+        "Membrane": "Membrana"
+      }
+    },
+    "science:5": {
+      "question": "Qual é o símbolo químico do ouro?",
+      "answers": {
+        "Go": "Vá",
+        "Gd": "D'us",
+        "Au": "Au",
+        "Ag": "Ag"
+      }
+    },
+    "science:6": {
+      "question": "Quantos ossos existem no corpo humano adulto?",
+      "answers": {
+        "101": "101",
+        "150": "150",
+        "206": "206",
+        "300": "300"
+      }
+    },
+    "science:7": {
+      "question": "Qual planeta é conhecido como Planeta Vermelho?",
+      "answers": {
+        "Venus": "Vênus",
+        "Mars": "Marte",
+        "Jupiter": "Júpiter",
+        "Saturn": "Saturno"
+      }
+    },
+    "science:8": {
+      "question": "Quem desenvolveu a teoria da relatividade?",
+      "answers": {
+        "Newton": "Newton",
+        "Einstein": "Einstein",
+        "Tesla": "Tesla",
+        "Darwin": "Darwin"
+      }
+    },
+    "science:9": {
+      "question": "Que força puxa os objetos em direção à Terra?",
+      "answers": {
+        "Magnetism": "Magnetismo",
+        "Gravity": "Gravidade",
+        "Friction": "Fricção",
+        "Inertia": "Inércia"
+      }
+    },
+    "science:10": {
+      "question": "Quais células sanguíneas combatem infecções?",
+      "answers": {
+        "Red cells": "Glóbulos vermelhos",
+        "White cells": "Células brancas",
+        "Platelets": "Plaquetas",
+        "Plasma": "Plasma"
+      }
+    },
+    "science:11": {
+      "question": "Qual é o maior órgão do corpo humano?",
+      "answers": {
+        "Liver": "Fígado",
+        "Skin": "Pele",
+        "Heart": "Coração",
+        "Brain": "Cérebro"
+      }
+    },
+    "science:12": {
+      "question": "Ao nível do mar, a água ferve a que temperatura (°C)?",
+      "answers": {
+        "80": "80",
+        "90": "90",
+        "100": "100",
+        "120": "120"
+      }
+    },
+    "science:13": {
+      "question": "Como são chamados os animais que comem apenas plantas?",
+      "answers": {
+        "Carnivores": "Carnívoros",
+        "Herbivores": "Herbívoros",
+        "Omnivores": "Onívoros",
+        "Predators": "Predadores"
+      }
+    },
+    "science:14": {
+      "question": "Qual é o maior planeta do nosso sistema solar?",
+      "answers": {
+        "Saturn": "Saturno",
+        "Jupiter": "Júpiter",
+        "Neptune": "Netuno",
+        "Earth": "Terra"
+      }
+    },
+    "science:15": {
+      "question": "As plantas produzem alimentos através da luz solar?",
+      "answers": {
+        "Respiration": "Respiração",
+        "Photosynthesis": "Fotossíntese",
+        "Digestion": "Digestão",
+        "Fermentation": "Fermentação"
+      }
+    },
+    "science:16": {
+      "question": "Qual é o símbolo químico do oxigênio?",
+      "answers": {
+        "O": "O",
+        "Ox": "Boi",
+        "Og": "Ah",
+        "On": "Ativado"
+      }
+    },
+    "science:17": {
+      "question": "Qual é a substância natural mais dura da Terra?",
+      "answers": {
+        "Gold": "Ouro",
+        "Iron": "Ferro",
+        "Diamond": "Diamante",
+        "Quartz": "Quartzo"
+      }
+    },
+    "science:18": {
+      "question": "Qual é o símbolo químico do ferro?",
+      "answers": {
+        "Ir": "Ir",
+        "Fe": "Fé",
+        "In": "Em",
+        "Io": "Io"
+      }
+    },
+    "science:19": {
+      "question": "Qual é o símbolo químico do sódio?",
+      "answers": {
+        "So": "Então",
+        "Sd": "Sd",
+        "Na": "Não",
+        "S": "S"
+      }
+    },
+    "science:20": {
+      "question": "Quantas patas tem um inseto?",
+      "answers": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      }
+    },
+    "science:21": {
+      "question": "Quantas pernas uma aranha tem?",
+      "answers": {
+        "6": "6",
+        "8": "8",
+        "10": "10",
+        "12": "12"
+      }
+    },
+    "science:22": {
+      "question": "Como é chamado o centro de um átomo?",
+      "answers": {
+        "Electron": "Elétron",
+        "Nucleus": "Núcleo",
+        "Proton shell": "Concha de prótons",
+        "Orbit": "Órbita"
+      }
+    },
+    "science:23": {
+      "question": "Qual gás os humanos precisam respirar para sobreviver?",
+      "answers": {
+        "Carbon dioxide": "Dióxido de carbono",
+        "Oxygen": "Oxigênio",
+        "Nitrogen": "Nitrogênio",
+        "Helium": "Hélio"
+      }
+    },
+    "science:24": {
+      "question": "Qual é o ponto de congelamento da água em Celsius?",
+      "answers": {
+        "0": "0",
+        "10": "10",
+        "32": "32",
+        "-10": "-10"
+      }
+    },
+    "science:25": {
+      "question": "A Terra gira em torno do?",
+      "answers": {
+        "Moon": "Lua",
+        "Sun": "Dom",
+        "Mars": "Marte",
+        "Jupiter": "Júpiter"
+      }
+    },
+    "science:26": {
+      "question": "Quanto tempo leva a Terra para orbitar o Sol?",
+      "answers": {
+        "1 day": "1 dia",
+        "1 month": "1 mês",
+        "1 year": "1 ano",
+        "10 years": "10 anos"
+      }
+    },
+    "science:27": {
+      "question": "O que causa o dia e a noite?",
+      "answers": {
+        "Earth's rotation": "Rotação da Terra",
+        "The Moon": "A Lua",
+        "Clouds": "Nuvens",
+        "The tides": "As marés"
+      }
+    },
+    "science:28": {
+      "question": "Qual é o menor planeta do nosso sistema solar?",
+      "answers": {
+        "Mars": "Marte",
+        "Mercury": "Mercúrio",
+        "Venus": "Vênus",
+        "Earth": "Terra"
+      }
+    },
+    "science:29": {
+      "question": "Em que galáxia vivemos?",
+      "answers": {
+        "Andromeda": "Andrômeda",
+        "Milky Way": "Via Láctea",
+        "Whirlpool": "Hidromassagem",
+        "Sombrero": "Sombrero"
+      }
+    },
+    "science:30": {
+      "question": "O Sol é composto principalmente de?",
+      "answers": {
+        "Rock": "Rocha",
+        "Hydrogen and helium": "Hidrogênio e hélio",
+        "Water": "Água",
+        "Iron": "Ferro"
+      }
+    },
+    "science:31": {
+      "question": "O que as abelhas coletam das flores?",
+      "answers": {
+        "Water": "Água",
+        "Nectar": "Néctar",
+        "Sand": "Areia",
+        "Leaves": "Folhas"
+      }
+    },
+    "science:32": {
+      "question": "Qual gás constitui a maior parte da atmosfera da Terra?",
+      "answers": {
+        "Oxygen": "Oxigênio",
+        "Nitrogen": "Nitrogênio",
+        "Carbon dioxide": "Dióxido de carbono",
+        "Hydrogen": "Hidrogênio"
+      }
+    },
+    "science:33": {
+      "question": "Como é chamado o estudo dos seres vivos?",
+      "answers": {
+        "Physics": "Física",
+        "Biology": "Biologia",
+        "Geology": "Geologia",
+        "Chemistry": "Química"
+      }
+    },
+    "science:34": {
+      "question": "Como é chamado o estudo da matéria e da energia?",
+      "answers": {
+        "Biology": "Biologia",
+        "Physics": "Física",
+        "Botany": "Botânica",
+        "Zoology": "Zoologia"
+      }
+    },
+    "science:35": {
+      "question": "Como é chamado o estudo de substâncias e reações?",
+      "answers": {
+        "Chemistry": "Química",
+        "Astronomy": "Astronomia",
+        "Ecology": "Ecologia",
+        "Geology": "Geologia"
+      }
+    },
+    "science:36": {
+      "question": "Que órgão bombeia o sangue pelo corpo?",
+      "answers": {
+        "Lungs": "Pulmões",
+        "Heart": "Coração",
+        "Liver": "Fígado",
+        "Kidney": "Rim"
+      }
+    },
+    "science:37": {
+      "question": "Qual órgão é usado para respirar?",
+      "answers": {
+        "Heart": "Coração",
+        "Lungs": "Pulmões",
+        "Stomach": "Estômago",
+        "Liver": "Fígado"
+      }
+    },
+    "science:38": {
+      "question": "Qual é a substância mais dura do corpo humano?",
+      "answers": {
+        "Bone": "Osso",
+        "Tooth enamel": "Esmalte dentário",
+        "Nails": "Pregos",
+        "Cartilage": "Cartilagem"
+      }
+    },
+    "science:39": {
+      "question": "Quantas câmaras tem o coração humano?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "science:40": {
+      "question": "DNA carrega?",
+      "answers": {
+        "Water": "Água",
+        "Genetic information": "Informação genética",
+        "Oxygen": "Oxigênio",
+        "Energy": "Energia"
+      }
+    },
+    "science:41": {
+      "question": "Qual vitamina a luz solar ajuda nosso corpo a produzir?",
+      "answers": {
+        "Vitamin A": "Vitamina A",
+        "Vitamin C": "Vitamina C",
+        "Vitamin D": "Vitamina D",
+        "Vitamin K": "Vitamina K"
+      }
+    },
+    "science:42": {
+      "question": "Qual é o ponto de ebulição da água em Fahrenheit?",
+      "answers": {
+        "100": "100",
+        "150": "150",
+        "180": "180",
+        "212": "212"
+      }
+    },
+    "science:43": {
+      "question": "O som viaja mais rápido?",
+      "answers": {
+        "Vacuum": "Vácuo",
+        "Solids": "Sólidos",
+        "Gases": "Gases",
+        "Empty space": "Espaço vazio"
+      }
+    },
+    "science:44": {
+      "question": "Qual é a velocidade aproximada da luz?",
+      "answers": {
+        "300,000 km/s": "300.000 km/s",
+        "1,000 km/s": "1.000 km/s",
+        "3,000 km/s": "3.000 km/s",
+        "30 km/s": "30 km/s"
+      }
+    },
+    "science:45": {
+      "question": "Qual planeta é famoso por seus anéis?",
+      "answers": {
+        "Mars": "Marte",
+        "Saturn": "Saturno",
+        "Venus": "Vênus",
+        "Mercury": "Mercúrio"
+      }
+    },
+    "science:46": {
+      "question": "Qual é o único satélite natural da Terra?",
+      "answers": {
+        "The Sun": "O Sol",
+        "The Moon": "A Lua",
+        "Mars": "Marte",
+        "Venus": "Vênus"
+      }
+    },
+    "science:47": {
+      "question": "Qual força mantém os planetas orbitando o Sol?",
+      "answers": {
+        "Magnetism": "Magnetismo",
+        "Gravity": "Gravidade",
+        "Friction": "Fricção",
+        "Electricity": "Eletricidade"
+      }
+    },
+    "science:48": {
+      "question": "Animais que comem plantas e carne são chamados?",
+      "answers": {
+        "Herbivores": "Herbívoros",
+        "Carnivores": "Carnívoros",
+        "Omnivores": "Onívoros",
+        "Insectivores": "Insetívoros"
+      }
+    },
+    "science:49": {
+      "question": "São chamados animais que comem apenas carne?",
+      "answers": {
+        "Herbivores": "Herbívoros",
+        "Carnivores": "Carnívoros",
+        "Omnivores": "Onívoros",
+        "Detritivores": "Detritívoros"
+      }
+    },
+    "science:50": {
+      "question": "Qual processo transforma água líquida em vapor?",
+      "answers": {
+        "Condensation": "Condensação",
+        "Evaporation": "Evaporação",
+        "Freezing": "Congelamento",
+        "Melting": "Derretimento"
+      }
+    },
+    "science:51": {
+      "question": "Qual processo transforma o vapor novamente em líquido?",
+      "answers": {
+        "Evaporation": "Evaporação",
+        "Condensation": "Condensação",
+        "Sublimation": "Sublimação",
+        "Boiling": "Fervura"
+      }
+    },
+    "science:52": {
+      "question": "Quais são os três estados comuns da matéria?",
+      "answers": {
+        "Hot, cold, warm": "Quente, frio, morno",
+        "Solid, liquid, gas": "Sólido, líquido, gasoso",
+        "Big, small, medium": "Grande, pequeno, médio",
+        "Up, down, side": "Para cima, para baixo, lateral"
+      }
+    },
+    "science:53": {
+      "question": "O gelo é o ___ estado da água.",
+      "answers": {
+        "Gas": "Gás",
+        "Liquid": "Líquido",
+        "Solid": "Sólido",
+        "Plasma": "Plasma"
+      }
+    },
+    "science:54": {
+      "question": "Qual cientista propôs a teoria da evolução?",
+      "answers": {
+        "Newton": "Newton",
+        "Darwin": "Darwin",
+        "Einstein": "Einstein",
+        "Tesla": "Tesla"
+      }
+    },
+    "science:55": {
+      "question": "Quem formulou as leis do movimento e da gravidade?",
+      "answers": {
+        "Einstein": "Einstein",
+        "Newton": "Newton",
+        "Galileo": "Galileu",
+        "Hawking": "Hawking"
+      }
+    },
+    "science:56": {
+      "question": "Qual é o símbolo químico do carbono?",
+      "answers": {
+        "Ca": "Ca",
+        "C": "C",
+        "Co": "Empresa",
+        "Cn": "Cn"
+      }
+    },
+    "science:57": {
+      "question": "Qual é o símbolo químico do hélio?",
+      "answers": {
+        "H": "H",
+        "He": "Ele",
+        "Hl": "Hl",
+        "Ha": "Ha"
+      }
+    },
+    "science:58": {
+      "question": "Qual planeta é muito quente com espessas nuvens de ácido?",
+      "answers": {
+        "Mars": "Marte",
+        "Venus": "Vênus",
+        "Neptune": "Netuno",
+        "Uranus": "Urano"
+      }
+    },
+    "science:59": {
+      "question": "Quantos dentes um ser humano adulto típico tem?",
+      "answers": {
+        "24": "24",
+        "28": "28",
+        "32": "32",
+        "36": "36"
+      }
+    },
+    "science:60": {
+      "question": "Qual parte da planta absorve água do solo?",
+      "answers": {
+        "Leaves": "Folhas",
+        "Roots": "Raízes",
+        "Flowers": "Flores",
+        "Stem": "Haste"
+      }
+    },
+    "science:61": {
+      "question": "Que gás as plantas liberam durante a fotossíntese?",
+      "answers": {
+        "Carbon dioxide": "Dióxido de carbono",
+        "Oxygen": "Oxigênio",
+        "Nitrogen": "Nitrogênio",
+        "Methane": "Metano"
+      }
+    },
+    "science:62": {
+      "question": "Qual é a estrela mais próxima da Terra?",
+      "answers": {
+        "Polaris": "Polaris",
+        "The Sun": "O Sol",
+        "Sirius": "Sírius",
+        "Alpha Centauri": "Alfa Centauro"
+      }
+    },
+    "science:63": {
+      "question": "Qual tipo de sangue é o doador universal?",
+      "answers": {
+        "A": "A",
+        "B": "B",
+        "O negative": "O negativo",
+        "AB": "AB"
+      }
+    },
+    "science:64": {
+      "question": "Qual instrumento mede a temperatura?",
+      "answers": {
+        "Barometer": "Barômetro",
+        "Thermometer": "Termômetro",
+        "Ruler": "Régua",
+        "Scale": "Escala"
+      }
+    },
+    "science:65": {
+      "question": "Qual instrumento é usado para ver células minúsculas?",
+      "answers": {
+        "Telescope": "Telescópio",
+        "Microscope": "Microscópio",
+        "Periscope": "Periscópio",
+        "Binoculars": "Binóculos"
+      }
+    },
+    "science:66": {
+      "question": "Qual instrumento é usado para visualizar estrelas distantes?",
+      "answers": {
+        "Microscope": "Microscópio",
+        "Telescope": "Telescópio",
+        "Stethoscope": "Estetoscópio",
+        "Ruler": "Régua"
+      }
+    },
+    "science:67": {
+      "question": "Dióxido de carbono congelado é comumente chamado?",
+      "answers": {
+        "Dry ice": "Gelo seco",
+        "Snow": "Neve",
+        "Frost": "Geada",
+        "Hail": "Salve"
+      }
+    },
+    "science:68": {
+      "question": "Os humanos exalam principalmente qual gás?",
+      "answers": {
+        "Oxygen": "Oxigênio",
+        "Carbon dioxide": "Dióxido de carbono",
+        "Nitrogen only": "Somente nitrogênio",
+        "Hydrogen": "Hidrogênio"
+      }
+    },
+    "science:69": {
+      "question": "Qual vitamina é abundante nas frutas cítricas?",
+      "answers": {
+        "Vitamin C": "Vitamina C",
+        "Vitamin D": "Vitamina D",
+        "Vitamin B12": "Vitamina B12",
+        "Vitamin K": "Vitamina K"
+      }
+    },
+    "science:70": {
+      "question": "A rocha derretida abaixo da superfície da Terra é chamada?",
+      "answers": {
+        "Lava": "Lava",
+        "Magma": "Magma",
+        "Ash": "Cinza",
+        "Basalt": "Basalto"
+      }
+    },
+    "science:71": {
+      "question": "A rocha derretida que irrompe na superfície é chamada?",
+      "answers": {
+        "Magma": "Magma",
+        "Lava": "Lava",
+        "Sediment": "Sedimento",
+        "Ore": "Minério"
+      }
+    },
+    "science:72": {
+      "question": "O núcleo da Terra é composto principalmente de?",
+      "answers": {
+        "Water": "Água",
+        "Iron and nickel": "Ferro e níquel",
+        "Gold": "Ouro",
+        "Ice": "Gelo"
+      }
+    },
+    "science:73": {
+      "question": "Em qual camada da Terra vivemos?",
+      "answers": {
+        "Core": "Núcleo",
+        "Mantle": "Manto",
+        "Crust": "Crosta",
+        "Atmosphere": "Atmosfera"
+      }
+    },
+    "science:74": {
+      "question": "O que causa principalmente as marés oceânicas?",
+      "answers": {
+        "Wind only": "Somente vento",
+        "The Moon's gravity": "A gravidade da Lua",
+        "Fish": "Peixe",
+        "Rivers": "Rios"
+      }
+    },
+    "science:75": {
+      "question": "Um grupo de estrelas formando um padrão é um?",
+      "answers": {
+        "Galaxy": "Galáxia",
+        "Constellation": "Constelação",
+        "Comet": "Cometa",
+        "Nebula": "Nebulosa"
+      }
+    },
+    "science:76": {
+      "question": "Uma 'estrela cadente' é na verdade uma?",
+      "answers": {
+        "Dying star": "Estrela moribunda",
+        "Meteor": "Meteoro",
+        "Planet": "Planeta",
+        "Satellite": "Satélite"
+      }
+    },
+    "science:77": {
+      "question": "Qual planeta tem a famosa 'Grande Mancha Vermelha'?",
+      "answers": {
+        "Mars": "Marte",
+        "Jupiter": "Júpiter",
+        "Saturn": "Saturno",
+        "Neptune": "Netuno"
+      }
+    },
+    "science:78": {
+      "question": "Qual é a unidade básica da vida?",
+      "answers": {
+        "Atom": "Átomo",
+        "Cell": "Célula",
+        "Molecule": "Molécula",
+        "Organ": "Órgão"
+      }
+    },
+    "science:79": {
+      "question": "Qual órgão controla o pensamento e o movimento?",
+      "answers": {
+        "Heart": "Coração",
+        "Brain": "Cérebro",
+        "Liver": "Fígado",
+        "Lungs": "Pulmões"
+      }
+    },
+    "science:80": {
+      "question": "Qual é o símbolo químico do potássio?",
+      "answers": {
+        "P": "P",
+        "Po": "Po",
+        "K": "K",
+        "Pt": "Ponto"
+      }
+    },
+    "science:81": {
+      "question": "Qual destes é um gás nobre?",
+      "answers": {
+        "Oxygen": "Oxigênio",
+        "Helium": "Hélio",
+        "Hydrogen": "Hidrogênio",
+        "Nitrogen": "Nitrogênio"
+      }
+    },
+    "science:82": {
+      "question": "A água que cai das nuvens é chamada?",
+      "answers": {
+        "Evaporation": "Evaporação",
+        "Precipitation": "Precipitação",
+        "Condensation": "Condensação",
+        "Radiation": "Radiação"
+      }
+    },
+    "science:83": {
+      "question": "Qual escala mede a magnitude dos terremotos?",
+      "answers": {
+        "Celsius": "Celsius",
+        "Richter": "Richter",
+        "Decibel": "Decibéis",
+        "Fahrenheit": "Fahrenheit"
+      }
+    },
+    "science:84": {
+      "question": "Qual unidade mede corrente elétrica?",
+      "answers": {
+        "Volt": "Volts",
+        "Ampere": "Ampére",
+        "Watt": "Watt",
+        "Ohm": "Ohm"
+      }
+    },
+    "science:85": {
+      "question": "A potência da lâmpada é medida em?",
+      "answers": {
+        "Watts": "Watts",
+        "Meters": "Metros",
+        "Liters": "Litros",
+        "Grams": "Gramas"
+      }
+    },
+    "science:86": {
+      "question": "Qual planeta gira de lado?",
+      "answers": {
+        "Uranus": "Urano",
+        "Mars": "Marte",
+        "Venus": "Vênus",
+        "Earth": "Terra"
+      }
+    },
+    "science:87": {
+      "question": "Chama-se uma lagarta que se transforma em borboleta?",
+      "answers": {
+        "Evolution": "Evolução",
+        "Metamorphosis": "Metamorfose",
+        "Photosynthesis": "Fotossíntese",
+        "Digestion": "Digestão"
+      }
+    },
+    "science:88": {
+      "question": "Qual é o elemento mais abundante no universo?",
+      "answers": {
+        "Oxygen": "Oxigênio",
+        "Hydrogen": "Hidrogênio",
+        "Iron": "Ferro",
+        "Carbon": "Carbono"
+      }
+    },
+    "science:89": {
+      "question": "Qual planeta tem o tamanho mais próximo da Terra?",
+      "answers": {
+        "Mars": "Marte",
+        "Venus": "Vênus",
+        "Mercury": "Mercúrio",
+        "Jupiter": "Júpiter"
+      }
+    },
+    "science:90": {
+      "question": "O corpo humano é composto principalmente de?",
+      "answers": {
+        "Bone": "Osso",
+        "Water": "Água",
+        "Muscle": "Músculo",
+        "Fat": "Gordura"
+      }
+    },
+    "science:91": {
+      "question": "Qual órgão filtra os resíduos do sangue?",
+      "answers": {
+        "Heart": "Coração",
+        "Kidneys": "Rins",
+        "Lungs": "Pulmões",
+        "Brain": "Cérebro"
+      }
+    },
+    "science:92": {
+      "question": "Qual sentido está ligado aos olhos?",
+      "answers": {
+        "Hearing": "Audiência",
+        "Sight": "Visão",
+        "Smell": "Cheiro",
+        "Taste": "Gosto"
+      }
+    },
+    "science:93": {
+      "question": "Qual é o símbolo químico da prata?",
+      "answers": {
+        "Si": "Sim",
+        "Ag": "Ag",
+        "Au": "Au",
+        "Sr": "Sr."
+      }
+    },
+    "science:94": {
+      "question": "Qual planeta está mais distante do Sol?",
+      "answers": {
+        "Saturn": "Saturno",
+        "Uranus": "Urano",
+        "Neptune": "Netuno",
+        "Jupiter": "Júpiter"
+      }
+    },
+    "science:95": {
+      "question": "Além da luz solar e da água, o que as plantas precisam para produzir alimentos?",
+      "answers": {
+        "Oxygen": "Oxigênio",
+        "Carbon dioxide": "Dióxido de carbono",
+        "Nitrogen gas": "Gás nitrogênio",
+        "Helium": "Hélio"
+      }
+    },
+    "science:96": {
+      "question": "Como chamamos um cientista que estuda estrelas e espaço?",
+      "answers": {
+        "Biologist": "Biólogo",
+        "Astronomer": "Astrônomo",
+        "Chemist": "Químico",
+        "Geologist": "Geólogo"
+      }
+    },
+    "science:97": {
+      "question": "Qual planeta é conhecido como 'estrela da manhã' ou 'estrela da tarde'?",
+      "answers": {
+        "Mars": "Marte",
+        "Venus": "Vênus",
+        "Saturn": "Saturno",
+        "Mercury": "Mercúrio"
+      }
+    },
+    "science:98": {
+      "question": "Quantas cores tem um arco-íris?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "science:99": {
+      "question": "Qual planeta é frequentemente chamado de 'Planeta Azul'?",
+      "answers": {
+        "Mars": "Marte",
+        "Earth": "Terra",
+        "Neptune": "Netuno",
+        "Venus": "Vênus"
+      }
+    },
+    "geography:0": {
+      "question": "Qual é a capital do Japão?",
+      "answers": {
+        "Seoul": "Seul",
+        "Beijing": "Pequim",
+        "Tokyo": "Tóquio",
+        "Bangkok": "Banguecoque"
+      }
+    },
+    "geography:1": {
+      "question": "Qual é o maior oceano da Terra?",
+      "answers": {
+        "Atlantic": "Atlântico",
+        "Indian": "Indiano",
+        "Arctic": "Ártico",
+        "Pacific": "Pacífico"
+      }
+    },
+    "geography:2": {
+      "question": "Qual rio é geralmente considerado o mais longo do mundo?",
+      "answers": {
+        "Amazon": "Amazonas",
+        "Nile": "Nilo",
+        "Yangtze": "Yangtze",
+        "Mississippi": "Mississipi"
+      }
+    },
+    "geography:3": {
+      "question": "O Monte Everest faz parte de qual cordilheira?",
+      "answers": {
+        "Andes": "Andes",
+        "Alps": "Alpes",
+        "Himalayas": "Himalaia",
+        "Rockies": "Montanhas Rochosas"
+      }
+    },
+    "geography:4": {
+      "question": "Qual é a capital da França?",
+      "answers": {
+        "Berlin": "Berlim",
+        "Madrid": "Madri",
+        "Paris": "Paris",
+        "Rome": "Roma"
+      }
+    },
+    "geography:5": {
+      "question": "Qual é o maior país em área territorial?",
+      "answers": {
+        "Canada": "Canadá",
+        "China": "China",
+        "USA": "EUA",
+        "Russia": "Rússia"
+      }
+    },
+    "geography:6": {
+      "question": "O Deserto do Saara fica em qual continente?",
+      "answers": {
+        "Asia": "Ásia",
+        "Africa": "África",
+        "Australia": "Austrália",
+        "South America": "América do Sul"
+      }
+    },
+    "geography:7": {
+      "question": "Qual é a capital da Austrália?",
+      "answers": {
+        "Sydney": "Sidney",
+        "Melbourne": "Melbourne",
+        "Canberra": "Camberra",
+        "Perth": "Perth"
+      }
+    },
+    "geography:8": {
+      "question": "Qual é o menor continente?",
+      "answers": {
+        "Europe": "Europa",
+        "Australia": "Austrália",
+        "Antarctica": "Antártica",
+        "South America": "América do Sul"
+      }
+    },
+    "geography:9": {
+      "question": "A Grande Barreira de Corais fica na costa de qual país?",
+      "answers": {
+        "Brazil": "Brasil",
+        "Australia": "Austrália",
+        "Mexico": "México",
+        "India": "Índia"
+      }
+    },
+    "geography:10": {
+      "question": "Em que país fica a Torre Eiffel?",
+      "answers": {
+        "Italy": "Itália",
+        "Spain": "Espanha",
+        "France": "França",
+        "Belgium": "Bélgica"
+      }
+    },
+    "geography:11": {
+      "question": "Qual é a capital do Egito?",
+      "answers": {
+        "Cairo": "Cairo",
+        "Alexandria": "Alexandria",
+        "Giza": "Gizé",
+        "Luxor": "Luxor"
+      }
+    },
+    "geography:12": {
+      "question": "Quantos continentes existem?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "geography:13": {
+      "question": "Qual rio atravessa Londres?",
+      "answers": {
+        "Seine": "Sena",
+        "Thames": "Tâmisa",
+        "Danube": "Danúbio",
+        "Rhine": "Reno"
+      }
+    },
+    "geography:14": {
+      "question": "A floresta amazônica está localizada principalmente em qual país?",
+      "answers": {
+        "Peru": "Peru",
+        "Colombia": "Colômbia",
+        "Brazil": "Brasil",
+        "Venezuela": "Venezuela"
+      }
+    },
+    "geography:15": {
+      "question": "Qual é o maior deserto quente do mundo?",
+      "answers": {
+        "Gobi": "Gobi",
+        "Sahara": "Saara",
+        "Kalahari": "Kalahari",
+        "Arabian": "Árabe"
+      }
+    },
+    "geography:16": {
+      "question": "Qual é a capital da Itália?",
+      "answers": {
+        "Milan": "Milão",
+        "Venice": "Veneza",
+        "Rome": "Roma",
+        "Naples": "Nápoles"
+      }
+    },
+    "geography:17": {
+      "question": "Qual continente abriga o rio Amazonas?",
+      "answers": {
+        "Africa": "África",
+        "Asia": "Ásia",
+        "South America": "América do Sul",
+        "Europe": "Europa"
+      }
+    },
+    "geography:18": {
+      "question": "Qual é a capital da Alemanha?",
+      "answers": {
+        "Munich": "Munique",
+        "Berlin": "Berlim",
+        "Hamburg": "Hamburgo",
+        "Frankfurt": "Frankfurt"
+      }
+    },
+    "geography:19": {
+      "question": "Qual é a capital da Espanha?",
+      "answers": {
+        "Barcelona": "Barcelona",
+        "Madrid": "Madri",
+        "Seville": "Sevilha",
+        "Valencia": "Valência"
+      }
+    },
+    "geography:20": {
+      "question": "Qual é a capital da Rússia?",
+      "answers": {
+        "St Petersburg": "São Petersburgo",
+        "Moscow": "Moscou",
+        "Kyiv": "Kyiv",
+        "Sochi": "Sóchi"
+      }
+    },
+    "geography:21": {
+      "question": "Qual é a capital da China?",
+      "answers": {
+        "Shanghai": "Xangai",
+        "Beijing": "Pequim",
+        "Hong Kong": "Hong Kong",
+        "Guangzhou": "Cantão"
+      }
+    },
+    "geography:22": {
+      "question": "Qual é a capital do Canadá?",
+      "answers": {
+        "Toronto": "Toronto",
+        "Ottawa": "Otava",
+        "Vancouver": "Vancouver",
+        "Montreal": "Montreal"
+      }
+    },
+    "geography:23": {
+      "question": "Qual é a capital dos Estados Unidos?",
+      "answers": {
+        "New York": "Nova York",
+        "Washington, D.C.": "Washington, DC",
+        "Los Angeles": "Los Angeles",
+        "Chicago": "Chicago"
+      }
+    },
+    "geography:24": {
+      "question": "Qual é a capital do Reino Unido?",
+      "answers": {
+        "Manchester": "Manchester",
+        "London": "Londres",
+        "Liverpool": "Liverpool",
+        "Edinburgh": "Edimburgo"
+      }
+    },
+    "geography:25": {
+      "question": "Qual é a capital do Brasil?",
+      "answers": {
+        "Rio de Janeiro": "Rio de Janeiro",
+        "Brasília": "Brasília",
+        "São Paulo": "São Paulo",
+        "Salvador": "Salvador"
+      }
+    },
+    "geography:26": {
+      "question": "Qual é a capital da Índia?",
+      "answers": {
+        "Mumbai": "Bombaim",
+        "New Delhi": "Nova Deli",
+        "Kolkata": "Calcutá",
+        "Chennai": "Chennai"
+      }
+    },
+    "geography:27": {
+      "question": "Qual é a capital da Coreia do Sul?",
+      "answers": {
+        "Busan": "Busan",
+        "Seoul": "Seul",
+        "Incheon": "Incheon",
+        "Daegu": "Daegu"
+      }
+    },
+    "geography:28": {
+      "question": "Qual é a capital da Grécia?",
+      "answers": {
+        "Thessaloniki": "Salónica",
+        "Athens": "Atenas",
+        "Sparta": "Esparta",
+        "Patras": "Patras"
+      }
+    },
+    "geography:29": {
+      "question": "Qual é a capital da Turquia?",
+      "answers": {
+        "Istanbul": "Istambul",
+        "Ankara": "Ancara",
+        "Izmir": "Izmir",
+        "Bursa": "Bursa"
+      }
+    },
+    "geography:30": {
+      "question": "Qual é a capital de Portugal?",
+      "answers": {
+        "Porto": "Porto",
+        "Lisbon": "Lisboa",
+        "Faro": "Faro",
+        "Braga": "Braga"
+      }
+    },
+    "geography:31": {
+      "question": "Qual é a capital da Holanda?",
+      "answers": {
+        "Rotterdam": "Roterdã",
+        "Amsterdam": "Amsterdã",
+        "The Hague": "Haia",
+        "Utrecht": "Utreque"
+      }
+    },
+    "geography:32": {
+      "question": "Qual é a capital do México?",
+      "answers": {
+        "Cancún": "Cancún",
+        "Mexico City": "Cidade do México",
+        "Guadalajara": "Guadalajara",
+        "Tijuana": "Tijuana"
+      }
+    },
+    "geography:33": {
+      "question": "Qual é a capital da Argentina?",
+      "answers": {
+        "Córdoba": "Córdoba",
+        "Buenos Aires": "Buenos Aires",
+        "Rosario": "Rosário",
+        "Mendoza": "Mendoza"
+      }
+    },
+    "geography:34": {
+      "question": "Qual é a capital da Suécia?",
+      "answers": {
+        "Oslo": "Oslo",
+        "Stockholm": "Estocolmo",
+        "Copenhagen": "Copenhague",
+        "Helsinki": "Helsinque"
+      }
+    },
+    "geography:35": {
+      "question": "Qual é a capital da Noruega?",
+      "answers": {
+        "Oslo": "Oslo",
+        "Bergen": "Bergen",
+        "Stockholm": "Estocolmo",
+        "Helsinki": "Helsinque"
+      }
+    },
+    "geography:36": {
+      "question": "Qual é o maior continente em área?",
+      "answers": {
+        "Africa": "África",
+        "Asia": "Ásia",
+        "Europe": "Europa",
+        "North America": "América do Norte"
+      }
+    },
+    "geography:37": {
+      "question": "Qual continente é o mais frio?",
+      "answers": {
+        "Europe": "Europa",
+        "Antarctica": "Antártida",
+        "Asia": "Ásia",
+        "Australia": "Austrália"
+      }
+    },
+    "geography:38": {
+      "question": "Qual continente tem mais países?",
+      "answers": {
+        "Asia": "Ásia",
+        "Africa": "África",
+        "Europe": "Europa",
+        "South America": "América do Sul"
+      }
+    },
+    "geography:39": {
+      "question": "Qual é o menor oceano?",
+      "answers": {
+        "Atlantic": "Atlântico",
+        "Arctic": "Ártico",
+        "Indian": "Indiano",
+        "Pacific": "Pacífico"
+      }
+    },
+    "geography:40": {
+      "question": "Qual é o segundo maior oceano?",
+      "answers": {
+        "Atlantic": "Atlântico",
+        "Indian": "Indiano",
+        "Arctic": "Ártico",
+        "Southern": "Sul"
+      }
+    },
+    "geography:41": {
+      "question": "Qual país fica na Europa e na Ásia?",
+      "answers": {
+        "Egypt": "Egito",
+        "Turkey": "Turquia",
+        "Greece": "Grécia",
+        "Italy": "Itália"
+      }
+    },
+    "geography:42": {
+      "question": "As Grandes Pirâmides ficam perto de qual cidade?",
+      "answers": {
+        "Cairo": "Cairo",
+        "Alexandria": "Alexandria",
+        "Luxor": "Luxor",
+        "Aswan": "Assuão"
+      }
+    },
+    "geography:43": {
+      "question": "Qual é a montanha mais alta da África?",
+      "answers": {
+        "Kilimanjaro": "Kilimanjaro",
+        "Mount Kenya": "Monte Quênia",
+        "Atlas": "Atlas",
+        "Elgon": "Elgon"
+      }
+    },
+    "geography:44": {
+      "question": "As montanhas dos Andes ficam em qual continente?",
+      "answers": {
+        "Asia": "Ásia",
+        "Africa": "África",
+        "South America": "América do Sul",
+        "Europe": "Europa"
+      }
+    },
+    "geography:45": {
+      "question": "Os Alpes estão localizados principalmente em?",
+      "answers": {
+        "Asia": "Ásia",
+        "Europe": "Europa",
+        "Africa": "África",
+        "Australia": "Austrália"
+      }
+    },
+    "geography:46": {
+      "question": "Qual país tem o formato de uma bota?",
+      "answers": {
+        "Spain": "Espanha",
+        "Italy": "Itália",
+        "Greece": "Grécia",
+        "France": "França"
+      }
+    },
+    "geography:47": {
+      "question": "Que mar fica entre a Europa e a África?",
+      "answers": {
+        "Baltic Sea": "Mar Báltico",
+        "Mediterranean Sea": "Mar Mediterrâneo",
+        "Red Sea": "Mar Vermelho",
+        "Black Sea": "Mar Negro"
+      }
+    },
+    "geography:48": {
+      "question": "Qual país tem a maior população (em 2024)?",
+      "answers": {
+        "China": "China",
+        "India": "Índia",
+        "USA": "EUA",
+        "Indonesia": "Indonésia"
+      }
+    },
+    "geography:49": {
+      "question": "O Monte Fuji está localizado em que país?",
+      "answers": {
+        "China": "China",
+        "Japan": "Japão",
+        "Korea": "Coreia",
+        "Nepal": "Nepal"
+      }
+    },
+    "geography:50": {
+      "question": "A Estátua da Liberdade fica em qual cidade?",
+      "answers": {
+        "Boston": "Boston",
+        "New York": "Nova York",
+        "Washington": "Washington",
+        "Chicago": "Chicago"
+      }
+    },
+    "geography:51": {
+      "question": "Big Ben é um marco em qual cidade?",
+      "answers": {
+        "Paris": "Paris",
+        "London": "Londres",
+        "Berlin": "Berlim",
+        "Dublin": "Dublim"
+      }
+    },
+    "geography:52": {
+      "question": "A Torre Inclinada fica em qual cidade italiana?",
+      "answers": {
+        "Rome": "Roma",
+        "Pisa": "Pisa",
+        "Milan": "Milão",
+        "Venice": "Veneza"
+      }
+    },
+    "geography:53": {
+      "question": "Qual país é o lar do canguru?",
+      "answers": {
+        "South Africa": "África do Sul",
+        "Australia": "Austrália",
+        "Brazil": "Brasil",
+        "India": "Índia"
+      }
+    },
+    "geography:54": {
+      "question": "As pirâmides de Chichen Itza ficam em que país?",
+      "answers": {
+        "Peru": "Peru",
+        "Mexico": "México",
+        "Egypt": "Egito",
+        "Guatemala": "Guatemala"
+      }
+    },
+    "geography:55": {
+      "question": "O Nilo deságua em qual mar?",
+      "answers": {
+        "Red Sea": "Mar Vermelho",
+        "Mediterranean Sea": "Mar Mediterrâneo",
+        "Black Sea": "Mar Negro",
+        "Caspian Sea": "Mar Cáspio"
+      }
+    },
+    "geography:56": {
+      "question": "Qual estado dos EUA é famoso por Hollywood?",
+      "answers": {
+        "Texas": "Texas",
+        "California": "Califórnia",
+        "Florida": "Flórida",
+        "New York": "Nova York"
+      }
+    },
+    "geography:57": {
+      "question": "Qual oceano fica entre as Américas e a Europa/África?",
+      "answers": {
+        "Pacific": "Pacífico",
+        "Atlantic": "Atlântico",
+        "Indian": "Indiano",
+        "Arctic": "Ártico"
+      }
+    },
+    "geography:58": {
+      "question": "Que oceano fica entre a África, a Ásia e a Austrália?",
+      "answers": {
+        "Atlantic": "Atlântico",
+        "Indian": "Indiano",
+        "Arctic": "Ártico",
+        "Pacific": "Pacífico"
+      }
+    },
+    "geography:59": {
+      "question": "O equador divide a Terra em quais metades?",
+      "answers": {
+        "East and West": "Leste e Oeste",
+        "North and South": "Norte e Sul",
+        "Up and Down": "para cima e para baixo",
+        "Left and Right": "Esquerda e Direita"
+      }
+    },
+    "geography:60": {
+      "question": "A linha imaginária em 0° de longitude é a?",
+      "answers": {
+        "Equator": "Equador",
+        "Prime Meridian": "Meridiano Principal",
+        "Tropic of Cancer": "Trópico de Câncer",
+        "Arctic Circle": "Círculo Polar Ártico"
+      }
+    },
+    "geography:61": {
+      "question": "Qual é o menor país do mundo?",
+      "answers": {
+        "Monaco": "Mônaco",
+        "Vatican City": "Cidade do Vaticano",
+        "Malta": "Malta",
+        "San Marino": "São Marino"
+      }
+    },
+    "geography:62": {
+      "question": "Qual é o maior deserto do mundo?",
+      "answers": {
+        "Sahara": "Saara",
+        "Antarctic": "Antártica",
+        "Gobi": "Gobi",
+        "Kalahari": "Kalahari"
+      }
+    },
+    "geography:63": {
+      "question": "O Grand Canyon está localizado em que país?",
+      "answers": {
+        "Canada": "Canadá",
+        "USA": "EUA",
+        "Mexico": "México",
+        "Brazil": "Brasil"
+      }
+    },
+    "geography:64": {
+      "question": "Qual país é famoso pelas tulipas e moinhos de vento?",
+      "answers": {
+        "Belgium": "Bélgica",
+        "Netherlands": "Holanda",
+        "Denmark": "Dinamarca",
+        "Germany": "Alemanha"
+      }
+    },
+    "geography:65": {
+      "question": "Qual cordilheira separa a Europa da Ásia?",
+      "answers": {
+        "Alps": "Alpes",
+        "Ural": "Urais",
+        "Andes": "Andes",
+        "Himalayas": "Himalaia"
+      }
+    },
+    "geography:66": {
+      "question": "O Mar Morto é famoso por ser muito?",
+      "answers": {
+        "Deep": "Profundo",
+        "Salty": "Salgado",
+        "Cold": "Frio",
+        "Large": "Grande"
+      }
+    },
+    "geography:67": {
+      "question": "Qual país tem as cidades Sydney e Melbourne?",
+      "answers": {
+        "New Zealand": "Nova Zelândia",
+        "Australia": "Austrália",
+        "UK": "Reino Unido",
+        "Canada": "Canadá"
+      }
+    },
+    "geography:68": {
+      "question": "Qual país africano nunca foi colonizado?",
+      "answers": {
+        "Kenya": "Quênia",
+        "Ethiopia": "Etiópia",
+        "Nigeria": "Nigéria",
+        "Ghana": "Gana"
+      }
+    },
+    "geography:69": {
+      "question": "A Amazônia é o maior tropical do mundo?",
+      "answers": {
+        "Desert": "Deserto",
+        "Rainforest": "Floresta Tropical",
+        "Savanna": "Savana",
+        "Tundra": "Tundra"
+      }
+    },
+    "geography:70": {
+      "question": "Qual país abrange mais fusos horários?",
+      "answers": {
+        "USA": "EUA",
+        "Russia": "Rússia",
+        "China": "China",
+        "Canada": "Canadá"
+      }
+    },
+    "geography:71": {
+      "question": "Qual cidade dos EUA é apelidada de 'Big Apple'?",
+      "answers": {
+        "Los Angeles": "Los Angeles",
+        "New York": "Nova York",
+        "Chicago": "Chicago",
+        "Miami": "Miami"
+      }
+    },
+    "geography:72": {
+      "question": "O Monte Kilimanjaro está localizado em que país?",
+      "answers": {
+        "Kenya": "Quênia",
+        "Tanzania": "Tanzânia",
+        "Uganda": "Uganda",
+        "Ethiopia": "Etiópia"
+      }
+    },
+    "geography:73": {
+      "question": "Machu Picchu está localizada em que país?",
+      "answers": {
+        "Chile": "Chile",
+        "Peru": "Peru",
+        "Bolivia": "Bolívia",
+        "Ecuador": "Equador"
+      }
+    },
+    "geography:74": {
+      "question": "Qual país é totalmente cercado pela África do Sul?",
+      "answers": {
+        "Lesotho": "Lesoto",
+        "Eswatini": "Essuatíni",
+        "Botswana": "Botsuana",
+        "Namibia": "Namíbia"
+      }
+    },
+    "geography:75": {
+      "question": "Qual destes é um país sem litoral?",
+      "answers": {
+        "Switzerland": "Suíça",
+        "Spain": "Espanha",
+        "Italy": "Itália",
+        "Portugal": "Portugal"
+      }
+    },
+    "geography:76": {
+      "question": "Qual país tem uma folha de bordo em sua bandeira?",
+      "answers": {
+        "USA": "EUA",
+        "Canada": "Canadá",
+        "UK": "Reino Unido",
+        "Australia": "Austrália"
+      }
+    },
+    "geography:77": {
+      "question": "Veneza, uma cidade construída sobre a água, fica em que país?",
+      "answers": {
+        "Spain": "Espanha",
+        "Italy": "Itália",
+        "Greece": "Grécia",
+        "Croatia": "Croácia"
+      }
+    },
+    "geography:78": {
+      "question": "Qual é o oceano mais profundo?",
+      "answers": {
+        "Atlantic": "Atlântico",
+        "Pacific": "Pacífico",
+        "Indian": "Indiano",
+        "Arctic": "Ártico"
+      }
+    },
+    "geography:79": {
+      "question": "O rio Mississippi fica principalmente em qual país?",
+      "answers": {
+        "Canada": "Canadá",
+        "USA": "EUA",
+        "Mexico": "México",
+        "Brazil": "Brasil"
+      }
+    },
+    "geography:80": {
+      "question": "O Canal do Panamá conecta quais dois oceanos?",
+      "answers": {
+        "Atlantic and Pacific": "Atlântico e Pacífico",
+        "Indian and Pacific": "Índico e Pacífico",
+        "Arctic and Atlantic": "Ártico e Atlântico",
+        "Indian and Atlantic": "Índico e Atlântico"
+      }
+    },
+    "geography:81": {
+      "question": "O Canal de Suez está localizado em que país?",
+      "answers": {
+        "Turkey": "Turquia",
+        "Egypt": "Egito",
+        "Panama": "Panamá",
+        "Greece": "Grécia"
+      }
+    },
+    "geography:82": {
+      "question": "Qual país é conhecido como a 'Terra do Sol Nascente'?",
+      "answers": {
+        "China": "China",
+        "Japan": "Japão",
+        "Korea": "Coreia",
+        "Thailand": "Tailândia"
+      }
+    },
+    "geography:83": {
+      "question": "Qual continente não tem residentes humanos permanentes?",
+      "answers": {
+        "Australia": "Austrália",
+        "Antarctica": "Antártica",
+        "Africa": "África",
+        "Asia": "Ásia"
+      }
+    },
+    "geography:84": {
+      "question": "As Montanhas Rochosas estão localizadas em?",
+      "answers": {
+        "Europe": "Europa",
+        "North America": "América do Norte",
+        "Asia": "Ásia",
+        "Africa": "África"
+      }
+    },
+    "geography:85": {
+      "question": "A cidade de Marrakech fica em que país?",
+      "answers": {
+        "Egypt": "Egito",
+        "Morocco": "Marrocos",
+        "Algeria": "Argélia",
+        "Tunisia": "Tunísia"
+      }
+    },
+    "geography:86": {
+      "question": "Qual país escandinavo é famoso por seus fiordes?",
+      "answers": {
+        "Norway": "Noruega",
+        "Spain": "Espanha",
+        "Italy": "Itália",
+        "Greece": "Grécia"
+      }
+    },
+    "geography:87": {
+      "question": "Qual é a capital do Japão?",
+      "answers": {
+        "Osaka": "Osaca",
+        "Tokyo": "Tóquio",
+        "Kyoto": "Quioto",
+        "Nagoya": "Nagoia"
+      }
+    },
+    "geography:88": {
+      "question": "Onde fica a capital do Egito?",
+      "answers": {
+        "Tigris River": "Rio Tigre",
+        "Nile River": "Rio Nilo",
+        "Congo River": "Rio Congo",
+        "Niger River": "Rio Níger"
+      }
+    },
+    "geography:89": {
+      "question": "Qual país é famoso pelo Taj Mahal?",
+      "answers": {
+        "Pakistan": "Paquistão",
+        "India": "Índia",
+        "Bangladesh": "Bangladesh",
+        "Nepal": "Nepal"
+      }
+    },
+    "geography:90": {
+      "question": "Qual estado dos EUA é apelidado de 'Sunshine State'?",
+      "answers": {
+        "California": "Califórnia",
+        "Florida": "Flórida",
+        "Texas": "Texas",
+        "Nevada": "Nevada"
+      }
+    },
+    "geography:91": {
+      "question": "Qual país abriga a maior parcela do Saara?",
+      "answers": {
+        "Egypt": "Egito",
+        "Algeria": "Argélia",
+        "Morocco": "Marrocos",
+        "Tunisia": "Tunísia"
+      }
+    },
+    "geography:92": {
+      "question": "Qual é a maior cordilheira acima da água?",
+      "answers": {
+        "Himalayas": "Himalaia",
+        "Andes": "Andes",
+        "Rockies": "Montanhas Rochosas",
+        "Alps": "Alpes"
+      }
+    },
+    "geography:93": {
+      "question": "A Islândia fica em qual região oceânica?",
+      "answers": {
+        "Pacific": "Pacífico",
+        "North Atlantic": "Atlântico Norte",
+        "Indian": "Indiano",
+        "Southern": "Sul"
+      }
+    },
+    "geography:94": {
+      "question": "Qual continente está inteiramente no Hemisfério Sul?",
+      "answers": {
+        "Europe": "Europa",
+        "Antarctica": "Antártica",
+        "Asia": "Ásia",
+        "North America": "América do Norte"
+      }
+    },
+    "geography:95": {
+      "question": "O rio Tâmisa atravessa qual cidade?",
+      "answers": {
+        "Paris": "Paris",
+        "London": "Londres",
+        "Berlin": "Berlim",
+        "Rome": "Roma"
+      }
+    },
+    "geography:96": {
+      "question": "Qual país tem a bandeira com um círculo vermelho sobre branco (sol nascente)?",
+      "answers": {
+        "China": "China",
+        "Japan": "Japão",
+        "South Korea": "Coreia do Sul",
+        "Vietnam": "Vietnã"
+      }
+    },
+    "geography:97": {
+      "question": "O rio Amazonas deságua em qual oceano?",
+      "answers": {
+        "Pacific": "Pacífico",
+        "Atlantic": "Atlântico",
+        "Indian": "Indiano",
+        "Arctic": "Ártico"
+      }
+    },
+    "geography:98": {
+      "question": "Qual continente está inteiramente no Hemisfério Norte?",
+      "answers": {
+        "Europe": "Europa",
+        "Africa": "África",
+        "South America": "América do Sul",
+        "Australia": "Austrália"
+      }
+    },
+    "geography:99": {
+      "question": "Angel Falls, a cachoeira mais alta, está localizada em?",
+      "answers": {
+        "Brazil": "Brasil",
+        "Venezuela": "Venezuela",
+        "Peru": "Peru",
+        "Colombia": "Colômbia"
+      }
+    }
+  }
+}

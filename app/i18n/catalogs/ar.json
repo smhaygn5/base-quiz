@@ -1,0 +1,5586 @@
+{
+  "messages": {
+    "meta.title": "Base Quiz",
+    "common.back": "العودة",
+    "common.cancel": "إلغاء",
+    "common.next": "التالي",
+    "common.skip": "تخطي",
+    "common.tryAgain": "حاول مرة أخرى",
+    "common.connect": "الاتصال",
+    "common.disconnect": "قطع الاتصال",
+    "common.connectWallet": "ربط المحفظة",
+    "common.connectBaseWallet": "ربط Base Wallet",
+    "common.browserWallets": "محافظ المتصفح",
+    "common.recommended": "موصى به",
+    "common.selectLanguage": "اختر اللغة",
+    "common.language": "اللغة",
+    "common.switchLight": "التبديل إلى موضوع الضوء",
+    "common.switchDark": "التبديل إلى المظهر الداكن",
+    "common.mute": "كتم الصوت",
+    "common.unmute": "إلغاء كتم الصوت",
+    "home.kicker": "مسابقة معلومات على السلسلة · Base",
+    "home.titleLine1": "مسابقة يومية.",
+    "home.titleLine2": "مبنية على Base.",
+    "home.description": "اختر فئة، وأجب عن خمسة أسئلة، وسابق الوقت. حافظ على سلسلتك، واحفظ نتيجتك على السلسلة، وتقدّم في لوحة الصدارة العالمية.",
+    "home.streak": "سلسلة لمدة {count} أيام",
+    "home.confirmWallet": "التأكيد في المحفظة...",
+    "home.startRound": "ابدأ الجولة",
+    "home.leaderboard": "المتصدرين",
+    "home.streakBadges": "شارات خطية",
+    "home.facts": "5 أسئلة · 15 ثانية لكل سؤال · النتائج محفوظة على السلسلة",
+    "category.pick": "اختر فئة",
+    "category.meta": "{count} سؤالًا · 5 في كل جولة",
+    "category.start": "ابدأ اختبار {category}",
+    "category.previous": "الفئة السابقة",
+    "category.next": "الفئة التالية",
+    "category.imageAlt": "فئة مسابقة {category}",
+    "category.crypto.name": "تشفير",
+    "category.crypto.description": "اختبر معلوماتك عن Base وEthereum والمحافظ وDeFi والثقافة التي تشكل عالم onchain.",
+    "category.sports.name": "الرياضة",
+    "category.sports.description": "من كرة القدم وكرة السلة إلى التنس والألعاب الأولمبية - تعرف على مدى قوة ذاكرتك الرياضية.",
+    "category.art.name": "الفن",
+    "category.art.description": "استكشف الرسم والفنانين والحركات والأفكار التي غيرت الثقافة البصرية عبر الأجيال.",
+    "category.history.name": "التاريخ",
+    "category.history.description": "سافر عبر الحضارات ونقاط التحول والأشخاص الذين شكلت قراراتهم العالم.",
+    "category.science.name": "العلوم",
+    "category.science.description": "تحدي نفسك عبر الفيزياء والأحياء والكيمياء والاكتشافات التي تشرح كيفية عمل الأشياء.",
+    "category.geography.name": "الجغرافيا",
+    "category.geography.description": "انتقل إلى البلدان والعواصم والمحيطات والمعالم من كل ركن من أركان كوكبنا.",
+    "quiz.fallbackName": "اختبار",
+    "quiz.questionProgress": "السؤال {current} من {total}",
+    "quiz.score": "النتيجة",
+    "quiz.time": "الوقت",
+    "quiz.answeredAria": "تمت الإجابة عن {answered} من {total} أسئلة",
+    "quiz.chooseCorrect": "اختر الإجابة الصحيحة",
+    "quiz.correct": "الإجابة الصحيحة",
+    "quiz.wrong": "إجابة خاطئة",
+    "quiz.points": "+ نقاط {points}",
+    "quiz.correctOption": "الخيار الصحيح: {option}",
+    "quiz.autoNote": "أجب مرة واحدة · يتم تحميل السؤال التالي تلقائيًا",
+    "result.roundComplete": "الجولة كاملة",
+    "result.finalScore": "النتيجة النهائية الخاصة بك",
+    "result.points": "نقاط",
+    "result.summaryAria": "ملخص الجولة",
+    "result.categoryPill": "فئة {category}",
+    "result.streakPill": "سلسلة لمدة {count} أيام",
+    "result.roundCompletedTitle": "اكتملت الجولة",
+    "result.roundCompletedDetail": "تمت الإجابة على خمسة أسئلة. النتيجة النهائية الخاصة بك جاهزة.",
+    "result.streakUpdatedTitle": "تم تحديث الخط",
+    "result.streakUpdatedDetail": "أنت الآن في سلسلة تعلم مدتها يوم {count}.",
+    "result.save.idle.title": "حفظ درجاتك",
+    "result.save.idle.detail": "قم بتسجيل هذه النتيجة على Base وانضم إلى قائمة المتصدرين العالمية.",
+    "result.save.pending.title": "تأكيد درجاتك",
+    "result.save.pending.detail": "قم بالموافقة على المعاملة في محفظتك لإنهاء الحفظ.",
+    "result.save.done.title": "النتيجة المحفوظة onchain",
+    "result.save.done.detail": "تم التحقق من نتيجتك على Base وهي جاهزة للوحة المتصدرين.",
+    "result.save.error.title": "حفظ يحتاج إلى الاهتمام",
+    "result.save.error.detail": "قم بمراجعة الرسالة أدناه، ثم حاول إجراء المعاملة مرة أخرى.",
+    "result.save.disconnected.title": "الاتصال للحفظ",
+    "result.save.disconnected.detail": "اختر محفظة لتسجيل درجاتك على Base.",
+    "result.shareTitle": "مشاركة النتيجة الخاصة بك",
+    "result.shareDetail": "تحدي أصدقائك على Farcaster أو X.",
+    "result.replayKicker": "استمر في الزخم",
+    "result.replayTitle": "على استعداد لجولة أخرى؟",
+    "result.replayDetail": "العب {category} مرة أخرى أو اختر تحديًا مختلفًا.",
+    "result.playAgain": "العب مرة أخرى",
+    "result.chooseCategory": "اختر الفئة",
+    "result.saveButton": "حفظ النتيجة onchain",
+    "result.confirming": "جارٍ التأكيد…",
+    "result.saved": "تم الحفظ onchain",
+    "result.viewTransaction": "عرض الصفقة",
+    "result.shareScore": "حصة النتيجة",
+    "result.copyText": "نسخ النص",
+    "result.copied": "نسخ إلى الحافظة!",
+    "leaderboard.kicker": "Base Mainnet · كل الأوقات",
+    "leaderboard.title": "المتصدرين",
+    "leaderboard.description": "تم تصنيف أفضل اللاعبين حسب مجموع نقاطهم في onchain.",
+    "leaderboard.loading": "قراءة النتائج من Base...",
+    "leaderboard.empty": "لا توجد نتائج حتى الآن. كن أول لاعب على اللوحة.",
+    "leaderboard.player": "لاعب",
+    "leaderboard.totalScore": "مجموع النقاط",
+    "leaderboard.bestScore": "أفضل نتيجة",
+    "leaderboard.streak": "خط",
+    "leaderboard.badges": "شارات",
+    "leaderboard.you": "أنت",
+    "leaderboard.noBadges": "لا شارات",
+    "leaderboard.badgeTitle": "شارة {name}",
+    "leaderboard.players": "{count} لاعبًا",
+    "leaderboard.verified": "تم التحقق من النتائج والشارات بواسطة onchain",
+    "badges.kicker": "NFT للسلسلة · Base Mainnet",
+    "badges.title": "شارات",
+    "badges.roadmapTitle": "خارطة طريق شارة الخط",
+    "badges.roadmapDescription": "استمر في اللعب، وطوّر خطك، واحصل على كل إنجاز من إنجازات onchain.",
+    "badges.streak": "سلسلة لمدة {count} أيام",
+    "badges.walletRequired": "المحفظة مطلوبة",
+    "badges.connectTitle": "اتصل لعرض شاراتك والمطالبة بها",
+    "badges.connectDetail": "تتم قراءة خطك وملكية NFT مباشرة من Base.",
+    "badges.days": "أيام {count}",
+    "badges.bronze.name": "برونزية",
+    "badges.bronze.description": "أكمل أول 3 أيام من الجري",
+    "badges.silver.name": "الفضة",
+    "badges.silver.description": "الحفاظ على الخط على قيد الحياة لمدة أسبوع",
+    "badges.gold.name": "الذهب",
+    "badges.gold.description": "قم ببناء خط ثابت لمدة 30 يومًا",
+    "badges.diamond.name": "الماس",
+    "badges.diamond.description": "الوصول إلى المعلم النهائي لمدة 100 يوم",
+    "badges.unlock": "افتح القفل في خط {count} لمدة يوم",
+    "badges.owned": "مملوكة",
+    "badges.claim": "شارة المطالبة",
+    "badges.claiming": "جارٍ المطالبة…",
+    "badges.daysLeft": "{count} أيام متبقية",
+    "badges.locked": "مغلق",
+    "badges.loading": "قراءة الشارات من Base...",
+    "wallet.connectTitle": "ربط المحفظة",
+    "wallet.browserWallets": "محافظ المتصفح",
+    "wallet.recommended": "موصى به",
+    "tutorial.welcomeTitle": "مرحبًا.",
+    "tutorial.welcomeDetail": "لعبة التوافه اليومية على Base. اختبر معلوماتك، وابني خطوطًا، وتنافس في جميع أنحاء العالم.",
+    "tutorial.questionsTitle": "5 أسئلة. يوميًا.",
+    "tutorial.questionsDetail": "أجب بسرعة - أسرع يعني المزيد من النقاط. احفظ درجاتك onchain لتظهر على لوحة المتصدرين العالمية.",
+    "tutorial.badgesTitle": "احصل على شارات NFT.",
+    "tutorial.badgesDetail": "حافظ على خطك حيًا واحصل على onchain NFTs: البرونزي (3d)، الفضي (7d)، الذهبي (30d)، الماسي (100d).",
+    "tutorial.letsPlay": "هيا نلعب",
+    "footer.blockData": "بيانات الكتل · BASE MAINNET",
+    "footer.playersOnchain": "{count} لاعبًا على السلسلة",
+    "share.text": "🧠 حققت {score} نقطة في Base Quiz! 🔥 السلسلة: {streak} أيام\n\nهل يمكنك التفوق عليّ؟ 👇",
+    "error.startFailed": "لا يمكن بدء الجولة. يرجى المحاولة مرة أخرى.",
+    "error.startCancelled": "تم إلغاء المعاملة. تأكيد ذلك لبدء الجولة.",
+    "error.saveFailed": "لا يمكن حفظ النتيجة. يرجى المحاولة مرة أخرى.",
+    "error.alreadyPlayed": "تم حفظها بالفعل اليوم. أعود غدا.",
+    "error.claimFailed": "لا يمكن المطالبة بالشارة. يرجى المحاولة مرة أخرى.",
+    "activation.kicker": "إعداد Base Quiz",
+    "activation.title": "تفعيل عقد الجولات",
+    "activation.copy": "تنشر معاملة Base هذه لمرة واحدة العقد الصغير الذي تستخدمه Start Round. لا يغير النتائج أو الشرائط أو الشارات أو ينقل ETH.",
+    "activation.checking": "فحص العقد…",
+    "activation.active": "عقد الجولات مفعّل",
+    "activation.connected": "متصل: {address}",
+    "activation.confirming": "جارٍ التأكيد على Base...",
+    "activation.activate": "تفعيل عقد الجولات",
+    "activation.pendingTransaction": "عرض المعاملة المعلقة",
+    "activation.back": "العودة إلى Base Quiz",
+    "activation.errorCheck": "تعذر التحقق من عقد Base. حاول مرة أخرى.",
+    "activation.errorWallet": "لم يتم العثور على محفظة متوافقة.",
+    "activation.errorCancelled": "تم إلغاء المعاملة. لم يتم إجراء أي تغييرات.",
+    "activation.errorFailed": "فشل التنشيط. يرجى المحاولة مرة أخرى."
+  },
+  "quiz": {
+    "crypto:0": {
+      "question": "ما هي الشركة التي قامت بتطوير Base؟",
+      "answers": {
+        "Binance": "بينانس",
+        "Coinbase": "Coinbase",
+        "Kraken": "كراكن",
+        "OKX": "OKX"
+      }
+    },
+    "crypto:1": {
+      "question": "Base هي الطبقة الثانية لأي شبكة؟",
+      "answers": {
+        "Bitcoin": "بيتكوين",
+        "Solana": "سولانا",
+        "Ethereum": "Ethereum",
+        "Avalanche": "انهيار جليدي"
+      }
+    },
+    "crypto:2": {
+      "question": "ما هي الحزمة التقنية التي يستخدمها Base؟",
+      "answers": {
+        "OP Stack": "مكدس OP",
+        "zkSync": "zkSync",
+        "Polygon CDK": "مضلع CDK",
+        "Arbitrum Nitro": "اربيتروم نيترو"
+      }
+    },
+    "crypto:3": {
+      "question": "في أي عام تم إطلاق الشبكة الرئيسية Base؟",
+      "answers": {
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023",
+        "2024": "2024"
+      }
+    },
+    "crypto:4": {
+      "question": "ما هو الرمز المميز المستخدم لرسوم الغاز على Base؟",
+      "answers": {
+        "USDC": "USDC",
+        "BASE": "القاعدة",
+        "ETH": "ETH",
+        "OP": "OP"
+      }
+    },
+    "crypto:5": {
+      "question": "ما كان يسمى Base App سابقًا؟",
+      "answers": {
+        "Coinbase Wallet": "Coinbase Wallet",
+        "MetaMask": "MetaMask",
+        "Rainbow": "قوس قزح",
+        "Phantom": "فانتوم"
+      }
+    },
+    "crypto:6": {
+      "question": "من هو الرئيس التنفيذي لشركة Coinbase؟",
+      "answers": {
+        "Vitalik Buterin": "فيتاليك بوترين",
+        "Brian Armstrong": "بريان ارمسترونج",
+        "Changpeng Zhao": "تشانغبينغ تشاو",
+        "Jesse Pollak": "جيسي بولاك"
+      }
+    },
+    "crypto:7": {
+      "question": "من يقود Base في Coinbase؟",
+      "answers": {
+        "Brian Armstrong": "بريان ارمسترونج",
+        "Jesse Pollak": "جيسي بولاك",
+        "Hayden Adams": "هايدن آدامز",
+        "Stani Kulechov": "ستاني كوليتشوف"
+      }
+    },
+    "crypto:8": {
+      "question": "ما هي السلسلة الفائقة التي ينتمي إليها Base؟",
+      "answers": {
+        "Polygon Superchain": "سلسلة مضلعة فائقة",
+        "Optimism Superchain": "سلسلة التفاؤل الفائقة",
+        "Arbitrum Orbit": "مدار التحكيم",
+        "zkSync Hyperchain": "zkSync هايبرتشين"
+      }
+    },
+    "crypto:9": {
+      "question": "أفضل وصف لـ Base هو؟",
+      "answers": {
+        "A standalone L1": "L1 مستقل",
+        "An Ethereum L2 rollup": "مجموعة Ethereum L2",
+        "A sidechain": "سلسلة جانبية",
+        "A bridge protocol": "بروتوكول الجسر"
+      }
+    },
+    "crypto:10": {
+      "question": "من هو مؤسس Ethereum؟",
+      "answers": {
+        "Satoshi Nakamoto": "ساتوشي ناكاموتو",
+        "Vitalik Buterin": "فيتاليك بوترين",
+        "Brian Armstrong": "بريان ارمسترونج",
+        "CZ": "تشيكوسلوفاكيا"
+      }
+    },
+    "crypto:11": {
+      "question": "تمت كتابة العقود الذكية على Base؟",
+      "answers": {
+        "Python": "بايثون",
+        "Rust": "الصدأ",
+        "Solidity": "الصلابة",
+        "Go": "انطلق"
+      }
+    },
+    "crypto:12": {
+      "question": "ما هي أصغر وحدة في ETH؟",
+      "answers": {
+        "Satoshi": "ساتوشي",
+        "Gwei": "غوي",
+        "Wei": "وي",
+        "Finney": "فيني"
+      }
+    },
+    "crypto:13": {
+      "question": "ما الهدف الرئيسي من حلول Layer-2؟",
+      "answers": {
+        "Minting more tokens": "إنشاء المزيد من الرموز",
+        "Scalability & lower fees": "قابلية توسع أكبر ورسوم أقل",
+        "Mining": "التعدين",
+        "Staking": "التخزين بالحصص"
+      }
+    },
+    "crypto:14": {
+      "question": "ما هو الإجماع الذي يستخدمه Ethereum؟",
+      "answers": {
+        "Proof of Work": "إثبات العمل",
+        "Proof of Stake": "إثبات الحصة",
+        "Proof of Authority": "إثبات السلطة",
+        "Proof of History": "إثبات التاريخ"
+      }
+    },
+    "crypto:15": {
+      "question": "ما هو EVM؟",
+      "answers": {
+        "A wallet type": "نوع المحفظة",
+        "Ethereum's execution engine": "محرك تنفيذ Ethereum",
+        "A token standard": "معيار الرمز المميز",
+        "A bridge": "جسر"
+      }
+    },
+    "crypto:16": {
+      "question": "ما الذي لا يعد L2 من Ethereum؟",
+      "answers": {
+        "Base": "Base",
+        "Arbitrum": "التحكيم",
+        "Solana": "سولانا",
+        "Optimism": "التفاؤل"
+      }
+    },
+    "crypto:17": {
+      "question": "إلى ماذا يشير مصطلح \"الغاز\"؟",
+      "answers": {
+        "A token": "رمز مميز",
+        "Transaction fee unit": "وحدة رسوم المعاملة",
+        "A wallet": "محفظة",
+        "An NFT type": "نوع NFT"
+      }
+    },
+    "crypto:18": {
+      "question": "متى تم تحويل Ethereum إلى PoS (الدمج)؟",
+      "answers": {
+        "2020": "2020",
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023"
+      }
+    },
+    "crypto:19": {
+      "question": "ما هو ERC-20؟",
+      "answers": {
+        "NFT standard": "معيار NFT",
+        "Fungible token standard": "معيار الرمز المميز القابل للاستبدال",
+        "Wallet format": "تنسيق المحفظة",
+        "L2 standard": "معيار L2"
+      }
+    },
+    "crypto:20": {
+      "question": "ما هو الحد الأقصى لعرض البيتكوين؟",
+      "answers": {
+        "21 million": "21 مليون",
+        "100 million": "100 مليون",
+        "1 billion": "1 مليار",
+        "Unlimited": "غير محدود"
+      }
+    },
+    "crypto:21": {
+      "question": "من أنشأ البيتكوين؟",
+      "answers": {
+        "Vitalik Buterin": "فيتاليك بوترين",
+        "Satoshi Nakamoto": "ساتوشي ناكاموتو",
+        "Hal Finney": "هال فيني",
+        "Nick Szabo": "نيك زابو"
+      }
+    },
+    "crypto:22": {
+      "question": "ما هو اسم أصغر وحدة في عملة البيتكوين؟",
+      "answers": {
+        "Wei": "وي",
+        "Gwei": "غوي",
+        "Satoshi": "ساتوشي",
+        "Finney": "فيني"
+      }
+    },
+    "crypto:23": {
+      "question": "ما هو معدل انخفاض سعر البيتكوين إلى النصف (تقريبًا)؟",
+      "answers": {
+        "Every year": "كل عام",
+        "Every 2 years": "كل عامين",
+        "Every 4 years": "كل 4 سنوات",
+        "Every 10 years": "كل 10 سنوات"
+      }
+    },
+    "crypto:24": {
+      "question": "أي إجماع يستخدم Bitcoin؟",
+      "answers": {
+        "Proof of Stake": "إثبات الحصة",
+        "Proof of Work": "إثبات العمل",
+        "Proof of Authority": "إثبات السلطة",
+        "DPoS": "DPoS"
+      }
+    },
+    "crypto:25": {
+      "question": "ما الذي تمثله DeFi؟",
+      "answers": {
+        "Defined Finance": "التمويل المحدد",
+        "Decentralized Finance": "التمويل اللامركزي",
+        "Defaulted Finance": "التمويل المتعثر",
+        "Deferred Finance": "التمويل المؤجل"
+      }
+    },
+    "crypto:26": {
+      "question": "Uniswap هو في المقام الأول؟",
+      "answers": {
+        "Lending platform": "منصة الإقراض",
+        "DEX (decentralized exchange)": "DEX (التبادل اللامركزي)",
+        "Wallet": "المحفظة",
+        "Bridge": "الجسر"
+      }
+    },
+    "crypto:27": {
+      "question": "ما هو AMM؟",
+      "answers": {
+        "Auto Market Mover": "محرك سوق السيارات",
+        "Automated Market Maker": "صانع السوق الآلي",
+        "Asset Management Module": "وحدة إدارة الأصول",
+        "Aggregated Mint Maker": "صانع النعناع المجمع"
+      }
+    },
+    "crypto:28": {
+      "question": "ماذا يعني TVL؟",
+      "answers": {
+        "Token Value Locked": "قيمة الرمز المميز مقفلة",
+        "Total Value Locked": "إجمالي القيمة مقفلة",
+        "Trade Volume Limit": "الحد الأقصى لحجم التداول",
+        "Tier Volume Level": "مستوى حجم الطبقة"
+      }
+    },
+    "crypto:29": {
+      "question": "Aave هو في المقام الأول؟",
+      "answers": {
+        "DEX": "DEX",
+        "Lending protocol": "بروتوكول الإقراض",
+        "Stablecoin": "العملة المستقرة",
+        "NFT marketplace": "سوق NFT"
+      }
+    },
+    "crypto:30": {
+      "question": "ما هي زراعة المحصول؟",
+      "answers": {
+        "Mining crops": "محاصيل التعدين",
+        "Earning rewards from DeFi protocols": "الحصول على مكافآت من بروتوكولات DeFi",
+        "A staking pool name": "اسم مجموعة التخزين",
+        "An NFT minting term": "مصطلح سك NFT"
+      }
+    },
+    "crypto:31": {
+      "question": "ما هي الشركة التي تصدر USDC؟",
+      "answers": {
+        "Tether": "التوصيل",
+        "Circle": "الدائرة",
+        "Coinbase": "Coinbase",
+        "Paxos": "باكسوس"
+      }
+    },
+    "crypto:32": {
+      "question": "ما هي الشركة التي تصدر USDT؟",
+      "answers": {
+        "Circle": "الدائرة",
+        "Tether": "حبل",
+        "Coinbase": "Coinbase",
+        "MakerDAO": "MakerDAO"
+      }
+    },
+    "crypto:33": {
+      "question": "DAI مدعوم بشكل أساسي؟",
+      "answers": {
+        "US Dollars in a bank": "دولار أمريكي في أحد البنوك",
+        "Crypto collateral": "ضمانات التشفير",
+        "Gold reserves": "احتياطيات الذهب",
+        "Government bonds": "السندات الحكومية"
+      }
+    },
+    "crypto:34": {
+      "question": "هل تحاول العملات المستقرة الحفاظ على تكافؤ الأسعار؟",
+      "answers": {
+        "Bitcoin": "بيتكوين",
+        "Ethereum": "Ethereum",
+        "Fiat currencies": "العملات الورقية",
+        "Gold only": "الذهب فقط"
+      }
+    },
+    "crypto:35": {
+      "question": "ما الذي يرمز إليه NFT؟",
+      "answers": {
+        "New Finance Token": "رمز التمويل الجديد",
+        "Non-Fungible Token": "الرمز المميز غير القابل للاستبدال",
+        "Network File Transfer": "نقل ملفات الشبكة",
+        "Node Function Type": "نوع وظيفة العقدة"
+      }
+    },
+    "crypto:36": {
+      "question": "ما هو معيار الرمز المميز NFT في Ethereum؟",
+      "answers": {
+        "ERC-20": "ERC-20",
+        "ERC-721": "ERC-721",
+        "ERC-1155 only": "ERC-1155 فقط",
+        "BEP-20": "أفضل الممارسات البيئية-20"
+      }
+    },
+    "crypto:37": {
+      "question": "ما نوع الخدمة التي تقدمها OpenSea أساسًا؟",
+      "answers": {
+        "DEX": "DEX",
+        "NFT marketplace": "سوق NFT",
+        "Wallet": "محفظة",
+        "L2 chain": "شبكة L2"
+      }
+    },
+    "crypto:38": {
+      "question": "ماذا تعني كلمة \"نعناع\" في NFTs؟",
+      "answers": {
+        "Sell an NFT": "بيع NFT",
+        "Create a new NFT onchain": "قم بإنشاء NFT جديد على السلسلة",
+        "Burn an NFT": "انسخ NFT",
+        "Transfer an NFT": "نقل NFT"
+      }
+    },
+    "crypto:39": {
+      "question": "ما هي الكلمات السرية للمحفظة؟",
+      "answers": {
+        "Public key": "المفتاح العام",
+        "Seed phrase": "عبارة البذور",
+        "Hash": "التجزئة",
+        "Nonce": "نونس"
+      }
+    },
+    "crypto:40": {
+      "question": "ما هي محفظة الأجهزة؟",
+      "answers": {
+        "A mobile app": "تطبيق جوال",
+        "A physical device for storing keys": "جهاز فعلي لتخزين المفاتيح",
+        "A browser extension": "امتداد للمتصفح",
+        "An exchange account": "حساب تبادل"
+      }
+    },
+    "crypto:41": {
+      "question": "لا يجب عليك أبدًا مشاركة ما لديك؟",
+      "answers": {
+        "Wallet address": "عنوان المحفظة",
+        "Seed phrase": "عبارة البذور",
+        "ENS name": "اسم ENS",
+        "Username": "اسم المستخدم"
+      }
+    },
+    "crypto:42": {
+      "question": "يعني الحراسة الذاتية؟",
+      "answers": {
+        "Exchange holds your keys": "يحتفظ Exchange بمفاتيحك",
+        "You control your private keys": "أنت تتحكم في مفاتيحك الخاصة",
+        "A bank holds your keys": "يحتفظ البنك بمفاتيحك",
+        "A friend holds your keys": "أحد الأصدقاء يحمل مفاتيحك"
+      }
+    },
+    "crypto:43": {
+      "question": "MetaMask هو في المقام الأول؟",
+      "answers": {
+        "Exchange": "تبادل",
+        "Browser wallet": "محفظة المتصفح",
+        "Hardware wallet": "محفظة الأجهزة",
+        "L2 chain": "سلسلة L2"
+      }
+    },
+    "crypto:44": {
+      "question": "ما هو Farcaster؟",
+      "answers": {
+        "An exchange": "تبادل",
+        "A decentralized social network": "شبكة اجتماعية لامركزية",
+        "A wallet": "محفظة",
+        "A game": "لعبة"
+      }
+    },
+    "crypto:45": {
+      "question": "هل يتم استدعاء المشاركات على Farcaster؟",
+      "answers": {
+        "Tweets": "تغريدات",
+        "Casts": "الممثلين",
+        "Toots": "توتس",
+        "Snaps": "اللقطات"
+      }
+    },
+    "crypto:46": {
+      "question": "من أسس Farcaster؟",
+      "answers": {
+        "Vitalik Buterin": "فيتاليك بوترين",
+        "Dan Romero & Varun Srinivasan": "دان روميرو وفارون سرينيفاسان",
+        "Jesse Pollak": "جيسي بولاك",
+        "Jack Dorsey": "جاك دورسي"
+      }
+    },
+    "crypto:47": {
+      "question": "هل يتم استدعاء معرف مستخدم Farcaster؟",
+      "answers": {
+        "UID": "المعرف الفريد",
+        "FID": "FID",
+        "Handle": "المقبض",
+        "Tag": "العلامة"
+      }
+    },
+    "crypto:48": {
+      "question": "تم إنشاء التطبيقات المصغرة على Base App؟",
+      "answers": {
+        "MiniKit / OnchainKit": "MiniKit / OnchainKit",
+        "Flutter only": "الرفرفة فقط",
+        "Native iOS only": "نظام التشغيل iOS الأصلي فقط",
+        "Unity": "الوحدة"
+      }
+    },
+    "crypto:49": {
+      "question": "ما يسمى أيضًا بتجزئة معاملة blockchain؟",
+      "answers": {
+        "Nonce": "نونس",
+        "TX ID": "معرف تكساس",
+        "Block height": "ارتفاع الكتلة",
+        "Gas limit": "حد الغاز"
+      }
+    },
+    "crypto:50": {
+      "question": "ما الذي يرمز إليه DAO؟",
+      "answers": {
+        "Digital Asset Order": "طلب الأصول الرقمية",
+        "Decentralized Autonomous Organization": "منظمة لا مركزية مستقلة",
+        "Distributed App Output": "مخرجات التطبيق الموزعة",
+        "Data Access Object": "كائن الوصول إلى البيانات"
+      }
+    },
+    "crypto:51": {
+      "question": "ما هو \"مستكشف الكتل\"؟",
+      "answers": {
+        "A mining tool": "أداة تعدين",
+        "A site to view onchain data": "موقع لعرض بيانات onchain",
+        "A wallet type": "نوع المحفظة",
+        "A bridge": "جسر"
+      }
+    },
+    "crypto:52": {
+      "question": "ما هو \"الانزلاق\" في التداول؟",
+      "answers": {
+        "Network downtime": "وقت تعطل الشبكة",
+        "Difference between expected & actual price": "الفرق بين السعر المتوقع والسعر الفعلي",
+        "A type of fee": "نوع من الرسوم",
+        "A wallet error": "خطأ في المحفظة"
+      }
+    },
+    "crypto:53": {
+      "question": "هل هذا \"سحب البساط\"؟",
+      "answers": {
+        "A trading strategy": "استراتيجية التداول",
+        "A scam where founders abandon a project": "عملية احتيال حيث يتخلى المؤسسون عن المشروع",
+        "A staking method": "طريقة التوقيع المساحي",
+        "A wallet feature": "ميزة المحفظة"
+      }
+    },
+    "crypto:54": {
+      "question": "ما هي المحفظة متعددة التوقيع؟",
+      "answers": {
+        "A wallet with many tokens": "محفظة تحتوي على العديد من الرموز المميزة",
+        "A wallet needing multiple signatures to approve tx": "تحتاج المحفظة إلى توقيعات متعددة للموافقة على الإرسال",
+        "A wallet on multiple chains": "محفظة مكونة من سلاسل متعددة",
+        "A wallet with a long password": "محفظة بكلمة مرور طويلة"
+      }
+    },
+    "crypto:55": {
+      "question": "ماذا يعني \"HODL\" في ثقافة العملات المشفرة؟",
+      "answers": {
+        "Sell quickly": "البيع بسرعة",
+        "Hold long-term": "احتفظ به على المدى الطويل",
+        "A hardware wallet": "محفظة الأجهزة",
+        "A type of token": "نوع من الرموز المميزة"
+      }
+    },
+    "crypto:56": {
+      "question": "ما هو \"الحوت\" في العملات المشفرة؟",
+      "answers": {
+        "A tiny investor": "مستثمر صغير",
+        "A holder of very large amounts": "حائز على مبالغ كبيرة جداً",
+        "A stablecoin": "عملة مستقرة",
+        "A mining rig": "منصة تعدين"
+      }
+    },
+    "crypto:57": {
+      "question": "هل يتم دفع رسوم الغاز على blockchain؟",
+      "answers": {
+        "Developers": "المطورين",
+        "Network validators/miners": "مدققو/عمال المناجم في الشبكة",
+        "Exchanges": "التبادلات",
+        "Banks": "البنوك"
+      }
+    },
+    "crypto:58": {
+      "question": "ما هو العقد الذكي؟",
+      "answers": {
+        "A paper contract": "عقد ورقي",
+        "Self-executing code on a blockchain": "تعليمات برمجية ذاتية التنفيذ على blockchain",
+        "A savings account": "حساب توفير",
+        "A hardware device": "جهاز"
+      }
+    },
+    "crypto:59": {
+      "question": "ما الذي يرمز إليه \"DEX\"؟",
+      "answers": {
+        "Digital Exchange": "التبادل الرقمي",
+        "Decentralized Exchange": "التبادل اللامركزي",
+        "Data Exchange": "تبادل البيانات",
+        "Direct Exchange": "التبادل المباشر"
+      }
+    },
+    "crypto:60": {
+      "question": "ما الذي يرمز إليه \"CEX\"؟",
+      "answers": {
+        "Central Exchange": "الصرف المركزي",
+        "Centralized Exchange": "التبادل المركزي",
+        "Crypto Exchange": "تبادل العملات المشفرة",
+        "Coin Exchange": "صرف العملات"
+      }
+    },
+    "crypto:61": {
+      "question": "ما هو \"الستاكينج\"؟",
+      "answers": {
+        "Selling tokens": "بيع الرموز المميزة",
+        "Locking tokens to support a network for rewards": "رموز القفل لدعم الشبكة للحصول على المكافآت",
+        "Mining coins": "عملات التعدين",
+        "Burning tokens": "حرق الرموز المميزة"
+      }
+    },
+    "crypto:62": {
+      "question": "ما هو \"المفتاح الخاص\"؟",
+      "answers": {
+        "Your public address": "عنوانك العام",
+        "A secret that controls your funds": "سر يتحكم في أموالك",
+        "An exchange password": "كلمة مرور التبادل",
+        "A transaction id": "معرف المعاملة"
+      }
+    },
+    "crypto:63": {
+      "question": "هل يتم استخدام \"testnet\"؟",
+      "answers": {
+        "Real transactions": "المعاملات الحقيقية",
+        "Testing without real value": "اختبار بدون قيمة حقيقية",
+        "Storing coins": "تخزين العملات المعدنية",
+        "Mining Bitcoin": "تعدين البيتكوين"
+      }
+    },
+    "crypto:64": {
+      "question": "ماذا يعني \"حرق\" الرموز المميزة؟",
+      "answers": {
+        "Creating tokens": "إنشاء الرموز المميزة",
+        "Permanently removing tokens from supply": "إزالة الرموز المميزة من العرض نهائيًا",
+        "Staking tokens": "الرموز المميزة للتخزين",
+        "Sending tokens": "إرسال الرموز المميزة"
+      }
+    },
+    "crypto:65": {
+      "question": "ما هو \"السوق الصاعد\"؟",
+      "answers": {
+        "Prices falling": "انخفاض الأسعار",
+        "Prices rising": "ارتفاع الأسعار",
+        "No trading": "ممنوع التداول",
+        "A type of coin": "نوع من العملات المعدنية"
+      }
+    },
+    "crypto:66": {
+      "question": "ما هو \"السوق الهابط\"؟",
+      "answers": {
+        "Prices rising": "ارتفاع الأسعار",
+        "Prices falling": "انخفاض الأسعار",
+        "Sideways only": "جانبية فقط",
+        "A mining term": "مصطلح التعدين"
+      }
+    },
+    "crypto:67": {
+      "question": "ما هو \"الإنزال الجوي\"؟",
+      "answers": {
+        "A market crash": "انهيار السوق",
+        "Free distribution of tokens": "توزيع الرموز المميزة مجانًا",
+        "A hack": "اختراق",
+        "A trading fee": "رسوم التداول"
+      }
+    },
+    "crypto:68": {
+      "question": "ما هو \"Web3\"؟",
+      "answers": {
+        "The third website": "الموقع الثالث",
+        "A decentralized internet on blockchain": "إنترنت لامركزي على تقنية blockchain",
+        "A web browser": "متصفح ويب",
+        "A programming language": "لغة برمجة"
+      }
+    },
+    "crypto:69": {
+      "question": "ماذا يعني \"L1\"؟",
+      "answers": {
+        "Layer 1 base blockchain": "سلسلة الكتل الأساسية للطبقة الأولى",
+        "A game level": "مستوى اللعبة",
+        "A wallet": "محفظة",
+        "A token standard": "معيار الرمز المميز"
+      }
+    },
+    "crypto:70": {
+      "question": "سولانا هو؟",
+      "answers": {
+        "Layer-2 of Ethereum": "الطبقة الثانية من Ethereum",
+        "Standalone Layer-1 blockchain": "blockchain المستقل من الطبقة الأولى",
+        "Wallet": "المحفظة",
+        "Stablecoin": "العملة المستقرة"
+      }
+    },
+    "crypto:71": {
+      "question": "ما هو إثبات العمل المعروف؟",
+      "answers": {
+        "Low energy use": "استهلاك منخفض للطاقة",
+        "High energy use via mining": "استخدام عالي للطاقة عن طريق التعدين",
+        "Staking coins": "قطع العملات المعدنية",
+        "No validators": "لا توجد أدوات التحقق"
+      }
+    },
+    "crypto:72": {
+      "question": "ماذا يعني \"DYOR\"؟",
+      "answers": {
+        "Do Your Own Research": "قم بالبحث الخاص بك",
+        "Deposit Your Own Reserves": "قم بإيداع احتياطياتك الخاصة",
+        "Don't Yield On Returns": "لا تستسلم للمرتجعات",
+        "Data Yield Over Risk": "عائد البيانات أعلى من المخاطر"
+      }
+    },
+    "crypto:73": {
+      "question": "ما هي \"المحفظة الباردة\"؟",
+      "answers": {
+        "Always-online wallet": "محفظة متصلة بالإنترنت دائمًا",
+        "Offline wallet for storage": "محفظة للتخزين غير متصلة بالإنترنت",
+        "Exchange wallet": "محفظة التبادل",
+        "A stablecoin": "عملة مستقرة"
+      }
+    },
+    "crypto:74": {
+      "question": "ما هي \"المحفظة الساخنة\"؟",
+      "answers": {
+        "Offline wallet": "محفظة غير متصلة بالإنترنت",
+        "Internet-connected wallet": "محفظة متصلة بالإنترنت",
+        "Hardware wallet": "محفظة الأجهزة",
+        "Paper wallet": "المحفظة الورقية"
+      }
+    },
+    "crypto:75": {
+      "question": "هل يُستخدم \"Gwei\" للقياس؟",
+      "answers": {
+        "Token supply": "عرض الرمز المميز",
+        "Gas prices": "أسعار الغاز",
+        "Block size": "حجم الكتلة",
+        "Wallet balance": "رصيد المحفظة"
+      }
+    },
+    "crypto:76": {
+      "question": "\"الخسارة غير الدائمة\" مرتبطة بـ؟",
+      "answers": {
+        "Staking": "التوقيع المساحي",
+        "Providing liquidity": "توفير السيولة",
+        "Mining": "التعدين",
+        "Holding": "القابضة"
+      }
+    },
+    "crypto:77": {
+      "question": "هل يتم استخدام \"جسر\" blockchain؟",
+      "answers": {
+        "Mine coins": "عملات معدنية",
+        "Move assets between blockchains": "نقل الأصول بين سلاسل الكتل",
+        "Store keys": "مفاتيح المتجر",
+        "Create tokens": "إنشاء الرموز المميزة"
+      }
+    },
+    "crypto:78": {
+      "question": "ما هو \"المدقق\"؟",
+      "answers": {
+        "A wallet": "محفظة",
+        "A node that verifies transactions": "العقدة التي تتحقق من المعاملات",
+        "A token": "رمز مميز",
+        "An exchange": "تبادل"
+      }
+    },
+    "crypto:79": {
+      "question": "\"ATH\" يرمز إلى؟",
+      "answers": {
+        "All-Time High": "أعلى مستوى على الإطلاق",
+        "Average Trade Height": "متوسط ارتفاع التجارة",
+        "Actual Token Holdings": "مقتنيات الرموز الفعلية",
+        "Auto Trade Handler": "معالج التجارة الآلية"
+      }
+    },
+    "crypto:80": {
+      "question": "هل يوجد \"شريط\" مثل BTC أو ETH؟",
+      "answers": {
+        "A price chart": "مخطط الأسعار",
+        "A short symbol for an asset": "رمز قصير لأحد الأصول",
+        "A wallet": "محفظة",
+        "A block": "كتلة"
+      }
+    },
+    "crypto:81": {
+      "question": "في إثبات العمل، هل يتم استدعاء تأكيد المعاملات؟",
+      "answers": {
+        "Staking": "التوقيع المساحي",
+        "Mining": "التعدين",
+        "Bridging": "التجسير",
+        "Burning": "محترق"
+      }
+    },
+    "crypto:82": {
+      "question": "ما هي \"القيمة السوقية\"؟",
+      "answers": {
+        "Price × circulating supply": "السعر × العرض المتداول",
+        "Daily trading volume": "حجم التداول اليومي",
+        "Number of wallets": "عدد المحافظ",
+        "Total gas fees": "إجمالي رسوم الغاز"
+      }
+    },
+    "crypto:83": {
+      "question": "OnchainKit هي مجموعة أدوات للمطورين؟",
+      "answers": {
+        "Binance": "بينانس",
+        "Coinbase": "Coinbase",
+        "MetaMask": "MetaMask",
+        "Uniswap": "Uniswap"
+      }
+    },
+    "crypto:84": {
+      "question": "تم تحديد \"حد الغاز\"؟",
+      "answers": {
+        "Token supply": "عرض الرمز المميز",
+        "Max gas a transaction can use": "الحد الأقصى للغاز الذي يمكن للمعاملة استخدامه",
+        "Wallet size": "حجم المحفظة",
+        "Block reward": "مكافأة الحظر"
+      }
+    },
+    "crypto:85": {
+      "question": "ما هو المضلع المعروف؟",
+      "answers": {
+        "A base Layer-1": "الطبقة الأساسية-1",
+        "An Ethereum scaling solution": "حل قياس Ethereum",
+        "A wallet": "محفظة",
+        "An exchange": "تبادل"
+      }
+    },
+    "crypto:86": {
+      "question": "ماذا يعني \"FOMO\" في التداول؟",
+      "answers": {
+        "Fear Of Missing Out": "الخوف من تفويت الفرصة",
+        "Full Order Market Offer": "عرض سوق الطلب الكامل",
+        "Fixed Order Money Out": "تم صرف أموال الطلب الثابت",
+        "Fast Onchain Market Order": "طلب السوق السريع على السلسلة"
+      }
+    },
+    "crypto:87": {
+      "question": "ما هي \"السيولة\" في حوض السباحة؟",
+      "answers": {
+        "Number of users": "عدد المستخدمين",
+        "Assets available to trade": "الأصول المتاحة للتداول",
+        "Trading fees": "رسوم التداول",
+        "Block height": "ارتفاع الكتلة"
+      }
+    },
+    "crypto:88": {
+      "question": "تهدف حلول \"الطبقة الثانية\" بشكل أساسي إلى؟",
+      "answers": {
+        "Replace Bitcoin": "استبدل البيتكوين",
+        "Scale a Layer-1 with cheaper, faster txs": "قم بقياس الطبقة 1 باستخدام رسائل نصية أرخص وأسرع",
+        "Mine faster": "تعدين أسرع",
+        "Issue stablecoins": "إصدار العملات المستقرة"
+      }
+    },
+    "crypto:89": {
+      "question": "\"عنوان\" المحفظة بشكل عام؟",
+      "answers": {
+        "Secret, never shared": "سر، لم تتم مشاركته مطلقًا",
+        "Public and shareable to receive funds": "عام وقابل للمشاركة لتلقي الأموال",
+        "Your password": "كلمة المرور الخاصة بك",
+        "A private key": "مفتاح خاص"
+      }
+    },
+    "crypto:90": {
+      "question": "ما الذي يرمز إليه \"KYC\"؟",
+      "answers": {
+        "Keep Your Coins": "احتفظ بعملاتك المعدنية",
+        "Know Your Customer": "اعرف عميلك",
+        "Key Yield Contract": "عقد العائد الرئيسي",
+        "Known Yield Curve": "منحنى العائد المعروف"
+      }
+    },
+    "crypto:91": {
+      "question": "ما المقصود بالـ nonce في المعاملة؟",
+      "answers": {
+        "A random word": "كلمة عشوائية",
+        "A per-account transaction counter": "عداد معاملات خاص بكل حساب",
+        "A token": "رمز مميز",
+        "A wallet": "محفظة"
+      }
+    },
+    "crypto:92": {
+      "question": "\"PoS\" يرمز إلى؟",
+      "answers": {
+        "Proof of Speed": "إثبات السرعة",
+        "Proof of Stake": "إثبات الحصة",
+        "Point of Sale": "نقطة البيع",
+        "Proof of Storage": "إثبات التخزين"
+      }
+    },
+    "crypto:93": {
+      "question": "تم تصميم العملة المستقرة من أجل؟",
+      "answers": {
+        "Grow fast": "تنمو بسرعة",
+        "Stay near a stable value": "البقاء بالقرب من قيمة ثابتة",
+        "Be an NFT": "كن NFT",
+        "Mine blocks": "كتل الألغام"
+      }
+    },
+    "crypto:94": {
+      "question": "أي من هذه العملات تعتبر عملة مستقرة؟",
+      "answers": {
+        "ETH": "ETH",
+        "USDC": "USDC",
+        "BTC": "BTC",
+        "SOL": "سول"
+      }
+    },
+    "crypto:95": {
+      "question": "\"عبر السلسلة\" يعني العمل عبرها؟",
+      "answers": {
+        "One app": "تطبيق واحد",
+        "Multiple blockchains": "سلاسل الكتل المتعددة",
+        "One wallet": "محفظة واحدة",
+        "One token": "رمز مميز واحد"
+      }
+    },
+    "crypto:96": {
+      "question": "هل تحتوي \"الكتلة\" في blockchain على؟",
+      "answers": {
+        "Only one transaction": "معاملة واحدة فقط",
+        "A batch of transactions": "مجموعة من المعاملات",
+        "Only code": "الرمز فقط",
+        "Nothing": "لا شيء"
+      }
+    },
+    "crypto:97": {
+      "question": "\"كتلة التكوين\" هي؟",
+      "answers": {
+        "Last block": "الكتلة الأخيرة",
+        "First block of a blockchain": "الكتلة الأولى من البلوكشين",
+        "A wallet": "محفظة",
+        "A token": "رمز مميز"
+      }
+    },
+    "crypto:98": {
+      "question": "ما المقصود بـ \"ROI\"؟",
+      "answers": {
+        "Return On Investment": "العائد على الاستثمار",
+        "Rate Of Interest": "سعر الفائدة",
+        "Risk Of Inflation": "خطر التضخم",
+        "Ratio Of Income": "نسبة الدخل"
+      }
+    },
+    "crypto:99": {
+      "question": "يتم قياس أسعار الغاز Ethereum عادةً؟",
+      "answers": {
+        "US dollars": "دولار أمريكي",
+        "Gwei": "غوي",
+        "Bitcoin": "بيتكوين",
+        "Bytes": "بايت"
+      }
+    },
+    "sports:0": {
+      "question": "كم عدد لاعبي فريق كرة القدم الموجودين في الملعب؟",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:1": {
+      "question": "في أي رياضة ستؤدي ضربة ساحقة؟",
+      "answers": {
+        "Tennis": "التنس",
+        "Basketball": "كرة السلة",
+        "Golf": "جولف",
+        "Cricket": "لعبة الكريكيت"
+      }
+    },
+    "sports:2": {
+      "question": "كم مرة تقام الألعاب الأولمبية الصيفية؟",
+      "answers": {
+        "Every 2 years": "كل عامين",
+        "Every 3 years": "كل 3 سنوات",
+        "Every 4 years": "كل 4 سنوات",
+        "Every 5 years": "كل 5 سنوات"
+      }
+    },
+    "sports:3": {
+      "question": "ما هي الدولة التي فازت بأكبر عدد من بطولات كأس العالم FIFA؟",
+      "answers": {
+        "Germany": "ألمانيا",
+        "Italy": "إيطاليا",
+        "Brazil": "البرازيل",
+        "Argentina": "الأرجنتين"
+      }
+    },
+    "sports:4": {
+      "question": "في التنس، ماذا تسمى النتيجة صفر؟",
+      "answers": {
+        "Nil": "لا شيء",
+        "Love": "حب",
+        "Duck": "بطة",
+        "Blank": "فارغ"
+      }
+    },
+    "sports:5": {
+      "question": "كم عدد الحلقات الموجودة على العلم الأولمبي؟",
+      "answers": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:6": {
+      "question": "ما هي الرياضة التي تستخدم الريشة؟",
+      "answers": {
+        "Squash": "الاسكواش",
+        "Badminton": "كرة الريشة",
+        "Table tennis": "تنس الطاولة",
+        "Volleyball": "الكرة الطائرة"
+      }
+    },
+    "sports:7": {
+      "question": "بأي رياضة يشتهر يوسين بولت؟",
+      "answers": {
+        "Swimming": "السباحة",
+        "Sprinting": "الركض السريع",
+        "Cycling": "ركوب الدراجات",
+        "Boxing": "الملاكمة"
+      }
+    },
+    "sports:8": {
+      "question": "كم عدد النقاط التي تساوي الهبوط في كرة القدم الأمريكية؟",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:9": {
+      "question": "سباق فرنسا للدراجات هو مسابقة في أي رياضة؟",
+      "answers": {
+        "Running": "قيد التشغيل",
+        "Cycling": "ركوب الدراجات",
+        "Rowing": "التجديف",
+        "Sailing": "الإبحار"
+      }
+    },
+    "sports:10": {
+      "question": "ما الدولة التي تستضيف بطولة ويمبلدون للتنس؟",
+      "answers": {
+        "USA": "الولايات المتحدة الأمريكية",
+        "France": "فرنسا",
+        "England": "إنجلترا",
+        "Australia": "أستراليا"
+      }
+    },
+    "sports:11": {
+      "question": "ما هي الرياضة التي يعتبر مايكل جوردان أسطورة فيها؟",
+      "answers": {
+        "Baseball": "البيسبول",
+        "Basketball": "كرة السلة",
+        "Football": "كرة القدم",
+        "Hockey": "الهوكي"
+      }
+    },
+    "sports:12": {
+      "question": "كم عدد الجولات في مباراة الملاكمة القياسية؟",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "12": "12",
+        "15": "15"
+      }
+    },
+    "sports:13": {
+      "question": "ما هي البطولات الأربع الكبرى للتنس التي يتم لعبها على الملاعب الترابية؟",
+      "answers": {
+        "Wimbledon": "ويمبلدون",
+        "US Open": "بطولة الولايات المتحدة المفتوحة",
+        "French Open": "بطولة فرنسا المفتوحة",
+        "Australian Open": "بطولة أستراليا المفتوحة"
+      }
+    },
+    "sports:14": {
+      "question": "الفورمولا 1 هي شكل من أشكال السباق؟",
+      "answers": {
+        "Boat": "قارب",
+        "Car": "سيارة",
+        "Horse": "حصان",
+        "Bicycle": "دراجة"
+      }
+    },
+    "sports:15": {
+      "question": "ما هي مدة الماراثون تقريبًا؟",
+      "answers": {
+        "21 km": "21 كم",
+        "42 km": "42 كم",
+        "50 km": "50 كم",
+        "30 km": "30 كم"
+      }
+    },
+    "sports:16": {
+      "question": "كم عدد اللاعبين في فريق الكريكيت؟",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:17": {
+      "question": "في أي رياضة تُلعب بطولة الماسترز؟",
+      "answers": {
+        "Golf": "جولف",
+        "Tennis": "التنس",
+        "Polo": "بولو",
+        "Rugby": "الرجبي"
+      }
+    },
+    "sports:18": {
+      "question": "من هي الدولة التي فازت بكأس العالم 2018؟",
+      "answers": {
+        "Germany": "ألمانيا",
+        "France": "فرنسا",
+        "Brazil": "البرازيل",
+        "Croatia": "كرواتيا"
+      }
+    },
+    "sports:19": {
+      "question": "ما هي مدة مباراة كرة القدم باستثناء الوقت بدل الضائع؟",
+      "answers": {
+        "80 minutes": "80 دقيقة",
+        "90 minutes": "90 دقيقة",
+        "100 minutes": "100 دقيقة",
+        "120 minutes": "120 دقيقة"
+      }
+    },
+    "sports:20": {
+      "question": "ما هي البطاقة التي تُخرج لاعب كرة القدم من الملعب؟",
+      "answers": {
+        "Yellow": "أصفر",
+        "Red": "أحمر",
+        "Blue": "أزرق",
+        "Green": "أخضر"
+      }
+    },
+    "sports:21": {
+      "question": "الهاتريك يعني تسجيل كم هدف في المباراة؟",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:22": {
+      "question": "كريستيانو رونالدو يمثل أي منتخب وطني؟",
+      "answers": {
+        "Brazil": "البرازيل",
+        "Spain": "إسبانيا",
+        "Portugal": "البرتغال",
+        "Argentina": "الأرجنتين"
+      }
+    },
+    "sports:23": {
+      "question": "بيليه لعب دوليًا لأي بلد؟",
+      "answers": {
+        "Argentina": "الأرجنتين",
+        "Brazil": "البرازيل",
+        "Portugal": "البرتغال",
+        "Italy": "إيطاليا"
+      }
+    },
+    "sports:24": {
+      "question": "مسابقة كرة القدم للأندية الكبرى في أوروبا هي؟",
+      "answers": {
+        "Europa League": "الدوري الأوروبي",
+        "Champions League": "دوري أبطال أوروبا",
+        "Copa America": "كوبا أمريكا",
+        "FA Cup": "كأس الاتحاد الإنجليزي"
+      }
+    },
+    "sports:25": {
+      "question": "في أي رياضة تُمنح جائزة الكرة الذهبية؟",
+      "answers": {
+        "Basketball": "كرة السلة",
+        "Football/Soccer": "كرة القدم/كرة القدم",
+        "Tennis": "التنس",
+        "Golf": "جولف"
+      }
+    },
+    "sports:26": {
+      "question": "دييغو مارادونا كان أسطورة في أي رياضة؟",
+      "answers": {
+        "Basketball": "كرة السلة",
+        "Soccer": "كرة القدم",
+        "Tennis": "التنس",
+        "Boxing": "الملاكمة"
+      }
+    },
+    "sports:27": {
+      "question": "تعني \"الشباك النظيفة\" في كرة القدم؟",
+      "answers": {
+        "Scoring many goals": "سجل العديد من الأهداف",
+        "Conceding no goals": "عدم استقبال أي أهداف",
+        "Getting a red card": "الحصول على البطاقة الحمراء",
+        "A draw": "التعادل"
+      }
+    },
+    "sports:28": {
+      "question": "الرمية الحرة في كرة السلة كم نقطة تستحق؟",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:29": {
+      "question": "هل تستحق السلة من خارج قوس الثلاث نقاط؟",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:30": {
+      "question": "ما هو ارتفاع حلقات كرة السلة القياسية؟",
+      "answers": {
+        "8 feet": "8 أقدام",
+        "10 feet": "10 أقدام",
+        "12 feet": "12 قدمًا",
+        "15 feet": "15 قدمًا"
+      }
+    },
+    "sports:31": {
+      "question": "الدوري الاميركي للمحترفين هو دوري مقره في أي بلد؟",
+      "answers": {
+        "Canada": "كندا",
+        "USA": "الولايات المتحدة الأمريكية",
+        "Spain": "إسبانيا",
+        "Australia": "أستراليا"
+      }
+    },
+    "sports:32": {
+      "question": "ما هي الدولة التي لها الفضل في اختراع كرة السلة؟",
+      "answers": {
+        "Canada": "كندا",
+        "USA": "الولايات المتحدة الأمريكية",
+        "UK": "المملكة المتحدة",
+        "France": "فرنسا"
+      }
+    },
+    "sports:33": {
+      "question": "كم عدد أحداث جراند سلام في التنس كل عام؟",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:34": {
+      "question": "ما هو السطح الذي تُلعب عليه بطولة ويمبلدون؟",
+      "answers": {
+        "Clay": "طين",
+        "Grass": "العشب",
+        "Hard court": "الملاعب الصلبة",
+        "Carpet": "السجاد"
+      }
+    },
+    "sports:35": {
+      "question": "بأي رياضة يشتهر روجر فيدرر؟",
+      "answers": {
+        "Golf": "جولف",
+        "Tennis": "التنس",
+        "Cycling": "ركوب الدراجات",
+        "Rowing": "التجديف"
+      }
+    },
+    "sports:36": {
+      "question": "سيرينا ويليامز بطلة في أي رياضة؟",
+      "answers": {
+        "Golf": "جولف",
+        "Tennis": "التنس",
+        "Swimming": "السباحة",
+        "Athletics": "ألعاب القوى"
+      }
+    },
+    "sports:37": {
+      "question": "في التنس، ما الذي يأتي بعد التعادل عندما يفوز اللاعب بالنقطة التالية؟",
+      "answers": {
+        "Game": "شوط",
+        "Advantage": "أفضلية",
+        "Set": "مجموعة",
+        "Match": "مباراة"
+      }
+    },
+    "sports:38": {
+      "question": "أقيمت أول دورة ألعاب أولمبية حديثة في أي عام؟",
+      "answers": {
+        "1896": "1896",
+        "1900": "1900",
+        "1924": "1924",
+        "1936": "1936"
+      }
+    },
+    "sports:39": {
+      "question": "أقيمت الألعاب الأولمبية الصيفية لعام 2016 في؟",
+      "answers": {
+        "London": "لندن",
+        "Rio de Janeiro": "ريو دي جانيرو",
+        "Tokyo": "طوكيو",
+        "Beijing": "بكين"
+      }
+    },
+    "sports:40": {
+      "question": "أقيمت الألعاب الأولمبية الصيفية لعام 2024 في؟",
+      "answers": {
+        "Tokyo": "طوكيو",
+        "Paris": "باريس",
+        "Los Angeles": "لوس أنجلوس",
+        "London": "لندن"
+      }
+    },
+    "sports:41": {
+      "question": "الشعار الأولمبي هو \"أسرع، أعلى، ___\".",
+      "answers": {
+        "Better": "أفضل",
+        "Stronger": "أقوى",
+        "Farther": "أبعد",
+        "Longer": "أطول"
+      }
+    },
+    "sports:42": {
+      "question": "أين تُضاء الشعلة الأولمبية تقليديًا؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "Greece": "اليونان",
+        "France": "فرنسا",
+        "Egypt": "مصر"
+      }
+    },
+    "sports:43": {
+      "question": "ما هي الرياضة الأولمبية التي سيطر عليها مايكل فيلبس؟",
+      "answers": {
+        "Athletics": "ألعاب القوى",
+        "Swimming": "السباحة",
+        "Diving": "الغوص",
+        "Rowing": "التجديف"
+      }
+    },
+    "sports:44": {
+      "question": "ما هي السباحة التي لا تعتبر سباحة تنافسية؟",
+      "answers": {
+        "Butterfly": "فراشة",
+        "Backstroke": "سباحة الظهر",
+        "Breaststroke": "سباحة الصدر",
+        "Sidestroke": "ضربة جانبية"
+      }
+    },
+    "sports:45": {
+      "question": "محمد علي كان أسطوريا؟",
+      "answers": {
+        "Footballer": "لاعب كرة قدم",
+        "Boxer": "ملاكم",
+        "Swimmer": "سباح",
+        "Runner": "عداء"
+      }
+    },
+    "sports:46": {
+      "question": "ما هي الدولة التي نشأت فيها رياضة الجودو؟",
+      "answers": {
+        "China": "الصين",
+        "Japan": "اليابان",
+        "Korea": "كوريا",
+        "Thailand": "تايلاند"
+      }
+    },
+    "sports:47": {
+      "question": "في أي بلد نشأ التايكوندو؟",
+      "answers": {
+        "Japan": "اليابان",
+        "China": "الصين",
+        "South Korea": "كوريا الجنوبية",
+        "Vietnam": "فيتنام"
+      }
+    },
+    "sports:48": {
+      "question": "في الملاكمة، الحرف \"KO\" يرمز إلى؟",
+      "answers": {
+        "Knockout": "خروج المغلوب",
+        "Keep On": "استمر",
+        "Knee Out": "إخراج الركبة",
+        "Key Opponent": "الخصم الرئيسي"
+      }
+    },
+    "sports:49": {
+      "question": "مصارعة السومو هي رياضة تقليدية؟",
+      "answers": {
+        "China": "الصين",
+        "Japan": "اليابان",
+        "Korea": "كوريا",
+        "Mongolia": "منغوليا"
+      }
+    },
+    "sports:50": {
+      "question": "في لعبة الجولف، ضربة واحدة تحت المعدل في الحفرة هي؟",
+      "answers": {
+        "Eagle": "النسر",
+        "Birdie": "بيردي",
+        "Bogey": "شبح",
+        "Par": "قدم المساواة"
+      }
+    },
+    "sports:51": {
+      "question": "في لعبة الجولف، ضربة واحدة فوق المعدل تعتبر أ؟",
+      "answers": {
+        "Birdie": "بيردي",
+        "Bogey": "شبح",
+        "Eagle": "النسر",
+        "Ace": "آيس"
+      }
+    },
+    "sports:52": {
+      "question": "يُطلق على لعبة \"الثقب في واحد\" في لعبة الجولف أيضًا اسم \"؟\"",
+      "answers": {
+        "Ace": "آيس",
+        "Birdie": "بيردي",
+        "Eagle": "النسر",
+        "Par": "قدم المساواة"
+      }
+    },
+    "sports:53": {
+      "question": "كم عدد الثقوب في جولة الجولف القياسية؟",
+      "answers": {
+        "9": "9",
+        "12": "12",
+        "18": "18",
+        "24": "24"
+      }
+    },
+    "sports:54": {
+      "question": "ما هي الدولة التي ولدت فيها لعبة الجولف؟",
+      "answers": {
+        "USA": "الولايات المتحدة الأمريكية",
+        "Scotland": "اسكتلندا",
+        "France": "فرنسا",
+        "Italy": "إيطاليا"
+      }
+    },
+    "sports:55": {
+      "question": "في أي رياضة يتنافس لويس هاميلتون؟",
+      "answers": {
+        "MotoGP": "الدراجات النارية",
+        "Formula 1": "الفورمولا 1",
+        "Rally": "التجمع",
+        "NASCAR": "ناسكار"
+      }
+    },
+    "sports:56": {
+      "question": "تتسابق سيارات الفورمولا 1 على؟",
+      "answers": {
+        "Field": "الحقل",
+        "Track/circuit": "المسار/الدائرة",
+        "Pool": "حمام السباحة",
+        "Court": "المحكمة"
+      }
+    },
+    "sports:57": {
+      "question": "في الفورمولا 1، الألقاب تذهب للسائقين و؟",
+      "answers": {
+        "Fans": "معجبين",
+        "Constructors": "البنائين",
+        "Cities": "المدن",
+        "Sponsors": "الجهات الراعية"
+      }
+    },
+    "sports:58": {
+      "question": "كم عدد الضربات التي تؤدي إلى الضربة القاضية في لعبة البيسبول؟",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:59": {
+      "question": "تُلعب لعبة البيسبول في ملعب على شكل؟",
+      "answers": {
+        "Circle": "الدائرة",
+        "Diamond": "الماس",
+        "Square": "مربع",
+        "Triangle": "مثلث"
+      }
+    },
+    "sports:60": {
+      "question": "بطولة السوبر بول هي بطولة أي رياضة؟",
+      "answers": {
+        "Basketball": "كرة السلة",
+        "American football": "كرة القدم الأمريكية",
+        "Baseball": "البيسبول",
+        "Ice hockey": "هوكي الجليد"
+      }
+    },
+    "sports:61": {
+      "question": "كم عدد اللاعبين لكل فريق في الملعب في كرة القدم الأمريكية؟",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:62": {
+      "question": "هل يتم لعب هوكي الجليد؟",
+      "answers": {
+        "Grass": "العشب",
+        "Ice": "الجليد",
+        "Sand": "الرمال",
+        "Clay": "طين"
+      }
+    },
+    "sports:63": {
+      "question": "كأس ستانلي هي كأس أي رياضة؟",
+      "answers": {
+        "Basketball": "كرة السلة",
+        "Ice hockey": "هوكي الجليد",
+        "Baseball": "البيسبول",
+        "Soccer": "كرة القدم"
+      }
+    },
+    "sports:64": {
+      "question": "كم عدد اللاعبين في كل جانب الموجودين على الجليد في لعبة هوكي الجليد؟",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:65": {
+      "question": "كم عدد لاعبي الفريق الواحد في ملعب الكرة الطائرة؟",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:66": {
+      "question": "يسمى تنس الطاولة أيضًا بشكل شائع؟",
+      "answers": {
+        "Squash": "الاسكواش",
+        "Ping pong": "بينج بونج",
+        "Badminton": "كرة الريشة",
+        "Racquetball": "كرة المضرب"
+      }
+    },
+    "sports:67": {
+      "question": "ما هي الدولة التي تهيمن على بطولة تنس الطاولة الدولية؟",
+      "answers": {
+        "Brazil": "البرازيل",
+        "China": "الصين",
+        "Canada": "كندا",
+        "Egypt": "مصر"
+      }
+    },
+    "sports:68": {
+      "question": "ما هي رياضة المضرب التي يتم لعبها داخل أربعة جدران؟",
+      "answers": {
+        "Tennis": "التنس",
+        "Squash": "الاسكواش",
+        "Badminton": "كرة الريشة",
+        "Table tennis": "تنس الطاولة"
+      }
+    },
+    "sports:69": {
+      "question": "يُعرف فريق الرجبي الوطني النيوزيلندي باسم؟",
+      "answers": {
+        "Wallabies": "الولبي",
+        "All Blacks": "جميع السود",
+        "Springboks": "سبرينغبوكس",
+        "Pumas": "بوماس"
+      }
+    },
+    "sports:70": {
+      "question": "\"سكروم\" هي سمة من سمات الرياضة؟",
+      "answers": {
+        "Rugby": "الرجبي",
+        "Tennis": "التنس",
+        "Golf": "جولف",
+        "Swimming": "السباحة"
+      }
+    },
+    "sports:71": {
+      "question": "\"المحاولة\" في اتحاد الرجبي تستحق كم عدد النقاط؟",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "5": "5",
+        "7": "7"
+      }
+    },
+    "sports:72": {
+      "question": "\"القرن\" (100 نقطة) هو مصطلح في؟",
+      "answers": {
+        "Baseball": "البيسبول",
+        "Cricket": "لعبة الكريكيت",
+        "Rugby": "الرجبي",
+        "Soccer": "كرة القدم"
+      }
+    },
+    "sports:73": {
+      "question": "تحظى لعبة الكريكيت بشعبية خاصة في أي بلد؟",
+      "answers": {
+        "USA": "الولايات المتحدة الأمريكية",
+        "India": "الهند",
+        "Norway": "النرويج",
+        "Iceland": "أيسلندا"
+      }
+    },
+    "sports:74": {
+      "question": "في أي رياضة يتم رمي الرمح؟",
+      "answers": {
+        "Gymnastics": "الجمباز",
+        "Athletics": "ألعاب القوى",
+        "Cycling": "ركوب الدراجات",
+        "Rowing": "التجديف"
+      }
+    },
+    "sports:75": {
+      "question": "الوثب الطويل حدث في أي رياضة؟",
+      "answers": {
+        "Swimming": "السباحة",
+        "Athletics": "ألعاب القوى",
+        "Cycling": "ركوب الدراجات",
+        "Gymnastics": "الجمباز"
+      }
+    },
+    "sports:76": {
+      "question": "أقصر مسافة عدو في الألعاب الأولمبية هي؟",
+      "answers": {
+        "50 m": "50 م",
+        "100 m": "100 م",
+        "200 m": "200 م",
+        "400 m": "400 م"
+      }
+    },
+    "sports:77": {
+      "question": "ما هي الرياضة التي يستخدم فيها حصان الحلق؟",
+      "answers": {
+        "Athletics": "ألعاب القوى",
+        "Gymnastics": "الجمباز",
+        "Swimming": "السباحة",
+        "Boxing": "الملاكمة"
+      }
+    },
+    "sports:78": {
+      "question": "\"سباق التعرج\" هو حدث في أي رياضة؟",
+      "answers": {
+        "Swimming": "السباحة",
+        "Skiing": "التزلج",
+        "Cycling": "ركوب الدراجات",
+        "Boxing": "الملاكمة"
+      }
+    },
+    "sports:79": {
+      "question": "ما هو نوع الرياضة التي يمارسها التزلج عادةً؟",
+      "answers": {
+        "Water": "ماء",
+        "Winter": "الشتاء",
+        "Desert": "الصحراء",
+        "Indoor": "داخلي"
+      }
+    },
+    "sports:80": {
+      "question": "هل تتم رياضة التزلج السريع؟",
+      "answers": {
+        "Grass": "العشب",
+        "Ice": "الجليد",
+        "Water": "ماء",
+        "Sand": "الرمال"
+      }
+    },
+    "sports:81": {
+      "question": "ما هي الرياضة التي تستخدم المصطلحين \"إضراب\" و\"احتياطي\"؟",
+      "answers": {
+        "Bowling": "البولينج",
+        "Golf": "جولف",
+        "Tennis": "التنس",
+        "Cricket": "لعبة الكريكيت"
+      }
+    },
+    "sports:82": {
+      "question": "الحد الأقصى للاستراحة في لعبة السنوكر هو؟",
+      "answers": {
+        "100": "100",
+        "147": "147",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:83": {
+      "question": "الحد الأقصى للنتيجة بثلاث سهام هو؟",
+      "answers": {
+        "120": "120",
+        "150": "150",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:84": {
+      "question": "\"البيلوتون\" هي مجموعة من الدراجين في أي رياضة؟",
+      "answers": {
+        "Cycling": "ركوب الدراجات",
+        "Swimming": "السباحة",
+        "Boxing": "الملاكمة",
+        "Golf": "جولف"
+      }
+    },
+    "sports:85": {
+      "question": "يقام سباق فرنسا للدراجات بشكل رئيسي في؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "Spain": "إسبانيا",
+        "France": "فرنسا",
+        "Belgium": "بلجيكا"
+      }
+    },
+    "sports:86": {
+      "question": "هل استضافت كأس العالم 2022؟",
+      "answers": {
+        "Russia": "روسيا",
+        "Qatar": "قطر",
+        "Brazil": "البرازيل",
+        "USA": "الولايات المتحدة الأمريكية"
+      }
+    },
+    "sports:87": {
+      "question": "يتم منح كأس العالم لكرة القدم من قبل؟",
+      "answers": {
+        "UEFA": "الاتحاد الأوروبي لكرة القدم",
+        "FIFA": "الفيفا",
+        "NBA": "الدوري الاميركي للمحترفين",
+        "IOC": "اللجنة الأولمبية الدولية"
+      }
+    },
+    "sports:88": {
+      "question": "ركلة الجزاء في كرة القدم تؤخذ من حوالي؟",
+      "answers": {
+        "11 m": "11 م",
+        "20 m": "20 م",
+        "5 m": "5 م",
+        "30 m": "30 م"
+      }
+    },
+    "sports:89": {
+      "question": "ما إجمالي عدد اللاعبين الذين يبدأون المباراة في ملعب كرة القدم (كلا الفريقين)؟",
+      "answers": {
+        "18": "18",
+        "20": "20",
+        "22": "22",
+        "24": "24"
+      }
+    },
+    "sports:90": {
+      "question": "ما هي الرياضة التي تتميز بكلمات \"الحب\" و\"التعادل\" و\"الآس\"؟",
+      "answers": {
+        "Golf": "جولف",
+        "Tennis": "التنس",
+        "Cricket": "لعبة الكريكيت",
+        "Rugby": "الرجبي"
+      }
+    },
+    "sports:91": {
+      "question": "بطولة التنس الكبرى الرابعة إلى جانب بطولة ويمبلدون والولايات المتحدة وفرنسا المفتوحة هي؟",
+      "answers": {
+        "Italian Open": "بطولة إيطاليا المفتوحة",
+        "Australian Open": "بطولة أستراليا المفتوحة",
+        "Madrid Open": "بطولة مدريد المفتوحة",
+        "Dubai Open": "بطولة دبي المفتوحة"
+      }
+    },
+    "sports:92": {
+      "question": "ما هي الألعاب الأولمبية التي يتم فيها التزلج على الجليد؟",
+      "answers": {
+        "Summer": "الصيف",
+        "Winter": "الشتاء",
+        "Both equally": "كلاهما متساويان",
+        "Neither": "لا هذا ولا ذاك"
+      }
+    },
+    "sports:93": {
+      "question": "كم عدد اللاعبين في فريق البيسبول في الملعب؟",
+      "answers": {
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11"
+      }
+    },
+    "sports:94": {
+      "question": "تمت استضافة الألعاب الأولمبية الصيفية لعام 2008 من قبل؟",
+      "answers": {
+        "London": "لندن",
+        "Beijing": "بكين",
+        "Athens": "أثينا",
+        "Sydney": "سيدني"
+      }
+    },
+    "sports:95": {
+      "question": "تقام سباقات التجديف؟",
+      "answers": {
+        "A track": "مقطوعة موسيقية",
+        "Water": "ماء",
+        "Ice": "الجليد",
+        "Grass": "العشب"
+      }
+    },
+    "sports:96": {
+      "question": "ما هي الرياضة التي تستخدم \"العلبة\"؟",
+      "answers": {
+        "Golf": "جولف",
+        "Tennis": "التنس",
+        "Boxing": "الملاكمة",
+        "Cycling": "ركوب الدراجات"
+      }
+    },
+    "sports:97": {
+      "question": "أي رياضة تنتمي إلى رياضة الوثب العالي والقفز بالزانة؟",
+      "answers": {
+        "Gymnastics": "الجمباز",
+        "Athletics": "ألعاب القوى",
+        "Swimming": "السباحة",
+        "Cycling": "ركوب الدراجات"
+      }
+    },
+    "sports:98": {
+      "question": "ما هي الدولة التي استضافت الألعاب الأولمبية الصيفية أكبر عدد من المرات؟",
+      "answers": {
+        "France": "فرنسا",
+        "USA": "الولايات المتحدة الأمريكية",
+        "Greece": "اليونان",
+        "Japan": "اليابان"
+      }
+    },
+    "sports:99": {
+      "question": "يستخدم المنافسون في المبارزة؟",
+      "answers": {
+        "Bat": "بات",
+        "Sword/blade": "السيف/الشفرة",
+        "Racket": "مضرب",
+        "Club": "النادي"
+      }
+    },
+    "sports:100": {
+      "question": "ما هي الرياضة التي تُلعب في رولان جاروس؟",
+      "answers": {
+        "Golf": "جولف",
+        "Tennis": "التنس",
+        "Rugby": "الرجبي",
+        "Cycling": "ركوب الدراجات"
+      }
+    },
+    "sports:101": {
+      "question": "عداء الماراثون الذي يفوز بالميدالية الذهبية يحصل على؟",
+      "answers": {
+        "Trophy only": "الكأس فقط",
+        "Gold medal": "الميدالية الذهبية",
+        "Cash prize only": "الجائزة النقدية فقط",
+        "Belt": "الحزام"
+      }
+    },
+    "art:0": {
+      "question": "من رسم الموناليزا؟",
+      "answers": {
+        "Van Gogh": "فان جوخ",
+        "Picasso": "بيكاسو",
+        "Leonardo da Vinci": "ليوناردو دافنشي",
+        "Michelangelo": "مايكل أنجلو"
+      }
+    },
+    "art:1": {
+      "question": "من رسم \"ليلة النجوم\"؟",
+      "answers": {
+        "Monet": "مونيه",
+        "Van Gogh": "فان جوخ",
+        "Dalí": "دالي",
+        "Rembrandt": "رامبرانت"
+      }
+    },
+    "art:2": {
+      "question": "في أي متحف تُعرض لوحة الموناليزا؟",
+      "answers": {
+        "The Met": "ذا ميت",
+        "Louvre": "اللوفر",
+        "Prado": "برادو",
+        "Uffizi": "أوفيزي"
+      }
+    },
+    "art:3": {
+      "question": "من هو الفنان الذي اشتهر بقطع جزء من أذنه؟",
+      "answers": {
+        "Picasso": "بيكاسو",
+        "Van Gogh": "فان جوخ",
+        "Dalí": "دالي",
+        "Monet": "مونيه"
+      }
+    },
+    "art:4": {
+      "question": "من الذي رسم سقف كنيسة سيستينا؟",
+      "answers": {
+        "Raphael": "رافائيل",
+        "Michelangelo": "مايكل أنجلو",
+        "Da Vinci": "دافنشي",
+        "Donatello": "دوناتيلو"
+      }
+    },
+    "art:5": {
+      "question": "ما هي الحركة الفنية التي يرتبط بها بابلو بيكاسو؟",
+      "answers": {
+        "Impressionism": "الانطباعية",
+        "Cubism": "التكعيبية",
+        "Surrealism": "السريالية",
+        "Baroque": "الباروك"
+      }
+    },
+    "art:6": {
+      "question": "ما هو أسلوب الفن الذي يشتهر به سلفادور دالي؟",
+      "answers": {
+        "Realism": "الواقعية",
+        "Surrealism": "السريالية",
+        "Pop Art": "فن البوب",
+        "Gothic": "القوطية"
+      }
+    },
+    "art:7": {
+      "question": "من رسم \"الصرخة\"؟",
+      "answers": {
+        "Munch": "مونش",
+        "Klimt": "كليمت",
+        "Warhol": "وارهول",
+        "Cézanne": "سيزان"
+      }
+    },
+    "art:8": {
+      "question": "من هو الفنان المشهور برسم علب حساء كامبل؟",
+      "answers": {
+        "Warhol": "وارهول",
+        "Pollock": "بولوك",
+        "Rothko": "روثكو",
+        "Bacon": "بيكون"
+      }
+    },
+    "art:9": {
+      "question": "من رسم \"الفتاة ذات القرط اللؤلؤي\"؟",
+      "answers": {
+        "Vermeer": "فيرمير",
+        "Rembrandt": "رامبرانت",
+        "Rubens": "روبنز",
+        "Bosch": "بوش"
+      }
+    },
+    "art:10": {
+      "question": "مزج الطلاء الأزرق والأصفر ينتج أي لون؟",
+      "answers": {
+        "Purple": "أرجواني",
+        "Green": "أخضر",
+        "Orange": "برتقالي",
+        "Brown": "بني"
+      }
+    },
+    "art:11": {
+      "question": "أي حركة كان كلود مونيه شخصية رائدة؟",
+      "answers": {
+        "Impressionism": "الانطباعية",
+        "Cubism": "التكعيبية",
+        "Dadaism": "الدادية",
+        "Realism": "الواقعية"
+      }
+    },
+    "art:12": {
+      "question": "من قام بنحت التمثال الرخامي \"داوود\" ؟",
+      "answers": {
+        "Bernini": "بيرنيني",
+        "Michelangelo": "مايكل أنجلو",
+        "Rodin": "رودين",
+        "Donatello": "دوناتيلو"
+      }
+    },
+    "art:13": {
+      "question": "أي من هذه الألوان هو اللون الأساسي؟",
+      "answers": {
+        "Green": "أخضر",
+        "Orange": "برتقالي",
+        "Red": "أحمر",
+        "Purple": "أرجواني"
+      }
+    },
+    "art:14": {
+      "question": "\"غيرنيكا\" عمل مشهور لأي فنان؟",
+      "answers": {
+        "Dalí": "دالي",
+        "Picasso": "بيكاسو",
+        "Miró": "ميرو",
+        "Goya": "غويا"
+      }
+    },
+    "art:15": {
+      "question": "الرسم على الجص الرطب هي تقنية تسمى؟",
+      "answers": {
+        "Fresco": "فريسكو",
+        "Collage": "مجمعة",
+        "Etching": "النقش",
+        "Mosaic": "فسيفساء"
+      }
+    },
+    "art:16": {
+      "question": "تم إنشاء تمثال \"المفكر\" بواسطة؟",
+      "answers": {
+        "Rodin": "رودين",
+        "Michelangelo": "مايكل أنجلو",
+        "Bernini": "بيرنيني",
+        "Calder": "كالدر"
+      }
+    },
+    "art:17": {
+      "question": "ما هي الأداة المستخدمة تقليديًا لتطبيق الطلاء الزيتي؟",
+      "answers": {
+        "Chisel": "إزميل",
+        "Brush": "فرشاة",
+        "Pen": "قلم",
+        "Roller": "الأسطوانة"
+      }
+    },
+    "art:18": {
+      "question": "\"عباد الشمس\" هي سلسلة لوحات شهيرة من تأليفك؟",
+      "answers": {
+        "Monet": "مونيه",
+        "Van Gogh": "فان جوخ",
+        "Cézanne": "سيزان",
+        "Gauguin": "غوغان"
+      }
+    },
+    "art:19": {
+      "question": "تم رسم جدارية \"العشاء الأخير\" بواسطة؟",
+      "answers": {
+        "Raphael": "رافائيل",
+        "Leonardo da Vinci": "ليوناردو دافنشي",
+        "Caravaggio": "كارافاجيو",
+        "Titian": "تيتيان"
+      }
+    },
+    "art:20": {
+      "question": "من هو الفنان المشهور برسومات \"التنقيط\"؟",
+      "answers": {
+        "Jackson Pollock": "جاكسون بولوك",
+        "Rothko": "روثكو",
+        "Warhol": "وارهول",
+        "Dalí": "دالي"
+      }
+    },
+    "art:21": {
+      "question": "\"استمرار الذاكرة\" (ساعات الذوبان) على وشك الانتهاء؟",
+      "answers": {
+        "Magritte": "ماغريت",
+        "Dalí": "دالي",
+        "Miró": "ميرو",
+        "Ernst": "إرنست"
+      }
+    },
+    "art:22": {
+      "question": "فريدا كاهلو اشتهرت بها؟",
+      "answers": {
+        "Landscapes": "المناظر الطبيعية",
+        "Self-portraits": "صور شخصية",
+        "Sculptures": "منحوتات",
+        "Murals only": "الجداريات فقط"
+      }
+    },
+    "art:23": {
+      "question": "تمثال الحرية كان هدية للولايات المتحدة الأمريكية من؟",
+      "answers": {
+        "Britain": "بريطانيا",
+        "France": "فرنسا",
+        "Spain": "إسبانيا",
+        "Italy": "إيطاليا"
+      }
+    },
+    "art:24": {
+      "question": "هل يؤدي مزج الطلاء الأحمر والأصفر إلى نتيجة؟",
+      "answers": {
+        "Green": "أخضر",
+        "Orange": "برتقالي",
+        "Purple": "أرجواني",
+        "Brown": "بني"
+      }
+    },
+    "art:25": {
+      "question": "هل يؤدي مزج الطلاء الأحمر والأزرق إلى نتيجة؟",
+      "answers": {
+        "Green": "أخضر",
+        "Purple": "أرجواني",
+        "Orange": "برتقالي",
+        "Brown": "بني"
+      }
+    },
+    "art:26": {
+      "question": "ألوان الطلاء الأساسية الثلاثة هي الأحمر والأصفر و؟",
+      "answers": {
+        "Green": "أخضر",
+        "Blue": "أزرق",
+        "Orange": "برتقالي",
+        "Purple": "أرجواني"
+      }
+    },
+    "art:27": {
+      "question": "من هو الفنان المشهور برسم زنابق الماء؟",
+      "answers": {
+        "Monet": "مونيه",
+        "Manet": "مانيه",
+        "Degas": "ديغا",
+        "Renoir": "رينوار"
+      }
+    },
+    "art:28": {
+      "question": "يصور تمثال مايكل أنجلو الشهير في فلورنسا؟",
+      "answers": {
+        "Caesar": "قيصر",
+        "David": "ديفيد",
+        "Apollo": "أبولو",
+        "Hercules": "هرقل"
+      }
+    },
+    "art:29": {
+      "question": "يسمى فن الكتابة اليدوية الجميلة؟",
+      "answers": {
+        "Origami": "اوريغامي",
+        "Calligraphy": "الخط",
+        "Etching": "النقش",
+        "Collage": "مجمعة"
+      }
+    },
+    "art:30": {
+      "question": "اللوحة التي تصور الشخص هي؟",
+      "answers": {
+        "Landscape": "منظر طبيعي",
+        "Portrait": "صورة شخصية",
+        "Still life": "الحياة الساكنة",
+        "Mural": "جدارية"
+      }
+    },
+    "art:31": {
+      "question": "تعتبر لوحة الفاكهة أو الأشياء بمثابة؟",
+      "answers": {
+        "Portrait": "صورة شخصية",
+        "Still life": "الحياة الساكنة",
+        "Landscape": "منظر طبيعي",
+        "Mural": "جدارية"
+      }
+    },
+    "art:32": {
+      "question": "هل يتم نحت التماثيل الكلاسيكية تقليديًا؟",
+      "answers": {
+        "Marble": "رخام",
+        "Plastic": "بلاستيك",
+        "Paper": "ورق",
+        "Glass": "زجاج"
+      }
+    },
+    "art:33": {
+      "question": "كان آندي وارهول قائداً لأي حركة؟",
+      "answers": {
+        "Pop Art": "فن البوب",
+        "Cubism": "التكعيبية",
+        "Baroque": "الباروك",
+        "Gothic": "القوطية"
+      }
+    },
+    "art:34": {
+      "question": "من أي بلد كان فنسنت فان جوخ؟",
+      "answers": {
+        "France": "فرنسا",
+        "Netherlands": "هولندا",
+        "Italy": "إيطاليا",
+        "Spain": "إسبانيا"
+      }
+    },
+    "art:35": {
+      "question": "بابلو بيكاسو من أي بلد؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "Spain": "إسبانيا",
+        "France": "فرنسا",
+        "Portugal": "البرتغال"
+      }
+    },
+    "art:36": {
+      "question": "ليوناردو دافنشي من أي بلد؟",
+      "answers": {
+        "France": "فرنسا",
+        "Italy": "إيطاليا",
+        "Spain": "إسبانيا",
+        "Greece": "اليونان"
+      }
+    },
+    "art:37": {
+      "question": "يقع متحف اللوفر في أي مدينة؟",
+      "answers": {
+        "Rome": "روما",
+        "Paris": "باريس",
+        "Madrid": "مدريد",
+        "London": "لندن"
+      }
+    },
+    "art:38": {
+      "question": "يسمى لصق المواد على السطح لصنع عمل فني؟",
+      "answers": {
+        "Fresco": "فريسكو",
+        "Collage": "مجمعة",
+        "Etching": "النقش",
+        "Casting": "الإرسال"
+      }
+    },
+    "art:39": {
+      "question": "في أي بلد بدأت الانطباعية؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "France": "فرنسا",
+        "Germany": "ألمانيا",
+        "Spain": "إسبانيا"
+      }
+    },
+    "art:40": {
+      "question": "ما هو اللون الذي لا يعد لونًا أساسيًا للطلاء؟",
+      "answers": {
+        "Red": "أحمر",
+        "Blue": "أزرق",
+        "Yellow": "أصفر",
+        "Green": "أخضر"
+      }
+    },
+    "art:41": {
+      "question": "أشهر سقف لمايكل أنجلو يقع في أي كنيسة صغيرة؟",
+      "answers": {
+        "Sistine Chapel": "كنيسة سيستينا",
+        "King's Chapel": "كنيسة الملك",
+        "St Paul's": "سانت بول",
+        "Notre-Dame": "نوتردام"
+      }
+    },
+    "art:42": {
+      "question": "من هو الفنان الذي عاش في \"الفترة الزرقاء\"؟",
+      "answers": {
+        "Picasso": "بيكاسو",
+        "Monet": "مونيه",
+        "Rembrandt": "رامبرانت",
+        "Turner": "تيرنر"
+      }
+    },
+    "art:43": {
+      "question": "كان رامبرانت رسامًا محترفًا من أي بلد؟",
+      "answers": {
+        "Netherlands": "هولندا",
+        "France": "فرنسا",
+        "Italy": "إيطاليا",
+        "England": "إنجلترا"
+      }
+    },
+    "art:44": {
+      "question": "من رسم \"The Night Watch\"؟",
+      "answers": {
+        "Vermeer": "فيرمير",
+        "Rembrandt": "رامبرانت",
+        "Rubens": "روبنز",
+        "Hals": "هالس"
+      }
+    },
+    "art:45": {
+      "question": "الرسم والنحت والرسم هل هي أنواع؟",
+      "answers": {
+        "Music": "موسيقى",
+        "Visual arts": "الفنون البصرية",
+        "Literature": "الأدب",
+        "Dance": "الرقص"
+      }
+    },
+    "art:46": {
+      "question": "الألوان المائية هي نوع من؟",
+      "answers": {
+        "Sculpture": "النحت",
+        "Paint": "الطلاء",
+        "Camera": "الكاميرا",
+        "Clay": "طين"
+      }
+    },
+    "art:47": {
+      "question": "هل يتم استخدام \"حامل الحامل\"؟",
+      "answers": {
+        "Mix clay": "مزيج الطين",
+        "Hold a canvas while painting": "أمسك لوحة قماشية أثناء الرسم",
+        "Cut marble": "قطع الرخام",
+        "Frame photos": "إطارات الصور"
+      }
+    },
+    "art:48": {
+      "question": "الموناليزا مشهورة بغموضها؟",
+      "answers": {
+        "Hat": "قبعة",
+        "Smile": "ابتسم",
+        "Dress": "فستان",
+        "Crown": "التاج"
+      }
+    },
+    "art:49": {
+      "question": "الفنان بانكسي المشهور؟",
+      "answers": {
+        "Classical portraits": "صور كلاسيكية",
+        "Street art": "فن الشارع",
+        "Marble statues": "تماثيل رخامية",
+        "Frescoes": "اللوحات الجدارية"
+      }
+    },
+    "art:50": {
+      "question": "الألوان الأساسية للضوء هي الأحمر والأخضر و؟",
+      "answers": {
+        "Yellow": "أصفر",
+        "Blue": "أزرق",
+        "Purple": "أرجواني",
+        "White": "أبيض"
+      }
+    },
+    "art:51": {
+      "question": "تمثل التكعيبية الموضوعات التي تستخدمها؟",
+      "answers": {
+        "Realistic detail": "تفاصيل واقعية",
+        "Geometric shapes": "الأشكال الهندسية",
+        "Only circles": "الدوائر فقط",
+        "Photographs": "صور فوتوغرافية"
+      }
+    },
+    "art:52": {
+      "question": "\"الجدارية\" هي لوحة مرسومة على؟",
+      "answers": {
+        "Small canvas": "لوحة قماشية صغيرة",
+        "Wall": "الحائط",
+        "Plate": "لوحة",
+        "Paper": "ورق"
+      }
+    },
+    "art:53": {
+      "question": "من رسم لوحة \"ولادة فينوس\"؟",
+      "answers": {
+        "Botticelli": "بوتيتشيلي",
+        "Raphael": "رافائيل",
+        "Giotto": "جيوتو",
+        "Titian": "تيتيان"
+      }
+    },
+    "art:54": {
+      "question": "بدأت فترة فن عصر النهضة في؟",
+      "answers": {
+        "France": "فرنسا",
+        "Italy": "إيطاليا",
+        "England": "إنجلترا",
+        "Germany": "ألمانيا"
+      }
+    },
+    "art:55": {
+      "question": "سلفادور دالي كان معروفا بشخصيته المميزة؟",
+      "answers": {
+        "Beard": "لحية",
+        "Moustache": "شارب",
+        "Hat": "قبعة",
+        "Glasses": "نظارات"
+      }
+    },
+    "art:56": {
+      "question": "يُصنع الفخار بشكل أساسي من؟",
+      "answers": {
+        "Metal": "معدن",
+        "Clay": "طين",
+        "Glass": "زجاج",
+        "Wood": "خشب"
+      }
+    },
+    "art:57": {
+      "question": "ما هو اللون الذي يعتبر من الألوان الدافئة؟",
+      "answers": {
+        "Blue": "أزرق",
+        "Red": "أحمر",
+        "Green": "أخضر",
+        "Purple": "أرجواني"
+      }
+    },
+    "art:58": {
+      "question": "ما هو اللون الذي يعتبر من الألوان الرائعة؟",
+      "answers": {
+        "Red": "أحمر",
+        "Orange": "برتقالي",
+        "Blue": "أزرق",
+        "Yellow": "أصفر"
+      }
+    },
+    "art:59": {
+      "question": "من هو الفنان الذي اشتهر برسم راقصات الباليه؟",
+      "answers": {
+        "Degas": "ديغا",
+        "Monet": "مونيه",
+        "Cézanne": "سيزان",
+        "Seurat": "سورة"
+      }
+    },
+    "art:60": {
+      "question": "\"التنقيطية\" (الرسم بالنقاط) مرتبطة بـ؟",
+      "answers": {
+        "Seurat": "سورة",
+        "Van Gogh": "فان جوخ",
+        "Klimt": "كليمت",
+        "Munch": "مونش"
+      }
+    },
+    "art:61": {
+      "question": "من المعروف أن فيلم \"القبلة\" لغوستاف كليمت يستخدم الكثير من؟",
+      "answers": {
+        "Silver": "فضي",
+        "Gold": "ذهبي",
+        "Blue": "أزرق",
+        "Black": "أسود"
+      }
+    },
+    "art:62": {
+      "question": "عادةً ما يتم عمل رسم سريع باستخدام؟",
+      "answers": {
+        "Chisel": "إزميل",
+        "Pencil": "قلم رصاص",
+        "Roller": "الأسطوانة",
+        "Clay": "طين"
+      }
+    },
+    "art:63": {
+      "question": "الفن التجريدي بشكل عام لا يحاول القيام بذلك؟",
+      "answers": {
+        "Use color": "استخدم اللون",
+        "Represent reality exactly": "يمثل الواقع تمامًا",
+        "Use shapes": "استخدم الأشكال",
+        "Be creative": "كن مبدعًا"
+      }
+    },
+    "art:64": {
+      "question": "ما هي المدينة التي يوجد بها متحف مخصص لفان جوخ؟",
+      "answers": {
+        "Amsterdam": "أمستردام",
+        "London": "لندن",
+        "Rome": "روما",
+        "Madrid": "مدريد"
+      }
+    },
+    "art:65": {
+      "question": "كان أوغست رودان في المقام الأول؟",
+      "answers": {
+        "Painter": "رسام",
+        "Sculptor": "النحات",
+        "Photographer": "مصور فوتوغرافي",
+        "Architect": "مهندس معماري"
+      }
+    },
+    "art:66": {
+      "question": "يقع متحف الفن الحديث (MoMA) في؟",
+      "answers": {
+        "Paris": "باريس",
+        "New York": "نيويورك",
+        "Rome": "روما",
+        "Tokyo": "طوكيو"
+      }
+    },
+    "art:67": {
+      "question": "يقع متحف برادو في؟",
+      "answers": {
+        "Madrid": "مدريد",
+        "Paris": "باريس",
+        "Rome": "روما",
+        "London": "لندن"
+      }
+    },
+    "art:68": {
+      "question": "تشير كلمة \"Chiaroscuro\" إلى الاستخدام القوي لـ؟",
+      "answers": {
+        "Bright colors": "ألوان زاهية",
+        "Light and shadow": "الضوء والظل",
+        "Straight lines": "خطوط مستقيمة",
+        "Dots": "النقاط"
+      }
+    },
+    "art:69": {
+      "question": "ما هو شكل لوحة الرسم عادةً؟",
+      "answers": {
+        "Round": "جولة",
+        "Rectangular": "مستطيل",
+        "Triangular": "مثلثي",
+        "Star-shaped": "على شكل نجمة"
+      }
+    },
+    "art:70": {
+      "question": "تظهر الصورة الذاتية؟",
+      "answers": {
+        "The artist themselves": "الفنان نفسه",
+        "A landscape": "منظر طبيعي",
+        "A building": "مبنى",
+        "An animal": "حيوان"
+      }
+    },
+    "art:71": {
+      "question": "ينتمي مايكل أنجلو وليوناردو ورافائيل إلى؟",
+      "answers": {
+        "Baroque": "الباروك",
+        "Renaissance": "عصر النهضة",
+        "Modern era": "العصر الحديث",
+        "Gothic": "القوطية"
+      }
+    },
+    "art:72": {
+      "question": "غالبا ما تصور السريالية؟",
+      "answers": {
+        "Everyday realism": "الواقعية اليومية",
+        "Dreamlike, strange scenes": "مشاهد غريبة تشبه الحلم",
+        "Only portraits": "الصور الشخصية فقط",
+        "Pure geometry": "هندسة خالصة"
+      }
+    },
+    "art:73": {
+      "question": "ما اللون الناتج عن مزج الأحمر بالأبيض؟",
+      "answers": {
+        "Blue": "أزرق",
+        "Pink": "وردي",
+        "Green": "أخضر",
+        "Brown": "بني"
+      }
+    },
+    "art:74": {
+      "question": "يسمى التمثال الشهير للرجل المفكر الجالس؟",
+      "answers": {
+        "The Dreamer": "الحالم",
+        "The Thinker": "المفكر",
+        "The Watcher": "المراقب",
+        "The Sitter": "الجليسة"
+      }
+    },
+    "art:75": {
+      "question": "التصوير الفوتوغرافي كفن يلتقط الصور باستخدام؟",
+      "answers": {
+        "Brush": "فرشاة",
+        "Camera": "الكاميرا",
+        "Chisel": "إزميل",
+        "Loom": "المنوال"
+      }
+    },
+    "art:76": {
+      "question": "\"فنسنت\" هو الاسم الأول لأي رسام؟",
+      "answers": {
+        "Monet": "مونيه",
+        "Van Gogh": "فان جوخ",
+        "Picasso": "بيكاسو",
+        "Dalí": "دالي"
+      }
+    },
+    "art:77": {
+      "question": "يقع معرض أوفيزي في أي بلد؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "France": "فرنسا",
+        "Spain": "إسبانيا",
+        "Greece": "اليونان"
+      }
+    },
+    "art:78": {
+      "question": "فن الأوريجامي؟",
+      "answers": {
+        "Paper folding": "طي الورق",
+        "Metalwork": "الأعمال المعدنية",
+        "Glassblowing": "نفخ الزجاج",
+        "Painting": "الرسم"
+      }
+    },
+    "art:79": {
+      "question": "من هو الفنان الذي رسم العديد من الصور الشخصية في حياته؟",
+      "answers": {
+        "Rembrandt": "رامبرانت",
+        "Botticelli": "بوتيتشيلي",
+        "Raphael": "رافائيل",
+        "Giotto": "جيوتو"
+      }
+    },
+    "art:80": {
+      "question": "هل يتم استخدام \"لوحة الألوان\"؟",
+      "answers": {
+        "Hold and mix paints": "امسك الدهانات واخلطها",
+        "Cut wood": "قطع الخشب",
+        "Frame art": "صورة الإطار",
+        "Fire clay": "طين النار"
+      }
+    },
+    "art:81": {
+      "question": "الموجة العظيمة قبالة كاناغاوا يابانية مشهورة؟",
+      "answers": {
+        "Sculpture": "النحت",
+        "Woodblock print": "طباعة خشبية",
+        "Oil painting": "لوحة زيتية",
+        "Photograph": "صورة فوتوغرافية"
+      }
+    },
+    "art:82": {
+      "question": "ما هي مادة النحت الشائعة؟",
+      "answers": {
+        "Bronze": "البرونزية",
+        "Watercolor": "ألوان مائية",
+        "Charcoal": "الفحم",
+        "Ink": "حبر"
+      }
+    },
+    "art:83": {
+      "question": "يتم استخدام \"نقطة التلاشي\" في؟",
+      "answers": {
+        "Music": "موسيقى",
+        "Perspective drawing": "رسم المنظور",
+        "Casting": "الإرسال",
+        "Weaving": "النسيج"
+      }
+    },
+    "art:84": {
+      "question": "كان ليوناردو دافنشي مشهورًا أيضًا باعتباره؟",
+      "answers": {
+        "Athlete": "رياضي",
+        "Inventor": "مخترع",
+        "Singer": "مغني",
+        "Sailor": "بحار"
+      }
+    },
+    "art:85": {
+      "question": "\"المعرض\" هو المكان المناسب؟",
+      "answers": {
+        "Store food": "قم بتخزين الطعام",
+        "Display artworks": "عرض الأعمال الفنية",
+        "Repair cars": "إصلاح السيارات",
+        "Grow plants": "زراعة النباتات"
+      }
+    },
+    "art:86": {
+      "question": "الفن الباروكي معروف بكونه؟",
+      "answers": {
+        "Minimal and plain": "بسيط وسهل",
+        "Dramatic and ornate": "دراماتيكي ومزخرف",
+        "Black and white only": "أبيض وأسود فقط",
+        "Purely geometric": "هندسية بحتة"
+      }
+    },
+    "art:87": {
+      "question": "ما هي دار المزادات الفنية الشهيرة؟",
+      "answers": {
+        "Sotheby's": "سوثبي",
+        "Nasdaq": "ناسداك",
+        "Airbnb": "إير بي إن بي",
+        "Netflix": "نتفليكس"
+      }
+    },
+    "art:88": {
+      "question": "\"فينوس دي ميلو\" قديمة مشهورة؟",
+      "answers": {
+        "Painting": "الرسم",
+        "Statue": "تمثال",
+        "Vase": "مزهرية",
+        "Mosaic": "فسيفساء"
+      }
+    },
+    "art:89": {
+      "question": "يوجد فن الزجاج الملون بشكل شائع في؟",
+      "answers": {
+        "Cathedrals": "الكاتدرائيات",
+        "Kitchens": "مطابخ",
+        "Garages": "الكراجات",
+        "Stadiums": "الملاعب"
+      }
+    },
+    "art:90": {
+      "question": "يستخدم الفحم عادة في؟",
+      "answers": {
+        "Painting walls": "طلاء الجدران",
+        "Drawing/sketching": "الرسم/التخطيط",
+        "Carving marble": "نحت الرخام",
+        "Printing": "الطباعة"
+      }
+    },
+    "art:91": {
+      "question": "متحف تيت هو متحف فني في أي مدينة؟",
+      "answers": {
+        "Paris": "باريس",
+        "London": "لندن",
+        "Madrid": "مدريد",
+        "Rome": "روما"
+      }
+    },
+    "art:92": {
+      "question": "ما هو أفضل وصف لكلمة \"نحت\"؟",
+      "answers": {
+        "A 2D painting": "لوحة ثنائية الأبعاد",
+        "A 3D work of art": "عمل فني ثلاثي الأبعاد",
+        "A song": "أغنية",
+        "A poem": "قصيدة"
+      }
+    },
+    "art:93": {
+      "question": "يشير \"الفن الحديث\" عمومًا إلى الفن تقريبًا؟",
+      "answers": {
+        "Ancient times": "العصور القديمة",
+        "The late 1800s onward": "أواخر القرن التاسع عشر وما بعده",
+        "Medieval times": "العصور الوسطى",
+        "Prehistory": "عصور ما قبل التاريخ"
+      }
+    },
+    "art:94": {
+      "question": "من هو الفنان المرتبط بلوحات تاهيتي؟",
+      "answers": {
+        "Gauguin": "غوغان",
+        "Monet": "مونيه",
+        "Rembrandt": "رامبرانت",
+        "Vermeer": "فيرمير"
+      }
+    },
+    "art:95": {
+      "question": "هل تم رسم لوحة جدارية؟",
+      "answers": {
+        "Canvas": "قماش",
+        "Wet plaster": "الجص الرطب",
+        "Paper": "ورق",
+        "Wood panel": "لوح خشبي"
+      }
+    },
+    "art:96": {
+      "question": "تقع كنيسة سيستينا؟",
+      "answers": {
+        "Vatican City": "مدينة الفاتيكان",
+        "Florence": "فلورنسا",
+        "Venice": "البندقية",
+        "Naples": "نابولي"
+      }
+    },
+    "art:97": {
+      "question": "أي من هذه الأنماط يعد أسلوبًا فنيًا؟",
+      "answers": {
+        "Impressionism": "الانطباعية",
+        "Photosynthesis": "عملية التمثيل الضوئي",
+        "Gravity": "الجاذبية",
+        "Inflation": "التضخم"
+      }
+    },
+    "art:98": {
+      "question": "الشخص الذي يصنع المنحوتات هو؟",
+      "answers": {
+        "Painter": "رسام",
+        "Sculptor": "النحات",
+        "Novelist": "روائي",
+        "Composer": "ملحن"
+      }
+    },
+    "art:99": {
+      "question": "من رسم لوحة \"انطباع، شروق الشمس\" والتي سميت بالانطباعية؟",
+      "answers": {
+        "Monet": "مونيه",
+        "Manet": "مانيه",
+        "Renoir": "رينوار",
+        "Degas": "ديغا"
+      }
+    },
+    "history:0": {
+      "question": "في أي عام انتهت الحرب العالمية الثانية؟",
+      "answers": {
+        "1918": "1918",
+        "1943": "1943",
+        "1945": "1945",
+        "1950": "1950"
+      }
+    },
+    "history:1": {
+      "question": "من هو أول رئيس للولايات المتحدة؟",
+      "answers": {
+        "Lincoln": "لينكولن",
+        "Washington": "واشنطن",
+        "Jefferson": "جيفرسون",
+        "Adams": "آدامز"
+      }
+    },
+    "history:2": {
+      "question": "أي حضارة قديمة بنيت الأهرامات الكبرى؟",
+      "answers": {
+        "Romans": "الرومان",
+        "Greeks": "اليونانيون",
+        "Egyptians": "المصريين",
+        "Mayans": "المايا"
+      }
+    },
+    "history:3": {
+      "question": "في أي عام سقط جدار برلين؟",
+      "answers": {
+        "1979": "1979",
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991"
+      }
+    },
+    "history:4": {
+      "question": "من هو الفيلسوف الذي كان تلميذا لسقراط؟",
+      "answers": {
+        "Aristotle": "أرسطو",
+        "Plato": "أفلاطون",
+        "Pythagoras": "فيثاغورس",
+        "Homer": "هوميروس"
+      }
+    },
+    "history:5": {
+      "question": "ما هي السفينة التي غرقت عام 1912 بعد اصطدامها بجبل جليدي؟",
+      "answers": {
+        "Lusitania": "لوسيتانيا",
+        "Titanic": "تيتانيك",
+        "Bismarck": "بسمارك",
+        "Mayflower": "ماي فلاور"
+      }
+    },
+    "history:6": {
+      "question": "من وصل الأمريكتين عام 1492؟",
+      "answers": {
+        "Magellan": "ماجلان",
+        "Columbus": "كولومبوس",
+        "Vespucci": "فسبوتشي",
+        "Cook": "كوك"
+      }
+    },
+    "history:7": {
+      "question": "الثورة الفرنسية بدأت في أي عام؟",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1804": "1804",
+        "1815": "1815"
+      }
+    },
+    "history:8": {
+      "question": "ما هي الإمبراطورية التي أسسها جنكيز خان؟",
+      "answers": {
+        "Ottoman": "العثمانية",
+        "Mongol": "المغول",
+        "Persian": "الفارسية",
+        "Roman": "روماني"
+      }
+    },
+    "history:9": {
+      "question": "من قاد ألمانيا النازية خلال الحرب العالمية الثانية؟",
+      "answers": {
+        "Mussolini": "موسوليني",
+        "Hitler": "هتلر",
+        "Stalin": "ستالين",
+        "Franco": "فرانكو"
+      }
+    },
+    "history:10": {
+      "question": "يقع الكولوسيوم في أي مدينة؟",
+      "answers": {
+        "Athens": "أثينا",
+        "Rome": "روما",
+        "Cairo": "القاهرة",
+        "Istanbul": "اسطنبول"
+      }
+    },
+    "history:11": {
+      "question": "أي ملكة مصرية تحالفت مع قيصر ومارك أنطونيو؟",
+      "answers": {
+        "Nefertiti": "نفرتيتي",
+        "Cleopatra": "كليوباترا",
+        "Hatshepsut": "حتشبسوت",
+        "Isis": "إيزيس"
+      }
+    },
+    "history:12": {
+      "question": "كانت الحرب الباردة بشكل رئيسي بين الولايات المتحدة الأمريكية و؟",
+      "answers": {
+        "China": "الصين",
+        "USSR": "اتحاد الجمهوريات الاشتراكية السوفياتية",
+        "Germany": "ألمانيا",
+        "Japan": "اليابان"
+      }
+    },
+    "history:13": {
+      "question": "في أي عام هبط الإنسان على سطح القمر لأول مرة؟",
+      "answers": {
+        "1959": "1959",
+        "1965": "1965",
+        "1969": "1969",
+        "1972": "1972"
+      }
+    },
+    "history:14": {
+      "question": "في أي دولة بدأت النهضة؟",
+      "answers": {
+        "France": "فرنسا",
+        "Italy": "إيطاليا",
+        "England": "إنجلترا",
+        "Spain": "إسبانيا"
+      }
+    },
+    "history:15": {
+      "question": "اندلعت الحرب الأهلية الأمريكية بين الشمال والجنوب؟",
+      "answers": {
+        "East": "شرقًا",
+        "South": "جنوبًا",
+        "West": "الغرب",
+        "Midwest": "الغرب الأوسط"
+      }
+    },
+    "history:16": {
+      "question": "ما هي الحضارة القديمة التي خلقت الديمقراطية؟",
+      "answers": {
+        "Rome": "روما",
+        "Greece": "اليونان",
+        "Egypt": "مصر",
+        "Persia": "بلاد فارس"
+      }
+    },
+    "history:17": {
+      "question": "من اخترعت آلة الطباعة؟",
+      "answers": {
+        "Newton": "نيوتن",
+        "Gutenberg": "جوتنبرج",
+        "Edison": "إديسون",
+        "Franklin": "فرانكلين"
+      }
+    },
+    "history:18": {
+      "question": "في أي دولة تم بناء سور الصين العظيم القديم؟",
+      "answers": {
+        "India": "الهند",
+        "China": "الصين",
+        "Japan": "اليابان",
+        "Egypt": "مصر"
+      }
+    },
+    "history:19": {
+      "question": "من هي الملكة المصرية التي لديها تمثال نصفي شهير معروض في برلين؟",
+      "answers": {
+        "Cleopatra": "كليوباترا",
+        "Nefertiti": "نفرتيتي",
+        "Hatshepsut": "حتشبسوت",
+        "Isis": "إيزيس"
+      }
+    },
+    "history:20": {
+      "question": "الحرب العالمية الأولى بدأت في أي عام؟",
+      "answers": {
+        "1912": "1912",
+        "1914": "1914",
+        "1918": "1918",
+        "1920": "1920"
+      }
+    },
+    "history:21": {
+      "question": "الحرب العالمية الأولى انتهت في أي عام؟",
+      "answers": {
+        "1916": "1916",
+        "1918": "1918",
+        "1920": "1920",
+        "1922": "1922"
+      }
+    },
+    "history:22": {
+      "question": "في أي مدينة تمركزت الإمبراطورية الرومانية؟",
+      "answers": {
+        "Athens": "أثينا",
+        "Rome": "روما",
+        "Cairo": "القاهرة",
+        "Carthage": "قرطاج"
+      }
+    },
+    "history:23": {
+      "question": "هل كان يوليوس قيصر زعيما قديما؟",
+      "answers": {
+        "Greece": "اليونان",
+        "Rome": "روما",
+        "Egypt": "مصر",
+        "Persia": "بلاد فارس"
+      }
+    },
+    "history:24": {
+      "question": "تم التوقيع على إعلان استقلال الولايات المتحدة؟",
+      "answers": {
+        "1776": "1776",
+        "1789": "1789",
+        "1800": "1800",
+        "1812": "1812"
+      }
+    },
+    "history:25": {
+      "question": "نابليون بونابرت كان زعيم أي دولة؟",
+      "answers": {
+        "Spain": "إسبانيا",
+        "France": "فرنسا",
+        "Italy": "إيطاليا",
+        "Russia": "روسيا"
+      }
+    },
+    "history:26": {
+      "question": "هُزم نابليون الشهير في معركة؟",
+      "answers": {
+        "Hastings": "هاستينغز",
+        "Waterloo": "واترلو",
+        "Gettysburg": "جيتيسبيرغ",
+        "Verdun": "فردان"
+      }
+    },
+    "history:27": {
+      "question": "جدار برلين قسم أي مدينة؟",
+      "answers": {
+        "Munich": "ميونيخ",
+        "Berlin": "برلين",
+        "Frankfurt": "فرانكفورت",
+        "Vienna": "فيينا"
+      }
+    },
+    "history:28": {
+      "question": "ما هي الحضارة التي بنيت ماتشو بيتشو؟",
+      "answers": {
+        "Aztec": "الأزتيك",
+        "Inca": "الإنكا",
+        "Maya": "مايا",
+        "Olmec": "أولمك"
+      }
+    },
+    "history:29": {
+      "question": "تقع أهرامات الجيزة في ؟",
+      "answers": {
+        "Iraq": "العراق",
+        "Egypt": "مصر",
+        "Sudan": "السودان",
+        "Libya": "ليبيا"
+      }
+    },
+    "history:30": {
+      "question": "من كان رئيس وزراء بريطانيا خلال أغلب فترات الحرب العالمية الثانية؟",
+      "answers": {
+        "Chamberlain": "تشامبرلين",
+        "Churchill": "تشرشل",
+        "Attlee": "أتلي",
+        "Thatcher": "تاتشر"
+      }
+    },
+    "history:31": {
+      "question": "كانت السفينة تيتانيك مبحرة إلى أي مدينة عندما غرقت؟",
+      "answers": {
+        "London": "لندن",
+        "New York": "نيويورك",
+        "Boston": "بوسطن",
+        "Halifax": "هاليفاكس"
+      }
+    },
+    "history:32": {
+      "question": "من هو المستكشف الذي قاد أول رحلة حول العالم؟",
+      "answers": {
+        "Columbus": "كولومبوس",
+        "Magellan": "ماجلان",
+        "Da Gama": "دا جاما",
+        "Cook": "كوك"
+      }
+    },
+    "history:33": {
+      "question": "كلمة \"النهضة\" تعني حرفيا؟",
+      "answers": {
+        "Rebirth": "إعادة الميلاد",
+        "Revolution": "الثورة",
+        "Reform": "الإصلاح",
+        "Return": "العودة"
+      }
+    },
+    "history:34": {
+      "question": "كتب المصريون القدماء باستخدام؟",
+      "answers": {
+        "Latin": "اللاتينية",
+        "Hieroglyphics": "الهيروغليفية",
+        "Cyrillic": "السيريلية",
+        "Runes": "الأحرف الرونية"
+      }
+    },
+    "history:35": {
+      "question": "هل كان مركز الإمبراطورية العثمانية في العصر الحديث؟",
+      "answers": {
+        "Egypt": "مصر",
+        "Turkey": "تركيا",
+        "Iran": "إيران",
+        "Greece": "اليونان"
+      }
+    },
+    "history:36": {
+      "question": "القسطنطينية هو الاسم القديم لأي مدينة؟",
+      "answers": {
+        "Athens": "أثينا",
+        "Istanbul": "اسطنبول",
+        "Rome": "روما",
+        "Cairo": "القاهرة"
+      }
+    },
+    "history:37": {
+      "question": "ما هي الوثيقة التي حدت من سلطة الملك الإنجليزي عام 1215؟",
+      "answers": {
+        "Magna Carta": "ماجنا كارتا",
+        "Bill of Rights": "ميثاق الحقوق",
+        "Constitution": "الدستور",
+        "Domesday Book": "كتاب يوم القيامة"
+      }
+    },
+    "history:38": {
+      "question": "الثورة الصناعية بدأت في أي دولة؟",
+      "answers": {
+        "USA": "الولايات المتحدة الأمريكية",
+        "Britain": "بريطانيا",
+        "France": "فرنسا",
+        "Germany": "ألمانيا"
+      }
+    },
+    "history:39": {
+      "question": "من هو الرئيس الأمريكي الذي اغتيل عام 1963؟",
+      "answers": {
+        "Lincoln": "لينكولن",
+        "Kennedy": "كينيدي",
+        "Roosevelt": "روزفلت",
+        "Nixon": "نيكسون"
+      }
+    },
+    "history:40": {
+      "question": "من هو رئيس الولايات المتحدة الذي يظهر على الورقة النقدية فئة 1 دولار؟",
+      "answers": {
+        "Lincoln": "لينكولن",
+        "Washington": "واشنطن",
+        "Jefferson": "جيفرسون",
+        "Franklin": "فرانكلين"
+      }
+    },
+    "history:41": {
+      "question": "من قاد حركة الاستقلال السلمية في الهند؟",
+      "answers": {
+        "Nehru": "نهرو",
+        "Gandhi": "غاندي",
+        "Bose": "بوز",
+        "Patel": "باتيل"
+      }
+    },
+    "history:42": {
+      "question": "من أي جانب تم بناء جدار برلين؟",
+      "answers": {
+        "West Germany": "ألمانيا الغربية",
+        "East Germany": "ألمانيا الشرقية",
+        "France": "فرنسا",
+        "USA": "الولايات المتحدة الأمريكية"
+      }
+    },
+    "history:43": {
+      "question": "ما هي الحضارة القديمة التي اشتهرت بالتحنيط؟",
+      "answers": {
+        "Greek": "اليونانية",
+        "Egyptian": "مصري",
+        "Roman": "روماني",
+        "Persian": "الفارسية"
+      }
+    },
+    "history:44": {
+      "question": "هل كان الموت الأسود مدمرًا؟",
+      "answers": {
+        "War": "الحرب",
+        "Plague": "الطاعون",
+        "Famine": "المجاعة",
+        "Earthquake": "زلزال"
+      }
+    },
+    "history:45": {
+      "question": "بدأ الإصلاح البروتستانتي؟",
+      "answers": {
+        "Martin Luther": "مارتن لوثر",
+        "Henry VIII": "هنري الثامن",
+        "Calvin": "كالفين",
+        "Pope Leo": "البابا ليو"
+      }
+    },
+    "history:46": {
+      "question": "نشأت الألعاب الأولمبية القديمة؟",
+      "answers": {
+        "Rome": "روما",
+        "Greece": "اليونان",
+        "Egypt": "مصر",
+        "Persia": "بلاد فارس"
+      }
+    },
+    "history:47": {
+      "question": "من هو أول إنسان صعد إلى الفضاء؟",
+      "answers": {
+        "Armstrong": "ارمسترونج",
+        "Gagarin": "جاجارين",
+        "Glenn": "جلين",
+        "Aldrin": "ألدرين"
+      }
+    },
+    "history:48": {
+      "question": "كان نيل أرمسترونج أول شخص يفعل ذلك؟",
+      "answers": {
+        "Fly a plane": "قيادة الطائرة",
+        "Walk on the Moon": "المشي على القمر",
+        "Reach the South Pole": "الوصول إلى القطب الجنوبي",
+        "Climb Everest": "تسلق جبل إيفرست"
+      }
+    },
+    "history:49": {
+      "question": "تفكك الاتحاد السوفييتي في أي عام؟",
+      "answers": {
+        "1985": "1985",
+        "1989": "1989",
+        "1991": "1991",
+        "1993": "1993"
+      }
+    },
+    "history:50": {
+      "question": "هل تم كتابة إعلان استقلال الولايات المتحدة بشكل أساسي بواسطة؟",
+      "answers": {
+        "Washington": "واشنطن",
+        "Jefferson": "جيفرسون",
+        "Franklin": "فرانكلين",
+        "Adams": "آدامز"
+      }
+    },
+    "history:51": {
+      "question": "ما هي السفينة التي جلبت الحجاج إلى أمريكا عام 1620؟",
+      "answers": {
+        "Mayflower": "ماي فلاور",
+        "Titanic": "تيتانيك",
+        "Santa Maria": "سانتا ماريا",
+        "Beagle": "بيغل"
+      }
+    },
+    "history:52": {
+      "question": "أبحر كريستوفر كولومبوس تحت علم؟",
+      "answers": {
+        "Portugal": "البرتغال",
+        "Spain": "إسبانيا",
+        "Italy": "إيطاليا",
+        "England": "إنجلترا"
+      }
+    },
+    "history:53": {
+      "question": "بدأت الثورة الفرنسية باقتحام؟",
+      "answers": {
+        "Louvre": "اللوفر",
+        "Bastille": "الباستيل",
+        "Versailles": "فرساي",
+        "Notre-Dame": "نوتردام"
+      }
+    },
+    "history:54": {
+      "question": "ما هي الأعجوبة القديمة التي لا تزال قائمة في مصر؟",
+      "answers": {
+        "Great Pyramid of Giza": "الهرم الأكبر بالجيزة",
+        "Colosseum": "الكولوسيوم",
+        "Parthenon": "البارثينون",
+        "Taj Mahal": "تاج محل"
+      }
+    },
+    "history:55": {
+      "question": "يقع تاج محل في أي دولة؟",
+      "answers": {
+        "Pakistan": "باكستان",
+        "India": "الهند",
+        "Iran": "إيران",
+        "Turkey": "تركيا"
+      }
+    },
+    "history:56": {
+      "question": "من قاد الاتحاد السوفييتي خلال الحرب العالمية الثانية؟",
+      "answers": {
+        "Lenin": "لينين",
+        "Stalin": "ستالين",
+        "Khrushchev": "خروتشوف",
+        "Gorbachev": "جورباتشوف"
+      }
+    },
+    "history:57": {
+      "question": "في الحرب العالمية الثانية، ضربت القنبلة الذرية مدينة هيروشيما و؟",
+      "answers": {
+        "Tokyo": "طوكيو",
+        "Nagasaki": "ناغازاكي",
+        "Osaka": "أوساكا",
+        "Kyoto": "كيوتو"
+      }
+    },
+    "history:58": {
+      "question": "كانت عصبة الأمم هي السباقة إلى؟",
+      "answers": {
+        "EU": "الاتحاد الأوروبي",
+        "United Nations": "الأمم المتحدة",
+        "NATO": "الناتو",
+        "WHO": "منظمة الصحة العالمية"
+      }
+    },
+    "history:59": {
+      "question": "تأسست الأمم المتحدة في أي عام؟",
+      "answers": {
+        "1919": "1919",
+        "1945": "1945",
+        "1950": "1950",
+        "1960": "1960"
+      }
+    },
+    "history:60": {
+      "question": "من أي مملكة قديمة جاء الإسكندر الأكبر؟",
+      "answers": {
+        "Rome": "روما",
+        "Macedonia": "مقدونيا",
+        "Egypt": "مصر",
+        "Persia": "بلاد فارس"
+      }
+    },
+    "history:61": {
+      "question": "ما هي الدولة التي كانت موطنًا لإسبرطة القديمة؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "Greece": "اليونان",
+        "Egypt": "مصر",
+        "Turkey": "تركيا"
+      }
+    },
+    "history:62": {
+      "question": "في أي عام انتهت الحرب الباردة؟",
+      "answers": {
+        "1965": "1965",
+        "1975": "1975",
+        "1991": "1991",
+        "2001": "2001"
+      }
+    },
+    "history:63": {
+      "question": "يعود الفضل إلى الأخوين رايت في اختراع؟",
+      "answers": {
+        "Car": "سيارة",
+        "Airplane": "طائرة",
+        "Telephone": "الهاتف",
+        "Radio": "راديو"
+      }
+    },
+    "history:64": {
+      "question": "تمت عمليات الإنزال في يوم النصر في الحرب العالمية الثانية؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "Normandy, France": "نورماندي، فرنسا",
+        "Germany": "ألمانيا",
+        "Poland": "بولندا"
+      }
+    },
+    "history:65": {
+      "question": "كانت حرب المائة عام بين إنجلترا و؟",
+      "answers": {
+        "Spain": "إسبانيا",
+        "France": "فرنسا",
+        "Germany": "ألمانيا",
+        "Italy": "إيطاليا"
+      }
+    },
+    "history:66": {
+      "question": "من كانت رئيسة وزراء المملكة المتحدة \"المرأة الحديدية\" في الثمانينيات؟",
+      "answers": {
+        "Elizabeth II": "إليزابيث الثانية",
+        "Thatcher": "تاتشر",
+        "May": "مايو",
+        "Merkel": "ميركل"
+      }
+    },
+    "history:67": {
+      "question": "تم تدمير مدينة بومبي القديمة من قبل؟",
+      "answers": {
+        "A flood": "فيضان",
+        "A volcano (Vesuvius)": "بركان (فيزوف)",
+        "An earthquake": "زلزال",
+        "A war": "حرب"
+      }
+    },
+    "history:68": {
+      "question": "ما هي الدولة القديمة التي حكمها الفراعنة؟",
+      "answers": {
+        "Greece": "اليونان",
+        "Egypt": "مصر",
+        "Rome": "روما",
+        "Persia": "بلاد فارس"
+      }
+    },
+    "history:69": {
+      "question": "من هي الممرضة الشهيرة التي خدمت في حرب القرم؟",
+      "answers": {
+        "Curie": "كوري",
+        "Nightingale": "العندليب",
+        "Earhart": "إيرهارت",
+        "Keller": "كيلر"
+      }
+    },
+    "history:70": {
+      "question": "بأي مدينة إيطالية يرتبط عصر النهضة أكثر؟",
+      "answers": {
+        "Milan": "ميلانو",
+        "Florence": "فلورنسا",
+        "Naples": "نابولي",
+        "Turin": "تورينو"
+      }
+    },
+    "history:71": {
+      "question": "من هي أول امرأة حصلت على جائزة نوبل؟",
+      "answers": {
+        "Curie": "كوري",
+        "Franklin": "فرانكلين",
+        "Meitner": "مايتنر",
+        "Lovelace": "لوفليس"
+      }
+    },
+    "history:72": {
+      "question": "جاء الفايكنج في الأصل؟",
+      "answers": {
+        "Scandinavia": "الدول الاسكندنافية",
+        "Spain": "إسبانيا",
+        "Greece": "اليونان",
+        "Egypt": "مصر"
+      }
+    },
+    "history:73": {
+      "question": "حريق لندن الكبير وقع في أي عام؟",
+      "answers": {
+        "1620": "1620",
+        "1666": "1666",
+        "1700": "1700",
+        "1750": "1750"
+      }
+    },
+    "history:74": {
+      "question": "هل حدث انهيار وول ستريت الذي بدأ الكساد الكبير؟",
+      "answers": {
+        "1919": "1919",
+        "1929": "1929",
+        "1939": "1939",
+        "1949": "1949"
+      }
+    },
+    "history:75": {
+      "question": "من الذي أدخل الإصلاحات السوفييتية \"الجلاسنوست\" و\"البريسترويكا\"؟",
+      "answers": {
+        "Stalin": "ستالين",
+        "Gorbachev": "جورباتشوف",
+        "Lenin": "لينين",
+        "Putin": "بوتين"
+      }
+    },
+    "history:76": {
+      "question": "في أي دولة تم التوقيع على الماجنا كارتا؟",
+      "answers": {
+        "France": "فرنسا",
+        "England": "إنجلترا",
+        "Italy": "إيطاليا",
+        "Spain": "إسبانيا"
+      }
+    },
+    "history:77": {
+      "question": "من هو المستكشف الذي وصل إلى الهند عن طريق البحر عام 1498؟",
+      "answers": {
+        "Columbus": "كولومبوس",
+        "Vasco da Gama": "فاسكو دا جاما",
+        "Magellan": "ماجلان",
+        "Cook": "كوك"
+      }
+    },
+    "history:78": {
+      "question": "في أي منطقة عاش شعب المايا القديم بشكل رئيسي؟",
+      "answers": {
+        "Central America": "أمريكا الوسطى",
+        "North Africa": "شمال أفريقيا",
+        "Southeast Asia": "جنوب شرق آسيا",
+        "Northern Europe": "شمال أوروبا"
+      }
+    },
+    "history:79": {
+      "question": "كانت حضارة الأزتك موجودة بشكل رئيسي في العصر الحديث؟",
+      "answers": {
+        "Peru": "بيرو",
+        "Mexico": "المكسيك",
+        "Brazil": "البرازيل",
+        "Chile": "تشيلي"
+      }
+    },
+    "history:80": {
+      "question": "من المعروف أن سباق الفضاء أثناء الحرب الباردة انتهى بالهبوط على الأرض؟",
+      "answers": {
+        "Sun": "الشمس",
+        "Moon": "القمر",
+        "Mars": "المريخ",
+        "Venus": "كوكب الزهرة"
+      }
+    },
+    "history:81": {
+      "question": "تم بناء برج إيفل للمعرض العالمي لعام 1889؟",
+      "answers": {
+        "London": "لندن",
+        "Paris": "باريس",
+        "Rome": "روما",
+        "Berlin": "برلين"
+      }
+    },
+    "history:82": {
+      "question": "من كتب \"الرسائل الـ95\"؟",
+      "answers": {
+        "Calvin": "كالفين",
+        "Martin Luther": "مارتن لوثر",
+        "Erasmus": "إيراسموس",
+        "Henry VIII": "هنري الثامن"
+      }
+    },
+    "history:83": {
+      "question": "ما هي الحرب (1914-1918) التي تميزت بحرب الخنادق واسعة النطاق؟",
+      "answers": {
+        "WWII": "الحرب العالمية الثانية",
+        "WWI": "الحرب العالمية الأولى",
+        "Cold War": "الحرب الباردة",
+        "Napoleonic Wars": "الحروب النابليونية"
+      }
+    },
+    "history:84": {
+      "question": "انتهت الحرب الأهلية الأمريكية في أي عام؟",
+      "answers": {
+        "1776": "1776",
+        "1812": "1812",
+        "1865": "1865",
+        "1901": "1901"
+      }
+    },
+    "history:85": {
+      "question": "من هو أول إمبراطور لروما؟",
+      "answers": {
+        "Julius Caesar": "يوليوس قيصر",
+        "Augustus": "أغسطس",
+        "Nero": "نيرو",
+        "Constantine": "قسنطينة"
+      }
+    },
+    "history:86": {
+      "question": "طريق الحرير الذي يربط أوروبا بـ؟",
+      "answers": {
+        "Africa": "أفريقيا",
+        "Asia": "آسيا",
+        "America": "أمريكا",
+        "Australia": "أستراليا"
+      }
+    },
+    "history:87": {
+      "question": "ما هي الدولة التي أهدت تمثال الحرية للولايات المتحدة الأمريكية؟",
+      "answers": {
+        "UK": "المملكة المتحدة",
+        "France": "فرنسا",
+        "Spain": "إسبانيا",
+        "Germany": "ألمانيا"
+      }
+    },
+    "history:88": {
+      "question": "تُعرف فترة العصور الوسطى أيضًا باسم؟",
+      "answers": {
+        "Middle Ages": "العصور الوسطى",
+        "Stone Age": "العصر الحجري",
+        "Bronze Age": "العصر البرونزي",
+        "Space Age": "عصر الفضاء"
+      }
+    },
+    "history:89": {
+      "question": "من قاد الثورة الكوبية؟",
+      "answers": {
+        "Guevara": "جيفارا",
+        "Castro": "كاسترو",
+        "Batista": "باتيستا",
+        "Allende": "الليندي"
+      }
+    },
+    "history:90": {
+      "question": "ما هي أول دولة صنعت قنبلة ذرية؟",
+      "answers": {
+        "Germany": "ألمانيا",
+        "USA": "الولايات المتحدة الأمريكية",
+        "USSR": "اتحاد الجمهوريات الاشتراكية السوفياتية",
+        "Japan": "اليابان"
+      }
+    },
+    "history:91": {
+      "question": "عصر النهضة جاء بعد أي فترة مباشرة؟",
+      "answers": {
+        "Middle Ages": "العصور الوسطى",
+        "Modern era": "العصر الحديث",
+        "Space Age": "عصر الفضاء",
+        "Industrial era": "العصر الصناعي"
+      }
+    },
+    "history:92": {
+      "question": "يقع معبد البارثينون القديم في؟",
+      "answers": {
+        "Rome": "روما",
+        "Athens": "أثينا",
+        "Cairo": "القاهرة",
+        "Istanbul": "اسطنبول"
+      }
+    },
+    "history:93": {
+      "question": "برسبوليس كانت عاصمة لأي إمبراطورية قديمة؟",
+      "answers": {
+        "Roman": "روماني",
+        "Persian": "الفارسية",
+        "Greek": "اليونانية",
+        "Egyptian": "مصري"
+      }
+    },
+    "history:94": {
+      "question": "عصر الاستكشاف الذي شهد بحث الأوروبيين عن؟",
+      "answers": {
+        "The Moon": "القمر",
+        "New trade routes and lands": "طرق وأراضي تجارية جديدة",
+        "Oil": "النفط",
+        "Electricity": "الكهرباء"
+      }
+    },
+    "history:95": {
+      "question": "في عام 1941، هاجمت اليابان أي قاعدة بحرية أمريكية؟",
+      "answers": {
+        "San Diego": "سان دييغو",
+        "Pearl Harbor": "بيرل هاربور",
+        "Norfolk": "نورفولك",
+        "Guam": "غوام"
+      }
+    },
+    "history:96": {
+      "question": "الرقم الروماني لـ 100 هو؟",
+      "answers": {
+        "C": "ج",
+        "D": "د",
+        "M": "م",
+        "L": "ل"
+      }
+    },
+    "history:97": {
+      "question": "ساعد حجر رشيد في فك رموز الكتابة القديمة؟",
+      "answers": {
+        "Latin": "اللاتينية",
+        "Egyptian hieroglyphs": "الهيروغليفية المصرية",
+        "Runes": "الأحرف الرونية",
+        "Sanskrit": "السنسكريتية"
+      }
+    },
+    "history:98": {
+      "question": "أي جنرال أمريكي من الحرب العالمية الثانية أصبح فيما بعد رئيسًا للولايات المتحدة؟",
+      "answers": {
+        "Patton": "باتون",
+        "Eisenhower": "أيزنهاور",
+        "MacArthur": "ماك آرثر",
+        "Marshall": "مارشال"
+      }
+    },
+    "history:99": {
+      "question": "أي ملكة حكمت المملكة المتحدة لمدة 70 عامًا حتى عام 2022؟",
+      "answers": {
+        "Victoria": "فيكتوريا",
+        "Elizabeth II": "إليزابيث الثانية",
+        "Anne": "آن",
+        "Mary": "ماري"
+      }
+    },
+    "science:0": {
+      "question": "ما هي الصيغة الكيميائية للماء؟",
+      "answers": {
+        "CO2": "ثاني أكسيد الكربون",
+        "H2O": "H2O",
+        "O2": "O2",
+        "NaCl": "كلوريد الصوديوم"
+      }
+    },
+    "science:1": {
+      "question": "كم عدد الكواكب في نظامنا الشمسي؟",
+      "answers": {
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      }
+    },
+    "science:2": {
+      "question": "ما هو الغاز الذي تمتصه النباتات من الهواء؟",
+      "answers": {
+        "Oxygen": "الأكسجين",
+        "Carbon dioxide": "ثاني أكسيد الكربون",
+        "Nitrogen": "النيتروجين",
+        "Hydrogen": "الهيدروجين"
+      }
+    },
+    "science:3": {
+      "question": "ما هو أقرب كوكب إلى الشمس؟",
+      "answers": {
+        "Venus": "كوكب الزهرة",
+        "Mercury": "عطارد",
+        "Earth": "الأرض",
+        "Mars": "المريخ"
+      }
+    },
+    "science:4": {
+      "question": "ما الذي يعرف بمصدر قوة الخلية؟",
+      "answers": {
+        "Nucleus": "النواة",
+        "Mitochondria": "الميتوكوندريا",
+        "Ribosome": "الريبوسوم",
+        "Membrane": "الغشاء"
+      }
+    },
+    "science:5": {
+      "question": "ما الرمز الكيميائي للذهب؟",
+      "answers": {
+        "Go": "انطلق",
+        "Gd": "جي دي",
+        "Au": "Au",
+        "Ag": "آج"
+      }
+    },
+    "science:6": {
+      "question": "كم عدد العظام الموجودة في جسم الإنسان البالغ؟",
+      "answers": {
+        "101": "101",
+        "150": "150",
+        "206": "206",
+        "300": "300"
+      }
+    },
+    "science:7": {
+      "question": "ما هو الكوكب المعروف بالكوكب الأحمر؟",
+      "answers": {
+        "Venus": "كوكب الزهرة",
+        "Mars": "المريخ",
+        "Jupiter": "كوكب المشتري",
+        "Saturn": "زحل"
+      }
+    },
+    "science:8": {
+      "question": "من الذي طور النظرية النسبية؟",
+      "answers": {
+        "Newton": "نيوتن",
+        "Einstein": "أينشتاين",
+        "Tesla": "تسلا",
+        "Darwin": "داروين"
+      }
+    },
+    "science:9": {
+      "question": "ما القوة التي تجذب الأجسام نحو الأرض؟",
+      "answers": {
+        "Magnetism": "المغناطيسية",
+        "Gravity": "الجاذبية",
+        "Friction": "الاحتكاك",
+        "Inertia": "القصور الذاتي"
+      }
+    },
+    "science:10": {
+      "question": "ما هي خلايا الدم التي تقاوم العدوى؟",
+      "answers": {
+        "Red cells": "الخلايا الحمراء",
+        "White cells": "الخلايا البيضاء",
+        "Platelets": "الصفائح الدموية",
+        "Plasma": "بلازما"
+      }
+    },
+    "science:11": {
+      "question": "ما هو أكبر عضو في جسم الإنسان؟",
+      "answers": {
+        "Liver": "الكبد",
+        "Skin": "الجلد",
+        "Heart": "القلب",
+        "Brain": "الدماغ"
+      }
+    },
+    "science:12": {
+      "question": "عند مستوى سطح البحر، يغلي الماء عند أي درجة حرارة (°C)؟",
+      "answers": {
+        "80": "80",
+        "90": "90",
+        "100": "100",
+        "120": "120"
+      }
+    },
+    "science:13": {
+      "question": "ماذا تسمى الحيوانات التي تتغذى على النباتات فقط؟",
+      "answers": {
+        "Carnivores": "آكلات اللحوم",
+        "Herbivores": "آكلات الأعشاب",
+        "Omnivores": "القوارت",
+        "Predators": "الحيوانات المفترسة"
+      }
+    },
+    "science:14": {
+      "question": "ما هو أكبر كوكب في نظامنا الشمسي؟",
+      "answers": {
+        "Saturn": "زحل",
+        "Jupiter": "كوكب المشتري",
+        "Neptune": "نبتون",
+        "Earth": "الأرض"
+      }
+    },
+    "science:15": {
+      "question": "النباتات تصنع الغذاء من ضوء الشمس؟",
+      "answers": {
+        "Respiration": "التنفس",
+        "Photosynthesis": "عملية التمثيل الضوئي",
+        "Digestion": "الهضم",
+        "Fermentation": "التخمير"
+      }
+    },
+    "science:16": {
+      "question": "ما الرمز الكيميائي للأكسجين؟",
+      "answers": {
+        "O": "س",
+        "Ox": "الثور",
+        "Og": "ع",
+        "On": "تشغيل"
+      }
+    },
+    "science:17": {
+      "question": "ما هي أصلب مادة طبيعية على وجه الأرض؟",
+      "answers": {
+        "Gold": "ذهبي",
+        "Iron": "حديد",
+        "Diamond": "الماس",
+        "Quartz": "كوارتز"
+      }
+    },
+    "science:18": {
+      "question": "ما الرمز الكيميائي للحديد؟",
+      "answers": {
+        "Ir": "إير",
+        "Fe": "الحديد",
+        "In": "في",
+        "Io": "آيو"
+      }
+    },
+    "science:19": {
+      "question": "ما الرمز الكيميائي للصوديوم؟",
+      "answers": {
+        "So": "إذن",
+        "Sd": "إس دي",
+        "Na": "غ",
+        "S": "س"
+      }
+    },
+    "science:20": {
+      "question": "كم عدد أرجل الحشرة؟",
+      "answers": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      }
+    },
+    "science:21": {
+      "question": "كم عدد أرجل العنكبوت؟",
+      "answers": {
+        "6": "6",
+        "8": "8",
+        "10": "10",
+        "12": "12"
+      }
+    },
+    "science:22": {
+      "question": "ماذا يسمى مركز الذرة؟",
+      "answers": {
+        "Electron": "إلكترون",
+        "Nucleus": "النواة",
+        "Proton shell": "غلاف البروتون",
+        "Orbit": "المدار"
+      }
+    },
+    "science:23": {
+      "question": "ما هو الغاز الذي يحتاج الإنسان إلى تنفسه للبقاء على قيد الحياة؟",
+      "answers": {
+        "Carbon dioxide": "ثاني أكسيد الكربون",
+        "Oxygen": "الأكسجين",
+        "Nitrogen": "النيتروجين",
+        "Helium": "هيليوم"
+      }
+    },
+    "science:24": {
+      "question": "ما هي درجة تجمد الماء بالدرجة المئوية؟",
+      "answers": {
+        "0": "0",
+        "10": "10",
+        "32": "32",
+        "-10": "-10"
+      }
+    },
+    "science:25": {
+      "question": "تدور الأرض حول؟",
+      "answers": {
+        "Moon": "القمر",
+        "Sun": "الشمس",
+        "Mars": "المريخ",
+        "Jupiter": "كوكب المشتري"
+      }
+    },
+    "science:26": {
+      "question": "ما المدة التي تستغرقها الأرض للدوران حول الشمس؟",
+      "answers": {
+        "1 day": "يوم واحد",
+        "1 month": "شهر واحد",
+        "1 year": "سنة واحدة",
+        "10 years": "10 سنوات"
+      }
+    },
+    "science:27": {
+      "question": "ما الذي يسبب الليل والنهار؟",
+      "answers": {
+        "Earth's rotation": "دوران الأرض",
+        "The Moon": "القمر",
+        "Clouds": "السحب",
+        "The tides": "المد والجزر"
+      }
+    },
+    "science:28": {
+      "question": "ما هو أصغر كوكب في نظامنا الشمسي؟",
+      "answers": {
+        "Mars": "المريخ",
+        "Mercury": "عطارد",
+        "Venus": "كوكب الزهرة",
+        "Earth": "الأرض"
+      }
+    },
+    "science:29": {
+      "question": "في أي مجرة نعيش؟",
+      "answers": {
+        "Andromeda": "أندروميدا",
+        "Milky Way": "درب التبانة",
+        "Whirlpool": "دوامة",
+        "Sombrero": "سمبريرو"
+      }
+    },
+    "science:30": {
+      "question": "تتكون الشمس بشكل رئيسي من؟",
+      "answers": {
+        "Rock": "روك",
+        "Hydrogen and helium": "الهيدروجين والهيليوم",
+        "Water": "ماء",
+        "Iron": "حديد"
+      }
+    },
+    "science:31": {
+      "question": "ماذا يجمع النحل من الزهور؟",
+      "answers": {
+        "Water": "ماء",
+        "Nectar": "رحيق",
+        "Sand": "الرمال",
+        "Leaves": "أوراق"
+      }
+    },
+    "science:32": {
+      "question": "ما هو الغاز الذي يشكل معظم الغلاف الجوي للأرض؟",
+      "answers": {
+        "Oxygen": "الأكسجين",
+        "Nitrogen": "النيتروجين",
+        "Carbon dioxide": "ثاني أكسيد الكربون",
+        "Hydrogen": "الهيدروجين"
+      }
+    },
+    "science:33": {
+      "question": "ماذا تسمى دراسة الكائنات الحية؟",
+      "answers": {
+        "Physics": "فيزياء",
+        "Biology": "علم الأحياء",
+        "Geology": "الجيولوجيا",
+        "Chemistry": "الكيمياء"
+      }
+    },
+    "science:34": {
+      "question": "ماذا تسمى دراسة المادة والطاقة؟",
+      "answers": {
+        "Biology": "علم الأحياء",
+        "Physics": "الفيزياء",
+        "Botany": "علم النبات",
+        "Zoology": "علم الحيوان"
+      }
+    },
+    "science:35": {
+      "question": "ماذا تسمى دراسة المواد والتفاعلات؟",
+      "answers": {
+        "Chemistry": "الكيمياء",
+        "Astronomy": "علم الفلك",
+        "Ecology": "علم البيئة",
+        "Geology": "الجيولوجيا"
+      }
+    },
+    "science:36": {
+      "question": "ما هو العضو الذي يضخ الدم في جميع أنحاء الجسم؟",
+      "answers": {
+        "Lungs": "الرئتين",
+        "Heart": "القلب",
+        "Liver": "الكبد",
+        "Kidney": "الكلى"
+      }
+    },
+    "science:37": {
+      "question": "ما العضو المستخدم للتنفس؟",
+      "answers": {
+        "Heart": "القلب",
+        "Lungs": "الرئتان",
+        "Stomach": "المعدة",
+        "Liver": "الكبد"
+      }
+    },
+    "science:38": {
+      "question": "ما هي أصعب مادة في جسم الإنسان؟",
+      "answers": {
+        "Bone": "عظم",
+        "Tooth enamel": "مينا الأسنان",
+        "Nails": "الأظافر",
+        "Cartilage": "الغضروف"
+      }
+    },
+    "science:39": {
+      "question": "كم عدد حجرات قلب الإنسان؟",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "science:40": {
+      "question": "يحمل الحمض النووي؟",
+      "answers": {
+        "Water": "ماء",
+        "Genetic information": "المعلومات الوراثية",
+        "Oxygen": "الأكسجين",
+        "Energy": "الطاقة"
+      }
+    },
+    "science:41": {
+      "question": "ما هو الفيتامين الذي يساعد ضوء الشمس جسمنا على إنتاجه؟",
+      "answers": {
+        "Vitamin A": "فيتامين أ",
+        "Vitamin C": "فيتامين سي",
+        "Vitamin D": "فيتامين د",
+        "Vitamin K": "فيتامين ك"
+      }
+    },
+    "science:42": {
+      "question": "ما هي درجة غليان الماء بالفهرنهايت؟",
+      "answers": {
+        "100": "100",
+        "150": "150",
+        "180": "180",
+        "212": "212"
+      }
+    },
+    "science:43": {
+      "question": "ينتقل الصوت بشكل أسرع؟",
+      "answers": {
+        "Vacuum": "فراغ",
+        "Solids": "المواد الصلبة",
+        "Gases": "الغازات",
+        "Empty space": "مساحة فارغة"
+      }
+    },
+    "science:44": {
+      "question": "ما هي سرعة الضوء التقريبية؟",
+      "answers": {
+        "300,000 km/s": "300,000 كم/ثانية",
+        "1,000 km/s": "1,000 كم/ثانية",
+        "3,000 km/s": "3,000 كم/ثانية",
+        "30 km/s": "30 كم/ثانية"
+      }
+    },
+    "science:45": {
+      "question": "ما هو الكوكب المشهور بحلقاته؟",
+      "answers": {
+        "Mars": "المريخ",
+        "Saturn": "زحل",
+        "Venus": "كوكب الزهرة",
+        "Mercury": "عطارد"
+      }
+    },
+    "science:46": {
+      "question": "ما هو القمر الطبيعي الوحيد للأرض؟",
+      "answers": {
+        "The Sun": "الشمس",
+        "The Moon": "القمر",
+        "Mars": "المريخ",
+        "Venus": "كوكب الزهرة"
+      }
+    },
+    "science:47": {
+      "question": "ما هي القوة التي تجعل الكواكب تدور حول الشمس؟",
+      "answers": {
+        "Magnetism": "المغناطيسية",
+        "Gravity": "الجاذبية",
+        "Friction": "الاحتكاك",
+        "Electricity": "الكهرباء"
+      }
+    },
+    "science:48": {
+      "question": "تسمى الحيوانات التي تأكل النبات واللحوم؟",
+      "answers": {
+        "Herbivores": "الحيوانات العاشبة",
+        "Carnivores": "آكلة اللحوم",
+        "Omnivores": "حيوانات آكلة اللحوم",
+        "Insectivores": "آكلات الحشرات"
+      }
+    },
+    "science:49": {
+      "question": "تسمى الحيوانات التي تأكل اللحوم فقط ؟",
+      "answers": {
+        "Herbivores": "الحيوانات العاشبة",
+        "Carnivores": "آكلة اللحوم",
+        "Omnivores": "حيوانات آكلة اللحوم",
+        "Detritivores": "المخلفات"
+      }
+    },
+    "science:50": {
+      "question": "ما هي العملية التي تحول الماء السائل إلى بخار؟",
+      "answers": {
+        "Condensation": "التكثيف",
+        "Evaporation": "التبخر",
+        "Freezing": "تجميد",
+        "Melting": "ذوبان"
+      }
+    },
+    "science:51": {
+      "question": "ما هي العملية التي تحول البخار إلى سائل مرة أخرى؟",
+      "answers": {
+        "Evaporation": "التبخر",
+        "Condensation": "التكثيف",
+        "Sublimation": "التسامي",
+        "Boiling": "الغليان"
+      }
+    },
+    "science:52": {
+      "question": "ما هي الحالات الثلاث المشتركة للمادة؟",
+      "answers": {
+        "Hot, cold, warm": "حار، بارد، دافئ",
+        "Solid, liquid, gas": "صلب، سائل، غازي",
+        "Big, small, medium": "كبير، صغير، متوسط",
+        "Up, down, side": "أعلى، أسفل، على الجانب"
+      }
+    },
+    "science:53": {
+      "question": "الجليد هو ___ حالة الماء.",
+      "answers": {
+        "Gas": "غاز",
+        "Liquid": "سائل",
+        "Solid": "صلب",
+        "Plasma": "بلازما"
+      }
+    },
+    "science:54": {
+      "question": "من هو العالم الذي اقترح نظرية التطور؟",
+      "answers": {
+        "Newton": "نيوتن",
+        "Darwin": "داروين",
+        "Einstein": "أينشتاين",
+        "Tesla": "تسلا"
+      }
+    },
+    "science:55": {
+      "question": "من الذي صاغ قوانين الحركة والجاذبية؟",
+      "answers": {
+        "Einstein": "أينشتاين",
+        "Newton": "نيوتن",
+        "Galileo": "غاليليو",
+        "Hawking": "هوكينج"
+      }
+    },
+    "science:56": {
+      "question": "ما الرمز الكيميائي للكربون؟",
+      "answers": {
+        "Ca": "كاليفورنيا",
+        "C": "ج",
+        "Co": "شركة",
+        "Cn": "سي"
+      }
+    },
+    "science:57": {
+      "question": "ما الرمز الكيميائي للهيليوم؟",
+      "answers": {
+        "H": "ح",
+        "He": "هو",
+        "Hl": "هل",
+        "Ha": "ها"
+      }
+    },
+    "science:58": {
+      "question": "أي كوكب حار جدًا وبه سحب كثيفة من الأحماض؟",
+      "answers": {
+        "Mars": "المريخ",
+        "Venus": "كوكب الزهرة",
+        "Neptune": "نبتون",
+        "Uranus": "أورانوس"
+      }
+    },
+    "science:59": {
+      "question": "كم عدد الأسنان التي يمتلكها الإنسان البالغ؟",
+      "answers": {
+        "24": "24",
+        "28": "28",
+        "32": "32",
+        "36": "36"
+      }
+    },
+    "science:60": {
+      "question": "أي جزء من النبات يمتص الماء من التربة؟",
+      "answers": {
+        "Leaves": "أوراق",
+        "Roots": "الجذور",
+        "Flowers": "زهور",
+        "Stem": "الجذعية"
+      }
+    },
+    "science:61": {
+      "question": "ما الغاز الذي تطلقه النباتات أثناء عملية التمثيل الضوئي؟",
+      "answers": {
+        "Carbon dioxide": "ثاني أكسيد الكربون",
+        "Oxygen": "الأكسجين",
+        "Nitrogen": "النيتروجين",
+        "Methane": "الميثان"
+      }
+    },
+    "science:62": {
+      "question": "ما هو أقرب نجم إلى الأرض؟",
+      "answers": {
+        "Polaris": "بولاريس",
+        "The Sun": "الشمس",
+        "Sirius": "سيريوس",
+        "Alpha Centauri": "ألفا سنتوري"
+      }
+    },
+    "science:63": {
+      "question": "ما هي فصيلة الدم التي تعتبر المتبرع العام؟",
+      "answers": {
+        "A": "أ",
+        "B": "ب",
+        "O negative": "يا سلبي",
+        "AB": "أ.ب"
+      }
+    },
+    "science:64": {
+      "question": "ما هو الجهاز الذي يقيس درجة الحرارة؟",
+      "answers": {
+        "Barometer": "البارومتر",
+        "Thermometer": "ميزان الحرارة",
+        "Ruler": "المسطرة",
+        "Scale": "مقياس الرسم"
+      }
+    },
+    "science:65": {
+      "question": "ما هي الأداة المستخدمة لرؤية الخلايا الصغيرة؟",
+      "answers": {
+        "Telescope": "التلسكوب",
+        "Microscope": "المجهر",
+        "Periscope": "بيريسكوب",
+        "Binoculars": "مناظير"
+      }
+    },
+    "science:66": {
+      "question": "ما هي الأداة المستخدمة لمشاهدة النجوم البعيدة؟",
+      "answers": {
+        "Microscope": "المجهر",
+        "Telescope": "التلسكوب",
+        "Stethoscope": "سماعة الطبيب",
+        "Ruler": "المسطرة"
+      }
+    },
+    "science:67": {
+      "question": "ما يسمى عادة ثاني أكسيد الكربون المتجمد؟",
+      "answers": {
+        "Dry ice": "ثلج جاف",
+        "Snow": "ثلج",
+        "Frost": "الصقيع",
+        "Hail": "السلام عليكم"
+      }
+    },
+    "science:68": {
+      "question": "ما هو الغاز الذي يزفره الإنسان في الغالب؟",
+      "answers": {
+        "Oxygen": "الأكسجين",
+        "Carbon dioxide": "ثاني أكسيد الكربون",
+        "Nitrogen only": "النيتروجين فقط",
+        "Hydrogen": "الهيدروجين"
+      }
+    },
+    "science:69": {
+      "question": "ما هو الفيتامين المتوفر بكثرة في الحمضيات؟",
+      "answers": {
+        "Vitamin C": "فيتامين سي",
+        "Vitamin D": "فيتامين د",
+        "Vitamin B12": "فيتامين ب12",
+        "Vitamin K": "فيتامين ك"
+      }
+    },
+    "science:70": {
+      "question": "تسمى الصخور المنصهرة الموجودة تحت سطح الأرض؟",
+      "answers": {
+        "Lava": "الحمم البركانية",
+        "Magma": "الصهارة",
+        "Ash": "الرماد",
+        "Basalt": "البازلت"
+      }
+    },
+    "science:71": {
+      "question": "تسمى الصخور المنصهرة التي تنفجر على السطح؟",
+      "answers": {
+        "Magma": "الصهارة",
+        "Lava": "الحمم البركانية",
+        "Sediment": "الرواسب",
+        "Ore": "خام"
+      }
+    },
+    "science:72": {
+      "question": "يتكون معظم نواة الأرض من؟",
+      "answers": {
+        "Water": "ماء",
+        "Iron and nickel": "الحديد والنيكل",
+        "Gold": "ذهبي",
+        "Ice": "الجليد"
+      }
+    },
+    "science:73": {
+      "question": "على أي طبقة من طبقات الأرض نعيش؟",
+      "answers": {
+        "Core": "اللب",
+        "Mantle": "الوشاح",
+        "Crust": "القشرة الأرضية",
+        "Atmosphere": "الغلاف الجوي"
+      }
+    },
+    "science:74": {
+      "question": "ما الذي يسبب المد والجزر في المحيطات بشكل رئيسي؟",
+      "answers": {
+        "Wind only": "الرياح فقط",
+        "The Moon's gravity": "جاذبية القمر",
+        "Fish": "سمك",
+        "Rivers": "الأنهار"
+      }
+    },
+    "science:75": {
+      "question": "مجموعة من النجوم تشكل نمطًا؟",
+      "answers": {
+        "Galaxy": "المجرة",
+        "Constellation": "كوكبة",
+        "Comet": "المذنب",
+        "Nebula": "سديم"
+      }
+    },
+    "science:76": {
+      "question": "\"الشهاب\" هو في الواقع؟",
+      "answers": {
+        "Dying star": "النجم المحتضر",
+        "Meteor": "نيزك",
+        "Planet": "كوكب",
+        "Satellite": "القمر الصناعي"
+      }
+    },
+    "science:77": {
+      "question": "أي كوكب لديه \"البقعة الحمراء العظيمة\" الشهيرة؟",
+      "answers": {
+        "Mars": "المريخ",
+        "Jupiter": "كوكب المشتري",
+        "Saturn": "زحل",
+        "Neptune": "نبتون"
+      }
+    },
+    "science:78": {
+      "question": "ما هي الوحدة الأساسية للحياة؟",
+      "answers": {
+        "Atom": "الذرة",
+        "Cell": "الخلية",
+        "Molecule": "جزيء",
+        "Organ": "الجهاز"
+      }
+    },
+    "science:79": {
+      "question": "ما هو العضو الذي يتحكم في التفكير والحركة؟",
+      "answers": {
+        "Heart": "القلب",
+        "Brain": "الدماغ",
+        "Liver": "الكبد",
+        "Lungs": "الرئتين"
+      }
+    },
+    "science:80": {
+      "question": "ما الرمز الكيميائي للبوتاسيوم؟",
+      "answers": {
+        "P": "ص",
+        "Po": "بو",
+        "K": "ك",
+        "Pt": "نقطة"
+      }
+    },
+    "science:81": {
+      "question": "أي من هذه الغازات يعد من الغازات النبيلة؟",
+      "answers": {
+        "Oxygen": "الأكسجين",
+        "Helium": "هيليوم",
+        "Hydrogen": "الهيدروجين",
+        "Nitrogen": "النيتروجين"
+      }
+    },
+    "science:82": {
+      "question": "يسمى الماء المتساقط من السحاب ؟",
+      "answers": {
+        "Evaporation": "التبخر",
+        "Precipitation": "هطول الأمطار",
+        "Condensation": "التكثيف",
+        "Radiation": "الإشعاع"
+      }
+    },
+    "science:83": {
+      "question": "ما المقياس الذي يقيس حجم الزلازل؟",
+      "answers": {
+        "Celsius": "مئوية",
+        "Richter": "ريختر",
+        "Decibel": "ديسيبل",
+        "Fahrenheit": "فهرنهايت"
+      }
+    },
+    "science:84": {
+      "question": "ما هي الوحدة التي تقيس التيار الكهربائي؟",
+      "answers": {
+        "Volt": "فولت",
+        "Ampere": "أمبير",
+        "Watt": "واط",
+        "Ohm": "أوم"
+      }
+    },
+    "science:85": {
+      "question": "يتم قياس قوة المصباح الكهربائي بـ؟",
+      "answers": {
+        "Watts": "واتس",
+        "Meters": "متر",
+        "Liters": "لتر",
+        "Grams": "جرام"
+      }
+    },
+    "science:86": {
+      "question": "ما هو الكوكب الذي يدور على جانبه؟",
+      "answers": {
+        "Uranus": "أورانوس",
+        "Mars": "المريخ",
+        "Venus": "كوكب الزهرة",
+        "Earth": "الأرض"
+      }
+    },
+    "science:87": {
+      "question": "تسمى اليرقة التي تتحول إلى فراشة؟",
+      "answers": {
+        "Evolution": "التطور",
+        "Metamorphosis": "التحول",
+        "Photosynthesis": "عملية التمثيل الضوئي",
+        "Digestion": "الهضم"
+      }
+    },
+    "science:88": {
+      "question": "ما هو العنصر الأكثر وفرة في الكون؟",
+      "answers": {
+        "Oxygen": "الأكسجين",
+        "Hydrogen": "الهيدروجين",
+        "Iron": "حديد",
+        "Carbon": "الكربون"
+      }
+    },
+    "science:89": {
+      "question": "ما هو الكوكب الأقرب من حيث الحجم إلى الأرض؟",
+      "answers": {
+        "Mars": "المريخ",
+        "Venus": "كوكب الزهرة",
+        "Mercury": "عطارد",
+        "Jupiter": "كوكب المشتري"
+      }
+    },
+    "science:90": {
+      "question": "يتكون معظم جسم الإنسان من؟",
+      "answers": {
+        "Bone": "عظم",
+        "Water": "ماء",
+        "Muscle": "عضلة",
+        "Fat": "سمين"
+      }
+    },
+    "science:91": {
+      "question": "ما هو العضو الذي يقوم بتصفية الفضلات من الدم؟",
+      "answers": {
+        "Heart": "القلب",
+        "Kidneys": "الكلى",
+        "Lungs": "الرئتين",
+        "Brain": "الدماغ"
+      }
+    },
+    "science:92": {
+      "question": "ما هي الحاسة المرتبطة بالعينين؟",
+      "answers": {
+        "Hearing": "جلسة الاستماع",
+        "Sight": "البصر",
+        "Smell": "الرائحة",
+        "Taste": "الذوق"
+      }
+    },
+    "science:93": {
+      "question": "ما هو الرمز الكيميائي للفضة؟",
+      "answers": {
+        "Si": "سي",
+        "Ag": "آج",
+        "Au": "Au",
+        "Sr": "الأب"
+      }
+    },
+    "science:94": {
+      "question": "ما هو الكوكب الأبعد عن الشمس؟",
+      "answers": {
+        "Saturn": "زحل",
+        "Uranus": "أورانوس",
+        "Neptune": "نبتون",
+        "Jupiter": "كوكب المشتري"
+      }
+    },
+    "science:95": {
+      "question": "إلى جانب ضوء الشمس والماء، ما الذي تحتاجه النباتات لصنع الغذاء؟",
+      "answers": {
+        "Oxygen": "الأكسجين",
+        "Carbon dioxide": "ثاني أكسيد الكربون",
+        "Nitrogen gas": "غاز النيتروجين",
+        "Helium": "هيليوم"
+      }
+    },
+    "science:96": {
+      "question": "ماذا نسمي العالم الذي يدرس النجوم والفضاء؟",
+      "answers": {
+        "Biologist": "عالم أحياء",
+        "Astronomer": "عالم الفلك",
+        "Chemist": "كيميائي",
+        "Geologist": "جيولوجي"
+      }
+    },
+    "science:97": {
+      "question": "ما هو الكوكب المعروف باسم \"نجم الصباح\" أو \"نجم المساء\"؟",
+      "answers": {
+        "Mars": "المريخ",
+        "Venus": "كوكب الزهرة",
+        "Saturn": "زحل",
+        "Mercury": "عطارد"
+      }
+    },
+    "science:98": {
+      "question": "كم عدد الألوان الموجودة في قوس قزح؟",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "science:99": {
+      "question": "ما الكوكب الذي يطلق عليه غالبًا \"الكوكب الأزرق\"؟",
+      "answers": {
+        "Mars": "المريخ",
+        "Earth": "الأرض",
+        "Neptune": "نبتون",
+        "Venus": "كوكب الزهرة"
+      }
+    },
+    "geography:0": {
+      "question": "ما هي عاصمة اليابان؟",
+      "answers": {
+        "Seoul": "سيول",
+        "Beijing": "بكين",
+        "Tokyo": "طوكيو",
+        "Bangkok": "بانكوك"
+      }
+    },
+    "geography:1": {
+      "question": "ما هو أكبر محيط على وجه الأرض؟",
+      "answers": {
+        "Atlantic": "الأطلسي",
+        "Indian": "هندي",
+        "Arctic": "القطب الشمالي",
+        "Pacific": "المحيط الهادئ"
+      }
+    },
+    "geography:2": {
+      "question": "ما هو النهر الذي يعتبر الأطول في العالم بشكل عام؟",
+      "answers": {
+        "Amazon": "أمازون",
+        "Nile": "النيل",
+        "Yangtze": "اليانغتسى",
+        "Mississippi": "ميسيسيبي"
+      }
+    },
+    "geography:3": {
+      "question": "جبل إفرست هو جزء من أي سلسلة جبال؟",
+      "answers": {
+        "Andes": "جبال الأنديز",
+        "Alps": "جبال الألب",
+        "Himalayas": "جبال الهيمالايا",
+        "Rockies": "روكي"
+      }
+    },
+    "geography:4": {
+      "question": "ما هي عاصمة فرنسا؟",
+      "answers": {
+        "Berlin": "برلين",
+        "Madrid": "مدريد",
+        "Paris": "باريس",
+        "Rome": "روما"
+      }
+    },
+    "geography:5": {
+      "question": "ما هي أكبر دولة من حيث مساحة الأرض؟",
+      "answers": {
+        "Canada": "كندا",
+        "China": "الصين",
+        "USA": "الولايات المتحدة الأمريكية",
+        "Russia": "روسيا"
+      }
+    },
+    "geography:6": {
+      "question": "تقع الصحراء الكبرى في أي قارة؟",
+      "answers": {
+        "Asia": "آسيا",
+        "Africa": "أفريقيا",
+        "Australia": "أستراليا",
+        "South America": "أمريكا الجنوبية"
+      }
+    },
+    "geography:7": {
+      "question": "ما هي عاصمة أستراليا؟",
+      "answers": {
+        "Sydney": "سيدني",
+        "Melbourne": "ملبورن",
+        "Canberra": "كانبيرا",
+        "Perth": "بيرث"
+      }
+    },
+    "geography:8": {
+      "question": "ما هي أصغر قارة؟",
+      "answers": {
+        "Europe": "أوروبا",
+        "Australia": "أستراليا",
+        "Antarctica": "القارة القطبية الجنوبية",
+        "South America": "أمريكا الجنوبية"
+      }
+    },
+    "geography:9": {
+      "question": "الحاجز المرجاني العظيم يقع قبالة سواحل أي دولة؟",
+      "answers": {
+        "Brazil": "البرازيل",
+        "Australia": "أستراليا",
+        "Mexico": "المكسيك",
+        "India": "الهند"
+      }
+    },
+    "geography:10": {
+      "question": "في أي دولة يقع برج إيفل؟",
+      "answers": {
+        "Italy": "إيطاليا",
+        "Spain": "إسبانيا",
+        "France": "فرنسا",
+        "Belgium": "بلجيكا"
+      }
+    },
+    "geography:11": {
+      "question": "ما هي عاصمة مصر؟",
+      "answers": {
+        "Cairo": "القاهرة",
+        "Alexandria": "الإسكندرية",
+        "Giza": "الجيزة",
+        "Luxor": "الأقصر"
+      }
+    },
+    "geography:12": {
+      "question": "كم عدد القارات الموجودة؟",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "geography:13": {
+      "question": "ما هو النهر الذي يمر عبر لندن؟",
+      "answers": {
+        "Seine": "السين",
+        "Thames": "التايمز",
+        "Danube": "الدانوب",
+        "Rhine": "الراين"
+      }
+    },
+    "geography:14": {
+      "question": "يقع معظم غابات الأمازون المطيرة في أي بلد؟",
+      "answers": {
+        "Peru": "بيرو",
+        "Colombia": "كولومبيا",
+        "Brazil": "البرازيل",
+        "Venezuela": "فنزويلا"
+      }
+    },
+    "geography:15": {
+      "question": "ما هي أكبر الصحراء الحارة في العالم؟",
+      "answers": {
+        "Gobi": "جوبي",
+        "Sahara": "الصحراء",
+        "Kalahari": "كالاهاري",
+        "Arabian": "عربي"
+      }
+    },
+    "geography:16": {
+      "question": "ما هي عاصمة إيطاليا؟",
+      "answers": {
+        "Milan": "ميلانو",
+        "Venice": "البندقية",
+        "Rome": "روما",
+        "Naples": "نابولي"
+      }
+    },
+    "geography:17": {
+      "question": "ما هي القارة التي يوجد بها نهر الأمازون؟",
+      "answers": {
+        "Africa": "أفريقيا",
+        "Asia": "آسيا",
+        "South America": "أمريكا الجنوبية",
+        "Europe": "أوروبا"
+      }
+    },
+    "geography:18": {
+      "question": "ما هي عاصمة ألمانيا؟",
+      "answers": {
+        "Munich": "ميونيخ",
+        "Berlin": "برلين",
+        "Hamburg": "هامبورغ",
+        "Frankfurt": "فرانكفورت"
+      }
+    },
+    "geography:19": {
+      "question": "ما هي عاصمة اسبانيا؟",
+      "answers": {
+        "Barcelona": "برشلونة",
+        "Madrid": "مدريد",
+        "Seville": "إشبيلية",
+        "Valencia": "فالنسيا"
+      }
+    },
+    "geography:20": {
+      "question": "ما هي عاصمة روسيا؟",
+      "answers": {
+        "St Petersburg": "سان بطرسبرج",
+        "Moscow": "موسكو",
+        "Kyiv": "كييف",
+        "Sochi": "سوتشي"
+      }
+    },
+    "geography:21": {
+      "question": "ما هي عاصمة الصين؟",
+      "answers": {
+        "Shanghai": "شنغهاي",
+        "Beijing": "بكين",
+        "Hong Kong": "هونج كونج",
+        "Guangzhou": "قوانغتشو"
+      }
+    },
+    "geography:22": {
+      "question": "ما هي عاصمة كندا؟",
+      "answers": {
+        "Toronto": "تورونتو",
+        "Ottawa": "أوتاوا",
+        "Vancouver": "فانكوفر",
+        "Montreal": "مونتريال"
+      }
+    },
+    "geography:23": {
+      "question": "ما هي عاصمة الولايات المتحدة؟",
+      "answers": {
+        "New York": "نيويورك",
+        "Washington, D.C.": "واشنطن العاصمة",
+        "Los Angeles": "لوس أنجلوس",
+        "Chicago": "شيكاغو"
+      }
+    },
+    "geography:24": {
+      "question": "ما هي عاصمة المملكة المتحدة؟",
+      "answers": {
+        "Manchester": "مانشستر",
+        "London": "لندن",
+        "Liverpool": "ليفربول",
+        "Edinburgh": "ادنبره"
+      }
+    },
+    "geography:25": {
+      "question": "ما هي عاصمة البرازيل؟",
+      "answers": {
+        "Rio de Janeiro": "ريو دي جانيرو",
+        "Brasília": "برازيليا",
+        "São Paulo": "ساو باولو",
+        "Salvador": "سلفادور"
+      }
+    },
+    "geography:26": {
+      "question": "ما هي عاصمة الهند؟",
+      "answers": {
+        "Mumbai": "مومباي",
+        "New Delhi": "نيودلهي",
+        "Kolkata": "كولكاتا",
+        "Chennai": "تشيناي"
+      }
+    },
+    "geography:27": {
+      "question": "ما هي عاصمة كوريا الجنوبية؟",
+      "answers": {
+        "Busan": "بوسان",
+        "Seoul": "سيول",
+        "Incheon": "إنشيون",
+        "Daegu": "دايجو"
+      }
+    },
+    "geography:28": {
+      "question": "ما هي عاصمة اليونان؟",
+      "answers": {
+        "Thessaloniki": "سالونيك",
+        "Athens": "أثينا",
+        "Sparta": "سبارتا",
+        "Patras": "باتراس"
+      }
+    },
+    "geography:29": {
+      "question": "ما هي عاصمة تركيا؟",
+      "answers": {
+        "Istanbul": "اسطنبول",
+        "Ankara": "أنقرة",
+        "Izmir": "إزمير",
+        "Bursa": "بورصة"
+      }
+    },
+    "geography:30": {
+      "question": "ما هي عاصمة البرتغال؟",
+      "answers": {
+        "Porto": "بورتو",
+        "Lisbon": "لشبونة",
+        "Faro": "فارو",
+        "Braga": "براغا"
+      }
+    },
+    "geography:31": {
+      "question": "ما هي عاصمة هولندا؟",
+      "answers": {
+        "Rotterdam": "روتردام",
+        "Amsterdam": "أمستردام",
+        "The Hague": "لاهاي",
+        "Utrecht": "أوتريخت"
+      }
+    },
+    "geography:32": {
+      "question": "ما هي عاصمة المكسيك؟",
+      "answers": {
+        "Cancún": "كانكون",
+        "Mexico City": "مكسيكو سيتي",
+        "Guadalajara": "غوادالاخارا",
+        "Tijuana": "تيجوانا"
+      }
+    },
+    "geography:33": {
+      "question": "ما هي عاصمة الأرجنتين؟",
+      "answers": {
+        "Córdoba": "قرطبة",
+        "Buenos Aires": "بوينس آيرس",
+        "Rosario": "روزاريو",
+        "Mendoza": "ميندوزا"
+      }
+    },
+    "geography:34": {
+      "question": "ما هي عاصمة السويد؟",
+      "answers": {
+        "Oslo": "أوسلو",
+        "Stockholm": "ستوكهولم",
+        "Copenhagen": "كوبنهاجن",
+        "Helsinki": "هلسنكي"
+      }
+    },
+    "geography:35": {
+      "question": "ما هي عاصمة النرويج؟",
+      "answers": {
+        "Oslo": "أوسلو",
+        "Bergen": "بيرغن",
+        "Stockholm": "ستوكهولم",
+        "Helsinki": "هلسنكي"
+      }
+    },
+    "geography:36": {
+      "question": "ما هي أكبر قارة من حيث المساحة؟",
+      "answers": {
+        "Africa": "أفريقيا",
+        "Asia": "آسيا",
+        "Europe": "أوروبا",
+        "North America": "أمريكا الشمالية"
+      }
+    },
+    "geography:37": {
+      "question": "ما هي القارة الأكثر برودة؟",
+      "answers": {
+        "Europe": "أوروبا",
+        "Antarctica": "القارة القطبية الجنوبية",
+        "Asia": "آسيا",
+        "Australia": "أستراليا"
+      }
+    },
+    "geography:38": {
+      "question": "ما هي القارة التي تضم أكبر عدد من البلدان؟",
+      "answers": {
+        "Asia": "آسيا",
+        "Africa": "أفريقيا",
+        "Europe": "أوروبا",
+        "South America": "أمريكا الجنوبية"
+      }
+    },
+    "geography:39": {
+      "question": "ما هو أصغر المحيطات؟",
+      "answers": {
+        "Atlantic": "الأطلسي",
+        "Arctic": "القطب الشمالي",
+        "Indian": "هندي",
+        "Pacific": "المحيط الهادئ"
+      }
+    },
+    "geography:40": {
+      "question": "ما هو ثاني أكبر المحيطات؟",
+      "answers": {
+        "Atlantic": "الأطلسي",
+        "Indian": "هندي",
+        "Arctic": "القطب الشمالي",
+        "Southern": "جنوبي"
+      }
+    },
+    "geography:41": {
+      "question": "ما هي الدولة التي تقع في كل من أوروبا وآسيا؟",
+      "answers": {
+        "Egypt": "مصر",
+        "Turkey": "تركيا",
+        "Greece": "اليونان",
+        "Italy": "إيطاليا"
+      }
+    },
+    "geography:42": {
+      "question": "الأهرامات الكبرى قريبة من أي مدينة؟",
+      "answers": {
+        "Cairo": "القاهرة",
+        "Alexandria": "الإسكندرية",
+        "Luxor": "الأقصر",
+        "Aswan": "أسوان"
+      }
+    },
+    "geography:43": {
+      "question": "ما هو أطول جبل في أفريقيا؟",
+      "answers": {
+        "Kilimanjaro": "كليمنجارو",
+        "Mount Kenya": "جبل كينيا",
+        "Atlas": "أطلس",
+        "Elgon": "إلجون"
+      }
+    },
+    "geography:44": {
+      "question": "تقع جبال الأنديز في أي قارة؟",
+      "answers": {
+        "Asia": "آسيا",
+        "Africa": "أفريقيا",
+        "South America": "أمريكا الجنوبية",
+        "Europe": "أوروبا"
+      }
+    },
+    "geography:45": {
+      "question": "تقع جبال الألب بشكل رئيسي في؟",
+      "answers": {
+        "Asia": "آسيا",
+        "Europe": "أوروبا",
+        "Africa": "أفريقيا",
+        "Australia": "أستراليا"
+      }
+    },
+    "geography:46": {
+      "question": "ما هي الدولة التي تتخذ شكل الحذاء؟",
+      "answers": {
+        "Spain": "إسبانيا",
+        "Italy": "إيطاليا",
+        "Greece": "اليونان",
+        "France": "فرنسا"
+      }
+    },
+    "geography:47": {
+      "question": "أي بحر يقع بين أوروبا وأفريقيا؟",
+      "answers": {
+        "Baltic Sea": "بحر البلطيق",
+        "Mediterranean Sea": "البحر الأبيض المتوسط",
+        "Red Sea": "البحر الأحمر",
+        "Black Sea": "البحر الأسود"
+      }
+    },
+    "geography:48": {
+      "question": "ما هي الدولة التي لديها أكبر عدد من السكان (اعتبارًا من عام 2024)؟",
+      "answers": {
+        "China": "الصين",
+        "India": "الهند",
+        "USA": "الولايات المتحدة الأمريكية",
+        "Indonesia": "إندونيسيا"
+      }
+    },
+    "geography:49": {
+      "question": "يقع جبل فوجي في أي دولة؟",
+      "answers": {
+        "China": "الصين",
+        "Japan": "اليابان",
+        "Korea": "كوريا",
+        "Nepal": "نيبال"
+      }
+    },
+    "geography:50": {
+      "question": "يقع تمثال الحرية في أي مدينة؟",
+      "answers": {
+        "Boston": "بوسطن",
+        "New York": "نيويورك",
+        "Washington": "واشنطن",
+        "Chicago": "شيكاغو"
+      }
+    },
+    "geography:51": {
+      "question": "تعتبر ساعة بيج بن معلما بارزا في أي مدينة؟",
+      "answers": {
+        "Paris": "باريس",
+        "London": "لندن",
+        "Berlin": "برلين",
+        "Dublin": "دبلن"
+      }
+    },
+    "geography:52": {
+      "question": "يقع البرج المائل في أي مدينة إيطالية؟",
+      "answers": {
+        "Rome": "روما",
+        "Pisa": "بيزا",
+        "Milan": "ميلانو",
+        "Venice": "البندقية"
+      }
+    },
+    "geography:53": {
+      "question": "ما هي الدولة التي يعيش فيها الكنغر؟",
+      "answers": {
+        "South Africa": "جنوب أفريقيا",
+        "Australia": "أستراليا",
+        "Brazil": "البرازيل",
+        "India": "الهند"
+      }
+    },
+    "geography:54": {
+      "question": "تقع أهرامات تشيتشن إيتزا في أي دولة؟",
+      "answers": {
+        "Peru": "بيرو",
+        "Mexico": "المكسيك",
+        "Egypt": "مصر",
+        "Guatemala": "غواتيمالا"
+      }
+    },
+    "geography:55": {
+      "question": "يصب نهر النيل في أي بحر؟",
+      "answers": {
+        "Red Sea": "البحر الأحمر",
+        "Mediterranean Sea": "البحر الأبيض المتوسط",
+        "Black Sea": "البحر الأسود",
+        "Caspian Sea": "بحر قزوين"
+      }
+    },
+    "geography:56": {
+      "question": "ما هي الولاية الأمريكية المشهورة بهوليوود؟",
+      "answers": {
+        "Texas": "تكساس",
+        "California": "كاليفورنيا",
+        "Florida": "فلوريدا",
+        "New York": "نيويورك"
+      }
+    },
+    "geography:57": {
+      "question": "ما هو المحيط الذي يقع بين الأمريكتين وأوروبا/أفريقيا؟",
+      "answers": {
+        "Pacific": "المحيط الهادئ",
+        "Atlantic": "الأطلسي",
+        "Indian": "هندي",
+        "Arctic": "القطب الشمالي"
+      }
+    },
+    "geography:58": {
+      "question": "ما هو المحيط الذي يقع بين أفريقيا وآسيا وأستراليا؟",
+      "answers": {
+        "Atlantic": "الأطلسي",
+        "Indian": "هندي",
+        "Arctic": "القطب الشمالي",
+        "Pacific": "المحيط الهادئ"
+      }
+    },
+    "geography:59": {
+      "question": "خط الاستواء يقسم الأرض إلى نصفين؟",
+      "answers": {
+        "East and West": "الشرق والغرب",
+        "North and South": "الشمال والجنوب",
+        "Up and Down": "لأعلى ولأسفل",
+        "Left and Right": "اليسار واليمين"
+      }
+    },
+    "geography:60": {
+      "question": "الخط الوهمي عند خط الطول 0 درجة هو؟",
+      "answers": {
+        "Equator": "خط الاستواء",
+        "Prime Meridian": "ميريديان الرئيسي",
+        "Tropic of Cancer": "مدار السرطان",
+        "Arctic Circle": "الدائرة القطبية الشمالية"
+      }
+    },
+    "geography:61": {
+      "question": "ما هي أصغر دولة في العالم؟",
+      "answers": {
+        "Monaco": "موناكو",
+        "Vatican City": "مدينة الفاتيكان",
+        "Malta": "مالطا",
+        "San Marino": "سان مارينو"
+      }
+    },
+    "geography:62": {
+      "question": "ما هي أكبر صحراء في العالم؟",
+      "answers": {
+        "Sahara": "الصحراء",
+        "Antarctic": "القطب الجنوبي",
+        "Gobi": "جوبي",
+        "Kalahari": "كالاهاري"
+      }
+    },
+    "geography:63": {
+      "question": "يقع جراند كانيون في أي دولة؟",
+      "answers": {
+        "Canada": "كندا",
+        "USA": "الولايات المتحدة الأمريكية",
+        "Mexico": "المكسيك",
+        "Brazil": "البرازيل"
+      }
+    },
+    "geography:64": {
+      "question": "ما هي الدولة التي تشتهر بزهرة التوليب وطواحين الهواء؟",
+      "answers": {
+        "Belgium": "بلجيكا",
+        "Netherlands": "هولندا",
+        "Denmark": "الدنمارك",
+        "Germany": "ألمانيا"
+      }
+    },
+    "geography:65": {
+      "question": "ما هي سلسلة الجبال التي تفصل بين أوروبا وآسيا؟",
+      "answers": {
+        "Alps": "جبال الألب",
+        "Ural": "الأورال",
+        "Andes": "جبال الأنديز",
+        "Himalayas": "جبال الهيمالايا"
+      }
+    },
+    "geography:66": {
+      "question": "البحر الميت مشهور جدا؟",
+      "answers": {
+        "Deep": "عميق",
+        "Salty": "مالح",
+        "Cold": "بارد",
+        "Large": "كبير"
+      }
+    },
+    "geography:67": {
+      "question": "ما هي الدولة التي تضم مدينتي سيدني وملبورن؟",
+      "answers": {
+        "New Zealand": "نيوزيلندا",
+        "Australia": "أستراليا",
+        "UK": "المملكة المتحدة",
+        "Canada": "كندا"
+      }
+    },
+    "geography:68": {
+      "question": "ما هي الدولة الإفريقية التي لم يتم استعمارها على الإطلاق؟",
+      "answers": {
+        "Kenya": "كينيا",
+        "Ethiopia": "إثيوبيا",
+        "Nigeria": "نيجيريا",
+        "Ghana": "غانا"
+      }
+    },
+    "geography:69": {
+      "question": "منطقة الأمازون هي أكبر منطقة استوائية في العالم؟",
+      "answers": {
+        "Desert": "الصحراء",
+        "Rainforest": "الغابات المطيرة",
+        "Savanna": "السافانا",
+        "Tundra": "التندرا"
+      }
+    },
+    "geography:70": {
+      "question": "ما هي الدولة التي تمتد في معظم المناطق الزمنية؟",
+      "answers": {
+        "USA": "الولايات المتحدة الأمريكية",
+        "Russia": "روسيا",
+        "China": "الصين",
+        "Canada": "كندا"
+      }
+    },
+    "geography:71": {
+      "question": "ما هي المدينة الأمريكية الملقبة بالتفاحة الكبيرة؟",
+      "answers": {
+        "Los Angeles": "لوس أنجلوس",
+        "New York": "نيويورك",
+        "Chicago": "شيكاغو",
+        "Miami": "ميامي"
+      }
+    },
+    "geography:72": {
+      "question": "يقع جبل كليمنجارو في أي دولة؟",
+      "answers": {
+        "Kenya": "كينيا",
+        "Tanzania": "تنزانيا",
+        "Uganda": "أوغندا",
+        "Ethiopia": "إثيوبيا"
+      }
+    },
+    "geography:73": {
+      "question": "تقع مدينة ماتشو بيتشو في أي بلد؟",
+      "answers": {
+        "Chile": "تشيلي",
+        "Peru": "بيرو",
+        "Bolivia": "بوليفيا",
+        "Ecuador": "الإكوادور"
+      }
+    },
+    "geography:74": {
+      "question": "ما هي الدولة التي تحيط بها جنوب أفريقيا بالكامل؟",
+      "answers": {
+        "Lesotho": "ليسوتو",
+        "Eswatini": "إيسواتيني",
+        "Botswana": "بوتسوانا",
+        "Namibia": "ناميبيا"
+      }
+    },
+    "geography:75": {
+      "question": "أي من هذه الدول تعتبر دولة غير ساحلية؟",
+      "answers": {
+        "Switzerland": "سويسرا",
+        "Spain": "إسبانيا",
+        "Italy": "إيطاليا",
+        "Portugal": "البرتغال"
+      }
+    },
+    "geography:76": {
+      "question": "ما هي الدولة التي توجد ورقة قيقب على علمها؟",
+      "answers": {
+        "USA": "الولايات المتحدة الأمريكية",
+        "Canada": "كندا",
+        "UK": "المملكة المتحدة",
+        "Australia": "أستراليا"
+      }
+    },
+    "geography:77": {
+      "question": "البندقية المدينة المبنية على الماء تقع في أي بلد؟",
+      "answers": {
+        "Spain": "إسبانيا",
+        "Italy": "إيطاليا",
+        "Greece": "اليونان",
+        "Croatia": "كرواتيا"
+      }
+    },
+    "geography:78": {
+      "question": "ما هو أعمق المحيطات؟",
+      "answers": {
+        "Atlantic": "الأطلسي",
+        "Pacific": "المحيط الهادئ",
+        "Indian": "هندي",
+        "Arctic": "القطب الشمالي"
+      }
+    },
+    "geography:79": {
+      "question": "يقع نهر المسيسيبي بشكل رئيسي في أي دولة؟",
+      "answers": {
+        "Canada": "كندا",
+        "USA": "الولايات المتحدة الأمريكية",
+        "Mexico": "المكسيك",
+        "Brazil": "البرازيل"
+      }
+    },
+    "geography:80": {
+      "question": "قناة بنما تربط بين المحيطين؟",
+      "answers": {
+        "Atlantic and Pacific": "المحيط الأطلسي والمحيط الهادئ",
+        "Indian and Pacific": "الهند والمحيط الهادئ",
+        "Arctic and Atlantic": "القطب الشمالي والمحيط الأطلسي",
+        "Indian and Atlantic": "الهندي والأطلسي"
+      }
+    },
+    "geography:81": {
+      "question": "تقع قناة السويس في أي دولة؟",
+      "answers": {
+        "Turkey": "تركيا",
+        "Egypt": "مصر",
+        "Panama": "بنما",
+        "Greece": "اليونان"
+      }
+    },
+    "geography:82": {
+      "question": "ما هي الدولة المعروفة باسم \"أرض الشمس المشرقة\"؟",
+      "answers": {
+        "China": "الصين",
+        "Japan": "اليابان",
+        "Korea": "كوريا",
+        "Thailand": "تايلاند"
+      }
+    },
+    "geography:83": {
+      "question": "ما هي القارة التي لا يوجد بها سكان دائمون؟",
+      "answers": {
+        "Australia": "أستراليا",
+        "Antarctica": "القارة القطبية الجنوبية",
+        "Africa": "أفريقيا",
+        "Asia": "آسيا"
+      }
+    },
+    "geography:84": {
+      "question": "تقع جبال روكي في؟",
+      "answers": {
+        "Europe": "أوروبا",
+        "North America": "أمريكا الشمالية",
+        "Asia": "آسيا",
+        "Africa": "أفريقيا"
+      }
+    },
+    "geography:85": {
+      "question": "مدينة مراكش في أي دولة؟",
+      "answers": {
+        "Egypt": "مصر",
+        "Morocco": "المغرب",
+        "Algeria": "الجزائر",
+        "Tunisia": "تونس"
+      }
+    },
+    "geography:86": {
+      "question": "ما هي الدولة الإسكندنافية التي تشتهر بمضايقها؟",
+      "answers": {
+        "Norway": "النرويج",
+        "Spain": "إسبانيا",
+        "Italy": "إيطاليا",
+        "Greece": "اليونان"
+      }
+    },
+    "geography:87": {
+      "question": "ما هي عاصمة اليابان؟",
+      "answers": {
+        "Osaka": "أوساكا",
+        "Tokyo": "طوكيو",
+        "Kyoto": "كيوتو",
+        "Nagoya": "ناغويا"
+      }
+    },
+    "geography:88": {
+      "question": "على طول ما تقع عاصمة مصر؟",
+      "answers": {
+        "Tigris River": "نهر دجلة",
+        "Nile River": "نهر النيل",
+        "Congo River": "نهر الكونغو",
+        "Niger River": "نهر النيجر"
+      }
+    },
+    "geography:89": {
+      "question": "ما هي الدولة التي تشتهر بتاج محل؟",
+      "answers": {
+        "Pakistan": "باكستان",
+        "India": "الهند",
+        "Bangladesh": "بنجلاديش",
+        "Nepal": "نيبال"
+      }
+    },
+    "geography:90": {
+      "question": "ما هي الولاية الأمريكية الملقبة بـ \"ولاية الشمس المشرقة\"؟",
+      "answers": {
+        "California": "كاليفورنيا",
+        "Florida": "فلوريدا",
+        "Texas": "تكساس",
+        "Nevada": "نيفادا"
+      }
+    },
+    "geography:91": {
+      "question": "ما هي الدولة التي تضم أكبر حصة من الصحراء الكبرى؟",
+      "answers": {
+        "Egypt": "مصر",
+        "Algeria": "الجزائر",
+        "Morocco": "المغرب",
+        "Tunisia": "تونس"
+      }
+    },
+    "geography:92": {
+      "question": "ما هي أطول سلسلة جبال فوق الماء؟",
+      "answers": {
+        "Himalayas": "جبال الهيمالايا",
+        "Andes": "جبال الأنديز",
+        "Rockies": "روكي",
+        "Alps": "جبال الألب"
+      }
+    },
+    "geography:93": {
+      "question": "أيسلندا تقع في أي منطقة من المحيطات؟",
+      "answers": {
+        "Pacific": "المحيط الهادئ",
+        "North Atlantic": "شمال الأطلسي",
+        "Indian": "هندي",
+        "Southern": "جنوبي"
+      }
+    },
+    "geography:94": {
+      "question": "ما هي القارة التي تقع بالكامل في نصف الكرة الجنوبي بالكامل؟",
+      "answers": {
+        "Europe": "أوروبا",
+        "Antarctica": "القارة القطبية الجنوبية",
+        "Asia": "آسيا",
+        "North America": "أمريكا الشمالية"
+      }
+    },
+    "geography:95": {
+      "question": "في أي مدينة يتدفق نهر التايمز؟",
+      "answers": {
+        "Paris": "باريس",
+        "London": "لندن",
+        "Berlin": "برلين",
+        "Rome": "روما"
+      }
+    },
+    "geography:96": {
+      "question": "ما هي الدولة التي لديها علم بدائرة حمراء على اللون الأبيض (الشمس المشرقة)؟",
+      "answers": {
+        "China": "الصين",
+        "Japan": "اليابان",
+        "South Korea": "كوريا الجنوبية",
+        "Vietnam": "فيتنام"
+      }
+    },
+    "geography:97": {
+      "question": "أي محيط يصب في نهر الأمازون؟",
+      "answers": {
+        "Pacific": "المحيط الهادئ",
+        "Atlantic": "الأطلسي",
+        "Indian": "هندي",
+        "Arctic": "القطب الشمالي"
+      }
+    },
+    "geography:98": {
+      "question": "ما هي القارة التي تقع بالكامل في نصف الكرة الشمالي؟",
+      "answers": {
+        "Europe": "أوروبا",
+        "Africa": "أفريقيا",
+        "South America": "أمريكا الجنوبية",
+        "Australia": "أستراليا"
+      }
+    },
+    "geography:99": {
+      "question": "يقع شلالات آنجل، أطول شلال، في؟",
+      "answers": {
+        "Brazil": "البرازيل",
+        "Venezuela": "فنزويلا",
+        "Peru": "بيرو",
+        "Colombia": "كولومبيا"
+      }
+    }
+  }
+}

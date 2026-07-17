@@ -1,6 +1,7 @@
 "use client";
 
 import type { CSSProperties } from "react";
+import { useI18n } from "@/app/i18n/context";
 
 export type LeaderboardTableRow = {
   addr: string;
@@ -44,37 +45,39 @@ export function LeaderboardTable({
   loading,
   onBack,
 }: LeaderboardTableProps) {
+  const { formatNumber, t } = useI18n();
+
   return (
     <section className="leaderboard-shell" aria-labelledby="leaderboard-title">
       <div className="leaderboard-heading">
         <div>
-          <p className="leaderboard-kicker">Base Mainnet · All time</p>
-          <h1 id="leaderboard-title">Leaderboard</h1>
-          <p>Top players ranked by their total onchain score.</p>
+          <p className="leaderboard-kicker">{t("leaderboard.kicker")}</p>
+          <h1 id="leaderboard-title">{t("leaderboard.title")}</h1>
+          <p>{t("leaderboard.description")}</p>
         </div>
         <button type="button" className="leaderboard-back" onClick={onBack}>
-          <span aria-hidden="true">←</span> Back
+          <span aria-hidden="true">←</span> {t("common.back")}
         </button>
       </div>
 
       <div className="leaderboard-table-frame">
         {loading ? (
           <div className="leaderboard-state">
-            <span className="leaderboard-loading-dot" /> Reading scores from Base…
+            <span className="leaderboard-loading-dot" /> {t("leaderboard.loading")}
           </div>
         ) : rows.length === 0 ? (
-          <div className="leaderboard-state">No scores yet. Be the first player on the board.</div>
+          <div className="leaderboard-state">{t("leaderboard.empty")}</div>
         ) : (
           <div className="leaderboard-table-scroll">
             <table className="leaderboard-table">
               <thead>
                 <tr>
                   <th className="leaderboard-rank-column" scope="col">#</th>
-                  <th scope="col">Player</th>
-                  <th className="leaderboard-number-column leaderboard-total-score" scope="col">Total score</th>
-                  <th className="leaderboard-number-column" scope="col">Best score</th>
-                  <th className="leaderboard-number-column" scope="col">Streak</th>
-                  <th className="leaderboard-badges-column" scope="col">Badges</th>
+                  <th scope="col">{t("leaderboard.player")}</th>
+                  <th className="leaderboard-number-column leaderboard-total-score" scope="col">{t("leaderboard.totalScore")}</th>
+                  <th className="leaderboard-number-column" scope="col">{t("leaderboard.bestScore")}</th>
+                  <th className="leaderboard-number-column" scope="col">{t("leaderboard.streak")}</th>
+                  <th className="leaderboard-badges-column" scope="col">{t("leaderboard.badges")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -98,25 +101,25 @@ export function LeaderboardTable({
                           <span className="leaderboard-player-name" title={row.name || row.addr}>
                             {playerLabel}
                           </span>
-                          {isCurrentPlayer && <span className="leaderboard-you">You</span>}
+                          {isCurrentPlayer && <span className="leaderboard-you">{t("leaderboard.you")}</span>}
                         </div>
                       </td>
                       <td className="leaderboard-number-column leaderboard-total-score">
-                        <strong>{row.totalScore.toLocaleString("en-US")}</strong>
+                        <strong>{formatNumber(row.totalScore)}</strong>
                       </td>
                       <td className="leaderboard-number-column">
-                        <strong>{row.bestScore.toLocaleString("en-US")}</strong>
+                        <strong>{formatNumber(row.bestScore)}</strong>
                       </td>
                       <td className="leaderboard-number-column">
                         <span className="leaderboard-streak"><span aria-hidden="true">🔥</span>{row.streak}</span>
                       </td>
                       <td className="leaderboard-badges-column">
-                        <div className="leaderboard-badges" aria-label={ownedBadges.length ? ownedBadges.map((badge) => badge.name).join(", ") : "No badges"}>
+                        <div className="leaderboard-badges" aria-label={ownedBadges.length ? ownedBadges.map((badge) => badge.name).join(", ") : t("leaderboard.noBadges")}>
                           {ownedBadges.length > 0 ? ownedBadges.map((badge) => (
                             <span
                               key={badge.id}
                               className="leaderboard-badge"
-                              title={`${badge.name} badge`}
+                              title={t("leaderboard.badgeTitle", { name: badge.name })}
                               style={{ "--leaderboard-badge-color": badge.color } as CSSProperties}
                             >
                               <span aria-hidden="true">{badge.emoji}</span>
@@ -134,8 +137,8 @@ export function LeaderboardTable({
       </div>
 
       <div className="leaderboard-footer-note">
-        <span>{rows.length} players</span>
-        <span>Scores and badges verified onchain</span>
+        <span>{t("leaderboard.players", { count: formatNumber(rows.length) })}</span>
+        <span>{t("leaderboard.verified")}</span>
       </div>
     </section>
   );

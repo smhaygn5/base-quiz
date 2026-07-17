@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { useI18n } from "@/app/i18n/context";
 
 type ResultPanelProps = {
   score: number;
@@ -16,25 +17,6 @@ type ResultPanelProps = {
   onLeaderboard: () => void;
 };
 
-const saveCopy = {
-  idle: {
-    title: "Save your score",
-    detail: "Record this result on Base and join the global leaderboard.",
-  },
-  pending: {
-    title: "Confirm your score",
-    detail: "Approve the transaction in your wallet to finish saving.",
-  },
-  done: {
-    title: "Score saved onchain",
-    detail: "Your result is verified on Base and ready for the leaderboard.",
-  },
-  error: {
-    title: "Save needs attention",
-    detail: "Review the message below, then try the transaction again.",
-  },
-} as const;
-
 export function ResultPanel({
   score,
   streak,
@@ -48,11 +30,15 @@ export function ResultPanel({
   onBadges,
   onLeaderboard,
 }: ResultPanelProps) {
+  const { formatNumber, t } = useI18n();
   const saveStep = isConnected
-    ? saveCopy[saveStatus]
+    ? {
+        title: t(`result.save.${saveStatus}.title`),
+        detail: t(`result.save.${saveStatus}.detail`),
+      }
     : {
-        title: "Connect to save",
-        detail: "Choose a wallet to record your score on Base.",
+        title: t("result.save.disconnected.title"),
+        detail: t("result.save.disconnected.detail"),
       };
 
   return (
@@ -60,15 +46,15 @@ export function ResultPanel({
       <div className="result-panel-border" aria-hidden="true" />
       <div className="result-panel-content">
         <header className="result-hero">
-          <p className="result-kicker">Round complete</p>
-          <h1 id="result-title">Your final score</h1>
+          <p className="result-kicker">{t("result.roundComplete")}</p>
+          <h1 id="result-title">{t("result.finalScore")}</h1>
           <div className="result-score-row">
-            <strong>{score.toLocaleString("en-US")}</strong>
-            <span>points</span>
+            <strong>{formatNumber(score)}</strong>
+            <span>{t("result.points")}</span>
           </div>
-          <div className="result-summary-pills" aria-label="Round summary">
-            <span><b>{categoryName}</b> category</span>
-            <span><b>{streak}</b> day streak</span>
+          <div className="result-summary-pills" aria-label={t("result.summaryAria")}>
+            <span>{t("result.categoryPill", { category: categoryName })}</span>
+            <span>{t("result.streakPill", { count: streak })}</span>
           </div>
         </header>
 
@@ -76,16 +62,16 @@ export function ResultPanel({
           <article className="result-step is-complete">
             <div className="result-step-marker" aria-hidden="true">✓</div>
             <div className="result-step-body">
-              <h2>Round completed</h2>
-              <p>Five questions answered. Your final result is ready.</p>
+              <h2>{t("result.roundCompletedTitle")}</h2>
+              <p>{t("result.roundCompletedDetail")}</p>
             </div>
           </article>
 
           <article className="result-step is-streak">
             <div className="result-step-marker" aria-hidden="true">{streak}</div>
             <div className="result-step-body">
-              <h2>Streak updated</h2>
-              <p>You are now on a {streak}-day learning streak.</p>
+              <h2>{t("result.streakUpdatedTitle")}</h2>
+              <p>{t("result.streakUpdatedDetail", { count: streak })}</p>
             </div>
           </article>
 
@@ -101,29 +87,29 @@ export function ResultPanel({
           <article className="result-step is-share is-last">
             <div className="result-step-marker" aria-hidden="true">↗</div>
             <div className="result-step-body">
-              <h2>Share your result</h2>
-              <p>Challenge your friends on Farcaster or X.</p>
+              <h2>{t("result.shareTitle")}</h2>
+              <p>{t("result.shareDetail")}</p>
               <div className="result-step-actions">{shareContent}</div>
             </div>
           </article>
         </div>
 
         <div className="result-replay">
-          <p className="result-replay-kicker">Keep the momentum going</p>
-          <h2>Ready for another round?</h2>
-          <p>Play {categoryName} again or choose a different challenge.</p>
+          <p className="result-replay-kicker">{t("result.replayKicker")}</p>
+          <h2>{t("result.replayTitle")}</h2>
+          <p>{t("result.replayDetail", { category: categoryName })}</p>
           <div className="result-replay-actions">
             <button type="button" className="result-button is-primary" onClick={onPlayAgain}>
-              Play again <span aria-hidden="true">›</span>
+              {t("result.playAgain")} <span aria-hidden="true">›</span>
             </button>
             <button type="button" className="result-button is-secondary" onClick={onChooseCategory}>
-              Choose category <span aria-hidden="true">›</span>
+              {t("result.chooseCategory")} <span aria-hidden="true">›</span>
             </button>
           </div>
           <div className="result-secondary-links">
-            <button type="button" onClick={onBadges}>Streak badges</button>
+            <button type="button" onClick={onBadges}>{t("home.streakBadges")}</button>
             <span aria-hidden="true">·</span>
-            <button type="button" onClick={onLeaderboard}>Leaderboard</button>
+            <button type="button" onClick={onLeaderboard}>{t("home.leaderboard")}</button>
           </div>
         </div>
       </div>

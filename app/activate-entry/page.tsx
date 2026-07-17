@@ -12,6 +12,8 @@ import {
   ROUND_ENTRY_CREATION_CODE,
   ROUND_ENTRY_SALT,
 } from "../entry-contract";
+import { useI18n } from "../i18n/context";
+import { LanguageMenu } from "@/components/ui/language-menu";
 
 const BUILDER_CODE_SUFFIX = "0x62635f74616a686b6174730b0080218021802180218021802180218021" as const;
 
@@ -21,6 +23,7 @@ const publicClient = createPublicClient({
 });
 
 export default function ActivateEntryContract() {
+  const { t } = useI18n();
   const { address, isConnected, chainId } = useAccount();
   const { connect, connectors } = useConnect();
   const { switchChainAsync } = useSwitchChain();
@@ -46,11 +49,11 @@ export default function ActivateEntryContract() {
       setActive(false);
       return false;
     } catch {
-      setError("Could not check the Base contract. Please try again.");
+      setError(t("activation.errorCheck"));
       setActive(false);
       return false;
     }
-  }, []);
+  }, [t]);
 
   useEffect(() => {
     void checkContract();
@@ -62,7 +65,7 @@ export default function ActivateEntryContract() {
     );
     const connector = baseConnector || connectors[0];
     if (!connector) {
-      setError("No compatible wallet was found.");
+      setError(t("activation.errorWallet"));
       return;
     }
     connect({ connector });
@@ -87,39 +90,43 @@ export default function ActivateEntryContract() {
       const deployed = await checkContract(6);
       if (!deployed) throw new Error("The contract was not found after deployment.");
     } catch (caught: unknown) {
-      const message = caught instanceof Error ? caught.message : "Activation failed";
+      const message = caught instanceof Error ? caught.message : "";
       const rejected = /rejected|denied|declined|cancelled|canceled/i.test(message);
-      setError(rejected ? "Transaction cancelled. No changes were made." : message.slice(0, 180));
+      setError(rejected ? t("activation.errorCancelled") : t("activation.errorFailed"));
     } finally {
       setPending(false);
     }
   }
 
   return (
-    <main className="entry-activation-page">
+    <main className="base-quiz-app entry-activation-page">
+      <div className="entry-activation-language">
+        <LanguageMenu />
+      </div>
       <section className="entry-activation-card" aria-labelledby="activation-title">
         <Image src="/favicon.svg" alt="Base Quiz" width={72} height={72} priority />
-        <p className="entry-activation-kicker">Base Quiz setup</p>
-        <h1 id="activation-title">Activate the round contract</h1>
+        <p className="entry-activation-kicker">{t("activation.kicker")}</p>
+        <h1 id="activation-title">{t("activation.title")}</h1>
         <p className="entry-activation-copy">
-          This one-time Base transaction deploys the small contract used by Start Round.
-          It does not change scores, streaks, badges, or transfer ETH.
+          {t("activation.copy")}
         </p>
 
         {active === null ? (
-          <p className="entry-activation-status">Checking contract…</p>
+          <p className="entry-activation-status">{t("activation.checking")}</p>
         ) : active ? (
           <div className="entry-activation-success" role="status">
             <span aria-hidden="true">✓</span>
-            Round contract is active
+            {t("activation.active")}
           </div>
         ) : !isConnected ? (
           <button type="button" className="entry-activation-primary" onClick={connectWallet}>
-            Connect Base Wallet
+            {t("common.connectBaseWallet")}
           </button>
         ) : (
           <>
-            <p className="entry-activation-wallet">Connected: {address?.slice(0, 6)}…{address?.slice(-4)}</p>
+            <p className="entry-activation-wallet">
+              {t("activation.connected", { address: `${address?.slice(0, 6)}…${address?.slice(-4)}` })}
+            </p>
             <button
               type="button"
               className="entry-activation-primary"
@@ -127,7 +134,7 @@ export default function ActivateEntryContract() {
               disabled={pending}
               aria-busy={pending}
             >
-              {pending ? "Confirming on Base…" : "Activate Start Contract"}
+              {pending ? t("activation.confirming") : t("activation.activate")}
             </button>
           </>
         )}
@@ -139,11 +146,11 @@ export default function ActivateEntryContract() {
             target="_blank"
             rel="noreferrer"
           >
-            View pending transaction
+            {t("activation.pendingTransaction")}
           </a>
         )}
         {error && <p className="entry-activation-error" role="alert">{error}</p>}
-        <a className="entry-activation-back" href="/">← Back to Base Quiz</a>
+        <a className="entry-activation-back" href="/">← {t("activation.back")}</a>
       </section>
     </main>
   );

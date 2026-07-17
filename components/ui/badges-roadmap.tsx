@@ -1,6 +1,7 @@
 "use client";
 
 import type { CSSProperties, ReactNode } from "react";
+import { useI18n } from "@/app/i18n/context";
 
 export type BadgeMilestone = {
   id: number;
@@ -23,13 +24,6 @@ type BadgesRoadmapProps = {
   onBack: () => void;
 };
 
-const BADGE_COPY: Record<number, string> = {
-  1: "Complete your first 3-day run",
-  2: "Keep the streak alive for a week",
-  3: "Build a consistent 30-day streak",
-  4: "Reach the ultimate 100-day milestone",
-};
-
 export function BadgesRoadmap({
   badges,
   connected,
@@ -42,6 +36,7 @@ export function BadgesRoadmap({
   onClaim,
   onBack,
 }: BadgesRoadmapProps) {
+  const { t } = useI18n();
   const reachedCount = badges.filter((badge) => streak >= badge.days).length;
   const progress = reachedCount <= 1 ? 0 : ((reachedCount - 1) / (badges.length - 1)) * 100;
 
@@ -49,29 +44,29 @@ export function BadgesRoadmap({
     <section className="badges-roadmap-shell" aria-labelledby="badges-roadmap-title">
       <div className="badges-roadmap-page-heading">
         <div>
-          <p>Streak NFTs · Base Mainnet</p>
-          <h1 id="badges-roadmap-title">Badges</h1>
+          <p>{t("badges.kicker")}</p>
+          <h1 id="badges-roadmap-title">{t("badges.title")}</h1>
         </div>
-        <button type="button" onClick={onBack}><span aria-hidden="true">←</span> Back</button>
+        <button type="button" onClick={onBack}><span aria-hidden="true">←</span> {t("common.back")}</button>
       </div>
 
       <div className="badges-roadmap-card">
         <div className="badges-roadmap-card-header">
           <div>
-            <h2>Streak Badge Roadmap</h2>
-            <p>Keep playing, grow your streak, and claim each onchain milestone.</p>
+            <h2>{t("badges.roadmapTitle")}</h2>
+            <p>{t("badges.roadmapDescription")}</p>
           </div>
           <div className={`badges-roadmap-streak${connected ? " is-connected" : ""}`}>
             <span aria-hidden="true">🔥</span>
-            <span>{connected ? `${streak} day streak` : "Wallet required"}</span>
+            <span>{connected ? t("badges.streak", { count: streak }) : t("badges.walletRequired")}</span>
           </div>
         </div>
 
         {!connected && (
           <div className="badges-roadmap-connect">
             <div>
-              <strong>Connect to view and claim your badges</strong>
-              <p>Your streak and NFT ownership are read directly from Base.</p>
+              <strong>{t("badges.connectTitle")}</strong>
+              <p>{t("badges.connectDetail")}</p>
             </div>
             {connectSlot}
           </div>
@@ -98,23 +93,36 @@ export function BadgesRoadmap({
                   style={{ "--badge-roadmap-color": badge.color } as CSSProperties}
                 >
                   <span className="badges-roadmap-dot" aria-hidden="true"><i /></span>
-                  <span className="badges-roadmap-days">{badge.days} days</span>
+                  <span className="badges-roadmap-days">{t("badges.days", { count: badge.days })}</span>
                   <div className="badges-roadmap-icon" aria-hidden="true">
                     <span>{badge.emoji}</span>
                   </div>
                   <h3>{badge.name}</h3>
-                  <p>{BADGE_COPY[badge.id] || `Unlock at a ${badge.days}-day streak`}</p>
+                  <p>{t(
+                    badge.id === 1
+                      ? "badges.bronze.description"
+                      : badge.id === 2
+                        ? "badges.silver.description"
+                        : badge.id === 3
+                          ? "badges.gold.description"
+                          : badge.id === 4
+                            ? "badges.diamond.description"
+                            : "badges.unlock",
+                    { count: badge.days },
+                  )}</p>
 
                   <div className="badges-roadmap-status">
                     {hasBadge ? (
-                      <span className="badges-roadmap-owned">✓ Owned</span>
+                      <span className="badges-roadmap-owned">✓ {t("badges.owned")}</span>
                     ) : canClaim ? (
                       <button type="button" onClick={() => onClaim(badge.id)} disabled={isClaiming}>
-                        {isClaiming ? "Claiming…" : "Claim badge"}
+                        {isClaiming ? t("badges.claiming") : t("badges.claim")}
                       </button>
                     ) : (
                       <span className="badges-roadmap-locked">
-                        {connected ? `${Math.max(0, badge.days - streak)} days left` : "Locked"}
+                        {connected
+                          ? t("badges.daysLeft", { count: Math.max(0, badge.days - streak) })
+                          : t("badges.locked")}
                       </span>
                     )}
                   </div>
@@ -124,7 +132,7 @@ export function BadgesRoadmap({
 
             {loading && (
               <div className="badges-roadmap-loading" role="status">
-                <span /> Reading badges from Base…
+                <span /> {t("badges.loading")}
               </div>
             )}
           </div>

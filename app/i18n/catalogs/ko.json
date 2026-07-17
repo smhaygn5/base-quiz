@@ -1,0 +1,5586 @@
+{
+  "messages": {
+    "meta.title": "Base Quiz",
+    "common.back": "뒤로",
+    "common.cancel": "취소",
+    "common.next": "다음",
+    "common.skip": "건너뛰기",
+    "common.tryAgain": "다시 시도하세요",
+    "common.connect": "연결하다",
+    "common.disconnect": "연결 끊기",
+    "common.connectWallet": "지갑 연결",
+    "common.connectBaseWallet": "Base Wallet 연결",
+    "common.browserWallets": "브라우저 지갑",
+    "common.recommended": "추천",
+    "common.selectLanguage": "언어 선택",
+    "common.language": "언어",
+    "common.switchLight": "밝은 테마로 전환",
+    "common.switchDark": "어두운 테마로 전환",
+    "common.mute": "음소거",
+    "common.unmute": "음소거 해제",
+    "home.kicker": "온체인 퀴즈 · Base",
+    "home.titleLine1": "매일 즐기는 퀴즈.",
+    "home.titleLine2": "Base에서 구축.",
+    "home.description": "카테고리를 선택하고 제한 시간 안에 5문제에 도전하세요. 연속 기록을 이어가고 점수를 온체인에 저장해 글로벌 리더보드에 올라보세요.",
+    "home.streak": "{count}일 연속",
+    "home.confirmWallet": "지갑에서 확인…",
+    "home.startRound": "라운드 시작",
+    "home.leaderboard": "리더보드",
+    "home.streakBadges": "연속 배지",
+    "home.facts": "5문제 · 문제당 15초 · 점수는 온체인에 저장",
+    "category.pick": "카테고리를 선택하세요",
+    "category.meta": "{count}문제 · 라운드당 5문제",
+    "category.start": "{category} 퀴즈 시작",
+    "category.previous": "이전 카테고리",
+    "category.next": "다음 카테고리",
+    "category.imageAlt": "{category} 퀴즈 카테고리",
+    "category.crypto.name": "암호화폐",
+    "category.crypto.description": "Base, Ethereum, 지갑, DeFi 및 onchain 세계를 형성하는 문화에 대한 지식을 테스트하세요.",
+    "category.sports.name": "스포츠",
+    "category.sports.description": "축구, 농구부터 테니스, 올림픽까지, 스포츠 기억력이 얼마나 강한지 확인해 보세요.",
+    "category.art.name": "예술",
+    "category.art.description": "여러 세대에 걸쳐 시각 문화를 변화시킨 그림, 예술가, 운동 및 아이디어를 살펴보세요.",
+    "category.history.name": "역사",
+    "category.history.description": "문명, 전환점, 세상을 결정한 사람들을 여행해 보세요.",
+    "category.science.name": "과학",
+    "category.science.description": "물리학, 생물학, 화학 및 사물의 작동 원리를 설명하는 발견에 도전해 보세요.",
+    "category.geography.name": "지리",
+    "category.geography.description": "지구의 모든 곳에서 국가, 수도, 바다 및 랜드마크를 탐색하세요.",
+    "quiz.fallbackName": "퀴즈",
+    "quiz.questionProgress": "{current}/{total}번 문제",
+    "quiz.score": "점수",
+    "quiz.time": "시간",
+    "quiz.answeredAria": "{total} 질문 중 {answered}에 답변됨",
+    "quiz.chooseCorrect": "정답을 선택하세요",
+    "quiz.correct": "정답",
+    "quiz.wrong": "잘못된 답변",
+    "quiz.points": "+{points} 포인트",
+    "quiz.correctOption": "올바른 옵션: {option}",
+    "quiz.autoNote": "한 번만 대답하세요. · 다음 질문은 자동으로 로드됩니다.",
+    "result.roundComplete": "라운드 완료",
+    "result.finalScore": "최종 점수",
+    "result.points": "포인트",
+    "result.summaryAria": "라운드 요약",
+    "result.categoryPill": "{category} 카테고리",
+    "result.streakPill": "{count}일 연속",
+    "result.roundCompletedTitle": "라운드 완료",
+    "result.roundCompletedDetail": "다섯 가지 질문에 답변했습니다. 최종 결과가 준비되었습니다.",
+    "result.streakUpdatedTitle": "연속 업데이트됨",
+    "result.streakUpdatedDetail": "귀하는 현재 {count}일 연속 학습 중입니다.",
+    "result.save.idle.title": "점수를 저장하세요",
+    "result.save.idle.detail": "이 결과를 Base에 기록하고 글로벌 리더보드에 합류하세요.",
+    "result.save.pending.title": "점수 확인",
+    "result.save.pending.detail": "저장을 완료하려면 지갑에서 거래를 승인하세요.",
+    "result.save.done.title": "점수가 저장되었습니다 onchain",
+    "result.save.done.detail": "결과는 Base에서 확인되었으며 리더보드에 표시될 준비가 되었습니다.",
+    "result.save.error.title": "저장에 주의가 필요함",
+    "result.save.error.detail": "아래 메시지를 검토한 후 거래를 다시 시도하세요.",
+    "result.save.disconnected.title": "저장하려면 연결하세요",
+    "result.save.disconnected.detail": "Base에 점수를 기록할 지갑을 선택하세요.",
+    "result.shareTitle": "결과를 공유하세요",
+    "result.shareDetail": "Farcaster 또는 X에서 친구에게 도전하세요.",
+    "result.replayKicker": "계속해서 기세를 이어가세요",
+    "result.replayTitle": "다른 라운드를 할 준비가 되셨나요?",
+    "result.replayDetail": "{category}를 다시 플레이하거나 다른 챌린지를 선택하세요.",
+    "result.playAgain": "다시 플레이",
+    "result.chooseCategory": "카테고리 선택",
+    "result.saveButton": "점수 저장 onchain",
+    "result.confirming": "확인 중…",
+    "result.saved": "onchain를 저장했습니다.",
+    "result.viewTransaction": "거래 보기",
+    "result.shareScore": "점수 공유",
+    "result.copyText": "텍스트 복사",
+    "result.copied": "클립보드에 복사되었습니다!",
+    "leaderboard.kicker": "Base Mainnet · 역대 순위",
+    "leaderboard.title": "리더보드",
+    "leaderboard.description": "총 onchain 점수를 기준으로 순위가 매겨진 상위 플레이어입니다.",
+    "leaderboard.loading": "Base에서 점수를 읽는 중…",
+    "leaderboard.empty": "아직 점수가 없습니다. 보드의 첫 번째 플레이어가 되십시오.",
+    "leaderboard.player": "플레이어",
+    "leaderboard.totalScore": "총점",
+    "leaderboard.bestScore": "최고 점수",
+    "leaderboard.streak": "연속",
+    "leaderboard.badges": "배지",
+    "leaderboard.you": "당신",
+    "leaderboard.noBadges": "배지 없음",
+    "leaderboard.badgeTitle": "{name} 배지",
+    "leaderboard.players": "플레이어 {count}명",
+    "leaderboard.verified": "점수 및 배지 확인 onchain",
+    "badges.kicker": "연속 기록 NFT · Base Mainnet",
+    "badges.title": "배지",
+    "badges.roadmapTitle": "연속 배지 로드맵",
+    "badges.roadmapDescription": "계속 플레이하고 연속 기록을 늘리며 각 onchain 마일스톤을 획득하세요.",
+    "badges.streak": "{count}일 연속",
+    "badges.walletRequired": "지갑 필요",
+    "badges.connectTitle": "배지를 확인하고 신청하려면 연결하세요.",
+    "badges.connectDetail": "연속 기록 및 NFT 소유권은 Base에서 직접 읽습니다.",
+    "badges.days": "{count}일",
+    "badges.bronze.name": "브론즈",
+    "badges.bronze.description": "첫 3일 달리기를 완료하세요",
+    "badges.silver.name": "실버",
+    "badges.silver.description": "일주일 동안 연속성을 유지하세요",
+    "badges.gold.name": "골드",
+    "badges.gold.description": "일관된 30일 연속 기록을 세우세요",
+    "badges.diamond.name": "다이아몬드",
+    "badges.diamond.description": "최종 100일 목표 달성",
+    "badges.unlock": "{count}일 연속 잠금 해제",
+    "badges.owned": "소유",
+    "badges.claim": "배지 청구",
+    "badges.claiming": "소유권을 주장하는 중…",
+    "badges.daysLeft": "{count}일 남음",
+    "badges.locked": "잠김",
+    "badges.loading": "Base에서 배지를 읽는 중…",
+    "wallet.connectTitle": "지갑 연결",
+    "wallet.browserWallets": "브라우저 지갑",
+    "wallet.recommended": "추천",
+    "tutorial.welcomeTitle": "환영합니다.",
+    "tutorial.welcomeDetail": "Base의 일일 퀴즈 게임입니다. 지식을 테스트하고, 연속 기록을 세우고, 전 세계에서 경쟁해보세요.",
+    "tutorial.questionsTitle": "질문 5개. 일일.",
+    "tutorial.questionsDetail": "빠르게 답변하세요. 더 빠르면 더 많은 포인트를 얻을 수 있습니다. 글로벌 리더보드에 표시하려면 점수 onchain를 저장하세요.",
+    "tutorial.badgesTitle": "NFT 배지를 획득하세요.",
+    "tutorial.badgesDetail": "연속 기록을 유지하고 onchain NFTs: 브론즈(3d), 실버(7d), 골드(30d), 다이아몬드(100d)를 획득하세요.",
+    "tutorial.letsPlay": "놀자",
+    "footer.blockData": "블록 데이터 · BASE MAINNET",
+    "footer.playersOnchain": "온체인 플레이어 {count}명",
+    "share.text": "🧠 Base Quiz에서 {score}점을 얻었습니다! 🔥 연속: {streak}일\n\n네가 날 이길 수 있을 것 같아? 👇",
+    "error.startFailed": "라운드를 시작할 수 없습니다. 다시 시도해 주세요.",
+    "error.startCancelled": "거래가 취소되었습니다. 라운드를 시작하려면 확인하세요.",
+    "error.saveFailed": "점수를 저장할 수 없습니다. 다시 시도해 주세요.",
+    "error.alreadyPlayed": "오늘 이미 저장되었습니다. 내일 다시 오세요.",
+    "error.claimFailed": "배지를 신청할 수 없습니다. 다시 시도해 주세요.",
+    "activation.kicker": "Base Quiz 설정",
+    "activation.title": "라운드 컨트랙트 활성화",
+    "activation.copy": "이 일회성 Base 트랜잭션은 Start Round에서 사용하는 소규모 계약을 배포합니다. 점수, 연속 기록, 배지를 변경하거나 ETH를 전송하지 않습니다.",
+    "activation.checking": "계약 확인 중…",
+    "activation.active": "라운드 컨트랙트가 활성화되었습니다",
+    "activation.connected": "연결됨: {address}",
+    "activation.confirming": "Base에서 확인 중…",
+    "activation.activate": "라운드 컨트랙트 활성화",
+    "activation.pendingTransaction": "보류 중인 거래 보기",
+    "activation.back": "Base Quiz로 돌아가기",
+    "activation.errorCheck": "Base 컨트랙트를 확인할 수 없습니다. 다시 시도해 주세요.",
+    "activation.errorWallet": "호환되는 지갑을 찾을 수 없습니다.",
+    "activation.errorCancelled": "거래가 취소되었습니다. 변경사항이 없습니다.",
+    "activation.errorFailed": "활성화에 실패했습니다. 다시 시도해 주세요."
+  },
+  "quiz": {
+    "crypto:0": {
+      "question": "Base를 개발한 회사는 어디인가요?",
+      "answers": {
+        "Binance": "바이낸스",
+        "Coinbase": "Coinbase",
+        "Kraken": "크라켄",
+        "OKX": "OKX"
+      }
+    },
+    "crypto:1": {
+      "question": "Base는 어떤 네트워크의 레이어 2입니까?",
+      "answers": {
+        "Bitcoin": "비트코인",
+        "Solana": "솔라나",
+        "Ethereum": "Ethereum",
+        "Avalanche": "눈사태"
+      }
+    },
+    "crypto:2": {
+      "question": "Base는 어떤 기술 스택을 사용합니까?",
+      "answers": {
+        "OP Stack": "OP 스택",
+        "zkSync": "zkSync",
+        "Polygon CDK": "다각형 CDK",
+        "Arbitrum Nitro": "아비트럼 니트로"
+      }
+    },
+    "crypto:3": {
+      "question": "Base 메인넷은 몇 년도에 출시되었나요?",
+      "answers": {
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023년",
+        "2024": "2024"
+      }
+    },
+    "crypto:4": {
+      "question": "Base의 가스 요금에 사용되는 토큰은 무엇입니까?",
+      "answers": {
+        "USDC": "USDC",
+        "BASE": "베이스",
+        "ETH": "ETH",
+        "OP": "OP"
+      }
+    },
+    "crypto:5": {
+      "question": "이전에 Base App라고 불렸던 것은 무엇입니까?",
+      "answers": {
+        "Coinbase Wallet": "Coinbase Wallet",
+        "MetaMask": "MetaMask",
+        "Rainbow": "무지개",
+        "Phantom": "팬텀"
+      }
+    },
+    "crypto:6": {
+      "question": "Coinbase의 CEO는 누구인가요?",
+      "answers": {
+        "Vitalik Buterin": "비탈릭 부테린",
+        "Brian Armstrong": "브라이언 암스트롱",
+        "Changpeng Zhao": "자오 창펑",
+        "Jesse Pollak": "제시 폴락"
+      }
+    },
+    "crypto:7": {
+      "question": "Coinbase에서 Base를 이끄는 사람은 누구인가요?",
+      "answers": {
+        "Brian Armstrong": "브라이언 암스트롱",
+        "Jesse Pollak": "제시 폴락",
+        "Hayden Adams": "헤이든 아담스",
+        "Stani Kulechov": "스타니 쿨레초프"
+      }
+    },
+    "crypto:8": {
+      "question": "Base는 어떤 슈퍼체인에 속해 있나요?",
+      "answers": {
+        "Polygon Superchain": "폴리곤 슈퍼체인",
+        "Optimism Superchain": "낙천주의 슈퍼체인",
+        "Arbitrum Orbit": "임의 궤도",
+        "zkSync Hyperchain": "zkSync 하이퍼체인"
+      }
+    },
+    "crypto:9": {
+      "question": "Base는 다음과 같이 가장 잘 설명됩니다.",
+      "answers": {
+        "A standalone L1": "독립형 L1",
+        "An Ethereum L2 rollup": "Ethereum L2 롤업",
+        "A sidechain": "사이드체인",
+        "A bridge protocol": "브리지 프로토콜"
+      }
+    },
+    "crypto:10": {
+      "question": "Ethereum의 창립자는 누구입니까?",
+      "answers": {
+        "Satoshi Nakamoto": "나카모토 사토시",
+        "Vitalik Buterin": "비탈릭 부테린",
+        "Brian Armstrong": "브라이언 암스트롱",
+        "CZ": "CZ"
+      }
+    },
+    "crypto:11": {
+      "question": "Base의 스마트 계약이 작성되어 있습니까?",
+      "answers": {
+        "Python": "파이썬",
+        "Rust": "러스트",
+        "Solidity": "견고성",
+        "Go": "이동"
+      }
+    },
+    "crypto:12": {
+      "question": "ETH의 가장 작은 단위는 무엇입니까?",
+      "answers": {
+        "Satoshi": "사토시",
+        "Gwei": "그웨이",
+        "Wei": "웨이",
+        "Finney": "피니"
+      }
+    },
+    "crypto:13": {
+      "question": "Layer-2 솔루션의 주요 목표는 무엇인가요?",
+      "answers": {
+        "Minting more tokens": "더 많은 토큰 발행",
+        "Scalability & lower fees": "확장성 향상과 수수료 절감",
+        "Mining": "채굴",
+        "Staking": "스테이킹"
+      }
+    },
+    "crypto:14": {
+      "question": "Ethereum는 어떤 합의를 사용합니까?",
+      "answers": {
+        "Proof of Work": "작업 증명",
+        "Proof of Stake": "지분 증명",
+        "Proof of Authority": "권위 증명",
+        "Proof of History": "역사 증명"
+      }
+    },
+    "crypto:15": {
+      "question": "EVM란 무엇입니까?",
+      "answers": {
+        "A wallet type": "지갑형",
+        "Ethereum's execution engine": "Ethereum의 실행 엔진",
+        "A token standard": "토큰 표준",
+        "A bridge": "다리"
+      }
+    },
+    "crypto:16": {
+      "question": "Ethereum의 L2가 아닌 것은 무엇입니까?",
+      "answers": {
+        "Base": "Base",
+        "Arbitrum": "중재",
+        "Solana": "솔라나",
+        "Optimism": "낙관주의"
+      }
+    },
+    "crypto:17": {
+      "question": "'가스'는 무엇을 의미하나요?",
+      "answers": {
+        "A token": "토큰",
+        "Transaction fee unit": "거래 수수료 단위",
+        "A wallet": "지갑",
+        "An NFT type": "NFT 유형"
+      }
+    },
+    "crypto:18": {
+      "question": "Ethereum는 언제 PoS(The Merge)로 전환되었습니까?",
+      "answers": {
+        "2020": "2020",
+        "2021": "2021",
+        "2022": "2022",
+        "2023": "2023년"
+      }
+    },
+    "crypto:19": {
+      "question": "ERC-20란 무엇입니까?",
+      "answers": {
+        "NFT standard": "NFT 표준",
+        "Fungible token standard": "대체 가능한 토큰 표준",
+        "Wallet format": "지갑 형식",
+        "L2 standard": "L2 표준"
+      }
+    },
+    "crypto:20": {
+      "question": "비트코인의 최대 공급량은 얼마입니까?",
+      "answers": {
+        "21 million": "2,100만",
+        "100 million": "1억",
+        "1 billion": "10억",
+        "Unlimited": "무제한"
+      }
+    },
+    "crypto:21": {
+      "question": "비트코인은 누가 만들었나요?",
+      "answers": {
+        "Vitalik Buterin": "비탈릭 부테린",
+        "Satoshi Nakamoto": "나카모토 사토시",
+        "Hal Finney": "할 피니",
+        "Nick Szabo": "닉 자보"
+      }
+    },
+    "crypto:22": {
+      "question": "비트코인의 가장 작은 단위를 뭐라고 부르나요?",
+      "answers": {
+        "Wei": "웨이",
+        "Gwei": "그웨이",
+        "Satoshi": "사토시",
+        "Finney": "피니"
+      }
+    },
+    "crypto:23": {
+      "question": "비트코인 반감기는 대략 얼마나 자주 발생합니까?",
+      "answers": {
+        "Every year": "매년",
+        "Every 2 years": "2년마다",
+        "Every 4 years": "4년마다",
+        "Every 10 years": "10년마다"
+      }
+    },
+    "crypto:24": {
+      "question": "비트코인은 어떤 합의를 사용합니까?",
+      "answers": {
+        "Proof of Stake": "지분 증명",
+        "Proof of Work": "작업 증명",
+        "Proof of Authority": "권위 증명",
+        "DPoS": "DPoS"
+      }
+    },
+    "crypto:25": {
+      "question": "DeFi는 무엇을 의미하나요?",
+      "answers": {
+        "Defined Finance": "정의된 금융",
+        "Decentralized Finance": "분산 금융",
+        "Defaulted Finance": "기본 금융",
+        "Deferred Finance": "이연 금융"
+      }
+    },
+    "crypto:26": {
+      "question": "Uniswap는 주로?",
+      "answers": {
+        "Lending platform": "대출 플랫폼",
+        "DEX (decentralized exchange)": "DEX (탈중앙화 거래소)",
+        "Wallet": "지갑",
+        "Bridge": "다리"
+      }
+    },
+    "crypto:27": {
+      "question": "AMM란 무엇입니까?",
+      "answers": {
+        "Auto Market Mover": "자동차 시장 주도자",
+        "Automated Market Maker": "자동화된 마켓 메이커",
+        "Asset Management Module": "자산 관리 모듈",
+        "Aggregated Mint Maker": "집계된 민트 메이커"
+      }
+    },
+    "crypto:28": {
+      "question": "TVL는 무엇을 의미하나요?",
+      "answers": {
+        "Token Value Locked": "토큰 값이 잠겼습니다.",
+        "Total Value Locked": "잠긴 총 가치",
+        "Trade Volume Limit": "거래량 한도",
+        "Tier Volume Level": "계층 볼륨 수준"
+      }
+    },
+    "crypto:29": {
+      "question": "Aave는 주로?",
+      "answers": {
+        "DEX": "DEX",
+        "Lending protocol": "대출 프로토콜",
+        "Stablecoin": "스테이블코인",
+        "NFT marketplace": "NFT 마켓플레이스"
+      }
+    },
+    "crypto:30": {
+      "question": "수확량 농업이란 무엇입니까?",
+      "answers": {
+        "Mining crops": "채광 작물",
+        "Earning rewards from DeFi protocols": "DeFi 프로토콜에서 보상 받기",
+        "A staking pool name": "스테이킹 풀 이름",
+        "An NFT minting term": "NFT 발행 기간"
+      }
+    },
+    "crypto:31": {
+      "question": "USDC를 발행하는 회사는 어디입니까?",
+      "answers": {
+        "Tether": "테더",
+        "Circle": "서클",
+        "Coinbase": "Coinbase",
+        "Paxos": "팍소스"
+      }
+    },
+    "crypto:32": {
+      "question": "USDT를 발행하는 회사는 어디입니까?",
+      "answers": {
+        "Circle": "서클",
+        "Tether": "테더",
+        "Coinbase": "Coinbase",
+        "MakerDAO": "메이커DAO"
+      }
+    },
+    "crypto:33": {
+      "question": "DAI는 주로 다음의 지원을 받나요?",
+      "answers": {
+        "US Dollars in a bank": "은행에 있는 미국 달러",
+        "Crypto collateral": "암호화폐 담보",
+        "Gold reserves": "금 보유량",
+        "Government bonds": "국채"
+      }
+    },
+    "crypto:34": {
+      "question": "Stablecoin은 가격 동등성을 유지하려고 노력합니까?",
+      "answers": {
+        "Bitcoin": "비트코인",
+        "Ethereum": "Ethereum",
+        "Fiat currencies": "법정 화폐",
+        "Gold only": "골드만 해당"
+      }
+    },
+    "crypto:35": {
+      "question": "NFT는 무엇을 의미하나요?",
+      "answers": {
+        "New Finance Token": "새로운 금융 토큰",
+        "Non-Fungible Token": "대체 불가능한 토큰",
+        "Network File Transfer": "네트워크 파일 전송",
+        "Node Function Type": "노드 함수 유형"
+      }
+    },
+    "crypto:36": {
+      "question": "Ethereum의 NFT 토큰 표준은 무엇입니까?",
+      "answers": {
+        "ERC-20": "ERC-20",
+        "ERC-721": "ERC-721",
+        "ERC-1155 only": "ERC-1155만 해당",
+        "BEP-20": "BEP-20"
+      }
+    },
+    "crypto:37": {
+      "question": "OpenSea는 주로 어떤 서비스인가요?",
+      "answers": {
+        "DEX": "DEX",
+        "NFT marketplace": "NFT 마켓플레이스",
+        "Wallet": "지갑",
+        "L2 chain": "L2 네트워크"
+      }
+    },
+    "crypto:38": {
+      "question": "NFTs에서 '민트'는 무엇을 의미하나요?",
+      "answers": {
+        "Sell an NFT": "NFT 판매",
+        "Create a new NFT onchain": "새로운 NFT 온체인 생성",
+        "Burn an NFT": "NFT 굽기",
+        "Transfer an NFT": "NFT 전송"
+      }
+    },
+    "crypto:39": {
+      "question": "지갑의 비밀번호는 무엇인가요?",
+      "answers": {
+        "Public key": "공개 키",
+        "Seed phrase": "시드 문구",
+        "Hash": "해시",
+        "Nonce": "논스"
+      }
+    },
+    "crypto:40": {
+      "question": "하드웨어 지갑이란 무엇입니까?",
+      "answers": {
+        "A mobile app": "모바일 앱",
+        "A physical device for storing keys": "키 저장을 위한 물리적 장치",
+        "A browser extension": "브라우저 확장 프로그램",
+        "An exchange account": "교환 계좌"
+      }
+    },
+    "crypto:41": {
+      "question": "절대로 공유하면 안 되나요?",
+      "answers": {
+        "Wallet address": "지갑 주소",
+        "Seed phrase": "시드 문구",
+        "ENS name": "ENS 이름",
+        "Username": "사용자 이름"
+      }
+    },
+    "crypto:42": {
+      "question": "자기 양육권이란 무엇입니까?",
+      "answers": {
+        "Exchange holds your keys": "Exchange에 키가 보관됩니다.",
+        "You control your private keys": "개인 키를 제어할 수 있습니다.",
+        "A bank holds your keys": "은행에서 열쇠를 보관합니다.",
+        "A friend holds your keys": "친구가 열쇠를 갖고 있습니다."
+      }
+    },
+    "crypto:43": {
+      "question": "MetaMask는 주로?",
+      "answers": {
+        "Exchange": "교환",
+        "Browser wallet": "브라우저 지갑",
+        "Hardware wallet": "하드웨어 지갑",
+        "L2 chain": "L2 체인"
+      }
+    },
+    "crypto:44": {
+      "question": "Farcaster란 무엇입니까?",
+      "answers": {
+        "An exchange": "교환",
+        "A decentralized social network": "분산형 소셜 네트워크",
+        "A wallet": "지갑",
+        "A game": "게임"
+      }
+    },
+    "crypto:45": {
+      "question": "Farcaster의 게시물이 호출됩니까?",
+      "answers": {
+        "Tweets": "트윗",
+        "Casts": "출연자",
+        "Toots": "투츠",
+        "Snaps": "스냅"
+      }
+    },
+    "crypto:46": {
+      "question": "Farcaster를 설립한 사람은 누구인가요?",
+      "answers": {
+        "Vitalik Buterin": "비탈릭 부테린",
+        "Dan Romero & Varun Srinivasan": "댄 로메로, 바룬 스리니바산",
+        "Jesse Pollak": "제시 폴락",
+        "Jack Dorsey": "잭 도시"
+      }
+    },
+    "crypto:47": {
+      "question": "Farcaster 사용자 식별자가 호출됩니까?",
+      "answers": {
+        "UID": "UID",
+        "FID": "FID",
+        "Handle": "핸들",
+        "Tag": "태그"
+      }
+    },
+    "crypto:48": {
+      "question": "Base App의 미니 앱은 다음과 같이 구축되었습니까?",
+      "answers": {
+        "MiniKit / OnchainKit": "MiniKit / OnchainKit",
+        "Flutter only": "Flutter 전용",
+        "Native iOS only": "기본 iOS 전용",
+        "Unity": "유니티"
+      }
+    },
+    "crypto:49": {
+      "question": "블록체인 거래 해시라고도 합니까?",
+      "answers": {
+        "Nonce": "논스",
+        "TX ID": "송신 ID",
+        "Block height": "블록 높이",
+        "Gas limit": "가스 한도"
+      }
+    },
+    "crypto:50": {
+      "question": "DAO는 무엇을 의미하나요?",
+      "answers": {
+        "Digital Asset Order": "디지털 자산 주문",
+        "Decentralized Autonomous Organization": "분산형 자율 조직",
+        "Distributed App Output": "분산 앱 출력",
+        "Data Access Object": "데이터 액세스 개체"
+      }
+    },
+    "crypto:51": {
+      "question": "'블록 탐색기'란 무엇입니까?",
+      "answers": {
+        "A mining tool": "마이닝 도구",
+        "A site to view onchain data": "온체인 데이터를 볼 수 있는 사이트",
+        "A wallet type": "지갑형",
+        "A bridge": "다리"
+      }
+    },
+    "crypto:52": {
+      "question": "트레이딩에서 '슬리피지'란 무엇인가요?",
+      "answers": {
+        "Network downtime": "네트워크 가동 중지 시간",
+        "Difference between expected & actual price": "예상 가격과 실제 가격의 차이",
+        "A type of fee": "수수료 유형",
+        "A wallet error": "지갑 오류"
+      }
+    },
+    "crypto:53": {
+      "question": "'러그풀'이란?",
+      "answers": {
+        "A trading strategy": "거래 전략",
+        "A scam where founders abandon a project": "창립자가 프로젝트를 포기하는 사기",
+        "A staking method": "스테이킹 방법",
+        "A wallet feature": "지갑 기능"
+      }
+    },
+    "crypto:54": {
+      "question": "다중서명 지갑이란 무엇입니까?",
+      "answers": {
+        "A wallet with many tokens": "많은 토큰을 보유한 지갑",
+        "A wallet needing multiple signatures to approve tx": "전송을 승인하기 위해 여러 서명이 필요한 지갑",
+        "A wallet on multiple chains": "여러 체인의 지갑",
+        "A wallet with a long password": "비밀번호가 긴 지갑"
+      }
+    },
+    "crypto:55": {
+      "question": "암호화폐 문화에서 'HODL'는 무엇을 의미하나요?",
+      "answers": {
+        "Sell quickly": "빠르게 판매",
+        "Hold long-term": "장기 보유",
+        "A hardware wallet": "하드웨어 지갑",
+        "A type of token": "토큰 유형"
+      }
+    },
+    "crypto:56": {
+      "question": "암호화폐에서 '고래'란 무엇인가요?",
+      "answers": {
+        "A tiny investor": "소규모 투자자",
+        "A holder of very large amounts": "매우 큰 금액을 보유하고 있는 사람",
+        "A stablecoin": "스테이블코인",
+        "A mining rig": "채굴 장비"
+      }
+    },
+    "crypto:57": {
+      "question": "블록체인의 가스 요금은 어디에 지불됩니까?",
+      "answers": {
+        "Developers": "개발자",
+        "Network validators/miners": "네트워크 검증자/채굴자",
+        "Exchanges": "교환",
+        "Banks": "은행"
+      }
+    },
+    "crypto:58": {
+      "question": "스마트 계약이란 무엇입니까?",
+      "answers": {
+        "A paper contract": "종이 계약서",
+        "Self-executing code on a blockchain": "블록체인의 자체 실행 코드",
+        "A savings account": "저축 계좌",
+        "A hardware device": "하드웨어 장치"
+      }
+    },
+    "crypto:59": {
+      "question": "'DEX'는 무엇을 의미하나요?",
+      "answers": {
+        "Digital Exchange": "디지털 교환",
+        "Decentralized Exchange": "탈중앙화 거래소",
+        "Data Exchange": "데이터 교환",
+        "Direct Exchange": "직접 교환"
+      }
+    },
+    "crypto:60": {
+      "question": "'CEX'는 무엇을 의미하나요?",
+      "answers": {
+        "Central Exchange": "중앙 거래소",
+        "Centralized Exchange": "중앙 집중식 교환",
+        "Crypto Exchange": "암호화폐 거래소",
+        "Coin Exchange": "코인 교환"
+      }
+    },
+    "crypto:61": {
+      "question": "'스테이킹'이란 무엇인가요?",
+      "answers": {
+        "Selling tokens": "토큰 판매",
+        "Locking tokens to support a network for rewards": "보상을 위한 네트워크를 지원하기 위한 잠금 토큰",
+        "Mining coins": "코인 채굴",
+        "Burning tokens": "토큰 굽기"
+      }
+    },
+    "crypto:62": {
+      "question": "'개인 키'란 무엇입니까?",
+      "answers": {
+        "Your public address": "공개 주소",
+        "A secret that controls your funds": "자금을 관리하는 비밀",
+        "An exchange password": "거래소 비밀번호",
+        "A transaction id": "거래 ID"
+      }
+    },
+    "crypto:63": {
+      "question": "'테스트넷'은 어떤 용도로 사용됩니까?",
+      "answers": {
+        "Real transactions": "실제 거래",
+        "Testing without real value": "실제 가치가 없는 테스트",
+        "Storing coins": "코인 저장",
+        "Mining Bitcoin": "비트코인 채굴"
+      }
+    },
+    "crypto:64": {
+      "question": "토큰 '소각'은 무엇을 의미합니까?",
+      "answers": {
+        "Creating tokens": "토큰 생성",
+        "Permanently removing tokens from supply": "공급에서 토큰을 영구적으로 제거",
+        "Staking tokens": "스테이킹 토큰",
+        "Sending tokens": "토큰 보내기"
+      }
+    },
+    "crypto:65": {
+      "question": "'강세장'이란 무엇입니까?",
+      "answers": {
+        "Prices falling": "가격 하락",
+        "Prices rising": "가격 상승",
+        "No trading": "거래 없음",
+        "A type of coin": "코인 종류"
+      }
+    },
+    "crypto:66": {
+      "question": "'약세장'이란 무엇입니까?",
+      "answers": {
+        "Prices rising": "가격 상승",
+        "Prices falling": "가격 하락",
+        "Sideways only": "옆으로만",
+        "A mining term": "마이닝 용어"
+      }
+    },
+    "crypto:67": {
+      "question": "'에어드롭'이란 무엇입니까?",
+      "answers": {
+        "A market crash": "시장 붕괴",
+        "Free distribution of tokens": "토큰 무료 배포",
+        "A hack": "해킹",
+        "A trading fee": "거래 수수료"
+      }
+    },
+    "crypto:68": {
+      "question": "'Web3'란 무엇입니까?",
+      "answers": {
+        "The third website": "세 번째 웹사이트",
+        "A decentralized internet on blockchain": "블록체인의 분산형 인터넷",
+        "A web browser": "웹 브라우저",
+        "A programming language": "프로그래밍 언어"
+      }
+    },
+    "crypto:69": {
+      "question": "'L1'는 무엇을 의미하나요?",
+      "answers": {
+        "Layer 1 base blockchain": "레이어 1 기본 블록체인",
+        "A game level": "게임 레벨",
+        "A wallet": "지갑",
+        "A token standard": "토큰 표준"
+      }
+    },
+    "crypto:70": {
+      "question": "솔라나는?",
+      "answers": {
+        "Layer-2 of Ethereum": "Ethereum의 레이어 2",
+        "Standalone Layer-1 blockchain": "독립형 레이어-1 블록체인",
+        "Wallet": "지갑",
+        "Stablecoin": "스테이블코인"
+      }
+    },
+    "crypto:71": {
+      "question": "작업 증명은 무엇으로 알려져 있나요?",
+      "answers": {
+        "Low energy use": "낮은 에너지 사용",
+        "High energy use via mining": "채굴을 통한 높은 에너지 사용",
+        "Staking coins": "코인 스테이킹",
+        "No validators": "유효성 검사기 없음"
+      }
+    },
+    "crypto:72": {
+      "question": "'DYOR'는 무엇을 의미하나요?",
+      "answers": {
+        "Do Your Own Research": "직접 조사해 보세요.",
+        "Deposit Your Own Reserves": "자신의 준비금 입금",
+        "Don't Yield On Returns": "반품에 굴복하지 마세요",
+        "Data Yield Over Risk": "위험 대비 데이터 수익률"
+      }
+    },
+    "crypto:73": {
+      "question": "'콜드월렛'이란 무엇인가요?",
+      "answers": {
+        "Always-online wallet": "상시 온라인 지갑",
+        "Offline wallet for storage": "보관용 오프라인 지갑",
+        "Exchange wallet": "거래소 지갑",
+        "A stablecoin": "스테이블코인"
+      }
+    },
+    "crypto:74": {
+      "question": "'핫월렛'이란 무엇인가요?",
+      "answers": {
+        "Offline wallet": "오프라인 지갑",
+        "Internet-connected wallet": "인터넷에 연결된 지갑",
+        "Hardware wallet": "하드웨어 지갑",
+        "Paper wallet": "종이 지갑"
+      }
+    },
+    "crypto:75": {
+      "question": "'Gwei'는 측정에 사용됩니까?",
+      "answers": {
+        "Token supply": "토큰 공급",
+        "Gas prices": "가스 가격",
+        "Block size": "블록 크기",
+        "Wallet balance": "월렛 잔액"
+      }
+    },
+    "crypto:76": {
+      "question": "'비영구적 손실'은 무엇과 연관되어 있습니까?",
+      "answers": {
+        "Staking": "스테이킹",
+        "Providing liquidity": "유동성 제공",
+        "Mining": "채굴",
+        "Holding": "보유"
+      }
+    },
+    "crypto:77": {
+      "question": "블록체인 '브릿지'는 어디에 사용되나요?",
+      "answers": {
+        "Mine coins": "코인 채굴",
+        "Move assets between blockchains": "블록체인 간 자산 이동",
+        "Store keys": "키 저장",
+        "Create tokens": "토큰 생성"
+      }
+    },
+    "crypto:78": {
+      "question": "'검증기'란 무엇입니까?",
+      "answers": {
+        "A wallet": "지갑",
+        "A node that verifies transactions": "거래를 검증하는 노드",
+        "A token": "토큰",
+        "An exchange": "교환"
+      }
+    },
+    "crypto:79": {
+      "question": "'ATH'는?",
+      "answers": {
+        "All-Time High": "사상 최고",
+        "Average Trade Height": "평균 거래 높이",
+        "Actual Token Holdings": "실제 토큰 보유량",
+        "Auto Trade Handler": "자동 거래 핸들러"
+      }
+    },
+    "crypto:80": {
+      "question": "BTC 또는 ETH와 같은 '티커'는 무엇입니까?",
+      "answers": {
+        "A price chart": "가격 차트",
+        "A short symbol for an asset": "자산에 대한 짧은 기호",
+        "A wallet": "지갑",
+        "A block": "블록"
+      }
+    },
+    "crypto:81": {
+      "question": "작업 증명에서 거래 확인이 호출됩니까?",
+      "answers": {
+        "Staking": "스테이킹",
+        "Mining": "채굴",
+        "Bridging": "브리징",
+        "Burning": "굽기"
+      }
+    },
+    "crypto:82": {
+      "question": "'시가총액'이란 무엇입니까?",
+      "answers": {
+        "Price × circulating supply": "가격 × 유통량",
+        "Daily trading volume": "일일 거래량",
+        "Number of wallets": "지갑 수",
+        "Total gas fees": "총 가스 요금"
+      }
+    },
+    "crypto:83": {
+      "question": "OnchainKit는 개발자 툴킷입니까?",
+      "answers": {
+        "Binance": "바이낸스",
+        "Coinbase": "Coinbase",
+        "MetaMask": "MetaMask",
+        "Uniswap": "Uniswap"
+      }
+    },
+    "crypto:84": {
+      "question": "'가스 한도'가 설정됩니까?",
+      "answers": {
+        "Token supply": "토큰 공급",
+        "Max gas a transaction can use": "거래에서 사용할 수 있는 최대 가스",
+        "Wallet size": "지갑 크기",
+        "Block reward": "블록 보상"
+      }
+    },
+    "crypto:85": {
+      "question": "다각형은 무엇으로 가장 잘 알려져 있습니까?",
+      "answers": {
+        "A base Layer-1": "기본 레이어-1",
+        "An Ethereum scaling solution": "Ethereum 확장 솔루션",
+        "A wallet": "지갑",
+        "An exchange": "교환"
+      }
+    },
+    "crypto:86": {
+      "question": "트레이딩에서 'FOMO'는 무엇을 의미하나요?",
+      "answers": {
+        "Fear Of Missing Out": "놓치는 것에 대한 두려움",
+        "Full Order Market Offer": "전체 주문 시장 제안",
+        "Fixed Order Money Out": "고정 주문 지급",
+        "Fast Onchain Market Order": "빠른 온체인 시장 주문"
+      }
+    },
+    "crypto:87": {
+      "question": "풀의 '유동성'이란 무엇입니까?",
+      "answers": {
+        "Number of users": "사용자 수",
+        "Assets available to trade": "거래 가능한 자산",
+        "Trading fees": "거래 수수료",
+        "Block height": "블록 높이"
+      }
+    },
+    "crypto:88": {
+      "question": "'Layer-2' 솔루션은 주로 무엇을 목표로 할까요?",
+      "answers": {
+        "Replace Bitcoin": "비트코인 교체",
+        "Scale a Layer-1 with cheaper, faster txs": "더 저렴하고 빠른 전송으로 Layer-1 확장",
+        "Mine faster": "더 빠르게 채굴",
+        "Issue stablecoins": "스테이블코인 발행"
+      }
+    },
+    "crypto:89": {
+      "question": "지갑 '주소'는 일반적으로?",
+      "answers": {
+        "Secret, never shared": "비밀, 공유되지 않음",
+        "Public and shareable to receive funds": "자금을 받기 위해 공개 및 공유 가능",
+        "Your password": "비밀번호",
+        "A private key": "개인 키"
+      }
+    },
+    "crypto:90": {
+      "question": "'KYC'는 무엇을 의미하나요?",
+      "answers": {
+        "Keep Your Coins": "동전을 보관하세요",
+        "Know Your Customer": "고객 파악",
+        "Key Yield Contract": "주요 수익률 계약",
+        "Known Yield Curve": "알려진 수익률 곡선"
+      }
+    },
+    "crypto:91": {
+      "question": "트랜잭션에서 nonce란 무엇인가요?",
+      "answers": {
+        "A random word": "임의의 단어",
+        "A per-account transaction counter": "계정별 트랜잭션 카운터",
+        "A token": "토큰",
+        "A wallet": "지갑"
+      }
+    },
+    "crypto:92": {
+      "question": "'PoS'는 무엇을 의미합니까?",
+      "answers": {
+        "Proof of Speed": "속도 증명",
+        "Proof of Stake": "지분 증명",
+        "Point of Sale": "판매 시점",
+        "Proof of Storage": "보관 증명"
+      }
+    },
+    "crypto:93": {
+      "question": "스테이블 코인은 무엇을 위해 설계되었나요?",
+      "answers": {
+        "Grow fast": "빠르게 성장",
+        "Stay near a stable value": "안정적인 값에 가깝게 유지",
+        "Be an NFT": "NFT가 되세요",
+        "Mine blocks": "광산 블록"
+      }
+    },
+    "crypto:94": {
+      "question": "다음 중 스테이블코인은 무엇인가요?",
+      "answers": {
+        "ETH": "ETH",
+        "USDC": "USDC",
+        "BTC": "BTC",
+        "SOL": "솔"
+      }
+    },
+    "crypto:95": {
+      "question": "'크로스체인'은 여러 곳에서 운영된다는 뜻인가요?",
+      "answers": {
+        "One app": "하나의 앱",
+        "Multiple blockchains": "다중 블록체인",
+        "One wallet": "지갑 1개",
+        "One token": "토큰 1개"
+      }
+    },
+    "crypto:96": {
+      "question": "블록체인의 '블록'에는 다음이 포함되어 있습니까?",
+      "answers": {
+        "Only one transaction": "하나의 거래만",
+        "A batch of transactions": "거래 일괄 처리",
+        "Only code": "전용 코드",
+        "Nothing": "없음"
+      }
+    },
+    "crypto:97": {
+      "question": "'제네시스 블록'은?",
+      "answers": {
+        "Last block": "마지막 블록",
+        "First block of a blockchain": "블록체인의 첫 번째 블록",
+        "A wallet": "지갑",
+        "A token": "토큰"
+      }
+    },
+    "crypto:98": {
+      "question": "'ROI'는 무엇을 의미합니까?",
+      "answers": {
+        "Return On Investment": "투자 수익",
+        "Rate Of Interest": "이자율",
+        "Risk Of Inflation": "인플레이션 위험",
+        "Ratio Of Income": "소득 비율"
+      }
+    },
+    "crypto:99": {
+      "question": "Ethereum 휘발유 가격은 일반적으로 다음 단위로 측정됩니다.",
+      "answers": {
+        "US dollars": "미국 달러",
+        "Gwei": "그웨이",
+        "Bitcoin": "비트코인",
+        "Bytes": "바이트"
+      }
+    },
+    "sports:0": {
+      "question": "한 축구팀의 선수는 몇 명입니까?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:1": {
+      "question": "어떤 스포츠에서 슬램덩크를 하시겠습니까?",
+      "answers": {
+        "Tennis": "테니스",
+        "Basketball": "농구",
+        "Golf": "골프",
+        "Cricket": "크리켓"
+      }
+    },
+    "sports:2": {
+      "question": "하계 올림픽은 얼마나 자주 개최되나요?",
+      "answers": {
+        "Every 2 years": "2년마다",
+        "Every 3 years": "3년마다",
+        "Every 4 years": "4년마다",
+        "Every 5 years": "5년마다"
+      }
+    },
+    "sports:3": {
+      "question": "FIFA 월드컵에서 가장 많은 우승을 차지한 국가는 어디인가요?",
+      "answers": {
+        "Germany": "독일",
+        "Italy": "이탈리아",
+        "Brazil": "브라질",
+        "Argentina": "아르헨티나"
+      }
+    },
+    "sports:4": {
+      "question": "테니스에서 0점을 무엇이라고 하나요?",
+      "answers": {
+        "Nil": "없음",
+        "Love": "사랑",
+        "Duck": "오리",
+        "Blank": "공백"
+      }
+    },
+    "sports:5": {
+      "question": "올림픽 깃발에는 몇 개의 고리가 있나요?",
+      "answers": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:6": {
+      "question": "셔틀콕을 사용하는 스포츠는 무엇인가요?",
+      "answers": {
+        "Squash": "스쿼시",
+        "Badminton": "배드민턴",
+        "Table tennis": "탁구",
+        "Volleyball": "배구"
+      }
+    },
+    "sports:7": {
+      "question": "우사인 볼트는 어떤 스포츠로 유명합니까?",
+      "answers": {
+        "Swimming": "수영",
+        "Sprinting": "질주",
+        "Cycling": "사이클링",
+        "Boxing": "복싱"
+      }
+    },
+    "sports:8": {
+      "question": "미식축구에서 터치다운의 가치는 몇 점입니까?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "6": "6",
+        "7": "7"
+      }
+    },
+    "sports:9": {
+      "question": "투르 드 프랑스는 어떤 스포츠 대회인가요?",
+      "answers": {
+        "Running": "실행 중",
+        "Cycling": "사이클링",
+        "Rowing": "조정",
+        "Sailing": "항해"
+      }
+    },
+    "sports:10": {
+      "question": "윔블던 테니스 토너먼트를 개최하는 국가는 어디인가요?",
+      "answers": {
+        "USA": "미국",
+        "France": "프랑스",
+        "England": "영국",
+        "Australia": "호주"
+      }
+    },
+    "sports:11": {
+      "question": "마이클 조던은 어떤 스포츠의 전설인가요?",
+      "answers": {
+        "Baseball": "야구",
+        "Basketball": "농구",
+        "Football": "축구",
+        "Hockey": "하키"
+      }
+    },
+    "sports:12": {
+      "question": "표준 챔피언십 복싱 경기는 몇 라운드로 구성됩니까?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "12": "12",
+        "15": "15"
+      }
+    },
+    "sports:13": {
+      "question": "클레이 코트에서 어떤 테니스 그랜드 슬램이 진행되나요?",
+      "answers": {
+        "Wimbledon": "윔블던",
+        "US Open": "US 오픈",
+        "French Open": "프랑스 오픈",
+        "Australian Open": "호주 오픈"
+      }
+    },
+    "sports:14": {
+      "question": "포뮬러 1은 어떤 경주의 형태인가요?",
+      "answers": {
+        "Boat": "보트",
+        "Car": "자동차",
+        "Horse": "말",
+        "Bicycle": "자전거"
+      }
+    },
+    "sports:15": {
+      "question": "마라톤은 대략 얼마나 걸리나요?",
+      "answers": {
+        "21 km": "21km",
+        "42 km": "42km",
+        "50 km": "50km",
+        "30 km": "30km"
+      }
+    },
+    "sports:16": {
+      "question": "크리켓 팀에는 몇 명의 선수가 있나요?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:17": {
+      "question": "마스터즈 토너먼트는 어떤 스포츠에서 진행되나요?",
+      "answers": {
+        "Golf": "골프",
+        "Tennis": "테니스",
+        "Polo": "폴로",
+        "Rugby": "럭비"
+      }
+    },
+    "sports:18": {
+      "question": "2018 FIFA 월드컵에서 우승한 국가는 어디인가요?",
+      "answers": {
+        "Germany": "독일",
+        "France": "프랑스",
+        "Brazil": "브라질",
+        "Croatia": "크로아티아"
+      }
+    },
+    "sports:19": {
+      "question": "축구 경기는 중단 시간을 제외하면 얼마나 되나요?",
+      "answers": {
+        "80 minutes": "80분",
+        "90 minutes": "90분",
+        "100 minutes": "100분",
+        "120 minutes": "120분"
+      }
+    },
+    "sports:20": {
+      "question": "축구 선수를 경기장 밖으로 내보내는 카드는 무엇입니까?",
+      "answers": {
+        "Yellow": "노란색",
+        "Red": "빨간색",
+        "Blue": "파란색",
+        "Green": "녹색"
+      }
+    },
+    "sports:21": {
+      "question": "해트트릭은 한 경기에서 몇 골을 넣는 것을 의미합니까?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:22": {
+      "question": "크리스티아누 호날두는 어느 국가대표팀을 대표하나요?",
+      "answers": {
+        "Brazil": "브라질",
+        "Spain": "스페인",
+        "Portugal": "포르투갈",
+        "Argentina": "아르헨티나"
+      }
+    },
+    "sports:23": {
+      "question": "펠레는 어느 국가에서 국가대표로 뛰었나요?",
+      "answers": {
+        "Argentina": "아르헨티나",
+        "Brazil": "브라질",
+        "Portugal": "포르투갈",
+        "Italy": "이탈리아"
+      }
+    },
+    "sports:24": {
+      "question": "유럽 최고의 클럽 축구 대회는?",
+      "answers": {
+        "Europa League": "유로파리그",
+        "Champions League": "챔피언스리그",
+        "Copa America": "코파 아메리카",
+        "FA Cup": "FA 컵"
+      }
+    },
+    "sports:25": {
+      "question": "발롱도르는 어떤 스포츠에서 수여되나요?",
+      "answers": {
+        "Basketball": "농구",
+        "Football/Soccer": "축구/축구",
+        "Tennis": "테니스",
+        "Golf": "골프"
+      }
+    },
+    "sports:26": {
+      "question": "디에고 마라도나는 어떤 스포츠의 전설이었습니까?",
+      "answers": {
+        "Basketball": "농구",
+        "Soccer": "축구",
+        "Tennis": "테니스",
+        "Boxing": "복싱"
+      }
+    },
+    "sports:27": {
+      "question": "축구에서 '클린시트'란 뜻인가요?",
+      "answers": {
+        "Scoring many goals": "많은 득점",
+        "Conceding no goals": "득점 없음",
+        "Getting a red card": "레드카드 받기",
+        "A draw": "무승부"
+      }
+    },
+    "sports:28": {
+      "question": "농구에서 자유투는 몇 점의 가치가 있나요?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:29": {
+      "question": "3점 호 너머의 바구니는 가치가 있나요?",
+      "answers": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      }
+    },
+    "sports:30": {
+      "question": "표준 농구 골대는 어떤 높이로 설정되어 있나요?",
+      "answers": {
+        "8 feet": "8피트",
+        "10 feet": "10피트",
+        "12 feet": "12피트",
+        "15 feet": "15피트"
+      }
+    },
+    "sports:31": {
+      "question": "NBA는 어느 국가에 기반을 둔 리그입니까?",
+      "answers": {
+        "Canada": "캐나다",
+        "USA": "미국",
+        "Spain": "스페인",
+        "Australia": "호주"
+      }
+    },
+    "sports:32": {
+      "question": "농구를 발명한 국가는 어디입니까?",
+      "answers": {
+        "Canada": "캐나다",
+        "USA": "미국",
+        "UK": "영국",
+        "France": "프랑스"
+      }
+    },
+    "sports:33": {
+      "question": "테니스에는 매년 몇 개의 그랜드 슬램 이벤트가 열리나요?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:34": {
+      "question": "윔블던은 어느 표면에서 경기되나요?",
+      "answers": {
+        "Clay": "클레이",
+        "Grass": "잔디",
+        "Hard court": "하드 코트",
+        "Carpet": "카펫"
+      }
+    },
+    "sports:35": {
+      "question": "로저 페더러는 어떤 스포츠로 유명합니까?",
+      "answers": {
+        "Golf": "골프",
+        "Tennis": "테니스",
+        "Cycling": "사이클링",
+        "Rowing": "조정"
+      }
+    },
+    "sports:36": {
+      "question": "세레나 윌리엄스가 챔피언인 스포츠는 무엇인가요?",
+      "answers": {
+        "Golf": "골프",
+        "Tennis": "테니스",
+        "Swimming": "수영",
+        "Athletics": "육상"
+      }
+    },
+    "sports:37": {
+      "question": "테니스에서 듀스 이후 한 선수가 다음 포인트를 따면 무엇이 되나요?",
+      "answers": {
+        "Game": "게임",
+        "Advantage": "어드밴티지",
+        "Set": "세트",
+        "Match": "매치"
+      }
+    },
+    "sports:38": {
+      "question": "최초의 근대 올림픽이 개최된 연도는 언제입니까?",
+      "answers": {
+        "1896": "1896년",
+        "1900": "1900",
+        "1924": "1924년",
+        "1936": "1936년"
+      }
+    },
+    "sports:39": {
+      "question": "2016년 하계 올림픽이 개최된 곳은 어디입니까?",
+      "answers": {
+        "London": "런던",
+        "Rio de Janeiro": "리우데자네이루",
+        "Tokyo": "도쿄",
+        "Beijing": "베이징"
+      }
+    },
+    "sports:40": {
+      "question": "2024년 하계 올림픽이 개최된 곳은 어디인가요?",
+      "answers": {
+        "Tokyo": "도쿄",
+        "Paris": "파리",
+        "Los Angeles": "로스앤젤레스",
+        "London": "런던"
+      }
+    },
+    "sports:41": {
+      "question": "올림픽 모토는 '더 빠르게, 더 높이, ___'입니다.",
+      "answers": {
+        "Better": "더 좋음",
+        "Stronger": "더 강함",
+        "Farther": "더 멀리",
+        "Longer": "더 길다"
+      }
+    },
+    "sports:42": {
+      "question": "올림픽 성화는 전통적으로 어디에서 켜집니까?",
+      "answers": {
+        "Italy": "이탈리아",
+        "Greece": "그리스",
+        "France": "프랑스",
+        "Egypt": "이집트"
+      }
+    },
+    "sports:43": {
+      "question": "마이클 펠프스가 지배한 올림픽 종목은 무엇인가요?",
+      "answers": {
+        "Athletics": "육상",
+        "Swimming": "수영",
+        "Diving": "다이빙",
+        "Rowing": "조정"
+      }
+    },
+    "sports:44": {
+      "question": "경쟁적인 수영 영법이 아닌 것은 무엇입니까?",
+      "answers": {
+        "Butterfly": "나비",
+        "Backstroke": "배영",
+        "Breaststroke": "평영",
+        "Sidestroke": "사이드스트로크"
+      }
+    },
+    "sports:45": {
+      "question": "무하마드 알리는 전설적인 인물이었나요?",
+      "answers": {
+        "Footballer": "축구선수",
+        "Boxer": "복서",
+        "Swimmer": "수영선수",
+        "Runner": "러너"
+      }
+    },
+    "sports:46": {
+      "question": "유도는 어느 나라에서 시작되었나요?",
+      "answers": {
+        "China": "중국",
+        "Japan": "일본",
+        "Korea": "한국",
+        "Thailand": "태국"
+      }
+    },
+    "sports:47": {
+      "question": "태권도는 어느 나라에서 시작되었나요?",
+      "answers": {
+        "Japan": "일본",
+        "China": "중국",
+        "South Korea": "한국",
+        "Vietnam": "베트남"
+      }
+    },
+    "sports:48": {
+      "question": "복싱에서 'KO'는?",
+      "answers": {
+        "Knockout": "녹아웃",
+        "Keep On": "계속",
+        "Knee Out": "무릎 내밀기",
+        "Key Opponent": "주요 상대"
+      }
+    },
+    "sports:49": {
+      "question": "스모 레슬링은 다음의 전통 스포츠입니까?",
+      "answers": {
+        "China": "중국",
+        "Japan": "일본",
+        "Korea": "한국",
+        "Mongolia": "몽골"
+      }
+    },
+    "sports:50": {
+      "question": "골프에서 홀의 파 아래 1타는 무엇입니까?",
+      "answers": {
+        "Eagle": "독수리",
+        "Birdie": "버디",
+        "Bogey": "보기",
+        "Par": "파"
+      }
+    },
+    "sports:51": {
+      "question": "골프에서 파당 1타는 무엇입니까?",
+      "answers": {
+        "Birdie": "버디",
+        "Bogey": "보기",
+        "Eagle": "독수리",
+        "Ace": "에이스"
+      }
+    },
+    "sports:52": {
+      "question": "골프에서 홀인원을 엔?이라고도 합니다.",
+      "answers": {
+        "Ace": "에이스",
+        "Birdie": "버디",
+        "Eagle": "독수리",
+        "Par": "파"
+      }
+    },
+    "sports:53": {
+      "question": "골프의 표준 라운드에는 홀이 몇 개 있습니까?",
+      "answers": {
+        "9": "9",
+        "12": "12",
+        "18": "18",
+        "24": "24"
+      }
+    },
+    "sports:54": {
+      "question": "골프의 발상지는 어느 나라입니까?",
+      "answers": {
+        "USA": "미국",
+        "Scotland": "스코틀랜드",
+        "France": "프랑스",
+        "Italy": "이탈리아"
+      }
+    },
+    "sports:55": {
+      "question": "루이스 해밀턴은 어떤 스포츠에 참가하나요?",
+      "answers": {
+        "MotoGP": "MotoGP",
+        "Formula 1": "수식 1",
+        "Rally": "랠리",
+        "NASCAR": "나스카"
+      }
+    },
+    "sports:56": {
+      "question": "포뮬러 1 자동차 경주는 어떻게 되나요?",
+      "answers": {
+        "Field": "필드",
+        "Track/circuit": "트랙/서킷",
+        "Pool": "풀",
+        "Court": "법원"
+      }
+    },
+    "sports:57": {
+      "question": "포뮬러 1에서 타이틀은 드라이버에게 돌아갑니다.",
+      "answers": {
+        "Fans": "팬",
+        "Constructors": "생성자",
+        "Cities": "도시",
+        "Sponsors": "후원자"
+      }
+    },
+    "sports:58": {
+      "question": "야구에서 삼진은 몇 번이나 쳐야 합니까?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "sports:59": {
+      "question": "야구는?",
+      "answers": {
+        "Circle": "서클",
+        "Diamond": "다이아몬드",
+        "Square": "광장",
+        "Triangle": "삼각형"
+      }
+    },
+    "sports:60": {
+      "question": "슈퍼볼은 어느 스포츠의 챔피언십인가요?",
+      "answers": {
+        "Basketball": "농구",
+        "American football": "미식축구",
+        "Baseball": "야구",
+        "Ice hockey": "아이스하키"
+      }
+    },
+    "sports:61": {
+      "question": "미식축구에서는 팀당 몇 명의 선수가 경기장에 있나요?",
+      "answers": {
+        "9": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12"
+      }
+    },
+    "sports:62": {
+      "question": "아이스하키 경기가 진행되나요?",
+      "answers": {
+        "Grass": "잔디",
+        "Ice": "얼음",
+        "Sand": "모래",
+        "Clay": "클레이"
+      }
+    },
+    "sports:63": {
+      "question": "스탠리 컵은 어느 스포츠의 트로피입니까?",
+      "answers": {
+        "Basketball": "농구",
+        "Ice hockey": "아이스하키",
+        "Baseball": "야구",
+        "Soccer": "축구"
+      }
+    },
+    "sports:64": {
+      "question": "아이스하키에서는 각 팀에 몇 명의 선수가 빙판 위에 있습니까?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:65": {
+      "question": "배구 코트에는 팀당 몇 명의 선수가 있나요?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "sports:66": {
+      "question": "탁구라고도 하죠?",
+      "answers": {
+        "Squash": "스쿼시",
+        "Ping pong": "탁구",
+        "Badminton": "배드민턴",
+        "Racquetball": "라켓볼"
+      }
+    },
+    "sports:67": {
+      "question": "국제 탁구를 장악한 국가는 어디인가요?",
+      "answers": {
+        "Brazil": "브라질",
+        "China": "중국",
+        "Canada": "캐나다",
+        "Egypt": "이집트"
+      }
+    },
+    "sports:68": {
+      "question": "네 개의 벽 안에서 진행되는 라켓 스포츠는 무엇인가요?",
+      "answers": {
+        "Tennis": "테니스",
+        "Squash": "스쿼시",
+        "Badminton": "배드민턴",
+        "Table tennis": "탁구"
+      }
+    },
+    "sports:69": {
+      "question": "뉴질랜드 럭비 국가대표팀은 다음으로 알려져 있습니다.",
+      "answers": {
+        "Wallabies": "왈라비",
+        "All Blacks": "올블랙",
+        "Springboks": "스프링복",
+        "Pumas": "퓨마"
+      }
+    },
+    "sports:70": {
+      "question": "'스크럼'은 어떤 스포츠의 특징인가요?",
+      "answers": {
+        "Rugby": "럭비",
+        "Tennis": "테니스",
+        "Golf": "골프",
+        "Swimming": "수영"
+      }
+    },
+    "sports:71": {
+      "question": "럭비 유니온의 '시도'는 몇 점의 가치가 있나요?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "5": "5",
+        "7": "7"
+      }
+    },
+    "sports:72": {
+      "question": "'세기'(100런)는 다음의 용어입니까?",
+      "answers": {
+        "Baseball": "야구",
+        "Cricket": "크리켓",
+        "Rugby": "럭비",
+        "Soccer": "축구"
+      }
+    },
+    "sports:73": {
+      "question": "크리켓은 어느 국가에서 특히 인기가 있습니까?",
+      "answers": {
+        "USA": "미국",
+        "India": "인도",
+        "Norway": "노르웨이",
+        "Iceland": "아이슬란드"
+      }
+    },
+    "sports:74": {
+      "question": "투창은 어떤 스포츠에서 던지나요?",
+      "answers": {
+        "Gymnastics": "체조",
+        "Athletics": "육상",
+        "Cycling": "사이클링",
+        "Rowing": "조정"
+      }
+    },
+    "sports:75": {
+      "question": "멀리뛰기는 어떤 종목에 속합니까?",
+      "answers": {
+        "Swimming": "수영",
+        "Athletics": "육상",
+        "Cycling": "사이클링",
+        "Gymnastics": "체조"
+      }
+    },
+    "sports:76": {
+      "question": "올림픽에서 가장 짧은 스프린트 거리는?",
+      "answers": {
+        "50 m": "50m",
+        "100 m": "100m",
+        "200 m": "200m",
+        "400 m": "400m"
+      }
+    },
+    "sports:77": {
+      "question": "안마는 어떤 스포츠에 사용됩니까?",
+      "answers": {
+        "Athletics": "육상",
+        "Gymnastics": "체조",
+        "Swimming": "수영",
+        "Boxing": "복싱"
+      }
+    },
+    "sports:78": {
+      "question": "'슬라롬'은 어떤 스포츠 종목인가요?",
+      "answers": {
+        "Swimming": "수영",
+        "Skiing": "스키",
+        "Cycling": "사이클링",
+        "Boxing": "복싱"
+      }
+    },
+    "sports:79": {
+      "question": "스키는 일반적으로 어떤 유형의 스포츠인가요?",
+      "answers": {
+        "Water": "물",
+        "Winter": "겨울",
+        "Desert": "사막",
+        "Indoor": "실내"
+      }
+    },
+    "sports:80": {
+      "question": "스피드 스케이팅이 언제 열리나요?",
+      "answers": {
+        "Grass": "잔디",
+        "Ice": "얼음",
+        "Water": "물",
+        "Sand": "모래"
+      }
+    },
+    "sports:81": {
+      "question": "'스트라이크'와 '스페어'라는 용어를 사용하는 스포츠는 무엇입니까?",
+      "answers": {
+        "Bowling": "볼링",
+        "Golf": "골프",
+        "Tennis": "테니스",
+        "Cricket": "크리켓"
+      }
+    },
+    "sports:82": {
+      "question": "스누커의 최대 브레이크는 무엇입니까?",
+      "answers": {
+        "100": "100",
+        "147": "147",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:83": {
+      "question": "다트 3개로 얻은 최대 점수는?",
+      "answers": {
+        "120": "120",
+        "150": "150",
+        "180": "180",
+        "200": "200"
+      }
+    },
+    "sports:84": {
+      "question": "'펠로톤'은 어떤 스포츠의 라이더 그룹입니까?",
+      "answers": {
+        "Cycling": "사이클링",
+        "Swimming": "수영",
+        "Boxing": "복싱",
+        "Golf": "골프"
+      }
+    },
+    "sports:85": {
+      "question": "투르 드 프랑스는 주로 다음 지역에서 개최됩니다.",
+      "answers": {
+        "Italy": "이탈리아",
+        "Spain": "스페인",
+        "France": "프랑스",
+        "Belgium": "벨기에"
+      }
+    },
+    "sports:86": {
+      "question": "2022년 FIFA 월드컵이 주최된 곳은 어디인가요?",
+      "answers": {
+        "Russia": "러시아",
+        "Qatar": "카타르",
+        "Brazil": "브라질",
+        "USA": "미국"
+      }
+    },
+    "sports:87": {
+      "question": "FIFA 월드컵 트로피는 무엇으로 수여됩니까?",
+      "answers": {
+        "UEFA": "UEFA",
+        "FIFA": "FIFA",
+        "NBA": "NBA",
+        "IOC": "IOC"
+      }
+    },
+    "sports:88": {
+      "question": "축구에서 페널티킥은 대략 어떻게 될까요?",
+      "answers": {
+        "11 m": "11분",
+        "20 m": "20m",
+        "5 m": "5분",
+        "30 m": "30m"
+      }
+    },
+    "sports:89": {
+      "question": "축구 경기장에서 출발하는 선수는 총 몇 명입니까(두 팀 모두)?",
+      "answers": {
+        "18": "18",
+        "20": "20",
+        "22": "22",
+        "24": "24"
+      }
+    },
+    "sports:90": {
+      "question": "'러브', '듀스', '에이스'가 특징인 스포츠는 무엇인가요?",
+      "answers": {
+        "Golf": "골프",
+        "Tennis": "테니스",
+        "Cricket": "크리켓",
+        "Rugby": "럭비"
+      }
+    },
+    "sports:91": {
+      "question": "윔블던, US 오픈, 프랑스 오픈과 함께 네 번째 테니스 그랜드 슬램은?",
+      "answers": {
+        "Italian Open": "이탈리아 오픈",
+        "Australian Open": "호주 오픈",
+        "Madrid Open": "마드리드 오픈",
+        "Dubai Open": "두바이 오픈"
+      }
+    },
+    "sports:92": {
+      "question": "피겨 스케이팅은 어느 올림픽에 등장합니까?",
+      "answers": {
+        "Summer": "여름",
+        "Winter": "겨울",
+        "Both equally": "둘 다 동일하게",
+        "Neither": "둘 다 아님"
+      }
+    },
+    "sports:93": {
+      "question": "야구팀의 경기장에는 몇 명의 선수가 있나요?",
+      "answers": {
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "11"
+      }
+    },
+    "sports:94": {
+      "question": "2008년 하계 올림픽을 주최한 사람은 누구입니까?",
+      "answers": {
+        "London": "런던",
+        "Beijing": "베이징",
+        "Athens": "아테네",
+        "Sydney": "시드니"
+      }
+    },
+    "sports:95": {
+      "question": "조정 경주가 개최됩니까?",
+      "answers": {
+        "A track": "트랙",
+        "Water": "물",
+        "Ice": "얼음",
+        "Grass": "잔디"
+      }
+    },
+    "sports:96": {
+      "question": "'캐디'를 사용하는 스포츠는 무엇인가요?",
+      "answers": {
+        "Golf": "골프",
+        "Tennis": "테니스",
+        "Boxing": "복싱",
+        "Cycling": "사이클링"
+      }
+    },
+    "sports:97": {
+      "question": "높이뛰기와 장대높이뛰기는 어떤 스포츠에 속합니까?",
+      "answers": {
+        "Gymnastics": "체조",
+        "Athletics": "육상",
+        "Swimming": "수영",
+        "Cycling": "사이클링"
+      }
+    },
+    "sports:98": {
+      "question": "하계 올림픽을 가장 많이 개최한 국가는 어디입니까?",
+      "answers": {
+        "France": "프랑스",
+        "USA": "미국",
+        "Greece": "그리스",
+        "Japan": "일본"
+      }
+    },
+    "sports:99": {
+      "question": "펜싱 경쟁자들은?",
+      "answers": {
+        "Bat": "박쥐",
+        "Sword/blade": "검/블레이드",
+        "Racket": "라켓",
+        "Club": "클럽"
+      }
+    },
+    "sports:100": {
+      "question": "롤랑가로스에서는 어떤 스포츠를 진행하나요?",
+      "answers": {
+        "Golf": "골프",
+        "Tennis": "테니스",
+        "Rugby": "럭비",
+        "Cycling": "사이클링"
+      }
+    },
+    "sports:101": {
+      "question": "금메달을 딴 마라톤 선수는?",
+      "answers": {
+        "Trophy only": "트로피만",
+        "Gold medal": "금메달",
+        "Cash prize only": "현금 상품만 해당",
+        "Belt": "벨트"
+      }
+    },
+    "art:0": {
+      "question": "모나리자를 그린 사람은 누구인가요?",
+      "answers": {
+        "Van Gogh": "반 고흐",
+        "Picasso": "피카소",
+        "Leonardo da Vinci": "레오나르도 다빈치",
+        "Michelangelo": "미켈란젤로"
+      }
+    },
+    "art:1": {
+      "question": "'별이 빛나는 밤'은 누가 그렸나요?",
+      "answers": {
+        "Monet": "모네",
+        "Van Gogh": "반 고흐",
+        "Dalí": "달리",
+        "Rembrandt": "렘브란트"
+      }
+    },
+    "art:2": {
+      "question": "모나리자는 어느 박물관에 전시되어 있나요?",
+      "answers": {
+        "The Met": "더 메트",
+        "Louvre": "루브르",
+        "Prado": "프라도",
+        "Uffizi": "우피치"
+      }
+    },
+    "art:3": {
+      "question": "자신의 귀 일부를 자른 것으로 유명한 아티스트는 누구인가요?",
+      "answers": {
+        "Picasso": "피카소",
+        "Van Gogh": "반 고흐",
+        "Dalí": "달리",
+        "Monet": "모네"
+      }
+    },
+    "art:4": {
+      "question": "시스티나 성당의 천장을 그린 사람은 누구입니까?",
+      "answers": {
+        "Raphael": "라파엘",
+        "Michelangelo": "미켈란젤로",
+        "Da Vinci": "다빈치",
+        "Donatello": "도나텔로"
+      }
+    },
+    "art:5": {
+      "question": "파블로 피카소와 관련된 예술 운동은 무엇입니까?",
+      "answers": {
+        "Impressionism": "인상주의",
+        "Cubism": "입체파",
+        "Surrealism": "초현실주의",
+        "Baroque": "바로크"
+      }
+    },
+    "art:6": {
+      "question": "살바도르 달리는 어떤 예술 스타일로 유명합니까?",
+      "answers": {
+        "Realism": "사실주의",
+        "Surrealism": "초현실주의",
+        "Pop Art": "팝아트",
+        "Gothic": "고딕"
+      }
+    },
+    "art:7": {
+      "question": "'절규'를 그린 사람은 누구인가요?",
+      "answers": {
+        "Munch": "뭉크",
+        "Klimt": "클림트",
+        "Warhol": "워홀",
+        "Cézanne": "세잔"
+      }
+    },
+    "art:8": {
+      "question": "캠벨 수프 캔 그림으로 유명한 화가는 누구인가요?",
+      "answers": {
+        "Warhol": "워홀",
+        "Pollock": "폴락",
+        "Rothko": "로스코",
+        "Bacon": "베이컨"
+      }
+    },
+    "art:9": {
+      "question": "'진주귀걸이를 한 소녀'는 누가 그렸나요?",
+      "answers": {
+        "Vermeer": "베르메르",
+        "Rembrandt": "렘브란트",
+        "Rubens": "루벤스",
+        "Bosch": "보쉬"
+      }
+    },
+    "art:10": {
+      "question": "파란색과 노란색 페인트를 섞으면 어떤 색이 될까요?",
+      "answers": {
+        "Purple": "보라색",
+        "Green": "녹색",
+        "Orange": "오렌지",
+        "Brown": "브라운"
+      }
+    },
+    "art:11": {
+      "question": "클로드 모네는 어떤 운동의 선두 인물이었습니까?",
+      "answers": {
+        "Impressionism": "인상주의",
+        "Cubism": "입체파",
+        "Dadaism": "다다이즘",
+        "Realism": "사실주의"
+      }
+    },
+    "art:12": {
+      "question": "대리석 조각상 '다비드'를 조각한 사람은?",
+      "answers": {
+        "Bernini": "베르니니",
+        "Michelangelo": "미켈란젤로",
+        "Rodin": "로댕",
+        "Donatello": "도나텔로"
+      }
+    },
+    "art:13": {
+      "question": "다음 중 기본 색상은 무엇입니까?",
+      "answers": {
+        "Green": "녹색",
+        "Orange": "오렌지",
+        "Red": "빨간색",
+        "Purple": "보라색"
+      }
+    },
+    "art:14": {
+      "question": "'게르니카'는 어떤 작가의 유명한 작품인가요?",
+      "answers": {
+        "Dalí": "달리",
+        "Picasso": "피카소",
+        "Miró": "미로",
+        "Goya": "고야"
+      }
+    },
+    "art:15": {
+      "question": "젖은 회반죽에 그림을 그리는 것을 ?",
+      "answers": {
+        "Fresco": "프레스코",
+        "Collage": "콜라주",
+        "Etching": "에칭",
+        "Mosaic": "모자이크"
+      }
+    },
+    "art:16": {
+      "question": "'생각하는 사람' 조각품은?",
+      "answers": {
+        "Rodin": "로댕",
+        "Michelangelo": "미켈란젤로",
+        "Bernini": "베르니니",
+        "Calder": "칼더"
+      }
+    },
+    "art:17": {
+      "question": "유성 페인트를 칠하는 데 전통적으로 사용되는 도구는 무엇입니까?",
+      "answers": {
+        "Chisel": "끌",
+        "Brush": "브러시",
+        "Pen": "펜",
+        "Roller": "롤러"
+      }
+    },
+    "art:18": {
+      "question": "'해바라기'는?",
+      "answers": {
+        "Monet": "모네",
+        "Van Gogh": "반 고흐",
+        "Cézanne": "세잔",
+        "Gauguin": "고갱"
+      }
+    },
+    "art:19": {
+      "question": "'최후의 만찬' 벽화를 그린 사람은 누구인가요?",
+      "answers": {
+        "Raphael": "라파엘",
+        "Leonardo da Vinci": "레오나르도 다빈치",
+        "Caravaggio": "카라바지오",
+        "Titian": "티치아노"
+      }
+    },
+    "art:20": {
+      "question": "'드립' 그림으로 유명한 작가는 누구인가요?",
+      "answers": {
+        "Jackson Pollock": "잭슨 폴락",
+        "Rothko": "로스코",
+        "Warhol": "워홀",
+        "Dalí": "달리"
+      }
+    },
+    "art:21": {
+      "question": "'기억의 지속'(녹는 시계)은?",
+      "answers": {
+        "Magritte": "마그리트",
+        "Dalí": "달리",
+        "Miró": "미로",
+        "Ernst": "에른스트"
+      }
+    },
+    "art:22": {
+      "question": "프리다 칼로는 그녀로 가장 잘 알려져 있나요?",
+      "answers": {
+        "Landscapes": "풍경",
+        "Self-portraits": "자화상",
+        "Sculptures": "조각품",
+        "Murals only": "벽화만"
+      }
+    },
+    "art:23": {
+      "question": "자유의 여신상은 미국에서 선물로 받았나요?",
+      "answers": {
+        "Britain": "영국",
+        "France": "프랑스",
+        "Spain": "스페인",
+        "Italy": "이탈리아"
+      }
+    },
+    "art:24": {
+      "question": "빨간색과 노란색 페인트를 섞으면 어떻게 될까요?",
+      "answers": {
+        "Green": "녹색",
+        "Orange": "오렌지",
+        "Purple": "보라색",
+        "Brown": "브라운"
+      }
+    },
+    "art:25": {
+      "question": "빨간색과 파란색 페인트를 섞으면 어떻게 될까요?",
+      "answers": {
+        "Green": "녹색",
+        "Purple": "보라색",
+        "Orange": "오렌지",
+        "Brown": "브라운"
+      }
+    },
+    "art:26": {
+      "question": "세 가지 기본 페인트 색상은 빨간색, 노란색, 그리고 무엇입니까?",
+      "answers": {
+        "Green": "녹색",
+        "Blue": "파란색",
+        "Orange": "오렌지",
+        "Purple": "보라색"
+      }
+    },
+    "art:27": {
+      "question": "수련 그림으로 유명한 화가는 누구인가요?",
+      "answers": {
+        "Monet": "모네",
+        "Manet": "마네",
+        "Degas": "드가",
+        "Renoir": "르누아르"
+      }
+    },
+    "art:28": {
+      "question": "미켈란젤로의 유명한 피렌체 동상은 무엇을 묘사하고 있나요?",
+      "answers": {
+        "Caesar": "시저",
+        "David": "데이비드",
+        "Apollo": "아폴로",
+        "Hercules": "헤라클레스"
+      }
+    },
+    "art:29": {
+      "question": "아름다운 손글씨의 예술을 뭐라고 부르나요?",
+      "answers": {
+        "Origami": "종이접기",
+        "Calligraphy": "서예",
+        "Etching": "에칭",
+        "Collage": "콜라주"
+      }
+    },
+    "art:30": {
+      "question": "사람을 묘사한 그림은?",
+      "answers": {
+        "Landscape": "풍경",
+        "Portrait": "초상화",
+        "Still life": "정물",
+        "Mural": "벽화"
+      }
+    },
+    "art:31": {
+      "question": "과일이나 사물을 그린 그림은?",
+      "answers": {
+        "Portrait": "초상화",
+        "Still life": "정물",
+        "Landscape": "풍경",
+        "Mural": "벽화"
+      }
+    },
+    "art:32": {
+      "question": "고전 조각상은 전통적으로 조각되어 있습니까?",
+      "answers": {
+        "Marble": "대리석",
+        "Plastic": "플라스틱",
+        "Paper": "종이",
+        "Glass": "유리"
+      }
+    },
+    "art:33": {
+      "question": "앤디 워홀은 어떤 운동의 리더였습니까?",
+      "answers": {
+        "Pop Art": "팝아트",
+        "Cubism": "입체파",
+        "Baroque": "바로크",
+        "Gothic": "고딕"
+      }
+    },
+    "art:34": {
+      "question": "빈센트 반 고흐는 어느 나라 출신인가요?",
+      "answers": {
+        "France": "프랑스",
+        "Netherlands": "네덜란드",
+        "Italy": "이탈리아",
+        "Spain": "스페인"
+      }
+    },
+    "art:35": {
+      "question": "파블로 피카소는 어느 나라 출신인가요?",
+      "answers": {
+        "Italy": "이탈리아",
+        "Spain": "스페인",
+        "France": "프랑스",
+        "Portugal": "포르투갈"
+      }
+    },
+    "art:36": {
+      "question": "레오나르도 다빈치는 어느 나라 출신인가요?",
+      "answers": {
+        "France": "프랑스",
+        "Italy": "이탈리아",
+        "Spain": "스페인",
+        "Greece": "그리스"
+      }
+    },
+    "art:37": {
+      "question": "루브르 박물관은 어느 도시에 있나요?",
+      "answers": {
+        "Rome": "로마",
+        "Paris": "파리",
+        "Madrid": "마드리드",
+        "London": "런던"
+      }
+    },
+    "art:38": {
+      "question": "재료를 표면에 접착하여 예술 작품을 만드는 것을 말합니다.",
+      "answers": {
+        "Fresco": "프레스코",
+        "Collage": "콜라주",
+        "Etching": "에칭",
+        "Casting": "캐스팅"
+      }
+    },
+    "art:39": {
+      "question": "인상주의는 어느 나라에서 시작되었습니까?",
+      "answers": {
+        "Italy": "이탈리아",
+        "France": "프랑스",
+        "Germany": "독일",
+        "Spain": "스페인"
+      }
+    },
+    "art:40": {
+      "question": "페인트의 기본 색상이 아닌 것은 무엇입니까?",
+      "answers": {
+        "Red": "빨간색",
+        "Blue": "파란색",
+        "Yellow": "노란색",
+        "Green": "녹색"
+      }
+    },
+    "art:41": {
+      "question": "미켈란젤로의 가장 유명한 천장은 어느 예배당에 있나요?",
+      "answers": {
+        "Sistine Chapel": "시스티나 성당",
+        "King's Chapel": "왕의 예배당",
+        "St Paul's": "세인트 폴스",
+        "Notre-Dame": "노트르담"
+      }
+    },
+    "art:42": {
+      "question": "'블루 시대'를 살았던 아티스트는 누구인가요?",
+      "answers": {
+        "Picasso": "피카소",
+        "Monet": "모네",
+        "Rembrandt": "렘브란트",
+        "Turner": "터너"
+      }
+    },
+    "art:43": {
+      "question": "렘브란트는 어느 나라 출신의 화가였습니까?",
+      "answers": {
+        "Netherlands": "네덜란드",
+        "France": "프랑스",
+        "Italy": "이탈리아",
+        "England": "영국"
+      }
+    },
+    "art:44": {
+      "question": "'야경'을 그린 사람은 누구인가요?",
+      "answers": {
+        "Vermeer": "베르메르",
+        "Rembrandt": "렘브란트",
+        "Rubens": "루벤스",
+        "Hals": "할스"
+      }
+    },
+    "art:45": {
+      "question": "회화, 조각, 드로잉은 어떤 유형인가요?",
+      "answers": {
+        "Music": "음악",
+        "Visual arts": "시각 예술",
+        "Literature": "문학",
+        "Dance": "댄스"
+      }
+    },
+    "art:46": {
+      "question": "수채화는?",
+      "answers": {
+        "Sculpture": "조각품",
+        "Paint": "페인트",
+        "Camera": "카메라",
+        "Clay": "클레이"
+      }
+    },
+    "art:47": {
+      "question": "'이젤'은 어떤 용도로 사용되나요?",
+      "answers": {
+        "Mix clay": "믹스 클레이",
+        "Hold a canvas while painting": "캔버스를 잡고 그림을 그립니다.",
+        "Cut marble": "대리석 절단",
+        "Frame photos": "사진 액자"
+      }
+    },
+    "art:48": {
+      "question": "모나리자는 신비로움으로 유명하죠?",
+      "answers": {
+        "Hat": "모자",
+        "Smile": "미소",
+        "Dress": "드레스",
+        "Crown": "크라운"
+      }
+    },
+    "art:49": {
+      "question": "Banksy로 유명한 아티스트는 무엇인가요?",
+      "answers": {
+        "Classical portraits": "고전 초상화",
+        "Street art": "거리 예술",
+        "Marble statues": "대리석 조각상",
+        "Frescoes": "프레스코화"
+      }
+    },
+    "art:50": {
+      "question": "빛의 기본 색상은 빨간색, 녹색 및?",
+      "answers": {
+        "Yellow": "노란색",
+        "Blue": "파란색",
+        "Purple": "보라색",
+        "White": "화이트"
+      }
+    },
+    "art:51": {
+      "question": "입체파는?",
+      "answers": {
+        "Realistic detail": "사실적인 디테일",
+        "Geometric shapes": "기하학적 모양",
+        "Only circles": "서클만",
+        "Photographs": "사진"
+      }
+    },
+    "art:52": {
+      "question": "'벽화'는 땅에 그린 그림인가요?",
+      "answers": {
+        "Small canvas": "작은 캔버스",
+        "Wall": "벽",
+        "Plate": "접시",
+        "Paper": "종이"
+      }
+    },
+    "art:53": {
+      "question": "'비너스의 탄생'을 그린 사람은 누구인가요?",
+      "answers": {
+        "Botticelli": "보티첼리",
+        "Raphael": "라파엘",
+        "Giotto": "지오토",
+        "Titian": "티치아노"
+      }
+    },
+    "art:54": {
+      "question": "르네상스 예술 시대는 언제 시작되었나요?",
+      "answers": {
+        "France": "프랑스",
+        "Italy": "이탈리아",
+        "England": "영국",
+        "Germany": "독일"
+      }
+    },
+    "art:55": {
+      "question": "살바도르 달리는 그의 독특한 것으로 유명했습니까?",
+      "answers": {
+        "Beard": "수염",
+        "Moustache": "콧수염",
+        "Hat": "모자",
+        "Glasses": "안경"
+      }
+    },
+    "art:56": {
+      "question": "도자기는 주로 무엇으로 만들어지나요?",
+      "answers": {
+        "Metal": "금속",
+        "Clay": "점토",
+        "Glass": "유리",
+        "Wood": "목재"
+      }
+    },
+    "art:57": {
+      "question": "따뜻한 색으로 간주되는 것은 무엇입니까?",
+      "answers": {
+        "Blue": "파란색",
+        "Red": "빨간색",
+        "Green": "녹색",
+        "Purple": "보라색"
+      }
+    },
+    "art:58": {
+      "question": "쿨한 색상으로 간주되는 색상은 무엇인가요?",
+      "answers": {
+        "Red": "빨간색",
+        "Orange": "오렌지",
+        "Blue": "파란색",
+        "Yellow": "노란색"
+      }
+    },
+    "art:59": {
+      "question": "발레 댄서 그림으로 유명한 예술가는 누구인가요?",
+      "answers": {
+        "Degas": "드가",
+        "Monet": "모네",
+        "Cézanne": "세잔",
+        "Seurat": "쇠라"
+      }
+    },
+    "art:60": {
+      "question": "'점묘법'(점으로 그리는 그림)이 연결되어 있나요?",
+      "answers": {
+        "Seurat": "쇠라",
+        "Van Gogh": "반 고흐",
+        "Klimt": "클림트",
+        "Munch": "뭉크"
+      }
+    },
+    "art:61": {
+      "question": "구스타프 클림트의 '키스'에는 다음과 같은 표현이 많이 사용된 것으로 유명합니다.",
+      "answers": {
+        "Silver": "실버",
+        "Gold": "골드",
+        "Blue": "파란색",
+        "Black": "블랙"
+      }
+    },
+    "art:62": {
+      "question": "빠른 스케치는 일반적으로?",
+      "answers": {
+        "Chisel": "끌",
+        "Pencil": "연필",
+        "Roller": "롤러",
+        "Clay": "클레이"
+      }
+    },
+    "art:63": {
+      "question": "추상 미술은 일반적으로 시도하지 않습니까?",
+      "answers": {
+        "Use color": "색상 사용",
+        "Represent reality exactly": "현실을 정확하게 표현",
+        "Use shapes": "도형 사용",
+        "Be creative": "창의력을 발휘하세요"
+      }
+    },
+    "art:64": {
+      "question": "반 고흐 박물관이 있는 도시는 어디인가요?",
+      "answers": {
+        "Amsterdam": "암스테르담",
+        "London": "런던",
+        "Rome": "로마",
+        "Madrid": "마드리드"
+      }
+    },
+    "art:65": {
+      "question": "오귀스트 로댕은 주로?",
+      "answers": {
+        "Painter": "화가",
+        "Sculptor": "조각가",
+        "Photographer": "사진작가",
+        "Architect": "건축가"
+      }
+    },
+    "art:66": {
+      "question": "MoMA(현대 미술관)는 어디에 있나요?",
+      "answers": {
+        "Paris": "파리",
+        "New York": "뉴욕",
+        "Rome": "로마",
+        "Tokyo": "도쿄"
+      }
+    },
+    "art:67": {
+      "question": "프라도 미술관은 어디에 있나요?",
+      "answers": {
+        "Madrid": "마드리드",
+        "Paris": "파리",
+        "Rome": "로마",
+        "London": "런던"
+      }
+    },
+    "art:68": {
+      "question": "'키아로스쿠로(Chiaroscuro)'는?",
+      "answers": {
+        "Bright colors": "밝은 색상",
+        "Light and shadow": "빛과 그림자",
+        "Straight lines": "직선",
+        "Dots": "점"
+      }
+    },
+    "art:69": {
+      "question": "그림 캔버스는 일반적으로 어떤 모양입니까?",
+      "answers": {
+        "Round": "라운드",
+        "Rectangular": "직사각형",
+        "Triangular": "삼각형",
+        "Star-shaped": "별 모양"
+      }
+    },
+    "art:70": {
+      "question": "자화상이 보여요?",
+      "answers": {
+        "The artist themselves": "아티스트 본인",
+        "A landscape": "풍경",
+        "A building": "건물",
+        "An animal": "동물"
+      }
+    },
+    "art:71": {
+      "question": "미켈란젤로, 레오나르도, 라파엘로는?",
+      "answers": {
+        "Baroque": "바로크",
+        "Renaissance": "르네상스",
+        "Modern era": "현대 시대",
+        "Gothic": "고딕"
+      }
+    },
+    "art:72": {
+      "question": "초현실주의는 종종 묘사합니까?",
+      "answers": {
+        "Everyday realism": "일상의 현실감",
+        "Dreamlike, strange scenes": "꿈같고 이상한 장면",
+        "Only portraits": "인물 사진만",
+        "Pure geometry": "순수 기하학"
+      }
+    },
+    "art:73": {
+      "question": "빨간색과 흰색을 섞으면 어떤 색이 되나요?",
+      "answers": {
+        "Blue": "파란색",
+        "Pink": "분홍색",
+        "Green": "초록색",
+        "Brown": "갈색"
+      }
+    },
+    "art:74": {
+      "question": "생각하는 남자의 유명한 조각상은?",
+      "answers": {
+        "The Dreamer": "몽상가",
+        "The Thinker": "사상가",
+        "The Watcher": "감시자",
+        "The Sitter": "시터"
+      }
+    },
+    "art:75": {
+      "question": "예술로서의 사진은?",
+      "answers": {
+        "Brush": "브러시",
+        "Camera": "카메라",
+        "Chisel": "끌",
+        "Loom": "직기"
+      }
+    },
+    "art:76": {
+      "question": "'Vincent'는 어떤 화가의 이름인가요?",
+      "answers": {
+        "Monet": "모네",
+        "Van Gogh": "반 고흐",
+        "Picasso": "피카소",
+        "Dalí": "달리"
+      }
+    },
+    "art:77": {
+      "question": "우피치 미술관은 어느 나라에 있나요?",
+      "answers": {
+        "Italy": "이탈리아",
+        "France": "프랑스",
+        "Spain": "스페인",
+        "Greece": "그리스"
+      }
+    },
+    "art:78": {
+      "question": "종이접기는 예술인가요?",
+      "answers": {
+        "Paper folding": "종이 접기",
+        "Metalwork": "금속 세공",
+        "Glassblowing": "유리 불기",
+        "Painting": "그림"
+      }
+    },
+    "art:79": {
+      "question": "평생 동안 많은 자화상을 그린 화가는 누구입니까?",
+      "answers": {
+        "Rembrandt": "렘브란트",
+        "Botticelli": "보티첼리",
+        "Raphael": "라파엘",
+        "Giotto": "지오토"
+      }
+    },
+    "art:80": {
+      "question": "'팔레트'는 어떤 용도로 사용되나요?",
+      "answers": {
+        "Hold and mix paints": "페인트를 잡고 혼합합니다.",
+        "Cut wood": "나무 자르기",
+        "Frame art": "프레임 아트",
+        "Fire clay": "내화 점토"
+      }
+    },
+    "art:81": {
+      "question": "가나가와의 대파도는 일본인이 유명하다고요?",
+      "answers": {
+        "Sculpture": "조각품",
+        "Woodblock print": "목판화",
+        "Oil painting": "유화",
+        "Photograph": "사진"
+      }
+    },
+    "art:82": {
+      "question": "일반적인 조각 재료는 무엇인가요?",
+      "answers": {
+        "Bronze": "브론즈",
+        "Watercolor": "수채화",
+        "Charcoal": "숯",
+        "Ink": "잉크"
+      }
+    },
+    "art:83": {
+      "question": "'소실점'은 어떻게 사용되나요?",
+      "answers": {
+        "Music": "음악",
+        "Perspective drawing": "투시도",
+        "Casting": "캐스팅",
+        "Weaving": "직조"
+      }
+    },
+    "art:84": {
+      "question": "레오나르도 다 빈치는 다음과 같은 인물로도 유명했습니다.",
+      "answers": {
+        "Athlete": "선수",
+        "Inventor": "발명가",
+        "Singer": "가수",
+        "Sailor": "선원"
+      }
+    },
+    "art:85": {
+      "question": "'갤러리'란?",
+      "answers": {
+        "Store food": "음식 저장",
+        "Display artworks": "작품 전시",
+        "Repair cars": "자동차 수리",
+        "Grow plants": "식물 재배"
+      }
+    },
+    "art:86": {
+      "question": "바로크 예술은 무엇으로 알려져 있나요?",
+      "answers": {
+        "Minimal and plain": "최소 및 일반",
+        "Dramatic and ornate": "드라마틱하고 화려한",
+        "Black and white only": "흑백만",
+        "Purely geometric": "순수 기하학적"
+      }
+    },
+    "art:87": {
+      "question": "미술품 경매로 유명한 곳은 어디인가요?",
+      "answers": {
+        "Sotheby's": "소더비",
+        "Nasdaq": "나스닥",
+        "Airbnb": "에어비앤비",
+        "Netflix": "넷플릭스"
+      }
+    },
+    "art:88": {
+      "question": "'밀로의 비너스'는 고대의 유명한 작품이죠?",
+      "answers": {
+        "Painting": "그림",
+        "Statue": "조각상",
+        "Vase": "꽃병",
+        "Mosaic": "모자이크"
+      }
+    },
+    "art:89": {
+      "question": "스테인드 글라스 예술은 어디에서 흔히 볼 수 있나요?",
+      "answers": {
+        "Cathedrals": "대성당",
+        "Kitchens": "주방",
+        "Garages": "차고",
+        "Stadiums": "경기장"
+      }
+    },
+    "art:90": {
+      "question": "숯은 일반적으로 어떤 용도로 사용됩니까?",
+      "answers": {
+        "Painting walls": "벽 페인팅",
+        "Drawing/sketching": "그리기/스케치",
+        "Carving marble": "대리석 조각",
+        "Printing": "인쇄 중"
+      }
+    },
+    "art:91": {
+      "question": "테이트 미술관은 어느 도시에 있나요?",
+      "answers": {
+        "Paris": "파리",
+        "London": "런던",
+        "Madrid": "마드리드",
+        "Rome": "로마"
+      }
+    },
+    "art:92": {
+      "question": "'조각'을 가장 잘 설명하는 것은 무엇입니까?",
+      "answers": {
+        "A 2D painting": "2D 그림",
+        "A 3D work of art": "3D 예술 작품",
+        "A song": "노래",
+        "A poem": "시"
+      }
+    },
+    "art:93": {
+      "question": "'현대미술'은 일반적으로 대략적으로 미술을 지칭하는데요?",
+      "answers": {
+        "Ancient times": "고대",
+        "The late 1800s onward": "1800년대 후반 이후",
+        "Medieval times": "중세 시대",
+        "Prehistory": "선사시대"
+      }
+    },
+    "art:94": {
+      "question": "타히티 그림과 관련된 예술가는 누구입니까?",
+      "answers": {
+        "Gauguin": "고갱",
+        "Monet": "모네",
+        "Rembrandt": "렘브란트",
+        "Vermeer": "베르메르"
+      }
+    },
+    "art:95": {
+      "question": "프레스코화가 그려져 있나요?",
+      "answers": {
+        "Canvas": "캔버스",
+        "Wet plaster": "젖은 석고",
+        "Paper": "종이",
+        "Wood panel": "목재 패널"
+      }
+    },
+    "art:96": {
+      "question": "시스티나 성당은 어디에 있습니까?",
+      "answers": {
+        "Vatican City": "바티칸 시국",
+        "Florence": "피렌체",
+        "Venice": "베니스",
+        "Naples": "나폴리"
+      }
+    },
+    "art:97": {
+      "question": "다음 중 예술 스타일은 무엇인가요?",
+      "answers": {
+        "Impressionism": "인상주의",
+        "Photosynthesis": "광합성",
+        "Gravity": "중력",
+        "Inflation": "인플레이션"
+      }
+    },
+    "art:98": {
+      "question": "조각품을 만드는 사람은?",
+      "answers": {
+        "Painter": "화가",
+        "Sculptor": "조각가",
+        "Novelist": "소설가",
+        "Composer": "작곡가"
+      }
+    },
+    "art:99": {
+      "question": "인상주의를 명명한 '인상, 일출'은 누가 그렸나요?",
+      "answers": {
+        "Monet": "모네",
+        "Manet": "마네",
+        "Renoir": "르누아르",
+        "Degas": "드가"
+      }
+    },
+    "history:0": {
+      "question": "제2차 세계 대전은 몇 년에 끝났습니까?",
+      "answers": {
+        "1918": "1918년",
+        "1943": "1943년",
+        "1945": "1945년",
+        "1950": "1950년"
+      }
+    },
+    "history:1": {
+      "question": "미국의 초대 대통령은 누구였나요?",
+      "answers": {
+        "Lincoln": "링컨",
+        "Washington": "워싱턴",
+        "Jefferson": "제퍼슨",
+        "Adams": "아담스"
+      }
+    },
+    "history:2": {
+      "question": "대 피라미드는 어느 고대 문명에 의해 건설되었습니까?",
+      "answers": {
+        "Romans": "로마서",
+        "Greeks": "그리스인",
+        "Egyptians": "이집트인",
+        "Mayans": "마야인"
+      }
+    },
+    "history:3": {
+      "question": "베를린 장벽이 무너진 해는 언제입니까?",
+      "answers": {
+        "1979": "1979년",
+        "1985": "1985년",
+        "1989": "1989년",
+        "1991": "1991년"
+      }
+    },
+    "history:4": {
+      "question": "소크라테스의 학생이었던 철학자는 누구입니까?",
+      "answers": {
+        "Aristotle": "아리스토텔레스",
+        "Plato": "플라톤",
+        "Pythagoras": "피타고라스",
+        "Homer": "호머"
+      }
+    },
+    "history:5": {
+      "question": "1912년에 빙산에 부딪힌 후 침몰한 배는 무엇입니까?",
+      "answers": {
+        "Lusitania": "루시타니아",
+        "Titanic": "타이타닉",
+        "Bismarck": "비스마르크",
+        "Mayflower": "메이플라워"
+      }
+    },
+    "history:6": {
+      "question": "1492년에 아메리카 대륙에 도착한 사람은 누구입니까?",
+      "answers": {
+        "Magellan": "마젤란",
+        "Columbus": "콜럼버스",
+        "Vespucci": "베스푸치",
+        "Cook": "요리"
+      }
+    },
+    "history:7": {
+      "question": "프랑스 혁명은 언제 시작되었습니까?",
+      "answers": {
+        "1776": "1776년",
+        "1789": "1789",
+        "1804": "1804",
+        "1815": "1815년"
+      }
+    },
+    "history:8": {
+      "question": "징기스칸이 세운 제국은 어디입니까?",
+      "answers": {
+        "Ottoman": "오토만",
+        "Mongol": "몽골어",
+        "Persian": "페르시아어",
+        "Roman": "로마자"
+      }
+    },
+    "history:9": {
+      "question": "제2차 세계 대전 당시 나치 독일을 이끌었던 사람은 누구입니까?",
+      "answers": {
+        "Mussolini": "무솔리니",
+        "Hitler": "히틀러",
+        "Stalin": "스탈린",
+        "Franco": "프랑코"
+      }
+    },
+    "history:10": {
+      "question": "콜로세움은 어느 도시에 있나요?",
+      "answers": {
+        "Athens": "아테네",
+        "Rome": "로마",
+        "Cairo": "카이로",
+        "Istanbul": "이스탄불"
+      }
+    },
+    "history:11": {
+      "question": "카이사르 및 마크 안토니우스와 동맹을 맺은 이집트 여왕은 누구입니까?",
+      "answers": {
+        "Nefertiti": "네페르티티",
+        "Cleopatra": "클레오파트라",
+        "Hatshepsut": "하트셉수트",
+        "Isis": "이시스"
+      }
+    },
+    "history:12": {
+      "question": "냉전은 주로 미국과?",
+      "answers": {
+        "China": "중국",
+        "USSR": "소련",
+        "Germany": "독일",
+        "Japan": "일본"
+      }
+    },
+    "history:13": {
+      "question": "인간이 처음으로 달에 착륙한 해는 언제입니까?",
+      "answers": {
+        "1959": "1959년",
+        "1965": "1965년",
+        "1969": "1969년",
+        "1972": "1972년"
+      }
+    },
+    "history:14": {
+      "question": "르네상스는 어느 나라에서 시작되었나요?",
+      "answers": {
+        "France": "프랑스",
+        "Italy": "이탈리아",
+        "England": "영국",
+        "Spain": "스페인"
+      }
+    },
+    "history:15": {
+      "question": "미국 남북전쟁은 북부와 북부 사이에서 벌어졌습니다.",
+      "answers": {
+        "East": "동쪽",
+        "South": "남쪽",
+        "West": "서부",
+        "Midwest": "중서부"
+      }
+    },
+    "history:16": {
+      "question": "민주주의를 창시한 고대 문명은 무엇입니까?",
+      "answers": {
+        "Rome": "로마",
+        "Greece": "그리스",
+        "Egypt": "이집트",
+        "Persia": "페르시아"
+      }
+    },
+    "history:17": {
+      "question": "인쇄기를 발명한 사람은?",
+      "answers": {
+        "Newton": "뉴턴",
+        "Gutenberg": "구텐베르크",
+        "Edison": "에디슨",
+        "Franklin": "프랭클린"
+      }
+    },
+    "history:18": {
+      "question": "고대 만리장성은 어느 나라에서 건설되었습니까?",
+      "answers": {
+        "India": "인도",
+        "China": "중국",
+        "Japan": "일본",
+        "Egypt": "이집트"
+      }
+    },
+    "history:19": {
+      "question": "베를린에 유명한 흉상을 전시한 이집트 여왕은 누구인가요?",
+      "answers": {
+        "Cleopatra": "클레오파트라",
+        "Nefertiti": "네페르티티",
+        "Hatshepsut": "하트셉수트",
+        "Isis": "이시스"
+      }
+    },
+    "history:20": {
+      "question": "제1차 세계대전이 시작된 해는 언제입니까?",
+      "answers": {
+        "1912": "1912년",
+        "1914": "1914년",
+        "1918": "1918년",
+        "1920": "1920년"
+      }
+    },
+    "history:21": {
+      "question": "제1차 세계대전이 끝난 연도는 언제입니까?",
+      "answers": {
+        "1916": "1916년",
+        "1918": "1918년",
+        "1920": "1920년",
+        "1922": "1922년"
+      }
+    },
+    "history:22": {
+      "question": "로마 제국은 어느 도시를 중심으로 형성되었습니까?",
+      "answers": {
+        "Athens": "아테네",
+        "Rome": "로마",
+        "Cairo": "카이로",
+        "Carthage": "카르타고"
+      }
+    },
+    "history:23": {
+      "question": "율리우스 카이사르는 고대의 지도자였습니까?",
+      "answers": {
+        "Greece": "그리스",
+        "Rome": "로마",
+        "Egypt": "이집트",
+        "Persia": "페르시아"
+      }
+    },
+    "history:24": {
+      "question": "미국 독립 선언문에 서명되었나요?",
+      "answers": {
+        "1776": "1776년",
+        "1789": "1789",
+        "1800": "1800",
+        "1812": "1812"
+      }
+    },
+    "history:25": {
+      "question": "나폴레옹 보나파르트는 어느 나라의 지도자였습니까?",
+      "answers": {
+        "Spain": "스페인",
+        "France": "프랑스",
+        "Italy": "이탈리아",
+        "Russia": "러시아"
+      }
+    },
+    "history:26": {
+      "question": "나폴레옹은 다음 전투에서 패배한 것으로 유명합니다.",
+      "answers": {
+        "Hastings": "헤이스팅스",
+        "Waterloo": "워털루",
+        "Gettysburg": "게티즈버그",
+        "Verdun": "베르됭"
+      }
+    },
+    "history:27": {
+      "question": "베를린 장벽이 어느 도시를 분할했습니까?",
+      "answers": {
+        "Munich": "뮌헨",
+        "Berlin": "베를린",
+        "Frankfurt": "프랑크푸르트",
+        "Vienna": "비엔나"
+      }
+    },
+    "history:28": {
+      "question": "어느 문명이 마추픽추를 건설했습니까?",
+      "answers": {
+        "Aztec": "아즈텍",
+        "Inca": "잉카",
+        "Maya": "마야",
+        "Olmec": "올멕"
+      }
+    },
+    "history:29": {
+      "question": "기자의 피라미드는 어디에 있습니까?",
+      "answers": {
+        "Iraq": "이라크",
+        "Egypt": "이집트",
+        "Sudan": "수단",
+        "Libya": "리비아"
+      }
+    },
+    "history:30": {
+      "question": "제2차 세계 대전 대부분의 기간 동안 영국 총리는 누구였습니까?",
+      "answers": {
+        "Chamberlain": "체임벌린",
+        "Churchill": "처칠",
+        "Attlee": "애틀리",
+        "Thatcher": "대처"
+      }
+    },
+    "history:31": {
+      "question": "타이타닉호가 침몰했을 때 어느 도시로 항해 중이었나요?",
+      "answers": {
+        "London": "런던",
+        "New York": "뉴욕",
+        "Boston": "보스턴",
+        "Halifax": "핼리팩스"
+      }
+    },
+    "history:32": {
+      "question": "최초로 세계 일주를 이끈 탐험가는 누구인가요?",
+      "answers": {
+        "Columbus": "콜럼버스",
+        "Magellan": "마젤란",
+        "Da Gama": "다 가마",
+        "Cook": "요리"
+      }
+    },
+    "history:33": {
+      "question": "'르네상스'라는 단어는 말 그대로?",
+      "answers": {
+        "Rebirth": "환생",
+        "Revolution": "혁명",
+        "Reform": "개혁",
+        "Return": "반환"
+      }
+    },
+    "history:34": {
+      "question": "고대 이집트인들은?",
+      "answers": {
+        "Latin": "라틴어",
+        "Hieroglyphics": "상형문자",
+        "Cyrillic": "키릴 문자",
+        "Runes": "룬"
+      }
+    },
+    "history:35": {
+      "question": "오스만 제국은 현대를 중심으로 하였습니까?",
+      "answers": {
+        "Egypt": "이집트",
+        "Turkey": "터키",
+        "Iran": "이란",
+        "Greece": "그리스"
+      }
+    },
+    "history:36": {
+      "question": "콘스탄티노플은 어느 도시의 옛 이름입니까?",
+      "answers": {
+        "Athens": "아테네",
+        "Istanbul": "이스탄불",
+        "Rome": "로마",
+        "Cairo": "카이로"
+      }
+    },
+    "history:37": {
+      "question": "1215년에 영국 왕의 권력을 제한한 문서는 무엇입니까?",
+      "answers": {
+        "Magna Carta": "마그나 카르타",
+        "Bill of Rights": "권리장전",
+        "Constitution": "헌법",
+        "Domesday Book": "둠즈데이 북"
+      }
+    },
+    "history:38": {
+      "question": "산업 혁명은 어느 나라에서 시작되었습니까?",
+      "answers": {
+        "USA": "미국",
+        "Britain": "영국",
+        "France": "프랑스",
+        "Germany": "독일"
+      }
+    },
+    "history:39": {
+      "question": "1963년에 암살된 미국 대통령은 누구입니까?",
+      "answers": {
+        "Lincoln": "링컨",
+        "Kennedy": "케네디",
+        "Roosevelt": "루즈벨트",
+        "Nixon": "닉슨"
+      }
+    },
+    "history:40": {
+      "question": "1달러 지폐에 등장하는 미국 대통령은 누구인가요?",
+      "answers": {
+        "Lincoln": "링컨",
+        "Washington": "워싱턴",
+        "Jefferson": "제퍼슨",
+        "Franklin": "프랭클린"
+      }
+    },
+    "history:41": {
+      "question": "인도의 비폭력 독립 운동을 이끈 사람은 누구입니까?",
+      "answers": {
+        "Nehru": "네루",
+        "Gandhi": "간디",
+        "Bose": "보스",
+        "Patel": "파텔"
+      }
+    },
+    "history:42": {
+      "question": "베를린 장벽은 어느 쪽에 세워졌습니까?",
+      "answers": {
+        "West Germany": "서독",
+        "East Germany": "동독",
+        "France": "프랑스",
+        "USA": "미국"
+      }
+    },
+    "history:43": {
+      "question": "미라로 유명한 고대 문명은 무엇입니까?",
+      "answers": {
+        "Greek": "그리스어",
+        "Egyptian": "이집트인",
+        "Roman": "로마자",
+        "Persian": "페르시아어"
+      }
+    },
+    "history:44": {
+      "question": "흑사병은 파괴적이었나요?",
+      "answers": {
+        "War": "전쟁",
+        "Plague": "전염병",
+        "Famine": "기근",
+        "Earthquake": "지진"
+      }
+    },
+    "history:45": {
+      "question": "개신교 개혁은 언제 시작되었습니까?",
+      "answers": {
+        "Martin Luther": "마틴 루터",
+        "Henry VIII": "헨리 8세",
+        "Calvin": "캘빈",
+        "Pope Leo": "교황 레오"
+      }
+    },
+    "history:46": {
+      "question": "고대 올림픽 게임은 언제부터 시작되었나요?",
+      "answers": {
+        "Rome": "로마",
+        "Greece": "그리스",
+        "Egypt": "이집트",
+        "Persia": "페르시아"
+      }
+    },
+    "history:47": {
+      "question": "우주에 간 최초의 인간은 누구였습니까?",
+      "answers": {
+        "Armstrong": "암스트롱",
+        "Gagarin": "가가린",
+        "Glenn": "글렌",
+        "Aldrin": "올드린"
+      }
+    },
+    "history:48": {
+      "question": "Neil Armstrong이 처음으로 그렇게 한 사람은 누구입니까?",
+      "answers": {
+        "Fly a plane": "비행기 조종",
+        "Walk on the Moon": "달 위를 걷다",
+        "Reach the South Pole": "남극에 도달",
+        "Climb Everest": "에베레스트 등반"
+      }
+    },
+    "history:49": {
+      "question": "소련(USSR)이 해체된 해는 언제입니까?",
+      "answers": {
+        "1985": "1985년",
+        "1989": "1989년",
+        "1991": "1991년",
+        "1993": "1993년"
+      }
+    },
+    "history:50": {
+      "question": "미국 독립선언문은 주로 다음 사람에 의해 작성되었습니다.",
+      "answers": {
+        "Washington": "워싱턴",
+        "Jefferson": "제퍼슨",
+        "Franklin": "프랭클린",
+        "Adams": "아담스"
+      }
+    },
+    "history:51": {
+      "question": "1620년에 어느 배가 순례자들을 미국으로 데려왔습니까?",
+      "answers": {
+        "Mayflower": "메이플라워",
+        "Titanic": "타이타닉",
+        "Santa Maria": "산타마리아",
+        "Beagle": "비글"
+      }
+    },
+    "history:52": {
+      "question": "크리스토퍼 콜럼버스는 다음의 깃발 아래 항해했습니다.",
+      "answers": {
+        "Portugal": "포르투갈",
+        "Spain": "스페인",
+        "Italy": "이탈리아",
+        "England": "영국"
+      }
+    },
+    "history:53": {
+      "question": "프랑스 혁명은?",
+      "answers": {
+        "Louvre": "루브르",
+        "Bastille": "바스티유",
+        "Versailles": "베르사유",
+        "Notre-Dame": "노트르담"
+      }
+    },
+    "history:54": {
+      "question": "이집트에 아직도 남아 있는 고대 불가사의는 무엇입니까?",
+      "answers": {
+        "Great Pyramid of Giza": "기자의 대 피라미드",
+        "Colosseum": "콜로세움",
+        "Parthenon": "파르테논 신전",
+        "Taj Mahal": "타지마할"
+      }
+    },
+    "history:55": {
+      "question": "타지마할은 어느 국가에 있나요?",
+      "answers": {
+        "Pakistan": "파키스탄",
+        "India": "인도",
+        "Iran": "이란",
+        "Turkey": "터키"
+      }
+    },
+    "history:56": {
+      "question": "제2차 세계대전 당시 소련을 이끌었던 인물은 누구입니까?",
+      "answers": {
+        "Lenin": "레닌",
+        "Stalin": "스탈린",
+        "Khrushchev": "흐루쇼프",
+        "Gorbachev": "고르바초프"
+      }
+    },
+    "history:57": {
+      "question": "2차 세계대전 때 히로시마에 원자폭탄이 떨어졌나요?",
+      "answers": {
+        "Tokyo": "도쿄",
+        "Nagasaki": "나가사키",
+        "Osaka": "오사카",
+        "Kyoto": "교토"
+      }
+    },
+    "history:58": {
+      "question": "국제 연맹은 다음의 전신이었습니다.",
+      "answers": {
+        "EU": "EU",
+        "United Nations": "유엔",
+        "NATO": "나토",
+        "WHO": "누구"
+      }
+    },
+    "history:59": {
+      "question": "유엔이 창설된 해는 언제입니까?",
+      "answers": {
+        "1919": "1919년",
+        "1945": "1945년",
+        "1950": "1950년",
+        "1960": "1960년"
+      }
+    },
+    "history:60": {
+      "question": "알렉산더 대왕은 어느 고대 왕국에서 왔습니까?",
+      "answers": {
+        "Rome": "로마",
+        "Macedonia": "마케도니아",
+        "Egypt": "이집트",
+        "Persia": "페르시아"
+      }
+    },
+    "history:61": {
+      "question": "고대 스파르타가 있던 나라는 어디입니까?",
+      "answers": {
+        "Italy": "이탈리아",
+        "Greece": "그리스",
+        "Egypt": "이집트",
+        "Turkey": "터키"
+      }
+    },
+    "history:62": {
+      "question": "냉전은 언제쯤 끝났습니까?",
+      "answers": {
+        "1965": "1965년",
+        "1975": "1975년",
+        "1991": "1991년",
+        "2001": "2001년"
+      }
+    },
+    "history:63": {
+      "question": "라이트 형제는 다음을 발명한 것으로 알려져 있습니다.",
+      "answers": {
+        "Car": "자동차",
+        "Airplane": "비행기",
+        "Telephone": "전화",
+        "Radio": "라디오"
+      }
+    },
+    "history:64": {
+      "question": "제2차 세계 대전의 D-Day 상륙이 일어난 날짜는 무엇입니까?",
+      "answers": {
+        "Italy": "이탈리아",
+        "Normandy, France": "프랑스 노르망디",
+        "Germany": "독일",
+        "Poland": "폴란드"
+      }
+    },
+    "history:65": {
+      "question": "백년 전쟁은 주로 영국과?",
+      "answers": {
+        "Spain": "스페인",
+        "France": "프랑스",
+        "Germany": "독일",
+        "Italy": "이탈리아"
+      }
+    },
+    "history:66": {
+      "question": "1980년대 영국의 '철의 여인' 총리는 누구였습니까?",
+      "answers": {
+        "Elizabeth II": "엘리자베스 2세",
+        "Thatcher": "대처",
+        "May": "5월",
+        "Merkel": "메르켈"
+      }
+    },
+    "history:67": {
+      "question": "고대 도시 폼페이가 파괴된 것은 무엇입니까?",
+      "answers": {
+        "A flood": "홍수",
+        "A volcano (Vesuvius)": "화산(베수비오)",
+        "An earthquake": "지진",
+        "A war": "전쟁"
+      }
+    },
+    "history:68": {
+      "question": "파라오가 통치했던 고대 국가는 어디입니까?",
+      "answers": {
+        "Greece": "그리스",
+        "Egypt": "이집트",
+        "Rome": "로마",
+        "Persia": "페르시아"
+      }
+    },
+    "history:69": {
+      "question": "크림 전쟁에 참전한 유명한 간호사는 누구입니까?",
+      "answers": {
+        "Curie": "퀴리",
+        "Nightingale": "나이팅게일",
+        "Earhart": "에어하트",
+        "Keller": "켈러"
+      }
+    },
+    "history:70": {
+      "question": "르네상스는 어느 이탈리아 도시와 가장 관련이 있습니까?",
+      "answers": {
+        "Milan": "밀라노",
+        "Florence": "피렌체",
+        "Naples": "나폴리",
+        "Turin": "토리노"
+      }
+    },
+    "history:71": {
+      "question": "노벨상을 수상한 최초의 여성은 누구입니까?",
+      "answers": {
+        "Curie": "퀴리",
+        "Franklin": "프랭클린",
+        "Meitner": "마이트너",
+        "Lovelace": "러브레이스"
+      }
+    },
+    "history:72": {
+      "question": "바이킹은 원래 어디에서 왔나요?",
+      "answers": {
+        "Scandinavia": "스칸디나비아",
+        "Spain": "스페인",
+        "Greece": "그리스",
+        "Egypt": "이집트"
+      }
+    },
+    "history:73": {
+      "question": "런던 대화재는 어느 해에 발생했습니까?",
+      "answers": {
+        "1620": "1620",
+        "1666": "1666",
+        "1700": "1700",
+        "1750": "1750"
+      }
+    },
+    "history:74": {
+      "question": "대공황을 시작한 월스트리트 붕괴가 있었나요?",
+      "answers": {
+        "1919": "1919년",
+        "1929": "1929년",
+        "1939": "1939년",
+        "1949": "1949년"
+      }
+    },
+    "history:75": {
+      "question": "소련 개혁 '글라스노스트'와 '페레스트로이카'를 누가 도입했습니까?",
+      "answers": {
+        "Stalin": "스탈린",
+        "Gorbachev": "고르바초프",
+        "Lenin": "레닌",
+        "Putin": "푸틴"
+      }
+    },
+    "history:76": {
+      "question": "대헌장은 어느 국가에서 서명되었습니까?",
+      "answers": {
+        "France": "프랑스",
+        "England": "영국",
+        "Italy": "이탈리아",
+        "Spain": "스페인"
+      }
+    },
+    "history:77": {
+      "question": "1498년에 바다를 통해 인도에 도착한 탐험가는 누구입니까?",
+      "answers": {
+        "Columbus": "콜럼버스",
+        "Vasco da Gama": "바스코 다 가마",
+        "Magellan": "마젤란",
+        "Cook": "요리"
+      }
+    },
+    "history:78": {
+      "question": "고대 마야인들은 주로 어느 지역에 살았습니까?",
+      "answers": {
+        "Central America": "중앙 아메리카",
+        "North Africa": "북아프리카",
+        "Southeast Asia": "동남아시아",
+        "Northern Europe": "북유럽"
+      }
+    },
+    "history:79": {
+      "question": "아즈텍 문명은 주로 현대에 위치했습니까?",
+      "answers": {
+        "Peru": "페루",
+        "Mexico": "멕시코",
+        "Brazil": "브라질",
+        "Chile": "칠레"
+      }
+    },
+    "history:80": {
+      "question": "냉전 시대의 우주 경쟁은?",
+      "answers": {
+        "Sun": "일요일",
+        "Moon": "달",
+        "Mars": "화성",
+        "Venus": "금성"
+      }
+    },
+    "history:81": {
+      "question": "에펠탑은 1889년 세계 박람회를 위해 세워졌습니다.",
+      "answers": {
+        "London": "런던",
+        "Paris": "파리",
+        "Rome": "로마",
+        "Berlin": "베를린"
+      }
+    },
+    "history:82": {
+      "question": "'95개조 논제'는 누가 썼나요?",
+      "answers": {
+        "Calvin": "캘빈",
+        "Martin Luther": "마틴 루터",
+        "Erasmus": "에라스무스",
+        "Henry VIII": "헨리 8세"
+      }
+    },
+    "history:83": {
+      "question": "참호전이 널리 퍼진 전쟁(1914-1918)은 무엇입니까?",
+      "answers": {
+        "WWII": "2차 세계대전",
+        "WWI": "1차 세계대전",
+        "Cold War": "냉전",
+        "Napoleonic Wars": "나폴레옹 전쟁"
+      }
+    },
+    "history:84": {
+      "question": "미국 남북전쟁이 끝난 연도는 언제입니까?",
+      "answers": {
+        "1776": "1776년",
+        "1812": "1812",
+        "1865": "1865년",
+        "1901": "1901"
+      }
+    },
+    "history:85": {
+      "question": "로마의 첫 번째 황제는 누구였나요?",
+      "answers": {
+        "Julius Caesar": "율리우스 카이사르",
+        "Augustus": "아우구스투스",
+        "Nero": "네로",
+        "Constantine": "콘스탄틴"
+      }
+    },
+    "history:86": {
+      "question": "실크로드가 유럽을 연결했습니까?",
+      "answers": {
+        "Africa": "아프리카",
+        "Asia": "아시아",
+        "America": "미국",
+        "Australia": "호주"
+      }
+    },
+    "history:87": {
+      "question": "자유의 여신상을 미국에 선물한 나라는 어디인가요?",
+      "answers": {
+        "UK": "영국",
+        "France": "프랑스",
+        "Spain": "스페인",
+        "Germany": "독일"
+      }
+    },
+    "history:88": {
+      "question": "중세 시대는 다음과 같이 알려져 있습니다.",
+      "answers": {
+        "Middle Ages": "중세",
+        "Stone Age": "석기 시대",
+        "Bronze Age": "청동기 시대",
+        "Space Age": "우주시대"
+      }
+    },
+    "history:89": {
+      "question": "쿠바 혁명을 이끈 사람은 누구인가요?",
+      "answers": {
+        "Guevara": "게바라",
+        "Castro": "카스트로",
+        "Batista": "바티스타",
+        "Allende": "아옌데"
+      }
+    },
+    "history:90": {
+      "question": "처음으로 원자폭탄을 만든 나라는 어디인가요?",
+      "answers": {
+        "Germany": "독일",
+        "USA": "미국",
+        "USSR": "소련",
+        "Japan": "일본"
+      }
+    },
+    "history:91": {
+      "question": "르네상스는 어느 시대 직후에 일어났습니까?",
+      "answers": {
+        "Middle Ages": "중세",
+        "Modern era": "현대 시대",
+        "Space Age": "우주시대",
+        "Industrial era": "산업 시대"
+      }
+    },
+    "history:92": {
+      "question": "고대 파르테논 신전이 위치한 곳은?",
+      "answers": {
+        "Rome": "로마",
+        "Athens": "아테네",
+        "Cairo": "카이로",
+        "Istanbul": "이스탄불"
+      }
+    },
+    "history:93": {
+      "question": "페르세폴리스는 어느 고대 제국의 수도였습니까?",
+      "answers": {
+        "Roman": "로마자",
+        "Persian": "페르시아어",
+        "Greek": "그리스어",
+        "Egyptian": "이집트인"
+      }
+    },
+    "history:94": {
+      "question": "탐험의 시대에 유럽인들이 검색한 것은 무엇입니까?",
+      "answers": {
+        "The Moon": "달",
+        "New trade routes and lands": "새로운 무역로 및 토지",
+        "Oil": "오일",
+        "Electricity": "전기"
+      }
+    },
+    "history:95": {
+      "question": "1941년에 일본은 어느 미국 해군 기지를 공격했습니까?",
+      "answers": {
+        "San Diego": "샌디에이고",
+        "Pearl Harbor": "진주만",
+        "Norfolk": "노퍽",
+        "Guam": "괌"
+      }
+    },
+    "history:96": {
+      "question": "100의 로마숫자는?",
+      "answers": {
+        "C": "C",
+        "D": "D",
+        "M": "남",
+        "L": "엘"
+      }
+    },
+    "history:97": {
+      "question": "로제타스톤은 어떤 고대 글을 해독하는 데 도움을 주었나요?",
+      "answers": {
+        "Latin": "라틴어",
+        "Egyptian hieroglyphs": "이집트 상형문자",
+        "Runes": "룬",
+        "Sanskrit": "산스크리트어"
+      }
+    },
+    "history:98": {
+      "question": "나중에 미국 대통령이 된 제2차 세계대전 당시 미국 장군은 누구입니까?",
+      "answers": {
+        "Patton": "패튼",
+        "Eisenhower": "아이젠하워",
+        "MacArthur": "맥아더",
+        "Marshall": "마샬"
+      }
+    },
+    "history:99": {
+      "question": "2022년까지 70년간 영국을 통치한 여왕은 누구인가요?",
+      "answers": {
+        "Victoria": "빅토리아",
+        "Elizabeth II": "엘리자베스 2세",
+        "Anne": "앤",
+        "Mary": "메리"
+      }
+    },
+    "science:0": {
+      "question": "물의 화학식은 무엇입니까?",
+      "answers": {
+        "CO2": "CO2",
+        "H2O": "H2O",
+        "O2": "O2",
+        "NaCl": "NaCl"
+      }
+    },
+    "science:1": {
+      "question": "우리 태양계에는 몇 개의 행성이 있나요?",
+      "answers": {
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      }
+    },
+    "science:2": {
+      "question": "식물은 공기 중에서 어떤 가스를 흡수하나요?",
+      "answers": {
+        "Oxygen": "산소",
+        "Carbon dioxide": "이산화탄소",
+        "Nitrogen": "질소",
+        "Hydrogen": "수소"
+      }
+    },
+    "science:3": {
+      "question": "태양에 가장 가까운 행성은 무엇입니까?",
+      "answers": {
+        "Venus": "금성",
+        "Mercury": "수은",
+        "Earth": "지구",
+        "Mars": "화성"
+      }
+    },
+    "science:4": {
+      "question": "세포의 발전소는 무엇입니까?",
+      "answers": {
+        "Nucleus": "핵",
+        "Mitochondria": "미토콘드리아",
+        "Ribosome": "리보솜",
+        "Membrane": "멤브레인"
+      }
+    },
+    "science:5": {
+      "question": "금의 화학 기호는 무엇입니까?",
+      "answers": {
+        "Go": "이동",
+        "Gd": "하느님",
+        "Au": "금",
+        "Ag": "Ag"
+      }
+    },
+    "science:6": {
+      "question": "성인 인체에는 몇 개의 뼈가 있습니까?",
+      "answers": {
+        "101": "101",
+        "150": "150",
+        "206": "206",
+        "300": "300"
+      }
+    },
+    "science:7": {
+      "question": "붉은 행성으로 알려진 행성은 무엇입니까?",
+      "answers": {
+        "Venus": "금성",
+        "Mars": "화성",
+        "Jupiter": "목성",
+        "Saturn": "토성"
+      }
+    },
+    "science:8": {
+      "question": "상대성 이론을 개발한 사람은 누구인가요?",
+      "answers": {
+        "Newton": "뉴턴",
+        "Einstein": "아인슈타인",
+        "Tesla": "테슬라",
+        "Darwin": "다윈"
+      }
+    },
+    "science:9": {
+      "question": "물체를 지구 쪽으로 끌어당기는 힘은 무엇입니까?",
+      "answers": {
+        "Magnetism": "자기",
+        "Gravity": "중력",
+        "Friction": "마찰",
+        "Inertia": "관성"
+      }
+    },
+    "science:10": {
+      "question": "어떤 혈액 세포가 감염과 싸우나요?",
+      "answers": {
+        "Red cells": "적혈구",
+        "White cells": "백혈구",
+        "Platelets": "혈소판",
+        "Plasma": "플라즈마"
+      }
+    },
+    "science:11": {
+      "question": "인체에서 가장 큰 기관은 무엇입니까?",
+      "answers": {
+        "Liver": "간",
+        "Skin": "스킨",
+        "Heart": "하트",
+        "Brain": "뇌"
+      }
+    },
+    "science:12": {
+      "question": "해수면에서 물이 끓는 온도(°C)는 얼마입니까?",
+      "answers": {
+        "80": "80",
+        "90": "90",
+        "100": "100",
+        "120": "120"
+      }
+    },
+    "science:13": {
+      "question": "식물만 먹는 동물을 무엇이라고 하나요?",
+      "answers": {
+        "Carnivores": "육식동물",
+        "Herbivores": "초식동물",
+        "Omnivores": "잡식동물",
+        "Predators": "포식자"
+      }
+    },
+    "science:14": {
+      "question": "우리 태양계에서 가장 큰 행성은 무엇입니까?",
+      "answers": {
+        "Saturn": "토성",
+        "Jupiter": "목성",
+        "Neptune": "해왕성",
+        "Earth": "지구"
+      }
+    },
+    "science:15": {
+      "question": "식물은 햇빛을 통해 양분을 생산합니까?",
+      "answers": {
+        "Respiration": "호흡",
+        "Photosynthesis": "광합성",
+        "Digestion": "소화",
+        "Fermentation": "발효"
+      }
+    },
+    "science:16": {
+      "question": "산소의 화학 기호는 무엇입니까?",
+      "answers": {
+        "O": "O",
+        "Ox": "황소",
+        "Og": "그 외",
+        "On": "켜짐"
+      }
+    },
+    "science:17": {
+      "question": "지구상에서 가장 단단한 천연 물질은 무엇입니까?",
+      "answers": {
+        "Gold": "골드",
+        "Iron": "철",
+        "Diamond": "다이아몬드",
+        "Quartz": "석영"
+      }
+    },
+    "science:18": {
+      "question": "철의 화학 기호는 무엇입니까?",
+      "answers": {
+        "Ir": "IR",
+        "Fe": "Fe",
+        "In": "있음",
+        "Io": "이오"
+      }
+    },
+    "science:19": {
+      "question": "나트륨의 화학 기호는 무엇입니까?",
+      "answers": {
+        "So": "그래서",
+        "Sd": "SD",
+        "Na": "나",
+        "S": "S"
+      }
+    },
+    "science:20": {
+      "question": "곤충의 다리는 몇 개입니까?",
+      "answers": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      }
+    },
+    "science:21": {
+      "question": "거미의 다리는 몇 개입니까?",
+      "answers": {
+        "6": "6",
+        "8": "8",
+        "10": "10",
+        "12": "12"
+      }
+    },
+    "science:22": {
+      "question": "원자의 중심을 무엇이라고 하나요?",
+      "answers": {
+        "Electron": "전자",
+        "Nucleus": "핵",
+        "Proton shell": "양성자 껍질",
+        "Orbit": "궤도"
+      }
+    },
+    "science:23": {
+      "question": "인간이 생존하려면 어떤 가스를 호흡해야 합니까?",
+      "answers": {
+        "Carbon dioxide": "이산화탄소",
+        "Oxygen": "산소",
+        "Nitrogen": "질소",
+        "Helium": "헬륨"
+      }
+    },
+    "science:24": {
+      "question": "물의 어는점은 섭씨로 얼마입니까?",
+      "answers": {
+        "0": "0",
+        "10": "10",
+        "32": "32",
+        "-10": "-10"
+      }
+    },
+    "science:25": {
+      "question": "지구는 다음을 중심으로 회전합니까?",
+      "answers": {
+        "Moon": "달",
+        "Sun": "일",
+        "Mars": "화성",
+        "Jupiter": "목성"
+      }
+    },
+    "science:26": {
+      "question": "지구가 태양을 공전하는 데 얼마나 걸리나요?",
+      "answers": {
+        "1 day": "1일",
+        "1 month": "1개월",
+        "1 year": "1년",
+        "10 years": "10년"
+      }
+    },
+    "science:27": {
+      "question": "낮과 밤의 원인은 무엇입니까?",
+      "answers": {
+        "Earth's rotation": "지구의 자전",
+        "The Moon": "달",
+        "Clouds": "구름",
+        "The tides": "조수"
+      }
+    },
+    "science:28": {
+      "question": "우리 태양계에서 가장 작은 행성은 무엇입니까?",
+      "answers": {
+        "Mars": "화성",
+        "Mercury": "수은",
+        "Venus": "금성",
+        "Earth": "지구"
+      }
+    },
+    "science:29": {
+      "question": "우리는 어느 은하계에 살고 있나요?",
+      "answers": {
+        "Andromeda": "안드로메다",
+        "Milky Way": "은하수",
+        "Whirlpool": "월풀",
+        "Sombrero": "솜브레로"
+      }
+    },
+    "science:30": {
+      "question": "태양은 주로 무엇으로 구성되어 있나요?",
+      "answers": {
+        "Rock": "록",
+        "Hydrogen and helium": "수소 및 헬륨",
+        "Water": "물",
+        "Iron": "철"
+      }
+    },
+    "science:31": {
+      "question": "꿀벌은 꽃에서 무엇을 수집하나요?",
+      "answers": {
+        "Water": "물",
+        "Nectar": "넥타",
+        "Sand": "모래",
+        "Leaves": "잎"
+      }
+    },
+    "science:32": {
+      "question": "지구 대기의 대부분을 구성하는 가스는 무엇입니까?",
+      "answers": {
+        "Oxygen": "산소",
+        "Nitrogen": "질소",
+        "Carbon dioxide": "이산화탄소",
+        "Hydrogen": "수소"
+      }
+    },
+    "science:33": {
+      "question": "생물에 대한 연구를 무엇이라고 하나요?",
+      "answers": {
+        "Physics": "물리학",
+        "Biology": "생물학",
+        "Geology": "지질학",
+        "Chemistry": "화학"
+      }
+    },
+    "science:34": {
+      "question": "물질과 에너지에 대한 연구를 무엇이라고 하나요?",
+      "answers": {
+        "Biology": "생물학",
+        "Physics": "물리학",
+        "Botany": "식물학",
+        "Zoology": "동물학"
+      }
+    },
+    "science:35": {
+      "question": "물질과 반응에 대한 연구를 무엇이라고 하나요?",
+      "answers": {
+        "Chemistry": "화학",
+        "Astronomy": "천문학",
+        "Ecology": "생태학",
+        "Geology": "지질학"
+      }
+    },
+    "science:36": {
+      "question": "몸 전체에 혈액을 공급하는 기관은 무엇입니까?",
+      "answers": {
+        "Lungs": "폐",
+        "Heart": "하트",
+        "Liver": "간",
+        "Kidney": "신장"
+      }
+    },
+    "science:37": {
+      "question": "호흡에 사용되는 기관은 무엇인가요?",
+      "answers": {
+        "Heart": "심장",
+        "Lungs": "폐",
+        "Stomach": "위",
+        "Liver": "간"
+      }
+    },
+    "science:38": {
+      "question": "인체에서 가장 단단한 물질은 무엇입니까?",
+      "answers": {
+        "Bone": "뼈",
+        "Tooth enamel": "치아 법랑질",
+        "Nails": "손톱",
+        "Cartilage": "연골"
+      }
+    },
+    "science:39": {
+      "question": "인간의 심장에는 몇 개의 방이 있습니까?",
+      "answers": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      }
+    },
+    "science:40": {
+      "question": "DNA가 운반됩니까?",
+      "answers": {
+        "Water": "물",
+        "Genetic information": "유전 정보",
+        "Oxygen": "산소",
+        "Energy": "에너지"
+      }
+    },
+    "science:41": {
+      "question": "햇빛은 우리 몸이 생산하는 데 도움이 되는 비타민은 무엇입니까?",
+      "answers": {
+        "Vitamin A": "비타민 A",
+        "Vitamin C": "비타민 C",
+        "Vitamin D": "비타민 D",
+        "Vitamin K": "비타민 K"
+      }
+    },
+    "science:42": {
+      "question": "화씨 단위로 물의 끓는점은 얼마입니까?",
+      "answers": {
+        "100": "100",
+        "150": "150",
+        "180": "180",
+        "212": "212"
+      }
+    },
+    "science:43": {
+      "question": "소리가 가장 빠르게 전달됩니까?",
+      "answers": {
+        "Vacuum": "진공청소기",
+        "Solids": "고체",
+        "Gases": "가스",
+        "Empty space": "빈 공간"
+      }
+    },
+    "science:44": {
+      "question": "대략적인 빛의 속도는 얼마입니까?",
+      "answers": {
+        "300,000 km/s": "300,000km/초",
+        "1,000 km/s": "1,000km/초",
+        "3,000 km/s": "3,000km/초",
+        "30 km/s": "30km/초"
+      }
+    },
+    "science:45": {
+      "question": "고리로 유명한 행성은 어디인가요?",
+      "answers": {
+        "Mars": "화성",
+        "Saturn": "토성",
+        "Venus": "금성",
+        "Mercury": "수은"
+      }
+    },
+    "science:46": {
+      "question": "지구의 유일한 자연 위성은 무엇입니까?",
+      "answers": {
+        "The Sun": "태양",
+        "The Moon": "달",
+        "Mars": "화성",
+        "Venus": "금성"
+      }
+    },
+    "science:47": {
+      "question": "행성이 태양 주위를 공전하도록 유지하는 힘은 무엇입니까?",
+      "answers": {
+        "Magnetism": "자기",
+        "Gravity": "중력",
+        "Friction": "마찰",
+        "Electricity": "전기"
+      }
+    },
+    "science:48": {
+      "question": "식물과 고기를 모두 먹는 동물을 뭐라고 부르나요?",
+      "answers": {
+        "Herbivores": "초식동물",
+        "Carnivores": "육식동물",
+        "Omnivores": "잡식동물",
+        "Insectivores": "식충동물"
+      }
+    },
+    "science:49": {
+      "question": "고기만 먹는 동물을 뭐라고 부르나요?",
+      "answers": {
+        "Herbivores": "초식동물",
+        "Carnivores": "육식동물",
+        "Omnivores": "잡식동물",
+        "Detritivores": "유해물질"
+      }
+    },
+    "science:50": {
+      "question": "액체 물을 증기로 바꾸는 과정은 무엇인가요?",
+      "answers": {
+        "Condensation": "응축",
+        "Evaporation": "증발",
+        "Freezing": "동결",
+        "Melting": "녹는 중"
+      }
+    },
+    "science:51": {
+      "question": "증기를 다시 액체로 바꾸는 과정은 무엇입니까?",
+      "answers": {
+        "Evaporation": "증발",
+        "Condensation": "응축",
+        "Sublimation": "승화",
+        "Boiling": "끓이기"
+      }
+    },
+    "science:52": {
+      "question": "물질의 세 가지 일반적인 상태는 무엇입니까?",
+      "answers": {
+        "Hot, cold, warm": "덥다, 차갑다, 따뜻하다",
+        "Solid, liquid, gas": "고체, 액체, 기체",
+        "Big, small, medium": "대, 소, 중",
+        "Up, down, side": "위, 아래, 측면"
+      }
+    },
+    "science:53": {
+      "question": "얼음은 물의 ___ 상태입니다.",
+      "answers": {
+        "Gas": "가스",
+        "Liquid": "액체",
+        "Solid": "솔리드",
+        "Plasma": "플라즈마"
+      }
+    },
+    "science:54": {
+      "question": "진화론을 제안한 과학자는 누구입니까?",
+      "answers": {
+        "Newton": "뉴턴",
+        "Darwin": "다윈",
+        "Einstein": "아인슈타인",
+        "Tesla": "테슬라"
+      }
+    },
+    "science:55": {
+      "question": "운동과 중력의 법칙을 공식화한 사람은 누구입니까?",
+      "answers": {
+        "Einstein": "아인슈타인",
+        "Newton": "뉴턴",
+        "Galileo": "갈릴레오",
+        "Hawking": "호킹"
+      }
+    },
+    "science:56": {
+      "question": "탄소의 화학 기호는 무엇입니까?",
+      "answers": {
+        "Ca": "캘리포니아",
+        "C": "C",
+        "Co": "공동",
+        "Cn": "Cn"
+      }
+    },
+    "science:57": {
+      "question": "헬륨의 화학 기호는 무엇입니까?",
+      "answers": {
+        "H": "H",
+        "He": "그는",
+        "Hl": "HL",
+        "Ha": "하"
+      }
+    },
+    "science:58": {
+      "question": "두꺼운 산성 구름으로 인해 매우 뜨거운 행성은 무엇입니까?",
+      "answers": {
+        "Mars": "화성",
+        "Venus": "금성",
+        "Neptune": "해왕성",
+        "Uranus": "천왕성"
+      }
+    },
+    "science:59": {
+      "question": "일반적인 성인의 치아는 몇 개입니까?",
+      "answers": {
+        "24": "24",
+        "28": "28",
+        "32": "32",
+        "36": "36"
+      }
+    },
+    "science:60": {
+      "question": "식물의 어느 부분이 토양에서 물을 흡수합니까?",
+      "answers": {
+        "Leaves": "잎",
+        "Roots": "뿌리",
+        "Flowers": "꽃",
+        "Stem": "줄기"
+      }
+    },
+    "science:61": {
+      "question": "식물은 광합성 중에 어떤 가스를 방출합니까?",
+      "answers": {
+        "Carbon dioxide": "이산화탄소",
+        "Oxygen": "산소",
+        "Nitrogen": "질소",
+        "Methane": "메탄"
+      }
+    },
+    "science:62": {
+      "question": "지구에서 가장 가까운 별은 무엇입니까?",
+      "answers": {
+        "Polaris": "폴라리스",
+        "The Sun": "태양",
+        "Sirius": "시리우스",
+        "Alpha Centauri": "알파 센타우리"
+      }
+    },
+    "science:63": {
+      "question": "만능 기증자는 어떤 혈액형인가요?",
+      "answers": {
+        "A": "A",
+        "B": "B",
+        "O negative": "O 부정",
+        "AB": "AB"
+      }
+    },
+    "science:64": {
+      "question": "온도를 측정하는 기기는 무엇인가요?",
+      "answers": {
+        "Barometer": "기압계",
+        "Thermometer": "온도계",
+        "Ruler": "눈금자",
+        "Scale": "규모"
+      }
+    },
+    "science:65": {
+      "question": "작은 세포를 보는 데 사용되는 기기는 무엇입니까?",
+      "answers": {
+        "Telescope": "망원경",
+        "Microscope": "현미경",
+        "Periscope": "잠망경",
+        "Binoculars": "쌍안경"
+      }
+    },
+    "science:66": {
+      "question": "먼 별을 보는 데 사용되는 도구는 무엇입니까?",
+      "answers": {
+        "Microscope": "현미경",
+        "Telescope": "망원경",
+        "Stethoscope": "청진기",
+        "Ruler": "눈금자"
+      }
+    },
+    "science:67": {
+      "question": "냉동 이산화탄소를 흔히 부르나요?",
+      "answers": {
+        "Dry ice": "드라이아이스",
+        "Snow": "눈",
+        "Frost": "프로스트",
+        "Hail": "우박"
+      }
+    },
+    "science:68": {
+      "question": "인간은 주로 어떤 가스를 내뿜나요?",
+      "answers": {
+        "Oxygen": "산소",
+        "Carbon dioxide": "이산화탄소",
+        "Nitrogen only": "질소만",
+        "Hydrogen": "수소"
+      }
+    },
+    "science:69": {
+      "question": "감귤류에 풍부한 비타민은 무엇입니까?",
+      "answers": {
+        "Vitamin C": "비타민 C",
+        "Vitamin D": "비타민 D",
+        "Vitamin B12": "비타민 B12",
+        "Vitamin K": "비타민 K"
+      }
+    },
+    "science:70": {
+      "question": "지구 표면 아래의 녹은 암석을 뭐라고 부르나요?",
+      "answers": {
+        "Lava": "용암",
+        "Magma": "마그마",
+        "Ash": "애쉬",
+        "Basalt": "현무암"
+      }
+    },
+    "science:71": {
+      "question": "표면으로 분출되는 녹은 암석을 뭐라고 하나요?",
+      "answers": {
+        "Magma": "마그마",
+        "Lava": "용암",
+        "Sediment": "퇴적물",
+        "Ore": "광석"
+      }
+    },
+    "science:72": {
+      "question": "지구의 핵심은 대부분 무엇으로 이루어져 있나요?",
+      "answers": {
+        "Water": "물",
+        "Iron and nickel": "철 및 니켈",
+        "Gold": "골드",
+        "Ice": "얼음"
+      }
+    },
+    "science:73": {
+      "question": "우리는 지구의 어느 층에 살고 있나요?",
+      "answers": {
+        "Core": "핵",
+        "Mantle": "맨틀",
+        "Crust": "지각",
+        "Atmosphere": "대기"
+      }
+    },
+    "science:74": {
+      "question": "주로 바다의 조수를 일으키는 원인은 무엇입니까?",
+      "answers": {
+        "Wind only": "바람만",
+        "The Moon's gravity": "달의 중력",
+        "Fish": "물고기",
+        "Rivers": "강"
+      }
+    },
+    "science:75": {
+      "question": "패턴을 형성하는 별들의 무리는?",
+      "answers": {
+        "Galaxy": "갤럭시",
+        "Constellation": "별자리",
+        "Comet": "혜성",
+        "Nebula": "성운"
+      }
+    },
+    "science:76": {
+      "question": "'유성'은 실제로는?",
+      "answers": {
+        "Dying star": "죽어가는 별",
+        "Meteor": "유성",
+        "Planet": "행성",
+        "Satellite": "위성"
+      }
+    },
+    "science:77": {
+      "question": "유명한 '대적점'이 있는 행성은 어디인가요?",
+      "answers": {
+        "Mars": "화성",
+        "Jupiter": "목성",
+        "Saturn": "토성",
+        "Neptune": "해왕성"
+      }
+    },
+    "science:78": {
+      "question": "생명의 기본 단위는 무엇입니까?",
+      "answers": {
+        "Atom": "원자",
+        "Cell": "셀",
+        "Molecule": "분자",
+        "Organ": "오르간"
+      }
+    },
+    "science:79": {
+      "question": "생각과 움직임을 조절하는 기관은 무엇입니까?",
+      "answers": {
+        "Heart": "하트",
+        "Brain": "뇌",
+        "Liver": "간",
+        "Lungs": "폐"
+      }
+    },
+    "science:80": {
+      "question": "칼륨의 화학 기호는 무엇입니까?",
+      "answers": {
+        "P": "피",
+        "Po": "포",
+        "K": "K",
+        "Pt": "포인트"
+      }
+    },
+    "science:81": {
+      "question": "다음 중 비활성 기체는 무엇입니까?",
+      "answers": {
+        "Oxygen": "산소",
+        "Helium": "헬륨",
+        "Hydrogen": "수소",
+        "Nitrogen": "질소"
+      }
+    },
+    "science:82": {
+      "question": "구름에서 떨어지는 물을 뭐라고 하나요?",
+      "answers": {
+        "Evaporation": "증발",
+        "Precipitation": "강수량",
+        "Condensation": "응축",
+        "Radiation": "방사선"
+      }
+    },
+    "science:83": {
+      "question": "지진 규모를 측정하는 척도는 무엇인가요?",
+      "answers": {
+        "Celsius": "섭씨",
+        "Richter": "리히터",
+        "Decibel": "데시벨",
+        "Fahrenheit": "화씨"
+      }
+    },
+    "science:84": {
+      "question": "전류를 측정하는 단위는 무엇입니까?",
+      "answers": {
+        "Volt": "볼트",
+        "Ampere": "암페어",
+        "Watt": "와트",
+        "Ohm": "옴"
+      }
+    },
+    "science:85": {
+      "question": "전구 전력은 어떻게 측정됩니까?",
+      "answers": {
+        "Watts": "와트",
+        "Meters": "미터",
+        "Liters": "리터",
+        "Grams": "그램"
+      }
+    },
+    "science:86": {
+      "question": "어느 행성이 옆으로 회전합니까?",
+      "answers": {
+        "Uranus": "천왕성",
+        "Mars": "화성",
+        "Venus": "금성",
+        "Earth": "지구"
+      }
+    },
+    "science:87": {
+      "question": "애벌레가 나비로 변하는 것을 부르나요?",
+      "answers": {
+        "Evolution": "진화",
+        "Metamorphosis": "변태",
+        "Photosynthesis": "광합성",
+        "Digestion": "소화"
+      }
+    },
+    "science:88": {
+      "question": "우주에서 가장 풍부한 원소는 무엇입니까?",
+      "answers": {
+        "Oxygen": "산소",
+        "Hydrogen": "수소",
+        "Iron": "철",
+        "Carbon": "탄소"
+      }
+    },
+    "science:89": {
+      "question": "지구와 크기가 가장 가까운 행성은 무엇입니까?",
+      "answers": {
+        "Mars": "화성",
+        "Venus": "금성",
+        "Mercury": "수은",
+        "Jupiter": "목성"
+      }
+    },
+    "science:90": {
+      "question": "인체는 대부분 무엇으로 구성되어 있나요?",
+      "answers": {
+        "Bone": "뼈",
+        "Water": "물",
+        "Muscle": "근육",
+        "Fat": "지방"
+      }
+    },
+    "science:91": {
+      "question": "혈액에서 노폐물을 걸러내는 기관은 무엇인가요?",
+      "answers": {
+        "Heart": "심장",
+        "Kidneys": "신장",
+        "Lungs": "폐",
+        "Brain": "뇌"
+      }
+    },
+    "science:92": {
+      "question": "눈에는 어떤 감각이 연결되어 있나요?",
+      "answers": {
+        "Hearing": "청문회",
+        "Sight": "시력",
+        "Smell": "냄새",
+        "Taste": "맛"
+      }
+    },
+    "science:93": {
+      "question": "은의 화학 기호는 무엇입니까?",
+      "answers": {
+        "Si": "시",
+        "Ag": "Ag",
+        "Au": "금",
+        "Sr": "수석"
+      }
+    },
+    "science:94": {
+      "question": "태양에서 가장 멀리 있는 행성은 무엇입니까?",
+      "answers": {
+        "Saturn": "토성",
+        "Uranus": "천왕성",
+        "Neptune": "해왕성",
+        "Jupiter": "목성"
+      }
+    },
+    "science:95": {
+      "question": "식물이 영양분을 만들기 위해서는 햇빛과 물 외에 무엇이 필요합니까?",
+      "answers": {
+        "Oxygen": "산소",
+        "Carbon dioxide": "이산화탄소",
+        "Nitrogen gas": "질소 가스",
+        "Helium": "헬륨"
+      }
+    },
+    "science:96": {
+      "question": "별과 우주를 연구하는 과학자를 무엇이라고 부르나요?",
+      "answers": {
+        "Biologist": "생물학자",
+        "Astronomer": "천문학자",
+        "Chemist": "화학자",
+        "Geologist": "지질학자"
+      }
+    },
+    "science:97": {
+      "question": "'아침 별' 또는 '저녁 별'로 알려진 행성은 무엇입니까?",
+      "answers": {
+        "Mars": "화성",
+        "Venus": "금성",
+        "Saturn": "토성",
+        "Mercury": "수은"
+      }
+    },
+    "science:98": {
+      "question": "무지개에는 몇 가지 색깔이 있나요?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "science:99": {
+      "question": "흔히 '푸른 행성'이라고 불리는 행성은 무엇입니까?",
+      "answers": {
+        "Mars": "화성",
+        "Earth": "지구",
+        "Neptune": "해왕성",
+        "Venus": "금성"
+      }
+    },
+    "geography:0": {
+      "question": "일본의 수도는 무엇입니까?",
+      "answers": {
+        "Seoul": "서울",
+        "Beijing": "베이징",
+        "Tokyo": "도쿄",
+        "Bangkok": "방콕"
+      }
+    },
+    "geography:1": {
+      "question": "지구상에서 가장 큰 바다는 무엇입니까?",
+      "answers": {
+        "Atlantic": "대서양",
+        "Indian": "인도인",
+        "Arctic": "북극",
+        "Pacific": "태평양"
+      }
+    },
+    "geography:2": {
+      "question": "일반적으로 세계에서 가장 긴 것으로 간주되는 강은 무엇입니까?",
+      "answers": {
+        "Amazon": "아마존",
+        "Nile": "나일",
+        "Yangtze": "양쯔강",
+        "Mississippi": "미시시피"
+      }
+    },
+    "geography:3": {
+      "question": "에베레스트 산은 어느 산맥에 속합니까?",
+      "answers": {
+        "Andes": "안데스",
+        "Alps": "알프스",
+        "Himalayas": "히말라야",
+        "Rockies": "로키산맥"
+      }
+    },
+    "geography:4": {
+      "question": "프랑스의 수도는 무엇입니까?",
+      "answers": {
+        "Berlin": "베를린",
+        "Madrid": "마드리드",
+        "Paris": "파리",
+        "Rome": "로마"
+      }
+    },
+    "geography:5": {
+      "question": "육지 면적이 가장 큰 국가는 어디인가요?",
+      "answers": {
+        "Canada": "캐나다",
+        "China": "중국",
+        "USA": "미국",
+        "Russia": "러시아"
+      }
+    },
+    "geography:6": {
+      "question": "사하라 사막은 어느 대륙에 있나요?",
+      "answers": {
+        "Asia": "아시아",
+        "Africa": "아프리카",
+        "Australia": "호주",
+        "South America": "남아메리카"
+      }
+    },
+    "geography:7": {
+      "question": "호주의 수도는 무엇입니까?",
+      "answers": {
+        "Sydney": "시드니",
+        "Melbourne": "멜버른",
+        "Canberra": "캔버라",
+        "Perth": "퍼스"
+      }
+    },
+    "geography:8": {
+      "question": "가장 작은 대륙은 무엇인가요?",
+      "answers": {
+        "Europe": "유럽",
+        "Australia": "호주",
+        "Antarctica": "남극 대륙",
+        "South America": "남아메리카"
+      }
+    },
+    "geography:9": {
+      "question": "그레이트 배리어 리프는 어느 국가의 해안에 위치해 있습니까?",
+      "answers": {
+        "Brazil": "브라질",
+        "Australia": "호주",
+        "Mexico": "멕시코",
+        "India": "인도"
+      }
+    },
+    "geography:10": {
+      "question": "에펠탑은 어느 나라에 있나요?",
+      "answers": {
+        "Italy": "이탈리아",
+        "Spain": "스페인",
+        "France": "프랑스",
+        "Belgium": "벨기에"
+      }
+    },
+    "geography:11": {
+      "question": "이집트의 수도는 무엇입니까?",
+      "answers": {
+        "Cairo": "카이로",
+        "Alexandria": "알렉산드리아",
+        "Giza": "기자",
+        "Luxor": "룩소르"
+      }
+    },
+    "geography:12": {
+      "question": "대륙은 몇 개인가요?",
+      "answers": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      }
+    },
+    "geography:13": {
+      "question": "런던을 관통하는 강은 무엇인가요?",
+      "answers": {
+        "Seine": "세느강",
+        "Thames": "템스",
+        "Danube": "다뉴브강",
+        "Rhine": "라인강"
+      }
+    },
+    "geography:14": {
+      "question": "아마존 열대우림은 대부분 어느 국가에 있습니까?",
+      "answers": {
+        "Peru": "페루",
+        "Colombia": "콜롬비아",
+        "Brazil": "브라질",
+        "Venezuela": "베네수엘라"
+      }
+    },
+    "geography:15": {
+      "question": "세계에서 가장 큰 뜨거운 사막은 어디인가요?",
+      "answers": {
+        "Gobi": "고비",
+        "Sahara": "사하라",
+        "Kalahari": "칼라하리",
+        "Arabian": "아라비아어"
+      }
+    },
+    "geography:16": {
+      "question": "이탈리아의 수도는 무엇입니까?",
+      "answers": {
+        "Milan": "밀라노",
+        "Venice": "베니스",
+        "Rome": "로마",
+        "Naples": "나폴리"
+      }
+    },
+    "geography:17": {
+      "question": "아마존 강이 있는 대륙은 어디인가요?",
+      "answers": {
+        "Africa": "아프리카",
+        "Asia": "아시아",
+        "South America": "남미",
+        "Europe": "유럽"
+      }
+    },
+    "geography:18": {
+      "question": "독일의 수도는 무엇입니까?",
+      "answers": {
+        "Munich": "뮌헨",
+        "Berlin": "베를린",
+        "Hamburg": "함부르크",
+        "Frankfurt": "프랑크푸르트"
+      }
+    },
+    "geography:19": {
+      "question": "스페인의 수도는 무엇입니까?",
+      "answers": {
+        "Barcelona": "바르셀로나",
+        "Madrid": "마드리드",
+        "Seville": "세비야",
+        "Valencia": "발렌시아"
+      }
+    },
+    "geography:20": {
+      "question": "러시아의 수도는 무엇입니까?",
+      "answers": {
+        "St Petersburg": "상트페테르부르크",
+        "Moscow": "모스크바",
+        "Kyiv": "키예프",
+        "Sochi": "소치"
+      }
+    },
+    "geography:21": {
+      "question": "중국의 수도는 무엇입니까?",
+      "answers": {
+        "Shanghai": "상하이",
+        "Beijing": "베이징",
+        "Hong Kong": "홍콩",
+        "Guangzhou": "광저우"
+      }
+    },
+    "geography:22": {
+      "question": "캐나다의 수도는 무엇입니까?",
+      "answers": {
+        "Toronto": "토론토",
+        "Ottawa": "오타와",
+        "Vancouver": "밴쿠버",
+        "Montreal": "몬트리올"
+      }
+    },
+    "geography:23": {
+      "question": "미국의 수도는 무엇입니까?",
+      "answers": {
+        "New York": "뉴욕",
+        "Washington, D.C.": "워싱턴 D.C.",
+        "Los Angeles": "로스앤젤레스",
+        "Chicago": "시카고"
+      }
+    },
+    "geography:24": {
+      "question": "영국의 수도는 무엇입니까?",
+      "answers": {
+        "Manchester": "맨체스터",
+        "London": "런던",
+        "Liverpool": "리버풀",
+        "Edinburgh": "에든버러"
+      }
+    },
+    "geography:25": {
+      "question": "브라질의 수도는 무엇입니까?",
+      "answers": {
+        "Rio de Janeiro": "리우데자네이루",
+        "Brasília": "브라질리아",
+        "São Paulo": "상파울루",
+        "Salvador": "살바도르"
+      }
+    },
+    "geography:26": {
+      "question": "인도의 수도는 무엇입니까?",
+      "answers": {
+        "Mumbai": "뭄바이",
+        "New Delhi": "뉴델리",
+        "Kolkata": "콜카타",
+        "Chennai": "첸나이"
+      }
+    },
+    "geography:27": {
+      "question": "대한민국의 수도는 무엇입니까?",
+      "answers": {
+        "Busan": "부산",
+        "Seoul": "서울",
+        "Incheon": "인천",
+        "Daegu": "대구"
+      }
+    },
+    "geography:28": {
+      "question": "그리스의 수도는 무엇입니까?",
+      "answers": {
+        "Thessaloniki": "테살로니키",
+        "Athens": "아테네",
+        "Sparta": "스파르타",
+        "Patras": "파트라"
+      }
+    },
+    "geography:29": {
+      "question": "터키의 수도는 무엇입니까?",
+      "answers": {
+        "Istanbul": "이스탄불",
+        "Ankara": "앙카라",
+        "Izmir": "이즈미르",
+        "Bursa": "부르사"
+      }
+    },
+    "geography:30": {
+      "question": "포르투갈의 수도는 무엇입니까?",
+      "answers": {
+        "Porto": "포르투",
+        "Lisbon": "리스본",
+        "Faro": "파로",
+        "Braga": "브라가"
+      }
+    },
+    "geography:31": {
+      "question": "네덜란드의 수도는 무엇입니까?",
+      "answers": {
+        "Rotterdam": "로테르담",
+        "Amsterdam": "암스테르담",
+        "The Hague": "헤이그",
+        "Utrecht": "위트레흐트"
+      }
+    },
+    "geography:32": {
+      "question": "멕시코의 수도는 무엇입니까?",
+      "answers": {
+        "Cancún": "칸쿤",
+        "Mexico City": "멕시코시티",
+        "Guadalajara": "과달라하라",
+        "Tijuana": "티후아나"
+      }
+    },
+    "geography:33": {
+      "question": "아르헨티나의 수도는 무엇입니까?",
+      "answers": {
+        "Córdoba": "코르도바",
+        "Buenos Aires": "부에노스 아이레스",
+        "Rosario": "로사리오",
+        "Mendoza": "멘도사"
+      }
+    },
+    "geography:34": {
+      "question": "스웨덴의 수도는 무엇입니까?",
+      "answers": {
+        "Oslo": "오슬로",
+        "Stockholm": "스톡홀름",
+        "Copenhagen": "코펜하겐",
+        "Helsinki": "헬싱키"
+      }
+    },
+    "geography:35": {
+      "question": "노르웨이의 수도는 무엇입니까?",
+      "answers": {
+        "Oslo": "오슬로",
+        "Bergen": "베르겐",
+        "Stockholm": "스톡홀름",
+        "Helsinki": "헬싱키"
+      }
+    },
+    "geography:36": {
+      "question": "지역별로 가장 큰 대륙은 무엇입니까?",
+      "answers": {
+        "Africa": "아프리카",
+        "Asia": "아시아",
+        "Europe": "유럽",
+        "North America": "북미"
+      }
+    },
+    "geography:37": {
+      "question": "가장 추운 대륙은 어디인가요?",
+      "answers": {
+        "Europe": "유럽",
+        "Antarctica": "남극 대륙",
+        "Asia": "아시아",
+        "Australia": "호주"
+      }
+    },
+    "geography:38": {
+      "question": "국가가 가장 많은 대륙은 어디인가요?",
+      "answers": {
+        "Asia": "아시아",
+        "Africa": "아프리카",
+        "Europe": "유럽",
+        "South America": "남미"
+      }
+    },
+    "geography:39": {
+      "question": "가장 작은 바다는 무엇인가요?",
+      "answers": {
+        "Atlantic": "대서양",
+        "Arctic": "북극",
+        "Indian": "인도인",
+        "Pacific": "태평양"
+      }
+    },
+    "geography:40": {
+      "question": "두 번째로 큰 바다는 무엇입니까?",
+      "answers": {
+        "Atlantic": "대서양",
+        "Indian": "인도인",
+        "Arctic": "북극",
+        "Southern": "남부"
+      }
+    },
+    "geography:41": {
+      "question": "유럽과 아시아에 모두 속해 있는 국가는 어디인가요?",
+      "answers": {
+        "Egypt": "이집트",
+        "Turkey": "터키",
+        "Greece": "그리스",
+        "Italy": "이탈리아"
+      }
+    },
+    "geography:42": {
+      "question": "대피라미드는 어느 도시 근처에 있습니까?",
+      "answers": {
+        "Cairo": "카이로",
+        "Alexandria": "알렉산드리아",
+        "Luxor": "룩소르",
+        "Aswan": "아스완"
+      }
+    },
+    "geography:43": {
+      "question": "아프리카에서 가장 높은 산은 어느 것입니까?",
+      "answers": {
+        "Kilimanjaro": "킬리만자로",
+        "Mount Kenya": "케냐 산",
+        "Atlas": "아틀라스",
+        "Elgon": "엘곤"
+      }
+    },
+    "geography:44": {
+      "question": "안데스 산맥은 어느 대륙에 있습니까?",
+      "answers": {
+        "Asia": "아시아",
+        "Africa": "아프리카",
+        "South America": "남미",
+        "Europe": "유럽"
+      }
+    },
+    "geography:45": {
+      "question": "알프스는 주로 어디에 위치해 있나요?",
+      "answers": {
+        "Asia": "아시아",
+        "Europe": "유럽",
+        "Africa": "아프리카",
+        "Australia": "호주"
+      }
+    },
+    "geography:46": {
+      "question": "부츠 모양을 한 나라는 어디인가요?",
+      "answers": {
+        "Spain": "스페인",
+        "Italy": "이탈리아",
+        "Greece": "그리스",
+        "France": "프랑스"
+      }
+    },
+    "geography:47": {
+      "question": "유럽과 아프리카 사이에는 어느 바다가 있습니까?",
+      "answers": {
+        "Baltic Sea": "발트해",
+        "Mediterranean Sea": "지중해",
+        "Red Sea": "홍해",
+        "Black Sea": "흑해"
+      }
+    },
+    "geography:48": {
+      "question": "인구가 가장 많은 국가는 어디입니까(2024년 기준)?",
+      "answers": {
+        "China": "중국",
+        "India": "인도",
+        "USA": "미국",
+        "Indonesia": "인도네시아"
+      }
+    },
+    "geography:49": {
+      "question": "후지산은 어느 나라에 있나요?",
+      "answers": {
+        "China": "중국",
+        "Japan": "일본",
+        "Korea": "한국",
+        "Nepal": "네팔"
+      }
+    },
+    "geography:50": {
+      "question": "자유의 여신상은 어느 도시에 있나요?",
+      "answers": {
+        "Boston": "보스턴",
+        "New York": "뉴욕",
+        "Washington": "워싱턴",
+        "Chicago": "시카고"
+      }
+    },
+    "geography:51": {
+      "question": "빅벤은 어느 도시의 랜드마크인가요?",
+      "answers": {
+        "Paris": "파리",
+        "London": "런던",
+        "Berlin": "베를린",
+        "Dublin": "더블린"
+      }
+    },
+    "geography:52": {
+      "question": "사탑이 위치한 이탈리아 도시는 어디인가요?",
+      "answers": {
+        "Rome": "로마",
+        "Pisa": "피사",
+        "Milan": "밀라노",
+        "Venice": "베니스"
+      }
+    },
+    "geography:53": {
+      "question": "캥거루가 사는 나라는 어디인가요?",
+      "answers": {
+        "South Africa": "남아프리카",
+        "Australia": "호주",
+        "Brazil": "브라질",
+        "India": "인도"
+      }
+    },
+    "geography:54": {
+      "question": "치첸이트사 피라미드는 어느 나라에 있나요?",
+      "answers": {
+        "Peru": "페루",
+        "Mexico": "멕시코",
+        "Egypt": "이집트",
+        "Guatemala": "과테말라"
+      }
+    },
+    "geography:55": {
+      "question": "나일강은 어느 바다로 흘러 들어가나요?",
+      "answers": {
+        "Red Sea": "홍해",
+        "Mediterranean Sea": "지중해",
+        "Black Sea": "흑해",
+        "Caspian Sea": "카스피해"
+      }
+    },
+    "geography:56": {
+      "question": "할리우드로 유명한 미국 주는 어디인가요?",
+      "answers": {
+        "Texas": "텍사스",
+        "California": "캘리포니아",
+        "Florida": "플로리다",
+        "New York": "뉴욕"
+      }
+    },
+    "geography:57": {
+      "question": "아메리카와 유럽/아프리카 사이에는 어느 바다가 있습니까?",
+      "answers": {
+        "Pacific": "태평양",
+        "Atlantic": "대서양",
+        "Indian": "인도인",
+        "Arctic": "북극"
+      }
+    },
+    "geography:58": {
+      "question": "아프리카, 아시아, 호주 사이에는 어느 바다가 있습니까?",
+      "answers": {
+        "Atlantic": "대서양",
+        "Indian": "인도인",
+        "Arctic": "북극",
+        "Pacific": "태평양"
+      }
+    },
+    "geography:59": {
+      "question": "적도는 지구를 어느 부분으로 나누나요?",
+      "answers": {
+        "East and West": "동부 및 서부",
+        "North and South": "북부 및 남부",
+        "Up and Down": "위쪽 및 아래쪽",
+        "Left and Right": "왼쪽 및 오른쪽"
+      }
+    },
+    "geography:60": {
+      "question": "경도 0°의 가상 선은?",
+      "answers": {
+        "Equator": "적도",
+        "Prime Meridian": "본초 자오선",
+        "Tropic of Cancer": "회귀선 암",
+        "Arctic Circle": "북극권"
+      }
+    },
+    "geography:61": {
+      "question": "세계에서 가장 작은 나라는 어디인가요?",
+      "answers": {
+        "Monaco": "모나코",
+        "Vatican City": "바티칸 시국",
+        "Malta": "몰타",
+        "San Marino": "산마리노"
+      }
+    },
+    "geography:62": {
+      "question": "세계에서 가장 큰 사막은 어디입니까?",
+      "answers": {
+        "Sahara": "사하라",
+        "Antarctic": "남극",
+        "Gobi": "고비",
+        "Kalahari": "칼라하리"
+      }
+    },
+    "geography:63": {
+      "question": "그랜드 캐년은 어느 국가에 있습니까?",
+      "answers": {
+        "Canada": "캐나다",
+        "USA": "미국",
+        "Mexico": "멕시코",
+        "Brazil": "브라질"
+      }
+    },
+    "geography:64": {
+      "question": "튤립과 풍차로 유명한 나라는 어디인가요?",
+      "answers": {
+        "Belgium": "벨기에",
+        "Netherlands": "네덜란드",
+        "Denmark": "덴마크",
+        "Germany": "독일"
+      }
+    },
+    "geography:65": {
+      "question": "유럽과 아시아를 구분하는 산맥은 무엇인가요?",
+      "answers": {
+        "Alps": "알프스",
+        "Ural": "우랄",
+        "Andes": "안데스 산맥",
+        "Himalayas": "히말라야"
+      }
+    },
+    "geography:66": {
+      "question": "사해는 아주 유명한 곳이죠?",
+      "answers": {
+        "Deep": "깊은",
+        "Salty": "짠맛",
+        "Cold": "추위",
+        "Large": "대형"
+      }
+    },
+    "geography:67": {
+      "question": "시드니와 멜버른이라는 도시가 있는 국가는 어디인가요?",
+      "answers": {
+        "New Zealand": "뉴질랜드",
+        "Australia": "호주",
+        "UK": "영국",
+        "Canada": "캐나다"
+      }
+    },
+    "geography:68": {
+      "question": "대부분 식민지화되지 않은 아프리카 국가는 어디입니까?",
+      "answers": {
+        "Kenya": "케냐",
+        "Ethiopia": "에티오피아",
+        "Nigeria": "나이지리아",
+        "Ghana": "가나"
+      }
+    },
+    "geography:69": {
+      "question": "아마존은 세계 최대의 열대 지역인가요?",
+      "answers": {
+        "Desert": "사막",
+        "Rainforest": "열대우림",
+        "Savanna": "사바나",
+        "Tundra": "툰드라"
+      }
+    },
+    "geography:70": {
+      "question": "시간대가 가장 많은 국가는 어디인가요?",
+      "answers": {
+        "USA": "미국",
+        "Russia": "러시아",
+        "China": "중국",
+        "Canada": "캐나다"
+      }
+    },
+    "geography:71": {
+      "question": "'빅 애플'이라는 별명이 붙은 미국 도시는 어디인가요?",
+      "answers": {
+        "Los Angeles": "로스앤젤레스",
+        "New York": "뉴욕",
+        "Chicago": "시카고",
+        "Miami": "마이애미"
+      }
+    },
+    "geography:72": {
+      "question": "킬리만자로 산은 어느 나라에 있습니까?",
+      "answers": {
+        "Kenya": "케냐",
+        "Tanzania": "탄자니아",
+        "Uganda": "우간다",
+        "Ethiopia": "에티오피아"
+      }
+    },
+    "geography:73": {
+      "question": "마추픽추는 어느 국가에 있나요?",
+      "answers": {
+        "Chile": "칠레",
+        "Peru": "페루",
+        "Bolivia": "볼리비아",
+        "Ecuador": "에콰도르"
+      }
+    },
+    "geography:74": {
+      "question": "남아프리카공화국에 완전히 둘러싸인 국가는 어디인가요?",
+      "answers": {
+        "Lesotho": "레소토",
+        "Eswatini": "에스와티니",
+        "Botswana": "보츠와나",
+        "Namibia": "나미비아"
+      }
+    },
+    "geography:75": {
+      "question": "다음 중 내륙 국가는 어디인가요?",
+      "answers": {
+        "Switzerland": "스위스",
+        "Spain": "스페인",
+        "Italy": "이탈리아",
+        "Portugal": "포르투갈"
+      }
+    },
+    "geography:76": {
+      "question": "국기에 단풍잎이 있는 국가는 어디인가요?",
+      "answers": {
+        "USA": "미국",
+        "Canada": "캐나다",
+        "UK": "영국",
+        "Australia": "호주"
+      }
+    },
+    "geography:77": {
+      "question": "물 위에 건설된 도시 베니스는 어느 나라에 있나요?",
+      "answers": {
+        "Spain": "스페인",
+        "Italy": "이탈리아",
+        "Greece": "그리스",
+        "Croatia": "크로아티아"
+      }
+    },
+    "geography:78": {
+      "question": "가장 깊은 바다는 어디인가요?",
+      "answers": {
+        "Atlantic": "대서양",
+        "Pacific": "태평양",
+        "Indian": "인도인",
+        "Arctic": "북극"
+      }
+    },
+    "geography:79": {
+      "question": "미시시피 강이 주로 어느 나라에 있습니까?",
+      "answers": {
+        "Canada": "캐나다",
+        "USA": "미국",
+        "Mexico": "멕시코",
+        "Brazil": "브라질"
+      }
+    },
+    "geography:80": {
+      "question": "파나마 운하는 어느 두 바다를 연결합니까?",
+      "answers": {
+        "Atlantic and Pacific": "대서양 및 태평양",
+        "Indian and Pacific": "인도 및 태평양",
+        "Arctic and Atlantic": "북극 및 대서양",
+        "Indian and Atlantic": "인도 및 대서양"
+      }
+    },
+    "geography:81": {
+      "question": "수에즈 운하가 위치한 국가는 어디일까요?",
+      "answers": {
+        "Turkey": "터키",
+        "Egypt": "이집트",
+        "Panama": "파나마",
+        "Greece": "그리스"
+      }
+    },
+    "geography:82": {
+      "question": "'떠오르는 태양의 나라'로 알려진 국가는 어디인가요?",
+      "answers": {
+        "China": "중국",
+        "Japan": "일본",
+        "Korea": "한국",
+        "Thailand": "태국"
+      }
+    },
+    "geography:83": {
+      "question": "영주권자가 없는 대륙은 어디입니까?",
+      "answers": {
+        "Australia": "호주",
+        "Antarctica": "남극 대륙",
+        "Africa": "아프리카",
+        "Asia": "아시아"
+      }
+    },
+    "geography:84": {
+      "question": "로키 산맥은 어디에 있습니까?",
+      "answers": {
+        "Europe": "유럽",
+        "North America": "북미",
+        "Asia": "아시아",
+        "Africa": "아프리카"
+      }
+    },
+    "geography:85": {
+      "question": "마라케시는 어느 나라에 있나요?",
+      "answers": {
+        "Egypt": "이집트",
+        "Morocco": "모로코",
+        "Algeria": "알제리",
+        "Tunisia": "튀니지"
+      }
+    },
+    "geography:86": {
+      "question": "피요르드로 유명한 스칸디나비아 국가는 어디인가요?",
+      "answers": {
+        "Norway": "노르웨이",
+        "Spain": "스페인",
+        "Italy": "이탈리아",
+        "Greece": "그리스"
+      }
+    },
+    "geography:87": {
+      "question": "일본의 수도는 무엇입니까?",
+      "answers": {
+        "Osaka": "오사카",
+        "Tokyo": "도쿄",
+        "Kyoto": "교토",
+        "Nagoya": "나고야"
+      }
+    },
+    "geography:88": {
+      "question": "이집트의 수도는 어디에 위치해 있나요?",
+      "answers": {
+        "Tigris River": "티그리스 강",
+        "Nile River": "나일 강",
+        "Congo River": "콩고 강",
+        "Niger River": "니제르 강"
+      }
+    },
+    "geography:89": {
+      "question": "타지마할로 유명한 나라는 어디인가요?",
+      "answers": {
+        "Pakistan": "파키스탄",
+        "India": "인도",
+        "Bangladesh": "방글라데시",
+        "Nepal": "네팔"
+      }
+    },
+    "geography:90": {
+      "question": "'선샤인 스테이트(Sunshine State)'라는 별명을 가진 미국의 주는 어디입니까?",
+      "answers": {
+        "California": "캘리포니아",
+        "Florida": "플로리다",
+        "Texas": "텍사스",
+        "Nevada": "네바다"
+      }
+    },
+    "geography:91": {
+      "question": "사하라 사막이 가장 많이 분포하는 국가는 어디인가요?",
+      "answers": {
+        "Egypt": "이집트",
+        "Algeria": "알제리",
+        "Morocco": "모로코",
+        "Tunisia": "튀니지"
+      }
+    },
+    "geography:92": {
+      "question": "물 위에서 가장 긴 산맥은 무엇입니까?",
+      "answers": {
+        "Himalayas": "히말라야",
+        "Andes": "안데스",
+        "Rockies": "로키산맥",
+        "Alps": "알프스"
+      }
+    },
+    "geography:93": {
+      "question": "아이슬란드는 어느 해양 지역에 있습니까?",
+      "answers": {
+        "Pacific": "태평양",
+        "North Atlantic": "북대서양",
+        "Indian": "인도인",
+        "Southern": "남부"
+      }
+    },
+    "geography:94": {
+      "question": "완전히 남반구에 속해 있는 대륙은 어디인가요?",
+      "answers": {
+        "Europe": "유럽",
+        "Antarctica": "남극 대륙",
+        "Asia": "아시아",
+        "North America": "북미"
+      }
+    },
+    "geography:95": {
+      "question": "템스강이 흐르는 도시는 어디일까요?",
+      "answers": {
+        "Paris": "파리",
+        "London": "런던",
+        "Berlin": "베를린",
+        "Rome": "로마"
+      }
+    },
+    "geography:96": {
+      "question": "흰색 바탕에 빨간색 원(떠오르는 태양)이 있는 국기가 있는 국가는 어디인가요?",
+      "answers": {
+        "China": "중국",
+        "Japan": "일본",
+        "South Korea": "한국",
+        "Vietnam": "베트남"
+      }
+    },
+    "geography:97": {
+      "question": "아마존 강은 어느 바다로 흘러 들어가나요?",
+      "answers": {
+        "Pacific": "태평양",
+        "Atlantic": "대서양",
+        "Indian": "인도인",
+        "Arctic": "북극"
+      }
+    },
+    "geography:98": {
+      "question": "완전히 북반구에 속한 대륙은 어디인가요?",
+      "answers": {
+        "Europe": "유럽",
+        "Africa": "아프리카",
+        "South America": "남미",
+        "Australia": "호주"
+      }
+    },
+    "geography:99": {
+      "question": "가장 높은 폭포인 엔젤 폭포(Angel Falls)가 위치한 곳은 어디인가요?",
+      "answers": {
+        "Brazil": "브라질",
+        "Venezuela": "베네수엘라",
+        "Peru": "페루",
+        "Colombia": "콜롬비아"
+      }
+    }
+  }
+}

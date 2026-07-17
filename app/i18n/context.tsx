@@ -116,8 +116,8 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem("baseQuizLocale");
-    const detected = matchLocale(saved || navigator.languages?.[0] || navigator.language);
-    void setLocale(detected);
+    const initialLocale = saved ? matchLocale(saved) : "en";
+    void setLocale(initialLocale);
   }, [setLocale]);
 
   const t = useCallback((key: string, params?: Params) => {

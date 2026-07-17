@@ -19,13 +19,9 @@ const themeScript = `
 
       const supportedLocales = ["en", "tr", "es", "pt", "fr", "de", "ru", "ar", "zh", "ja", "ko"];
       const savedLocale = localStorage.getItem("baseQuizLocale");
-      const browserLocale = (navigator.languages?.[0] || navigator.language || "en").toLowerCase();
-      const normalizedLocale = browserLocale.startsWith("zh") ? "zh" : browserLocale.split("-")[0];
       const locale = savedLocale && supportedLocales.includes(savedLocale)
         ? savedLocale
-        : supportedLocales.includes(normalizedLocale)
-          ? normalizedLocale
-          : "en";
+        : "en";
       document.documentElement.lang = locale === "zh" ? "zh-CN" : locale;
       document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
     } catch {

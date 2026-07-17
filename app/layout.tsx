@@ -18,7 +18,7 @@ const themeScript = `
       document.documentElement.style.colorScheme = theme;
 
       const supportedLocales = ["en", "tr", "es", "pt", "fr", "de", "ru", "ar", "zh", "ja", "ko"];
-      const savedLocale = localStorage.getItem("baseQuizLocale");
+      const savedLocale = localStorage.getItem("baseQuizLocaleV2");
       const locale = savedLocale && supportedLocales.includes(savedLocale)
         ? savedLocale
         : "en";

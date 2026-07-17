@@ -1390,7 +1390,7 @@ export default function Home() {
     },
     header: {
       position: "relative",
-      zIndex: 1,
+      zIndex: 100,
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",

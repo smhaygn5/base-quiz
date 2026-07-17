@@ -11,6 +11,8 @@ import {
 } from "react";
 import englishCatalog from "./catalogs/en.json";
 
+const LOCALE_STORAGE_KEY = "baseQuizLocaleV2";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "en", short: "EN", name: "English" },
   { code: "tr", short: "TR", name: "Türkçe" },
@@ -106,7 +108,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
       const nextCatalog = await catalogLoaders[nextLocale]();
       setCatalog(nextCatalog);
       setCurrentLocale(nextLocale);
-      localStorage.setItem("baseQuizLocale", nextLocale);
+      localStorage.setItem(LOCALE_STORAGE_KEY, nextLocale);
       document.documentElement.lang = localeTags[nextLocale];
       document.documentElement.dir = nextLocale === "ar" ? "rtl" : "ltr";
     } finally {
@@ -115,7 +117,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    const saved = localStorage.getItem("baseQuizLocale");
+    const saved = localStorage.getItem(LOCALE_STORAGE_KEY);
     const initialLocale = saved ? matchLocale(saved) : "en";
     void setLocale(initialLocale);
   }, [setLocale]);

@@ -997,6 +997,7 @@ export default function Home() {
   const [verifiedAddress, setVerifiedAddress] = useState<string | null>(null);
   const [walletAuthPending, setWalletAuthPending] = useState(false);
   const currentAddressRef = useRef<string | null>(null);
+  const lastConnectedAddressRef = useRef<string | null>(null);
   const verifiedAddressRef = useRef<string | null>(null);
   const authRequestRef = useRef<{
     address: string;
@@ -1157,7 +1158,16 @@ export default function Home() {
     let cancelled = false;
     const normalizedAddress = address?.toLowerCase() || null;
     const addressChanged = currentAddressRef.current !== normalizedAddress;
+    const previousConnectedAddress = lastConnectedAddressRef.current;
+    const walletChanged = Boolean(
+      normalizedAddress
+      && previousConnectedAddress
+      && previousConnectedAddress !== normalizedAddress,
+    );
     currentAddressRef.current = normalizedAddress;
+    if (normalizedAddress) {
+      lastConnectedAddressRef.current = normalizedAddress;
+    }
 
     if (addressChanged) {
       verifiedAddressRef.current = null;
@@ -1187,7 +1197,12 @@ export default function Home() {
 
     const cachedStreak = readWalletStreak(address);
     setStreak(cachedStreak);
-    void authenticateWallet(address);
+    if (walletChanged) {
+      void authenticateWallet(address);
+    } else {
+      verifiedAddressRef.current = normalizedAddress;
+      setVerifiedAddress(normalizedAddress);
+    }
 
     (async () => {
       try {

@@ -12,7 +12,7 @@ export function RootProvider({ children }: { children: ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    <WagmiProvider config={wagmiConfig}>
+    <WagmiProvider config={wagmiConfig} reconnectOnMount={false}>
       <QueryClientProvider client={queryClient}>
         <OnchainKitProvider
           apiKey={process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY}

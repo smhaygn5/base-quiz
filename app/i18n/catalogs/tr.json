@@ -145,6 +145,8 @@
     "share.text": "🧠 Base Quiz’de {score} puan kazandım! 🔥 Seri: {streak} gün\n\nBeni geçebileceğini düşünüyor musun? 👇",
     "error.startFailed": "Tur başlatılamadı. Lütfen tekrar deneyin.",
     "error.startCancelled": "İşlem iptal edildi. Turu başlatmak için bunu onaylayın.",
+    "error.signatureCancelled": "Cüzdan imzası iptal edildi. Devam etmek için mesajı imzalayın.",
+    "error.signatureFailed": "Cüzdan imzası doğrulanamadı. Lütfen tekrar deneyin.",
     "error.saveFailed": "Skor kaydedilemedi. Lütfen tekrar deneyin.",
     "error.alreadyPlayed": "Bugünkü skorun zaten kaydedildi. Yarın tekrar gel.",
     "error.claimFailed": "Rozet talep edilemedi. Lütfen tekrar deneyin.",

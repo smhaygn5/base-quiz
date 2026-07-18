@@ -145,6 +145,8 @@
     "share.text": "🧠 ¡Conseguí {score} puntos en Base Quiz! 🔥 Racha: {streak} días\n\n¿Crees que puedes superarme? 👇",
     "error.startFailed": "No se pudo iniciar la ronda. Por favor inténtalo de nuevo.",
     "error.startCancelled": "Transacción cancelada. Confírmalo para comenzar la ronda.",
+    "error.signatureCancelled": "La firma de la billetera se canceló. Firma el mensaje para continuar.",
+    "error.signatureFailed": "No se pudo verificar la firma de la billetera. Inténtalo de nuevo.",
     "error.saveFailed": "No se pudo guardar el marcador. Por favor inténtalo de nuevo.",
     "error.alreadyPlayed": "Ya guardado hoy. Vuelve mañana.",
     "error.claimFailed": "No se pudo reclamar la insignia. Por favor inténtalo de nuevo.",

@@ -70,6 +70,17 @@
   --bq-glow-secondary: rgba(96, 165, 250, 0.06);
   --bq-modal-overlay: rgba(0, 0, 0, 0.85);
   --bq-tutorial-overlay: rgba(0, 0, 0, 0.92);
+  caret-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.base-quiz-app input,
+.base-quiz-app textarea,
+.base-quiz-app [contenteditable="true"] {
+  caret-color: auto;
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 :root[data-theme="light"] .base-quiz-app {

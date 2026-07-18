@@ -145,6 +145,8 @@
     "share.text": "🧠 I scored {score} points on Base Quiz! 🔥 Streak: {streak} days\n\nThink you can beat me? 👇",
     "error.startFailed": "The round could not be started. Please try again.",
     "error.startCancelled": "Transaction cancelled. Confirm it to start the round.",
+    "error.signatureCancelled": "Wallet signature was cancelled. Sign the message to continue.",
+    "error.signatureFailed": "The wallet signature could not be verified. Please try again.",
     "error.saveFailed": "The score could not be saved. Please try again.",
     "error.alreadyPlayed": "Already saved today. Come back tomorrow.",
     "error.claimFailed": "The badge could not be claimed. Please try again.",

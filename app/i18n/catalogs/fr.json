@@ -145,6 +145,8 @@
     "share.text": "🧠 J’ai marqué {score} points sur Base Quiz ! 🔥 Série : {streak} jours\n\nTu penses pouvoir me battre ? 👇",
     "error.startFailed": "Le tour n'a pas pu démarrer. Veuillez réessayer.",
     "error.startCancelled": "Transaction annulée. Confirmez-le pour commencer le tour.",
+    "error.signatureCancelled": "La signature du portefeuille a été annulée. Signez le message pour continuer.",
+    "error.signatureFailed": "La signature du portefeuille n’a pas pu être vérifiée. Réessayez.",
     "error.saveFailed": "Le score n'a pas pu être sauvegardé. Veuillez réessayer.",
     "error.alreadyPlayed": "Déjà enregistré aujourd'hui. Revenez demain.",
     "error.claimFailed": "Le badge n'a pas pu être réclamé. Veuillez réessayer.",

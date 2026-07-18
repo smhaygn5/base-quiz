@@ -145,6 +145,8 @@
     "share.text": "🧠 Ich habe {score}-Punkte auf Base Quiz erzielt! 🔥 Streak: {streak} Tage\n\nGlaubst du, du kannst mich schlagen? 👇",
     "error.startFailed": "Die Runde konnte nicht gestartet werden. Bitte versuchen Sie es erneut.",
     "error.startCancelled": "Transaktion abgebrochen. Bestätigen Sie es, um die Runde zu starten.",
+    "error.signatureCancelled": "Die Wallet-Signatur wurde abgebrochen. Signiere die Nachricht, um fortzufahren.",
+    "error.signatureFailed": "Die Wallet-Signatur konnte nicht verifiziert werden. Versuche es erneut.",
     "error.saveFailed": "Der Punktestand konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.",
     "error.alreadyPlayed": "Heute schon gespeichert. Komm morgen wieder.",
     "error.claimFailed": "Das Abzeichen konnte nicht beansprucht werden. Bitte versuchen Sie es erneut.",

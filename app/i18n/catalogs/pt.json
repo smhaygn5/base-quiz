@@ -145,6 +145,8 @@
     "share.text": "🧠 Fiz {score} pontos no Base Quiz! 🔥 Sequência: {streak} dias\n\nAcha que consegue me superar? 👇",
     "error.startFailed": "A rodada não pôde ser iniciada. Por favor, tente novamente.",
     "error.startCancelled": "Transação cancelada. Confirme para iniciar a rodada.",
+    "error.signatureCancelled": "A assinatura da carteira foi cancelada. Assine a mensagem para continuar.",
+    "error.signatureFailed": "Não foi possível verificar a assinatura da carteira. Tente novamente.",
     "error.saveFailed": "A pontuação não pôde ser salva. Por favor, tente novamente.",
     "error.alreadyPlayed": "Já salvo hoje. Volte amanhã.",
     "error.claimFailed": "O distintivo não pôde ser reivindicado. Por favor, tente novamente.",

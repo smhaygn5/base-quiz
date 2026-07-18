@@ -145,6 +145,8 @@
     "share.text": "🧠 我在 Base Quiz 上获得了 {score} 积分！ 🔥 连胜：{streak} 天\n\n你觉得你能打败我吗？ 👇",
     "error.startFailed": "该回合无法开始。请再试一次。",
     "error.startCancelled": "交易已取消。确认后即可开始回合。",
+    "error.signatureCancelled": "钱包签名已取消。请签署消息以继续。",
+    "error.signatureFailed": "无法验证钱包签名，请重试。",
     "error.saveFailed": "分数无法保存。请再试一次。",
     "error.alreadyPlayed": "今天已经保存了。明天再来。",
     "error.claimFailed": "徽章无法领取。请再试一次。",

@@ -1,8 +1,16 @@
 "use client";
-import { useState, useEffect, useCallback, CSSProperties } from "react";
+import { useState, useEffect, useCallback, useRef, CSSProperties } from "react";
 import Image from "next/image";
 import { useMiniKit, useComposeCast } from "@coinbase/onchainkit/minikit";
-import { useAccount, useConnect, useDisconnect, useWriteContract, useSwitchChain, useChainId } from "wagmi";
+import {
+  useAccount,
+  useConnect,
+  useDisconnect,
+  useWriteContract,
+  useSwitchChain,
+  useChainId,
+  useSignMessage,
+} from "wagmi";
 import { base } from "wagmi/chains";
 import { createPublicClient, http } from "viem";
 import { namehash } from "viem/ens";
@@ -727,6 +735,18 @@ const APP_URL =
   process.env.NEXT_PUBLIC_URL?.replace(/\/$/, "") ||
   "https://basequiz.xyz";
 
+function walletStorageKey(name: "streak" | "lastPlayed", walletAddress: string) {
+  return `baseQuiz:${name}:${walletAddress.toLowerCase()}`;
+}
+
+function readWalletStreak(walletAddress: string) {
+  const value = Number.parseInt(
+    localStorage.getItem(walletStorageKey("streak", walletAddress)) || "0",
+    10,
+  );
+  return Number.isFinite(value) && value > 0 ? value : 0;
+}
+
 // Base Builder Code (bc_tajhkats) — appended as a calldata suffix so onchain
 // transactions are attributed to this builder for Base Builder Rewards.
 const BUILDER_CODE_SUFFIX = "0x62635f74616a686b6174730b0080218021802180218021802180218021" as const;
@@ -914,6 +934,7 @@ export default function Home() {
   const { disconnect } = useDisconnect();
   const { writeContractAsync } = useWriteContract();
   const { switchChainAsync } = useSwitchChain();
+  const { signMessageAsync } = useSignMessage();
   const chainId = useChainId();
 
   const baseWallet = connectors.find((c) => c.id === "baseAccount") ||
@@ -973,6 +994,73 @@ export default function Home() {
   const [soundOn, setSoundOn] = useState(true);
   const [theme, setTheme] = useState<"dark" | "light">("dark");
   const [totalPlayers, setTotalPlayers] = useState<number | null>(null);
+  const [verifiedAddress, setVerifiedAddress] = useState<string | null>(null);
+  const [walletAuthPending, setWalletAuthPending] = useState(false);
+  const currentAddressRef = useRef<string | null>(null);
+  const verifiedAddressRef = useRef<string | null>(null);
+  const authRequestRef = useRef<{
+    address: string;
+    promise: Promise<boolean>;
+  } | null>(null);
+  const walletVerified = Boolean(
+    address && verifiedAddress === address.toLowerCase(),
+  );
+
+  const authenticateWallet = useCallback((walletAddress: string) => {
+    const normalizedAddress = walletAddress.toLowerCase();
+    if (verifiedAddressRef.current === normalizedAddress) {
+      return Promise.resolve(true);
+    }
+
+    const existingRequest = authRequestRef.current;
+    if (existingRequest?.address === normalizedAddress) {
+      return existingRequest.promise;
+    }
+
+    const request = (async () => {
+      setWalletAuthPending(true);
+      setStartTxError("");
+      const message = [
+        "Base Quiz wallet sign-in",
+        "",
+        `Domain: ${window.location.host}`,
+        `Wallet: ${walletAddress}`,
+        `Issued at: ${new Date().toISOString()}`,
+        "",
+        "Sign this message to confirm you control this wallet.",
+        "This signature does not send a transaction and costs no gas.",
+      ].join("\n");
+
+      try {
+        await signMessageAsync({ message });
+        if (currentAddressRef.current !== normalizedAddress) return false;
+        verifiedAddressRef.current = normalizedAddress;
+        setVerifiedAddress(normalizedAddress);
+        return true;
+      } catch (error: unknown) {
+        if (currentAddressRef.current === normalizedAddress) {
+          const detail = error instanceof Error ? error.message : "";
+          const rejected = /rejected|denied|declined|cancelled|canceled/i.test(detail);
+          setStartTxError(
+            rejected ? t("error.signatureCancelled") : t("error.signatureFailed"),
+          );
+        }
+        return false;
+      } finally {
+        if (currentAddressRef.current === normalizedAddress) {
+          setWalletAuthPending(false);
+        }
+      }
+    })();
+
+    authRequestRef.current = { address: normalizedAddress, promise: request };
+    void request.finally(() => {
+      if (authRequestRef.current?.promise === request) {
+        authRequestRef.current = null;
+      }
+    });
+    return request;
+  }, [signMessageAsync, t]);
 
   useEffect(() => {
     if (!isFrameReady) setFrameReady();
@@ -1057,7 +1145,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    setStreak(parseInt(localStorage.getItem("streak") || "0"));
     if (!localStorage.getItem("tutorialSeen")) setTutorialStep(0);
   }, []);
 
@@ -1067,7 +1154,41 @@ export default function Home() {
   }
 
   useEffect(() => {
-    if (!address) return;
+    let cancelled = false;
+    const normalizedAddress = address?.toLowerCase() || null;
+    const addressChanged = currentAddressRef.current !== normalizedAddress;
+    currentAddressRef.current = normalizedAddress;
+
+    if (addressChanged) {
+      verifiedAddressRef.current = null;
+      setVerifiedAddress(null);
+      setStreak(0);
+      setOnchainStreak(0);
+      setOwned([false, false, false, false]);
+      setBadgesLoading(false);
+      setClaimingId(null);
+      setClaimError("");
+      setTxStatus("idle");
+      setTxHash("");
+      setTxError("");
+      setStartTxError("");
+      setStartTxPending(false);
+      setQuestions([]);
+      setQIndex(0);
+      setScore(0);
+      setSelected(null);
+      setScreen("start");
+    }
+
+    if (!address || !normalizedAddress) {
+      setWalletAuthPending(false);
+      return;
+    }
+
+    const cachedStreak = readWalletStreak(address);
+    setStreak(cachedStreak);
+    void authenticateWallet(address);
+
     (async () => {
       try {
         const p = await publicClient.readContract({
@@ -1077,9 +1198,15 @@ export default function Home() {
           args: [address],
         });
         const chainStreak = Number(p[2]);
-        if (chainStreak > 0) setStreak(chainStreak);
+        if (cancelled || currentAddressRef.current !== normalizedAddress) return;
+        setOnchainStreak(chainStreak);
+        setStreak(chainStreak > 0 ? chainStreak : cachedStreak);
       } catch {}
     })();
+
+    return () => {
+      cancelled = true;
+    };
   }, [address]);
 
   useEffect(() => {
@@ -1096,6 +1223,9 @@ export default function Home() {
   }, []);
 
   const nextQuestion = useCallback(() => {
+    const roundAddress = address?.toLowerCase() || null;
+    if (roundAddress !== currentAddressRef.current) return;
+
     setSelected(null);
     setTimeLeft(TIME_PER_Q);
     if (qIndex + 1 < QUIZ_SIZE) {
@@ -1103,15 +1233,25 @@ export default function Home() {
     } else {
       const today = new Date().toISOString().slice(0, 10);
       const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
-      const lastPlayed = localStorage.getItem("lastPlayed");
+      const lastPlayed = address
+        ? localStorage.getItem(walletStorageKey("lastPlayed", address))
+        : null;
       // Day-based streak: replaying the same day keeps it, a new consecutive day increments.
-      const newStreak = lastPlayed === today ? streak : lastPlayed === yesterday ? streak + 1 : 1;
-      localStorage.setItem("streak", String(newStreak));
-      localStorage.setItem("lastPlayed", today);
+      const newStreak = address
+        ? lastPlayed === today
+          ? streak
+          : lastPlayed === yesterday
+            ? streak + 1
+            : 1
+        : 0;
+      if (address) {
+        localStorage.setItem(walletStorageKey("streak", address), String(newStreak));
+        localStorage.setItem(walletStorageKey("lastPlayed", address), today);
+      }
       setStreak(newStreak);
       setScreen("end");
     }
-  }, [qIndex, streak]);
+  }, [address, qIndex, streak]);
 
   useEffect(() => {
     if (screen !== "quiz" || selected !== null) return;
@@ -1152,6 +1292,9 @@ export default function Home() {
       return;
     }
 
+    if (!walletVerified && !(await authenticateWallet(address))) return;
+
+    const roundAddress = address.toLowerCase();
     setStartTxPending(true);
     try {
       if (walletChainId !== base.id) await switchChainAsync({ chainId: base.id });
@@ -1162,8 +1305,10 @@ export default function Home() {
         chainId: base.id,
         dataSuffix: BUILDER_CODE_SUFFIX,
       });
+      if (currentAddressRef.current !== roundAddress) return;
       setScreen("categories");
     } catch (e: unknown) {
+      if (currentAddressRef.current !== roundAddress) return;
       const message = e instanceof Error ? e.message : "";
       const rejected = /rejected|denied|declined|cancelled|canceled/i.test(message);
       setStartTxError(rejected ? t("error.startCancelled") : t("error.startFailed"));
@@ -1210,6 +1355,13 @@ export default function Home() {
   async function saveOnchain() {
     setTxStatus("pending");
     setTxError("");
+    if (!address || !(await authenticateWallet(address))) {
+      setTxStatus("error");
+      setTxError(t("error.signatureCancelled"));
+      return;
+    }
+
+    const scoreAddress = address.toLowerCase();
     try {
       if (walletChainId !== base.id) await switchChainAsync({ chainId: base.id });
       const hash = await writeContractAsync({
@@ -1220,9 +1372,11 @@ export default function Home() {
         chainId: base.id,
         dataSuffix: BUILDER_CODE_SUFFIX,
       });
+      if (currentAddressRef.current !== scoreAddress) return;
       setTxHash(hash);
       setTxStatus("done");
     } catch (e: unknown) {
+      if (currentAddressRef.current !== scoreAddress) return;
       const msg = e instanceof Error ? e.message : "";
       setTxError(msg.includes("Already played") ? t("error.alreadyPlayed") : t("error.saveFailed"));
       setTxStatus("error");
@@ -1323,6 +1477,7 @@ export default function Home() {
     setScreen("badges");
     setBadgesLoading(true);
     setClaimError("");
+    const badgeAddress = address?.toLowerCase() || null;
     try {
       if (address) {
         const p = await publicClient.readContract({
@@ -1332,6 +1487,7 @@ export default function Home() {
           args: [address],
         });
         const chainStreak = Number(p[2]);
+        if (currentAddressRef.current !== badgeAddress) return;
         setOnchainStreak(chainStreak);
         const balances: bigint[] = [];
         for (const b of BADGES) {
@@ -1344,6 +1500,7 @@ export default function Home() {
           balances.push(bal as bigint);
           await new Promise((r) => setTimeout(r, 150));
         }
+        if (currentAddressRef.current !== badgeAddress) return;
         setOwned(balances.map((b) => Number(b) > 0));
       }
     } catch (e) {
@@ -1355,6 +1512,13 @@ export default function Home() {
   async function claimBadge(badgeId: number) {
     setClaimingId(badgeId);
     setClaimError("");
+    if (!address || !(await authenticateWallet(address))) {
+      setClaimError(t("error.signatureCancelled"));
+      setClaimingId(null);
+      return;
+    }
+
+    const claimAddress = address.toLowerCase();
     try {
       if (walletChainId !== base.id) await switchChainAsync({ chainId: base.id });
       await writeContractAsync({
@@ -1365,8 +1529,10 @@ export default function Home() {
         chainId: base.id,
         dataSuffix: BUILDER_CODE_SUFFIX,
       });
+      if (currentAddressRef.current !== claimAddress) return;
       await loadBadges();
     } catch (e: unknown) {
+      if (currentAddressRef.current !== claimAddress) return;
       console.error("Badge claim error:", e);
       setClaimError(t("error.claimFailed"));
     }
@@ -1594,7 +1760,7 @@ export default function Home() {
           <HomeHero
             streak={streak}
             onStart={enterCategories}
-            startPending={startTxPending}
+            startPending={startTxPending || walletAuthPending}
             startError={startTxError}
             onLeaderboard={loadBoard}
             onBadges={loadBadges}

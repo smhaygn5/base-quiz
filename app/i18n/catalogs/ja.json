@@ -145,6 +145,8 @@
     "share.text": "🧠 Base Quiz で {score} ポイントを獲得しました! 🔥 連続記録: {streak} 日\n\n私に勝てると思いますか？ 👇",
     "error.startFailed": "ラウンドを開始できませんでした。もう一度試してください。",
     "error.startCancelled": "取引がキャンセルされました。確認してラウンドを開始します。",
+    "error.signatureCancelled": "ウォレットの署名がキャンセルされました。続行するにはメッセージに署名してください。",
+    "error.signatureFailed": "ウォレットの署名を確認できませんでした。もう一度お試しください。",
     "error.saveFailed": "スコアを保存できませんでした。もう一度試してください。",
     "error.alreadyPlayed": "今日はすでに保存されています。明日また来てね。",
     "error.claimFailed": "バッジは受け取れませんでした。もう一度試してください。",

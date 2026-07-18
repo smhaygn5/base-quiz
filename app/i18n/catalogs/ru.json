@@ -5,14 +5,14 @@
     "common.cancel": "Отмена",
     "common.next": "Далее",
     "common.skip": "Пропустить",
-    "common.tryAgain": "Попробуйте еще раз",
+    "common.tryAgain": "Попробовать снова",
     "common.connect": "Подключиться",
     "common.disconnect": "Отключить",
     "common.connectWallet": "Подключить кошелек",
     "common.connectBaseWallet": "Подключить Base Wallet",
     "common.browserWallets": "Браузерные кошельки",
     "common.recommended": "Рекомендуется",
-    "common.selectLanguage": "Выберите язык",
+    "common.selectLanguage": "Выбрать язык",
     "common.language": "Язык",
     "common.switchLight": "Переключиться на светлую тему",
     "common.switchDark": "Переключиться на темную тему",
@@ -21,158 +21,208 @@
     "home.kicker": "Ончейн-викторина · Base",
     "home.titleLine1": "Ежедневная викторина.",
     "home.titleLine2": "Создано на Base.",
-    "home.description": "Выберите категорию, ответьте на пять вопросов и сыграйте на время. Увеличивайте серию, сохраняйте результат в блокчейне и поднимайтесь в глобальной таблице лидеров.",
-    "home.streak": "Серия: {count} дней",
-    "home.confirmWallet": "Подтвердите в кошельке…",
+    "home.description": "Выбери категорию, ответь на пять вопросов и уложись во время. Продлевай серию, сохраняй очки ончейн и поднимайся в мировой таблице лидеров.",
+    "home.streak": {
+      "one": "{count} день подряд",
+      "few": "{count} дня подряд",
+      "many": "{count} дней подряд",
+      "other": "{count} дня подряд"
+    },
+    "home.confirmWallet": "Подтверди в кошельке…",
     "home.startRound": "Начать раунд",
     "home.leaderboard": "Таблица лидеров",
-    "home.streakBadges": "Полоса значков",
+    "home.streakBadges": "Награды за серию",
     "home.facts": "5 вопросов · по 15 секунд · результаты сохраняются в блокчейне",
-    "category.pick": "Выберите категорию",
-    "category.meta": "{count} вопросов · 5 за раунд",
-    "category.start": "Начать викторину {category}",
+    "category.pick": "Выбери категорию",
+    "category.meta": {
+      "one": "{count} вопрос · 5 за раунд",
+      "few": "{count} вопроса · 5 за раунд",
+      "many": "{count} вопросов · 5 за раунд",
+      "other": "{count} вопроса · 5 за раунд"
+    },
+    "category.start": "Начать: {category}",
     "category.previous": "Предыдущая категория",
     "category.next": "Следующая категория",
     "category.imageAlt": "Категория викторины {category}",
     "category.crypto.name": "Крипто",
-    "category.crypto.description": "Проверьте свои знания о Base, Ethereum, кошельках, DeFi и культуре, формирующей мир onchain.",
+    "category.crypto.description": "Проверь знания о Base, Ethereum, кошельках, DeFi и ончейн-культуре.",
     "category.sports.name": "Спорт",
-    "category.sports.description": "От футбола и баскетбола до тенниса и Олимпийских игр — посмотрите, насколько сильна ваша спортивная память.",
+    "category.sports.description": "От футбола и баскетбола до тенниса и Олимпиады — проверь свои знания о спорте.",
     "category.art.name": "Искусство",
-    "category.art.description": "Изучите живопись, художников, движения и идеи, которые меняли визуальную культуру на протяжении поколений.",
+    "category.art.description": "Познакомься с произведениями, художниками, направлениями и идеями, изменившими визуальную культуру.",
     "category.history.name": "История",
-    "category.history.description": "Путешествуйте по цивилизациям, поворотным моментам и людям, чьи решения сформировали мир.",
+    "category.history.description": "Отправляйся в путешествие по цивилизациям, переломным событиям и историям людей, изменивших мир.",
     "category.science.name": "Наука",
-    "category.science.description": "Испытайте себя в физике, биологии, химии и открытиях, объясняющих, как все работает.",
+    "category.science.description": "Проверь знания по физике, биологии, химии и открытиям, объясняющим устройство мира.",
     "category.geography.name": "География",
-    "category.geography.description": "Путешествуйте по странам, столицам, океанам и достопримечательностям со всех уголков нашей планеты.",
+    "category.geography.description": "Исследуй страны, столицы, океаны и достопримечательности со всего мира.",
     "quiz.fallbackName": "Викторина",
     "quiz.questionProgress": "Вопрос {current} из {total}",
-    "quiz.score": "Оценка",
+    "quiz.score": "Очки",
     "quiz.time": "Время",
-    "quiz.answeredAria": "Ответы на вопросы {answered} из {total}",
-    "quiz.chooseCorrect": "Выберите правильный ответ",
+    "quiz.answeredAria": "Отвечено: {answered} из {total}",
+    "quiz.chooseCorrect": "Выбери правильный ответ",
     "quiz.correct": "Правильный ответ",
     "quiz.wrong": "Неправильный ответ",
     "quiz.points": "+{points} баллов",
-    "quiz.correctOption": "Правильный вариант: {option}.",
-    "quiz.autoNote": "Ответьте один раз · следующий вопрос загружается автоматически",
+    "quiz.correctOption": "Правильный ответ: {option}",
+    "quiz.autoNote": "Один ответ · следующий вопрос откроется автоматически",
     "result.roundComplete": "Раунд завершен",
-    "result.finalScore": "Ваш окончательный результат",
-    "result.points": "очки",
+    "result.finalScore": "Твои очки",
+    "result.points": "очков",
     "result.summaryAria": "Итоги раунда",
     "result.categoryPill": "Категория {category}",
-    "result.streakPill": "Серия: {count} дней",
+    "result.streakPill": {
+      "one": "{count} день подряд",
+      "few": "{count} дня подряд",
+      "many": "{count} дней подряд",
+      "other": "{count} дня подряд"
+    },
     "result.roundCompletedTitle": "Раунд завершен",
-    "result.roundCompletedDetail": "Ответы на пять вопросов. Ваш окончательный результат готов.",
-    "result.streakUpdatedTitle": "Полоса обновлена",
-    "result.streakUpdatedDetail": "Сейчас вы находитесь на этапе обучения {count}.",
-    "result.save.idle.title": "Сохраните свой результат",
-    "result.save.idle.detail": "Зафиксируйте этот результат на Base и присоединяйтесь к глобальной таблице лидеров.",
-    "result.save.pending.title": "Подтвердите свой результат",
-    "result.save.pending.detail": "Подтвердите транзакцию в своем кошельке, чтобы завершить сохранение.",
-    "result.save.done.title": "Счет сохранен onchain",
-    "result.save.done.detail": "Ваш результат проверен на Base и готов к попаданию в таблицу лидеров.",
-    "result.save.error.title": "Сохранение требует внимания",
+    "result.roundCompletedDetail": "Ты ответил на пять вопросов. Результат готов.",
+    "result.streakUpdatedTitle": "Серия обновлена",
+    "result.streakUpdatedDetail": {
+      "one": "Твоя серия — {count} день.",
+      "few": "Твоя серия — {count} дня.",
+      "many": "Твоя серия — {count} дней.",
+      "other": "Твоя серия — {count} дня."
+    },
+    "result.save.idle.title": "Сохранить очки",
+    "result.save.idle.detail": "Сохрани результат на Base и попади в мировую таблицу лидеров.",
+    "result.save.pending.title": "Подтверди сохранение",
+    "result.save.pending.detail": "Подтверди транзакцию в кошельке, чтобы сохранить результат.",
+    "result.save.done.title": "Очки сохранены ончейн",
+    "result.save.done.detail": "Результат подтверждён на Base и уже учитывается в таблице лидеров.",
+    "result.save.error.title": "Не удалось сохранить",
     "result.save.error.detail": "Прочтите сообщение ниже и повторите попытку.",
     "result.save.disconnected.title": "Подключитесь, чтобы сохранить",
-    "result.save.disconnected.detail": "Выберите кошелек для записи своего результата на Base.",
-    "result.shareTitle": "Поделитесь своим результатом",
-    "result.shareDetail": "Бросьте вызов своим друзьям на Farcaster или X.",
-    "result.replayKicker": "Продолжайте набирать обороты",
-    "result.replayTitle": "Готовы к следующему раунду?",
-    "result.replayDetail": "Сыграйте в {category} еще раз или выберите другое испытание.",
-    "result.playAgain": "Играй еще раз",
-    "result.chooseCategory": "Выберите категорию",
-    "result.saveButton": "Сохранить счет onchain",
+    "result.save.disconnected.detail": "Выбери кошелёк, чтобы сохранить очки на Base.",
+    "result.shareTitle": "Поделиться результатом",
+    "result.shareDetail": "Брось вызов друзьям в Farcaster или X.",
+    "result.replayKicker": "Продолжай серию",
+    "result.replayTitle": "Готов к следующему раунду?",
+    "result.replayDetail": "Сыграй в категории «{category}» ещё раз или выбери другое испытание.",
+    "result.playAgain": "Играть снова",
+    "result.chooseCategory": "Выбрать категорию",
+    "result.saveButton": "Сохранить очки ончейн",
     "result.confirming": "Подтверждение…",
-    "result.saved": "Сохранено onchain.",
+    "result.saved": "Сохранено ончейн",
     "result.viewTransaction": "Посмотреть транзакцию",
-    "result.shareScore": "Поделиться счетом",
+    "result.shareScore": "Поделиться результатом",
     "result.copyText": "Копировать текст",
     "result.copied": "Скопировано в буфер обмена!",
     "leaderboard.kicker": "Base Mainnet · За всё время",
     "leaderboard.title": "Таблица лидеров",
-    "leaderboard.description": "Лучшие игроки, ранжированные по общему количеству очков onchain.",
-    "leaderboard.loading": "Чтение результатов Base…",
-    "leaderboard.empty": "Оценок пока нет. Будьте первым игроком на доске.",
+    "leaderboard.description": "Игроки отсортированы по общему количеству очков, сохранённых ончейн.",
+    "leaderboard.loading": "Загружаем очки с Base…",
+    "leaderboard.empty": "Результатов пока нет. Стань первым в таблице лидеров.",
     "leaderboard.player": "Игрок",
-    "leaderboard.totalScore": "Общий балл",
+    "leaderboard.totalScore": "Всего очков",
     "leaderboard.bestScore": "Лучший результат",
-    "leaderboard.streak": "Полоса",
-    "leaderboard.badges": "Значки",
-    "leaderboard.you": "ты",
-    "leaderboard.noBadges": "Нет значков",
-    "leaderboard.badgeTitle": "Значок {name}",
-    "leaderboard.players": "Игроков: {count}",
-    "leaderboard.verified": "Очки и значки подтверждены onchain",
+    "leaderboard.streak": "Серия",
+    "leaderboard.badges": "Награды",
+    "leaderboard.you": "Ты",
+    "leaderboard.noBadges": "Нет наград",
+    "leaderboard.badgeTitle": "Награда «{name}»",
+    "leaderboard.players": {
+      "one": "{count} игрок",
+      "few": "{count} игрока",
+      "many": "{count} игроков",
+      "other": "{count} игрока"
+    },
+    "leaderboard.verified": "Очки и награды подтверждены ончейн",
     "badges.kicker": "NFT за серии · Base Mainnet",
-    "badges.title": "Значки",
-    "badges.roadmapTitle": "Дорожная карта Streak Badge",
-    "badges.roadmapDescription": "Продолжайте играть, наращивайте свою результативность и побеждайте в каждой вехе onchain.",
-    "badges.streak": "Серия: {count} дней",
-    "badges.walletRequired": "Требуется кошелек",
-    "badges.connectTitle": "Подключитесь, чтобы просмотреть и получить свои значки",
-    "badges.connectDetail": "Ваша серия и владение NFT считываются непосредственно из Base.",
-    "badges.days": "{count} дней",
+    "badges.title": "Награды",
+    "badges.roadmapTitle": "Награды за серию",
+    "badges.roadmapDescription": "Играй каждый день, продлевай серию и забирай ончейн-награды.",
+    "badges.streak": {
+      "one": "{count} день подряд",
+      "few": "{count} дня подряд",
+      "many": "{count} дней подряд",
+      "other": "{count} дня подряд"
+    },
+    "badges.walletRequired": "Нужен кошелёк",
+    "badges.connectTitle": "Подключи кошелёк, чтобы увидеть и получить награды",
+    "badges.connectDetail": "Серия и NFT считываются напрямую из Base.",
+    "badges.days": {
+      "one": "{count} день",
+      "few": "{count} дня",
+      "many": "{count} дней",
+      "other": "{count} дня"
+    },
     "badges.bronze.name": "Бронза",
-    "badges.bronze.description": "Завершите свой первый трехдневный забег",
+    "badges.bronze.description": "Собери первую серию из 3 дней",
     "badges.silver.name": "Серебро",
-    "badges.silver.description": "Сохраняйте полосу активной в течение недели",
+    "badges.silver.description": "Продержи серию неделю",
     "badges.gold.name": "Золото",
-    "badges.gold.description": "Создайте последовательную 30-дневную серию",
-    "badges.diamond.name": "Алмаз",
-    "badges.diamond.description": "Достигните конечного 100-дневного рубежа",
-    "badges.unlock": "Разблокировка после серии {count}-дня.",
-    "badges.owned": "В собственности",
-    "badges.claim": "Получить значок",
-    "badges.claiming": "Утверждение…",
-    "badges.daysLeft": "Осталось {count} дн.",
-    "badges.locked": "Заблокировано",
-    "badges.loading": "Чтение значков от Base…",
+    "badges.gold.description": "Собери серию из 30 дней",
+    "badges.diamond.name": "Бриллиант",
+    "badges.diamond.description": "Достигни отметки в 100 дней",
+    "badges.unlock": {
+      "one": "Откроется при серии в {count} день",
+      "few": "Откроется при серии в {count} дня",
+      "many": "Откроется при серии в {count} дней",
+      "other": "Откроется при серии в {count} дня"
+    },
+    "badges.owned": "Получено",
+    "badges.claim": "Получить награду",
+    "badges.claiming": "Получаем…",
+    "badges.daysLeft": {
+      "one": "Остался {count} день",
+      "few": "Осталось {count} дня",
+      "many": "Осталось {count} дней",
+      "other": "Осталось {count} дня"
+    },
+    "badges.locked": "Закрыто",
+    "badges.loading": "Загружаем награды с Base…",
     "wallet.connectTitle": "Подключить кошелек",
     "wallet.browserWallets": "Браузерные кошельки",
     "wallet.recommended": "Рекомендуется",
     "tutorial.welcomeTitle": "Добро пожаловать.",
-    "tutorial.welcomeDetail": "Ежедневная викторина на Base. Проверьте свои знания, набирайте очки и соревнуйтесь по всему миру.",
+    "tutorial.welcomeDetail": "Ежедневная викторина на Base. Проверяй знания, собирай серии и соревнуйся с игроками со всего мира.",
     "tutorial.questionsTitle": "5 вопросов. Ежедневно.",
-    "tutorial.questionsDetail": "Отвечайте быстро — быстрее означает больше очков. Сохраните свой результат onchain, чтобы появиться в глобальной таблице лидеров.",
-    "tutorial.badgesTitle": "Зарабатывайте значки NFT.",
-    "tutorial.badgesDetail": "Поддерживайте свою серию и получайте onchain NFTs: бронзу (3 д), серебро (7 д), золото (30 д), бриллиант (100 дн).",
-    "tutorial.letsPlay": "Давайте поиграем",
+    "tutorial.questionsDetail": "Отвечай быстро: чем быстрее, тем больше очков. Сохрани результат ончейн, чтобы попасть в мировую таблицу лидеров.",
+    "tutorial.badgesTitle": "Получай NFT-награды.",
+    "tutorial.badgesDetail": "Продлевай серию и получай NFT ончейн: бронза (3 дня), серебро (7 дней), золото (30 дней), бриллиант (100 дней).",
+    "tutorial.letsPlay": "Играть",
     "footer.blockData": "ДАННЫЕ БЛОКЧЕЙНА · BASE MAINNET",
-    "footer.playersOnchain": "ИГРОКОВ В БЛОКЧЕЙНЕ: {count}",
-    "share.text": "🧠 Я набрал {score} очков в Base Quiz! 🔥 Серия: {streak} дней\n\nСможешь меня обойти? 👇",
-    "error.startFailed": "Не удалось начать раунд. Пожалуйста, попробуйте еще раз.",
-    "error.startCancelled": "Транзакция отменена. Подтвердите это, чтобы начать раунд.",
-    "error.signatureCancelled": "Подписание в кошельке отменено. Подпишите сообщение, чтобы продолжить.",
-    "error.signatureFailed": "Не удалось проверить подпись кошелька. Повторите попытку.",
-    "error.saveFailed": "Счет спасти не удалось. Пожалуйста, попробуйте еще раз.",
-    "error.alreadyPlayed": "Сегодня уже сохранился. Возвращайся завтра.",
-    "error.claimFailed": "Значок не может быть востребован. Пожалуйста, попробуйте еще раз.",
+    "footer.playersOnchain": {
+      "one": "{count} ИГРОК ОНЧЕЙН",
+      "few": "{count} ИГРОКА ОНЧЕЙН",
+      "many": "{count} ИГРОКОВ ОНЧЕЙН",
+      "other": "{count} ИГРОКА ОНЧЕЙН"
+    },
+    "share.text": "🧠 Мой результат в Base Quiz: {score} очков! 🔥 Серия: {streak} дн.\n\nСможешь меня обойти? 👇",
+    "error.startFailed": "Не удалось начать раунд. Попробуй снова.",
+    "error.startCancelled": "Транзакция отменена. Подтверди её, чтобы начать раунд.",
+    "error.signatureCancelled": "Подпись отменена. Подпиши сообщение, чтобы продолжить.",
+    "error.signatureFailed": "Не удалось проверить подпись. Попробуй снова.",
+    "error.saveFailed": "Не удалось сохранить очки. Попробуй снова.",
+    "error.alreadyPlayed": "Сегодня результат уже сохранён. Возвращайся завтра.",
+    "error.claimFailed": "Не удалось получить награду. Попробуй снова.",
     "activation.kicker": "Настройка Base Quiz",
     "activation.title": "Активировать контракт раундов",
-    "activation.copy": "Эта одноразовая транзакция Base развертывает небольшой контракт, используемый Start Round. Он не меняет оценки, серии, значки и не переносит ETH.",
-    "activation.checking": "Проверка договора…",
+    "activation.copy": "Эта одноразовая транзакция в Base развёртывает небольшой контракт для функции «Начать раунд». Она не меняет очки, серии или награды и не переводит ETH.",
+    "activation.checking": "Проверяем контракт…",
     "activation.active": "Контракт раундов активен",
     "activation.connected": "Подключено: {address}",
-    "activation.confirming": "Подтверждаем Base…",
+    "activation.confirming": "Подтверждаем в Base…",
     "activation.activate": "Активировать контракт раундов",
     "activation.pendingTransaction": "Посмотреть ожидающую транзакцию",
     "activation.back": "Вернуться в Base Quiz",
     "activation.errorCheck": "Не удалось проверить контракт Base. Попробуйте ещё раз.",
     "activation.errorWallet": "Совместимый кошелек не найден.",
     "activation.errorCancelled": "Транзакция отменена. Никаких изменений не произошло.",
-    "activation.errorFailed": "Активация не удалась. Пожалуйста, попробуйте еще раз."
+    "activation.errorFailed": "Не удалось активировать контракт. Попробуй снова."
   },
   "quiz": {
     "crypto:0": {
       "question": "Какая компания разработала Base?",
       "answers": {
-        "Binance": "Бинанс",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
-        "Kraken": "Кракен",
-        "OKX": "ОКХ"
+        "Kraken": "Kraken",
+        "OKX": "OKX"
       }
     },
     "crypto:1": {
@@ -181,16 +231,16 @@
         "Bitcoin": "Биткойн",
         "Solana": "Солана",
         "Ethereum": "Ethereum",
-        "Avalanche": "Лавина"
+        "Avalanche": "Avalanche"
       }
     },
     "crypto:2": {
       "question": "Какой технологический стек использует Base?",
       "answers": {
-        "OP Stack": "Стек ОП",
+        "OP Stack": "OP Stack",
         "zkSync": "zkSync",
-        "Polygon CDK": "Полигон CDK",
-        "Arbitrum Nitro": "Арбитрум Нитро"
+        "Polygon CDK": "Polygon CDK",
+        "Arbitrum Nitro": "Arbitrum Nitro"
       }
     },
     "crypto:3": {
@@ -206,7 +256,7 @@
       "question": "Какой токен используется для оплаты газа на Base?",
       "answers": {
         "USDC": "USDC",
-        "BASE": "БАЗА",
+        "BASE": "BASE",
         "ETH": "ETH",
         "OP": "ОП"
       }
@@ -216,8 +266,8 @@
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
-        "Rainbow": "Радуга",
-        "Phantom": "Фантом"
+        "Rainbow": "Rainbow",
+        "Phantom": "Phantom"
       }
     },
     "crypto:6": {
@@ -241,10 +291,10 @@
     "crypto:8": {
       "question": "Какой суперцепочке принадлежит Base?",
       "answers": {
-        "Polygon Superchain": "Полигональная суперцепочка",
-        "Optimism Superchain": "Суперчейн Оптимизма",
-        "Arbitrum Orbit": "Арбитральная орбита",
-        "zkSync Hyperchain": "Гиперцепочка zkSync"
+        "Polygon Superchain": "Polygon Superchain",
+        "Optimism Superchain": "Optimism Superchain",
+        "Arbitrum Orbit": "Arbitrum Orbit",
+        "zkSync Hyperchain": "zkSync Hyperchain"
       }
     },
     "crypto:9": {
@@ -266,12 +316,12 @@
       }
     },
     "crypto:11": {
-      "question": "Смарт-контракты на Base записаны?",
+      "question": "На каком языке пишут смарт-контракты в сети Base?",
       "answers": {
         "Python": "Питон",
-        "Rust": "Ржавчина",
-        "Solidity": "Плотность",
-        "Go": "Перейти"
+        "Rust": "Rust",
+        "Solidity": "Solidity",
+        "Go": "Go"
       }
     },
     "crypto:12": {
@@ -296,7 +346,7 @@
       "question": "Какой консенсус использует Ethereum?",
       "answers": {
         "Proof of Work": "Доказательство работы",
-        "Proof of Stake": "Доказательство доли",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Authority": "Подтверждение полномочий",
         "Proof of History": "Доказательство истории"
       }
@@ -314,9 +364,9 @@
       "question": "Что НЕ является L2 из Ethereum?",
       "answers": {
         "Base": "Base",
-        "Arbitrum": "Арбитраж",
+        "Arbitrum": "Arbitrum",
         "Solana": "Солана",
-        "Optimism": "Оптимизм"
+        "Optimism": "Optimism"
       }
     },
     "crypto:17": {
@@ -324,7 +374,7 @@
       "answers": {
         "A token": "Токен",
         "Transaction fee unit": "Единица комиссии за транзакцию",
-        "A wallet": "Кошелек",
+        "A wallet": "Кошелёк",
         "An NFT type": "Тип NFT"
       }
     },
@@ -385,7 +435,7 @@
     "crypto:24": {
       "question": "Какой консенсус использует Биткойн?",
       "answers": {
-        "Proof of Stake": "Доказательство доли",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Work": "Доказательство работы",
         "Proof of Authority": "Подтверждение полномочий",
         "DPoS": "DPoS"
@@ -394,10 +444,10 @@
     "crypto:25": {
       "question": "Что означает DeFi?",
       "answers": {
-        "Defined Finance": "Определенные финансы",
-        "Decentralized Finance": "Децентрализованные финансы",
-        "Defaulted Finance": "Дефолтные финансы",
-        "Deferred Finance": "Отложенное финансирование"
+        "Defined Finance": "Defined Finance",
+        "Decentralized Finance": "Decentralized Finance",
+        "Defaulted Finance": "Defaulted Finance",
+        "Deferred Finance": "Deferred Finance"
       }
     },
     "crypto:26": {
@@ -405,7 +455,7 @@
       "answers": {
         "Lending platform": "Кредитная платформа",
         "DEX (decentralized exchange)": "DEX (децентрализованная биржа)",
-        "Wallet": "Кошелек",
+        "Wallet": "Кошелёк",
         "Bridge": "Мост"
       }
     },
@@ -421,10 +471,10 @@
     "crypto:28": {
       "question": "Что означает TVL?",
       "answers": {
-        "Token Value Locked": "Значение токена заблокировано",
-        "Total Value Locked": "Общая сумма заблокирована",
-        "Trade Volume Limit": "Лимит объема сделки",
-        "Tier Volume Level": "Уровень громкости"
+        "Token Value Locked": "Token Value Locked",
+        "Total Value Locked": "Total Value Locked",
+        "Trade Volume Limit": "Trade Volume Limit",
+        "Tier Volume Level": "Tier Volume Level"
       }
     },
     "crypto:29": {
@@ -433,13 +483,13 @@
         "DEX": "DEX",
         "Lending protocol": "Протокол кредитования",
         "Stablecoin": "Стейблкоин",
-        "NFT marketplace": "Торговая площадка NFT"
+        "NFT marketplace": "NFT-маркетплейс"
       }
     },
     "crypto:30": {
       "question": "Что такое урожайное земледелие?",
       "answers": {
-        "Mining crops": "Горные культуры",
+        "Mining crops": "Выращивание урожая",
         "Earning rewards from DeFi protocols": "Получение вознаграждений от протоколов DeFi",
         "A staking pool name": "Название пула ставок",
         "An NFT minting term": "Срок чеканки NFT"
@@ -448,8 +498,8 @@
     "crypto:31": {
       "question": "Какая компания выпускает USDC?",
       "answers": {
-        "Tether": "Привязь",
-        "Circle": "Круг",
+        "Tether": "Tether",
+        "Circle": "Circle",
         "Coinbase": "Coinbase",
         "Paxos": "Паксос"
       }
@@ -457,8 +507,8 @@
     "crypto:32": {
       "question": "Какая компания выпускает USDT?",
       "answers": {
-        "Circle": "Круг",
-        "Tether": "Привязь",
+        "Circle": "Circle",
+        "Tether": "Tether",
         "Coinbase": "Coinbase",
         "MakerDAO": "MakerDAO"
       }
@@ -484,10 +534,10 @@
     "crypto:35": {
       "question": "Что означает NFT?",
       "answers": {
-        "New Finance Token": "Новый финансовый токен",
-        "Non-Fungible Token": "Невзаимозаменяемый токен",
-        "Network File Transfer": "Передача файлов по сети",
-        "Node Function Type": "Тип функции узла"
+        "New Finance Token": "New Finance Token",
+        "Non-Fungible Token": "Non-Fungible Token",
+        "Network File Transfer": "Network File Transfer",
+        "Node Function Type": "Node Function Type"
       }
     },
     "crypto:36": {
@@ -518,12 +568,12 @@
       }
     },
     "crypto:39": {
-      "question": "Как называются секретные слова кошелька?",
+      "question": "Как называются секретные слова для восстановления кошелька?",
       "answers": {
-        "Public key": "Открытый ключ",
-        "Seed phrase": "Начальная фраза",
+        "Public key": "Публичный ключ",
+        "Seed phrase": "Сид-фраза",
         "Hash": "Хэш",
-        "Nonce": "Одноразовый номер"
+        "Nonce": "Nonce"
       }
     },
     "crypto:40": {
@@ -532,14 +582,14 @@
         "A mobile app": "Мобильное приложение",
         "A physical device for storing keys": "Физическое устройство для хранения ключей",
         "A browser extension": "Расширение для браузера.",
-        "An exchange account": "Биржевой счет"
+        "An exchange account": "Аккаунт на бирже"
       }
     },
     "crypto:41": {
-      "question": "НИКОГДА не следует делиться своими?",
+      "question": "Что нельзя никому сообщать?",
       "answers": {
         "Wallet address": "Адрес кошелька",
-        "Seed phrase": "Начальная фраза",
+        "Seed phrase": "Сид-фраза",
         "ENS name": "Имя ENS",
         "Username": "Имя пользователя"
       }
@@ -547,7 +597,7 @@
     "crypto:42": {
       "question": "Самостоятельное хранение означает?",
       "answers": {
-        "Exchange holds your keys": "Exchange хранит ваши ключи",
+        "Exchange holds your keys": "Биржа хранит твои ключи",
         "You control your private keys": "Вы контролируете свои личные ключи",
         "A bank holds your keys": "Ваши ключи хранятся в банке.",
         "A friend holds your keys": "Ваши ключи хранятся у друга"
@@ -556,18 +606,18 @@
     "crypto:43": {
       "question": "MetaMask — это прежде всего?",
       "answers": {
-        "Exchange": "Обмен",
-        "Browser wallet": "Браузерный кошелек",
-        "Hardware wallet": "Аппаратный кошелек",
+        "Exchange": "Биржа",
+        "Browser wallet": "Браузерный кошелёк",
+        "Hardware wallet": "Аппаратный кошелёк",
         "L2 chain": "Цепочка L2"
       }
     },
     "crypto:44": {
       "question": "Что такое Farcaster?",
       "answers": {
-        "An exchange": "Обмен",
+        "An exchange": "Биржа",
         "A decentralized social network": "Децентрализованная социальная сеть",
-        "A wallet": "Кошелек",
+        "A wallet": "Кошелёк",
         "A game": "Игра"
       }
     },
@@ -599,30 +649,30 @@
       }
     },
     "crypto:48": {
-      "question": "Мини-приложения на Base App созданы с помощью?",
+      "question": "С помощью каких инструментов создают Mini Apps для Base App?",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit / OnchainKit",
-        "Flutter only": "Только флаттер",
+        "Flutter only": "Только Flutter",
         "Native iOS only": "Только встроенная версия iOS",
-        "Unity": "Единство"
+        "Unity": "Unity"
       }
     },
     "crypto:49": {
-      "question": "Хеш транзакции блокчейна также называется?",
+      "question": "Как ещё называют хеш транзакции в блокчейне?",
       "answers": {
-        "Nonce": "Одноразовый номер",
-        "TX ID": "Идентификатор передачи",
+        "Nonce": "Nonce",
+        "TX ID": "TX ID",
         "Block height": "Высота блока",
-        "Gas limit": "Предел газа"
+        "Gas limit": "Лимит газа"
       }
     },
     "crypto:50": {
       "question": "Что означает DAO?",
       "answers": {
-        "Digital Asset Order": "Заказ цифровых активов",
-        "Decentralized Autonomous Organization": "Децентрализованная автономная организация",
-        "Distributed App Output": "Распределенный вывод приложения",
-        "Data Access Object": "Объект доступа к данным"
+        "Digital Asset Order": "Digital Asset Order",
+        "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
+        "Distributed App Output": "Distributed App Output",
+        "Data Access Object": "Data Access Object"
       }
     },
     "crypto:51": {
@@ -683,8 +733,8 @@
       "question": "Плата за газ в блокчейне выплачивается?",
       "answers": {
         "Developers": "Разработчики",
-        "Network validators/miners": "Сетевые валидаторы/майнеры",
-        "Exchanges": "Обмены",
+        "Network validators/miners": "Валидаторы или майнеры сети",
+        "Exchanges": "Биржи",
         "Banks": "Банки"
       }
     },
@@ -700,23 +750,23 @@
     "crypto:59": {
       "question": "Что означает «DEX»?",
       "answers": {
-        "Digital Exchange": "Цифровая биржа",
-        "Decentralized Exchange": "Децентрализованная биржа",
-        "Data Exchange": "Обмен данными",
-        "Direct Exchange": "Прямой обмен"
+        "Digital Exchange": "Digital Exchange",
+        "Decentralized Exchange": "Decentralized Exchange",
+        "Data Exchange": "Data Exchange",
+        "Direct Exchange": "Direct Exchange"
       }
     },
     "crypto:60": {
       "question": "Что означает «CEX»?",
       "answers": {
-        "Central Exchange": "Центральная биржа",
-        "Centralized Exchange": "Централизованная биржа",
-        "Crypto Exchange": "Криптовалютная биржа",
-        "Coin Exchange": "Обмен монет"
+        "Central Exchange": "Central Exchange",
+        "Centralized Exchange": "Centralized Exchange",
+        "Crypto Exchange": "Crypto Exchange",
+        "Coin Exchange": "Coin Exchange"
       }
     },
     "crypto:61": {
-      "question": "Что такое «ставка»?",
+      "question": "Что такое стейкинг?",
       "answers": {
         "Selling tokens": "Продажа токенов",
         "Locking tokens to support a network for rewards": "Блокировка токенов для поддержки сети за вознаграждение",
@@ -725,11 +775,11 @@
       }
     },
     "crypto:62": {
-      "question": "Что такое «закрытый ключ»?",
+      "question": "Что такое приватный ключ?",
       "answers": {
-        "Your public address": "Ваш публичный адрес",
-        "A secret that controls your funds": "Секрет, который контролирует ваши средства",
-        "An exchange password": "Пароль обмена",
+        "Your public address": "Твой публичный адрес",
+        "A secret that controls your funds": "Секрет, который даёт доступ к твоим средствам",
+        "An exchange password": "Пароль от биржи",
         "A transaction id": "Идентификатор транзакции"
       }
     },
@@ -739,7 +789,7 @@
         "Real transactions": "Реальные транзакции",
         "Testing without real value": "Тестирование без реальной ценности",
         "Storing coins": "Хранение монет",
-        "Mining Bitcoin": "Майнинг биткойнов"
+        "Mining Bitcoin": "Майнинг Bitcoin"
       }
     },
     "crypto:64": {
@@ -792,7 +842,7 @@
       "answers": {
         "Layer 1 base blockchain": "Базовый блокчейн уровня 1",
         "A game level": "Игровой уровень",
-        "A wallet": "Кошелек",
+        "A wallet": "Кошелёк",
         "A token standard": "Стандарт токена"
       }
     },
@@ -801,7 +851,7 @@
       "answers": {
         "Layer-2 of Ethereum": "Уровень 2 Ethereum",
         "Standalone Layer-1 blockchain": "Автономный блокчейн уровня 1",
-        "Wallet": "Кошелек",
+        "Wallet": "Кошелёк",
         "Stablecoin": "Стейблкоин"
       }
     },
@@ -810,17 +860,17 @@
       "answers": {
         "Low energy use": "Низкое энергопотребление",
         "High energy use via mining": "Высокое потребление энергии при майнинге",
-        "Staking coins": "Ставка монет",
+        "Staking coins": "Стейкинг монет",
         "No validators": "Нет валидаторов"
       }
     },
     "crypto:72": {
       "question": "Что означает «DYOR»?",
       "answers": {
-        "Do Your Own Research": "Проведите собственное исследование",
-        "Deposit Your Own Reserves": "Внесите свои собственные резервы",
-        "Don't Yield On Returns": "Не уступайте при возврате",
-        "Data Yield Over Risk": "Выход данных выше риска"
+        "Do Your Own Research": "Do Your Own Research",
+        "Deposit Your Own Reserves": "Deposit Your Own Reserves",
+        "Don't Yield On Returns": "Don't Yield On Returns",
+        "Data Yield Over Risk": "Data Yield Over Risk"
       }
     },
     "crypto:73": {
@@ -828,7 +878,7 @@
       "answers": {
         "Always-online wallet": "Всегда онлайн-кошелек",
         "Offline wallet for storage": "Автономный кошелек для хранения",
-        "Exchange wallet": "Биржевой кошелек",
+        "Exchange wallet": "Биржевой кошелёк",
         "A stablecoin": "Стейблкоин"
       }
     },
@@ -837,15 +887,15 @@
       "answers": {
         "Offline wallet": "Автономный кошелек",
         "Internet-connected wallet": "Кошелек, подключенный к Интернету",
-        "Hardware wallet": "Аппаратный кошелек",
+        "Hardware wallet": "Аппаратный кошелёк",
         "Paper wallet": "Бумажный кошелек"
       }
     },
     "crypto:75": {
       "question": "«Gwei» используется для измерения?",
       "answers": {
-        "Token supply": "Предоставление токена",
-        "Gas prices": "Цены на газ",
+        "Token supply": "Предложение токенов",
+        "Gas prices": "Цена газа",
         "Block size": "Размер блока",
         "Wallet balance": "Баланс кошелька"
       }
@@ -853,9 +903,9 @@
     "crypto:76": {
       "question": "«Непостоянная потеря» связана с?",
       "answers": {
-        "Staking": "Ставка",
+        "Staking": "Стейкинг",
         "Providing liquidity": "Обеспечение ликвидности",
-        "Mining": "Горное дело",
+        "Mining": "Майнинг",
         "Holding": "Холдинг"
       }
     },
@@ -871,19 +921,19 @@
     "crypto:78": {
       "question": "Что такое «валидатор»?",
       "answers": {
-        "A wallet": "Кошелек",
+        "A wallet": "Кошелёк",
         "A node that verifies transactions": "Узел, проверяющий транзакции",
         "A token": "Токен",
-        "An exchange": "Обмен"
+        "An exchange": "Биржа"
       }
     },
     "crypto:79": {
       "question": "«ATH» означает?",
       "answers": {
-        "All-Time High": "Рекордный максимум",
-        "Average Trade Height": "Средняя высота сделки",
-        "Actual Token Holdings": "Фактические запасы токенов",
-        "Auto Trade Handler": "Обработчик автоматической торговли"
+        "All-Time High": "All-Time High",
+        "Average Trade Height": "Average Trade Height",
+        "Actual Token Holdings": "Actual Token Holdings",
+        "Auto Trade Handler": "Auto Trade Handler"
       }
     },
     "crypto:80": {
@@ -891,15 +941,15 @@
       "answers": {
         "A price chart": "График цен",
         "A short symbol for an asset": "Короткий символ актива",
-        "A wallet": "Кошелек",
+        "A wallet": "Кошелёк",
         "A block": "Блок"
       }
     },
     "crypto:81": {
       "question": "В Proof of Work подтверждение транзакций называется?",
       "answers": {
-        "Staking": "Ставка",
-        "Mining": "Горное дело",
+        "Staking": "Стейкинг",
+        "Mining": "Майнинг",
         "Bridging": "Соединение",
         "Burning": "Горение"
       }
@@ -916,7 +966,7 @@
     "crypto:83": {
       "question": "OnchainKit — это набор инструментов для разработчиков?",
       "answers": {
-        "Binance": "Бинанс",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
         "MetaMask": "MetaMask",
         "Uniswap": "Uniswap"
@@ -925,7 +975,7 @@
     "crypto:84": {
       "question": "Установлен «предел газа»?",
       "answers": {
-        "Token supply": "Предоставление токена",
+        "Token supply": "Предложение токенов",
         "Max gas a transaction can use": "Максимальное количество газа, которое может использовать транзакция",
         "Wallet size": "Размер кошелька",
         "Block reward": "Награда за блок"
@@ -936,17 +986,17 @@
       "answers": {
         "A base Layer-1": "Базовый уровень-1",
         "An Ethereum scaling solution": "Решение для масштабирования Ethereum",
-        "A wallet": "Кошелек",
-        "An exchange": "Обмен"
+        "A wallet": "Кошелёк",
+        "An exchange": "Биржа"
       }
     },
     "crypto:86": {
       "question": "Что означает «FOMO» в трейдинге?",
       "answers": {
-        "Fear Of Missing Out": "Страх пропустить",
-        "Full Order Market Offer": "Рыночное предложение полного заказа",
-        "Fixed Order Money Out": "Выплата фиксированного ордера",
-        "Fast Onchain Market Order": "Быстрый рыночный ордер ончейн"
+        "Fear Of Missing Out": "Fear Of Missing Out",
+        "Full Order Market Offer": "Full Order Market Offer",
+        "Fixed Order Money Out": "Fixed Order Money Out",
+        "Fast Onchain Market Order": "Fast Onchain Market Order"
       }
     },
     "crypto:87": {
@@ -959,12 +1009,12 @@
       }
     },
     "crypto:88": {
-      "question": "Решения «уровня 2» в основном направлены на?",
+      "question": "Какова главная цель решений второго уровня?",
       "answers": {
-        "Replace Bitcoin": "Заменить биткойн",
-        "Scale a Layer-1 with cheaper, faster txs": "Масштабируйте уровень 1 с помощью более дешевой и быстрой передачи данных",
-        "Mine faster": "Майните быстрее",
-        "Issue stablecoins": "Выпуск стейблкоинов"
+        "Replace Bitcoin": "Заменить Bitcoin",
+        "Scale a Layer-1 with cheaper, faster txs": "Масштабировать уровень 1 с помощью более быстрых и дешёвых транзакций",
+        "Mine faster": "Ускорить майнинг",
+        "Issue stablecoins": "Выпускать стейблкоины"
       }
     },
     "crypto:89": {
@@ -972,17 +1022,17 @@
       "answers": {
         "Secret, never shared": "Секрет, никогда не разглашается",
         "Public and shareable to receive funds": "Общедоступный и доступный для получения средств",
-        "Your password": "Ваш пароль",
-        "A private key": "Закрытый ключ"
+        "Your password": "Твой пароль",
+        "A private key": "Приватный ключ"
       }
     },
     "crypto:90": {
       "question": "Что означает «KYC»?",
       "answers": {
-        "Keep Your Coins": "Сохраните свои монеты",
-        "Know Your Customer": "Знай своего клиента",
-        "Key Yield Contract": "Контракт на ключевую доходность",
-        "Known Yield Curve": "Известная кривая доходности"
+        "Keep Your Coins": "Keep Your Coins",
+        "Know Your Customer": "Know Your Customer",
+        "Key Yield Contract": "Key Yield Contract",
+        "Known Yield Curve": "Known Yield Curve"
       }
     },
     "crypto:91": {
@@ -997,10 +1047,10 @@
     "crypto:92": {
       "question": "'PoS' означает?",
       "answers": {
-        "Proof of Speed": "Доказательство скорости",
-        "Proof of Stake": "Доказательство доли",
-        "Point of Sale": "Точка продажи",
-        "Proof of Storage": "Доказательство хранения"
+        "Proof of Speed": "Proof of Speed",
+        "Proof of Stake": "Proof of Stake",
+        "Point of Sale": "Point of Sale",
+        "Proof of Storage": "Proof of Storage"
       }
     },
     "crypto:93": {
@@ -1044,17 +1094,17 @@
       "answers": {
         "Last block": "Последний блок",
         "First block of a blockchain": "Первый блок блокчейна",
-        "A wallet": "Кошелек",
+        "A wallet": "Кошелёк",
         "A token": "Токен"
       }
     },
     "crypto:98": {
       "question": "Что означает «ROI»?",
       "answers": {
-        "Return On Investment": "Рентабельность инвестиций",
-        "Rate Of Interest": "Процентная ставка",
-        "Risk Of Inflation": "Риск инфляции",
-        "Ratio Of Income": "Коэффициент дохода"
+        "Return On Investment": "Return On Investment",
+        "Rate Of Interest": "Rate Of Interest",
+        "Risk Of Inflation": "Risk Of Inflation",
+        "Ratio Of Income": "Ratio Of Income"
       }
     },
     "crypto:99": {
@@ -1076,7 +1126,7 @@
       }
     },
     "sports:1": {
-      "question": "В каком виде спорта вы бы выполнили слэм-данк?",
+      "question": "В каком виде спорта выполняют слэм-данк?",
       "answers": {
         "Tennis": "Теннис",
         "Basketball": "Баскетбол",
@@ -1600,7 +1650,7 @@
     "sports:59": {
       "question": "В бейсбол играют на поле, имеющем форму?",
       "answers": {
-        "Circle": "Круг",
+        "Circle": "Circle",
         "Diamond": "Алмаз",
         "Square": "Квадрат",
         "Triangle": "Треугольник"
@@ -1868,7 +1918,7 @@
       }
     },
     "sports:89": {
-      "question": "Сколько всего игроков выходит на футбольное поле (обе команды)?",
+      "question": "Сколько игроков обеих команд всего выходит на поле в начале футбольного матча?",
       "answers": {
         "18": "18",
         "20": "20",
@@ -2093,7 +2143,7 @@
       }
     },
     "art:12": {
-      "question": "Автор мраморной статуи «Давид»?",
+      "question": "Кто создал мраморную статую «Давид»?",
       "answers": {
         "Bernini": "Бернини",
         "Michelangelo": "Микеланджело",
@@ -2453,11 +2503,11 @@
       }
     },
     "art:52": {
-      "question": "«Фреска» — это картина, написанная на?",
+      "question": "На какой поверхности создают мурал?",
       "answers": {
         "Small canvas": "Маленькое полотно",
         "Wall": "Стена",
-        "Plate": "Пластина",
+        "Plate": "Тарелка",
         "Paper": "Бумага"
       }
     },
@@ -2692,7 +2742,7 @@
         "Paper folding": "Складывание бумаги",
         "Metalwork": "Металлообработка",
         "Glassblowing": "Стеклодувное дело",
-        "Painting": "Живопись"
+        "Painting": "Картина"
       }
     },
     "art:79": {
@@ -2714,7 +2764,7 @@
       }
     },
     "art:81": {
-      "question": "Большая волна у Канагавы — знаменитый японец?",
+      "question": "К какому виду японского искусства относится «Большая волна в Канагаве»?",
       "answers": {
         "Sculpture": "Скульптура",
         "Woodblock print": "Гравюра на дереве",
@@ -2777,9 +2827,9 @@
       }
     },
     "art:88": {
-      "question": "«Венера Милосская» — знаменитое древнее произведение?",
+      "question": "К какому виду античного искусства относится Венера Милосская?",
       "answers": {
-        "Painting": "Живопись",
+        "Painting": "Картина",
         "Statue": "Статуя",
         "Vase": "Ваза",
         "Mosaic": "Мозаика"
@@ -2993,7 +3043,7 @@
       }
     },
     "history:12": {
-      "question": "Холодная война велась в основном между США и?",
+      "question": "Между США и какой державой в основном шла холодная война?",
       "answers": {
         "China": "Китай",
         "USSR": "СССР",
@@ -3353,7 +3403,7 @@
       }
     },
     "history:52": {
-      "question": "Христофор Колумб плавал под флагом?",
+      "question": "Под флагом какой страны плавал Христофор Колумб?",
       "answers": {
         "Portugal": "Португалия",
         "Spain": "Испания",
@@ -3677,7 +3727,7 @@
       }
     },
     "history:88": {
-      "question": "Средневековый период также известен как?",
+      "question": "Как ещё называют средневековый период?",
       "answers": {
         "Middle Ages": "Средневековье",
         "Stone Age": "Каменный век",
@@ -3832,7 +3882,7 @@
     "science:5": {
       "question": "Каков химический символ золота?",
       "answers": {
-        "Go": "Перейти",
+        "Go": "Go",
         "Gd": "Б-г",
         "Au": "Ау",
         "Ag": "Ag"
@@ -4253,7 +4303,7 @@
       }
     },
     "science:52": {
-      "question": "Каковы три общих состояния материи?",
+      "question": "Какие три основных агрегатных состояния вещества существуют?",
       "answers": {
         "Hot, cold, warm": "Горячее, холодное, теплое",
         "Solid, liquid, gas": "Твердое тело, жидкость, газ",
@@ -5477,7 +5527,7 @@
       }
     },
     "geography:88": {
-      "question": "Вдоль чего расположена столица Египта?",
+      "question": "На берегу какой реки расположен Каир, столица Египта?",
       "answers": {
         "Tigris River": "Река Тигр",
         "Nile River": "Река Нил",

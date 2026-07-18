@@ -6,7 +6,7 @@
     "common.next": "다음",
     "common.skip": "건너뛰기",
     "common.tryAgain": "다시 시도하세요",
-    "common.connect": "연결하다",
+    "common.connect": "연결",
     "common.disconnect": "연결 끊기",
     "common.connectWallet": "지갑 연결",
     "common.connectBaseWallet": "Base Wallet 연결",
@@ -20,8 +20,8 @@
     "common.unmute": "음소거 해제",
     "home.kicker": "온체인 퀴즈 · Base",
     "home.titleLine1": "매일 즐기는 퀴즈.",
-    "home.titleLine2": "Base에서 구축.",
-    "home.description": "카테고리를 선택하고 제한 시간 안에 5문제에 도전하세요. 연속 기록을 이어가고 점수를 온체인에 저장해 글로벌 리더보드에 올라보세요.",
+    "home.titleLine2": "Base에서 즐기세요.",
+    "home.description": "카테고리를 고르고 제한 시간 안에 5문제에 도전하세요. 연속 기록을 이어가고 점수를 온체인에 저장해 글로벌 순위에 올라보세요.",
     "home.streak": "{count}일 연속",
     "home.confirmWallet": "지갑에서 확인…",
     "home.startRound": "라운드 시작",
@@ -35,28 +35,28 @@
     "category.next": "다음 카테고리",
     "category.imageAlt": "{category} 퀴즈 카테고리",
     "category.crypto.name": "암호화폐",
-    "category.crypto.description": "Base, Ethereum, 지갑, DeFi 및 onchain 세계를 형성하는 문화에 대한 지식을 테스트하세요.",
+    "category.crypto.description": "Base, Ethereum, 지갑, DeFi와 온체인 문화에 대한 지식을 확인해 보세요.",
     "category.sports.name": "스포츠",
     "category.sports.description": "축구, 농구부터 테니스, 올림픽까지, 스포츠 기억력이 얼마나 강한지 확인해 보세요.",
     "category.art.name": "예술",
-    "category.art.description": "여러 세대에 걸쳐 시각 문화를 변화시킨 그림, 예술가, 운동 및 아이디어를 살펴보세요.",
+    "category.art.description": "여러 세대의 시각 문화를 바꾼 작품, 예술가, 사조와 아이디어를 살펴보세요.",
     "category.history.name": "역사",
-    "category.history.description": "문명, 전환점, 세상을 결정한 사람들을 여행해 보세요.",
+    "category.history.description": "문명과 역사의 전환점, 세상을 바꾼 사람들의 이야기를 만나보세요.",
     "category.science.name": "과학",
     "category.science.description": "물리학, 생물학, 화학 및 사물의 작동 원리를 설명하는 발견에 도전해 보세요.",
     "category.geography.name": "지리",
-    "category.geography.description": "지구의 모든 곳에서 국가, 수도, 바다 및 랜드마크를 탐색하세요.",
+    "category.geography.description": "세계 각국의 나라, 수도, 바다와 명소에 관한 지식을 확인해 보세요.",
     "quiz.fallbackName": "퀴즈",
     "quiz.questionProgress": "{current}/{total}번 문제",
     "quiz.score": "점수",
     "quiz.time": "시간",
-    "quiz.answeredAria": "{total} 질문 중 {answered}에 답변됨",
+    "quiz.answeredAria": "{total}문제 중 {answered}문제 답변",
     "quiz.chooseCorrect": "정답을 선택하세요",
     "quiz.correct": "정답",
     "quiz.wrong": "잘못된 답변",
     "quiz.points": "+{points} 포인트",
-    "quiz.correctOption": "올바른 옵션: {option}",
-    "quiz.autoNote": "한 번만 대답하세요. · 다음 질문은 자동으로 로드됩니다.",
+    "quiz.correctOption": "정답: {option}",
+    "quiz.autoNote": "문제당 한 번만 답변 · 다음 문제는 자동으로 표시",
     "result.roundComplete": "라운드 완료",
     "result.finalScore": "최종 점수",
     "result.points": "포인트",
@@ -64,101 +64,101 @@
     "result.categoryPill": "{category} 카테고리",
     "result.streakPill": "{count}일 연속",
     "result.roundCompletedTitle": "라운드 완료",
-    "result.roundCompletedDetail": "다섯 가지 질문에 답변했습니다. 최종 결과가 준비되었습니다.",
-    "result.streakUpdatedTitle": "연속 업데이트됨",
-    "result.streakUpdatedDetail": "귀하는 현재 {count}일 연속 학습 중입니다.",
+    "result.roundCompletedDetail": "5문제를 모두 풀었습니다. 최종 결과를 확인하세요.",
+    "result.streakUpdatedTitle": "연속 기록 업데이트",
+    "result.streakUpdatedDetail": "{count}일 연속 기록을 달성했습니다.",
     "result.save.idle.title": "점수를 저장하세요",
-    "result.save.idle.detail": "이 결과를 Base에 기록하고 글로벌 리더보드에 합류하세요.",
+    "result.save.idle.detail": "결과를 Base에 기록하고 글로벌 순위에 참여하세요.",
     "result.save.pending.title": "점수 확인",
     "result.save.pending.detail": "저장을 완료하려면 지갑에서 거래를 승인하세요.",
-    "result.save.done.title": "점수가 저장되었습니다 onchain",
-    "result.save.done.detail": "결과는 Base에서 확인되었으며 리더보드에 표시될 준비가 되었습니다.",
-    "result.save.error.title": "저장에 주의가 필요함",
+    "result.save.done.title": "점수를 온체인에 저장했습니다",
+    "result.save.done.detail": "결과가 Base에서 확인되어 순위에 반영되었습니다.",
+    "result.save.error.title": "저장하지 못했습니다",
     "result.save.error.detail": "아래 메시지를 검토한 후 거래를 다시 시도하세요.",
     "result.save.disconnected.title": "저장하려면 연결하세요",
     "result.save.disconnected.detail": "Base에 점수를 기록할 지갑을 선택하세요.",
     "result.shareTitle": "결과를 공유하세요",
     "result.shareDetail": "Farcaster 또는 X에서 친구에게 도전하세요.",
-    "result.replayKicker": "계속해서 기세를 이어가세요",
-    "result.replayTitle": "다른 라운드를 할 준비가 되셨나요?",
+    "result.replayKicker": "연속 기록을 이어가세요",
+    "result.replayTitle": "한 라운드 더 도전할까요?",
     "result.replayDetail": "{category}를 다시 플레이하거나 다른 챌린지를 선택하세요.",
     "result.playAgain": "다시 플레이",
     "result.chooseCategory": "카테고리 선택",
-    "result.saveButton": "점수 저장 onchain",
+    "result.saveButton": "점수 온체인 저장",
     "result.confirming": "확인 중…",
-    "result.saved": "onchain를 저장했습니다.",
+    "result.saved": "온체인 저장 완료",
     "result.viewTransaction": "거래 보기",
     "result.shareScore": "점수 공유",
     "result.copyText": "텍스트 복사",
     "result.copied": "클립보드에 복사되었습니다!",
     "leaderboard.kicker": "Base Mainnet · 역대 순위",
     "leaderboard.title": "리더보드",
-    "leaderboard.description": "총 onchain 점수를 기준으로 순위가 매겨진 상위 플레이어입니다.",
+    "leaderboard.description": "온체인 누적 점수 순으로 플레이어를 표시합니다.",
     "leaderboard.loading": "Base에서 점수를 읽는 중…",
-    "leaderboard.empty": "아직 점수가 없습니다. 보드의 첫 번째 플레이어가 되십시오.",
+    "leaderboard.empty": "아직 등록된 점수가 없습니다. 첫 순위에 도전해 보세요.",
     "leaderboard.player": "플레이어",
     "leaderboard.totalScore": "총점",
     "leaderboard.bestScore": "최고 점수",
-    "leaderboard.streak": "연속",
+    "leaderboard.streak": "연속 기록",
     "leaderboard.badges": "배지",
-    "leaderboard.you": "당신",
+    "leaderboard.you": "나",
     "leaderboard.noBadges": "배지 없음",
     "leaderboard.badgeTitle": "{name} 배지",
     "leaderboard.players": "플레이어 {count}명",
-    "leaderboard.verified": "점수 및 배지 확인 onchain",
+    "leaderboard.verified": "점수와 배지는 온체인에서 확인됨",
     "badges.kicker": "연속 기록 NFT · Base Mainnet",
     "badges.title": "배지",
-    "badges.roadmapTitle": "연속 배지 로드맵",
-    "badges.roadmapDescription": "계속 플레이하고 연속 기록을 늘리며 각 onchain 마일스톤을 획득하세요.",
+    "badges.roadmapTitle": "연속 기록 배지",
+    "badges.roadmapDescription": "계속 플레이해 연속 기록을 늘리고 온체인 보상을 받으세요.",
     "badges.streak": "{count}일 연속",
     "badges.walletRequired": "지갑 필요",
-    "badges.connectTitle": "배지를 확인하고 신청하려면 연결하세요.",
-    "badges.connectDetail": "연속 기록 및 NFT 소유권은 Base에서 직접 읽습니다.",
+    "badges.connectTitle": "지갑을 연결해 배지를 확인하고 받으세요",
+    "badges.connectDetail": "연속 기록과 NFT 보유 정보는 Base에서 직접 불러옵니다.",
     "badges.days": "{count}일",
     "badges.bronze.name": "브론즈",
-    "badges.bronze.description": "첫 3일 달리기를 완료하세요",
+    "badges.bronze.description": "처음으로 3일 연속 달성",
     "badges.silver.name": "실버",
-    "badges.silver.description": "일주일 동안 연속성을 유지하세요",
+    "badges.silver.description": "7일 연속 달성",
     "badges.gold.name": "골드",
-    "badges.gold.description": "일관된 30일 연속 기록을 세우세요",
+    "badges.gold.description": "30일 연속 달성",
     "badges.diamond.name": "다이아몬드",
-    "badges.diamond.description": "최종 100일 목표 달성",
-    "badges.unlock": "{count}일 연속 잠금 해제",
-    "badges.owned": "소유",
-    "badges.claim": "배지 청구",
-    "badges.claiming": "소유권을 주장하는 중…",
+    "badges.diamond.description": "100일 연속 달성",
+    "badges.unlock": "{count}일 연속 달성 시 해제",
+    "badges.owned": "획득 완료",
+    "badges.claim": "배지 받기",
+    "badges.claiming": "받는 중…",
     "badges.daysLeft": "{count}일 남음",
     "badges.locked": "잠김",
     "badges.loading": "Base에서 배지를 읽는 중…",
     "wallet.connectTitle": "지갑 연결",
     "wallet.browserWallets": "브라우저 지갑",
     "wallet.recommended": "추천",
-    "tutorial.welcomeTitle": "환영합니다.",
-    "tutorial.welcomeDetail": "Base의 일일 퀴즈 게임입니다. 지식을 테스트하고, 연속 기록을 세우고, 전 세계에서 경쟁해보세요.",
-    "tutorial.questionsTitle": "질문 5개. 일일.",
-    "tutorial.questionsDetail": "빠르게 답변하세요. 더 빠르면 더 많은 포인트를 얻을 수 있습니다. 글로벌 리더보드에 표시하려면 점수 onchain를 저장하세요.",
+    "tutorial.welcomeTitle": "환영해요.",
+    "tutorial.welcomeDetail": "Base에서 매일 즐기는 퀴즈입니다. 지식을 확인하고 연속 기록을 이어가며 전 세계 플레이어와 경쟁하세요.",
+    "tutorial.questionsTitle": "매일 5문제.",
+    "tutorial.questionsDetail": "빠르게 답할수록 더 많은 점수를 얻습니다. 점수를 온체인에 저장하면 글로벌 순위에 참여할 수 있어요.",
     "tutorial.badgesTitle": "NFT 배지를 획득하세요.",
-    "tutorial.badgesDetail": "연속 기록을 유지하고 onchain NFTs: 브론즈(3d), 실버(7d), 골드(30d), 다이아몬드(100d)를 획득하세요.",
-    "tutorial.letsPlay": "놀자",
+    "tutorial.badgesDetail": "연속 기록을 이어가고 온체인 NFT를 받으세요: 브론즈(3일), 실버(7일), 골드(30일), 다이아몬드(100일).",
+    "tutorial.letsPlay": "시작하기",
     "footer.blockData": "블록 데이터 · BASE MAINNET",
     "footer.playersOnchain": "온체인 플레이어 {count}명",
-    "share.text": "🧠 Base Quiz에서 {score}점을 얻었습니다! 🔥 연속: {streak}일\n\n네가 날 이길 수 있을 것 같아? 👇",
+    "share.text": "🧠 Base Quiz에서 {score}점을 기록했어요! 🔥 연속 기록: {streak}일\n\n제 기록을 넘을 수 있나요?👇",
     "error.startFailed": "라운드를 시작할 수 없습니다. 다시 시도해 주세요.",
-    "error.startCancelled": "거래가 취소되었습니다. 라운드를 시작하려면 확인하세요.",
+    "error.startCancelled": "트랜잭션이 취소되었습니다. 확인하면 라운드를 시작할 수 있어요.",
     "error.signatureCancelled": "지갑 서명이 취소되었습니다. 계속하려면 메시지에 서명하세요.",
     "error.signatureFailed": "지갑 서명을 확인하지 못했습니다. 다시 시도하세요.",
     "error.saveFailed": "점수를 저장할 수 없습니다. 다시 시도해 주세요.",
-    "error.alreadyPlayed": "오늘 이미 저장되었습니다. 내일 다시 오세요.",
-    "error.claimFailed": "배지를 신청할 수 없습니다. 다시 시도해 주세요.",
+    "error.alreadyPlayed": "오늘 점수는 이미 저장했습니다. 내일 다시 도전하세요.",
+    "error.claimFailed": "배지를 받을 수 없습니다. 다시 시도해 주세요.",
     "activation.kicker": "Base Quiz 설정",
     "activation.title": "라운드 컨트랙트 활성화",
-    "activation.copy": "이 일회성 Base 트랜잭션은 Start Round에서 사용하는 소규모 계약을 배포합니다. 점수, 연속 기록, 배지를 변경하거나 ETH를 전송하지 않습니다.",
-    "activation.checking": "계약 확인 중…",
+    "activation.copy": "이 일회성 Base 트랜잭션은 ‘라운드 시작’에 필요한 소규모 컨트랙트를 배포합니다. 점수, 연속 기록, 배지를 변경하지 않으며 ETH도 전송하지 않습니다.",
+    "activation.checking": "컨트랙트 확인 중…",
     "activation.active": "라운드 컨트랙트가 활성화되었습니다",
     "activation.connected": "연결됨: {address}",
     "activation.confirming": "Base에서 확인 중…",
     "activation.activate": "라운드 컨트랙트 활성화",
-    "activation.pendingTransaction": "보류 중인 거래 보기",
+    "activation.pendingTransaction": "대기 중인 트랜잭션 보기",
     "activation.back": "Base Quiz로 돌아가기",
     "activation.errorCheck": "Base 컨트랙트를 확인할 수 없습니다. 다시 시도해 주세요.",
     "activation.errorWallet": "호환되는 지갑을 찾을 수 없습니다.",
@@ -169,9 +169,9 @@
     "crypto:0": {
       "question": "Base를 개발한 회사는 어디인가요?",
       "answers": {
-        "Binance": "바이낸스",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
-        "Kraken": "크라켄",
+        "Kraken": "Kraken",
         "OKX": "OKX"
       }
     },
@@ -181,16 +181,16 @@
         "Bitcoin": "비트코인",
         "Solana": "솔라나",
         "Ethereum": "Ethereum",
-        "Avalanche": "눈사태"
+        "Avalanche": "Avalanche"
       }
     },
     "crypto:2": {
       "question": "Base는 어떤 기술 스택을 사용합니까?",
       "answers": {
-        "OP Stack": "OP 스택",
+        "OP Stack": "OP Stack",
         "zkSync": "zkSync",
-        "Polygon CDK": "다각형 CDK",
-        "Arbitrum Nitro": "아비트럼 니트로"
+        "Polygon CDK": "Polygon CDK",
+        "Arbitrum Nitro": "Arbitrum Nitro"
       }
     },
     "crypto:3": {
@@ -206,7 +206,7 @@
       "question": "Base의 가스 요금에 사용되는 토큰은 무엇입니까?",
       "answers": {
         "USDC": "USDC",
-        "BASE": "베이스",
+        "BASE": "BASE",
         "ETH": "ETH",
         "OP": "OP"
       }
@@ -216,8 +216,8 @@
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
-        "Rainbow": "무지개",
-        "Phantom": "팬텀"
+        "Rainbow": "Rainbow",
+        "Phantom": "Phantom"
       }
     },
     "crypto:6": {
@@ -241,10 +241,10 @@
     "crypto:8": {
       "question": "Base는 어떤 슈퍼체인에 속해 있나요?",
       "answers": {
-        "Polygon Superchain": "폴리곤 슈퍼체인",
-        "Optimism Superchain": "낙천주의 슈퍼체인",
-        "Arbitrum Orbit": "임의 궤도",
-        "zkSync Hyperchain": "zkSync 하이퍼체인"
+        "Polygon Superchain": "Polygon Superchain",
+        "Optimism Superchain": "Optimism Superchain",
+        "Arbitrum Orbit": "Arbitrum Orbit",
+        "zkSync Hyperchain": "zkSync Hyperchain"
       }
     },
     "crypto:9": {
@@ -266,12 +266,12 @@
       }
     },
     "crypto:11": {
-      "question": "Base의 스마트 계약이 작성되어 있습니까?",
+      "question": "Base의 스마트 컨트랙트는 주로 어떤 언어로 작성되나요?",
       "answers": {
         "Python": "파이썬",
-        "Rust": "러스트",
-        "Solidity": "견고성",
-        "Go": "이동"
+        "Rust": "Rust",
+        "Solidity": "Solidity",
+        "Go": "Go"
       }
     },
     "crypto:12": {
@@ -296,7 +296,7 @@
       "question": "Ethereum는 어떤 합의를 사용합니까?",
       "answers": {
         "Proof of Work": "작업 증명",
-        "Proof of Stake": "지분 증명",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Authority": "권위 증명",
         "Proof of History": "역사 증명"
       }
@@ -307,23 +307,23 @@
         "A wallet type": "지갑형",
         "Ethereum's execution engine": "Ethereum의 실행 엔진",
         "A token standard": "토큰 표준",
-        "A bridge": "다리"
+        "A bridge": "브리지"
       }
     },
     "crypto:16": {
       "question": "Ethereum의 L2가 아닌 것은 무엇입니까?",
       "answers": {
         "Base": "Base",
-        "Arbitrum": "중재",
+        "Arbitrum": "Arbitrum",
         "Solana": "솔라나",
-        "Optimism": "낙관주의"
+        "Optimism": "Optimism"
       }
     },
     "crypto:17": {
       "question": "'가스'는 무엇을 의미하나요?",
       "answers": {
         "A token": "토큰",
-        "Transaction fee unit": "거래 수수료 단위",
+        "Transaction fee unit": "트랜잭션 수수료 단위",
         "A wallet": "지갑",
         "An NFT type": "NFT 유형"
       }
@@ -385,7 +385,7 @@
     "crypto:24": {
       "question": "비트코인은 어떤 합의를 사용합니까?",
       "answers": {
-        "Proof of Stake": "지분 증명",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Work": "작업 증명",
         "Proof of Authority": "권위 증명",
         "DPoS": "DPoS"
@@ -394,10 +394,10 @@
     "crypto:25": {
       "question": "DeFi는 무엇을 의미하나요?",
       "answers": {
-        "Defined Finance": "정의된 금융",
-        "Decentralized Finance": "분산 금융",
-        "Defaulted Finance": "기본 금융",
-        "Deferred Finance": "이연 금융"
+        "Defined Finance": "Defined Finance",
+        "Decentralized Finance": "Decentralized Finance",
+        "Defaulted Finance": "Defaulted Finance",
+        "Deferred Finance": "Deferred Finance"
       }
     },
     "crypto:26": {
@@ -406,7 +406,7 @@
         "Lending platform": "대출 플랫폼",
         "DEX (decentralized exchange)": "DEX (탈중앙화 거래소)",
         "Wallet": "지갑",
-        "Bridge": "다리"
+        "Bridge": "브리지"
       }
     },
     "crypto:27": {
@@ -421,10 +421,10 @@
     "crypto:28": {
       "question": "TVL는 무엇을 의미하나요?",
       "answers": {
-        "Token Value Locked": "토큰 값이 잠겼습니다.",
-        "Total Value Locked": "잠긴 총 가치",
-        "Trade Volume Limit": "거래량 한도",
-        "Tier Volume Level": "계층 볼륨 수준"
+        "Token Value Locked": "Token Value Locked",
+        "Total Value Locked": "Total Value Locked",
+        "Trade Volume Limit": "Trade Volume Limit",
+        "Tier Volume Level": "Tier Volume Level"
       }
     },
     "crypto:29": {
@@ -439,7 +439,7 @@
     "crypto:30": {
       "question": "수확량 농업이란 무엇입니까?",
       "answers": {
-        "Mining crops": "채광 작물",
+        "Mining crops": "농작물 재배",
         "Earning rewards from DeFi protocols": "DeFi 프로토콜에서 보상 받기",
         "A staking pool name": "스테이킹 풀 이름",
         "An NFT minting term": "NFT 발행 기간"
@@ -448,8 +448,8 @@
     "crypto:31": {
       "question": "USDC를 발행하는 회사는 어디입니까?",
       "answers": {
-        "Tether": "테더",
-        "Circle": "서클",
+        "Tether": "Tether",
+        "Circle": "Circle",
         "Coinbase": "Coinbase",
         "Paxos": "팍소스"
       }
@@ -457,8 +457,8 @@
     "crypto:32": {
       "question": "USDT를 발행하는 회사는 어디입니까?",
       "answers": {
-        "Circle": "서클",
-        "Tether": "테더",
+        "Circle": "Circle",
+        "Tether": "Tether",
         "Coinbase": "Coinbase",
         "MakerDAO": "메이커DAO"
       }
@@ -484,10 +484,10 @@
     "crypto:35": {
       "question": "NFT는 무엇을 의미하나요?",
       "answers": {
-        "New Finance Token": "새로운 금융 토큰",
-        "Non-Fungible Token": "대체 불가능한 토큰",
-        "Network File Transfer": "네트워크 파일 전송",
-        "Node Function Type": "노드 함수 유형"
+        "New Finance Token": "New Finance Token",
+        "Non-Fungible Token": "Non-Fungible Token",
+        "Network File Transfer": "Network File Transfer",
+        "Node Function Type": "Node Function Type"
       }
     },
     "crypto:36": {
@@ -518,12 +518,12 @@
       }
     },
     "crypto:39": {
-      "question": "지갑의 비밀번호는 무엇인가요?",
+      "question": "지갑의 비밀 복구 단어를 무엇이라고 하나요?",
       "answers": {
         "Public key": "공개 키",
         "Seed phrase": "시드 문구",
         "Hash": "해시",
-        "Nonce": "논스"
+        "Nonce": "Nonce"
       }
     },
     "crypto:40": {
@@ -532,11 +532,11 @@
         "A mobile app": "모바일 앱",
         "A physical device for storing keys": "키 저장을 위한 물리적 장치",
         "A browser extension": "브라우저 확장 프로그램",
-        "An exchange account": "교환 계좌"
+        "An exchange account": "거래소 계정"
       }
     },
     "crypto:41": {
-      "question": "절대로 공유하면 안 되나요?",
+      "question": "절대 다른 사람과 공유하면 안 되는 것은 무엇인가요?",
       "answers": {
         "Wallet address": "지갑 주소",
         "Seed phrase": "시드 문구",
@@ -547,7 +547,7 @@
     "crypto:42": {
       "question": "자기 양육권이란 무엇입니까?",
       "answers": {
-        "Exchange holds your keys": "Exchange에 키가 보관됩니다.",
+        "Exchange holds your keys": "거래소가 키를 보관함",
         "You control your private keys": "개인 키를 제어할 수 있습니다.",
         "A bank holds your keys": "은행에서 열쇠를 보관합니다.",
         "A friend holds your keys": "친구가 열쇠를 갖고 있습니다."
@@ -556,7 +556,7 @@
     "crypto:43": {
       "question": "MetaMask는 주로?",
       "answers": {
-        "Exchange": "교환",
+        "Exchange": "거래소",
         "Browser wallet": "브라우저 지갑",
         "Hardware wallet": "하드웨어 지갑",
         "L2 chain": "L2 체인"
@@ -565,7 +565,7 @@
     "crypto:44": {
       "question": "Farcaster란 무엇입니까?",
       "answers": {
-        "An exchange": "교환",
+        "An exchange": "거래소",
         "A decentralized social network": "분산형 소셜 네트워크",
         "A wallet": "지갑",
         "A game": "게임"
@@ -599,19 +599,19 @@
       }
     },
     "crypto:48": {
-      "question": "Base App의 미니 앱은 다음과 같이 구축되었습니까?",
+      "question": "Base App의 Mini Apps는 어떤 도구로 개발하나요?",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit / OnchainKit",
-        "Flutter only": "Flutter 전용",
+        "Flutter only": "Flutter만 사용",
         "Native iOS only": "기본 iOS 전용",
-        "Unity": "유니티"
+        "Unity": "Unity"
       }
     },
     "crypto:49": {
-      "question": "블록체인 거래 해시라고도 합니까?",
+      "question": "블록체인 트랜잭션 해시는 다른 말로 무엇이라고 하나요?",
       "answers": {
-        "Nonce": "논스",
-        "TX ID": "송신 ID",
+        "Nonce": "Nonce",
+        "TX ID": "TX ID",
         "Block height": "블록 높이",
         "Gas limit": "가스 한도"
       }
@@ -619,10 +619,10 @@
     "crypto:50": {
       "question": "DAO는 무엇을 의미하나요?",
       "answers": {
-        "Digital Asset Order": "디지털 자산 주문",
-        "Decentralized Autonomous Organization": "분산형 자율 조직",
-        "Distributed App Output": "분산 앱 출력",
-        "Data Access Object": "데이터 액세스 개체"
+        "Digital Asset Order": "Digital Asset Order",
+        "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
+        "Distributed App Output": "Distributed App Output",
+        "Data Access Object": "Data Access Object"
       }
     },
     "crypto:51": {
@@ -631,7 +631,7 @@
         "A mining tool": "마이닝 도구",
         "A site to view onchain data": "온체인 데이터를 볼 수 있는 사이트",
         "A wallet type": "지갑형",
-        "A bridge": "다리"
+        "A bridge": "브리지"
       }
     },
     "crypto:52": {
@@ -683,8 +683,8 @@
       "question": "블록체인의 가스 요금은 어디에 지불됩니까?",
       "answers": {
         "Developers": "개발자",
-        "Network validators/miners": "네트워크 검증자/채굴자",
-        "Exchanges": "교환",
+        "Network validators/miners": "네트워크 검증자 또는 채굴자",
+        "Exchanges": "거래소",
         "Banks": "은행"
       }
     },
@@ -700,23 +700,23 @@
     "crypto:59": {
       "question": "'DEX'는 무엇을 의미하나요?",
       "answers": {
-        "Digital Exchange": "디지털 교환",
-        "Decentralized Exchange": "탈중앙화 거래소",
-        "Data Exchange": "데이터 교환",
-        "Direct Exchange": "직접 교환"
+        "Digital Exchange": "Digital Exchange",
+        "Decentralized Exchange": "Decentralized Exchange",
+        "Data Exchange": "Data Exchange",
+        "Direct Exchange": "Direct Exchange"
       }
     },
     "crypto:60": {
       "question": "'CEX'는 무엇을 의미하나요?",
       "answers": {
-        "Central Exchange": "중앙 거래소",
-        "Centralized Exchange": "중앙 집중식 교환",
-        "Crypto Exchange": "암호화폐 거래소",
-        "Coin Exchange": "코인 교환"
+        "Central Exchange": "Central Exchange",
+        "Centralized Exchange": "Centralized Exchange",
+        "Crypto Exchange": "Crypto Exchange",
+        "Coin Exchange": "Coin Exchange"
       }
     },
     "crypto:61": {
-      "question": "'스테이킹'이란 무엇인가요?",
+      "question": "스테이킹이란 무엇인가요?",
       "answers": {
         "Selling tokens": "토큰 판매",
         "Locking tokens to support a network for rewards": "보상을 위한 네트워크를 지원하기 위한 잠금 토큰",
@@ -725,10 +725,10 @@
       }
     },
     "crypto:62": {
-      "question": "'개인 키'란 무엇입니까?",
+      "question": "개인 키란 무엇인가요?",
       "answers": {
-        "Your public address": "공개 주소",
-        "A secret that controls your funds": "자금을 관리하는 비밀",
+        "Your public address": "내 공개 주소",
+        "A secret that controls your funds": "자산을 제어하는 비밀 정보",
         "An exchange password": "거래소 비밀번호",
         "A transaction id": "거래 ID"
       }
@@ -739,7 +739,7 @@
         "Real transactions": "실제 거래",
         "Testing without real value": "실제 가치가 없는 테스트",
         "Storing coins": "코인 저장",
-        "Mining Bitcoin": "비트코인 채굴"
+        "Mining Bitcoin": "Bitcoin 채굴"
       }
     },
     "crypto:64": {
@@ -747,7 +747,7 @@
       "answers": {
         "Creating tokens": "토큰 생성",
         "Permanently removing tokens from supply": "공급에서 토큰을 영구적으로 제거",
-        "Staking tokens": "스테이킹 토큰",
+        "Staking tokens": "토큰 스테이킹",
         "Sending tokens": "토큰 보내기"
       }
     },
@@ -817,10 +817,10 @@
     "crypto:72": {
       "question": "'DYOR'는 무엇을 의미하나요?",
       "answers": {
-        "Do Your Own Research": "직접 조사해 보세요.",
-        "Deposit Your Own Reserves": "자신의 준비금 입금",
-        "Don't Yield On Returns": "반품에 굴복하지 마세요",
-        "Data Yield Over Risk": "위험 대비 데이터 수익률"
+        "Do Your Own Research": "Do Your Own Research",
+        "Deposit Your Own Reserves": "Deposit Your Own Reserves",
+        "Don't Yield On Returns": "Don't Yield On Returns",
+        "Data Yield Over Risk": "Data Yield Over Risk"
       }
     },
     "crypto:73": {
@@ -844,7 +844,7 @@
     "crypto:75": {
       "question": "'Gwei'는 측정에 사용됩니까?",
       "answers": {
-        "Token supply": "토큰 공급",
+        "Token supply": "토큰 공급량",
         "Gas prices": "가스 가격",
         "Block size": "블록 크기",
         "Wallet balance": "월렛 잔액"
@@ -874,16 +874,16 @@
         "A wallet": "지갑",
         "A node that verifies transactions": "거래를 검증하는 노드",
         "A token": "토큰",
-        "An exchange": "교환"
+        "An exchange": "거래소"
       }
     },
     "crypto:79": {
       "question": "'ATH'는?",
       "answers": {
-        "All-Time High": "사상 최고",
-        "Average Trade Height": "평균 거래 높이",
-        "Actual Token Holdings": "실제 토큰 보유량",
-        "Auto Trade Handler": "자동 거래 핸들러"
+        "All-Time High": "All-Time High",
+        "Average Trade Height": "Average Trade Height",
+        "Actual Token Holdings": "Actual Token Holdings",
+        "Auto Trade Handler": "Auto Trade Handler"
       }
     },
     "crypto:80": {
@@ -916,7 +916,7 @@
     "crypto:83": {
       "question": "OnchainKit는 개발자 툴킷입니까?",
       "answers": {
-        "Binance": "바이낸스",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
         "MetaMask": "MetaMask",
         "Uniswap": "Uniswap"
@@ -925,7 +925,7 @@
     "crypto:84": {
       "question": "'가스 한도'가 설정됩니까?",
       "answers": {
-        "Token supply": "토큰 공급",
+        "Token supply": "토큰 공급량",
         "Max gas a transaction can use": "거래에서 사용할 수 있는 최대 가스",
         "Wallet size": "지갑 크기",
         "Block reward": "블록 보상"
@@ -937,16 +937,16 @@
         "A base Layer-1": "기본 레이어-1",
         "An Ethereum scaling solution": "Ethereum 확장 솔루션",
         "A wallet": "지갑",
-        "An exchange": "교환"
+        "An exchange": "거래소"
       }
     },
     "crypto:86": {
       "question": "트레이딩에서 'FOMO'는 무엇을 의미하나요?",
       "answers": {
-        "Fear Of Missing Out": "놓치는 것에 대한 두려움",
-        "Full Order Market Offer": "전체 주문 시장 제안",
-        "Fixed Order Money Out": "고정 주문 지급",
-        "Fast Onchain Market Order": "빠른 온체인 시장 주문"
+        "Fear Of Missing Out": "Fear Of Missing Out",
+        "Full Order Market Offer": "Full Order Market Offer",
+        "Fixed Order Money Out": "Fixed Order Money Out",
+        "Fast Onchain Market Order": "Fast Onchain Market Order"
       }
     },
     "crypto:87": {
@@ -959,10 +959,10 @@
       }
     },
     "crypto:88": {
-      "question": "'Layer-2' 솔루션은 주로 무엇을 목표로 할까요?",
+      "question": "레이어 2 솔루션의 주요 목표는 무엇인가요?",
       "answers": {
-        "Replace Bitcoin": "비트코인 교체",
-        "Scale a Layer-1 with cheaper, faster txs": "더 저렴하고 빠른 전송으로 Layer-1 확장",
+        "Replace Bitcoin": "Bitcoin 대체",
+        "Scale a Layer-1 with cheaper, faster txs": "더 빠르고 저렴한 트랜잭션으로 레이어 1 확장",
         "Mine faster": "더 빠르게 채굴",
         "Issue stablecoins": "스테이블코인 발행"
       }
@@ -972,17 +972,17 @@
       "answers": {
         "Secret, never shared": "비밀, 공유되지 않음",
         "Public and shareable to receive funds": "자금을 받기 위해 공개 및 공유 가능",
-        "Your password": "비밀번호",
+        "Your password": "내 비밀번호",
         "A private key": "개인 키"
       }
     },
     "crypto:90": {
       "question": "'KYC'는 무엇을 의미하나요?",
       "answers": {
-        "Keep Your Coins": "동전을 보관하세요",
-        "Know Your Customer": "고객 파악",
-        "Key Yield Contract": "주요 수익률 계약",
-        "Known Yield Curve": "알려진 수익률 곡선"
+        "Keep Your Coins": "Keep Your Coins",
+        "Know Your Customer": "Know Your Customer",
+        "Key Yield Contract": "Key Yield Contract",
+        "Known Yield Curve": "Known Yield Curve"
       }
     },
     "crypto:91": {
@@ -997,10 +997,10 @@
     "crypto:92": {
       "question": "'PoS'는 무엇을 의미합니까?",
       "answers": {
-        "Proof of Speed": "속도 증명",
-        "Proof of Stake": "지분 증명",
-        "Point of Sale": "판매 시점",
-        "Proof of Storage": "보관 증명"
+        "Proof of Speed": "Proof of Speed",
+        "Proof of Stake": "Proof of Stake",
+        "Point of Sale": "Point of Sale",
+        "Proof of Storage": "Proof of Storage"
       }
     },
     "crypto:93": {
@@ -1051,10 +1051,10 @@
     "crypto:98": {
       "question": "'ROI'는 무엇을 의미합니까?",
       "answers": {
-        "Return On Investment": "투자 수익",
-        "Rate Of Interest": "이자율",
-        "Risk Of Inflation": "인플레이션 위험",
-        "Ratio Of Income": "소득 비율"
+        "Return On Investment": "Return On Investment",
+        "Rate Of Interest": "Rate Of Interest",
+        "Risk Of Inflation": "Risk Of Inflation",
+        "Ratio Of Income": "Ratio Of Income"
       }
     },
     "crypto:99": {
@@ -1076,7 +1076,7 @@
       }
     },
     "sports:1": {
-      "question": "어떤 스포츠에서 슬램덩크를 하시겠습니까?",
+      "question": "슬램 덩크를 하는 스포츠는 무엇인가요?",
       "answers": {
         "Tennis": "테니스",
         "Basketball": "농구",
@@ -1600,7 +1600,7 @@
     "sports:59": {
       "question": "야구는?",
       "answers": {
-        "Circle": "서클",
+        "Circle": "Circle",
         "Diamond": "다이아몬드",
         "Square": "광장",
         "Triangle": "삼각형"
@@ -1868,7 +1868,7 @@
       }
     },
     "sports:89": {
-      "question": "축구 경기장에서 출발하는 선수는 총 몇 명입니까(두 팀 모두)?",
+      "question": "축구 경기 시작 시 양 팀을 합쳐 몇 명의 선수가 경기장에 있나요?",
       "answers": {
         "18": "18",
         "20": "20",
@@ -2093,7 +2093,7 @@
       }
     },
     "art:12": {
-      "question": "대리석 조각상 '다비드'를 조각한 사람은?",
+      "question": "대리석상 〈다비드〉를 만든 사람은 누구인가요?",
       "answers": {
         "Bernini": "베르니니",
         "Michelangelo": "미켈란젤로",
@@ -2453,7 +2453,7 @@
       }
     },
     "art:52": {
-      "question": "'벽화'는 땅에 그린 그림인가요?",
+      "question": "벽화는 어떤 표면에 그리나요?",
       "answers": {
         "Small canvas": "작은 캔버스",
         "Wall": "벽",
@@ -2692,7 +2692,7 @@
         "Paper folding": "종이 접기",
         "Metalwork": "금속 세공",
         "Glassblowing": "유리 불기",
-        "Painting": "그림"
+        "Painting": "회화"
       }
     },
     "art:79": {
@@ -2714,7 +2714,7 @@
       }
     },
     "art:81": {
-      "question": "가나가와의 대파도는 일본인이 유명하다고요?",
+      "question": "〈가나가와 해변의 높은 파도 아래〉는 어떤 종류의 일본 미술인가요?",
       "answers": {
         "Sculpture": "조각품",
         "Woodblock print": "목판화",
@@ -2777,9 +2777,9 @@
       }
     },
     "art:88": {
-      "question": "'밀로의 비너스'는 고대의 유명한 작품이죠?",
+      "question": "〈밀로의 비너스〉는 어떤 종류의 고대 미술품인가요?",
       "answers": {
-        "Painting": "그림",
+        "Painting": "회화",
         "Statue": "조각상",
         "Vase": "꽃병",
         "Mosaic": "모자이크"
@@ -2993,7 +2993,7 @@
       }
     },
     "history:12": {
-      "question": "냉전은 주로 미국과?",
+      "question": "냉전은 주로 미국과 어느 강대국 사이에서 벌어졌나요?",
       "answers": {
         "China": "중국",
         "USSR": "소련",
@@ -3353,7 +3353,7 @@
       }
     },
     "history:52": {
-      "question": "크리스토퍼 콜럼버스는 다음의 깃발 아래 항해했습니다.",
+      "question": "크리스토퍼 콜럼버스는 어느 나라의 국기를 달고 항해했나요?",
       "answers": {
         "Portugal": "포르투갈",
         "Spain": "스페인",
@@ -3677,7 +3677,7 @@
       }
     },
     "history:88": {
-      "question": "중세 시대는 다음과 같이 알려져 있습니다.",
+      "question": "중세 시대는 다른 말로 무엇이라고 하나요?",
       "answers": {
         "Middle Ages": "중세",
         "Stone Age": "석기 시대",
@@ -3832,7 +3832,7 @@
     "science:5": {
       "question": "금의 화학 기호는 무엇입니까?",
       "answers": {
-        "Go": "이동",
+        "Go": "Go",
         "Gd": "하느님",
         "Au": "금",
         "Ag": "Ag"
@@ -4253,7 +4253,7 @@
       }
     },
     "science:52": {
-      "question": "물질의 세 가지 일반적인 상태는 무엇입니까?",
+      "question": "물질의 세 가지 기본 상태는 무엇인가요?",
       "answers": {
         "Hot, cold, warm": "덥다, 차갑다, 따뜻하다",
         "Solid, liquid, gas": "고체, 액체, 기체",
@@ -5477,7 +5477,7 @@
       }
     },
     "geography:88": {
-      "question": "이집트의 수도는 어디에 위치해 있나요?",
+      "question": "이집트의 수도 카이로는 어느 강변에 있나요?",
       "answers": {
         "Tigris River": "티그리스 강",
         "Nile River": "나일 강",

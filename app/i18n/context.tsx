@@ -29,8 +29,10 @@ export const SUPPORTED_LANGUAGES = [
 
 export type Locale = (typeof SUPPORTED_LANGUAGES)[number]["code"];
 type Params = Record<string, string | number>;
+type PluralMessage = Partial<Record<Intl.LDMLPluralRule, string>>;
+type Message = string | PluralMessage;
 type Catalog = {
-  messages: Record<string, string>;
+  messages: Record<string, Message>;
   questions?: Record<string, string>;
   quiz: Record<string, {
     question: string;
@@ -97,6 +99,20 @@ function replaceParams(value: string, params?: Params) {
   );
 }
 
+function resolveMessage(
+  value: Message,
+  params: Params | undefined,
+  locale: Locale,
+) {
+  if (typeof value === "string") return value;
+
+  const count = typeof params?.count === "number" ? params.count : Number.NaN;
+  const category = Number.isFinite(count)
+    ? new Intl.PluralRules(localeTags[locale]).select(count)
+    : "other";
+  return value[category] || value.other || Object.values(value)[0] || "";
+}
+
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setCurrentLocale] = useState<Locale>("en");
   const [catalog, setCatalog] = useState<Catalog>(englishCatalog);
@@ -123,9 +139,11 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }, [setLocale]);
 
   const t = useCallback((key: string, params?: Params) => {
-    const value = catalog.messages[key] || englishCatalog.messages[key as keyof typeof englishCatalog.messages] || key;
-    return replaceParams(value, params);
-  }, [catalog]);
+    const value = catalog.messages[key]
+      || englishCatalog.messages[key as keyof typeof englishCatalog.messages]
+      || key;
+    return replaceParams(resolveMessage(value, params, locale), params);
+  }, [catalog, locale]);
 
   const translateQuizQuestion = useCallback((questionId: string, text: string) => (
     catalog.quiz[questionId]?.question || catalog.questions?.[text] || text

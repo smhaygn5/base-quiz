@@ -6,7 +6,7 @@
     "common.next": "التالي",
     "common.skip": "تخطي",
     "common.tryAgain": "حاول مرة أخرى",
-    "common.connect": "الاتصال",
+    "common.connect": "ربط",
     "common.disconnect": "قطع الاتصال",
     "common.connectWallet": "ربط المحفظة",
     "common.connectBaseWallet": "ربط Base Wallet",
@@ -14,38 +14,52 @@
     "common.recommended": "موصى به",
     "common.selectLanguage": "اختر اللغة",
     "common.language": "اللغة",
-    "common.switchLight": "التبديل إلى موضوع الضوء",
-    "common.switchDark": "التبديل إلى المظهر الداكن",
+    "common.switchLight": "استخدام المظهر الفاتح",
+    "common.switchDark": "استخدام المظهر الداكن",
     "common.mute": "كتم الصوت",
     "common.unmute": "إلغاء كتم الصوت",
     "home.kicker": "مسابقة معلومات على السلسلة · Base",
     "home.titleLine1": "مسابقة يومية.",
     "home.titleLine2": "مبنية على Base.",
-    "home.description": "اختر فئة، وأجب عن خمسة أسئلة، وسابق الوقت. حافظ على سلسلتك، واحفظ نتيجتك على السلسلة، وتقدّم في لوحة الصدارة العالمية.",
-    "home.streak": "سلسلة لمدة {count} أيام",
-    "home.confirmWallet": "التأكيد في المحفظة...",
+    "home.description": "اختر فئة، وأجب عن خمسة أسئلة قبل انتهاء الوقت. واصل سلسلة أيامك، واحفظ نقاطك على السلسلة، وتقدّم في لوحة الصدارة العالمية.",
+    "home.streak": {
+      "zero": "سلسلة من {count} أيام",
+      "one": "سلسلة من يوم واحد ({count})",
+      "two": "سلسلة من يومين ({count})",
+      "few": "سلسلة من {count} أيام",
+      "many": "سلسلة من {count} يومًا",
+      "other": "سلسلة من {count} يوم"
+    },
+    "home.confirmWallet": "أكّد في محفظتك…",
     "home.startRound": "ابدأ الجولة",
-    "home.leaderboard": "المتصدرين",
-    "home.streakBadges": "شارات خطية",
+    "home.leaderboard": "لوحة الصدارة",
+    "home.streakBadges": "شارات سلسلة الأيام",
     "home.facts": "5 أسئلة · 15 ثانية لكل سؤال · النتائج محفوظة على السلسلة",
     "category.pick": "اختر فئة",
-    "category.meta": "{count} سؤالًا · 5 في كل جولة",
+    "category.meta": {
+      "zero": "{count} سؤال · 5 في كل جولة",
+      "one": "سؤال واحد ({count}) · 5 في كل جولة",
+      "two": "سؤالان ({count}) · 5 في كل جولة",
+      "few": "{count} أسئلة · 5 في كل جولة",
+      "many": "{count} سؤالًا · 5 في كل جولة",
+      "other": "{count} سؤال · 5 في كل جولة"
+    },
     "category.start": "ابدأ اختبار {category}",
     "category.previous": "الفئة السابقة",
     "category.next": "الفئة التالية",
     "category.imageAlt": "فئة مسابقة {category}",
-    "category.crypto.name": "تشفير",
-    "category.crypto.description": "اختبر معلوماتك عن Base وEthereum والمحافظ وDeFi والثقافة التي تشكل عالم onchain.",
+    "category.crypto.name": "العملات المشفّرة",
+    "category.crypto.description": "اختبر معلوماتك عن Base وEthereum والمحافظ وDeFi وثقافة عالم البلوكتشين.",
     "category.sports.name": "الرياضة",
-    "category.sports.description": "من كرة القدم وكرة السلة إلى التنس والألعاب الأولمبية - تعرف على مدى قوة ذاكرتك الرياضية.",
+    "category.sports.description": "من كرة القدم والسلة إلى التنس والألعاب الأولمبية، اختبر معلوماتك الرياضية.",
     "category.art.name": "الفن",
     "category.art.description": "استكشف الرسم والفنانين والحركات والأفكار التي غيرت الثقافة البصرية عبر الأجيال.",
     "category.history.name": "التاريخ",
     "category.history.description": "سافر عبر الحضارات ونقاط التحول والأشخاص الذين شكلت قراراتهم العالم.",
     "category.science.name": "العلوم",
-    "category.science.description": "تحدي نفسك عبر الفيزياء والأحياء والكيمياء والاكتشافات التي تشرح كيفية عمل الأشياء.",
+    "category.science.description": "اختبر معلوماتك في الفيزياء والأحياء والكيمياء والاكتشافات التي تفسّر عالمنا.",
     "category.geography.name": "الجغرافيا",
-    "category.geography.description": "انتقل إلى البلدان والعواصم والمحيطات والمعالم من كل ركن من أركان كوكبنا.",
+    "category.geography.description": "استكشف الدول والعواصم والمحيطات والمعالم من مختلف أنحاء العالم.",
     "quiz.fallbackName": "اختبار",
     "quiz.questionProgress": "السؤال {current} من {total}",
     "quiz.score": "النتيجة",
@@ -53,106 +67,162 @@
     "quiz.answeredAria": "تمت الإجابة عن {answered} من {total} أسئلة",
     "quiz.chooseCorrect": "اختر الإجابة الصحيحة",
     "quiz.correct": "الإجابة الصحيحة",
-    "quiz.wrong": "إجابة خاطئة",
-    "quiz.points": "+ نقاط {points}",
+    "quiz.wrong": "إجابة غير صحيحة",
+    "quiz.points": "+{points} نقطة",
     "quiz.correctOption": "الخيار الصحيح: {option}",
-    "quiz.autoNote": "أجب مرة واحدة · يتم تحميل السؤال التالي تلقائيًا",
-    "result.roundComplete": "الجولة كاملة",
-    "result.finalScore": "النتيجة النهائية الخاصة بك",
+    "quiz.autoNote": "إجابة واحدة فقط · يظهر السؤال التالي تلقائيًا",
+    "result.roundComplete": "اكتملت الجولة",
+    "result.finalScore": "نقاطك النهائية",
     "result.points": "نقاط",
     "result.summaryAria": "ملخص الجولة",
     "result.categoryPill": "فئة {category}",
-    "result.streakPill": "سلسلة لمدة {count} أيام",
+    "result.streakPill": {
+      "zero": "سلسلة من {count} أيام",
+      "one": "سلسلة من يوم واحد ({count})",
+      "two": "سلسلة من يومين ({count})",
+      "few": "سلسلة من {count} أيام",
+      "many": "سلسلة من {count} يومًا",
+      "other": "سلسلة من {count} يوم"
+    },
     "result.roundCompletedTitle": "اكتملت الجولة",
-    "result.roundCompletedDetail": "تمت الإجابة على خمسة أسئلة. النتيجة النهائية الخاصة بك جاهزة.",
-    "result.streakUpdatedTitle": "تم تحديث الخط",
-    "result.streakUpdatedDetail": "أنت الآن في سلسلة تعلم مدتها يوم {count}.",
-    "result.save.idle.title": "حفظ درجاتك",
-    "result.save.idle.detail": "قم بتسجيل هذه النتيجة على Base وانضم إلى قائمة المتصدرين العالمية.",
-    "result.save.pending.title": "تأكيد درجاتك",
-    "result.save.pending.detail": "قم بالموافقة على المعاملة في محفظتك لإنهاء الحفظ.",
-    "result.save.done.title": "النتيجة المحفوظة onchain",
-    "result.save.done.detail": "تم التحقق من نتيجتك على Base وهي جاهزة للوحة المتصدرين.",
-    "result.save.error.title": "حفظ يحتاج إلى الاهتمام",
-    "result.save.error.detail": "قم بمراجعة الرسالة أدناه، ثم حاول إجراء المعاملة مرة أخرى.",
-    "result.save.disconnected.title": "الاتصال للحفظ",
-    "result.save.disconnected.detail": "اختر محفظة لتسجيل درجاتك على Base.",
-    "result.shareTitle": "مشاركة النتيجة الخاصة بك",
-    "result.shareDetail": "تحدي أصدقائك على Farcaster أو X.",
-    "result.replayKicker": "استمر في الزخم",
-    "result.replayTitle": "على استعداد لجولة أخرى؟",
-    "result.replayDetail": "العب {category} مرة أخرى أو اختر تحديًا مختلفًا.",
-    "result.playAgain": "العب مرة أخرى",
-    "result.chooseCategory": "اختر الفئة",
-    "result.saveButton": "حفظ النتيجة onchain",
+    "result.roundCompletedDetail": "أجبت عن خمسة أسئلة. نتيجتك جاهزة.",
+    "result.streakUpdatedTitle": "تم تحديث السلسلة",
+    "result.streakUpdatedDetail": {
+      "zero": "سلسلتك الآن {count} أيام.",
+      "one": "سلسلتك الآن يوم واحد ({count}).",
+      "two": "سلسلتك الآن يومان ({count}).",
+      "few": "سلسلتك الآن {count} أيام.",
+      "many": "سلسلتك الآن {count} يومًا.",
+      "other": "سلسلتك الآن {count} يوم."
+    },
+    "result.save.idle.title": "احفظ نقاطك",
+    "result.save.idle.detail": "احفظ نتيجتك على Base وانضم إلى لوحة الصدارة العالمية.",
+    "result.save.pending.title": "أكّد حفظ النقاط",
+    "result.save.pending.detail": "أكّد المعاملة في محفظتك لإتمام الحفظ.",
+    "result.save.done.title": "حُفظت النقاط على السلسلة",
+    "result.save.done.detail": "تم التحقق من نتيجتك على Base وأُضيفت إلى لوحة الصدارة.",
+    "result.save.error.title": "تعذّر الحفظ",
+    "result.save.error.detail": "راجع الرسالة أدناه، ثم حاول مرة أخرى.",
+    "result.save.disconnected.title": "اربط محفظتك للحفظ",
+    "result.save.disconnected.detail": "اختر محفظة لحفظ نقاطك على Base.",
+    "result.shareTitle": "شارك نتيجتك",
+    "result.shareDetail": "تحدَّ أصدقاءك على Farcaster أو X.",
+    "result.replayKicker": "واصل سلسلتك",
+    "result.replayTitle": "هل أنت مستعد لجولة أخرى؟",
+    "result.replayDetail": "أعد اللعب في فئة {category} أو اختر تحديًا آخر.",
+    "result.playAgain": "العب مجددًا",
+    "result.chooseCategory": "اختيار الفئة",
+    "result.saveButton": "حفظ النقاط على السلسلة",
     "result.confirming": "جارٍ التأكيد…",
-    "result.saved": "تم الحفظ onchain",
-    "result.viewTransaction": "عرض الصفقة",
-    "result.shareScore": "حصة النتيجة",
+    "result.saved": "تم الحفظ على السلسلة",
+    "result.viewTransaction": "عرض المعاملة",
+    "result.shareScore": "مشاركة النتيجة",
     "result.copyText": "نسخ النص",
     "result.copied": "نسخ إلى الحافظة!",
     "leaderboard.kicker": "Base Mainnet · كل الأوقات",
-    "leaderboard.title": "المتصدرين",
-    "leaderboard.description": "تم تصنيف أفضل اللاعبين حسب مجموع نقاطهم في onchain.",
-    "leaderboard.loading": "قراءة النتائج من Base...",
-    "leaderboard.empty": "لا توجد نتائج حتى الآن. كن أول لاعب على اللوحة.",
+    "leaderboard.title": "لوحة الصدارة",
+    "leaderboard.description": "يُرتّب اللاعبون حسب مجموع نقاطهم المحفوظة على السلسلة.",
+    "leaderboard.loading": "جارٍ تحميل النقاط من Base…",
+    "leaderboard.empty": "لا توجد نتائج بعد. كن أول من يدخل لوحة الصدارة.",
     "leaderboard.player": "لاعب",
     "leaderboard.totalScore": "مجموع النقاط",
     "leaderboard.bestScore": "أفضل نتيجة",
-    "leaderboard.streak": "خط",
-    "leaderboard.badges": "شارات",
+    "leaderboard.streak": "السلسلة",
+    "leaderboard.badges": "الشارات",
     "leaderboard.you": "أنت",
-    "leaderboard.noBadges": "لا شارات",
+    "leaderboard.noBadges": "لا توجد شارات",
     "leaderboard.badgeTitle": "شارة {name}",
-    "leaderboard.players": "{count} لاعبًا",
-    "leaderboard.verified": "تم التحقق من النتائج والشارات بواسطة onchain",
+    "leaderboard.players": {
+      "zero": "{count} لاعب",
+      "one": "لاعب واحد ({count})",
+      "two": "لاعبان ({count})",
+      "few": "{count} لاعبين",
+      "many": "{count} لاعبًا",
+      "other": "{count} لاعب"
+    },
+    "leaderboard.verified": "تم التحقق من النقاط والشارات على السلسلة",
     "badges.kicker": "NFT للسلسلة · Base Mainnet",
-    "badges.title": "شارات",
-    "badges.roadmapTitle": "خارطة طريق شارة الخط",
-    "badges.roadmapDescription": "استمر في اللعب، وطوّر خطك، واحصل على كل إنجاز من إنجازات onchain.",
-    "badges.streak": "سلسلة لمدة {count} أيام",
+    "badges.title": "الشارات",
+    "badges.roadmapTitle": "شارات سلسلة الأيام",
+    "badges.roadmapDescription": "واصل اللعب، ومدّد سلسلتك، واحصل على كل مكافأة على السلسلة.",
+    "badges.streak": {
+      "zero": "سلسلة من {count} أيام",
+      "one": "سلسلة من يوم واحد ({count})",
+      "two": "سلسلة من يومين ({count})",
+      "few": "سلسلة من {count} أيام",
+      "many": "سلسلة من {count} يومًا",
+      "other": "سلسلة من {count} يوم"
+    },
     "badges.walletRequired": "المحفظة مطلوبة",
-    "badges.connectTitle": "اتصل لعرض شاراتك والمطالبة بها",
-    "badges.connectDetail": "تتم قراءة خطك وملكية NFT مباشرة من Base.",
-    "badges.days": "أيام {count}",
+    "badges.connectTitle": "اربط محفظتك لعرض شاراتك والحصول عليها",
+    "badges.connectDetail": "تُقرأ سلسلتك وملكية الـNFT مباشرةً من Base.",
+    "badges.days": {
+      "zero": "{count} يوم",
+      "one": "يوم واحد ({count})",
+      "two": "يومان ({count})",
+      "few": "{count} أيام",
+      "many": "{count} يومًا",
+      "other": "{count} يوم"
+    },
     "badges.bronze.name": "برونزية",
-    "badges.bronze.description": "أكمل أول 3 أيام من الجري",
-    "badges.silver.name": "الفضة",
-    "badges.silver.description": "الحفاظ على الخط على قيد الحياة لمدة أسبوع",
-    "badges.gold.name": "الذهب",
-    "badges.gold.description": "قم ببناء خط ثابت لمدة 30 يومًا",
-    "badges.diamond.name": "الماس",
-    "badges.diamond.description": "الوصول إلى المعلم النهائي لمدة 100 يوم",
-    "badges.unlock": "افتح القفل في خط {count} لمدة يوم",
-    "badges.owned": "مملوكة",
-    "badges.claim": "شارة المطالبة",
-    "badges.claiming": "جارٍ المطالبة…",
-    "badges.daysLeft": "{count} أيام متبقية",
-    "badges.locked": "مغلق",
-    "badges.loading": "قراءة الشارات من Base...",
+    "badges.bronze.description": "أكمل أول سلسلة من 3 أيام",
+    "badges.silver.name": "فضية",
+    "badges.silver.description": "حافظ على السلسلة لمدة أسبوع",
+    "badges.gold.name": "ذهبية",
+    "badges.gold.description": "أكمل سلسلة من 30 يومًا",
+    "badges.diamond.name": "ماسية",
+    "badges.diamond.description": "بلغ إنجاز 100 يوم",
+    "badges.unlock": {
+      "zero": "تُفتح عند بلوغ {count} يوم",
+      "one": "تُفتح عند بلوغ يوم واحد ({count})",
+      "two": "تُفتح عند بلوغ يومين ({count})",
+      "few": "تُفتح عند بلوغ {count} أيام",
+      "many": "تُفتح عند بلوغ {count} يومًا",
+      "other": "تُفتح عند بلوغ {count} يوم"
+    },
+    "badges.owned": "تم الحصول عليها",
+    "badges.claim": "احصل على الشارة",
+    "badges.claiming": "جارٍ الحصول عليها…",
+    "badges.daysLeft": {
+      "zero": "متبقي {count} يوم",
+      "one": "متبقٍ يوم واحد ({count})",
+      "two": "متبقيان يومان ({count})",
+      "few": "متبقية {count} أيام",
+      "many": "متبقي {count} يومًا",
+      "other": "متبقي {count} يوم"
+    },
+    "badges.locked": "مقفلة",
+    "badges.loading": "جارٍ تحميل الشارات من Base…",
     "wallet.connectTitle": "ربط المحفظة",
     "wallet.browserWallets": "محافظ المتصفح",
     "wallet.recommended": "موصى به",
     "tutorial.welcomeTitle": "مرحبًا.",
-    "tutorial.welcomeDetail": "لعبة التوافه اليومية على Base. اختبر معلوماتك، وابني خطوطًا، وتنافس في جميع أنحاء العالم.",
+    "tutorial.welcomeDetail": "مسابقة يومية على Base. اختبر معلوماتك، وواصل سلسلة أيامك، ونافس لاعبين من أنحاء العالم.",
     "tutorial.questionsTitle": "5 أسئلة. يوميًا.",
-    "tutorial.questionsDetail": "أجب بسرعة - أسرع يعني المزيد من النقاط. احفظ درجاتك onchain لتظهر على لوحة المتصدرين العالمية.",
-    "tutorial.badgesTitle": "احصل على شارات NFT.",
-    "tutorial.badgesDetail": "حافظ على خطك حيًا واحصل على onchain NFTs: البرونزي (3d)، الفضي (7d)، الذهبي (30d)، الماسي (100d).",
+    "tutorial.questionsDetail": "أجب بسرعة؛ كلما أسرعت زادت نقاطك. احفظ نتيجتك على السلسلة لتظهر في لوحة الصدارة العالمية.",
+    "tutorial.badgesTitle": "اربح شارات NFT.",
+    "tutorial.badgesDetail": "واصل سلسلتك واحصل على NFT على السلسلة: برونزية (3 أيام)، فضية (7 أيام)، ذهبية (30 يومًا)، ماسية (100 يوم).",
     "tutorial.letsPlay": "هيا نلعب",
     "footer.blockData": "بيانات الكتل · BASE MAINNET",
-    "footer.playersOnchain": "{count} لاعبًا على السلسلة",
-    "share.text": "🧠 حققت {score} نقطة في Base Quiz! 🔥 السلسلة: {streak} أيام\n\nهل يمكنك التفوق عليّ؟ 👇",
-    "error.startFailed": "لا يمكن بدء الجولة. يرجى المحاولة مرة أخرى.",
-    "error.startCancelled": "تم إلغاء المعاملة. تأكيد ذلك لبدء الجولة.",
+    "footer.playersOnchain": {
+      "zero": "{count} لاعب على السلسلة",
+      "one": "لاعب واحد على السلسلة ({count})",
+      "two": "لاعبان على السلسلة ({count})",
+      "few": "{count} لاعبين على السلسلة",
+      "many": "{count} لاعبًا على السلسلة",
+      "other": "{count} لاعب على السلسلة"
+    },
+    "share.text": "🧠 نتيجتي في Base Quiz: {score} نقطة! 🔥 سلسلة الأيام: {streak}\n\nهل يمكنك التفوق عليّ؟ 👇",
+    "error.startFailed": "تعذّر بدء الجولة. حاول مرة أخرى.",
+    "error.startCancelled": "أُلغيت المعاملة. أكّدها لبدء الجولة.",
     "error.signatureCancelled": "تم إلغاء توقيع المحفظة. وقّع الرسالة للمتابعة.",
     "error.signatureFailed": "تعذّر التحقق من توقيع المحفظة. حاول مرة أخرى.",
-    "error.saveFailed": "لا يمكن حفظ النتيجة. يرجى المحاولة مرة أخرى.",
-    "error.alreadyPlayed": "تم حفظها بالفعل اليوم. أعود غدا.",
-    "error.claimFailed": "لا يمكن المطالبة بالشارة. يرجى المحاولة مرة أخرى.",
+    "error.saveFailed": "تعذّر حفظ النقاط. حاول مرة أخرى.",
+    "error.alreadyPlayed": "حُفظت نتيجة اليوم بالفعل. عُد غدًا.",
+    "error.claimFailed": "تعذّر الحصول على الشارة. حاول مرة أخرى.",
     "activation.kicker": "إعداد Base Quiz",
     "activation.title": "تفعيل عقد الجولات",
-    "activation.copy": "تنشر معاملة Base هذه لمرة واحدة العقد الصغير الذي تستخدمه Start Round. لا يغير النتائج أو الشرائط أو الشارات أو ينقل ETH.",
+    "activation.copy": "تنشر معاملة Base هذه، لمرة واحدة، العقد الصغير المستخدم في «بدء الجولة». لا تغيّر النقاط أو السلاسل أو الشارات، ولا تنقل ETH.",
     "activation.checking": "فحص العقد…",
     "activation.active": "عقد الجولات مفعّل",
     "activation.connected": "متصل: {address}",
@@ -163,15 +233,15 @@
     "activation.errorCheck": "تعذر التحقق من عقد Base. حاول مرة أخرى.",
     "activation.errorWallet": "لم يتم العثور على محفظة متوافقة.",
     "activation.errorCancelled": "تم إلغاء المعاملة. لم يتم إجراء أي تغييرات.",
-    "activation.errorFailed": "فشل التنشيط. يرجى المحاولة مرة أخرى."
+    "activation.errorFailed": "تعذّر التفعيل. حاول مرة أخرى."
   },
   "quiz": {
     "crypto:0": {
       "question": "ما هي الشركة التي قامت بتطوير Base؟",
       "answers": {
-        "Binance": "بينانس",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
-        "Kraken": "كراكن",
+        "Kraken": "Kraken",
         "OKX": "OKX"
       }
     },
@@ -181,16 +251,16 @@
         "Bitcoin": "بيتكوين",
         "Solana": "سولانا",
         "Ethereum": "Ethereum",
-        "Avalanche": "انهيار جليدي"
+        "Avalanche": "Avalanche"
       }
     },
     "crypto:2": {
       "question": "ما هي الحزمة التقنية التي يستخدمها Base؟",
       "answers": {
-        "OP Stack": "مكدس OP",
+        "OP Stack": "OP Stack",
         "zkSync": "zkSync",
-        "Polygon CDK": "مضلع CDK",
-        "Arbitrum Nitro": "اربيتروم نيترو"
+        "Polygon CDK": "Polygon CDK",
+        "Arbitrum Nitro": "Arbitrum Nitro"
       }
     },
     "crypto:3": {
@@ -206,7 +276,7 @@
       "question": "ما هو الرمز المميز المستخدم لرسوم الغاز على Base؟",
       "answers": {
         "USDC": "USDC",
-        "BASE": "القاعدة",
+        "BASE": "BASE",
         "ETH": "ETH",
         "OP": "OP"
       }
@@ -216,8 +286,8 @@
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
-        "Rainbow": "قوس قزح",
-        "Phantom": "فانتوم"
+        "Rainbow": "Rainbow",
+        "Phantom": "Phantom"
       }
     },
     "crypto:6": {
@@ -241,10 +311,10 @@
     "crypto:8": {
       "question": "ما هي السلسلة الفائقة التي ينتمي إليها Base؟",
       "answers": {
-        "Polygon Superchain": "سلسلة مضلعة فائقة",
-        "Optimism Superchain": "سلسلة التفاؤل الفائقة",
-        "Arbitrum Orbit": "مدار التحكيم",
-        "zkSync Hyperchain": "zkSync هايبرتشين"
+        "Polygon Superchain": "Polygon Superchain",
+        "Optimism Superchain": "Optimism Superchain",
+        "Arbitrum Orbit": "Arbitrum Orbit",
+        "zkSync Hyperchain": "zkSync Hyperchain"
       }
     },
     "crypto:9": {
@@ -253,7 +323,7 @@
         "A standalone L1": "L1 مستقل",
         "An Ethereum L2 rollup": "مجموعة Ethereum L2",
         "A sidechain": "سلسلة جانبية",
-        "A bridge protocol": "بروتوكول الجسر"
+        "A bridge protocol": "بروتوكول جسر"
       }
     },
     "crypto:10": {
@@ -266,12 +336,12 @@
       }
     },
     "crypto:11": {
-      "question": "تمت كتابة العقود الذكية على Base؟",
+      "question": "بأي لغة تُكتب العقود الذكية على Base؟",
       "answers": {
         "Python": "بايثون",
-        "Rust": "الصدأ",
-        "Solidity": "الصلابة",
-        "Go": "انطلق"
+        "Rust": "Rust",
+        "Solidity": "Solidity",
+        "Go": "Go"
       }
     },
     "crypto:12": {
@@ -289,14 +359,14 @@
         "Minting more tokens": "إنشاء المزيد من الرموز",
         "Scalability & lower fees": "قابلية توسع أكبر ورسوم أقل",
         "Mining": "التعدين",
-        "Staking": "التخزين بالحصص"
+        "Staking": "ستيكنغ"
       }
     },
     "crypto:14": {
       "question": "ما هو الإجماع الذي يستخدمه Ethereum؟",
       "answers": {
         "Proof of Work": "إثبات العمل",
-        "Proof of Stake": "إثبات الحصة",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Authority": "إثبات السلطة",
         "Proof of History": "إثبات التاريخ"
       }
@@ -306,7 +376,7 @@
       "answers": {
         "A wallet type": "نوع المحفظة",
         "Ethereum's execution engine": "محرك تنفيذ Ethereum",
-        "A token standard": "معيار الرمز المميز",
+        "A token standard": "معيار رمز مميز",
         "A bridge": "جسر"
       }
     },
@@ -314,9 +384,9 @@
       "question": "ما الذي لا يعد L2 من Ethereum؟",
       "answers": {
         "Base": "Base",
-        "Arbitrum": "التحكيم",
+        "Arbitrum": "Arbitrum",
         "Solana": "سولانا",
-        "Optimism": "التفاؤل"
+        "Optimism": "Optimism"
       }
     },
     "crypto:17": {
@@ -385,7 +455,7 @@
     "crypto:24": {
       "question": "أي إجماع يستخدم Bitcoin؟",
       "answers": {
-        "Proof of Stake": "إثبات الحصة",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Work": "إثبات العمل",
         "Proof of Authority": "إثبات السلطة",
         "DPoS": "DPoS"
@@ -394,10 +464,10 @@
     "crypto:25": {
       "question": "ما الذي تمثله DeFi؟",
       "answers": {
-        "Defined Finance": "التمويل المحدد",
-        "Decentralized Finance": "التمويل اللامركزي",
-        "Defaulted Finance": "التمويل المتعثر",
-        "Deferred Finance": "التمويل المؤجل"
+        "Defined Finance": "Defined Finance",
+        "Decentralized Finance": "Decentralized Finance",
+        "Defaulted Finance": "Defaulted Finance",
+        "Deferred Finance": "Deferred Finance"
       }
     },
     "crypto:26": {
@@ -405,8 +475,8 @@
       "answers": {
         "Lending platform": "منصة الإقراض",
         "DEX (decentralized exchange)": "DEX (التبادل اللامركزي)",
-        "Wallet": "المحفظة",
-        "Bridge": "الجسر"
+        "Wallet": "محفظة",
+        "Bridge": "جسر"
       }
     },
     "crypto:27": {
@@ -421,10 +491,10 @@
     "crypto:28": {
       "question": "ماذا يعني TVL؟",
       "answers": {
-        "Token Value Locked": "قيمة الرمز المميز مقفلة",
-        "Total Value Locked": "إجمالي القيمة مقفلة",
-        "Trade Volume Limit": "الحد الأقصى لحجم التداول",
-        "Tier Volume Level": "مستوى حجم الطبقة"
+        "Token Value Locked": "Token Value Locked",
+        "Total Value Locked": "Total Value Locked",
+        "Trade Volume Limit": "Trade Volume Limit",
+        "Tier Volume Level": "Tier Volume Level"
       }
     },
     "crypto:29": {
@@ -432,14 +502,14 @@
       "answers": {
         "DEX": "DEX",
         "Lending protocol": "بروتوكول الإقراض",
-        "Stablecoin": "العملة المستقرة",
+        "Stablecoin": "عملة مستقرة",
         "NFT marketplace": "سوق NFT"
       }
     },
     "crypto:30": {
       "question": "ما هي زراعة المحصول؟",
       "answers": {
-        "Mining crops": "محاصيل التعدين",
+        "Mining crops": "زراعة المحاصيل",
         "Earning rewards from DeFi protocols": "الحصول على مكافآت من بروتوكولات DeFi",
         "A staking pool name": "اسم مجموعة التخزين",
         "An NFT minting term": "مصطلح سك NFT"
@@ -448,8 +518,8 @@
     "crypto:31": {
       "question": "ما هي الشركة التي تصدر USDC؟",
       "answers": {
-        "Tether": "التوصيل",
-        "Circle": "الدائرة",
+        "Tether": "Tether",
+        "Circle": "Circle",
         "Coinbase": "Coinbase",
         "Paxos": "باكسوس"
       }
@@ -457,8 +527,8 @@
     "crypto:32": {
       "question": "ما هي الشركة التي تصدر USDT؟",
       "answers": {
-        "Circle": "الدائرة",
-        "Tether": "حبل",
+        "Circle": "Circle",
+        "Tether": "Tether",
         "Coinbase": "Coinbase",
         "MakerDAO": "MakerDAO"
       }
@@ -484,10 +554,10 @@
     "crypto:35": {
       "question": "ما الذي يرمز إليه NFT؟",
       "answers": {
-        "New Finance Token": "رمز التمويل الجديد",
-        "Non-Fungible Token": "الرمز المميز غير القابل للاستبدال",
-        "Network File Transfer": "نقل ملفات الشبكة",
-        "Node Function Type": "نوع وظيفة العقدة"
+        "New Finance Token": "New Finance Token",
+        "Non-Fungible Token": "Non-Fungible Token",
+        "Network File Transfer": "Network File Transfer",
+        "Node Function Type": "Node Function Type"
       }
     },
     "crypto:36": {
@@ -518,12 +588,12 @@
       }
     },
     "crypto:39": {
-      "question": "ما هي الكلمات السرية للمحفظة؟",
+      "question": "ماذا تُسمّى كلمات الاسترداد السرية للمحفظة؟",
       "answers": {
         "Public key": "المفتاح العام",
-        "Seed phrase": "عبارة البذور",
+        "Seed phrase": "عبارة الاسترداد",
         "Hash": "التجزئة",
-        "Nonce": "نونس"
+        "Nonce": "Nonce"
       }
     },
     "crypto:40": {
@@ -532,14 +602,14 @@
         "A mobile app": "تطبيق جوال",
         "A physical device for storing keys": "جهاز فعلي لتخزين المفاتيح",
         "A browser extension": "امتداد للمتصفح",
-        "An exchange account": "حساب تبادل"
+        "An exchange account": "حساب في منصة تداول"
       }
     },
     "crypto:41": {
-      "question": "لا يجب عليك أبدًا مشاركة ما لديك؟",
+      "question": "ما الذي يجب ألا تشاركه أبدًا؟",
       "answers": {
         "Wallet address": "عنوان المحفظة",
-        "Seed phrase": "عبارة البذور",
+        "Seed phrase": "عبارة الاسترداد",
         "ENS name": "اسم ENS",
         "Username": "اسم المستخدم"
       }
@@ -547,7 +617,7 @@
     "crypto:42": {
       "question": "يعني الحراسة الذاتية؟",
       "answers": {
-        "Exchange holds your keys": "يحتفظ Exchange بمفاتيحك",
+        "Exchange holds your keys": "تحتفظ منصة التداول بمفاتيحك",
         "You control your private keys": "أنت تتحكم في مفاتيحك الخاصة",
         "A bank holds your keys": "يحتفظ البنك بمفاتيحك",
         "A friend holds your keys": "أحد الأصدقاء يحمل مفاتيحك"
@@ -556,16 +626,16 @@
     "crypto:43": {
       "question": "MetaMask هو في المقام الأول؟",
       "answers": {
-        "Exchange": "تبادل",
-        "Browser wallet": "محفظة المتصفح",
-        "Hardware wallet": "محفظة الأجهزة",
+        "Exchange": "منصة تداول",
+        "Browser wallet": "محفظة متصفح",
+        "Hardware wallet": "محفظة أجهزة",
         "L2 chain": "سلسلة L2"
       }
     },
     "crypto:44": {
       "question": "ما هو Farcaster؟",
       "answers": {
-        "An exchange": "تبادل",
+        "An exchange": "منصة تداول",
         "A decentralized social network": "شبكة اجتماعية لامركزية",
         "A wallet": "محفظة",
         "A game": "لعبة"
@@ -599,19 +669,19 @@
       }
     },
     "crypto:48": {
-      "question": "تم إنشاء التطبيقات المصغرة على Base App؟",
+      "question": "ما الأدوات المستخدمة لبناء Mini Apps في Base App؟",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit / OnchainKit",
-        "Flutter only": "الرفرفة فقط",
+        "Flutter only": "Flutter فقط",
         "Native iOS only": "نظام التشغيل iOS الأصلي فقط",
-        "Unity": "الوحدة"
+        "Unity": "Unity"
       }
     },
     "crypto:49": {
-      "question": "ما يسمى أيضًا بتجزئة معاملة blockchain؟",
+      "question": "ماذا يُسمّى أيضًا هاش معاملة البلوكتشين؟",
       "answers": {
-        "Nonce": "نونس",
-        "TX ID": "معرف تكساس",
+        "Nonce": "Nonce",
+        "TX ID": "TX ID",
         "Block height": "ارتفاع الكتلة",
         "Gas limit": "حد الغاز"
       }
@@ -619,10 +689,10 @@
     "crypto:50": {
       "question": "ما الذي يرمز إليه DAO؟",
       "answers": {
-        "Digital Asset Order": "طلب الأصول الرقمية",
-        "Decentralized Autonomous Organization": "منظمة لا مركزية مستقلة",
-        "Distributed App Output": "مخرجات التطبيق الموزعة",
-        "Data Access Object": "كائن الوصول إلى البيانات"
+        "Digital Asset Order": "Digital Asset Order",
+        "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
+        "Distributed App Output": "Distributed App Output",
+        "Data Access Object": "Data Access Object"
       }
     },
     "crypto:51": {
@@ -683,8 +753,8 @@
       "question": "هل يتم دفع رسوم الغاز على blockchain؟",
       "answers": {
         "Developers": "المطورين",
-        "Network validators/miners": "مدققو/عمال المناجم في الشبكة",
-        "Exchanges": "التبادلات",
+        "Network validators/miners": "مدققو الشبكة أو المعدّنون",
+        "Exchanges": "منصات التداول",
         "Banks": "البنوك"
       }
     },
@@ -700,36 +770,36 @@
     "crypto:59": {
       "question": "ما الذي يرمز إليه \"DEX\"؟",
       "answers": {
-        "Digital Exchange": "التبادل الرقمي",
-        "Decentralized Exchange": "التبادل اللامركزي",
-        "Data Exchange": "تبادل البيانات",
-        "Direct Exchange": "التبادل المباشر"
+        "Digital Exchange": "Digital Exchange",
+        "Decentralized Exchange": "Decentralized Exchange",
+        "Data Exchange": "Data Exchange",
+        "Direct Exchange": "Direct Exchange"
       }
     },
     "crypto:60": {
       "question": "ما الذي يرمز إليه \"CEX\"؟",
       "answers": {
-        "Central Exchange": "الصرف المركزي",
-        "Centralized Exchange": "التبادل المركزي",
-        "Crypto Exchange": "تبادل العملات المشفرة",
-        "Coin Exchange": "صرف العملات"
+        "Central Exchange": "Central Exchange",
+        "Centralized Exchange": "Centralized Exchange",
+        "Crypto Exchange": "Crypto Exchange",
+        "Coin Exchange": "Coin Exchange"
       }
     },
     "crypto:61": {
-      "question": "ما هو \"الستاكينج\"؟",
+      "question": "ما هو الستيكنغ؟",
       "answers": {
         "Selling tokens": "بيع الرموز المميزة",
         "Locking tokens to support a network for rewards": "رموز القفل لدعم الشبكة للحصول على المكافآت",
-        "Mining coins": "عملات التعدين",
+        "Mining coins": "تعدين العملات",
         "Burning tokens": "حرق الرموز المميزة"
       }
     },
     "crypto:62": {
-      "question": "ما هو \"المفتاح الخاص\"؟",
+      "question": "ما هو المفتاح الخاص؟",
       "answers": {
         "Your public address": "عنوانك العام",
         "A secret that controls your funds": "سر يتحكم في أموالك",
-        "An exchange password": "كلمة مرور التبادل",
+        "An exchange password": "كلمة مرور منصة تداول",
         "A transaction id": "معرف المعاملة"
       }
     },
@@ -739,7 +809,7 @@
         "Real transactions": "المعاملات الحقيقية",
         "Testing without real value": "اختبار بدون قيمة حقيقية",
         "Storing coins": "تخزين العملات المعدنية",
-        "Mining Bitcoin": "تعدين البيتكوين"
+        "Mining Bitcoin": "تعدين Bitcoin"
       }
     },
     "crypto:64": {
@@ -747,7 +817,7 @@
       "answers": {
         "Creating tokens": "إنشاء الرموز المميزة",
         "Permanently removing tokens from supply": "إزالة الرموز المميزة من العرض نهائيًا",
-        "Staking tokens": "الرموز المميزة للتخزين",
+        "Staking tokens": "ستيكنغ الرموز",
         "Sending tokens": "إرسال الرموز المميزة"
       }
     },
@@ -793,7 +863,7 @@
         "Layer 1 base blockchain": "سلسلة الكتل الأساسية للطبقة الأولى",
         "A game level": "مستوى اللعبة",
         "A wallet": "محفظة",
-        "A token standard": "معيار الرمز المميز"
+        "A token standard": "معيار رمز مميز"
       }
     },
     "crypto:70": {
@@ -801,8 +871,8 @@
       "answers": {
         "Layer-2 of Ethereum": "الطبقة الثانية من Ethereum",
         "Standalone Layer-1 blockchain": "blockchain المستقل من الطبقة الأولى",
-        "Wallet": "المحفظة",
-        "Stablecoin": "العملة المستقرة"
+        "Wallet": "محفظة",
+        "Stablecoin": "عملة مستقرة"
       }
     },
     "crypto:71": {
@@ -810,17 +880,17 @@
       "answers": {
         "Low energy use": "استهلاك منخفض للطاقة",
         "High energy use via mining": "استخدام عالي للطاقة عن طريق التعدين",
-        "Staking coins": "قطع العملات المعدنية",
+        "Staking coins": "ستيكنغ العملات",
         "No validators": "لا توجد أدوات التحقق"
       }
     },
     "crypto:72": {
       "question": "ماذا يعني \"DYOR\"؟",
       "answers": {
-        "Do Your Own Research": "قم بالبحث الخاص بك",
-        "Deposit Your Own Reserves": "قم بإيداع احتياطياتك الخاصة",
-        "Don't Yield On Returns": "لا تستسلم للمرتجعات",
-        "Data Yield Over Risk": "عائد البيانات أعلى من المخاطر"
+        "Do Your Own Research": "Do Your Own Research",
+        "Deposit Your Own Reserves": "Deposit Your Own Reserves",
+        "Don't Yield On Returns": "Don't Yield On Returns",
+        "Data Yield Over Risk": "Data Yield Over Risk"
       }
     },
     "crypto:73": {
@@ -828,7 +898,7 @@
       "answers": {
         "Always-online wallet": "محفظة متصلة بالإنترنت دائمًا",
         "Offline wallet for storage": "محفظة للتخزين غير متصلة بالإنترنت",
-        "Exchange wallet": "محفظة التبادل",
+        "Exchange wallet": "محفظة منصة تداول",
         "A stablecoin": "عملة مستقرة"
       }
     },
@@ -837,14 +907,14 @@
       "answers": {
         "Offline wallet": "محفظة غير متصلة بالإنترنت",
         "Internet-connected wallet": "محفظة متصلة بالإنترنت",
-        "Hardware wallet": "محفظة الأجهزة",
+        "Hardware wallet": "محفظة أجهزة",
         "Paper wallet": "المحفظة الورقية"
       }
     },
     "crypto:75": {
       "question": "هل يُستخدم \"Gwei\" للقياس؟",
       "answers": {
-        "Token supply": "عرض الرمز المميز",
+        "Token supply": "معروض الرموز",
         "Gas prices": "أسعار الغاز",
         "Block size": "حجم الكتلة",
         "Wallet balance": "رصيد المحفظة"
@@ -853,7 +923,7 @@
     "crypto:76": {
       "question": "\"الخسارة غير الدائمة\" مرتبطة بـ؟",
       "answers": {
-        "Staking": "التوقيع المساحي",
+        "Staking": "ستيكنغ",
         "Providing liquidity": "توفير السيولة",
         "Mining": "التعدين",
         "Holding": "القابضة"
@@ -874,16 +944,16 @@
         "A wallet": "محفظة",
         "A node that verifies transactions": "العقدة التي تتحقق من المعاملات",
         "A token": "رمز مميز",
-        "An exchange": "تبادل"
+        "An exchange": "منصة تداول"
       }
     },
     "crypto:79": {
       "question": "\"ATH\" يرمز إلى؟",
       "answers": {
-        "All-Time High": "أعلى مستوى على الإطلاق",
-        "Average Trade Height": "متوسط ارتفاع التجارة",
-        "Actual Token Holdings": "مقتنيات الرموز الفعلية",
-        "Auto Trade Handler": "معالج التجارة الآلية"
+        "All-Time High": "All-Time High",
+        "Average Trade Height": "Average Trade Height",
+        "Actual Token Holdings": "Actual Token Holdings",
+        "Auto Trade Handler": "Auto Trade Handler"
       }
     },
     "crypto:80": {
@@ -898,7 +968,7 @@
     "crypto:81": {
       "question": "في إثبات العمل، هل يتم استدعاء تأكيد المعاملات؟",
       "answers": {
-        "Staking": "التوقيع المساحي",
+        "Staking": "ستيكنغ",
         "Mining": "التعدين",
         "Bridging": "التجسير",
         "Burning": "محترق"
@@ -916,7 +986,7 @@
     "crypto:83": {
       "question": "OnchainKit هي مجموعة أدوات للمطورين؟",
       "answers": {
-        "Binance": "بينانس",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
         "MetaMask": "MetaMask",
         "Uniswap": "Uniswap"
@@ -925,7 +995,7 @@
     "crypto:84": {
       "question": "تم تحديد \"حد الغاز\"؟",
       "answers": {
-        "Token supply": "عرض الرمز المميز",
+        "Token supply": "معروض الرموز",
         "Max gas a transaction can use": "الحد الأقصى للغاز الذي يمكن للمعاملة استخدامه",
         "Wallet size": "حجم المحفظة",
         "Block reward": "مكافأة الحظر"
@@ -937,16 +1007,16 @@
         "A base Layer-1": "الطبقة الأساسية-1",
         "An Ethereum scaling solution": "حل قياس Ethereum",
         "A wallet": "محفظة",
-        "An exchange": "تبادل"
+        "An exchange": "منصة تداول"
       }
     },
     "crypto:86": {
       "question": "ماذا يعني \"FOMO\" في التداول؟",
       "answers": {
-        "Fear Of Missing Out": "الخوف من تفويت الفرصة",
-        "Full Order Market Offer": "عرض سوق الطلب الكامل",
-        "Fixed Order Money Out": "تم صرف أموال الطلب الثابت",
-        "Fast Onchain Market Order": "طلب السوق السريع على السلسلة"
+        "Fear Of Missing Out": "Fear Of Missing Out",
+        "Full Order Market Offer": "Full Order Market Offer",
+        "Fixed Order Money Out": "Fixed Order Money Out",
+        "Fast Onchain Market Order": "Fast Onchain Market Order"
       }
     },
     "crypto:87": {
@@ -959,12 +1029,12 @@
       }
     },
     "crypto:88": {
-      "question": "تهدف حلول \"الطبقة الثانية\" بشكل أساسي إلى؟",
+      "question": "ما الهدف الرئيسي من حلول الطبقة الثانية؟",
       "answers": {
-        "Replace Bitcoin": "استبدل البيتكوين",
-        "Scale a Layer-1 with cheaper, faster txs": "قم بقياس الطبقة 1 باستخدام رسائل نصية أرخص وأسرع",
-        "Mine faster": "تعدين أسرع",
-        "Issue stablecoins": "إصدار العملات المستقرة"
+        "Replace Bitcoin": "استبدال Bitcoin",
+        "Scale a Layer-1 with cheaper, faster txs": "توسيع نطاق الطبقة الأولى بمعاملات أسرع وأقل تكلفة",
+        "Mine faster": "التعدين بسرعة أكبر",
+        "Issue stablecoins": "إصدار عملات مستقرة"
       }
     },
     "crypto:89": {
@@ -972,17 +1042,17 @@
       "answers": {
         "Secret, never shared": "سر، لم تتم مشاركته مطلقًا",
         "Public and shareable to receive funds": "عام وقابل للمشاركة لتلقي الأموال",
-        "Your password": "كلمة المرور الخاصة بك",
+        "Your password": "كلمة مرورك",
         "A private key": "مفتاح خاص"
       }
     },
     "crypto:90": {
       "question": "ما الذي يرمز إليه \"KYC\"؟",
       "answers": {
-        "Keep Your Coins": "احتفظ بعملاتك المعدنية",
-        "Know Your Customer": "اعرف عميلك",
-        "Key Yield Contract": "عقد العائد الرئيسي",
-        "Known Yield Curve": "منحنى العائد المعروف"
+        "Keep Your Coins": "Keep Your Coins",
+        "Know Your Customer": "Know Your Customer",
+        "Key Yield Contract": "Key Yield Contract",
+        "Known Yield Curve": "Known Yield Curve"
       }
     },
     "crypto:91": {
@@ -997,10 +1067,10 @@
     "crypto:92": {
       "question": "\"PoS\" يرمز إلى؟",
       "answers": {
-        "Proof of Speed": "إثبات السرعة",
-        "Proof of Stake": "إثبات الحصة",
-        "Point of Sale": "نقطة البيع",
-        "Proof of Storage": "إثبات التخزين"
+        "Proof of Speed": "Proof of Speed",
+        "Proof of Stake": "Proof of Stake",
+        "Point of Sale": "Point of Sale",
+        "Proof of Storage": "Proof of Storage"
       }
     },
     "crypto:93": {
@@ -1051,10 +1121,10 @@
     "crypto:98": {
       "question": "ما المقصود بـ \"ROI\"؟",
       "answers": {
-        "Return On Investment": "العائد على الاستثمار",
-        "Rate Of Interest": "سعر الفائدة",
-        "Risk Of Inflation": "خطر التضخم",
-        "Ratio Of Income": "نسبة الدخل"
+        "Return On Investment": "Return On Investment",
+        "Rate Of Interest": "Rate Of Interest",
+        "Risk Of Inflation": "Risk Of Inflation",
+        "Ratio Of Income": "Ratio Of Income"
       }
     },
     "crypto:99": {
@@ -1076,7 +1146,7 @@
       }
     },
     "sports:1": {
-      "question": "في أي رياضة ستؤدي ضربة ساحقة؟",
+      "question": "في أي رياضة تُنفَّذ حركة السلام دانك؟",
       "answers": {
         "Tennis": "التنس",
         "Basketball": "كرة السلة",
@@ -1600,7 +1670,7 @@
     "sports:59": {
       "question": "تُلعب لعبة البيسبول في ملعب على شكل؟",
       "answers": {
-        "Circle": "الدائرة",
+        "Circle": "Circle",
         "Diamond": "الماس",
         "Square": "مربع",
         "Triangle": "مثلث"
@@ -1868,7 +1938,7 @@
       }
     },
     "sports:89": {
-      "question": "ما إجمالي عدد اللاعبين الذين يبدأون المباراة في ملعب كرة القدم (كلا الفريقين)؟",
+      "question": "كم لاعبًا من الفريقين يكونون على الملعب عند بدء مباراة كرة القدم؟",
       "answers": {
         "18": "18",
         "20": "20",
@@ -2093,7 +2163,7 @@
       }
     },
     "art:12": {
-      "question": "من قام بنحت التمثال الرخامي \"داوود\" ؟",
+      "question": "من نحت تمثال «داوود» الرخامي؟",
       "answers": {
         "Bernini": "بيرنيني",
         "Michelangelo": "مايكل أنجلو",
@@ -2453,11 +2523,11 @@
       }
     },
     "art:52": {
-      "question": "\"الجدارية\" هي لوحة مرسومة على؟",
+      "question": "على أي سطح تُرسم اللوحة الجدارية؟",
       "answers": {
         "Small canvas": "لوحة قماشية صغيرة",
         "Wall": "الحائط",
-        "Plate": "لوحة",
+        "Plate": "طبق",
         "Paper": "ورق"
       }
     },
@@ -2692,7 +2762,7 @@
         "Paper folding": "طي الورق",
         "Metalwork": "الأعمال المعدنية",
         "Glassblowing": "نفخ الزجاج",
-        "Painting": "الرسم"
+        "Painting": "لوحة"
       }
     },
     "art:79": {
@@ -2714,7 +2784,7 @@
       }
     },
     "art:81": {
-      "question": "الموجة العظيمة قبالة كاناغاوا يابانية مشهورة؟",
+      "question": "ما نوع العمل الفني الياباني «الموجة العظيمة قبالة كاناغاوا»؟",
       "answers": {
         "Sculpture": "النحت",
         "Woodblock print": "طباعة خشبية",
@@ -2777,9 +2847,9 @@
       }
     },
     "art:88": {
-      "question": "\"فينوس دي ميلو\" قديمة مشهورة؟",
+      "question": "ما نوع العمل الفني القديم «فينوس دي ميلو»؟",
       "answers": {
-        "Painting": "الرسم",
+        "Painting": "لوحة",
         "Statue": "تمثال",
         "Vase": "مزهرية",
         "Mosaic": "فسيفساء"
@@ -2993,7 +3063,7 @@
       }
     },
     "history:12": {
-      "question": "كانت الحرب الباردة بشكل رئيسي بين الولايات المتحدة الأمريكية و؟",
+      "question": "دارت الحرب الباردة أساسًا بين الولايات المتحدة وأي قوة أخرى؟",
       "answers": {
         "China": "الصين",
         "USSR": "اتحاد الجمهوريات الاشتراكية السوفياتية",
@@ -3353,7 +3423,7 @@
       }
     },
     "history:52": {
-      "question": "أبحر كريستوفر كولومبوس تحت علم؟",
+      "question": "تحت علم أي دولة أبحر كريستوفر كولومبوس؟",
       "answers": {
         "Portugal": "البرتغال",
         "Spain": "إسبانيا",
@@ -3677,7 +3747,7 @@
       }
     },
     "history:88": {
-      "question": "تُعرف فترة العصور الوسطى أيضًا باسم؟",
+      "question": "بأي اسم آخر تُعرف فترة العصور الوسطى؟",
       "answers": {
         "Middle Ages": "العصور الوسطى",
         "Stone Age": "العصر الحجري",
@@ -3832,7 +3902,7 @@
     "science:5": {
       "question": "ما الرمز الكيميائي للذهب؟",
       "answers": {
-        "Go": "انطلق",
+        "Go": "Go",
         "Gd": "جي دي",
         "Au": "Au",
         "Ag": "آج"
@@ -3941,7 +4011,7 @@
       "question": "ما هي أصلب مادة طبيعية على وجه الأرض؟",
       "answers": {
         "Gold": "ذهبي",
-        "Iron": "حديد",
+        "Iron": "الحديد",
         "Diamond": "الماس",
         "Quartz": "كوارتز"
       }
@@ -4060,7 +4130,7 @@
         "Rock": "روك",
         "Hydrogen and helium": "الهيدروجين والهيليوم",
         "Water": "ماء",
-        "Iron": "حديد"
+        "Iron": "الحديد"
       }
     },
     "science:31": {
@@ -4253,7 +4323,7 @@
       }
     },
     "science:52": {
-      "question": "ما هي الحالات الثلاث المشتركة للمادة؟",
+      "question": "ما الحالات الأساسية الثلاث للمادة؟",
       "answers": {
         "Hot, cold, warm": "حار، بارد، دافئ",
         "Solid, liquid, gas": "صلب، سائل، غازي",
@@ -4581,7 +4651,7 @@
       "answers": {
         "Oxygen": "الأكسجين",
         "Hydrogen": "الهيدروجين",
-        "Iron": "حديد",
+        "Iron": "الحديد",
         "Carbon": "الكربون"
       }
     },
@@ -5477,7 +5547,7 @@
       }
     },
     "geography:88": {
-      "question": "على طول ما تقع عاصمة مصر؟",
+      "question": "على ضفاف أي نهر تقع القاهرة، عاصمة مصر؟",
       "answers": {
         "Tigris River": "نهر دجلة",
         "Nile River": "نهر النيل",

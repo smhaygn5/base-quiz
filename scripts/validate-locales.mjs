@@ -9,8 +9,14 @@ const messageKeys = Object.keys(english.messages);
 let failed = false;
 let expectedQuizKeys = null;
 
+function messageVariants(value) {
+  if (typeof value === "string") return [value];
+  if (value && typeof value === "object") return Object.values(value);
+  return [];
+}
+
 function placeholders(value) {
-  return [...value.matchAll(/\{([a-zA-Z0-9_]+)\}/g)]
+  return [...String(value).matchAll(/\{([a-zA-Z0-9_]+)\}/g)]
     .map((match) => match[1])
     .sort()
     .join(",");
@@ -22,7 +28,11 @@ for (const locale of locales) {
   );
   const missingMessages = messageKeys.filter((key) => !catalog.messages[key]);
   const invalidPlaceholders = messageKeys.filter(
-    (key) => placeholders(english.messages[key]) !== placeholders(catalog.messages[key] || ""),
+    (key) => {
+      const expected = placeholders(english.messages[key]);
+      const variants = messageVariants(catalog.messages[key]);
+      return !variants.length || variants.some((variant) => placeholders(variant) !== expected);
+    },
   );
   const invalidQuestions = Object.entries(catalog.quiz || {}).filter(
     ([id, translated]) =>

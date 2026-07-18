@@ -3,14 +3,14 @@
     "meta.title": "Base Quiz",
     "common.back": "Voltar",
     "common.cancel": "Cancelar",
-    "common.next": "Próximo",
+    "common.next": "Avançar",
     "common.skip": "Pular",
     "common.tryAgain": "Tente novamente",
     "common.connect": "Conectar",
     "common.disconnect": "Desconectar",
     "common.connectWallet": "Conectar carteira",
     "common.connectBaseWallet": "Conectar Base Wallet",
-    "common.browserWallets": "Carteiras de navegador",
+    "common.browserWallets": "Carteiras do navegador",
     "common.recommended": "Recomendado",
     "common.selectLanguage": "Selecione o idioma",
     "common.language": "Idioma",
@@ -21,19 +21,22 @@
     "home.kicker": "Quiz onchain · Base",
     "home.titleLine1": "Quiz diário.",
     "home.titleLine2": "Criado na Base.",
-    "home.description": "Escolha uma categoria, responda a cinco perguntas e corra contra o relógio. Aumente sua sequência, salve sua pontuação onchain e suba no ranking global.",
-    "home.streak": "Sequência de {count} dias",
+    "home.description": "Escolha uma categoria, responda a cinco perguntas e corra contra o tempo. Mantenha sua sequência, salve sua pontuação onchain e suba no ranking mundial.",
+    "home.streak": {
+      "one": "Sequência de {count} dia",
+      "other": "Sequência de {count} dias"
+    },
     "home.confirmWallet": "Confirme na carteira…",
-    "home.startRound": "Começar a rodada",
-    "home.leaderboard": "Tabela de classificação",
+    "home.startRound": "Começar rodada",
+    "home.leaderboard": "Ranking",
     "home.streakBadges": "Emblemas de sequência",
     "home.facts": "5 perguntas · 15 segundos cada · pontuações salvas onchain",
     "category.pick": "Escolha uma categoria",
     "category.meta": "{count} perguntas · 5 por rodada",
-    "category.start": "Iniciar teste {category}",
+    "category.start": "Começar quiz de {category}",
     "category.previous": "Categoria anterior",
     "category.next": "Próxima categoria",
-    "category.imageAlt": "Categoria do questionário {category}",
+    "category.imageAlt": "Categoria {category}",
     "category.crypto.name": "Cripto",
     "category.crypto.description": "Teste seu conhecimento sobre Base, Ethereum, carteiras, DeFi e a cultura que molda o mundo onchain.",
     "category.sports.name": "Esportes",
@@ -46,7 +49,7 @@
     "category.science.description": "Desafie-se na física, biologia, química e descobertas que explicam como as coisas funcionam.",
     "category.geography.name": "Geografia",
     "category.geography.description": "Navegue por países, capitais, oceanos e pontos de referência de todos os cantos do nosso planeta.",
-    "quiz.fallbackName": "Questionário",
+    "quiz.fallbackName": "Quiz",
     "quiz.questionProgress": "Pergunta {current} de {total}",
     "quiz.score": "Pontuação",
     "quiz.time": "Tempo",
@@ -62,40 +65,46 @@
     "result.points": "pontos",
     "result.summaryAria": "Resumo da rodada",
     "result.categoryPill": "Categoria {category}",
-    "result.streakPill": "Sequência de {count} dias",
+    "result.streakPill": {
+      "one": "Sequência de {count} dia",
+      "other": "Sequência de {count} dias"
+    },
     "result.roundCompletedTitle": "Rodada concluída",
     "result.roundCompletedDetail": "Cinco perguntas respondidas. Seu resultado final está pronto.",
     "result.streakUpdatedTitle": "Sequência atualizada",
-    "result.streakUpdatedDetail": "Agora você está em uma sequência de aprendizado de {count} dias.",
+    "result.streakUpdatedDetail": {
+      "one": "Sua sequência agora é de {count} dia.",
+      "other": "Sua sequência agora é de {count} dias."
+    },
     "result.save.idle.title": "Salve sua pontuação",
-    "result.save.idle.detail": "Grave este resultado no Base e junte-se à tabela de classificação global.",
+    "result.save.idle.detail": "Registre o resultado na Base e entre no ranking mundial.",
     "result.save.pending.title": "Confirme sua pontuação",
     "result.save.pending.detail": "Aprove a transação na sua carteira para concluir o salvamento.",
     "result.save.done.title": "Pontuação salva onchain",
-    "result.save.done.detail": "Seu resultado é verificado em Base e está pronto para a tabela de classificação.",
-    "result.save.error.title": "Salvar precisa de atenção",
+    "result.save.done.detail": "Seu resultado foi verificado na Base e já conta para o ranking.",
+    "result.save.error.title": "Não foi possível salvar",
     "result.save.error.detail": "Revise a mensagem abaixo e tente a transação novamente.",
     "result.save.disconnected.title": "Conecte-se para salvar",
-    "result.save.disconnected.detail": "Escolha uma carteira para registrar sua pontuação no Base.",
+    "result.save.disconnected.detail": "Escolha uma carteira para salvar sua pontuação na Base.",
     "result.shareTitle": "Compartilhe seu resultado",
     "result.shareDetail": "Desafie seus amigos no Farcaster ou X.",
     "result.replayKicker": "Mantenha o ritmo",
     "result.replayTitle": "Pronto para mais uma rodada?",
     "result.replayDetail": "Jogue {category} novamente ou escolha um desafio diferente.",
-    "result.playAgain": "Jogue novamente",
-    "result.chooseCategory": "Escolha a categoria",
+    "result.playAgain": "Jogar novamente",
+    "result.chooseCategory": "Escolher categoria",
     "result.saveButton": "Salvar pontuação onchain",
     "result.confirming": "Confirmando…",
-    "result.saved": "onchain salvo",
+    "result.saved": "Salvo onchain",
     "result.viewTransaction": "Ver transação",
     "result.shareScore": "Compartilhar pontuação",
     "result.copyText": "Copiar texto",
     "result.copied": "Copiado para a área de transferência!",
     "leaderboard.kicker": "Base Mainnet · Ranking histórico",
-    "leaderboard.title": "Tabela de classificação",
-    "leaderboard.description": "Os melhores jogadores classificados pela pontuação total onchain.",
+    "leaderboard.title": "Ranking",
+    "leaderboard.description": "Os jogadores são ordenados pela pontuação total onchain.",
     "leaderboard.loading": "Lendo pontuações de Base…",
-    "leaderboard.empty": "Ainda não há pontuações. Seja o primeiro jogador no tabuleiro.",
+    "leaderboard.empty": "Ainda não há pontuações. Seja o primeiro a entrar no ranking.",
     "leaderboard.player": "Jogador",
     "leaderboard.totalScore": "Pontuação total",
     "leaderboard.bestScore": "Melhor pontuação",
@@ -103,31 +112,43 @@
     "leaderboard.badges": "Emblemas",
     "leaderboard.you": "Você",
     "leaderboard.noBadges": "Sem emblemas",
-    "leaderboard.badgeTitle": "Selo {name}",
-    "leaderboard.players": "{count} jogadores",
+    "leaderboard.badgeTitle": "Emblema {name}",
+    "leaderboard.players": {
+      "one": "{count} jogador",
+      "other": "{count} jogadores"
+    },
     "leaderboard.verified": "Pontuações e emblemas verificados onchain",
     "badges.kicker": "NFTs de sequência · Base Mainnet",
     "badges.title": "Emblemas",
-    "badges.roadmapTitle": "Roteiro do emblema Streak",
+    "badges.roadmapTitle": "Trilha de emblemas por sequência",
     "badges.roadmapDescription": "Continue jogando, aumente sua sequência e conquiste cada marco onchain.",
-    "badges.streak": "Sequência de {count} dias",
+    "badges.streak": {
+      "one": "Sequência de {count} dia",
+      "other": "Sequência de {count} dias"
+    },
     "badges.walletRequired": "Carteira necessária",
-    "badges.connectTitle": "Conecte-se para visualizar e reivindicar seus emblemas",
-    "badges.connectDetail": "Sua sequência e propriedade do NFT são lidas diretamente do Base.",
-    "badges.days": "{count} dias",
+    "badges.connectTitle": "Conecte sua carteira para ver e resgatar seus emblemas",
+    "badges.connectDetail": "Sua sequência e seus NFTs são consultados diretamente na Base.",
+    "badges.days": {
+      "one": "{count} dia",
+      "other": "{count} dias"
+    },
     "badges.bronze.name": "Bronze",
-    "badges.bronze.description": "Conclua sua primeira corrida de 3 dias",
+    "badges.bronze.description": "Complete sua primeira sequência de 3 dias",
     "badges.silver.name": "Prata",
-    "badges.silver.description": "Mantenha a seqüência viva por uma semana",
+    "badges.silver.description": "Mantenha a sequência por uma semana",
     "badges.gold.name": "Ouro",
     "badges.gold.description": "Crie uma sequência consistente de 30 dias",
     "badges.diamond.name": "Diamante",
     "badges.diamond.description": "Alcance o marco final de 100 dias",
-    "badges.unlock": "Desbloqueie em uma sequência de dias {count}",
+    "badges.unlock": "Desbloqueia com uma sequência de {count} dias",
     "badges.owned": "Obtido",
     "badges.claim": "Resgatar emblema",
-    "badges.claiming": "Reivindicando…",
-    "badges.daysLeft": "{count} dias restantes",
+    "badges.claiming": "Resgatando…",
+    "badges.daysLeft": {
+      "one": "Falta {count} dia",
+      "other": "Faltam {count} dias"
+    },
     "badges.locked": "Bloqueado",
     "badges.loading": "Lendo emblemas de Base…",
     "wallet.connectTitle": "Conectar carteira",
@@ -135,24 +156,27 @@
     "wallet.recommended": "Recomendado",
     "tutorial.welcomeTitle": "Bem-vindo.",
     "tutorial.welcomeDetail": "Um jogo diário de perguntas e respostas no Base. Teste seus conhecimentos, construa sequências e compita em todo o mundo.",
-    "tutorial.questionsTitle": "5 perguntas. Diário.",
+    "tutorial.questionsTitle": "5 perguntas por dia.",
     "tutorial.questionsDetail": "Responda rápido – mais rápido significa mais pontos. Salve sua pontuação onchain para aparecer na tabela de classificação global.",
     "tutorial.badgesTitle": "Ganhe emblemas NFT.",
-    "tutorial.badgesDetail": "Mantenha sua seqüência viva e reivindique onchain NFTs: Bronze (3d), Prata (7d), Ouro (30d), Diamante (100d).",
+    "tutorial.badgesDetail": "Mantenha sua sequência e resgate NFTs onchain: Bronze (3 dias), Prata (7 dias), Ouro (30 dias) e Diamante (100 dias).",
     "tutorial.letsPlay": "Vamos jogar",
     "footer.blockData": "BLOCO DE DADOS · BASE MAINNET",
-    "footer.playersOnchain": "{count} JOGADORES ONCHAIN",
+    "footer.playersOnchain": {
+      "one": "{count} JOGADOR ONCHAIN",
+      "other": "{count} JOGADORES ONCHAIN"
+    },
     "share.text": "🧠 Fiz {score} pontos no Base Quiz! 🔥 Sequência: {streak} dias\n\nAcha que consegue me superar? 👇",
-    "error.startFailed": "A rodada não pôde ser iniciada. Por favor, tente novamente.",
+    "error.startFailed": "Não foi possível iniciar a rodada. Tente novamente.",
     "error.startCancelled": "Transação cancelada. Confirme para iniciar a rodada.",
     "error.signatureCancelled": "A assinatura da carteira foi cancelada. Assine a mensagem para continuar.",
     "error.signatureFailed": "Não foi possível verificar a assinatura da carteira. Tente novamente.",
-    "error.saveFailed": "A pontuação não pôde ser salva. Por favor, tente novamente.",
-    "error.alreadyPlayed": "Já salvo hoje. Volte amanhã.",
-    "error.claimFailed": "O distintivo não pôde ser reivindicado. Por favor, tente novamente.",
+    "error.saveFailed": "Não foi possível salvar a pontuação. Tente novamente.",
+    "error.alreadyPlayed": "Você já salvou uma pontuação hoje. Volte amanhã.",
+    "error.claimFailed": "Não foi possível resgatar o emblema. Tente novamente.",
     "activation.kicker": "Configuração do Base Quiz",
     "activation.title": "Ativar o contrato de rodadas",
-    "activation.copy": "Esta transação Base única implanta o pequeno contrato usado por Start Round. Não altera pontuações, sequências, emblemas ou transferência ETH.",
+    "activation.copy": "Esta transação única na Base implanta o pequeno contrato usado por “Começar rodada”. Ela não altera pontuações, sequências ou emblemas e não transfere ETH.",
     "activation.checking": "Verificando contrato…",
     "activation.active": "O contrato de rodadas está ativo",
     "activation.connected": "Conectado: {address}",
@@ -163,13 +187,13 @@
     "activation.errorCheck": "Não foi possível verificar o contrato da Base. Tente novamente.",
     "activation.errorWallet": "Nenhuma carteira compatível foi encontrada.",
     "activation.errorCancelled": "Transação cancelada. Nenhuma alteração foi feita.",
-    "activation.errorFailed": "Falha na ativação. Por favor, tente novamente."
+    "activation.errorFailed": "Não foi possível concluir a ativação. Tente novamente."
   },
   "quiz": {
     "crypto:0": {
       "question": "Qual empresa desenvolveu o Base?",
       "answers": {
-        "Binance": "Binância",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
         "Kraken": "Kraken",
         "OKX": "OKX"
@@ -187,10 +211,10 @@
     "crypto:2": {
       "question": "Qual pilha de tecnologia o Base usa?",
       "answers": {
-        "OP Stack": "Pilha OP",
+        "OP Stack": "OP Stack",
         "zkSync": "zkSync",
-        "Polygon CDK": "CDK polígono",
-        "Arbitrum Nitro": "Arbitragem Nitro"
+        "Polygon CDK": "Polygon CDK",
+        "Arbitrum Nitro": "Arbitrum Nitro"
       }
     },
     "crypto:3": {
@@ -216,8 +240,8 @@
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
-        "Rainbow": "Arco-íris",
-        "Phantom": "Fantasma"
+        "Rainbow": "Rainbow",
+        "Phantom": "Phantom"
       }
     },
     "crypto:6": {
@@ -241,10 +265,10 @@
     "crypto:8": {
       "question": "A qual superchain Base pertence?",
       "answers": {
-        "Polygon Superchain": "Supercadeia poligonal",
-        "Optimism Superchain": "Supercadeia de Otimismo",
-        "Arbitrum Orbit": "Órbita Arbitral",
-        "zkSync Hyperchain": "hiperchain zkSync"
+        "Polygon Superchain": "Polygon Superchain",
+        "Optimism Superchain": "Optimism Superchain",
+        "Arbitrum Orbit": "Arbitrum Orbit",
+        "zkSync Hyperchain": "zkSync Hyperchain"
       }
     },
     "crypto:9": {
@@ -266,12 +290,12 @@
       }
     },
     "crypto:11": {
-      "question": "Contratos inteligentes em Base estão escritos?",
+      "question": "Em qual linguagem são escritos os contratos inteligentes na Base?",
       "answers": {
         "Python": "Python",
-        "Rust": "Ferrugem",
-        "Solidity": "Solidez",
-        "Go": "Vá"
+        "Rust": "Rust",
+        "Solidity": "Solidity",
+        "Go": "Go"
       }
     },
     "crypto:12": {
@@ -296,7 +320,7 @@
       "question": "Qual consenso Ethereum usa?",
       "answers": {
         "Proof of Work": "Comprovante de Trabalho",
-        "Proof of Stake": "Prova de Participação",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Authority": "Prova de Autoridade",
         "Proof of History": "Prova de Histórico"
       }
@@ -314,16 +338,16 @@
       "question": "Qual NÃO é um L2 de Ethereum?",
       "answers": {
         "Base": "Base",
-        "Arbitrum": "Arbitragem",
+        "Arbitrum": "Arbitrum",
         "Solana": "Solana",
-        "Optimism": "Otimismo"
+        "Optimism": "Optimism"
       }
     },
     "crypto:17": {
       "question": "A que se refere 'gás'?",
       "answers": {
         "A token": "Um token",
-        "Transaction fee unit": "Unidade de taxa de transação",
+        "Transaction fee unit": "Unidade de taxa da transação",
         "A wallet": "Uma carteira",
         "An NFT type": "Um tipo NFT"
       }
@@ -385,7 +409,7 @@
     "crypto:24": {
       "question": "Bitcoin usa qual consenso?",
       "answers": {
-        "Proof of Stake": "Prova de Participação",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Work": "Comprovante de Trabalho",
         "Proof of Authority": "Prova de Autoridade",
         "DPoS": "DPoS"
@@ -394,10 +418,10 @@
     "crypto:25": {
       "question": "O que significa DeFi?",
       "answers": {
-        "Defined Finance": "Finanças Definidas",
-        "Decentralized Finance": "Finanças Descentralizadas",
-        "Defaulted Finance": "Finanças padrão",
-        "Deferred Finance": "Financiamento Diferido"
+        "Defined Finance": "Defined Finance",
+        "Decentralized Finance": "Decentralized Finance",
+        "Defaulted Finance": "Defaulted Finance",
+        "Deferred Finance": "Deferred Finance"
       }
     },
     "crypto:26": {
@@ -421,10 +445,10 @@
     "crypto:28": {
       "question": "O que significa TVL?",
       "answers": {
-        "Token Value Locked": "Valor do token bloqueado",
-        "Total Value Locked": "Valor total bloqueado",
-        "Trade Volume Limit": "Limite de volume comercial",
-        "Tier Volume Level": "Nível de volume da camada"
+        "Token Value Locked": "Token Value Locked",
+        "Total Value Locked": "Total Value Locked",
+        "Trade Volume Limit": "Trade Volume Limit",
+        "Tier Volume Level": "Tier Volume Level"
       }
     },
     "crypto:29": {
@@ -432,14 +456,14 @@
       "answers": {
         "DEX": "DEX",
         "Lending protocol": "Protocolo de empréstimo",
-        "Stablecoin": "Moeda Estável",
-        "NFT marketplace": "Mercado NFT"
+        "Stablecoin": "Stablecoin",
+        "NFT marketplace": "Marketplace de NFT"
       }
     },
     "crypto:30": {
       "question": "O que é agricultura produtiva?",
       "answers": {
-        "Mining crops": "Culturas de mineração",
+        "Mining crops": "Cultivar",
         "Earning rewards from DeFi protocols": "Ganhar recompensas com protocolos DeFi",
         "A staking pool name": "Um nome de pool de piquetagem",
         "An NFT minting term": "Um termo de cunhagem NFT"
@@ -448,8 +472,8 @@
     "crypto:31": {
       "question": "Qual empresa emite USDC?",
       "answers": {
-        "Tether": "Amarração",
-        "Circle": "Círculo",
+        "Tether": "Tether",
+        "Circle": "Circle",
         "Coinbase": "Coinbase",
         "Paxos": "Paxos"
       }
@@ -457,8 +481,8 @@
     "crypto:32": {
       "question": "Qual empresa emite USDT?",
       "answers": {
-        "Circle": "Círculo",
-        "Tether": "Amarração",
+        "Circle": "Circle",
+        "Tether": "Tether",
         "Coinbase": "Coinbase",
         "MakerDAO": "MakerDAO"
       }
@@ -484,10 +508,10 @@
     "crypto:35": {
       "question": "O que significa NFT?",
       "answers": {
-        "New Finance Token": "Novo token financeiro",
-        "Non-Fungible Token": "Token Não Fungível",
-        "Network File Transfer": "Transferência de arquivos de rede",
-        "Node Function Type": "Tipo de Função do Nó"
+        "New Finance Token": "New Finance Token",
+        "Non-Fungible Token": "Non-Fungible Token",
+        "Network File Transfer": "Network File Transfer",
+        "Node Function Type": "Node Function Type"
       }
     },
     "crypto:36": {
@@ -503,7 +527,7 @@
       "question": "O que é principalmente a OpenSea?",
       "answers": {
         "DEX": "DEX",
-        "NFT marketplace": "Mercado de NFT",
+        "NFT marketplace": "Marketplace de NFT",
         "Wallet": "Carteira",
         "L2 chain": "Rede L2"
       }
@@ -518,7 +542,7 @@
       }
     },
     "crypto:39": {
-      "question": "Como são chamadas as palavras secretas de uma carteira?",
+      "question": "Como se chamam as palavras secretas de recuperação de uma carteira?",
       "answers": {
         "Public key": "Chave pública",
         "Seed phrase": "Frase-semente",
@@ -532,11 +556,11 @@
         "A mobile app": "Um aplicativo móvel",
         "A physical device for storing keys": "Um dispositivo físico para armazenar chaves",
         "A browser extension": "Uma extensão do navegador",
-        "An exchange account": "Uma conta de câmbio"
+        "An exchange account": "Uma conta em uma corretora"
       }
     },
     "crypto:41": {
-      "question": "Você NUNCA deve compartilhar seu?",
+      "question": "O que você nunca deve compartilhar?",
       "answers": {
         "Wallet address": "Endereço da carteira",
         "Seed phrase": "Frase-semente",
@@ -547,7 +571,7 @@
     "crypto:42": {
       "question": "Autocustódia significa?",
       "answers": {
-        "Exchange holds your keys": "Exchange guarda suas chaves",
+        "Exchange holds your keys": "A corretora guarda suas chaves",
         "You control your private keys": "Você controla suas chaves privadas",
         "A bank holds your keys": "Um banco guarda suas chaves",
         "A friend holds your keys": "Um amigo está com suas chaves"
@@ -556,16 +580,16 @@
     "crypto:43": {
       "question": "MetaMask é principalmente um?",
       "answers": {
-        "Exchange": "Troca",
+        "Exchange": "Corretora",
         "Browser wallet": "Carteira do navegador",
-        "Hardware wallet": "Carteira de hardware",
+        "Hardware wallet": "Carteira física",
         "L2 chain": "Cadeia L2"
       }
     },
     "crypto:44": {
       "question": "O que é Farcaster?",
       "answers": {
-        "An exchange": "Uma troca",
+        "An exchange": "Uma corretora",
         "A decentralized social network": "Uma rede social descentralizada",
         "A wallet": "Uma carteira",
         "A game": "Um jogo"
@@ -599,30 +623,30 @@
       }
     },
     "crypto:48": {
-      "question": "Mini aplicativos em Base App são desenvolvidos com?",
+      "question": "Com quais ferramentas os Mini Apps da Base App são desenvolvidos?",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit/OnchainKit",
-        "Flutter only": "Apenas vibração",
+        "Flutter only": "Apenas Flutter",
         "Native iOS only": "Somente iOS nativo",
-        "Unity": "Unidade"
+        "Unity": "Unity"
       }
     },
     "crypto:49": {
-      "question": "Um hash de transação blockchain também é chamado?",
+      "question": "Como também é chamado o hash de uma transação na blockchain?",
       "answers": {
         "Nonce": "Nonce",
-        "TX ID": "ID do TX",
+        "TX ID": "TX ID",
         "Block height": "Altura do bloco",
-        "Gas limit": "Limite de gás"
+        "Gas limit": "Limite de gas"
       }
     },
     "crypto:50": {
       "question": "O que significa DAO?",
       "answers": {
-        "Digital Asset Order": "Pedido de ativos digitais",
-        "Decentralized Autonomous Organization": "Organização Autônoma Descentralizada",
-        "Distributed App Output": "Saída de aplicativo distribuído",
-        "Data Access Object": "Objeto de acesso a dados"
+        "Digital Asset Order": "Digital Asset Order",
+        "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
+        "Distributed App Output": "Distributed App Output",
+        "Data Access Object": "Data Access Object"
       }
     },
     "crypto:51": {
@@ -683,8 +707,8 @@
       "question": "As taxas de gás em um blockchain são pagas?",
       "answers": {
         "Developers": "Desenvolvedores",
-        "Network validators/miners": "Validadores/mineradores de rede",
-        "Exchanges": "Trocas",
+        "Network validators/miners": "Validadores ou mineradores da rede",
+        "Exchanges": "Corretoras",
         "Banks": "Bancos"
       }
     },
@@ -700,36 +724,36 @@
     "crypto:59": {
       "question": "O que significa 'DEX'?",
       "answers": {
-        "Digital Exchange": "Troca Digital",
-        "Decentralized Exchange": "Troca Descentralizada",
-        "Data Exchange": "Troca de dados",
-        "Direct Exchange": "Troca Direta"
+        "Digital Exchange": "Digital Exchange",
+        "Decentralized Exchange": "Decentralized Exchange",
+        "Data Exchange": "Data Exchange",
+        "Direct Exchange": "Direct Exchange"
       }
     },
     "crypto:60": {
       "question": "O que significa 'CEX'?",
       "answers": {
-        "Central Exchange": "Central de Troca",
-        "Centralized Exchange": "Troca Centralizada",
-        "Crypto Exchange": "Troca de criptografia",
-        "Coin Exchange": "Troca de moedas"
+        "Central Exchange": "Central Exchange",
+        "Centralized Exchange": "Centralized Exchange",
+        "Crypto Exchange": "Crypto Exchange",
+        "Coin Exchange": "Coin Exchange"
       }
     },
     "crypto:61": {
-      "question": "O que é 'staking'?",
+      "question": "O que é staking?",
       "answers": {
         "Selling tokens": "Vendendo tokens",
         "Locking tokens to support a network for rewards": "Bloqueio de tokens para apoiar uma rede de recompensas",
-        "Mining coins": "Mineração de moedas",
+        "Mining coins": "Minerar moedas",
         "Burning tokens": "Queimando fichas"
       }
     },
     "crypto:62": {
-      "question": "O que é uma 'chave privada'?",
+      "question": "O que é uma chave privada?",
       "answers": {
         "Your public address": "Seu endereço público",
         "A secret that controls your funds": "Um segredo que controla seus fundos",
-        "An exchange password": "Uma senha de troca",
+        "An exchange password": "A senha de uma corretora",
         "A transaction id": "Um ID de transação"
       }
     },
@@ -739,7 +763,7 @@
         "Real transactions": "Transações reais",
         "Testing without real value": "Teste sem valor real",
         "Storing coins": "Armazenando moedas",
-        "Mining Bitcoin": "Mineração de Bitcoins"
+        "Mining Bitcoin": "Minerar Bitcoin"
       }
     },
     "crypto:64": {
@@ -747,7 +771,7 @@
       "answers": {
         "Creating tokens": "Criando tokens",
         "Permanently removing tokens from supply": "Removendo tokens permanentemente do fornecimento",
-        "Staking tokens": "Tokens de piquetagem",
+        "Staking tokens": "Fazer staking de tokens",
         "Sending tokens": "Enviando tokens"
       }
     },
@@ -802,7 +826,7 @@
         "Layer-2 of Ethereum": "Camada 2 de Ethereum",
         "Standalone Layer-1 blockchain": "Blockchain autônomo de camada 1",
         "Wallet": "Carteira",
-        "Stablecoin": "Moeda Estável"
+        "Stablecoin": "Stablecoin"
       }
     },
     "crypto:71": {
@@ -810,17 +834,17 @@
       "answers": {
         "Low energy use": "Baixo consumo de energia",
         "High energy use via mining": "Alto uso de energia via mineração",
-        "Staking coins": "Estacar moedas",
+        "Staking coins": "Fazer staking de moedas",
         "No validators": "Sem validadores"
       }
     },
     "crypto:72": {
       "question": "O que significa 'DYOR'?",
       "answers": {
-        "Do Your Own Research": "Faça sua própria pesquisa",
-        "Deposit Your Own Reserves": "Deposite suas próprias reservas",
-        "Don't Yield On Returns": "Não ceda nas devoluções",
-        "Data Yield Over Risk": "Rendimento de dados acima do risco"
+        "Do Your Own Research": "Do Your Own Research",
+        "Deposit Your Own Reserves": "Deposit Your Own Reserves",
+        "Don't Yield On Returns": "Don't Yield On Returns",
+        "Data Yield Over Risk": "Data Yield Over Risk"
       }
     },
     "crypto:73": {
@@ -828,7 +852,7 @@
       "answers": {
         "Always-online wallet": "Carteira sempre online",
         "Offline wallet for storage": "Carteira offline para armazenamento",
-        "Exchange wallet": "Carteira de troca",
+        "Exchange wallet": "Carteira de corretora",
         "A stablecoin": "Uma moeda estável"
       }
     },
@@ -837,15 +861,15 @@
       "answers": {
         "Offline wallet": "Carteira off-line",
         "Internet-connected wallet": "Carteira conectada à Internet",
-        "Hardware wallet": "Carteira de hardware",
+        "Hardware wallet": "Carteira física",
         "Paper wallet": "Carteira de papel"
       }
     },
     "crypto:75": {
       "question": "'Gwei' é usado para medir?",
       "answers": {
-        "Token supply": "Fornecimento de token",
-        "Gas prices": "Preços do gás",
+        "Token supply": "Oferta de tokens",
+        "Gas prices": "Preços do gas",
         "Block size": "Tamanho do bloco",
         "Wallet balance": "Saldo da carteira"
       }
@@ -853,7 +877,7 @@
     "crypto:76": {
       "question": "'Perda impermanente' está associada a?",
       "answers": {
-        "Staking": "Estaqueamento",
+        "Staking": "Staking",
         "Providing liquidity": "Fornecimento de liquidez",
         "Mining": "Mineração",
         "Holding": "Retenção"
@@ -874,16 +898,16 @@
         "A wallet": "Uma carteira",
         "A node that verifies transactions": "Um nó que verifica transações",
         "A token": "Um token",
-        "An exchange": "Uma troca"
+        "An exchange": "Uma corretora"
       }
     },
     "crypto:79": {
       "question": "'ATH' significa?",
       "answers": {
-        "All-Time High": "Máximo histórico",
-        "Average Trade Height": "Altura Média de Negociação",
-        "Actual Token Holdings": "Participações reais de token",
-        "Auto Trade Handler": "Manipulador de negociação automática"
+        "All-Time High": "All-Time High",
+        "Average Trade Height": "Average Trade Height",
+        "Actual Token Holdings": "Actual Token Holdings",
+        "Auto Trade Handler": "Auto Trade Handler"
       }
     },
     "crypto:80": {
@@ -898,7 +922,7 @@
     "crypto:81": {
       "question": "Em Prova de Trabalho, a confirmação de transações é chamada?",
       "answers": {
-        "Staking": "Estaqueamento",
+        "Staking": "Staking",
         "Mining": "Mineração",
         "Bridging": "Ponte",
         "Burning": "Queimando"
@@ -916,7 +940,7 @@
     "crypto:83": {
       "question": "OnchainKit é um kit de ferramentas para desenvolvedores?",
       "answers": {
-        "Binance": "Binância",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
         "MetaMask": "MetaMask",
         "Uniswap": "Uniswap"
@@ -925,7 +949,7 @@
     "crypto:84": {
       "question": "Um 'limite de gás' definido?",
       "answers": {
-        "Token supply": "Fornecimento de token",
+        "Token supply": "Oferta de tokens",
         "Max gas a transaction can use": "Máximo de gás que uma transação pode usar",
         "Wallet size": "Tamanho da carteira",
         "Block reward": "Bloquear recompensa"
@@ -937,16 +961,16 @@
         "A base Layer-1": "Uma camada base 1",
         "An Ethereum scaling solution": "Uma solução de escalonamento Ethereum",
         "A wallet": "Uma carteira",
-        "An exchange": "Uma troca"
+        "An exchange": "Uma corretora"
       }
     },
     "crypto:86": {
       "question": "O que significa 'FOMO' na negociação?",
       "answers": {
-        "Fear Of Missing Out": "Medo de perder",
-        "Full Order Market Offer": "Oferta de mercado de pedido completo",
-        "Fixed Order Money Out": "Saída de dinheiro de ordem fixa",
-        "Fast Onchain Market Order": "Ordem rápida de mercado on-chain"
+        "Fear Of Missing Out": "Fear Of Missing Out",
+        "Full Order Market Offer": "Full Order Market Offer",
+        "Fixed Order Money Out": "Fixed Order Money Out",
+        "Fast Onchain Market Order": "Fast Onchain Market Order"
       }
     },
     "crypto:87": {
@@ -959,11 +983,11 @@
       }
     },
     "crypto:88": {
-      "question": "As soluções 'Layer-2' visam principalmente?",
+      "question": "Qual é o principal objetivo das soluções de camada 2?",
       "answers": {
         "Replace Bitcoin": "Substituir Bitcoin",
-        "Scale a Layer-1 with cheaper, faster txs": "Dimensione uma camada 1 com txs mais baratos e mais rápidos",
-        "Mine faster": "Minere mais rápido",
+        "Scale a Layer-1 with cheaper, faster txs": "Escalar uma camada 1 com transações mais rápidas e baratas",
+        "Mine faster": "Minerar mais rápido",
         "Issue stablecoins": "Emitir stablecoins"
       }
     },
@@ -979,10 +1003,10 @@
     "crypto:90": {
       "question": "O que significa 'KYC'?",
       "answers": {
-        "Keep Your Coins": "Guarde suas moedas",
-        "Know Your Customer": "Conheça seu cliente",
-        "Key Yield Contract": "Contrato de rendimento principal",
-        "Known Yield Curve": "Curva de rendimento conhecida"
+        "Keep Your Coins": "Keep Your Coins",
+        "Know Your Customer": "Know Your Customer",
+        "Key Yield Contract": "Key Yield Contract",
+        "Known Yield Curve": "Known Yield Curve"
       }
     },
     "crypto:91": {
@@ -997,10 +1021,10 @@
     "crypto:92": {
       "question": "'PoS' significa?",
       "answers": {
-        "Proof of Speed": "Prova de Velocidade",
-        "Proof of Stake": "Prova de Participação",
-        "Point of Sale": "Ponto de Venda",
-        "Proof of Storage": "Comprovante de armazenamento"
+        "Proof of Speed": "Proof of Speed",
+        "Proof of Stake": "Proof of Stake",
+        "Point of Sale": "Point of Sale",
+        "Proof of Storage": "Proof of Storage"
       }
     },
     "crypto:93": {
@@ -1051,10 +1075,10 @@
     "crypto:98": {
       "question": "O que significa 'ROI'?",
       "answers": {
-        "Return On Investment": "Retorno do investimento",
-        "Rate Of Interest": "Taxa de juros",
-        "Risk Of Inflation": "Risco de inflação",
-        "Ratio Of Income": "Proporção de renda"
+        "Return On Investment": "Return On Investment",
+        "Rate Of Interest": "Rate Of Interest",
+        "Risk Of Inflation": "Risk Of Inflation",
+        "Ratio Of Income": "Ratio Of Income"
       }
     },
     "crypto:99": {
@@ -1076,7 +1100,7 @@
       }
     },
     "sports:1": {
-      "question": "Em qual esporte você faria uma enterrada?",
+      "question": "Em qual esporte se faz uma enterrada?",
       "answers": {
         "Tennis": "Tênis",
         "Basketball": "Basquete",
@@ -1600,7 +1624,7 @@
     "sports:59": {
       "question": "O beisebol é jogado em um campo com formato de?",
       "answers": {
-        "Circle": "Círculo",
+        "Circle": "Circle",
         "Diamond": "Diamante",
         "Square": "Quadrado",
         "Triangle": "Triângulo"
@@ -1868,7 +1892,7 @@
       }
     },
     "sports:89": {
-      "question": "Quantos jogadores iniciam em um campo de futebol no total (ambas as equipes)?",
+      "question": "Quantos jogadores das duas equipes estão em campo no início de uma partida de futebol?",
       "answers": {
         "18": "18",
         "20": "20",
@@ -2093,7 +2117,7 @@
       }
     },
     "art:12": {
-      "question": "A estátua de mármore 'David' foi esculpida por?",
+      "question": "Quem esculpiu a estátua de mármore Davi?",
       "answers": {
         "Bernini": "Bernini",
         "Michelangelo": "Michelangelo",
@@ -2277,7 +2301,7 @@
       "answers": {
         "Marble": "Mármore",
         "Plastic": "Plástico",
-        "Paper": "Artigo",
+        "Paper": "Papel",
         "Glass": "Vidro"
       }
     },
@@ -2453,12 +2477,12 @@
       }
     },
     "art:52": {
-      "question": "Um 'mural' é uma pintura feita em um?",
+      "question": "Em qual superfície é pintado um mural?",
       "answers": {
         "Small canvas": "Tela pequena",
         "Wall": "Parede",
-        "Plate": "Placa",
-        "Paper": "Artigo"
+        "Plate": "Prato",
+        "Paper": "Papel"
       }
     },
     "art:53": {
@@ -2714,7 +2738,7 @@
       }
     },
     "art:81": {
-      "question": "A Grande Onda de Kanagawa é um japonês famoso?",
+      "question": "Que tipo de obra japonesa é A Grande Onda de Kanagawa?",
       "answers": {
         "Sculpture": "Escultura",
         "Woodblock print": "Impressão em xilogravura",
@@ -2777,7 +2801,7 @@
       }
     },
     "art:88": {
-      "question": "A 'Vênus de Milo' é uma famosa antiga?",
+      "question": "Que tipo de obra antiga é a Vênus de Milo?",
       "answers": {
         "Painting": "Pintura",
         "Statue": "Estátua",
@@ -2844,7 +2868,7 @@
       "answers": {
         "Canvas": "Tela",
         "Wet plaster": "Gesso úmido",
-        "Paper": "Artigo",
+        "Paper": "Papel",
         "Wood panel": "Painel de madeira"
       }
     },
@@ -2993,7 +3017,7 @@
       }
     },
     "history:12": {
-      "question": "A Guerra Fria foi principalmente entre os EUA e?",
+      "question": "A Guerra Fria ocorreu principalmente entre os Estados Unidos e qual potência?",
       "answers": {
         "China": "China",
         "USSR": "URSS",
@@ -3353,7 +3377,7 @@
       }
     },
     "history:52": {
-      "question": "Cristóvão Colombo navegou sob a bandeira de?",
+      "question": "Sob a bandeira de qual país Cristóvão Colombo navegou?",
       "answers": {
         "Portugal": "Portugal",
         "Spain": "Espanha",
@@ -3677,7 +3701,7 @@
       }
     },
     "history:88": {
-      "question": "O período medieval também é conhecido como?",
+      "question": "Por qual outro nome o período medieval é conhecido?",
       "answers": {
         "Middle Ages": "Idade Média",
         "Stone Age": "Idade da Pedra",
@@ -3832,7 +3856,7 @@
     "science:5": {
       "question": "Qual é o símbolo químico do ouro?",
       "answers": {
-        "Go": "Vá",
+        "Go": "Go",
         "Gd": "D'us",
         "Au": "Au",
         "Ag": "Ag"
@@ -4253,7 +4277,7 @@
       }
     },
     "science:52": {
-      "question": "Quais são os três estados comuns da matéria?",
+      "question": "Quais são os três estados físicos básicos da matéria?",
       "answers": {
         "Hot, cold, warm": "Quente, frio, morno",
         "Solid, liquid, gas": "Sólido, líquido, gasoso",
@@ -5477,7 +5501,7 @@
       }
     },
     "geography:88": {
-      "question": "Onde fica a capital do Egito?",
+      "question": "Às margens de qual rio fica o Cairo, capital do Egito?",
       "answers": {
         "Tigris River": "Rio Tigre",
         "Nile River": "Rio Nilo",

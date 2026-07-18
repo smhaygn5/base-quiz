@@ -6,145 +6,145 @@
     "common.next": "次へ",
     "common.skip": "スキップ",
     "common.tryAgain": "もう一度試してください",
-    "common.connect": "接続する",
-    "common.disconnect": "切断する",
-    "common.connectWallet": "ウォレットを接続する",
+    "common.connect": "接続",
+    "common.disconnect": "接続解除",
+    "common.connectWallet": "ウォレット接続",
     "common.connectBaseWallet": "Base Walletを接続",
     "common.browserWallets": "ブラウザウォレット",
     "common.recommended": "おすすめ",
-    "common.selectLanguage": "言語を選択してください",
+    "common.selectLanguage": "言語を選択",
     "common.language": "言語",
     "common.switchLight": "ライトテーマに切り替える",
     "common.switchDark": "ダークテーマに切り替える",
     "common.mute": "ミュート",
     "common.unmute": "ミュートを解除する",
     "home.kicker": "オンチェーンクイズ · Base",
-    "home.titleLine1": "毎日のクイズ。",
-    "home.titleLine2": "Base上に構築。",
-    "home.description": "カテゴリーを選び、5問のクイズに制限時間内で挑戦しましょう。連続記録を伸ばし、スコアをオンチェーンに保存して、世界ランキングを上りましょう。",
+    "home.titleLine1": "毎日楽しめるクイズ。",
+    "home.titleLine2": "Baseで遊ぼう。",
+    "home.description": "カテゴリーを選び、制限時間内に5問へ挑戦。連続記録を伸ばし、スコアをオンチェーンに保存して世界ランキングを目指しましょう。",
     "home.streak": "{count}日連続",
-    "home.confirmWallet": "ウォレットで確認してください…",
-    "home.startRound": "ラウンドを開始する",
+    "home.confirmWallet": "ウォレットで確認…",
+    "home.startRound": "ラウンド開始",
     "home.leaderboard": "リーダーボード",
     "home.streakBadges": "ストリークバッジ",
     "home.facts": "5問 · 各15秒 · スコアはオンチェーンに保存",
-    "category.pick": "カテゴリを選択してください",
+    "category.pick": "カテゴリーを選択",
     "category.meta": "{count}問 · 1ラウンド5問",
-    "category.start": "{category} クイズを開始する",
+    "category.start": "{category}クイズを開始",
     "category.previous": "前のカテゴリ",
     "category.next": "次のカテゴリー",
-    "category.imageAlt": "{category} クイズ カテゴリ",
-    "category.crypto.name": "暗号",
-    "category.crypto.description": "Base、Ethereum、ウォレット、DeFi、および onchain の世界を形成する文化に関する知識をテストします。",
+    "category.imageAlt": "{category}カテゴリー",
+    "category.crypto.name": "暗号資産",
+    "category.crypto.description": "Base、Ethereum、ウォレット、DeFi、オンチェーン文化の知識を試しましょう。",
     "category.sports.name": "スポーツ",
-    "category.sports.description": "サッカー、バスケットボールからテニス、オリンピックまで、あなたのスポーツ記憶力がどれほど強いかを見てみましょう。",
+    "category.sports.description": "サッカーやバスケットボールからテニス、オリンピックまで、スポーツ知識を試しましょう。",
     "category.art.name": "アート",
-    "category.art.description": "絵画、アーティスト、運動、そして世代を超えて視覚文化を変えたアイデアを探ってみましょう。",
+    "category.art.description": "世代を超えて視覚文化を変えた作品、芸術家、運動、思想を探ります。",
     "category.history.name": "歴史",
-    "category.history.description": "文明、転換点、そしてその決断が世界を形作った人々を旅しましょう。",
+    "category.history.description": "文明や歴史の転換点、世界を形作った人々について学びます。",
     "category.science.name": "科学",
-    "category.science.description": "物理学、生物学、化学、そして物事の仕組みを説明する発見に挑戦してください。",
+    "category.science.description": "物理、生物、化学、世界の仕組みを解き明かした発見に挑戦します。",
     "category.geography.name": "地理",
-    "category.geography.description": "地球上のあらゆる場所から国、首都、海、ランドマークをナビゲートします。",
+    "category.geography.description": "世界の国々、首都、海、名所についての知識を試します。",
     "quiz.fallbackName": "クイズ",
-    "quiz.questionProgress": "問題 {current}/{total}",
+    "quiz.questionProgress": "{total}問中 {current}問目",
     "quiz.score": "スコア",
     "quiz.time": "時間",
     "quiz.answeredAria": "{total} 件中 {answered} 件に回答",
-    "quiz.chooseCorrect": "正しい答えを選択してください",
+    "quiz.chooseCorrect": "正解を選択",
     "quiz.correct": "正解",
     "quiz.wrong": "不正解",
     "quiz.points": "+{points}ポイント",
-    "quiz.correctOption": "正しいオプション: {option}",
-    "quiz.autoNote": "一度回答すると、次の質問が自動的に読み込まれます",
+    "quiz.correctOption": "正解：{option}",
+    "quiz.autoNote": "回答は1回のみ · 次の問題は自動で表示",
     "result.roundComplete": "ラウンド完了",
-    "result.finalScore": "あなたの最終スコア",
+    "result.finalScore": "最終スコア",
     "result.points": "ポイント",
     "result.summaryAria": "ラウンド概要",
     "result.categoryPill": "{category} カテゴリ",
     "result.streakPill": "{count}日連続",
     "result.roundCompletedTitle": "ラウンド完了",
-    "result.roundCompletedDetail": "5 つの質問に回答しました。最終結果の準備が完了しました。",
+    "result.roundCompletedDetail": "5問すべてに回答しました。結果を確認しましょう。",
     "result.streakUpdatedTitle": "連続記録が更新されました",
     "result.streakUpdatedDetail": "現在、{count} 日連続学習中です。",
-    "result.save.idle.title": "スコアを保存する",
-    "result.save.idle.detail": "この結果を Base に記録し、グローバル リーダーボードに参加してください。",
-    "result.save.pending.title": "スコアを確認する",
+    "result.save.idle.title": "スコアを保存",
+    "result.save.idle.detail": "結果をBaseに記録して、世界ランキングに参加しましょう。",
+    "result.save.pending.title": "スコアを確認",
     "result.save.pending.detail": "ウォレット内のトランザクションを承認して保存を完了します。",
-    "result.save.done.title": "スコアが保存されました onchain",
-    "result.save.done.detail": "結果は Base で検証され、リーダーボードに掲載される準備が整いました。",
-    "result.save.error.title": "保存には注意が必要です",
+    "result.save.done.title": "スコアをオンチェーンに保存しました",
+    "result.save.done.detail": "結果がBaseで確認され、ランキングに反映されました。",
+    "result.save.error.title": "保存できませんでした",
     "result.save.error.detail": "以下のメッセージを確認して、トランザクションを再試行してください。",
     "result.save.disconnected.title": "接続して保存",
-    "result.save.disconnected.detail": "Base でスコアを記録するウォレットを選択してください。",
-    "result.shareTitle": "結果を共有する",
-    "result.shareDetail": "Farcaster または X で友達に挑戦してください。",
-    "result.replayKicker": "勢いを維持し続ける",
-    "result.replayTitle": "次のラウンドの準備はできていますか?",
-    "result.replayDetail": "{category} をもう一度プレイするか、別のチャレンジを選択してください。",
-    "result.playAgain": "もう一度プレイしてください",
-    "result.chooseCategory": "カテゴリを選択してください",
+    "result.save.disconnected.detail": "Baseにスコアを保存するウォレットを選択してください。",
+    "result.shareTitle": "結果をシェア",
+    "result.shareDetail": "FarcasterやXで友達に挑戦しましょう。",
+    "result.replayKicker": "連続記録を伸ばそう",
+    "result.replayTitle": "もう1ラウンド挑戦しますか？",
+    "result.replayDetail": "{category}に再挑戦するか、別のカテゴリーを選びましょう。",
+    "result.playAgain": "もう一度",
+    "result.chooseCategory": "カテゴリー選択",
     "result.saveButton": "スコアを保存",
     "result.confirming": "確認中…",
     "result.saved": "保存済み",
-    "result.viewTransaction": "トランザクションの表示",
-    "result.shareScore": "スコアを共有する",
+    "result.viewTransaction": "トランザクションを確認",
+    "result.shareScore": "スコアをシェア",
     "result.copyText": "テキストをコピーする",
     "result.copied": "クリップボードにコピーされました!",
     "leaderboard.kicker": "Base Mainnet · 歴代ランキング",
-    "leaderboard.title": "リーダーボード",
-    "leaderboard.description": "トッププレイヤーはonchainの合計スコアによってランク付けされます。",
-    "leaderboard.loading": "Base からスコアを読み取り中…",
-    "leaderboard.empty": "まだスコアはありません。ボード上の最初のプレイヤーになりましょう。",
-    "leaderboard.player": "プレーヤー",
+    "leaderboard.title": "ランキング",
+    "leaderboard.description": "オンチェーンの累計スコア順にプレイヤーを表示します。",
+    "leaderboard.loading": "Baseからスコアを読み込み中…",
+    "leaderboard.empty": "まだスコアがありません。最初のランカーを目指しましょう。",
+    "leaderboard.player": "プレイヤー",
     "leaderboard.totalScore": "合計スコア",
     "leaderboard.bestScore": "ベストスコア",
-    "leaderboard.streak": "ストリーク",
+    "leaderboard.streak": "連続記録",
     "leaderboard.badges": "バッジ",
     "leaderboard.you": "あなた",
     "leaderboard.noBadges": "バッジはありません",
     "leaderboard.badgeTitle": "{name} バッジ",
     "leaderboard.players": "{count}人のプレイヤー",
-    "leaderboard.verified": "スコアとバッジが確認されました onchain",
+    "leaderboard.verified": "スコアとバッジはオンチェーンで確認済み",
     "badges.kicker": "連続記録NFT · Base Mainnet",
     "badges.title": "バッジ",
-    "badges.roadmapTitle": "ストリークバッジのロードマップ",
-    "badges.roadmapDescription": "プレイを続けて連続記録を伸ばし、onchain の各マイルストーンを獲得しましょう。",
+    "badges.roadmapTitle": "連続記録バッジ",
+    "badges.roadmapDescription": "毎日プレイして連続記録を伸ばし、オンチェーン報酬を獲得しましょう。",
     "badges.streak": "{count}日連続",
     "badges.walletRequired": "ウォレットが必要です",
-    "badges.connectTitle": "接続してバッジを表示し、受け取ります",
-    "badges.connectDetail": "ストリークと NFT の所有権は、Base から直接読み取られます。",
+    "badges.connectTitle": "ウォレットを接続してバッジを確認・獲得",
+    "badges.connectDetail": "連続記録とNFTの保有状況はBaseから直接読み込まれます。",
     "badges.days": "{count} 日",
     "badges.bronze.name": "ブロンズ",
-    "badges.bronze.description": "最初の 3 日間のランニングを完了する",
+    "badges.bronze.description": "初めて3日連続を達成",
     "badges.silver.name": "シルバー",
-    "badges.silver.description": "連続記録を 1 週間維持する",
+    "badges.silver.description": "7日連続を達成",
     "badges.gold.name": "ゴールド",
-    "badges.gold.description": "一貫した 30 日間の連続記録を達成する",
+    "badges.gold.description": "30日連続を達成",
     "badges.diamond.name": "ダイヤモンド",
-    "badges.diamond.description": "究極の 100 日マイルストーンに到達する",
-    "badges.unlock": "{count} 日連続でロック解除",
-    "badges.owned": "所有",
-    "badges.claim": "バッジを請求する",
-    "badges.claiming": "主張中…",
-    "badges.daysLeft": "{count}残り日",
-    "badges.locked": "ロックされています",
+    "badges.diamond.description": "100日連続を達成",
+    "badges.unlock": "{count}日連続で解放",
+    "badges.owned": "獲得済み",
+    "badges.claim": "バッジを獲得",
+    "badges.claiming": "獲得中…",
+    "badges.daysLeft": "あと{count}日",
+    "badges.locked": "未解放",
     "badges.loading": "Base からバッジを読み取り中…",
     "wallet.connectTitle": "ウォレットを接続する",
     "wallet.browserWallets": "ブラウザウォレット",
     "wallet.recommended": "おすすめ",
     "tutorial.welcomeTitle": "ようこそ。",
-    "tutorial.welcomeDetail": "Base の毎日のトリビア ゲーム。自分の知識をテストし、連続記録を築き、世界中で競争しましょう。",
-    "tutorial.questionsTitle": "5つの質問。毎日。",
-    "tutorial.questionsDetail": "早く答えてください — 早く答えれば、より多くのポイントが得られます。スコア onchain を保存すると、グローバル リーダーボードに表示されます。",
-    "tutorial.badgesTitle": "NFT バッジを獲得します。",
-    "tutorial.badgesDetail": "連続記録を維持して onchain NFTs を獲得しましょう: ブロンズ (3 日間)、シルバー (7 日間)、ゴールド (30 日間)、ダイヤモンド (100 日間)。",
-    "tutorial.letsPlay": "遊ぼう",
+    "tutorial.welcomeDetail": "Baseで毎日楽しめるクイズ。知識を試し、連続記録を伸ばして世界中のプレイヤーと競いましょう。",
+    "tutorial.questionsTitle": "毎日5問。",
+    "tutorial.questionsDetail": "早く答えるほど高得点。スコアをオンチェーンに保存すると世界ランキングに参加できます。",
+    "tutorial.badgesTitle": "NFTバッジを獲得。",
+    "tutorial.badgesDetail": "連続記録を伸ばしてオンチェーンNFTを獲得：ブロンズ（3日）、シルバー（7日）、ゴールド（30日）、ダイヤモンド（100日）。",
+    "tutorial.letsPlay": "はじめる",
     "footer.blockData": "ブロックデータ · BASE MAINNET",
     "footer.playersOnchain": "オンチェーンプレイヤー {count}人",
-    "share.text": "🧠 Base Quiz で {score} ポイントを獲得しました! 🔥 連続記録: {streak} 日\n\n私に勝てると思いますか？ 👇",
+    "share.text": "🧠 Base Quizで{score}ポイント獲得！🔥 連続記録：{streak}日\n\n私のスコアを超えられますか？👇",
     "error.startFailed": "ラウンドを開始できませんでした。もう一度試してください。",
-    "error.startCancelled": "取引がキャンセルされました。確認してラウンドを開始します。",
+    "error.startCancelled": "トランザクションがキャンセルされました。確認するとラウンドを開始できます。",
     "error.signatureCancelled": "ウォレットの署名がキャンセルされました。続行するにはメッセージに署名してください。",
     "error.signatureFailed": "ウォレットの署名を確認できませんでした。もう一度お試しください。",
     "error.saveFailed": "スコアを保存できませんでした。もう一度試してください。",
@@ -152,26 +152,26 @@
     "error.claimFailed": "バッジは受け取れませんでした。もう一度試してください。",
     "activation.kicker": "Base Quizのセットアップ",
     "activation.title": "ラウンドコントラクトを有効化",
-    "activation.copy": "この 1 回限りの Base トランザクションは、Start Round で使用される小規模なコントラクトをデプロイします。スコア、ストリーク、バッジは変更されず、ETH も転送されません。",
-    "activation.checking": "契約書を確認中…",
+    "activation.copy": "この1回限りのBaseトランザクションで、「ラウンド開始」に必要な小規模コントラクトをデプロイします。スコア、連続記録、バッジは変更されず、ETHも送金されません。",
+    "activation.checking": "コントラクトを確認中…",
     "activation.active": "ラウンドコントラクトは有効です",
     "activation.connected": "接続済み: {address}",
     "activation.confirming": "Base で確認中…",
     "activation.activate": "ラウンドコントラクトを有効化",
-    "activation.pendingTransaction": "保留中のトランザクションを表示する",
+    "activation.pendingTransaction": "保留中のトランザクションを確認",
     "activation.back": "Base Quizに戻る",
     "activation.errorCheck": "Baseコントラクトを確認できませんでした。もう一度お試しください。",
     "activation.errorWallet": "互換性のあるウォレットが見つかりませんでした。",
-    "activation.errorCancelled": "取引がキャンセルされました。変更は行われませんでした。",
+    "activation.errorCancelled": "トランザクションがキャンセルされました。変更はありません。",
     "activation.errorFailed": "アクティベーションに失敗しました。もう一度試してください。"
   },
   "quiz": {
     "crypto:0": {
       "question": "Base を開発した会社はどこですか?",
       "answers": {
-        "Binance": "バイナンス",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
-        "Kraken": "クラーケン",
+        "Kraken": "Kraken",
         "OKX": "OKX"
       }
     },
@@ -181,16 +181,16 @@
         "Bitcoin": "ビットコイン",
         "Solana": "ソラナ",
         "Ethereum": "Ethereum",
-        "Avalanche": "雪崩"
+        "Avalanche": "Avalanche"
       }
     },
     "crypto:2": {
       "question": "Base はどの技術スタックを使用しますか?",
       "answers": {
-        "OP Stack": "OP スタック",
+        "OP Stack": "OP Stack",
         "zkSync": "zkSync",
-        "Polygon CDK": "ポリゴン CDK",
-        "Arbitrum Nitro": "アービトラム ニトロ"
+        "Polygon CDK": "Polygon CDK",
+        "Arbitrum Nitro": "Arbitrum Nitro"
       }
     },
     "crypto:3": {
@@ -206,7 +206,7 @@
       "question": "Base のガス料金にはどのトークンが使用されますか?",
       "answers": {
         "USDC": "USDC",
-        "BASE": "ベース",
+        "BASE": "BASE",
         "ETH": "ETH",
         "OP": "OP"
       }
@@ -216,8 +216,8 @@
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
-        "Rainbow": "レインボー",
-        "Phantom": "ファントム"
+        "Rainbow": "Rainbow",
+        "Phantom": "Phantom"
       }
     },
     "crypto:6": {
@@ -241,10 +241,10 @@
     "crypto:8": {
       "question": "Base はどのスーパーチェーンに属していますか?",
       "answers": {
-        "Polygon Superchain": "ポリゴン スーパーチェーン",
-        "Optimism Superchain": "オプティミズム スーパーチェーン",
-        "Arbitrum Orbit": "アービトラム軌道",
-        "zkSync Hyperchain": "zkSync ハイパーチェーン"
+        "Polygon Superchain": "Polygon Superchain",
+        "Optimism Superchain": "Optimism Superchain",
+        "Arbitrum Orbit": "Arbitrum Orbit",
+        "zkSync Hyperchain": "zkSync Hyperchain"
       }
     },
     "crypto:9": {
@@ -266,12 +266,12 @@
       }
     },
     "crypto:11": {
-      "question": "Base のスマート コントラクトは書き込まれていますか?",
+      "question": "Baseのスマートコントラクトは主にどの言語で書かれていますか？",
       "answers": {
         "Python": "Python",
-        "Rust": "錆び",
-        "Solidity": "堅牢性",
-        "Go": "行く"
+        "Rust": "Rust",
+        "Solidity": "Solidity",
+        "Go": "Go"
       }
     },
     "crypto:12": {
@@ -296,7 +296,7 @@
       "question": "Ethereum はどのようなコンセンサスを使用しますか?",
       "answers": {
         "Proof of Work": "作業証明",
-        "Proof of Stake": "ステークの証拠",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Authority": "権限の証明",
         "Proof of History": "歴史の証明"
       }
@@ -306,24 +306,24 @@
       "answers": {
         "A wallet type": "ウォレットのタイプ",
         "Ethereum's execution engine": "Ethereum の実行エンジン",
-        "A token standard": "トークン標準",
-        "A bridge": "橋"
+        "A token standard": "トークン規格",
+        "A bridge": "ブリッジ"
       }
     },
     "crypto:16": {
       "question": "Ethereum のうち L2 ではないものはどれですか?",
       "answers": {
         "Base": "Base",
-        "Arbitrum": "裁定",
+        "Arbitrum": "Arbitrum",
         "Solana": "ソラナ",
-        "Optimism": "楽観主義"
+        "Optimism": "Optimism"
       }
     },
     "crypto:17": {
       "question": "「ガス」とは何を指しますか?",
       "answers": {
         "A token": "トークン",
-        "Transaction fee unit": "取引手数料単位",
+        "Transaction fee unit": "トランザクション手数料の単位",
         "A wallet": "ウォレット",
         "An NFT type": "NFT 型"
       }
@@ -385,7 +385,7 @@
     "crypto:24": {
       "question": "ビットコインはどのコンセンサスを使用しますか?",
       "answers": {
-        "Proof of Stake": "ステークの証拠",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Work": "作業証明",
         "Proof of Authority": "権限の証明",
         "DPoS": "DPoS"
@@ -394,10 +394,10 @@
     "crypto:25": {
       "question": "DeFi とは何の略ですか?",
       "answers": {
-        "Defined Finance": "財務の定義",
-        "Decentralized Finance": "分散型金融",
-        "Defaulted Finance": "デフォルトの財務",
-        "Deferred Finance": "繰延融資"
+        "Defined Finance": "Defined Finance",
+        "Decentralized Finance": "Decentralized Finance",
+        "Defaulted Finance": "Defaulted Finance",
+        "Deferred Finance": "Deferred Finance"
       }
     },
     "crypto:26": {
@@ -421,10 +421,10 @@
     "crypto:28": {
       "question": "TVL とはどういう意味ですか?",
       "answers": {
-        "Token Value Locked": "トークン値がロックされました",
-        "Total Value Locked": "合計値がロックされました",
-        "Trade Volume Limit": "取引量制限",
-        "Tier Volume Level": "階層ボリューム レベル"
+        "Token Value Locked": "Token Value Locked",
+        "Total Value Locked": "Total Value Locked",
+        "Trade Volume Limit": "Trade Volume Limit",
+        "Tier Volume Level": "Tier Volume Level"
       }
     },
     "crypto:29": {
@@ -433,13 +433,13 @@
         "DEX": "DEX",
         "Lending protocol": "貸出プロトコル",
         "Stablecoin": "ステーブルコイン",
-        "NFT marketplace": "NFT マーケットプレイス"
+        "NFT marketplace": "NFTマーケットプレイス"
       }
     },
     "crypto:30": {
       "question": "収量農業とは何ですか?",
       "answers": {
-        "Mining crops": "作物の採掘",
+        "Mining crops": "作物を育てる",
         "Earning rewards from DeFi protocols": "DeFi プロトコルから報酬を獲得する",
         "A staking pool name": "ステーキングプール名",
         "An NFT minting term": "NFT 鋳造用語"
@@ -448,8 +448,8 @@
     "crypto:31": {
       "question": "USDC を発行している会社はどこですか?",
       "answers": {
-        "Tether": "テザー",
-        "Circle": "サークル",
+        "Tether": "Tether",
+        "Circle": "Circle",
         "Coinbase": "Coinbase",
         "Paxos": "パクソス"
       }
@@ -457,8 +457,8 @@
     "crypto:32": {
       "question": "USDT を発行している会社はどこですか?",
       "answers": {
-        "Circle": "サークル",
-        "Tether": "テザー",
+        "Circle": "Circle",
+        "Tether": "Tether",
         "Coinbase": "Coinbase",
         "MakerDAO": "メーカーダオ"
       }
@@ -484,10 +484,10 @@
     "crypto:35": {
       "question": "NFT は何の略ですか?",
       "answers": {
-        "New Finance Token": "新しい金融トークン",
-        "Non-Fungible Token": "代替不可能なトークン",
-        "Network File Transfer": "ネットワーク ファイル転送",
-        "Node Function Type": "ノード関数のタイプ"
+        "New Finance Token": "New Finance Token",
+        "Non-Fungible Token": "Non-Fungible Token",
+        "Network File Transfer": "Network File Transfer",
+        "Node Function Type": "Node Function Type"
       }
     },
     "crypto:36": {
@@ -518,12 +518,12 @@
       }
     },
     "crypto:39": {
-      "question": "ウォレットの秘密の単語は何と呼ばれますか?",
+      "question": "ウォレットの秘密の復元用単語は何と呼ばれますか？",
       "answers": {
         "Public key": "公開鍵",
         "Seed phrase": "シードフレーズ",
         "Hash": "ハッシュ",
-        "Nonce": "ノンス"
+        "Nonce": "Nonce"
       }
     },
     "crypto:40": {
@@ -532,11 +532,11 @@
         "A mobile app": "モバイル アプリ",
         "A physical device for storing keys": "キーを保存するための物理デバイス",
         "A browser extension": "ブラウザ拡張機能",
-        "An exchange account": "Exchange アカウント"
+        "An exchange account": "取引所のアカウント"
       }
     },
     "crypto:41": {
-      "question": "決して共有しないでください?",
+      "question": "絶対に他人と共有してはいけないものはどれですか？",
       "answers": {
         "Wallet address": "ウォレットアドレス",
         "Seed phrase": "シードフレーズ",
@@ -547,7 +547,7 @@
     "crypto:42": {
       "question": "自己監護とは？",
       "answers": {
-        "Exchange holds your keys": "Exchange が鍵を保持します",
+        "Exchange holds your keys": "取引所が鍵を管理する",
         "You control your private keys": "秘密鍵はあなたが管理します",
         "A bank holds your keys": "銀行があなたの鍵を保管します",
         "A friend holds your keys": "友人があなたの鍵を握っています"
@@ -556,16 +556,16 @@
     "crypto:43": {
       "question": "MetaMask は主に?",
       "answers": {
-        "Exchange": "交換",
+        "Exchange": "取引所",
         "Browser wallet": "ブラウザウォレット",
-        "Hardware wallet": "ハードウェア ウォレット",
+        "Hardware wallet": "ハードウェアウォレット",
         "L2 chain": "L2 チェーン"
       }
     },
     "crypto:44": {
       "question": "Farcaster とは何ですか?",
       "answers": {
-        "An exchange": "交換",
+        "An exchange": "取引所",
         "A decentralized social network": "分散型ソーシャル ネットワーク",
         "A wallet": "ウォレット",
         "A game": "ゲーム"
@@ -599,30 +599,30 @@
       }
     },
     "crypto:48": {
-      "question": "Base App のミニアプリは何で構築されていますか?",
+      "question": "Base AppのMini Appsは何を使って開発されますか？",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit / OnchainKit",
-        "Flutter only": "フラッターのみ",
+        "Flutter only": "Flutterのみ",
         "Native iOS only": "ネイティブ iOS のみ",
-        "Unity": "ユニティ"
+        "Unity": "Unity"
       }
     },
     "crypto:49": {
-      "question": "ブロックチェーン トランザクション ハッシュとも呼ばれますか?",
+      "question": "ブロックチェーンのトランザクションハッシュは別名何と呼ばれますか？",
       "answers": {
-        "Nonce": "ノンス",
-        "TX ID": "送信 ID",
+        "Nonce": "Nonce",
+        "TX ID": "TX ID",
         "Block height": "ブロックの高さ",
-        "Gas limit": "ガス制限"
+        "Gas limit": "ガス上限"
       }
     },
     "crypto:50": {
       "question": "DAO は何の略ですか?",
       "answers": {
-        "Digital Asset Order": "デジタル資産の注文",
-        "Decentralized Autonomous Organization": "分散型自律組織",
-        "Distributed App Output": "分散アプリの出力",
-        "Data Access Object": "データ アクセス オブジェクト"
+        "Digital Asset Order": "Digital Asset Order",
+        "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
+        "Distributed App Output": "Distributed App Output",
+        "Data Access Object": "Data Access Object"
       }
     },
     "crypto:51": {
@@ -631,7 +631,7 @@
         "A mining tool": "マイニング ツール",
         "A site to view onchain data": "オンチェーン データを表示するサイト",
         "A wallet type": "ウォレットのタイプ",
-        "A bridge": "橋"
+        "A bridge": "ブリッジ"
       }
     },
     "crypto:52": {
@@ -683,8 +683,8 @@
       "question": "ブロックチェーン上のガス料金は何に支払われますか?",
       "answers": {
         "Developers": "開発者",
-        "Network validators/miners": "ネットワークバリデータ/マイナー",
-        "Exchanges": "交換",
+        "Network validators/miners": "ネットワークのバリデーターまたはマイナー",
+        "Exchanges": "取引所",
         "Banks": "銀行"
       }
     },
@@ -700,36 +700,36 @@
     "crypto:59": {
       "question": "「DEX」は何の略ですか?",
       "answers": {
-        "Digital Exchange": "デジタル交換",
-        "Decentralized Exchange": "分散型取引所",
-        "Data Exchange": "データ交換",
-        "Direct Exchange": "直接交換"
+        "Digital Exchange": "Digital Exchange",
+        "Decentralized Exchange": "Decentralized Exchange",
+        "Data Exchange": "Data Exchange",
+        "Direct Exchange": "Direct Exchange"
       }
     },
     "crypto:60": {
       "question": "「CEX」は何の略ですか?",
       "answers": {
-        "Central Exchange": "中央交換局",
-        "Centralized Exchange": "集中型交換",
-        "Crypto Exchange": "暗号交換",
-        "Coin Exchange": "コイン交換所"
+        "Central Exchange": "Central Exchange",
+        "Centralized Exchange": "Centralized Exchange",
+        "Crypto Exchange": "Crypto Exchange",
+        "Coin Exchange": "Coin Exchange"
       }
     },
     "crypto:61": {
-      "question": "「ステーキング」とは何ですか?",
+      "question": "ステーキングとは何ですか？",
       "answers": {
         "Selling tokens": "トークンの販売",
         "Locking tokens to support a network for rewards": "報酬を得るためにネットワークをサポートするためのトークンをロックする",
-        "Mining coins": "コインのマイニング",
+        "Mining coins": "暗号資産をマイニングする",
         "Burning tokens": "トークンの燃焼"
       }
     },
     "crypto:62": {
-      "question": "「秘密鍵」とは何ですか?",
+      "question": "秘密鍵とは何ですか？",
       "answers": {
-        "Your public address": "公開アドレス",
-        "A secret that controls your funds": "資金を管理する秘密",
-        "An exchange password": "交換パスワード",
+        "Your public address": "自分の公開アドレス",
+        "A secret that controls your funds": "資産を管理する秘密情報",
+        "An exchange password": "取引所のパスワード",
         "A transaction id": "トランザクション ID"
       }
     },
@@ -739,7 +739,7 @@
         "Real transactions": "実際のトランザクション",
         "Testing without real value": "実際の値を使用しないテスト",
         "Storing coins": "コインの保管",
-        "Mining Bitcoin": "ビットコインのマイニング"
+        "Mining Bitcoin": "Bitcoinをマイニングする"
       }
     },
     "crypto:64": {
@@ -747,7 +747,7 @@
       "answers": {
         "Creating tokens": "トークンの作成",
         "Permanently removing tokens from supply": "供給からトークンを永久に削除します",
-        "Staking tokens": "トークンのステーキング",
+        "Staking tokens": "トークンをステーキングする",
         "Sending tokens": "トークンの送信"
       }
     },
@@ -793,7 +793,7 @@
         "Layer 1 base blockchain": "レイヤ 1 ベースのブロックチェーン",
         "A game level": "ゲームレベル",
         "A wallet": "ウォレット",
-        "A token standard": "トークン標準"
+        "A token standard": "トークン規格"
       }
     },
     "crypto:70": {
@@ -810,17 +810,17 @@
       "answers": {
         "Low energy use": "低エネルギー使用",
         "High energy use via mining": "マイニングによる高エネルギー使用",
-        "Staking coins": "コインをステーキングする",
+        "Staking coins": "暗号資産をステーキングする",
         "No validators": "バリデータがありません"
       }
     },
     "crypto:72": {
       "question": "「DYOR」とはどういう意味ですか?",
       "answers": {
-        "Do Your Own Research": "自分で調査してください",
-        "Deposit Your Own Reserves": "自分の準備金を入金する",
-        "Don't Yield On Returns": "返品を譲らないでください",
-        "Data Yield Over Risk": "リスクに対するデータの収量"
+        "Do Your Own Research": "Do Your Own Research",
+        "Deposit Your Own Reserves": "Deposit Your Own Reserves",
+        "Don't Yield On Returns": "Don't Yield On Returns",
+        "Data Yield Over Risk": "Data Yield Over Risk"
       }
     },
     "crypto:73": {
@@ -828,7 +828,7 @@
       "answers": {
         "Always-online wallet": "常時オンラインのウォレット",
         "Offline wallet for storage": "ストレージ用のオフラインウォレット",
-        "Exchange wallet": "Exchange ウォレット",
+        "Exchange wallet": "取引所ウォレット",
         "A stablecoin": "ステーブルコイン"
       }
     },
@@ -837,14 +837,14 @@
       "answers": {
         "Offline wallet": "オフラインウォレット",
         "Internet-connected wallet": "インターネットに接続されたウォレット",
-        "Hardware wallet": "ハードウェア ウォレット",
+        "Hardware wallet": "ハードウェアウォレット",
         "Paper wallet": "ペーパーウォレット"
       }
     },
     "crypto:75": {
       "question": "「Gwei」は測定に使用されますか?",
       "answers": {
-        "Token supply": "トークンの供給",
+        "Token supply": "トークン供給量",
         "Gas prices": "ガス価格",
         "Block size": "ブロックサイズ",
         "Wallet balance": "ウォレットの残高"
@@ -874,16 +874,16 @@
         "A wallet": "ウォレット",
         "A node that verifies transactions": "トランザクションを検証するノード",
         "A token": "トークン",
-        "An exchange": "交換"
+        "An exchange": "取引所"
       }
     },
     "crypto:79": {
       "question": "「ATH」はの略ですか?",
       "answers": {
-        "All-Time High": "過去最高",
-        "Average Trade Height": "平均取引高さ",
-        "Actual Token Holdings": "実際のトークン保有数",
-        "Auto Trade Handler": "自動取引ハンドラー"
+        "All-Time High": "All-Time High",
+        "Average Trade Height": "Average Trade Height",
+        "Actual Token Holdings": "Actual Token Holdings",
+        "Auto Trade Handler": "Auto Trade Handler"
       }
     },
     "crypto:80": {
@@ -916,7 +916,7 @@
     "crypto:83": {
       "question": "OnchainKit は開発者ツールキットですか?",
       "answers": {
-        "Binance": "バイナンス",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
         "MetaMask": "MetaMask",
         "Uniswap": "Uniswap"
@@ -925,7 +925,7 @@
     "crypto:84": {
       "question": "「ガス制限」が設定されていますか?",
       "answers": {
-        "Token supply": "トークンの供給",
+        "Token supply": "トークン供給量",
         "Max gas a transaction can use": "トランザクションで使用できる最大ガス",
         "Wallet size": "財布のサイズ",
         "Block reward": "ブロック報酬"
@@ -937,16 +937,16 @@
         "A base Layer-1": "基本レイヤー 1",
         "An Ethereum scaling solution": "Ethereum スケーリング ソリューション",
         "A wallet": "ウォレット",
-        "An exchange": "交換"
+        "An exchange": "取引所"
       }
     },
     "crypto:86": {
       "question": "取引における「FOMO」とは何を意味しますか?",
       "answers": {
-        "Fear Of Missing Out": "チャンスを逃すことへの恐怖",
-        "Full Order Market Offer": "フルオーダー マーケット オファー",
-        "Fixed Order Money Out": "固定注文出金",
-        "Fast Onchain Market Order": "高速オンチェーン マーケットオーダー"
+        "Fear Of Missing Out": "Fear Of Missing Out",
+        "Full Order Market Offer": "Full Order Market Offer",
+        "Fixed Order Money Out": "Fixed Order Money Out",
+        "Fast Onchain Market Order": "Fast Onchain Market Order"
       }
     },
     "crypto:87": {
@@ -959,11 +959,11 @@
       }
     },
     "crypto:88": {
-      "question": "「レイヤー 2」ソリューションの主な目的は?",
+      "question": "レイヤー2ソリューションの主な目的は何ですか？",
       "answers": {
-        "Replace Bitcoin": "ビットコインを置き換える",
-        "Scale a Layer-1 with cheaper, faster txs": "より安価で高速な TXS を使用してレイヤー 1 を拡張する",
-        "Mine faster": "より速く採掘する",
+        "Replace Bitcoin": "Bitcoinを置き換える",
+        "Scale a Layer-1 with cheaper, faster txs": "より安く高速なトランザクションでレイヤー1を拡張する",
+        "Mine faster": "マイニングを高速化する",
         "Issue stablecoins": "ステーブルコインを発行する"
       }
     },
@@ -972,17 +972,17 @@
       "answers": {
         "Secret, never shared": "秘密、決して共有されない",
         "Public and shareable to receive funds": "資金を受け取るために公開および共有可能",
-        "Your password": "あなたのパスワード",
+        "Your password": "自分のパスワード",
         "A private key": "秘密鍵"
       }
     },
     "crypto:90": {
       "question": "「KYC」は何の略ですか?",
       "answers": {
-        "Keep Your Coins": "コインを保管してください",
-        "Know Your Customer": "顧客を知る",
-        "Key Yield Contract": "キー利回り契約",
-        "Known Yield Curve": "既知の利回り曲線"
+        "Keep Your Coins": "Keep Your Coins",
+        "Know Your Customer": "Know Your Customer",
+        "Key Yield Contract": "Key Yield Contract",
+        "Known Yield Curve": "Known Yield Curve"
       }
     },
     "crypto:91": {
@@ -997,10 +997,10 @@
     "crypto:92": {
       "question": "「PoS」はの略ですか?",
       "answers": {
-        "Proof of Speed": "スピードの証明",
-        "Proof of Stake": "ステークの証拠",
-        "Point of Sale": "販売時点管理",
-        "Proof of Storage": "保管証明"
+        "Proof of Speed": "Proof of Speed",
+        "Proof of Stake": "Proof of Stake",
+        "Point of Sale": "Point of Sale",
+        "Proof of Storage": "Proof of Storage"
       }
     },
     "crypto:93": {
@@ -1051,10 +1051,10 @@
     "crypto:98": {
       "question": "「ROI」とは何の略ですか?",
       "answers": {
-        "Return On Investment": "投資収益率",
-        "Rate Of Interest": "金利",
-        "Risk Of Inflation": "インフレのリスク",
-        "Ratio Of Income": "収入の比率"
+        "Return On Investment": "Return On Investment",
+        "Rate Of Interest": "Rate Of Interest",
+        "Risk Of Inflation": "Risk Of Inflation",
+        "Ratio Of Income": "Ratio Of Income"
       }
     },
     "crypto:99": {
@@ -1076,7 +1076,7 @@
       }
     },
     "sports:1": {
-      "question": "あなたならどのスポーツでスラムダンクを披露しますか?",
+      "question": "スラムダンクを行うスポーツはどれですか？",
       "answers": {
         "Tennis": "テニス",
         "Basketball": "バスケットボール",
@@ -1600,7 +1600,7 @@
     "sports:59": {
       "question": "野球は?の形をしたフィールドでプレーされます。",
       "answers": {
-        "Circle": "サークル",
+        "Circle": "Circle",
         "Diamond": "ダイヤモンド",
         "Square": "スクエア",
         "Triangle": "三角形"
@@ -1868,7 +1868,7 @@
       }
     },
     "sports:89": {
-      "question": "サッカー ピッチでスタートする選手は合計で何人ですか (両チーム)?",
+      "question": "サッカーの試合開始時、両チーム合わせて何人の選手がピッチにいますか？",
       "answers": {
         "18": "18",
         "20": "20",
@@ -2093,7 +2093,7 @@
       }
     },
     "art:12": {
-      "question": "大理石の像「ダビデ」を彫刻したのは?",
+      "question": "大理石像『ダビデ』を制作したのは誰ですか？",
       "answers": {
         "Bernini": "ベルニーニ",
         "Michelangelo": "ミケランジェロ",
@@ -2453,11 +2453,11 @@
       }
     },
     "art:52": {
-      "question": "「壁画」とは、壁に描かれた絵画のことですか?",
+      "question": "壁画はどのような面に描かれますか？",
       "answers": {
         "Small canvas": "小さなキャンバス",
         "Wall": "壁",
-        "Plate": "プレート",
+        "Plate": "皿",
         "Paper": "紙"
       }
     },
@@ -2714,7 +2714,7 @@
       }
     },
     "art:81": {
-      "question": "「神奈川沖浪裏」は日本で有名ですか？",
+      "question": "『神奈川沖浪裏』はどの種類の日本美術ですか？",
       "answers": {
         "Sculpture": "彫刻",
         "Woodblock print": "木版画",
@@ -2777,7 +2777,7 @@
       }
     },
     "art:88": {
-      "question": "「ミロのヴィーナス」は古代の有名な作品ですか？",
+      "question": "『ミロのヴィーナス』はどの種類の古代美術ですか？",
       "answers": {
         "Painting": "絵画",
         "Statue": "像",
@@ -2993,7 +2993,7 @@
       }
     },
     "history:12": {
-      "question": "冷戦は主に米国との間で起きました。",
+      "question": "冷戦は主にアメリカとどの大国の間で起こりましたか？",
       "answers": {
         "China": "中国",
         "USSR": "ソ連",
@@ -3353,7 +3353,7 @@
       }
     },
     "history:52": {
-      "question": "クリストファー・コロンブスはの旗の下で航海しましたか?",
+      "question": "クリストファー・コロンブスはどの国の旗の下で航海しましたか？",
       "answers": {
         "Portugal": "ポルトガル",
         "Spain": "スペイン",
@@ -3677,7 +3677,7 @@
       }
     },
     "history:88": {
-      "question": "中世は、? とも呼ばれます。",
+      "question": "中世は別名何と呼ばれますか？",
       "answers": {
         "Middle Ages": "中世",
         "Stone Age": "石器時代",
@@ -3832,7 +3832,7 @@
     "science:5": {
       "question": "金の元素記号は何ですか?",
       "answers": {
-        "Go": "行く",
+        "Go": "Go",
         "Gd": "Gd",
         "Au": "金",
         "Ag": "銀"
@@ -3941,7 +3941,7 @@
       "question": "地球上で最も硬い天然物質は何ですか?",
       "answers": {
         "Gold": "ゴールド",
-        "Iron": "アイロン",
+        "Iron": "鉄",
         "Diamond": "ダイヤモンド",
         "Quartz": "クォーツ"
       }
@@ -4060,7 +4060,7 @@
         "Rock": "ロック",
         "Hydrogen and helium": "水素とヘリウム",
         "Water": "水",
-        "Iron": "アイロン"
+        "Iron": "鉄"
       }
     },
     "science:31": {
@@ -4253,7 +4253,7 @@
       }
     },
     "science:52": {
-      "question": "物質の 3 つの一般的な状態は何ですか?",
+      "question": "物質の代表的な3つの状態は何ですか？",
       "answers": {
         "Hot, cold, warm": "暑い、寒い、暖かい",
         "Solid, liquid, gas": "固体、液体、気体",
@@ -4581,8 +4581,8 @@
       "answers": {
         "Oxygen": "酸素",
         "Hydrogen": "水素",
-        "Iron": "アイロン",
-        "Carbon": "カーボン"
+        "Iron": "鉄",
+        "Carbon": "炭素"
       }
     },
     "science:89": {
@@ -5477,7 +5477,7 @@
       }
     },
     "geography:88": {
-      "question": "エジプトの首都は何沿いにありますか?",
+      "question": "エジプトの首都カイロはどの川沿いにありますか？",
       "answers": {
         "Tigris River": "チグリス川",
         "Nile River": "ナイル川",

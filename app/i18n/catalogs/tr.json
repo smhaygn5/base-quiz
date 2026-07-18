@@ -12,7 +12,7 @@
     "common.connectBaseWallet": "Base Wallet’ı bağla",
     "common.browserWallets": "Tarayıcı cüzdanları",
     "common.recommended": "Önerilen",
-    "common.selectLanguage": "Dil seçin",
+    "common.selectLanguage": "Dil seç",
     "common.language": "Dil",
     "common.switchLight": "Açık temaya geç",
     "common.switchDark": "Koyu temaya geç",
@@ -21,72 +21,72 @@
     "home.kicker": "Zincir üstü bilgi yarışması · Base",
     "home.titleLine1": "Günlük bilgi yarışması.",
     "home.titleLine2": "Base üzerinde.",
-    "home.description": "Bir kategori seç, beş soruyu yanıtla ve zamana karşı yarış. Serini geliştir, puanını zincire kaydet ve küresel liderlik tablosunda yüksel.",
+    "home.description": "Bir kategori seç, beş soruyu yanıtla ve zamana karşı yarış. Serini büyüt, puanını zincire kaydet ve dünya sıralamasında yüksel.",
     "home.streak": "{count} günlük seri",
-    "home.confirmWallet": "Cüzdanda onaylayın…",
+    "home.confirmWallet": "Cüzdanında onayla…",
     "home.startRound": "Turu başlat",
     "home.leaderboard": "Liderlik tablosu",
     "home.streakBadges": "Seri rozetleri",
     "home.facts": "5 soru · Her soru için 15 saniye · Puanlar zincire kaydedilir",
-    "category.pick": "Bir kategori seçin",
+    "category.pick": "Bir kategori seç",
     "category.meta": "{count} soru · Tur başına 5 soru",
-    "category.start": "{category} testini başlat",
+    "category.start": "{category} turunu başlat",
     "category.previous": "Önceki kategori",
     "category.next": "Sonraki kategori",
-    "category.imageAlt": "{category} quiz kategorisi",
+    "category.imageAlt": "{category} kategorisi",
     "category.crypto.name": "Kripto",
-    "category.crypto.description": "Base, Ethereum, cüzdanlar, DeFi ve onchain dünyasını şekillendiren kültür hakkındaki bilginizi test edin.",
+    "category.crypto.description": "Base, Ethereum, cüzdanlar, DeFi ve zincir üstü kültür hakkındaki bilgini test et.",
     "category.sports.name": "Spor",
-    "category.sports.description": "Futboldan basketbola, tenisten olimpiyatlara kadar spor hafızanızın ne kadar güçlü olduğunu görün.",
+    "category.sports.description": "Futboldan basketbola, tenisten olimpiyatlara uzanan spor bilgini sına.",
     "category.art.name": "Sanat",
-    "category.art.description": "Nesiller boyunca görsel kültürü değiştiren resimleri, sanatçıları, hareketleri ve fikirleri keşfedin.",
+    "category.art.description": "Kuşaklar boyunca görsel kültürü değiştiren eserleri, sanatçıları, akımları ve fikirleri keşfet.",
     "category.history.name": "Tarih",
-    "category.history.description": "Medeniyetler, dönüm noktaları ve kararları dünyayı şekillendiren insanlar arasında seyahat edin.",
+    "category.history.description": "Medeniyetler, dönüm noktaları ve dünyayı şekillendiren insanlar arasında tarih yolculuğuna çık.",
     "category.science.name": "Bilim",
-    "category.science.description": "Fizik, biyoloji, kimya ve işlerin nasıl yürüdüğünü açıklayan keşifler konusunda kendinize meydan okuyun.",
+    "category.science.description": "Fizik, biyoloji, kimya ve dünyayı anlamamızı sağlayan keşiflerle kendini sına.",
     "category.geography.name": "Coğrafya",
     "category.geography.description": "Dünyanın dört bir yanındaki ülkeler, başkentler, okyanuslar ve simge yapılar arasında yolculuğa çık.",
-    "quiz.fallbackName": "Quiz",
+    "quiz.fallbackName": "Bilgi yarışması",
     "quiz.questionProgress": "Soru {current}/{total}",
     "quiz.score": "Puan",
     "quiz.time": "Zaman",
     "quiz.answeredAria": "{total} sorudan {answered} tanesi yanıtlandı",
-    "quiz.chooseCorrect": "Doğru cevabı seçin",
+    "quiz.chooseCorrect": "Doğru cevabı seç",
     "quiz.correct": "Doğru cevap",
     "quiz.wrong": "Yanlış cevap",
     "quiz.points": "+{points} puan",
     "quiz.correctOption": "Doğru seçenek: {option}",
-    "quiz.autoNote": "Bir kez yanıtla · sonraki soru otomatik olarak yüklenir",
+    "quiz.autoNote": "Bir kez cevapla · sonraki soru otomatik açılır",
     "result.roundComplete": "Tur tamamlandı",
-    "result.finalScore": "Son puanınız",
+    "result.finalScore": "Son puanın",
     "result.points": "puan",
     "result.summaryAria": "Tur özeti",
     "result.categoryPill": "{category} kategorisi",
     "result.streakPill": "{count} günlük seri",
     "result.roundCompletedTitle": "Tur tamamlandı",
-    "result.roundCompletedDetail": "Beş soruya yanıt verildi. Nihai sonucunuz hazır.",
+    "result.roundCompletedDetail": "Beş soruyu tamamladın. Sonucun hazır.",
     "result.streakUpdatedTitle": "Seri güncellendi",
-    "result.streakUpdatedDetail": "Artık {count} günlük bir öğrenme serisindesiniz.",
-    "result.save.idle.title": "Puanınızı kaydedin",
-    "result.save.idle.detail": "Bu sonucu Base'ye kaydedin ve küresel liderlik tablosuna katılın.",
-    "result.save.pending.title": "Puanınızı onaylayın",
-    "result.save.pending.detail": "Kaydetmeyi tamamlamak için cüzdanınızdaki işlemi onaylayın.",
-    "result.save.done.title": "Puan kaydedildi onchain",
-    "result.save.done.detail": "Sonucunuz Base'de doğrulandı ve skor tablosuna hazır.",
+    "result.streakUpdatedDetail": "Serin artık {count} gün.",
+    "result.save.idle.title": "Puanını kaydet",
+    "result.save.idle.detail": "Sonucunu Base’e kaydet ve dünya sıralamasına katıl.",
+    "result.save.pending.title": "Puanını onayla",
+    "result.save.pending.detail": "Kaydı tamamlamak için işlemi cüzdanında onayla.",
+    "result.save.done.title": "Puan zincire kaydedildi",
+    "result.save.done.detail": "Sonucun Base üzerinde doğrulandı ve liderlik tablosuna eklendi.",
     "result.save.error.title": "Skor kaydedilemedi",
-    "result.save.error.detail": "Aşağıdaki mesajı inceleyin ve ardından işlemi tekrar deneyin.",
-    "result.save.disconnected.title": "Kaydetmek için bağlanın",
-    "result.save.disconnected.detail": "Puanınızı Base'ye kaydetmek için bir cüzdan seçin.",
-    "result.shareTitle": "Sonucunuzu paylaşın",
-    "result.shareDetail": "Farcaster veya X'te arkadaşlarınıza meydan okuyun.",
+    "result.save.error.detail": "Aşağıdaki mesajı kontrol edip işlemi yeniden dene.",
+    "result.save.disconnected.title": "Kaydetmek için bağlan",
+    "result.save.disconnected.detail": "Puanını Base’e kaydetmek için bir cüzdan seç.",
+    "result.shareTitle": "Sonucunu paylaş",
+    "result.shareDetail": "Farcaster veya X’te arkadaşlarına meydan oku.",
     "result.replayKicker": "Serini sürdür",
-    "result.replayTitle": "Başka bir tura hazır mısınız?",
-    "result.replayDetail": "{category}'yi tekrar oynayın veya farklı bir mücadele seçin.",
+    "result.replayTitle": "Yeni bir tura hazır mısın?",
+    "result.replayDetail": "{category} kategorisini yeniden oyna veya başka bir kategori seç.",
     "result.playAgain": "Tekrar oyna",
     "result.chooseCategory": "Kategori seç",
-    "result.saveButton": "Skoru kaydet onchain",
+    "result.saveButton": "Puanı zincire kaydet",
     "result.confirming": "Onaylanıyor…",
-    "result.saved": "onchain kaydedildi",
+    "result.saved": "Zincire kaydedildi",
     "result.viewTransaction": "İşlemi görüntüle",
     "result.shareScore": "Puanı paylaş",
     "result.copyText": "Metni kopyala",
@@ -94,26 +94,26 @@
     "leaderboard.kicker": "Base Mainnet · Tüm zamanlar",
     "leaderboard.title": "Liderlik tablosu",
     "leaderboard.description": "Oyuncular zincirdeki toplam puanlarına göre sıralanır.",
-    "leaderboard.loading": "Base'den puanlar okunuyor…",
+    "leaderboard.loading": "Puanlar Base’den okunuyor…",
     "leaderboard.empty": "Henüz kayıtlı skor yok. Liderlik tablosuna giren ilk oyuncu sen ol.",
     "leaderboard.player": "Oyuncu",
     "leaderboard.totalScore": "Toplam puan",
-    "leaderboard.bestScore": "En iyi skor",
+    "leaderboard.bestScore": "En iyi puan",
     "leaderboard.streak": "Seri",
     "leaderboard.badges": "Rozetler",
     "leaderboard.you": "Sen",
     "leaderboard.noBadges": "Rozet yok",
     "leaderboard.badgeTitle": "{name} rozeti",
     "leaderboard.players": "{count} oyuncu",
-    "leaderboard.verified": "Puanlar ve rozetler doğrulandı onchain",
+    "leaderboard.verified": "Puanlar ve rozetler zincir üzerinde doğrulandı",
     "badges.kicker": "Seri NFT’leri · Base Mainnet",
     "badges.title": "Rozetler",
     "badges.roadmapTitle": "Seri Rozetleri",
     "badges.roadmapDescription": "Oynamaya devam et, serini geliştir ve ulaştığın her zincir üstü kilometre taşının rozetini al.",
     "badges.streak": "{count} günlük seri",
     "badges.walletRequired": "Cüzdan gerekli",
-    "badges.connectTitle": "Rozetlerinizi görüntülemek ve almak için bağlanın",
-    "badges.connectDetail": "Seriniz ve NFT sahipliğiniz doğrudan Base'den okunur.",
+    "badges.connectTitle": "Rozetlerini görmek ve almak için cüzdanını bağla",
+    "badges.connectDetail": "Serin ve NFT sahipliğin doğrudan Base’den okunur.",
     "badges.days": "{count} gün",
     "badges.bronze.name": "Bronz",
     "badges.bronze.description": "İlk 3 günlük serini tamamla",
@@ -124,7 +124,7 @@
     "badges.diamond.name": "Elmas",
     "badges.diamond.description": "100 günlük en büyük hedefe ulaş",
     "badges.unlock": "{count} günlük seride açılır",
-    "badges.owned": "Sahipsin",
+    "badges.owned": "Alındı",
     "badges.claim": "Rozeti al",
     "badges.claiming": "Rozet alınıyor…",
     "badges.daysLeft": "{count} gün kaldı",
@@ -133,37 +133,37 @@
     "wallet.connectTitle": "Cüzdanı bağlayın",
     "wallet.browserWallets": "Tarayıcı cüzdanları",
     "wallet.recommended": "Önerilen",
-    "tutorial.welcomeTitle": "Hoş geldiniz.",
+    "tutorial.welcomeTitle": "Hoş geldin.",
     "tutorial.welcomeDetail": "Base üzerinde günlük bir bilgi yarışması. Bilgini test et, seriler oluştur ve dünyanın her yerinden oyuncularla yarış.",
     "tutorial.questionsTitle": "Her gün 5 soru.",
-    "tutorial.questionsDetail": "Hızlı cevap verin; daha hızlı, daha fazla puan anlamına gelir. Küresel skor tablosunda görünmek için puanınızı onchain kaydedin.",
-    "tutorial.badgesTitle": "NFT rozetleri kazanın.",
+    "tutorial.questionsDetail": "Hızlı cevap ver; ne kadar hızlıysan o kadar çok puan kazanırsın. Dünya sıralamasında görünmek için puanını zincire kaydet.",
+    "tutorial.badgesTitle": "NFT rozetleri kazan.",
     "tutorial.badgesDetail": "Serini koru ve zincir üstü NFT rozetlerini al: Bronz (3 gün), Gümüş (7 gün), Altın (30 gün), Elmas (100 gün).",
-    "tutorial.letsPlay": "Haydi oynayalım",
+    "tutorial.letsPlay": "Oynamaya başla",
     "footer.blockData": "BLOK VERİSİ · BASE MAINNET",
     "footer.playersOnchain": "ZİNCİRDE {count} OYUNCU",
     "share.text": "🧠 Base Quiz’de {score} puan kazandım! 🔥 Seri: {streak} gün\n\nBeni geçebileceğini düşünüyor musun? 👇",
-    "error.startFailed": "Tur başlatılamadı. Lütfen tekrar deneyin.",
-    "error.startCancelled": "İşlem iptal edildi. Turu başlatmak için bunu onaylayın.",
+    "error.startFailed": "Tur başlatılamadı. Tekrar dene.",
+    "error.startCancelled": "İşlem iptal edildi. Turu başlatmak için işlemi onayla.",
     "error.signatureCancelled": "Cüzdan imzası iptal edildi. Devam etmek için mesajı imzalayın.",
-    "error.signatureFailed": "Cüzdan imzası doğrulanamadı. Lütfen tekrar deneyin.",
-    "error.saveFailed": "Skor kaydedilemedi. Lütfen tekrar deneyin.",
+    "error.signatureFailed": "Cüzdan imzası doğrulanamadı. Tekrar dene.",
+    "error.saveFailed": "Puan kaydedilemedi. Tekrar dene.",
     "error.alreadyPlayed": "Bugünkü skorun zaten kaydedildi. Yarın tekrar gel.",
-    "error.claimFailed": "Rozet talep edilemedi. Lütfen tekrar deneyin.",
+    "error.claimFailed": "Rozet alınamadı. Tekrar dene.",
     "activation.kicker": "Base Quiz kurulumu",
     "activation.title": "Tur sözleşmesini etkinleştir",
-    "activation.copy": "Bu tek seferlik Base işlemi, Turu Başlat özelliğinde kullanılan küçük sözleşmeyi dağıtır. Skorları, serileri veya rozetleri değiştirmez ve ETH transfer etmez.",
+    "activation.copy": "Bu tek seferlik Base işlemi, “Turu başlat” özelliğinin kullandığı küçük sözleşmeyi dağıtır. Puanları, serileri veya rozetleri değiştirmez; ETH transfer etmez.",
     "activation.checking": "Sözleşme kontrol ediliyor…",
     "activation.active": "Tur sözleşmesi etkin",
     "activation.connected": "Bağlı: {address}",
-    "activation.confirming": "Base onaylanıyor…",
+    "activation.confirming": "Base üzerinde onaylanıyor…",
     "activation.activate": "Tur Sözleşmesini Etkinleştir",
     "activation.pendingTransaction": "Bekleyen işlemi görüntüle",
     "activation.back": "Base Quiz’e dön",
-    "activation.errorCheck": "Base sözleşmesi kontrol edilemedi. Lütfen tekrar deneyin.",
+    "activation.errorCheck": "Base sözleşmesi kontrol edilemedi. Tekrar dene.",
     "activation.errorWallet": "Uyumlu bir cüzdan bulunamadı.",
     "activation.errorCancelled": "İşlem iptal edildi. Hiçbir değişiklik yapılmadı.",
-    "activation.errorFailed": "Etkinleştirme başarısız oldu. Lütfen tekrar deneyin."
+    "activation.errorFailed": "Etkinleştirme başarısız oldu. Tekrar dene."
   },
   "quiz": {
     "crypto:0": {
@@ -181,15 +181,15 @@
         "Bitcoin": "Bitcoin",
         "Solana": "Solana",
         "Ethereum": "Ethereum",
-        "Avalanche": "Çığ"
+        "Avalanche": "Avalanche"
       }
     },
     "crypto:2": {
       "question": "Base hangi teknoloji yığınını kullanıyor?",
       "answers": {
-        "OP Stack": "OP Yığını",
+        "OP Stack": "OP Stack",
         "zkSync": "zkSync",
-        "Polygon CDK": "Çokgen CDK",
+        "Polygon CDK": "Polygon CDK",
         "Arbitrum Nitro": "Arbitrum Nitro"
       }
     },
@@ -206,7 +206,7 @@
       "question": "Base'de gas ücretleri için hangi token kullanılıyor?",
       "answers": {
         "USDC": "USDC",
-        "BASE": "BAZ",
+        "BASE": "BASE",
         "ETH": "ETH",
         "OP": "OP"
       }
@@ -216,8 +216,8 @@
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
-        "Rainbow": "Gökkuşağı",
-        "Phantom": "Hayalet"
+        "Rainbow": "Rainbow",
+        "Phantom": "Phantom"
       }
     },
     "crypto:6": {
@@ -241,10 +241,10 @@
     "crypto:8": {
       "question": "Base hangi süper zincire ait?",
       "answers": {
-        "Polygon Superchain": "Çokgen Süper Zincir",
-        "Optimism Superchain": "İyimserlik Süper Zinciri",
-        "Arbitrum Orbit": "Tahkim Yörüngesi",
-        "zkSync Hyperchain": "zkSync Hiper Zinciri"
+        "Polygon Superchain": "Polygon Superchain",
+        "Optimism Superchain": "Optimism Superchain",
+        "Arbitrum Orbit": "Arbitrum Orbit",
+        "zkSync Hyperchain": "zkSync Hyperchain"
       }
     },
     "crypto:9": {
@@ -266,12 +266,12 @@
       }
     },
     "crypto:11": {
-      "question": "Base üzerindeki akıllı sözleşmeler yazılıyor mu?",
+      "question": "Base’teki akıllı sözleşmeler hangi programlama diliyle yazılır?",
       "answers": {
         "Python": "Python",
-        "Rust": "Pas",
-        "Solidity": "Sağlamlık",
-        "Go": "Git"
+        "Rust": "Rust",
+        "Solidity": "Solidity",
+        "Go": "Go"
       }
     },
     "crypto:12": {
@@ -296,7 +296,7 @@
       "question": "Ethereum hangi fikir birliğini kullanıyor?",
       "answers": {
         "Proof of Work": "Çalışma Kanıtı",
-        "Proof of Stake": "Hisse Kanıtı",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Authority": "Yetki Belgesi",
         "Proof of History": "Tarih Kanıtı"
       }
@@ -306,7 +306,7 @@
       "answers": {
         "A wallet type": "Bir cüzdan türü",
         "Ethereum's execution engine": "Ethereum'nin yürütme motoru",
-        "A token standard": "Bir belirteç standardı",
+        "A token standard": "Bir token standardı",
         "A bridge": "Bir köprü"
       }
     },
@@ -314,15 +314,15 @@
       "question": "Hangisi Ethereum'nin L2'si DEĞİLDİR?",
       "answers": {
         "Base": "Base",
-        "Arbitrum": "Tahkim",
+        "Arbitrum": "Arbitrum",
         "Solana": "Solana",
-        "Optimism": "İyimserlik"
+        "Optimism": "Optimism"
       }
     },
     "crypto:17": {
       "question": "'Gaz' ne anlama gelir?",
       "answers": {
-        "A token": "Bir jeton",
+        "A token": "Bir token",
         "Transaction fee unit": "İşlem ücreti birimi",
         "A wallet": "Bir cüzdan",
         "An NFT type": "Bir NFT türü"
@@ -385,7 +385,7 @@
     "crypto:24": {
       "question": "Bitcoin hangi konsensüsü kullanıyor?",
       "answers": {
-        "Proof of Stake": "Hisse Kanıtı",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Work": "Çalışma Kanıtı",
         "Proof of Authority": "Yetki Belgesi",
         "DPoS": "DPoS"
@@ -394,10 +394,10 @@
     "crypto:25": {
       "question": "DeFi'nin açılımı nedir?",
       "answers": {
-        "Defined Finance": "Tanımlı Finans",
-        "Decentralized Finance": "Merkezi Olmayan Finans",
-        "Defaulted Finance": "Temerrütteki Finans",
-        "Deferred Finance": "Ertelenmiş Finans"
+        "Defined Finance": "Defined Finance",
+        "Decentralized Finance": "Decentralized Finance",
+        "Defaulted Finance": "Defaulted Finance",
+        "Deferred Finance": "Deferred Finance"
       }
     },
     "crypto:26": {
@@ -421,10 +421,10 @@
     "crypto:28": {
       "question": "TVL ne anlama geliyor?",
       "answers": {
-        "Token Value Locked": "Token Değeri Kilitlendi",
-        "Total Value Locked": "Toplam Değer Kilitli",
-        "Trade Volume Limit": "İşlem Hacmi Limiti",
-        "Tier Volume Level": "Katman Birim Düzeyi"
+        "Token Value Locked": "Token Value Locked",
+        "Total Value Locked": "Total Value Locked",
+        "Trade Volume Limit": "Trade Volume Limit",
+        "Tier Volume Level": "Tier Volume Level"
       }
     },
     "crypto:29": {
@@ -432,14 +432,14 @@
       "answers": {
         "DEX": "DEX",
         "Lending protocol": "Borç verme protokolü",
-        "Stablecoin": "Stablecoin",
-        "NFT marketplace": "NFT pazar yeri"
+        "Stablecoin": "Sabit coin",
+        "NFT marketplace": "NFT pazarı"
       }
     },
     "crypto:30": {
       "question": "Verim çiftçiliği nedir?",
       "answers": {
-        "Mining crops": "Madencilik bitkileri",
+        "Mining crops": "Ürün yetiştirmek",
         "Earning rewards from DeFi protocols": "DeFi protokollerinden ödül kazanma",
         "A staking pool name": "Staking havuzu adı",
         "An NFT minting term": "Bir NFT basım terimi"
@@ -448,8 +448,8 @@
     "crypto:31": {
       "question": "Hangi şirket USDC'yi yayınlıyor?",
       "answers": {
-        "Tether": "Bağlantı",
-        "Circle": "Daire",
+        "Tether": "Tether",
+        "Circle": "Circle",
         "Coinbase": "Coinbase",
         "Paxos": "Paxos"
       }
@@ -457,8 +457,8 @@
     "crypto:32": {
       "question": "Hangi şirket USDT'yi yayınlıyor?",
       "answers": {
-        "Circle": "Daire",
-        "Tether": "Bağlantı",
+        "Circle": "Circle",
+        "Tether": "Tether",
         "Coinbase": "Coinbase",
         "MakerDAO": "MakerDAO"
       }
@@ -484,10 +484,10 @@
     "crypto:35": {
       "question": "NFT ne anlama geliyor?",
       "answers": {
-        "New Finance Token": "Yeni Finans Tokenı",
-        "Non-Fungible Token": "Değiştirilemez Token",
-        "Network File Transfer": "Ağ Dosya Aktarımı",
-        "Node Function Type": "Düğüm İşlev Türü"
+        "New Finance Token": "New Finance Token",
+        "Non-Fungible Token": "Non-Fungible Token",
+        "Network File Transfer": "Network File Transfer",
+        "Node Function Type": "Node Function Type"
       }
     },
     "crypto:36": {
@@ -518,12 +518,12 @@
       }
     },
     "crypto:39": {
-      "question": "Bir cüzdanın gizli kelimelerine ne denir?",
+      "question": "Bir cüzdanın gizli kurtarma kelimelerine ne ad verilir?",
       "answers": {
-        "Public key": "Genel anahtar",
-        "Seed phrase": "Çekirdek ifade",
+        "Public key": "Açık anahtar",
+        "Seed phrase": "Kurtarma ifadesi",
         "Hash": "Karma",
-        "Nonce": "Bir kez"
+        "Nonce": "Nonce"
       }
     },
     "crypto:40": {
@@ -532,14 +532,14 @@
         "A mobile app": "Bir mobil uygulama",
         "A physical device for storing keys": "Anahtarları depolamak için kullanılan fiziksel bir cihaz",
         "A browser extension": "Bir tarayıcı uzantısı",
-        "An exchange account": "Bir takas hesabı"
+        "An exchange account": "Bir borsa hesabı"
       }
     },
     "crypto:41": {
-      "question": "ASLA paylaşmamalısınız?",
+      "question": "Hangisini asla kimseyle paylaşmamalısın?",
       "answers": {
         "Wallet address": "Cüzdan adresi",
-        "Seed phrase": "Çekirdek ifade",
+        "Seed phrase": "Kurtarma ifadesi",
         "ENS name": "ENS adı",
         "Username": "Kullanıcı adı"
       }
@@ -547,7 +547,7 @@
     "crypto:42": {
       "question": "Kendini velayet anlamına mı geliyor?",
       "answers": {
-        "Exchange holds your keys": "Exchange anahtarlarınızı saklıyor",
+        "Exchange holds your keys": "Anahtarların borsada tutulur",
         "You control your private keys": "Özel anahtarlarınızı siz kontrol edersiniz",
         "A bank holds your keys": "Anahtarlarınız bir bankada bulunuyor",
         "A friend holds your keys": "Anahtarlarınız bir arkadaşınızın elinde"
@@ -556,7 +556,7 @@
     "crypto:43": {
       "question": "MetaMask öncelikle bir?",
       "answers": {
-        "Exchange": "Değişim",
+        "Exchange": "Borsa",
         "Browser wallet": "Tarayıcı cüzdanı",
         "Hardware wallet": "Donanım cüzdanı",
         "L2 chain": "L2 zinciri"
@@ -565,7 +565,7 @@
     "crypto:44": {
       "question": "Farcaster nedir?",
       "answers": {
-        "An exchange": "Bir değişim",
+        "An exchange": "Bir borsa",
         "A decentralized social network": "Merkezi olmayan bir sosyal ağ",
         "A wallet": "Bir cüzdan",
         "A game": "Bir oyun"
@@ -599,30 +599,30 @@
       }
     },
     "crypto:48": {
-      "question": "Base App'deki Mini Uygulamalar ile oluşturulmuştur?",
+      "question": "Base App’teki Mini Apps hangi araçlarla geliştirilir?",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit / OnchainKit",
-        "Flutter only": "Yalnızca çarpıntı",
+        "Flutter only": "Yalnızca Flutter",
         "Native iOS only": "Yalnızca yerel iOS",
-        "Unity": "Birlik"
+        "Unity": "Unity"
       }
     },
     "crypto:49": {
-      "question": "Blockchain işlem karması da denir mi?",
+      "question": "Bir blokzincir işleminin hash değeri başka nasıl adlandırılır?",
       "answers": {
-        "Nonce": "Bir kez",
-        "TX ID": "Teksas Kimliği",
+        "Nonce": "Nonce",
+        "TX ID": "TX ID",
         "Block height": "Blok yüksekliği",
-        "Gas limit": "Gaz sınırı"
+        "Gas limit": "Gas limiti"
       }
     },
     "crypto:50": {
       "question": "DAO ne anlama geliyor?",
       "answers": {
-        "Digital Asset Order": "Dijital Varlık Siparişi",
-        "Decentralized Autonomous Organization": "Merkezi Olmayan Özerk Organizasyon",
-        "Distributed App Output": "Dağıtılmış Uygulama Çıkışı",
-        "Data Access Object": "Veri Erişim Nesnesi"
+        "Digital Asset Order": "Digital Asset Order",
+        "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
+        "Distributed App Output": "Distributed App Output",
+        "Data Access Object": "Data Access Object"
       }
     },
     "crypto:51": {
@@ -667,7 +667,7 @@
         "Sell quickly": "Hızlı satış yapın",
         "Hold long-term": "Uzun vadeli bekletme",
         "A hardware wallet": "Bir donanım cüzdanı",
-        "A type of token": "Bir tür belirteç"
+        "A type of token": "Bir token türü"
       }
     },
     "crypto:56": {
@@ -683,8 +683,8 @@
       "question": "Blockchain'deki gas ücretleri neye ödeniyor?",
       "answers": {
         "Developers": "Geliştiriciler",
-        "Network validators/miners": "Ağ doğrulayıcıları/madenciler",
-        "Exchanges": "Değişimler",
+        "Network validators/miners": "Ağ doğrulayıcıları veya madenciler",
+        "Exchanges": "Borsalar",
         "Banks": "Bankalar"
       }
     },
@@ -700,36 +700,36 @@
     "crypto:59": {
       "question": "'DEX' ne anlama geliyor?",
       "answers": {
-        "Digital Exchange": "Dijital Değişim",
-        "Decentralized Exchange": "Merkezi Olmayan Borsa",
-        "Data Exchange": "Veri Alışverişi",
-        "Direct Exchange": "Doğrudan Değişim"
+        "Digital Exchange": "Digital Exchange",
+        "Decentralized Exchange": "Decentralized Exchange",
+        "Data Exchange": "Data Exchange",
+        "Direct Exchange": "Direct Exchange"
       }
     },
     "crypto:60": {
       "question": "'CEX' ne anlama geliyor?",
       "answers": {
-        "Central Exchange": "Merkezi Borsa",
-        "Centralized Exchange": "Merkezi Exchange",
-        "Crypto Exchange": "Kripto Borsası",
-        "Coin Exchange": "Para Borsası"
+        "Central Exchange": "Central Exchange",
+        "Centralized Exchange": "Centralized Exchange",
+        "Crypto Exchange": "Crypto Exchange",
+        "Coin Exchange": "Coin Exchange"
       }
     },
     "crypto:61": {
-      "question": "'Stake' nedir?",
+      "question": "Staking nedir?",
       "answers": {
         "Selling tokens": "Token satışı",
         "Locking tokens to support a network for rewards": "Ödüller için bir ağı desteklemek amacıyla jetonları kilitleme",
-        "Mining coins": "Madeni para madenciliği",
+        "Mining coins": "Coin madenciliği",
         "Burning tokens": "Jetonların yakılması"
       }
     },
     "crypto:62": {
-      "question": "'Özel anahtar' nedir?",
+      "question": "Özel anahtar nedir?",
       "answers": {
-        "Your public address": "Genel adresiniz",
-        "A secret that controls your funds": "Paranızı kontrol eden bir sır",
-        "An exchange password": "Bir değişim şifresi",
+        "Your public address": "Herkese açık adresin",
+        "A secret that controls your funds": "Varlıklarını kontrol eden gizli bilgi",
+        "An exchange password": "Bir borsa şifresi",
         "A transaction id": "Bir işlem kimliği"
       }
     },
@@ -739,7 +739,7 @@
         "Real transactions": "Gerçek işlemler",
         "Testing without real value": "Gerçek değer olmadan test etme",
         "Storing coins": "Paraları saklama",
-        "Mining Bitcoin": "Bitcoin Madenciliği"
+        "Mining Bitcoin": "Bitcoin madenciliği"
       }
     },
     "crypto:64": {
@@ -747,7 +747,7 @@
       "answers": {
         "Creating tokens": "Belirteç oluşturma",
         "Permanently removing tokens from supply": "Tokenların tedarikten kalıcı olarak kaldırılması",
-        "Staking tokens": "Staking tokenları",
+        "Staking tokens": "Tokenleri stake etmek",
         "Sending tokens": "Belirteçler gönderiliyor"
       }
     },
@@ -793,7 +793,7 @@
         "Layer 1 base blockchain": "Katman 1 temel blok zinciri",
         "A game level": "Bir oyun seviyesi",
         "A wallet": "Bir cüzdan",
-        "A token standard": "Bir belirteç standardı"
+        "A token standard": "Bir token standardı"
       }
     },
     "crypto:70": {
@@ -802,7 +802,7 @@
         "Layer-2 of Ethereum": "Ethereum'nin 2. Katmanı",
         "Standalone Layer-1 blockchain": "Bağımsız Katman-1 blockchain",
         "Wallet": "Cüzdan",
-        "Stablecoin": "Stablecoin"
+        "Stablecoin": "Sabit coin"
       }
     },
     "crypto:71": {
@@ -810,17 +810,17 @@
       "answers": {
         "Low energy use": "Düşük enerji kullanımı",
         "High energy use via mining": "Madencilik yoluyla yüksek enerji kullanımı",
-        "Staking coins": "Coin stake etme",
+        "Staking coins": "Coinleri stake etmek",
         "No validators": "Doğrulayıcı yok"
       }
     },
     "crypto:72": {
       "question": "'DYOR' ne anlama geliyor?",
       "answers": {
-        "Do Your Own Research": "Kendi Araştırmanızı Yapın",
-        "Deposit Your Own Reserves": "Kendi Rezervlerinizi Yatırın",
-        "Don't Yield On Returns": "İadelerden Vazgeçmeyin",
-        "Data Yield Over Risk": "Riskin Üstünden Veri Getirisi"
+        "Do Your Own Research": "Do Your Own Research",
+        "Deposit Your Own Reserves": "Deposit Your Own Reserves",
+        "Don't Yield On Returns": "Don't Yield On Returns",
+        "Data Yield Over Risk": "Data Yield Over Risk"
       }
     },
     "crypto:73": {
@@ -828,7 +828,7 @@
       "answers": {
         "Always-online wallet": "Her zaman çevrimiçi cüzdan",
         "Offline wallet for storage": "Depolama için çevrimdışı cüzdan",
-        "Exchange wallet": "Exchange cüzdanı",
+        "Exchange wallet": "Borsa cüzdanı",
         "A stablecoin": "Bir stabilcoin"
       }
     },
@@ -844,8 +844,8 @@
     "crypto:75": {
       "question": "'Gwei' ölçmek için mi kullanılıyor?",
       "answers": {
-        "Token supply": "Jeton temini",
-        "Gas prices": "Gaz fiyatları",
+        "Token supply": "Token arzı",
+        "Gas prices": "Gas fiyatları",
         "Block size": "Blok boyutu",
         "Wallet balance": "Cüzdan bakiyesi"
       }
@@ -873,17 +873,17 @@
       "answers": {
         "A wallet": "Bir cüzdan",
         "A node that verifies transactions": "İşlemleri doğrulayan bir düğüm",
-        "A token": "Bir jeton",
-        "An exchange": "Bir değişim"
+        "A token": "Bir token",
+        "An exchange": "Bir borsa"
       }
     },
     "crypto:79": {
       "question": "'ATH' ne anlama geliyor?",
       "answers": {
-        "All-Time High": "Tüm Zamanların En Yüksek Seviyesi",
-        "Average Trade Height": "Ortalama İşlem Yüksekliği",
-        "Actual Token Holdings": "Gerçek Token Tutmaları",
-        "Auto Trade Handler": "Otomatik Ticaret İşleyicisi"
+        "All-Time High": "All-Time High",
+        "Average Trade Height": "Average Trade Height",
+        "Actual Token Holdings": "Actual Token Holdings",
+        "Auto Trade Handler": "Auto Trade Handler"
       }
     },
     "crypto:80": {
@@ -925,7 +925,7 @@
     "crypto:84": {
       "question": "Bir 'gaz limiti' belirlendi mi?",
       "answers": {
-        "Token supply": "Jeton temini",
+        "Token supply": "Token arzı",
         "Max gas a transaction can use": "Bir işlemin kullanabileceği maksimum gaz",
         "Wallet size": "Cüzdan boyutu",
         "Block reward": "Blok ödülü"
@@ -937,16 +937,16 @@
         "A base Layer-1": "Bir temel Katman-1",
         "An Ethereum scaling solution": "Bir Ethereum ölçeklendirme çözümü",
         "A wallet": "Bir cüzdan",
-        "An exchange": "Bir değişim"
+        "An exchange": "Bir borsa"
       }
     },
     "crypto:86": {
       "question": "Ticarette 'FOMO' ne anlama geliyor?",
       "answers": {
-        "Fear Of Missing Out": "Fırsatları Kaçırma Korkusu",
-        "Full Order Market Offer": "Tam Sipariş Piyasası Teklifi",
-        "Fixed Order Money Out": "Sabit Sipariş Para Çıkışı",
-        "Fast Onchain Market Order": "Hızlı Zincir İçi Piyasa Emri"
+        "Fear Of Missing Out": "Fear Of Missing Out",
+        "Full Order Market Offer": "Full Order Market Offer",
+        "Fixed Order Money Out": "Fixed Order Money Out",
+        "Fast Onchain Market Order": "Fast Onchain Market Order"
       }
     },
     "crypto:87": {
@@ -959,12 +959,12 @@
       }
     },
     "crypto:88": {
-      "question": "'Katman-2' çözümleri esas olarak neyi hedefliyor?",
+      "question": "Katman 2 çözümlerinin temel amacı nedir?",
       "answers": {
-        "Replace Bitcoin": "Bitcoin'i Değiştir",
-        "Scale a Layer-1 with cheaper, faster txs": "Daha ucuz, daha hızlı aktarımlarla Katman 1'i ölçeklendirin",
-        "Mine faster": "Daha hızlı madencilik yapın",
-        "Issue stablecoins": "Stablecoin'leri yayınlayın"
+        "Replace Bitcoin": "Bitcoin’in yerini almak",
+        "Scale a Layer-1 with cheaper, faster txs": "Daha ucuz ve hızlı işlemlerle Katman 1’i ölçeklemek",
+        "Mine faster": "Daha hızlı madencilik yapmak",
+        "Issue stablecoins": "Sabit coin çıkarmak"
       }
     },
     "crypto:89": {
@@ -972,17 +972,17 @@
       "answers": {
         "Secret, never shared": "Gizli, asla paylaşılmaz",
         "Public and shareable to receive funds": "Herkese açık ve fon almak için paylaşılabilir",
-        "Your password": "Şifreniz",
-        "A private key": "Özel bir anahtar"
+        "Your password": "Şifren",
+        "A private key": "Özel anahtar"
       }
     },
     "crypto:90": {
       "question": "'KYC' ne anlama geliyor?",
       "answers": {
-        "Keep Your Coins": "Paralarınızı Koruyun",
-        "Know Your Customer": "Müşterinizi Tanıyın",
-        "Key Yield Contract": "Anahtar Getiri Sözleşmesi",
-        "Known Yield Curve": "Bilinen Getiri Eğrisi"
+        "Keep Your Coins": "Keep Your Coins",
+        "Know Your Customer": "Know Your Customer",
+        "Key Yield Contract": "Key Yield Contract",
+        "Known Yield Curve": "Known Yield Curve"
       }
     },
     "crypto:91": {
@@ -997,10 +997,10 @@
     "crypto:92": {
       "question": "'PoS' ne anlama geliyor?",
       "answers": {
-        "Proof of Speed": "Hız Kanıtı",
-        "Proof of Stake": "Hisse Kanıtı",
-        "Point of Sale": "Satış Noktası",
-        "Proof of Storage": "Depolama Kanıtı"
+        "Proof of Speed": "Proof of Speed",
+        "Proof of Stake": "Proof of Stake",
+        "Point of Sale": "Point of Sale",
+        "Proof of Storage": "Proof of Storage"
       }
     },
     "crypto:93": {
@@ -1045,16 +1045,16 @@
         "Last block": "Son blok",
         "First block of a blockchain": "Bir blockchain'in ilk bloğu",
         "A wallet": "Bir cüzdan",
-        "A token": "Bir jeton"
+        "A token": "Bir token"
       }
     },
     "crypto:98": {
       "question": "'YG' ne anlama geliyor?",
       "answers": {
-        "Return On Investment": "Yatırım Getirisi",
-        "Rate Of Interest": "Faiz Oranı",
-        "Risk Of Inflation": "Enflasyon Riski",
-        "Ratio Of Income": "Gelir Oranı"
+        "Return On Investment": "Return On Investment",
+        "Rate Of Interest": "Rate Of Interest",
+        "Risk Of Inflation": "Risk Of Inflation",
+        "Ratio Of Income": "Ratio Of Income"
       }
     },
     "crypto:99": {
@@ -1076,7 +1076,7 @@
       }
     },
     "sports:1": {
-      "question": "Hangi sporda smaç yaparsınız?",
+      "question": "Hangi sporda smaç yapılır?",
       "answers": {
         "Tennis": "Tenis",
         "Basketball": "Basketbol",
@@ -1600,7 +1600,7 @@
     "sports:59": {
       "question": "Beyzbol a şeklindeki bir sahada oynanır?",
       "answers": {
-        "Circle": "Daire",
+        "Circle": "Circle",
         "Diamond": "Elmas",
         "Square": "Kare",
         "Triangle": "Üçgen"
@@ -1868,7 +1868,7 @@
       }
     },
     "sports:89": {
-      "question": "Futbol sahasında toplam kaç oyuncu (her iki takım) oyuna başlıyor?",
+      "question": "Futbol maçının başında iki takımda toplam kaç oyuncu sahada olur?",
       "answers": {
         "18": "18",
         "20": "20",
@@ -2093,7 +2093,7 @@
       }
     },
     "art:12": {
-      "question": "'Davut' mermer heykeli kim tarafından yapıldı?",
+      "question": "Davut adlı mermer heykeli kim yaptı?",
       "answers": {
         "Bernini": "Bernini",
         "Michelangelo": "Michelangelo",
@@ -2277,7 +2277,7 @@
       "answers": {
         "Marble": "Mermer",
         "Plastic": "Plastik",
-        "Paper": "Kağıt",
+        "Paper": "Kâğıt",
         "Glass": "Cam"
       }
     },
@@ -2453,12 +2453,12 @@
       }
     },
     "art:52": {
-      "question": "'Duvar resmi' bir resim üzerine yapılan resim midir?",
+      "question": "Duvar resmi hangi yüzeye yapılır?",
       "answers": {
         "Small canvas": "Küçük tuval",
         "Wall": "Duvar",
-        "Plate": "Plaka",
-        "Paper": "Kağıt"
+        "Plate": "Tabak",
+        "Paper": "Kâğıt"
       }
     },
     "art:53": {
@@ -2692,7 +2692,7 @@
         "Paper folding": "Kağıt katlama",
         "Metalwork": "Metal işleri",
         "Glassblowing": "Cam üfleme",
-        "Painting": "Boyama"
+        "Painting": "Resim"
       }
     },
     "art:79": {
@@ -2714,7 +2714,7 @@
       }
     },
     "art:81": {
-      "question": "Kanagawa Açıklarındaki Büyük Dalga ünlü bir Japon mudur?",
+      "question": "Kanagawa’nın Büyük Dalgası ne tür bir Japon sanat eseridir?",
       "answers": {
         "Sculpture": "Heykel",
         "Woodblock print": "Tahta baskı",
@@ -2777,9 +2777,9 @@
       }
     },
     "art:88": {
-      "question": "'Venüs de Milo' ünlü bir antik mi?",
+      "question": "Milo Venüsü ne tür bir antik sanat eseridir?",
       "answers": {
-        "Painting": "Boyama",
+        "Painting": "Resim",
         "Statue": "Heykel",
         "Vase": "Vazo",
         "Mosaic": "Mozaik"
@@ -2844,7 +2844,7 @@
       "answers": {
         "Canvas": "Kanvas",
         "Wet plaster": "Islak sıva",
-        "Paper": "Kağıt",
+        "Paper": "Kâğıt",
         "Wood panel": "Ahşap panel"
       }
     },
@@ -2993,7 +2993,7 @@
       }
     },
     "history:12": {
-      "question": "Soğuk Savaş esas olarak ABD ile?",
+      "question": "Soğuk Savaş esas olarak ABD ile hangi devlet arasında yaşandı?",
       "answers": {
         "China": "Çin",
         "USSR": "SSCB",
@@ -3353,7 +3353,7 @@
       }
     },
     "history:52": {
-      "question": "Christopher Columbus bayrağı altında mı yola çıktı?",
+      "question": "Kristof Kolomb hangi ülkenin bayrağı altında denize açıldı?",
       "answers": {
         "Portugal": "Portekiz",
         "Spain": "İspanya",
@@ -3677,7 +3677,7 @@
       }
     },
     "history:88": {
-      "question": "Ortaçağ dönemi aynı zamanda?",
+      "question": "Orta Çağ dönemi başka hangi adla bilinir?",
       "answers": {
         "Middle Ages": "Orta Çağ",
         "Stone Age": "Taş Devri",
@@ -3832,7 +3832,7 @@
     "science:5": {
       "question": "Altının kimyasal sembolü nedir?",
       "answers": {
-        "Go": "Git",
+        "Go": "Go",
         "Gd": "Tanrım",
         "Au": "Au",
         "Ag": "Ag"
@@ -4253,7 +4253,7 @@
       }
     },
     "science:52": {
-      "question": "Maddenin üç ortak durumu nedir?",
+      "question": "Maddenin üç temel hâli nedir?",
       "answers": {
         "Hot, cold, warm": "Sıcak, soğuk, ılık",
         "Solid, liquid, gas": "Katı, sıvı, gaz",
@@ -5477,7 +5477,7 @@
       }
     },
     "geography:88": {
-      "question": "Mısır'ın başkenti neresinde yer alır?",
+      "question": "Mısır’ın başkenti Kahire hangi nehrin kıyısında yer alır?",
       "answers": {
         "Tigris River": "Dicle Nehri",
         "Nile River": "Nil Nehri",

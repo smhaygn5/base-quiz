@@ -137,7 +137,7 @@ export function LeaderboardTable({
       </div>
 
       <div className="leaderboard-footer-note">
-        <span>{t("leaderboard.players", { count: formatNumber(rows.length) })}</span>
+        <span>{t("leaderboard.players", { count: rows.length })}</span>
         <span>{t("leaderboard.verified")}</span>
       </div>
     </section>

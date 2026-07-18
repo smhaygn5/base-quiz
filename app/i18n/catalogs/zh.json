@@ -20,13 +20,13 @@
     "common.unmute": "取消静音",
     "home.kicker": "链上知识问答 · Base",
     "home.titleLine1": "每日知识问答。",
-    "home.titleLine2": "构建于 Base。",
-    "home.description": "选择一个类别，回答五道问题并与时间赛跑。保持连续答题记录，将分数保存到链上，并登上全球排行榜。",
+    "home.titleLine2": "基于 Base 构建。",
+    "home.description": "选择一个类别，在规定时间内回答五道题。保持连续答题记录，将分数保存到链上，并登上全球排行榜。",
     "home.streak": "连续 {count} 天",
     "home.confirmWallet": "在钱包中确认...",
     "home.startRound": "开始回合",
     "home.leaderboard": "排行榜",
-    "home.streakBadges": "连胜徽章",
+    "home.streakBadges": "连续答题徽章",
     "home.facts": "5 道题 · 每题 15 秒 · 分数保存到链上",
     "category.pick": "选择一个类别",
     "category.meta": "{count} 道题 · 每轮 5 道",
@@ -34,117 +34,117 @@
     "category.previous": "上一类别",
     "category.next": "下一类别",
     "category.imageAlt": "{category} 测验类别",
-    "category.crypto.name": "加密货币",
-    "category.crypto.description": "测试您对 Base、Ethereum、钱包、DeFi 以及塑造 onchain 世界的文化的了解。",
+    "category.crypto.name": "加密",
+    "category.crypto.description": "测试你对 Base、Ethereum、钱包、DeFi 和链上文化的了解。",
     "category.sports.name": "体育运动",
     "category.sports.description": "从足球和篮球到网球和奥运会——看看你的运动记忆有多强。",
     "category.art.name": "艺术",
-    "category.art.description": "探索绘画、艺术家、运动以及改变几代人视觉文化的想法。",
+    "category.art.description": "探索影响数代视觉文化的作品、艺术家、流派与思想。",
     "category.history.name": "历史",
-    "category.history.description": "穿越各个文明、转折点以及那些决定塑造世界的人们。",
+    "category.history.description": "穿越不同文明与历史转折点，了解那些塑造世界的人。",
     "category.science.name": "科学",
-    "category.science.description": "在物理、生物、化学和解释事物运作原理的发现中挑战自己。",
+    "category.science.description": "挑战物理、生物、化学以及解释世界运行方式的科学发现。",
     "category.geography.name": "地理",
-    "category.geography.description": "从我们星球的每个角落导航国家、首都、海洋和地标。",
+    "category.geography.description": "探索世界各地的国家、首都、海洋和地标。",
     "quiz.fallbackName": "测验",
     "quiz.questionProgress": "第 {current}/{total} 题",
     "quiz.score": "分数",
     "quiz.time": "时间",
-    "quiz.answeredAria": "{answered} 或 {total} 问题的解答",
+    "quiz.answeredAria": "已回答 {answered}/{total} 题",
     "quiz.chooseCorrect": "选择正确答案",
     "quiz.correct": "正确答案",
     "quiz.wrong": "错误答案",
     "quiz.points": "+{points} 积分",
     "quiz.correctOption": "正确选项：{option}",
-    "quiz.autoNote": "回答一次·下一个问题自动加载",
+    "quiz.autoNote": "每题只能回答一次 · 下一题将自动出现",
     "result.roundComplete": "回合完成",
     "result.finalScore": "你的最终成绩",
-    "result.points": "点",
+    "result.points": "分",
     "result.summaryAria": "回合总结",
     "result.categoryPill": "{category} 类别",
     "result.streakPill": "连续 {count} 天",
     "result.roundCompletedTitle": "回合已完成",
-    "result.roundCompletedDetail": "回答了五个问题。您的最终结果已准备就绪。",
-    "result.streakUpdatedTitle": "连胜更新",
-    "result.streakUpdatedDetail": "您现在正在进行 {count} 天的连续学习。",
+    "result.roundCompletedDetail": "五道题已答完。最终结果已生成。",
+    "result.streakUpdatedTitle": "连续记录已更新",
+    "result.streakUpdatedDetail": "你已连续答题 {count} 天。",
     "result.save.idle.title": "保存你的分数",
-    "result.save.idle.detail": "在 Base 上记录此结果并加入全球排行榜。",
-    "result.save.pending.title": "确认您的分数",
+    "result.save.idle.detail": "将本次结果保存到 Base，加入全球排行榜。",
+    "result.save.pending.title": "确认分数",
     "result.save.pending.detail": "批准钱包中的交易以完成保存。",
-    "result.save.done.title": "分数已保存 onchain",
-    "result.save.done.detail": "您的结果已在 Base 上得到验证，并已准备好进入排行榜。",
-    "result.save.error.title": "保存需要注意",
+    "result.save.done.title": "分数已保存到链上",
+    "result.save.done.detail": "结果已在 Base 上验证，并计入排行榜。",
+    "result.save.error.title": "保存失败",
     "result.save.error.detail": "查看下面的消息，然后再次尝试交易。",
     "result.save.disconnected.title": "连接以保存",
-    "result.save.disconnected.detail": "选择一个钱包来记录您在 Base 上的分数。",
+    "result.save.disconnected.detail": "选择一个钱包，将分数保存到 Base。",
     "result.shareTitle": "分享你的结果",
-    "result.shareDetail": "在 Farcaster 或 X 上挑战您的朋友。",
+    "result.shareDetail": "在 Farcaster 或 X 上向好友发起挑战。",
     "result.replayKicker": "保持势头",
-    "result.replayTitle": "准备好进行另一轮比赛了吗？",
+    "result.replayTitle": "准备好再来一轮了吗？",
     "result.replayDetail": "再次玩 {category} 或选择不同的挑战。",
     "result.playAgain": "再玩一次",
     "result.chooseCategory": "选择类别",
-    "result.saveButton": "保存分数 onchain",
+    "result.saveButton": "保存分数到链上",
     "result.confirming": "正在确认…",
-    "result.saved": "已保存 onchain",
+    "result.saved": "已保存到链上",
     "result.viewTransaction": "查看交易",
     "result.shareScore": "分享分数",
     "result.copyText": "复制文本",
     "result.copied": "已复制到剪贴板！",
     "leaderboard.kicker": "Base Mainnet · 历史总榜",
     "leaderboard.title": "排行榜",
-    "leaderboard.description": "排名靠前的玩家按 onchain 总分排名。",
-    "leaderboard.loading": "读取 Base 的乐谱...",
-    "leaderboard.empty": "还没有分数。成为棋盘上的第一个玩家。",
+    "leaderboard.description": "玩家按链上累计总分排名。",
+    "leaderboard.loading": "正在从 Base 读取分数…",
+    "leaderboard.empty": "还没有分数。成为第一个上榜的玩家吧。",
     "leaderboard.player": "玩家",
     "leaderboard.totalScore": "总分",
     "leaderboard.bestScore": "最好成绩",
-    "leaderboard.streak": "连胜",
+    "leaderboard.streak": "连续天数",
     "leaderboard.badges": "徽章",
     "leaderboard.you": "你",
     "leaderboard.noBadges": "没有徽章",
     "leaderboard.badgeTitle": "{name} 徽章",
     "leaderboard.players": "{count} 名玩家",
-    "leaderboard.verified": "分数和徽章已验证 onchain",
+    "leaderboard.verified": "分数和徽章均已在链上验证",
     "badges.kicker": "连续答题 NFT · Base Mainnet",
     "badges.title": "徽章",
-    "badges.roadmapTitle": "连胜徽章路线图",
-    "badges.roadmapDescription": "继续玩，增加你的连胜记录，并获得每个 onchain 里程碑。",
+    "badges.roadmapTitle": "连续答题徽章",
+    "badges.roadmapDescription": "继续答题、延长连续记录，并领取每个链上里程碑奖励。",
     "badges.streak": "连续 {count} 天",
     "badges.walletRequired": "需要钱包",
-    "badges.connectTitle": "连接以查看并领取您的徽章",
-    "badges.connectDetail": "您的连胜和 NFT 所有权直接从 Base 读取。",
+    "badges.connectTitle": "连接钱包以查看和领取徽章",
+    "badges.connectDetail": "连续记录和 NFT 持有情况将直接从 Base 读取。",
     "badges.days": "{count} 天",
-    "badges.bronze.name": "铜牌",
-    "badges.bronze.description": "完成您的第一次 3 天跑步",
-    "badges.silver.name": "银牌",
-    "badges.silver.description": "保持连续一周",
+    "badges.bronze.name": "青铜",
+    "badges.bronze.description": "首次连续答题 3 天",
+    "badges.silver.name": "白银",
+    "badges.silver.description": "连续答题 7 天",
     "badges.gold.name": "黄金",
-    "badges.gold.description": "建立持续 30 天的连续记录",
+    "badges.gold.description": "连续答题 30 天",
     "badges.diamond.name": "钻石",
-    "badges.diamond.description": "达到最终的 100 天里程碑",
-    "badges.unlock": "连续解锁 {count} 天",
-    "badges.owned": "拥有",
+    "badges.diamond.description": "连续答题 100 天",
+    "badges.unlock": "连续 {count} 天后解锁",
+    "badges.owned": "已获得",
     "badges.claim": "领取徽章",
-    "badges.claiming": "声称…",
-    "badges.daysLeft": "{count} 剩余天数",
-    "badges.locked": "锁定",
-    "badges.loading": "读取 Base 的徽章...",
+    "badges.claiming": "领取中…",
+    "badges.daysLeft": "还差 {count} 天",
+    "badges.locked": "未解锁",
+    "badges.loading": "正在从 Base 读取徽章…",
     "wallet.connectTitle": "连接钱包",
     "wallet.browserWallets": "浏览器钱包",
     "wallet.recommended": "推荐",
     "tutorial.welcomeTitle": "欢迎。",
-    "tutorial.welcomeDetail": "Base 上的每日问答游戏。测试您的知识，建立连胜，并在全球范围内竞争。",
-    "tutorial.questionsTitle": "5 个问题。日常的。",
-    "tutorial.questionsDetail": "快速回答——更快意味着更多积分。保存您的分数 onchain 以出现在全球排行榜上。",
+    "tutorial.welcomeDetail": "Base 上的每日知识问答。测试知识、保持连续答题，并与全球玩家竞争。",
+    "tutorial.questionsTitle": "每天 5 道题。",
+    "tutorial.questionsDetail": "答得越快，得分越高。将分数保存到链上即可进入全球排行榜。",
     "tutorial.badgesTitle": "获得 NFT 徽章。",
-    "tutorial.badgesDetail": "保持您的连胜并领取 onchain NFTs：青铜 (3d)、白银 (7d)、黄金 (30d)、钻石 (100d)。",
-    "tutorial.letsPlay": "我们来玩吧",
+    "tutorial.badgesDetail": "保持连续答题并领取链上 NFT：青铜（3 天）、白银（7 天）、黄金（30 天）、钻石（100 天）。",
+    "tutorial.letsPlay": "开始答题",
     "footer.blockData": "区块数据 · BASE MAINNET",
     "footer.playersOnchain": "{count} 名链上玩家",
-    "share.text": "🧠 我在 Base Quiz 上获得了 {score} 积分！ 🔥 连胜：{streak} 天\n\n你觉得你能打败我吗？ 👇",
+    "share.text": "🧠 我在 Base Quiz 获得了 {score} 分！🔥 连续答题：{streak} 天\n\n你能超过我吗？👇",
     "error.startFailed": "该回合无法开始。请再试一次。",
-    "error.startCancelled": "交易已取消。确认后即可开始回合。",
+    "error.startCancelled": "交易已取消。确认交易后即可开始本轮。",
     "error.signatureCancelled": "钱包签名已取消。请签署消息以继续。",
     "error.signatureFailed": "无法验证钱包签名，请重试。",
     "error.saveFailed": "分数无法保存。请再试一次。",
@@ -152,11 +152,11 @@
     "error.claimFailed": "徽章无法领取。请再试一次。",
     "activation.kicker": "Base Quiz 设置",
     "activation.title": "激活回合合约",
-    "activation.copy": "这一一次性 Base 交易部署了 Start Round 使用的小型合约。它不会更改分数、条纹、徽章或转移 ETH。",
-    "activation.checking": "检查合同...",
+    "activation.copy": "这笔一次性的 Base 交易会部署“开始回合”所需的小型合约。它不会更改分数、连续记录或徽章，也不会转移 ETH。",
+    "activation.checking": "正在检查合约…",
     "activation.active": "回合合约已激活",
     "activation.connected": "已连接：{address}",
-    "activation.confirming": "正在确认 Base...",
+    "activation.confirming": "正在 Base 上确认…",
     "activation.activate": "激活回合合约",
     "activation.pendingTransaction": "查看待处理交易",
     "activation.back": "返回 Base Quiz",
@@ -169,9 +169,9 @@
     "crypto:0": {
       "question": "哪家公司开发了 Base？",
       "answers": {
-        "Binance": "币安",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
-        "Kraken": "海妖",
+        "Kraken": "Kraken",
         "OKX": "OKX"
       }
     },
@@ -181,16 +181,16 @@
         "Bitcoin": "比特币",
         "Solana": "索拉纳",
         "Ethereum": "Ethereum",
-        "Avalanche": "雪崩"
+        "Avalanche": "Avalanche"
       }
     },
     "crypto:2": {
       "question": "Base 使用哪个技术堆栈？",
       "answers": {
-        "OP Stack": "操作栈",
+        "OP Stack": "OP Stack",
         "zkSync": "zkSync",
-        "Polygon CDK": "多边形 CDK",
-        "Arbitrum Nitro": "仲裁硝基"
+        "Polygon CDK": "Polygon CDK",
+        "Arbitrum Nitro": "Arbitrum Nitro"
       }
     },
     "crypto:3": {
@@ -206,7 +206,7 @@
       "question": "Base 上的汽油费使用哪种代币？",
       "answers": {
         "USDC": "USDC",
-        "BASE": "基础",
+        "BASE": "BASE",
         "ETH": "ETH",
         "OP": "操作"
       }
@@ -216,8 +216,8 @@
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
-        "Rainbow": "彩虹",
-        "Phantom": "幻影"
+        "Rainbow": "Rainbow",
+        "Phantom": "Phantom"
       }
     },
     "crypto:6": {
@@ -241,10 +241,10 @@
     "crypto:8": {
       "question": "Base 属于哪个超级链？",
       "answers": {
-        "Polygon Superchain": "多边形超级链",
-        "Optimism Superchain": "乐观超级链",
-        "Arbitrum Orbit": "任意轨道",
-        "zkSync Hyperchain": "zkSync 超链"
+        "Polygon Superchain": "Polygon Superchain",
+        "Optimism Superchain": "Optimism Superchain",
+        "Arbitrum Orbit": "Arbitrum Orbit",
+        "zkSync Hyperchain": "zkSync Hyperchain"
       }
     },
     "crypto:9": {
@@ -253,7 +253,7 @@
         "A standalone L1": "独立的 L1",
         "An Ethereum L2 rollup": "Ethereum L2 汇总",
         "A sidechain": "侧链",
-        "A bridge protocol": "桥接协议"
+        "A bridge protocol": "跨链桥协议"
       }
     },
     "crypto:10": {
@@ -266,12 +266,12 @@
       }
     },
     "crypto:11": {
-      "question": "Base 上的智能合约是用什么编写的？",
+      "question": "Base 上的智能合约通常使用哪种语言编写？",
       "answers": {
         "Python": "Python",
-        "Rust": "铁锈",
-        "Solidity": "坚固性",
-        "Go": "去"
+        "Rust": "Rust",
+        "Solidity": "Solidity",
+        "Go": "Go"
       }
     },
     "crypto:12": {
@@ -296,7 +296,7 @@
       "question": "Ethereum 使用什么共识？",
       "answers": {
         "Proof of Work": "工作量证明",
-        "Proof of Stake": "权益证明",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Authority": "授权证明",
         "Proof of History": "历史证明"
       }
@@ -307,22 +307,22 @@
         "A wallet type": "钱包类型",
         "Ethereum's execution engine": "Ethereum 的执行引擎",
         "A token standard": "代币标准",
-        "A bridge": "一座桥"
+        "A bridge": "跨链桥"
       }
     },
     "crypto:16": {
       "question": "哪一个不是 Ethereum 的 L2？",
       "answers": {
         "Base": "Base",
-        "Arbitrum": "仲裁",
+        "Arbitrum": "Arbitrum",
         "Solana": "索拉纳",
-        "Optimism": "乐观"
+        "Optimism": "Optimism"
       }
     },
     "crypto:17": {
       "question": "“气体”指的是什么？",
       "answers": {
-        "A token": "令牌",
+        "A token": "代币",
         "Transaction fee unit": "交易手续费单位",
         "A wallet": "钱包",
         "An NFT type": "NFT 类型"
@@ -385,7 +385,7 @@
     "crypto:24": {
       "question": "比特币使用哪种共识？",
       "answers": {
-        "Proof of Stake": "权益证明",
+        "Proof of Stake": "Proof of Stake",
         "Proof of Work": "工作证明",
         "Proof of Authority": "授权证明",
         "DPoS": "DPoS"
@@ -394,10 +394,10 @@
     "crypto:25": {
       "question": "DeFi 代表什么？",
       "answers": {
-        "Defined Finance": "定义金融",
-        "Decentralized Finance": "去中心化金融",
-        "Defaulted Finance": "违约财务",
-        "Deferred Finance": "递延融资"
+        "Defined Finance": "Defined Finance",
+        "Decentralized Finance": "Decentralized Finance",
+        "Defaulted Finance": "Defaulted Finance",
+        "Deferred Finance": "Deferred Finance"
       }
     },
     "crypto:26": {
@@ -406,7 +406,7 @@
         "Lending platform": "借贷平台",
         "DEX (decentralized exchange)": "DEX（去中心化交易所）",
         "Wallet": "钱包",
-        "Bridge": "桥"
+        "Bridge": "跨链桥"
       }
     },
     "crypto:27": {
@@ -421,10 +421,10 @@
     "crypto:28": {
       "question": "TVL 是什么意思？",
       "answers": {
-        "Token Value Locked": "代币价值锁定",
-        "Total Value Locked": "锁定总价值",
-        "Trade Volume Limit": "交易量限制",
-        "Tier Volume Level": "层音量级别"
+        "Token Value Locked": "Token Value Locked",
+        "Total Value Locked": "Total Value Locked",
+        "Trade Volume Limit": "Trade Volume Limit",
+        "Tier Volume Level": "Tier Volume Level"
       }
     },
     "crypto:29": {
@@ -439,7 +439,7 @@
     "crypto:30": {
       "question": "什么是单产农业？",
       "answers": {
-        "Mining crops": "采矿作物",
+        "Mining crops": "种植作物",
         "Earning rewards from DeFi protocols": "从 DeFi 协议中赚取奖励",
         "A staking pool name": "质押池名称",
         "An NFT minting term": "NFT 铸造术语"
@@ -448,8 +448,8 @@
     "crypto:31": {
       "question": "哪家公司发行 USDC？",
       "answers": {
-        "Tether": "系链",
-        "Circle": "圆",
+        "Tether": "Tether",
+        "Circle": "Circle",
         "Coinbase": "Coinbase",
         "Paxos": "Paxos"
       }
@@ -457,8 +457,8 @@
     "crypto:32": {
       "question": "哪家公司发行 USDT？",
       "answers": {
-        "Circle": "圆",
-        "Tether": "系链",
+        "Circle": "Circle",
+        "Tether": "Tether",
         "Coinbase": "Coinbase",
         "MakerDAO": "MakerDAO"
       }
@@ -484,10 +484,10 @@
     "crypto:35": {
       "question": "NFT 代表什么？",
       "answers": {
-        "New Finance Token": "新金融代币",
-        "Non-Fungible Token": "不可替代代币",
-        "Network File Transfer": "网络文件传输",
-        "Node Function Type": "节点函数类型"
+        "New Finance Token": "New Finance Token",
+        "Non-Fungible Token": "Non-Fungible Token",
+        "Network File Transfer": "Network File Transfer",
+        "Node Function Type": "Node Function Type"
       }
     },
     "crypto:36": {
@@ -518,12 +518,12 @@
       }
     },
     "crypto:39": {
-      "question": "钱包的密语叫什么？",
+      "question": "钱包的秘密恢复词叫什么？",
       "answers": {
         "Public key": "公钥",
-        "Seed phrase": "种子短语",
+        "Seed phrase": "助记词",
         "Hash": "哈希",
-        "Nonce": "随机数"
+        "Nonce": "Nonce"
       }
     },
     "crypto:40": {
@@ -532,14 +532,14 @@
         "A mobile app": "移动应用程序",
         "A physical device for storing keys": "用于存储密钥的物理设备",
         "A browser extension": "浏览器扩展",
-        "An exchange account": "兑换账户"
+        "An exchange account": "交易所账户"
       }
     },
     "crypto:41": {
-      "question": "您永远不应该分享您的？",
+      "question": "哪项信息绝对不能分享？",
       "answers": {
         "Wallet address": "钱包地址",
-        "Seed phrase": "种子短语",
+        "Seed phrase": "助记词",
         "ENS name": "ENS 名称",
         "Username": "用户名"
       }
@@ -547,7 +547,7 @@
     "crypto:42": {
       "question": "自托管意味着什么？",
       "answers": {
-        "Exchange holds your keys": "交易所持有您的密钥",
+        "Exchange holds your keys": "交易所保管你的密钥",
         "You control your private keys": "您控制您的私钥",
         "A bank holds your keys": "银行保管着您的钥匙",
         "A friend holds your keys": "朋友保管着您的钥匙"
@@ -556,7 +556,7 @@
     "crypto:43": {
       "question": "MetaMask 主要是一个？",
       "answers": {
-        "Exchange": "交换",
+        "Exchange": "交易所",
         "Browser wallet": "浏览器钱包",
         "Hardware wallet": "硬件钱包",
         "L2 chain": "L2 链"
@@ -565,7 +565,7 @@
     "crypto:44": {
       "question": "Farcaster 是什么？",
       "answers": {
-        "An exchange": "交换",
+        "An exchange": "交易所",
         "A decentralized social network": "去中心化社交网络",
         "A wallet": "钱包",
         "A game": "一场游戏"
@@ -599,30 +599,30 @@
       }
     },
     "crypto:48": {
-      "question": "Base App 上的迷你应用程序是用什么构建的？",
+      "question": "Base App 中的 Mini Apps 使用什么工具构建？",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit / OnchainKit",
-        "Flutter only": "仅适用于颤振",
+        "Flutter only": "仅 Flutter",
         "Native iOS only": "仅限本机 iOS",
-        "Unity": "统一"
+        "Unity": "Unity"
       }
     },
     "crypto:49": {
-      "question": "区块链交易哈希也叫？",
+      "question": "区块链交易哈希还叫什么？",
       "answers": {
-        "Nonce": "随机数",
-        "TX ID": "发送 ID",
+        "Nonce": "Nonce",
+        "TX ID": "TX ID",
         "Block height": "块高度",
-        "Gas limit": "气体限制"
+        "Gas limit": "Gas 上限"
       }
     },
     "crypto:50": {
       "question": "DAO 代表什么？",
       "answers": {
-        "Digital Asset Order": "数字资产订单",
-        "Decentralized Autonomous Organization": "去中心化自治组织",
-        "Distributed App Output": "分布式应用程序输出",
-        "Data Access Object": "数据访问对象"
+        "Digital Asset Order": "Digital Asset Order",
+        "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
+        "Distributed App Output": "Distributed App Output",
+        "Data Access Object": "Data Access Object"
       }
     },
     "crypto:51": {
@@ -631,7 +631,7 @@
         "A mining tool": "挖矿工具",
         "A site to view onchain data": "查看链上数据的站点",
         "A wallet type": "钱包类型",
-        "A bridge": "一座桥"
+        "A bridge": "跨链桥"
       }
     },
     "crypto:52": {
@@ -667,7 +667,7 @@
         "Sell quickly": "快速出售",
         "Hold long-term": "长期持有",
         "A hardware wallet": "硬件钱包",
-        "A type of token": "一种令牌"
+        "A type of token": "一种代币"
       }
     },
     "crypto:56": {
@@ -683,8 +683,8 @@
       "question": "区块链上的 Gas 费用支付给谁？",
       "answers": {
         "Developers": "开发人员",
-        "Network validators/miners": "网络验证器/矿工",
-        "Exchanges": "交换",
+        "Network validators/miners": "网络验证者或矿工",
+        "Exchanges": "交易所",
         "Banks": "银行"
       }
     },
@@ -700,36 +700,36 @@
     "crypto:59": {
       "question": "“DEX”代表什么？",
       "answers": {
-        "Digital Exchange": "数字交换",
-        "Decentralized Exchange": "去中心化交易所",
-        "Data Exchange": "数据交换",
-        "Direct Exchange": "直接交换"
+        "Digital Exchange": "Digital Exchange",
+        "Decentralized Exchange": "Decentralized Exchange",
+        "Data Exchange": "Data Exchange",
+        "Direct Exchange": "Direct Exchange"
       }
     },
     "crypto:60": {
       "question": "“CEX”代表什么？",
       "answers": {
-        "Central Exchange": "中央交易所",
-        "Centralized Exchange": "中心化交易所",
-        "Crypto Exchange": "加密货币交易所",
-        "Coin Exchange": "硬币兑换"
+        "Central Exchange": "Central Exchange",
+        "Centralized Exchange": "Centralized Exchange",
+        "Crypto Exchange": "Crypto Exchange",
+        "Coin Exchange": "Coin Exchange"
       }
     },
     "crypto:61": {
-      "question": "什么是“质押”？",
+      "question": "什么是质押？",
       "answers": {
         "Selling tokens": "出售代币",
         "Locking tokens to support a network for rewards": "锁定代币以支持奖励网络",
-        "Mining coins": "挖矿币",
+        "Mining coins": "挖矿",
         "Burning tokens": "燃烧代币"
       }
     },
     "crypto:62": {
-      "question": "什么是“私钥”？",
+      "question": "什么是私钥？",
       "answers": {
-        "Your public address": "您的公共地址",
-        "A secret that controls your funds": "控制您资金的秘密",
-        "An exchange password": "交换密码",
+        "Your public address": "你的公开地址",
+        "A secret that controls your funds": "控制你资产的秘密信息",
+        "An exchange password": "交易所密码",
         "A transaction id": "交易 ID"
       }
     },
@@ -739,7 +739,7 @@
         "Real transactions": "真实交易",
         "Testing without real value": "没有实际价值的测试",
         "Storing coins": "存储硬币",
-        "Mining Bitcoin": "挖掘比特币"
+        "Mining Bitcoin": "挖 Bitcoin"
       }
     },
     "crypto:64": {
@@ -817,10 +817,10 @@
     "crypto:72": {
       "question": "“DYOR”是什么意思？",
       "answers": {
-        "Do Your Own Research": "自己研究",
-        "Deposit Your Own Reserves": "存入您自己的储备金",
-        "Don't Yield On Returns": "不要回报",
-        "Data Yield Over Risk": "数据收益高于风险"
+        "Do Your Own Research": "Do Your Own Research",
+        "Deposit Your Own Reserves": "Deposit Your Own Reserves",
+        "Don't Yield On Returns": "Don't Yield On Returns",
+        "Data Yield Over Risk": "Data Yield Over Risk"
       }
     },
     "crypto:73": {
@@ -828,7 +828,7 @@
       "answers": {
         "Always-online wallet": "永远在线的钱包",
         "Offline wallet for storage": "离线钱包用于存储",
-        "Exchange wallet": "兑换钱包",
+        "Exchange wallet": "交易所钱包",
         "A stablecoin": "稳定币"
       }
     },
@@ -844,8 +844,8 @@
     "crypto:75": {
       "question": "'Gwei' 是用来测量的？",
       "answers": {
-        "Token supply": "代币供应",
-        "Gas prices": "天然气价格",
+        "Token supply": "代币供应量",
+        "Gas prices": "Gas 价格",
         "Block size": "块大小",
         "Wallet balance": "钱包余额"
       }
@@ -855,7 +855,7 @@
       "answers": {
         "Staking": "质押",
         "Providing liquidity": "提供流动性",
-        "Mining": "采矿",
+        "Mining": "挖矿",
         "Holding": "持有"
       }
     },
@@ -873,17 +873,17 @@
       "answers": {
         "A wallet": "钱包",
         "A node that verifies transactions": "验证交易的节点",
-        "A token": "令牌",
-        "An exchange": "交换"
+        "A token": "代币",
+        "An exchange": "交易所"
       }
     },
     "crypto:79": {
       "question": "'ATH' 代表什么？",
       "answers": {
-        "All-Time High": "历史新高",
-        "Average Trade Height": "平均交易高度",
-        "Actual Token Holdings": "实际代币持有量",
-        "Auto Trade Handler": "自动交易处理程序"
+        "All-Time High": "All-Time High",
+        "Average Trade Height": "Average Trade Height",
+        "Actual Token Holdings": "Actual Token Holdings",
+        "Auto Trade Handler": "Auto Trade Handler"
       }
     },
     "crypto:80": {
@@ -899,7 +899,7 @@
       "question": "在工作量证明中，调用确认交易？",
       "answers": {
         "Staking": "质押",
-        "Mining": "采矿",
+        "Mining": "挖矿",
         "Bridging": "桥接",
         "Burning": "燃烧"
       }
@@ -916,7 +916,7 @@
     "crypto:83": {
       "question": "OnchainKit 是一个开发人员工具包？",
       "answers": {
-        "Binance": "币安",
+        "Binance": "Binance",
         "Coinbase": "Coinbase",
         "MetaMask": "MetaMask",
         "Uniswap": "Uniswap"
@@ -925,7 +925,7 @@
     "crypto:84": {
       "question": "设置“气体限制”？",
       "answers": {
-        "Token supply": "代币供应",
+        "Token supply": "代币供应量",
         "Max gas a transaction can use": "交易可以使用的最大气体",
         "Wallet size": "钱包大小",
         "Block reward": "区块奖励"
@@ -937,16 +937,16 @@
         "A base Layer-1": "基础层 1",
         "An Ethereum scaling solution": "Ethereum 缩放解决方案",
         "A wallet": "钱包",
-        "An exchange": "交换"
+        "An exchange": "交易所"
       }
     },
     "crypto:86": {
       "question": "交易中的“FOMO”是什么意思？",
       "answers": {
-        "Fear Of Missing Out": "害怕错过",
-        "Full Order Market Offer": "完整订单市场报价",
-        "Fixed Order Money Out": "固定订单资金支出",
-        "Fast Onchain Market Order": "快速链上市价单"
+        "Fear Of Missing Out": "Fear Of Missing Out",
+        "Full Order Market Offer": "Full Order Market Offer",
+        "Fixed Order Money Out": "Fixed Order Money Out",
+        "Fast Onchain Market Order": "Fast Onchain Market Order"
       }
     },
     "crypto:87": {
@@ -959,11 +959,11 @@
       }
     },
     "crypto:88": {
-      "question": "“第 2 层”解决方案主要旨在？",
+      "question": "Layer 2 解决方案的主要目标是什么？",
       "answers": {
-        "Replace Bitcoin": "替换比特币",
-        "Scale a Layer-1 with cheaper, faster txs": "通过更便宜、更快的交易扩展 Layer-1",
-        "Mine faster": "挖矿速度更快",
+        "Replace Bitcoin": "取代 Bitcoin",
+        "Scale a Layer-1 with cheaper, faster txs": "用更快、更便宜的交易扩展 Layer 1",
+        "Mine faster": "提高挖矿速度",
         "Issue stablecoins": "发行稳定币"
       }
     },
@@ -972,17 +972,17 @@
       "answers": {
         "Secret, never shared": "秘密，从未共享",
         "Public and shareable to receive funds": "公开且可共享以接收资金",
-        "Your password": "您的密码",
+        "Your password": "你的密码",
         "A private key": "私钥"
       }
     },
     "crypto:90": {
       "question": "“KYC”代表什么？",
       "answers": {
-        "Keep Your Coins": "保留你的硬币",
-        "Know Your Customer": "了解您的客户",
-        "Key Yield Contract": "关键收益合约",
-        "Known Yield Curve": "已知收益率曲线"
+        "Keep Your Coins": "Keep Your Coins",
+        "Know Your Customer": "Know Your Customer",
+        "Key Yield Contract": "Key Yield Contract",
+        "Known Yield Curve": "Known Yield Curve"
       }
     },
     "crypto:91": {
@@ -990,17 +990,17 @@
       "answers": {
         "A random word": "一个随机单词",
         "A per-account transaction counter": "每个账户的交易计数器",
-        "A token": "一个代币",
-        "A wallet": "一个钱包"
+        "A token": "代币",
+        "A wallet": "钱包"
       }
     },
     "crypto:92": {
       "question": "'PoS' 代表什么？",
       "answers": {
-        "Proof of Speed": "速度证明",
-        "Proof of Stake": "权益证明",
-        "Point of Sale": "销售点",
-        "Proof of Storage": "存储证明"
+        "Proof of Speed": "Proof of Speed",
+        "Proof of Stake": "Proof of Stake",
+        "Point of Sale": "Point of Sale",
+        "Proof of Storage": "Proof of Storage"
       }
     },
     "crypto:93": {
@@ -1045,16 +1045,16 @@
         "Last block": "最后一个块",
         "First block of a blockchain": "区块链的第一个区块",
         "A wallet": "钱包",
-        "A token": "令牌"
+        "A token": "代币"
       }
     },
     "crypto:98": {
       "question": "“投资回报率”代表什么？",
       "answers": {
-        "Return On Investment": "投资回报",
-        "Rate Of Interest": "利率",
-        "Risk Of Inflation": "通货膨胀风险",
-        "Ratio Of Income": "收入比率"
+        "Return On Investment": "Return On Investment",
+        "Rate Of Interest": "Rate Of Interest",
+        "Risk Of Inflation": "Risk Of Inflation",
+        "Ratio Of Income": "Ratio Of Income"
       }
     },
     "crypto:99": {
@@ -1076,7 +1076,7 @@
       }
     },
     "sports:1": {
-      "question": "您会在哪项运动中扣篮？",
+      "question": "扣篮是哪项运动中的动作？",
       "answers": {
         "Tennis": "网球",
         "Basketball": "篮球",
@@ -1600,7 +1600,7 @@
     "sports:59": {
       "question": "棒球是在形状像？的场地上进行的。",
       "answers": {
-        "Circle": "圆",
+        "Circle": "Circle",
         "Diamond": "钻石",
         "Square": "广场",
         "Triangle": "三角形"
@@ -1868,7 +1868,7 @@
       }
     },
     "sports:89": {
-      "question": "足球场上总共有多少名球员（两队）？",
+      "question": "足球比赛开始时，两队共有多少名球员在场上？",
       "answers": {
         "18": "18",
         "20": "20",
@@ -2093,7 +2093,7 @@
       }
     },
     "art:12": {
-      "question": "大理石雕像“大卫”是由谁雕刻的？",
+      "question": "大理石雕像《大卫》是谁创作的？",
       "answers": {
         "Bernini": "贝尔尼尼",
         "Michelangelo": "米开朗基罗",
@@ -2453,11 +2453,11 @@
       }
     },
     "art:52": {
-      "question": "“壁画”是在？",
+      "question": "壁画通常画在什么表面上？",
       "answers": {
         "Small canvas": "小画布",
         "Wall": "墙",
-        "Plate": "板",
+        "Plate": "盘子",
         "Paper": "纸"
       }
     },
@@ -2714,7 +2714,7 @@
       }
     },
     "art:81": {
-      "question": "神奈川冲浪里是日本著名的？",
+      "question": "《神奈川冲浪里》属于哪种日本艺术形式？",
       "answers": {
         "Sculpture": "雕塑",
         "Woodblock print": "木刻版画",
@@ -2777,7 +2777,7 @@
       }
     },
     "art:88": {
-      "question": "《米洛的维纳斯》是著名的古代作品吗？",
+      "question": "《米洛的维纳斯》属于哪种古代艺术品？",
       "answers": {
         "Painting": "绘画",
         "Statue": "雕像",
@@ -2993,7 +2993,7 @@
       }
     },
     "history:12": {
-      "question": "冷战主要发生在美国和？",
+      "question": "冷战主要发生在美国与哪个大国之间？",
       "answers": {
         "China": "中国",
         "USSR": "苏联",
@@ -3353,7 +3353,7 @@
       }
     },
     "history:52": {
-      "question": "克里斯托弗·哥伦布在以下国家的旗帜下航行？",
+      "question": "哥伦布航行时使用的是哪个国家的旗帜？",
       "answers": {
         "Portugal": "葡萄牙",
         "Spain": "西班牙",
@@ -3677,7 +3677,7 @@
       }
     },
     "history:88": {
-      "question": "中世纪时期也被称为？",
+      "question": "中世纪时期还有什么名称？",
       "answers": {
         "Middle Ages": "中世纪",
         "Stone Age": "石器时代",
@@ -3805,7 +3805,7 @@
     "science:2": {
       "question": "植物从空气中吸收什么气体？",
       "answers": {
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Carbon dioxide": "二氧化碳",
         "Nitrogen": "氮气",
         "Hydrogen": "氢"
@@ -3832,7 +3832,7 @@
     "science:5": {
       "question": "黄金的化学符号是什么？",
       "answers": {
-        "Go": "去",
+        "Go": "Go",
         "Gd": "Gd",
         "Au": "金",
         "Ag": "银"
@@ -3995,7 +3995,7 @@
       "question": "人类需要呼吸哪种气体才能生存？",
       "answers": {
         "Carbon dioxide": "二氧化碳",
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Nitrogen": "氮气",
         "Helium": "氦气"
       }
@@ -4075,7 +4075,7 @@
     "science:32": {
       "question": "地球大气层的大部分成分是哪种气体？",
       "answers": {
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Nitrogen": "氮气",
         "Carbon dioxide": "二氧化碳",
         "Hydrogen": "氢"
@@ -4149,7 +4149,7 @@
       "answers": {
         "Water": "水",
         "Genetic information": "遗传信息",
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Energy": "能源"
       }
     },
@@ -4337,7 +4337,7 @@
       "question": "植物在光合作用过程中释放什么气体？",
       "answers": {
         "Carbon dioxide": "二氧化碳",
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Nitrogen": "氮气",
         "Methane": "甲烷"
       }
@@ -4399,7 +4399,7 @@
     "science:68": {
       "question": "人类呼出的气体主要是哪种？",
       "answers": {
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Carbon dioxide": "二氧化碳",
         "Nitrogen only": "仅氮气",
         "Hydrogen": "氢"
@@ -4516,7 +4516,7 @@
     "science:81": {
       "question": "以下哪一项是惰性气体？",
       "answers": {
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Helium": "氦气",
         "Hydrogen": "氢",
         "Nitrogen": "氮气"
@@ -4579,7 +4579,7 @@
     "science:88": {
       "question": "宇宙中含量最丰富的元素是什么？",
       "answers": {
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Hydrogen": "氢",
         "Iron": "铁",
         "Carbon": "碳"
@@ -4642,7 +4642,7 @@
     "science:95": {
       "question": "除了阳光和水之外，植物还需要什么来制造食物？",
       "answers": {
-        "Oxygen": "氧气",
+        "Oxygen": "氧",
         "Carbon dioxide": "二氧化碳",
         "Nitrogen gas": "氮气",
         "Helium": "氦气"
@@ -5477,7 +5477,7 @@
       }
     },
     "geography:88": {
-      "question": "埃及首都位于哪里？",
+      "question": "埃及首都开罗位于哪条河沿岸？",
       "answers": {
         "Tigris River": "底格里斯河",
         "Nile River": "尼罗河",

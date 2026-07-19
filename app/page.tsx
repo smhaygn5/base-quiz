@@ -1769,7 +1769,7 @@ export default function Home() {
 
       <main
         className={`base-quiz-main${screen === "categories" ? " is-category-screen" : ""}`}
-        style={styles.main}
+        style={{ ...styles.main, justifyContent: screen === "start" ? "flex-start" : "center" }}
       >
         {screen === "start" && (
           <HomeHero

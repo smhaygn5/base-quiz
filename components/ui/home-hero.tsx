@@ -22,7 +22,17 @@ export function HomeHero({
 }: HomeHeroProps) {
   const { t } = useI18n();
 
+  const roadmap: { done: boolean; key: string }[] = [
+    { done: true, key: "launch" },
+    { done: true, key: "badges" },
+    { done: true, key: "categories" },
+    { done: false, key: "miniapp" },
+    { done: false, key: "daily" },
+    { done: false, key: "seasons" },
+  ];
+
   return (
+    <>
     <section className="home-hero" aria-labelledby="home-hero-title">
       <div className="home-hero-grid" aria-hidden="true" />
 
@@ -80,5 +90,30 @@ export function HomeHero({
         <p className="home-hero-facts">{t("home.facts")}</p>
       </div>
     </section>
+
+    <section className="home-roadmap" aria-label={t("home.roadmap.title")}>
+      <div className="home-roadmap-card">
+        <div className="home-roadmap-head">
+          <h2 className="home-roadmap-title">{t("home.roadmap.title")}</h2>
+          <p className="home-roadmap-subtitle">{t("home.roadmap.subtitle")}</p>
+        </div>
+        <div className="home-roadmap-scroll">
+          <div className="home-roadmap-track">
+            <div className="home-roadmap-line" aria-hidden="true" />
+            {roadmap.map((item) => (
+              <div key={item.key} className={`home-roadmap-item${item.done ? " is-done" : ""}`}>
+                <span className="home-roadmap-dot" aria-hidden="true"><span /></span>
+                <span className="home-roadmap-badge">
+                  {t(item.done ? "home.roadmap.shipped" : "home.roadmap.planned")}
+                </span>
+                <span className="home-roadmap-item-title">{t(`home.roadmap.${item.key}.title`)}</span>
+                <span className="home-roadmap-item-desc">{t(`home.roadmap.${item.key}.desc`)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
   );
 }

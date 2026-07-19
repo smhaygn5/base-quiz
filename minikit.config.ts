@@ -1,14 +1,8 @@
 const ROOT_URL =
   process.env.NEXT_PUBLIC_URL?.replace(/\/$/, "") ||
-  (process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`) ||
   "https://basequiz.xyz";
 
 export const minikitConfig = {
-  accountAssociation: {
-    header: "eyJmaWQiOjExMzYwNTYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgxMTA0N2IxZjJEQ2I3NjAwOWY2ZEZiOTRjMjA3NTY4Q2REMDRmZmVhIn0",
-    payload: "eyJkb21haW4iOiJiYXNlLXF1aXotdjVpcy52ZXJjZWwuYXBwIn0",
-    signature: "F977TzbtwqpOT5TWKEFGxez6gx7HYcTH10kH+Wsg3d0FSI7DGkCUvgm87RIwzZrFH9sFqgS0Pd1sZYAKvjT3CBs=",
-  },
   baseBuilder: {
     ownerAddress: "0x509549d76b75f58dfda659cfca25b234086ddd7f",
   },

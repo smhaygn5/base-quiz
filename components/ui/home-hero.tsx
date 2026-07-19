@@ -26,7 +26,7 @@ export function HomeHero({
     { done: true, key: "launch" },
     { done: true, key: "badges" },
     { done: true, key: "categories" },
-    { done: false, key: "miniapp" },
+    { done: true, key: "miniapp" },
     { done: false, key: "daily" },
     { done: false, key: "seasons" },
   ];

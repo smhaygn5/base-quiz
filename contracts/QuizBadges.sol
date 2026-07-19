@@ -39,7 +39,7 @@ contract QuizBadges is ERC1155, Ownable {
     event BadgeClaimed(address indexed player, uint256 indexed badgeId, uint256 streak);
 
     constructor(address _leaderboard)
-        ERC1155("https://base-quiz-v5is.vercel.app/api/badge/{id}.json")
+        ERC1155("https://basequiz.xyz/api/badge/{id}.json")
         Ownable(msg.sender)
     {
         leaderboard = ILeaderboard(_leaderboard);

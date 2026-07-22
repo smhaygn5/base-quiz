@@ -3,13 +3,13 @@
     "meta.title": "Base Quiz",
     "common.back": "Geri",
     "common.cancel": "İptal",
-    "common.next": "Sonraki",
+    "common.next": "İleri",
     "common.skip": "Atla",
     "common.tryAgain": "Tekrar dene",
     "common.connect": "Bağlan",
     "common.disconnect": "Bağlantıyı kes",
     "common.connectWallet": "Cüzdan bağla",
-    "common.connectBaseWallet": "Base Wallet’ı bağla",
+    "common.connectBaseWallet": "Base Wallet'ı bağla",
     "common.browserWallets": "Tarayıcı cüzdanları",
     "common.recommended": "Önerilen",
     "common.selectLanguage": "Dil seç",
@@ -20,56 +20,56 @@
     "common.unmute": "Sesi aç",
     "home.kicker": "Zincir üstü bilgi yarışması · Base",
     "home.titleLine1": "Günlük bilgi yarışması.",
-    "home.titleLine2": "Base üzerinde.",
-    "home.description": "Bir kategori seç, beş soruyu yanıtla ve zamana karşı yarış. Serini büyüt, puanını zincire kaydet ve dünya sıralamasında yüksel.",
+    "home.titleLine2": "Base’te.",
+    "home.description": "Bir kategori seç, beş soruyu yanıtla ve süre dolmadan en yüksek puanı toplamaya çalış. Serini geliştir, puanını Base’e kaydet ve genel liderlik tablosunda yüksel.",
     "home.streak": "{count} günlük seri",
     "home.confirmWallet": "Cüzdanında onayla…",
     "home.startRound": "Turu başlat",
     "home.leaderboard": "Liderlik tablosu",
     "home.streakBadges": "Seri rozetleri",
-    "home.facts": "5 soru · Her soru için 15 saniye · Puanlar zincire kaydedilir",
+    "home.facts": "5 soru · Her soru için 15 saniye · Puanlar Base’e kaydedilir",
     "home.roadmap.title": "Yol haritası",
-    "home.roadmap.subtitle": "Yaptıklarımız ve sırada olanlar",
+    "home.roadmap.subtitle": "Yayınlananlar ve sıradaki yenilikler",
     "home.roadmap.shipped": "Yayında",
-    "home.roadmap.planned": "Planlanıyor",
-    "home.roadmap.launch.title": "Onchain lansman",
-    "home.roadmap.launch.desc": "Puanlar Base'e kaydediliyor, küresel liderlik tablosu",
-    "home.roadmap.badges.title": "Seri & rozetler",
+    "home.roadmap.planned": "Sırada",
+    "home.roadmap.launch.title": "Base Mainnet’te yayın",
+    "home.roadmap.launch.desc": "Base’e kaydedilen puanlar ve genel liderlik tablosu",
+    "home.roadmap.badges.title": "Seriler ve rozetler",
     "home.roadmap.badges.desc": "Günlük seriler ve NFT rozet seviyeleri",
-    "home.roadmap.categories.title": "İsimler & kategoriler",
-    "home.roadmap.categories.desc": "Basename desteği, 6 konu, 600+ soru",
+    "home.roadmap.categories.title": "Basenames ve kategoriler",
+    "home.roadmap.categories.desc": "Basename desteği, 6 kategori ve 600’den fazla soru",
     "home.roadmap.languages.title": "11 dil",
     "home.roadmap.languages.desc": "Kendi dilinde oyna",
     "home.roadmap.miniapp.title": "Base Mini App",
-    "home.roadmap.miniapp.desc": "Base App içinde mini app olarak yayında",
+    "home.roadmap.miniapp.desc": "Base App içinde yayında",
     "home.roadmap.daily.title": "Günlük görevler",
     "home.roadmap.daily.desc": "Her gün geri dönmek için yeni bir sebep",
     "home.roadmap.multiplayer.title": "Çok oyunculu düellolar",
-    "home.roadmap.multiplayer.desc": "Gerçek zamanlı kafa kafaya yarış",
-    "home.roadmap.referrals.title": "Davetler & görevler",
-    "home.roadmap.referrals.desc": "Arkadaş davet et, birlikte kazan",
-    "home.roadmap.seasons.title": "Sezonlar & ödüller",
+    "home.roadmap.multiplayer.desc": "Gerçek zamanlı bire bir karşılaşmalar",
+    "home.roadmap.referrals.title": "Davetler ve görevler",
+    "home.roadmap.referrals.desc": "Arkadaşlarını davet et, birlikte kazan",
+    "home.roadmap.seasons.title": "Sezonlar ve ödüller",
     "home.roadmap.seasons.desc": "Sezonluk liderlik tabloları ve ödüller",
     "category.pick": "Bir kategori seç",
-    "category.meta": "{count} soru · Tur başına 5 soru",
+    "category.meta": "Toplam {count} soru · Her turda 5 soru",
     "category.start": "{category} turunu başlat",
     "category.previous": "Önceki kategori",
     "category.next": "Sonraki kategori",
     "category.imageAlt": "{category} kategorisi",
     "category.crypto.name": "Kripto",
-    "category.crypto.description": "Base, Ethereum, cüzdanlar, DeFi ve zincir üstü kültür hakkındaki bilgini test et.",
+    "category.crypto.description": "Base, Ethereum, cüzdanlar, DeFi ve zincir üstü dünya hakkındaki bilgini sına.",
     "category.sports.name": "Spor",
     "category.sports.description": "Futboldan basketbola, tenisten olimpiyatlara uzanan spor bilgini sına.",
     "category.art.name": "Sanat",
-    "category.art.description": "Kuşaklar boyunca görsel kültürü değiştiren eserleri, sanatçıları, akımları ve fikirleri keşfet.",
+    "category.art.description": "Kuşaklar boyunca görsel kültürü şekillendiren eserleri, sanatçıları, akımları ve fikirleri keşfet.",
     "category.history.name": "Tarih",
-    "category.history.description": "Medeniyetler, dönüm noktaları ve dünyayı şekillendiren insanlar arasında tarih yolculuğuna çık.",
+    "category.history.description": "Medeniyetleri, dönüm noktalarını ve kararlarıyla dünyayı şekillendiren insanları keşfet.",
     "category.science.name": "Bilim",
-    "category.science.description": "Fizik, biyoloji, kimya ve dünyayı anlamamızı sağlayan keşiflerle kendini sına.",
+    "category.science.description": "Fizik, biyoloji, kimya ve dünyanın nasıl işlediğini açıklayan keşiflerle bilgini sına.",
     "category.geography.name": "Coğrafya",
     "category.geography.description": "Dünyanın dört bir yanındaki ülkeler, başkentler, okyanuslar ve simge yapılar arasında yolculuğa çık.",
     "quiz.fallbackName": "Bilgi yarışması",
-    "quiz.questionProgress": "Soru {current}/{total}",
+    "quiz.questionProgress": "Soru {current} / {total}",
     "quiz.score": "Puan",
     "quiz.time": "Zaman",
     "quiz.answeredAria": "{total} sorudan {answered} tanesi yanıtlandı",
@@ -78,7 +78,7 @@
     "quiz.wrong": "Yanlış cevap",
     "quiz.points": "+{points} puan",
     "quiz.correctOption": "Doğru seçenek: {option}",
-    "quiz.autoNote": "Bir kez cevapla · sonraki soru otomatik açılır",
+    "quiz.autoNote": "Bir cevap seç · Sonraki soru otomatik olarak açılır",
     "result.roundComplete": "Tur tamamlandı",
     "result.finalScore": "Son puanın",
     "result.points": "puan",
@@ -86,22 +86,22 @@
     "result.categoryPill": "{category} kategorisi",
     "result.streakPill": "{count} günlük seri",
     "result.roundCompletedTitle": "Tur tamamlandı",
-    "result.roundCompletedDetail": "Beş soruyu tamamladın. Sonucun hazır.",
+    "result.roundCompletedDetail": "Beş soruyu da yanıtladın. Tur sonucun hazır.",
     "result.streakUpdatedTitle": "Seri güncellendi",
-    "result.streakUpdatedDetail": "Serin artık {count} gün.",
+    "result.streakUpdatedDetail": "Güncel serin: {count} gün.",
     "result.save.idle.title": "Puanını kaydet",
-    "result.save.idle.detail": "Sonucunu Base’e kaydet ve dünya sıralamasına katıl.",
+    "result.save.idle.detail": "Sonucunu Base’e kaydet ve genel liderlik tablosunda yerini al.",
     "result.save.pending.title": "Puanını onayla",
     "result.save.pending.detail": "Kaydı tamamlamak için işlemi cüzdanında onayla.",
     "result.save.done.title": "Puan zincire kaydedildi",
-    "result.save.done.detail": "Sonucun Base üzerinde doğrulandı ve liderlik tablosuna eklendi.",
-    "result.save.error.title": "Skor kaydedilemedi",
+    "result.save.done.detail": "Sonucun Base’te doğrulandı ve liderlik tablosuna eklendi.",
+    "result.save.error.title": "Puan kaydedilemedi",
     "result.save.error.detail": "Aşağıdaki mesajı kontrol edip işlemi yeniden dene.",
     "result.save.disconnected.title": "Kaydetmek için bağlan",
     "result.save.disconnected.detail": "Puanını Base’e kaydetmek için bir cüzdan seç.",
     "result.shareTitle": "Sonucunu paylaş",
     "result.shareDetail": "Farcaster veya X’te arkadaşlarına meydan oku.",
-    "result.replayKicker": "Serini sürdür",
+    "result.replayKicker": "Oyuna devam et",
     "result.replayTitle": "Yeni bir tura hazır mısın?",
     "result.replayDetail": "{category} kategorisini yeniden oyna veya başka bir kategori seç.",
     "result.playAgain": "Tekrar oyna",
@@ -115,9 +115,9 @@
     "result.copied": "Panoya kopyalandı!",
     "leaderboard.kicker": "Base Mainnet · Tüm zamanlar",
     "leaderboard.title": "Liderlik tablosu",
-    "leaderboard.description": "Oyuncular zincirdeki toplam puanlarına göre sıralanır.",
-    "leaderboard.loading": "Puanlar Base’den okunuyor…",
-    "leaderboard.empty": "Henüz kayıtlı skor yok. Liderlik tablosuna giren ilk oyuncu sen ol.",
+    "leaderboard.description": "Oyuncular, Base’e kaydedilen toplam puanlarına göre sıralanır.",
+    "leaderboard.loading": "Puanlar Base’ten okunuyor…",
+    "leaderboard.empty": "Henüz kaydedilmiş puan yok. Liderlik tablosuna giren ilk oyuncu sen ol.",
     "leaderboard.player": "Oyuncu",
     "leaderboard.totalScore": "Toplam puan",
     "leaderboard.bestScore": "En iyi puan",
@@ -127,15 +127,15 @@
     "leaderboard.noBadges": "Rozet yok",
     "leaderboard.badgeTitle": "{name} rozeti",
     "leaderboard.players": "{count} oyuncu",
-    "leaderboard.verified": "Puanlar ve rozetler zincir üzerinde doğrulandı",
+    "leaderboard.verified": "Puanlar ve rozetler zincir üstünde doğrulandı",
     "badges.kicker": "Seri NFT’leri · Base Mainnet",
     "badges.title": "Rozetler",
     "badges.roadmapTitle": "Seri Rozetleri",
-    "badges.roadmapDescription": "Oynamaya devam et, serini geliştir ve ulaştığın her zincir üstü kilometre taşının rozetini al.",
+    "badges.roadmapDescription": "Oynamaya devam et, serini geliştir ve her hedefe ulaştığında zincir üstü rozetini al.",
     "badges.streak": "{count} günlük seri",
     "badges.walletRequired": "Cüzdan gerekli",
     "badges.connectTitle": "Rozetlerini görmek ve almak için cüzdanını bağla",
-    "badges.connectDetail": "Serin ve NFT sahipliğin doğrudan Base’den okunur.",
+    "badges.connectDetail": "Serin ve NFT sahipliğin doğrudan Base’ten okunur.",
     "badges.days": "{count} gün",
     "badges.bronze.name": "Bronz",
     "badges.bronze.description": "İlk 3 günlük serini tamamla",
@@ -144,41 +144,41 @@
     "badges.gold.name": "Altın",
     "badges.gold.description": "30 günlük istikrarlı bir seri oluştur",
     "badges.diamond.name": "Elmas",
-    "badges.diamond.description": "100 günlük en büyük hedefe ulaş",
+    "badges.diamond.description": "100 günlük seriye ulaş",
     "badges.unlock": "{count} günlük seride açılır",
-    "badges.owned": "Alındı",
+    "badges.owned": "Sahipsin",
     "badges.claim": "Rozeti al",
     "badges.claiming": "Rozet alınıyor…",
     "badges.daysLeft": "{count} gün kaldı",
     "badges.locked": "Kilitli",
-    "badges.loading": "Rozetler Base’den okunuyor…",
-    "wallet.connectTitle": "Cüzdanı bağlayın",
+    "badges.loading": "Rozetler Base’ten okunuyor…",
+    "wallet.connectTitle": "Cüzdanını bağla",
     "wallet.browserWallets": "Tarayıcı cüzdanları",
     "wallet.recommended": "Önerilen",
     "tutorial.welcomeTitle": "Hoş geldin.",
-    "tutorial.welcomeDetail": "Base üzerinde günlük bir bilgi yarışması. Bilgini test et, seriler oluştur ve dünyanın her yerinden oyuncularla yarış.",
+    "tutorial.welcomeDetail": "Base’te günlük bir bilgi yarışması. Bilgini sına, seriler oluştur ve dünyanın dört bir yanından oyuncularla yarış.",
     "tutorial.questionsTitle": "Her gün 5 soru.",
-    "tutorial.questionsDetail": "Hızlı cevap ver; ne kadar hızlıysan o kadar çok puan kazanırsın. Dünya sıralamasında görünmek için puanını zincire kaydet.",
+    "tutorial.questionsDetail": "Hızlı cevap ver; ne kadar hızlıysan o kadar çok puan kazanırsın. Liderlik tablosunda yer almak için puanını Base’e kaydet.",
     "tutorial.badgesTitle": "NFT rozetleri kazan.",
     "tutorial.badgesDetail": "Serini koru ve zincir üstü NFT rozetlerini al: Bronz (3 gün), Gümüş (7 gün), Altın (30 gün), Elmas (100 gün).",
     "tutorial.letsPlay": "Oynamaya başla",
-    "footer.blockData": "BLOK VERİSİ · BASE MAINNET",
+    "footer.blockData": "ZİNCİR ÜSTÜ VERİLER · BASE MAINNET",
     "footer.playersOnchain": "ZİNCİRDE {count} OYUNCU",
-    "share.text": "🧠 Base Quiz’de {score} puan kazandım! 🔥 Seri: {streak} gün\n\nBeni geçebileceğini düşünüyor musun? 👇",
+    "share.text": "🧠 Base Quiz’de {score} puan yaptım! 🔥 Serim: {streak} gün\n\nBeni geçebilir misin? 👇",
     "error.startFailed": "Tur başlatılamadı. Tekrar dene.",
     "error.startCancelled": "İşlem iptal edildi. Turu başlatmak için işlemi onayla.",
-    "error.signatureCancelled": "Cüzdan imzası iptal edildi. Devam etmek için mesajı imzalayın.",
+    "error.signatureCancelled": "Cüzdan imzası iptal edildi. Devam etmek için mesajı imzala.",
     "error.signatureFailed": "Cüzdan imzası doğrulanamadı. Tekrar dene.",
     "error.saveFailed": "Puan kaydedilemedi. Tekrar dene.",
-    "error.alreadyPlayed": "Bugünkü skorun zaten kaydedildi. Yarın tekrar gel.",
+    "error.alreadyPlayed": "Bugünkü puanın zaten kaydedildi. Yarın tekrar gel.",
     "error.claimFailed": "Rozet alınamadı. Tekrar dene.",
     "activation.kicker": "Base Quiz kurulumu",
     "activation.title": "Tur sözleşmesini etkinleştir",
-    "activation.copy": "Bu tek seferlik Base işlemi, “Turu başlat” özelliğinin kullandığı küçük sözleşmeyi dağıtır. Puanları, serileri veya rozetleri değiştirmez; ETH transfer etmez.",
+    "activation.copy": "Bu tek seferlik Base işlemi, “Turu başlat” için kullanılan küçük sözleşmeyi yayına alır. Puanları, serileri veya rozetleri değiştirmez ve ETH transfer etmez.",
     "activation.checking": "Sözleşme kontrol ediliyor…",
     "activation.active": "Tur sözleşmesi etkin",
     "activation.connected": "Bağlı: {address}",
-    "activation.confirming": "Base üzerinde onaylanıyor…",
+    "activation.confirming": "Base’te onaylanıyor…",
     "activation.activate": "Tur Sözleşmesini Etkinleştir",
     "activation.pendingTransaction": "Bekleyen işlemi görüntüle",
     "activation.back": "Base Quiz’e dön",
@@ -189,7 +189,7 @@
   },
   "quiz": {
     "crypto:0": {
-      "question": "Base'yi hangi şirket geliştirdi?",
+      "question": "Base'i hangi şirket geliştirdi?",
       "answers": {
         "Binance": "Binance",
         "Coinbase": "Coinbase",
@@ -198,7 +198,7 @@
       }
     },
     "crypto:1": {
-      "question": "Base hangi ağın Katman-2'sidir?",
+      "question": "Base, hangi ağ üzerinde çalışan bir Katman 2 çözümüdür?",
       "answers": {
         "Bitcoin": "Bitcoin",
         "Solana": "Solana",
@@ -207,7 +207,7 @@
       }
     },
     "crypto:2": {
-      "question": "Base hangi teknoloji yığınını kullanıyor?",
+      "question": "Base hangi teknoloji altyapısını kullanır?",
       "answers": {
         "OP Stack": "OP Stack",
         "zkSync": "zkSync",
@@ -216,7 +216,7 @@
       }
     },
     "crypto:3": {
-      "question": "Base ana ağı hangi yılda piyasaya sürüldü?",
+      "question": "Base ana ağı hangi yıl kullanıma açıldı?",
       "answers": {
         "2021": "2021",
         "2022": "2022",
@@ -225,7 +225,7 @@
       }
     },
     "crypto:4": {
-      "question": "Base'de gas ücretleri için hangi token kullanılıyor?",
+      "question": "Base ağındaki gas ücretleri hangi token ile ödenir?",
       "answers": {
         "USDC": "USDC",
         "BASE": "BASE",
@@ -234,7 +234,7 @@
       }
     },
     "crypto:5": {
-      "question": "Eskiden Base App'nin adı neydi?",
+      "question": "Base App'in önceki adı neydi?",
       "answers": {
         "Coinbase Wallet": "Coinbase Wallet",
         "MetaMask": "MetaMask",
@@ -243,7 +243,7 @@
       }
     },
     "crypto:6": {
-      "question": "Coinbase'nin CEO'su kimdir?",
+      "question": "Coinbase'in CEO'su kim?",
       "answers": {
         "Vitalik Buterin": "Vitalik Buterin",
         "Brian Armstrong": "Brian Armstrong",
@@ -252,7 +252,7 @@
       }
     },
     "crypto:7": {
-      "question": "Coinbase'de Base'yi kim yönetiyor?",
+      "question": "Coinbase'de Base ekibine kim liderlik ediyor?",
       "answers": {
         "Brian Armstrong": "Brian Armstrong",
         "Jesse Pollak": "Jesse Pollak",
@@ -261,7 +261,7 @@
       }
     },
     "crypto:8": {
-      "question": "Base hangi süper zincire ait?",
+      "question": "Base hangi Superchain'in parçasıdır?",
       "answers": {
         "Polygon Superchain": "Polygon Superchain",
         "Optimism Superchain": "Optimism Superchain",
@@ -270,16 +270,16 @@
       }
     },
     "crypto:9": {
-      "question": "Base en iyi şekilde nasıl tanımlanır?",
+      "question": "Base en doğru nasıl tanımlanır?",
       "answers": {
         "A standalone L1": "Bağımsız bir L1",
-        "An Ethereum L2 rollup": "Bir Ethereum L2 toplaması",
+        "An Ethereum L2 rollup": "Bir Ethereum Katman 2 rollup'ı",
         "A sidechain": "Bir yan zincir",
         "A bridge protocol": "Bir köprü protokolü"
       }
     },
     "crypto:10": {
-      "question": "Ethereum'nin kurucusu kimdir?",
+      "question": "Ethereum'u kuran isimlerden biri kimdir?",
       "answers": {
         "Satoshi Nakamoto": "Satoshi Nakamoto",
         "Vitalik Buterin": "Vitalik Buterin",
@@ -297,7 +297,7 @@
       }
     },
     "crypto:12": {
-      "question": "ETH'nin en küçük birimi nedir?",
+      "question": "ETH'nin en küçük birimi hangisidir?",
       "answers": {
         "Satoshi": "Satoshi",
         "Gwei": "Gwei",
@@ -306,7 +306,7 @@
       }
     },
     "crypto:13": {
-      "question": "Layer-2 çözümlerinin temel amacı nedir?",
+      "question": "Katman 2 çözümlerinin temel amacı nedir?",
       "answers": {
         "Minting more tokens": "Daha fazla token üretmek",
         "Scalability & lower fees": "Ölçeklenebilirlik ve daha düşük ücretler",
@@ -315,25 +315,25 @@
       }
     },
     "crypto:14": {
-      "question": "Ethereum hangi fikir birliğini kullanıyor?",
+      "question": "Ethereum hangi konsensüs mekanizmasını kullanır?",
       "answers": {
-        "Proof of Work": "Çalışma Kanıtı",
-        "Proof of Stake": "Proof of Stake",
-        "Proof of Authority": "Yetki Belgesi",
-        "Proof of History": "Tarih Kanıtı"
+        "Proof of Work": "İş İspatı (PoW)",
+        "Proof of Stake": "Hisse İspatı (PoS)",
+        "Proof of Authority": "Yetki İspatı (PoA)",
+        "Proof of History": "Geçmiş İspatı (PoH)"
       }
     },
     "crypto:15": {
       "question": "EVM nedir?",
       "answers": {
         "A wallet type": "Bir cüzdan türü",
-        "Ethereum's execution engine": "Ethereum'nin yürütme motoru",
+        "Ethereum's execution engine": "Ethereum'un yürütme ortamı",
         "A token standard": "Bir token standardı",
         "A bridge": "Bir köprü"
       }
     },
     "crypto:16": {
-      "question": "Hangisi Ethereum'nin L2'si DEĞİLDİR?",
+      "question": "Aşağıdakilerden hangisi Ethereum Katman 2 ağı değildir?",
       "answers": {
         "Base": "Base",
         "Arbitrum": "Arbitrum",
@@ -342,7 +342,7 @@
       }
     },
     "crypto:17": {
-      "question": "'Gaz' ne anlama gelir?",
+      "question": "Kriptoda 'gas' neyi ifade eder?",
       "answers": {
         "A token": "Bir token",
         "Transaction fee unit": "İşlem ücreti birimi",
@@ -351,7 +351,7 @@
       }
     },
     "crypto:18": {
-      "question": "Ethereum ne zaman PoS'ye (Birleştirme) geçti?",
+      "question": "Ethereum, The Merge ile PoS'a hangi yıl geçti?",
       "answers": {
         "2020": "2020",
         "2021": "2021",
@@ -363,7 +363,7 @@
       "question": "ERC-20 nedir?",
       "answers": {
         "NFT standard": "NFT standardı",
-        "Fungible token standard": "Değiştirilebilir jeton standardı",
+        "Fungible token standard": "Değiştirilebilir token standardı",
         "Wallet format": "Cüzdan biçimi",
         "L2 standard": "L2 standardı"
       }
@@ -378,7 +378,7 @@
       }
     },
     "crypto:21": {
-      "question": "Bitcoin'i kim yarattı?",
+      "question": "Bitcoin'i kim oluşturdu?",
       "answers": {
         "Vitalik Buterin": "Vitalik Buterin",
         "Satoshi Nakamoto": "Satoshi Nakamoto",
@@ -396,7 +396,7 @@
       }
     },
     "crypto:23": {
-      "question": "Bitcoin yarılanması ne sıklıkla gerçekleşir (kabaca)?",
+      "question": "Bitcoin yarılanması yaklaşık kaç yılda bir gerçekleşir?",
       "answers": {
         "Every year": "Her yıl",
         "Every 2 years": "Her 2 yılda bir",
@@ -405,11 +405,11 @@
       }
     },
     "crypto:24": {
-      "question": "Bitcoin hangi konsensüsü kullanıyor?",
+      "question": "Bitcoin hangi konsensüs mekanizmasını kullanır?",
       "answers": {
-        "Proof of Stake": "Proof of Stake",
-        "Proof of Work": "Çalışma Kanıtı",
-        "Proof of Authority": "Yetki Belgesi",
+        "Proof of Stake": "Hisse İspatı (PoS)",
+        "Proof of Work": "İş İspatı (PoW)",
+        "Proof of Authority": "Yetki İspatı (PoA)",
         "DPoS": "DPoS"
       }
     },
@@ -423,7 +423,7 @@
       }
     },
     "crypto:26": {
-      "question": "Uniswap öncelikle bir?",
+      "question": "Uniswap temel olarak nedir?",
       "answers": {
         "Lending platform": "Borç verme platformu",
         "DEX (decentralized exchange)": "DEX (merkezi olmayan borsa)",
@@ -434,14 +434,14 @@
     "crypto:27": {
       "question": "AMM nedir?",
       "answers": {
-        "Auto Market Mover": "Otomobil Pazarını Taşıyan",
+        "Auto Market Mover": "Otomatik Piyasa Hareket Ettirici",
         "Automated Market Maker": "Otomatik Piyasa Yapıcı",
-        "Asset Management Module": "Varlık Yönetimi Modülü",
-        "Aggregated Mint Maker": "Toplu Darphane Üreticisi"
+        "Asset Management Module": "Varlık Yönetim Modülü",
+        "Aggregated Mint Maker": "Toplu Mint Oluşturucu"
       }
     },
     "crypto:28": {
-      "question": "TVL ne anlama geliyor?",
+      "question": "TVL'nin açılımı nedir?",
       "answers": {
         "Token Value Locked": "Token Value Locked",
         "Total Value Locked": "Total Value Locked",
@@ -450,16 +450,16 @@
       }
     },
     "crypto:29": {
-      "question": "Aave öncelikle bir?",
+      "question": "Aave temel olarak nedir?",
       "answers": {
         "DEX": "DEX",
         "Lending protocol": "Borç verme protokolü",
-        "Stablecoin": "Sabit coin",
-        "NFT marketplace": "NFT pazarı"
+        "Stablecoin": "Stablecoin",
+        "NFT marketplace": "NFT pazaryeri"
       }
     },
     "crypto:30": {
-      "question": "Verim çiftçiliği nedir?",
+      "question": "Yield farming nedir?",
       "answers": {
         "Mining crops": "Ürün yetiştirmek",
         "Earning rewards from DeFi protocols": "DeFi protokollerinden ödül kazanma",
@@ -468,7 +468,7 @@
       }
     },
     "crypto:31": {
-      "question": "Hangi şirket USDC'yi yayınlıyor?",
+      "question": "USDC'yi hangi şirket ihraç eder?",
       "answers": {
         "Tether": "Tether",
         "Circle": "Circle",
@@ -477,7 +477,7 @@
       }
     },
     "crypto:32": {
-      "question": "Hangi şirket USDT'yi yayınlıyor?",
+      "question": "USDT'yi hangi şirket ihraç eder?",
       "answers": {
         "Circle": "Circle",
         "Tether": "Tether",
@@ -486,7 +486,7 @@
       }
     },
     "crypto:33": {
-      "question": "DAI öncelikli olarak ne tarafından destekleniyor?",
+      "question": "DAI'ın değerini temel olarak ne destekler?",
       "answers": {
         "US Dollars in a bank": "Bankadaki ABD Doları",
         "Crypto collateral": "Kripto teminatı",
@@ -495,7 +495,7 @@
       }
     },
     "crypto:34": {
-      "question": "Stablecoin'ler fiyat paritesini korumaya mı çalışıyor?",
+      "question": "Stablecoin'ler genellikle değerlerini neye sabitlemeye çalışır?",
       "answers": {
         "Bitcoin": "Bitcoin",
         "Ethereum": "Ethereum",
@@ -504,7 +504,7 @@
       }
     },
     "crypto:35": {
-      "question": "NFT ne anlama geliyor?",
+      "question": "NFT'nin açılımı nedir?",
       "answers": {
         "New Finance Token": "New Finance Token",
         "Non-Fungible Token": "Non-Fungible Token",
@@ -513,7 +513,7 @@
       }
     },
     "crypto:36": {
-      "question": "Ethereum'deki NFT token standardı hangisidir?",
+      "question": "Ethereum'da yaygın olarak kullanılan NFT token standardı hangisidir?",
       "answers": {
         "ERC-20": "ERC-20",
         "ERC-721": "ERC-721",
@@ -522,21 +522,21 @@
       }
     },
     "crypto:37": {
-      "question": "OpenSea esas olarak hangisidir?",
+      "question": "OpenSea temel olarak nedir?",
       "answers": {
         "DEX": "DEX",
-        "NFT marketplace": "NFT pazarı",
+        "NFT marketplace": "NFT pazaryeri",
         "Wallet": "Cüzdan",
         "L2 chain": "L2 zinciri"
       }
     },
     "crypto:38": {
-      "question": "NFTs'de 'nane' ne anlama geliyor?",
+      "question": "NFT'lerde 'mint etmek' ne anlama gelir?",
       "answers": {
-        "Sell an NFT": "NFT sat",
-        "Create a new NFT onchain": "Zincir üzerinde yeni bir NFT oluşturun",
-        "Burn an NFT": "Bir NFT yazın",
-        "Transfer an NFT": "Bir NFT aktarın"
+        "Sell an NFT": "Bir NFT satmak",
+        "Create a new NFT onchain": "Zincir üstünde yeni bir NFT oluşturmak",
+        "Burn an NFT": "Bir NFT yakmak",
+        "Transfer an NFT": "Bir NFT transfer etmek"
       }
     },
     "crypto:39": {
@@ -558,7 +558,7 @@
       }
     },
     "crypto:41": {
-      "question": "Hangisini asla kimseyle paylaşmamalısın?",
+      "question": "Aşağıdakilerden hangisini asla kimseyle paylaşmamalısın?",
       "answers": {
         "Wallet address": "Cüzdan adresi",
         "Seed phrase": "Kurtarma ifadesi",
@@ -567,16 +567,16 @@
       }
     },
     "crypto:42": {
-      "question": "Kendini velayet anlamına mı geliyor?",
+      "question": "Kişisel saklama (self custody) ne anlama gelir?",
       "answers": {
-        "Exchange holds your keys": "Anahtarların borsada tutulur",
-        "You control your private keys": "Özel anahtarlarınızı siz kontrol edersiniz",
-        "A bank holds your keys": "Anahtarlarınız bir bankada bulunuyor",
-        "A friend holds your keys": "Anahtarlarınız bir arkadaşınızın elinde"
+        "Exchange holds your keys": "Özel anahtarlarının borsada tutulması",
+        "You control your private keys": "Özel anahtarlarını senin kontrol etmen",
+        "A bank holds your keys": "Özel anahtarlarının bankada tutulması",
+        "A friend holds your keys": "Özel anahtarlarını bir arkadaşının tutması"
       }
     },
     "crypto:43": {
-      "question": "MetaMask öncelikle bir?",
+      "question": "MetaMask temel olarak nedir?",
       "answers": {
         "Exchange": "Borsa",
         "Browser wallet": "Tarayıcı cüzdanı",
@@ -594,16 +594,16 @@
       }
     },
     "crypto:45": {
-      "question": "Farcaster'deki gönderiler çağrılıyor mu?",
+      "question": "Farcaster'daki gönderilere ne ad verilir?",
       "answers": {
         "Tweets": "Tweetler",
-        "Casts": "Yayınlar",
-        "Toots": "Toots",
-        "Snaps": "Anlık Görüntüler"
+        "Casts": "Cast'ler",
+        "Toots": "Toot'lar",
+        "Snaps": "Snap'ler"
       }
     },
     "crypto:46": {
-      "question": "Farcaster'yi kim kurdu?",
+      "question": "Farcaster'ı kim kurdu?",
       "answers": {
         "Vitalik Buterin": "Vitalik Buterin",
         "Dan Romero & Varun Srinivasan": "Dan Romero ve Varun Srinivasan",
@@ -612,16 +612,16 @@
       }
     },
     "crypto:47": {
-      "question": "Bir Farcaster kullanıcı tanımlayıcısı çağrıldı mı?",
+      "question": "Farcaster kullanıcı kimliğine ne ad verilir?",
       "answers": {
         "UID": "UID",
         "FID": "FID",
-        "Handle": "Tutamaç",
-        "Tag": "Etiketi"
+        "Handle": "Kullanıcı adı",
+        "Tag": "Etiket"
       }
     },
     "crypto:48": {
-      "question": "Base App’teki Mini Apps hangi araçlarla geliştirilir?",
+      "question": "Base App'teki Mini App'ler hangi araçlarla geliştirilir?",
       "answers": {
         "MiniKit / OnchainKit": "MiniKit / OnchainKit",
         "Flutter only": "Yalnızca Flutter",
@@ -630,7 +630,7 @@
       }
     },
     "crypto:49": {
-      "question": "Bir blokzincir işleminin hash değeri başka nasıl adlandırılır?",
+      "question": "Bir blok zinciri işleminin hash'i başka hangi adla bilinir?",
       "answers": {
         "Nonce": "Nonce",
         "TX ID": "TX ID",
@@ -639,7 +639,7 @@
       }
     },
     "crypto:50": {
-      "question": "DAO ne anlama geliyor?",
+      "question": "DAO'nun açılımı nedir?",
       "answers": {
         "Digital Asset Order": "Digital Asset Order",
         "Decentralized Autonomous Organization": "Decentralized Autonomous Organization",
@@ -648,16 +648,16 @@
       }
     },
     "crypto:51": {
-      "question": "'Blok gezgini' nedir?",
+      "question": "Blok gezgini nedir?",
       "answers": {
         "A mining tool": "Bir madencilik aracı",
-        "A site to view onchain data": "Zincir içi verileri görüntülemek için bir site",
+        "A site to view onchain data": "Zincir üstü verileri görüntülemeye yarayan bir site",
         "A wallet type": "Bir cüzdan türü",
         "A bridge": "Bir köprü"
       }
     },
     "crypto:52": {
-      "question": "Ticarette 'kayma' nedir?",
+      "question": "Alım satımda slippage (fiyat kayması) nedir?",
       "answers": {
         "Network downtime": "Ağ kesintisi",
         "Difference between expected & actual price": "Beklenen ve gerçek fiyat arasındaki fark",
@@ -666,11 +666,11 @@
       }
     },
     "crypto:53": {
-      "question": "'Halı çekme' nedir?",
+      "question": "Rug pull nedir?",
       "answers": {
         "A trading strategy": "Bir ticaret stratejisi",
-        "A scam where founders abandon a project": "Kurucuların projeden vazgeçtiği bir dolandırıcılık",
-        "A staking method": "Bir bahis yöntemi",
+        "A scam where founders abandon a project": "Kurucuların projeyi terk ederek kullanıcıları zarara uğrattığı bir dolandırıcılık",
+        "A staking method": "Bir staking yöntemi",
         "A wallet feature": "Bir cüzdan özelliği"
       }
     },
@@ -678,16 +678,16 @@
       "question": "Çoklu imzalı cüzdan nedir?",
       "answers": {
         "A wallet with many tokens": "Birçok token içeren bir cüzdan",
-        "A wallet needing multiple signatures to approve tx": "Tx'i onaylamak için birden fazla imzaya ihtiyaç duyan bir cüzdan",
-        "A wallet on multiple chains": "Birden fazla zincire sahip bir cüzdan",
+        "A wallet needing multiple signatures to approve tx": "İşlemleri onaylamak için birden fazla imza gerektiren cüzdan",
+        "A wallet on multiple chains": "Birden fazla zincirde çalışan cüzdan",
         "A wallet with a long password": "Uzun şifreli bir cüzdan"
       }
     },
     "crypto:55": {
-      "question": "'HODL' kripto kültüründe ne anlama geliyor?",
+      "question": "HODL kripto kültüründe ne anlama gelir?",
       "answers": {
-        "Sell quickly": "Hızlı satış yapın",
-        "Hold long-term": "Uzun vadeli bekletme",
+        "Sell quickly": "Hızlıca satmak",
+        "Hold long-term": "Uzun vadeli tutmak",
         "A hardware wallet": "Bir donanım cüzdanı",
         "A type of token": "Bir token türü"
       }
@@ -696,13 +696,13 @@
       "question": "Kriptoda 'balina' nedir?",
       "answers": {
         "A tiny investor": "Küçük bir yatırımcı",
-        "A holder of very large amounts": "Çok büyük meblağların sahibi",
-        "A stablecoin": "Bir stabilcoin",
+        "A holder of very large amounts": "Çok büyük miktarda varlık tutan kişi veya cüzdan",
+        "A stablecoin": "Bir stablecoin",
         "A mining rig": "Bir madencilik teçhizatı"
       }
     },
     "crypto:57": {
-      "question": "Blockchain'deki gas ücretleri neye ödeniyor?",
+      "question": "Blok zincirindeki gas ücretleri kime ödenir?",
       "answers": {
         "Developers": "Geliştiriciler",
         "Network validators/miners": "Ağ doğrulayıcıları veya madenciler",
@@ -714,13 +714,13 @@
       "question": "Akıllı sözleşme nedir?",
       "answers": {
         "A paper contract": "Kağıt üzerinde bir sözleşme",
-        "Self-executing code on a blockchain": "Blok zincirinde kendi kendini çalıştıran kod",
+        "Self-executing code on a blockchain": "Blok zincirinde kendi kendine çalışan kod",
         "A savings account": "Bir tasarruf hesabı",
         "A hardware device": "Bir donanım aygıtı"
       }
     },
     "crypto:59": {
-      "question": "'DEX' ne anlama geliyor?",
+      "question": "DEX'in açılımı nedir?",
       "answers": {
         "Digital Exchange": "Digital Exchange",
         "Decentralized Exchange": "Decentralized Exchange",
@@ -729,7 +729,7 @@
       }
     },
     "crypto:60": {
-      "question": "'CEX' ne anlama geliyor?",
+      "question": "CEX'in açılımı nedir?",
       "answers": {
         "Central Exchange": "Central Exchange",
         "Centralized Exchange": "Centralized Exchange",
@@ -741,7 +741,7 @@
       "question": "Staking nedir?",
       "answers": {
         "Selling tokens": "Token satışı",
-        "Locking tokens to support a network for rewards": "Ödüller için bir ağı desteklemek amacıyla jetonları kilitleme",
+        "Locking tokens to support a network for rewards": "Ödül kazanmak ve ağı desteklemek için token kilitlemek",
         "Mining coins": "Coin madenciliği",
         "Burning tokens": "Jetonların yakılması"
       }
@@ -756,38 +756,38 @@
       }
     },
     "crypto:63": {
-      "question": "'Test ağı' ne için kullanılıyor?",
+      "question": "Test ağı ne için kullanılır?",
       "answers": {
         "Real transactions": "Gerçek işlemler",
-        "Testing without real value": "Gerçek değer olmadan test etme",
+        "Testing without real value": "Gerçek değer taşımayan varlıklarla test yapmak",
         "Storing coins": "Paraları saklama",
         "Mining Bitcoin": "Bitcoin madenciliği"
       }
     },
     "crypto:64": {
-      "question": "Jetonların 'yakılması' ne anlama geliyor?",
+      "question": "Token yakmak ne anlama gelir?",
       "answers": {
-        "Creating tokens": "Belirteç oluşturma",
-        "Permanently removing tokens from supply": "Tokenların tedarikten kalıcı olarak kaldırılması",
-        "Staking tokens": "Tokenleri stake etmek",
-        "Sending tokens": "Belirteçler gönderiliyor"
+        "Creating tokens": "Yeni token oluşturmak",
+        "Permanently removing tokens from supply": "Tokenları dolaşımdan kalıcı olarak çıkarmak",
+        "Staking tokens": "Tokenları stake etmek",
+        "Sending tokens": "Token göndermek"
       }
     },
     "crypto:65": {
       "question": "'Boğa piyasası' nedir?",
       "answers": {
-        "Prices falling": "Fiyatlar düşüyor",
-        "Prices rising": "Fiyatlar artıyor",
+        "Prices falling": "Fiyatların düşmesi",
+        "Prices rising": "Fiyatların yükselmesi",
         "No trading": "Ticaret yok",
-        "A type of coin": "Bir tür madeni para"
+        "A type of coin": "Bir coin türü"
       }
     },
     "crypto:66": {
       "question": "'Ayı piyasası' nedir?",
       "answers": {
-        "Prices rising": "Fiyatlar artıyor",
-        "Prices falling": "Fiyatlar düşüyor",
-        "Sideways only": "Yalnızca yanlara doğru",
+        "Prices rising": "Fiyatların yükselmesi",
+        "Prices falling": "Fiyatların düşmesi",
+        "Sideways only": "Fiyatların yalnızca yatay seyretmesi",
         "A mining term": "Bir madencilik terimi"
       }
     },
@@ -804,31 +804,31 @@
       "question": "'Web3' nedir?",
       "answers": {
         "The third website": "Üçüncü web sitesi",
-        "A decentralized internet on blockchain": "Blockchain üzerinde merkezi olmayan bir internet",
+        "A decentralized internet on blockchain": "Blok zinciri temelli merkeziyetsiz internet",
         "A web browser": "Bir web tarayıcısı",
         "A programming language": "Bir programlama dili"
       }
     },
     "crypto:69": {
-      "question": "'L1' ne anlama geliyor?",
+      "question": "L1 ne anlama gelir?",
       "answers": {
-        "Layer 1 base blockchain": "Katman 1 temel blok zinciri",
+        "Layer 1 base blockchain": "Temel blok zinciri katmanı",
         "A game level": "Bir oyun seviyesi",
         "A wallet": "Bir cüzdan",
         "A token standard": "Bir token standardı"
       }
     },
     "crypto:70": {
-      "question": "Solana bir mi?",
+      "question": "Solana hangi tür blok zinciridir?",
       "answers": {
-        "Layer-2 of Ethereum": "Ethereum'nin 2. Katmanı",
-        "Standalone Layer-1 blockchain": "Bağımsız Katman-1 blockchain",
+        "Layer-2 of Ethereum": "Ethereum Katman 2 ağı",
+        "Standalone Layer-1 blockchain": "Bağımsız bir Katman 1 blok zinciri",
         "Wallet": "Cüzdan",
-        "Stablecoin": "Sabit coin"
+        "Stablecoin": "Stablecoin"
       }
     },
     "crypto:71": {
-      "question": "İş Kanıtı neyle tanınır?",
+      "question": "Proof of Work en çok hangi özelliğiyle bilinir?",
       "answers": {
         "Low energy use": "Düşük enerji kullanımı",
         "High energy use via mining": "Madencilik yoluyla yüksek enerji kullanımı",
@@ -851,7 +851,7 @@
         "Always-online wallet": "Her zaman çevrimiçi cüzdan",
         "Offline wallet for storage": "Depolama için çevrimdışı cüzdan",
         "Exchange wallet": "Borsa cüzdanı",
-        "A stablecoin": "Bir stabilcoin"
+        "A stablecoin": "Bir stablecoin"
       }
     },
     "crypto:74": {
@@ -864,7 +864,7 @@
       }
     },
     "crypto:75": {
-      "question": "'Gwei' ölçmek için mi kullanılıyor?",
+      "question": "Gwei neyi ölçmek için kullanılır?",
       "answers": {
         "Token supply": "Token arzı",
         "Gas prices": "Gas fiyatları",
@@ -873,7 +873,7 @@
       }
     },
     "crypto:76": {
-      "question": "'Kalıcı kayıp' ile ilişkili mi?",
+      "question": "Impermanent loss (geçici kayıp) hangi faaliyetle ilişkilidir?",
       "answers": {
         "Staking": "Staking",
         "Providing liquidity": "Likidite sağlama",
@@ -882,12 +882,12 @@
       }
     },
     "crypto:77": {
-      "question": "Bir blockchain 'köprüsü' ne için kullanılıyor?",
+      "question": "Blokzincir köprüsü ne için kullanılır?",
       "answers": {
-        "Mine coins": "Madeni para madenciliği",
-        "Move assets between blockchains": "Varlıkları blok zincirler arasında taşıma",
-        "Store keys": "Anahtarları saklayın",
-        "Create tokens": "Jeton oluştur"
+        "Mine coins": "Coin madenciliği yapmak",
+        "Move assets between blockchains": "Varlıkları blok zincirleri arasında taşımak",
+        "Store keys": "Anahtarları saklamak",
+        "Create tokens": "Token oluşturmak"
       }
     },
     "crypto:78": {
@@ -900,7 +900,7 @@
       }
     },
     "crypto:79": {
-      "question": "'ATH' ne anlama geliyor?",
+      "question": "ATH'nin açılımı nedir?",
       "answers": {
         "All-Time High": "All-Time High",
         "Average Trade Height": "Average Trade Height",
@@ -909,7 +909,7 @@
       }
     },
     "crypto:80": {
-      "question": "BTC veya ETH gibi bir 'ticker' mi?",
+      "question": "BTC veya ETH gibi bir ticker nedir?",
       "answers": {
         "A price chart": "Fiyat tablosu",
         "A short symbol for an asset": "Bir varlık için kısa sembol",
@@ -918,12 +918,12 @@
       }
     },
     "crypto:81": {
-      "question": "Proof of Work'te işlemlerin onaylanması çağrılıyor mu?",
+      "question": "Proof of Work sisteminde işlemleri onaylama sürecine ne ad verilir?",
       "answers": {
         "Staking": "Staking",
         "Mining": "Madencilik",
         "Bridging": "Köprüleme",
-        "Burning": "Yanıyor"
+        "Burning": "Yakma"
       }
     },
     "crypto:82": {
@@ -936,7 +936,7 @@
       }
     },
     "crypto:83": {
-      "question": "OnchainKit bir geliştirici araç setidir?",
+      "question": "OnchainKit hangi şirketin geliştirici araç setidir?",
       "answers": {
         "Binance": "Binance",
         "Coinbase": "Coinbase",
@@ -945,7 +945,7 @@
       }
     },
     "crypto:84": {
-      "question": "Bir 'gaz limiti' belirlendi mi?",
+      "question": "Gas limiti neyi belirler?",
       "answers": {
         "Token supply": "Token arzı",
         "Max gas a transaction can use": "Bir işlemin kullanabileceği maksimum gaz",
@@ -954,7 +954,7 @@
       }
     },
     "crypto:85": {
-      "question": "Çokgen en çok ne olarak bilinir?",
+      "question": "Polygon en çok ne olarak bilinir?",
       "answers": {
         "A base Layer-1": "Bir temel Katman-1",
         "An Ethereum scaling solution": "Bir Ethereum ölçeklendirme çözümü",
@@ -972,7 +972,7 @@
       }
     },
     "crypto:87": {
-      "question": "Havuzdaki 'likidite' nedir?",
+      "question": "Bir işlem havuzundaki likidite neyi ifade eder?",
       "answers": {
         "Number of users": "Kullanıcı sayısı",
         "Assets available to trade": "Ticarete açık varlıklar",
@@ -986,11 +986,11 @@
         "Replace Bitcoin": "Bitcoin’in yerini almak",
         "Scale a Layer-1 with cheaper, faster txs": "Daha ucuz ve hızlı işlemlerle Katman 1’i ölçeklemek",
         "Mine faster": "Daha hızlı madencilik yapmak",
-        "Issue stablecoins": "Sabit coin çıkarmak"
+        "Issue stablecoins": "Stablecoin çıkarmak"
       }
     },
     "crypto:89": {
-      "question": "Bir cüzdan 'adresi' genellikle nedir?",
+      "question": "Cüzdan adresleri için genellikle hangisi doğrudur?",
       "answers": {
         "Secret, never shared": "Gizli, asla paylaşılmaz",
         "Public and shareable to receive funds": "Herkese açık ve fon almak için paylaşılabilir",
@@ -999,7 +999,7 @@
       }
     },
     "crypto:90": {
-      "question": "'KYC' ne anlama geliyor?",
+      "question": "KYC'nin açılımı nedir?",
       "answers": {
         "Keep Your Coins": "Keep Your Coins",
         "Know Your Customer": "Know Your Customer",
@@ -1008,7 +1008,7 @@
       }
     },
     "crypto:91": {
-      "question": "Bir işlemdeki nonce nedir?",
+      "question": "Bir işlemde nonce nedir?",
       "answers": {
         "A random word": "Rastgele bir kelime",
         "A per-account transaction counter": "Hesaba özel işlem sayacı",
@@ -1017,7 +1017,7 @@
       }
     },
     "crypto:92": {
-      "question": "'PoS' ne anlama geliyor?",
+      "question": "PoS'un açılımı nedir?",
       "answers": {
         "Proof of Speed": "Proof of Speed",
         "Proof of Stake": "Proof of Stake",
@@ -1026,16 +1026,16 @@
       }
     },
     "crypto:93": {
-      "question": "Bir stabilcoin ne için tasarlanmıştır?",
+      "question": "Stablecoin'ler hangi amaçla tasarlanır?",
       "answers": {
-        "Grow fast": "Hızlı büyüyün",
-        "Stay near a stable value": "Sabit bir değere yakın kalın",
-        "Be an NFT": "NFT olun",
-        "Mine blocks": "Maden blokları"
+        "Grow fast": "Hızla değer kazanmak",
+        "Stay near a stable value": "Sabit bir değere yakın kalmak",
+        "Be an NFT": "NFT olmak",
+        "Mine blocks": "Blok üretmek"
       }
     },
     "crypto:94": {
-      "question": "Bunlardan hangisi stabilcoindir?",
+      "question": "Bunlardan hangisi stablecoin'dir?",
       "answers": {
         "ETH": "ETH",
         "USDC": "USDC",
@@ -1044,16 +1044,16 @@
       }
     },
     "crypto:95": {
-      "question": "'Çapraz zincir', çapraz çalışma anlamına mı geliyor?",
+      "question": "Zincirler arası (cross-chain) ne anlama gelir?",
       "answers": {
         "One app": "Bir uygulama",
-        "Multiple blockchains": "Çoklu blok zincirleri",
+        "Multiple blockchains": "Birden fazla blok zincirinde çalışmak",
         "One wallet": "Bir cüzdan",
         "One token": "Bir jeton"
       }
     },
     "crypto:96": {
-      "question": "Blok zincirindeki bir 'blok' şunları içeriyor mu?",
+      "question": "Bir blok zinciri bloğu ne içerir?",
       "answers": {
         "Only one transaction": "Yalnızca bir işlem",
         "A batch of transactions": "Bir grup işlem",
@@ -1065,13 +1065,13 @@
       "question": "'Genesis bloğu' nedir?",
       "answers": {
         "Last block": "Son blok",
-        "First block of a blockchain": "Bir blockchain'in ilk bloğu",
+        "First block of a blockchain": "Bir blok zincirinin ilk bloğu",
         "A wallet": "Bir cüzdan",
         "A token": "Bir token"
       }
     },
     "crypto:98": {
-      "question": "'YG' ne anlama geliyor?",
+      "question": "ROI'nin açılımı nedir?",
       "answers": {
         "Return On Investment": "Return On Investment",
         "Rate Of Interest": "Rate Of Interest",
@@ -1089,7 +1089,7 @@
       }
     },
     "sports:0": {
-      "question": "Sahada bir futbol takımından kaç oyuncu var?",
+      "question": "Bir futbol takımının sahada kaç oyuncusu bulunur?",
       "answers": {
         "9": "9",
         "10": "10",
@@ -1098,7 +1098,7 @@
       }
     },
     "sports:1": {
-      "question": "Hangi sporda smaç yapılır?",
+      "question": "Smaç hangi sporda yapılır?",
       "answers": {
         "Tennis": "Tenis",
         "Basketball": "Basketbol",
@@ -1107,7 +1107,7 @@
       }
     },
     "sports:2": {
-      "question": "Yaz Olimpiyatları ne sıklıkla düzenleniyor?",
+      "question": "Yaz Olimpiyatları kaç yılda bir düzenlenir?",
       "answers": {
         "Every 2 years": "Her 2 yılda bir",
         "Every 3 years": "Her 3 yılda bir",
@@ -1116,7 +1116,7 @@
       }
     },
     "sports:3": {
-      "question": "Hangi ülke en çok FIFA Dünya Kupasını kazandı?",
+      "question": "FIFA Dünya Kupası'nı en çok kez hangi ülke kazanmıştır?",
       "answers": {
         "Germany": "Almanya",
         "Italy": "İtalya",
@@ -1125,16 +1125,16 @@
       }
     },
     "sports:4": {
-      "question": "Teniste sıfır puana ne denir?",
+      "question": "Teniste sıfır puana ne ad verilir?",
       "answers": {
-        "Nil": "Sıfır",
-        "Love": "Aşk",
-        "Duck": "Ördek",
+        "Nil": "Nil",
+        "Love": "Love",
+        "Duck": "Duck",
         "Blank": "Boş"
       }
     },
     "sports:5": {
-      "question": "Olimpiyat bayrağında kaç yüzük var?",
+      "question": "Olimpiyat bayrağında kaç halka vardır?",
       "answers": {
         "4": "4",
         "5": "5",
@@ -1143,25 +1143,25 @@
       }
     },
     "sports:6": {
-      "question": "Hangi sporda raketle kullanılır?",
+      "question": "Tüytop hangi sporda kullanılır?",
       "answers": {
-        "Squash": "Kabak",
+        "Squash": "Squash",
         "Badminton": "Badminton",
         "Table tennis": "Masa tenisi",
         "Volleyball": "Voleybol"
       }
     },
     "sports:7": {
-      "question": "Usain Bolt hangi sporla ünlüdür?",
+      "question": "Usain Bolt hangi spor dalıyla tanınır?",
       "answers": {
         "Swimming": "Yüzme",
-        "Sprinting": "Sürat Koşusu",
-        "Cycling": "Bisiklete binme",
+        "Sprinting": "Sprint",
+        "Cycling": "Bisiklet",
         "Boxing": "Boks"
       }
     },
     "sports:8": {
-      "question": "Amerikan futbolunda bir touchdown'un değeri kaç puandır?",
+      "question": "Amerikan futbolunda bir touchdown kaç sayı değerindedir?",
       "answers": {
         "2": "2",
         "3": "3",
@@ -1170,16 +1170,16 @@
       }
     },
     "sports:9": {
-      "question": "Tour de France hangi spor dalındaki bir yarışmadır?",
+      "question": "Tour de France hangi spor dalında düzenlenir?",
       "answers": {
-        "Running": "Çalışıyor",
-        "Cycling": "Bisiklete binme",
-        "Rowing": "Kürek çekme",
-        "Sailing": "Yelkencilik"
+        "Running": "Koşu",
+        "Cycling": "Bisiklet",
+        "Rowing": "Kürek",
+        "Sailing": "Yelken"
       }
     },
     "sports:10": {
-      "question": "Wimbledon tenis turnuvasına hangi ülke ev sahipliği yapıyor?",
+      "question": "Wimbledon tenis turnuvası hangi ülkede düzenlenir?",
       "answers": {
         "USA": "ABD",
         "France": "Fransa",
@@ -1197,7 +1197,7 @@
       }
     },
     "sports:12": {
-      "question": "Standart bir şampiyona boks maçında kaç raunt vardır?",
+      "question": "Standart bir şampiyonluk boks maçı kaç raunttan oluşur?",
       "answers": {
         "9": "9",
         "10": "10",
@@ -1206,7 +1206,7 @@
       }
     },
     "sports:13": {
-      "question": "Toprak kortlarda hangi tenis Grand Slam oynanır?",
+      "question": "Toprak kortta oynanan Grand Slam turnuvası hangisidir?",
       "answers": {
         "Wimbledon": "Wimbledon",
         "US Open": "ABD Açık",
@@ -1215,16 +1215,16 @@
       }
     },
     "sports:14": {
-      "question": "Formula 1 hangi yarış şeklidir?",
+      "question": "Formula 1 hangi tür yarış sporudur?",
       "answers": {
         "Boat": "Tekne",
-        "Car": "Araba",
+        "Car": "Otomobil",
         "Horse": "At",
         "Bicycle": "Bisiklet"
       }
     },
     "sports:15": {
-      "question": "Bir maraton yaklaşık olarak ne kadar sürer?",
+      "question": "Bir maratonun uzunluğu yaklaşık kaç kilometredir?",
       "answers": {
         "21 km": "21 km",
         "42 km": "42 km",
@@ -1233,7 +1233,7 @@
       }
     },
     "sports:16": {
-      "question": "Bir kriket takımında kaç oyuncu vardır?",
+      "question": "Bir kriket takımında kaç oyuncu bulunur?",
       "answers": {
         "9": "9",
         "10": "10",
@@ -1242,7 +1242,7 @@
       }
     },
     "sports:17": {
-      "question": "Masters Turnuvası hangi spor dalında oynanır?",
+      "question": "Masters Turnuvası hangi spor dalında düzenlenir?",
       "answers": {
         "Golf": "Golf",
         "Tennis": "Tenis",
@@ -1260,7 +1260,7 @@
       }
     },
     "sports:19": {
-      "question": "Bir futbol maçı, duraklama süresi hariç ne kadar sürer?",
+      "question": "Bir futbol maçı, uzatma dakikaları hariç kaç dakika sürer?",
       "answers": {
         "80 minutes": "80 dakika",
         "90 minutes": "90 dakika",
@@ -1269,7 +1269,7 @@
       }
     },
     "sports:20": {
-      "question": "Hangi kart bir futbolcuyu sahadan uzaklaştırır?",
+      "question": "Futbolda hangi kart oyuncunun oyundan atılması anlamına gelir?",
       "answers": {
         "Yellow": "Sarı",
         "Red": "Kırmızı",
@@ -1278,7 +1278,7 @@
       }
     },
     "sports:21": {
-      "question": "Hat-trick, bir maçta kaç gol atmak anlamına gelir?",
+      "question": "Futbolda hat-trick, bir oyuncunun maçta kaç gol atmasıdır?",
       "answers": {
         "2": "2",
         "3": "3",
@@ -1287,7 +1287,7 @@
       }
     },
     "sports:22": {
-      "question": "Cristiano Ronaldo hangi milli takımı temsil ediyor?",
+      "question": "Cristiano Ronaldo hangi millî takımda oynar?",
       "answers": {
         "Brazil": "Brezilya",
         "Spain": "İspanya",
@@ -1296,7 +1296,7 @@
       }
     },
     "sports:23": {
-      "question": "Pelé uluslararası alanda hangi ülkede oynadı?",
+      "question": "Pelé millî takım düzeyinde hangi ülkeyi temsil etti?",
       "answers": {
         "Argentina": "Arjantin",
         "Brazil": "Brezilya",
@@ -1305,7 +1305,7 @@
       }
     },
     "sports:24": {
-      "question": "Avrupa'nın en iyi kulüp futbolu müsabakası hangisidir?",
+      "question": "Avrupa'nın en üst düzey kulüp futbolu turnuvası hangisidir?",
       "answers": {
         "Europa League": "Avrupa Ligi",
         "Champions League": "Şampiyonlar Ligi",
@@ -1317,7 +1317,7 @@
       "question": "Ballon d'Or hangi spor dalında verilir?",
       "answers": {
         "Basketball": "Basketbol",
-        "Football/Soccer": "Futbol/Futbol",
+        "Football/Soccer": "Futbol",
         "Tennis": "Tenis",
         "Golf": "Golf"
       }
@@ -1332,10 +1332,10 @@
       }
     },
     "sports:27": {
-      "question": "Futbolda 'temiz sayfa' ne anlama geliyor?",
+      "question": "Futbolda clean sheet ne anlama gelir?",
       "answers": {
         "Scoring many goals": "Çok gol atmak",
-        "Conceding no goals": "Hiç gol yememek",
+        "Conceding no goals": "Gol yememek",
         "Getting a red card": "Kırmızı kart görmek",
         "A draw": "Beraberlik"
       }
@@ -1350,7 +1350,7 @@
       }
     },
     "sports:29": {
-      "question": "Üç sayı yayının gerisinden atılan baskete değer mi?",
+      "question": "Üç sayı çizgisinin gerisinden atılan basket kaç sayı değerindedir?",
       "answers": {
         "1": "1",
         "2": "2",
@@ -1359,7 +1359,7 @@
       }
     },
     "sports:30": {
-      "question": "Standart basketbol potaları hangi yüksekliğe ayarlanmıştır?",
+      "question": "Standart bir basketbol potasının yüksekliği ne kadardır?",
       "answers": {
         "8 feet": "8 fit",
         "10 feet": "10 fit",
@@ -1368,7 +1368,7 @@
       }
     },
     "sports:31": {
-      "question": "NBA, hangi ülkede kurulu bir ligdir?",
+      "question": "NBA hangi ülkede kurulmuş bir ligdir?",
       "answers": {
         "Canada": "Kanada",
         "USA": "ABD",
@@ -1377,7 +1377,7 @@
       }
     },
     "sports:32": {
-      "question": "Basketbolu icat eden ülke hangisidir?",
+      "question": "Basketbolun icat edildiği ülke hangisidir?",
       "answers": {
         "Canada": "Kanada",
         "USA": "ABD",
@@ -1386,7 +1386,7 @@
       }
     },
     "sports:33": {
-      "question": "Teniste her yıl kaç Grand Slam etkinliği düzenleniyor?",
+      "question": "Teniste her yıl kaç Grand Slam turnuvası düzenlenir?",
       "answers": {
         "2": "2",
         "3": "3",
@@ -1395,25 +1395,25 @@
       }
     },
     "sports:34": {
-      "question": "Wimbledon hangi zeminde oynanıyor?",
+      "question": "Wimbledon hangi zeminde oynanır?",
       "answers": {
-        "Clay": "Kil",
+        "Clay": "Toprak",
         "Grass": "Çim",
         "Hard court": "Sert kort",
         "Carpet": "Halı"
       }
     },
     "sports:35": {
-      "question": "Roger Federer hangi sporla ünlüdür?",
+      "question": "Roger Federer hangi spor dalıyla tanınır?",
       "answers": {
         "Golf": "Golf",
         "Tennis": "Tenis",
-        "Cycling": "Bisiklete binme",
-        "Rowing": "Kürek çekme"
+        "Cycling": "Bisiklet",
+        "Rowing": "Kürek"
       }
     },
     "sports:36": {
-      "question": "Serena Williams hangi spor dalında şampiyon?",
+      "question": "Serena Williams hangi spor dalında şampiyon olmuştur?",
       "answers": {
         "Golf": "Golf",
         "Tennis": "Tenis",
@@ -1422,7 +1422,7 @@
       }
     },
     "sports:37": {
-      "question": "Teniste bir oyuncu deuce’tan sonra sayı aldığında ne olur?",
+      "question": "Teniste deuce'tan sonra sayı alan oyuncu hangi duruma geçer?",
       "answers": {
         "Game": "Oyun",
         "Advantage": "Avantaj",
@@ -1431,7 +1431,7 @@
       }
     },
     "sports:38": {
-      "question": "İlk modern Olimpiyat Oyunları hangi yılda yapıldı?",
+      "question": "İlk modern Olimpiyat Oyunları hangi yıl düzenlendi?",
       "answers": {
         "1896": "1896",
         "1900": "1900",
@@ -1440,7 +1440,7 @@
       }
     },
     "sports:39": {
-      "question": "2016 Yaz Olimpiyatları hangi ülkede düzenlendi?",
+      "question": "2016 Yaz Olimpiyatları hangi şehirde düzenlendi?",
       "answers": {
         "London": "Londra",
         "Rio de Janeiro": "Rio de Janeiro",
@@ -1449,7 +1449,7 @@
       }
     },
     "sports:40": {
-      "question": "2024 Yaz Olimpiyatları hangi ülkede düzenlendi?",
+      "question": "2024 Yaz Olimpiyatları hangi şehirde düzenlendi?",
       "answers": {
         "Tokyo": "Tokyo",
         "Paris": "Paris",
@@ -1458,16 +1458,16 @@
       }
     },
     "sports:41": {
-      "question": "Olimpiyat sloganı 'Daha Hızlı, Daha Yüksek, ____'dir.",
+      "question": "Olimpiyat sloganındaki boşluğu tamamla: “Daha hızlı, daha yüksek, daha ___.”",
       "answers": {
-        "Better": "Daha iyi",
-        "Stronger": "Daha Güçlü",
-        "Farther": "Daha uzağa",
-        "Longer": "Daha uzun"
+        "Better": "İyi",
+        "Stronger": "Güçlü",
+        "Farther": "Uzak",
+        "Longer": "Uzun"
       }
     },
     "sports:42": {
-      "question": "Olimpiyat meşalesi geleneksel olarak nerede yakılır?",
+      "question": "Olimpiyat meşalesi geleneksel olarak hangi ülkede yakılır?",
       "answers": {
         "Italy": "İtalya",
         "Greece": "Yunanistan",
@@ -1476,25 +1476,25 @@
       }
     },
     "sports:43": {
-      "question": "Michael Phelps hangi Olimpiyat sporunda domine etti?",
+      "question": "Michael Phelps hangi Olimpiyat branşına damga vurdu?",
       "answers": {
         "Athletics": "Atletizm",
         "Swimming": "Yüzme",
         "Diving": "Dalış",
-        "Rowing": "Kürek çekme"
+        "Rowing": "Kürek"
       }
     },
     "sports:44": {
-      "question": "Hangisi rekabetçi bir yüzme vuruşu DEĞİLDİR?",
+      "question": "Hangisi yarışmalarda kullanılan bir yüzme stili değildir?",
       "answers": {
         "Butterfly": "Kelebek",
         "Backstroke": "Sırtüstü",
         "Breaststroke": "Kurbağalama",
-        "Sidestroke": "Yan Vuruş"
+        "Sidestroke": "Yan yüzme"
       }
     },
     "sports:45": {
-      "question": "Muhammed Ali bir efsane miydi?",
+      "question": "Muhammad Ali hangi sporun efsanesidir?",
       "answers": {
         "Footballer": "Futbolcu",
         "Boxer": "Boksör",
@@ -1503,7 +1503,7 @@
       }
     },
     "sports:46": {
-      "question": "Judo hangi ülkede ortaya çıktı?",
+      "question": "Judo hangi ülkede ortaya çıkmıştır?",
       "answers": {
         "China": "Çin",
         "Japan": "Japonya",
@@ -1512,7 +1512,7 @@
       }
     },
     "sports:47": {
-      "question": "Tekvando hangi ülkede ortaya çıktı?",
+      "question": "Tekvando hangi ülkede ortaya çıkmıştır?",
       "answers": {
         "Japan": "Japonya",
         "China": "Çin",
@@ -1521,16 +1521,16 @@
       }
     },
     "sports:48": {
-      "question": "Boksta 'KO' ne anlama geliyor?",
+      "question": "Boksta KO'nun açılımı nedir?",
       "answers": {
         "Knockout": "Nakavt",
-        "Keep On": "Devam Et",
-        "Knee Out": "Diz çökmüş",
-        "Key Opponent": "Kilit Rakip"
+        "Keep On": "Keep On",
+        "Knee Out": "Knee Out",
+        "Key Opponent": "Key Opponent"
       }
     },
     "sports:49": {
-      "question": "Sumo güreşi geleneksel bir spor mudur?",
+      "question": "Sumo güreşi hangi ülkenin geleneksel sporudur?",
       "answers": {
         "China": "Çin",
         "Japan": "Japonya",
@@ -1539,25 +1539,25 @@
       }
     },
     "sports:50": {
-      "question": "Golfte, bir çukurda eşit değerin altında bir vuruş a'dır?",
+      "question": "Golfte bir çukuru par değerinden bir vuruş eksik tamamlamaya ne denir?",
       "answers": {
-        "Eagle": "Kartal",
+        "Eagle": "Eagle",
         "Birdie": "Birdie",
-        "Bogey": "Umacı",
+        "Bogey": "Bogey",
         "Par": "Par"
       }
     },
     "sports:51": {
-      "question": "Golfte, ortalamanın üzerinde bir vuruş a'dır?",
+      "question": "Golfte bir çukuru par değerinden bir vuruş fazla tamamlamaya ne denir?",
       "answers": {
         "Birdie": "Birdie",
-        "Bogey": "Umacı",
-        "Eagle": "Kartal",
+        "Bogey": "Bogey",
+        "Eagle": "Eagle",
         "Ace": "As"
       }
     },
     "sports:52": {
-      "question": "Golfte bire bir oyuna aynı zamanda da denir?",
+      "question": "Golfte topu tek vuruşta deliğe sokmaya başka ne ad verilir?",
       "answers": {
         "Ace": "As",
         "Birdie": "Birdie",
@@ -1566,7 +1566,7 @@
       }
     },
     "sports:53": {
-      "question": "Standart bir golf turunda kaç delik vardır?",
+      "question": "Standart bir golf turunda kaç çukur bulunur?",
       "answers": {
         "9": "9",
         "12": "12",
@@ -1575,7 +1575,7 @@
       }
     },
     "sports:54": {
-      "question": "Golfün doğum yeri hangi ülkedir?",
+      "question": "Golf hangi ülkede doğmuştur?",
       "answers": {
         "USA": "ABD",
         "Scotland": "İskoçya",
@@ -1584,34 +1584,34 @@
       }
     },
     "sports:55": {
-      "question": "Lewis Hamilton hangi spor dalında yarışıyor?",
+      "question": "Lewis Hamilton hangi spor dalında yarışır?",
       "answers": {
         "MotoGP": "MotoGP",
         "Formula 1": "Formül 1",
-        "Rally": "Miting",
+        "Rally": "Ralli",
         "NASCAR": "NASCAR"
       }
     },
     "sports:56": {
-      "question": "Formula 1 arabaları bir yarışta mı yarışıyor?",
+      "question": "Formula 1 araçları nerede yarışır?",
       "answers": {
-        "Field": "Alanı",
-        "Track/circuit": "Parça/devre",
+        "Field": "Saha",
+        "Track/circuit": "Pist",
         "Pool": "Havuz",
-        "Court": "Mahkeme"
+        "Court": "Kort"
       }
     },
     "sports:57": {
-      "question": "Formula 1'de şampiyonluklar sürücülere gidiyor ve?",
+      "question": "Formula 1'de sürücüler şampiyonasının yanında hangi şampiyona düzenlenir?",
       "answers": {
         "Fans": "Hayranlar",
-        "Constructors": "Yapıcılar",
+        "Constructors": "Takımlar",
         "Cities": "Şehirler",
         "Sponsors": "Sponsorlar"
       }
     },
     "sports:58": {
-      "question": "Beyzbolda kaç vuruş bir vuruşu sağlar?",
+      "question": "Beyzbolda strikeout için kaç strike gerekir?",
       "answers": {
         "2": "2",
         "3": "3",
@@ -1620,16 +1620,16 @@
       }
     },
     "sports:59": {
-      "question": "Beyzbol a şeklindeki bir sahada oynanır?",
+      "question": "Beyzbol sahasının biçimi hangisine benzer?",
       "answers": {
-        "Circle": "Circle",
+        "Circle": "Daire",
         "Diamond": "Elmas",
         "Square": "Kare",
         "Triangle": "Üçgen"
       }
     },
     "sports:60": {
-      "question": "Super Bowl hangi sporun şampiyonası?",
+      "question": "Super Bowl hangi sporun şampiyonluk maçıdır?",
       "answers": {
         "Basketball": "Basketbol",
         "American football": "Amerikan futbolu",
@@ -1638,7 +1638,7 @@
       }
     },
     "sports:61": {
-      "question": "Amerikan futbolunda sahada takım başına kaç oyuncu vardır?",
+      "question": "Amerikan futbolunda bir takımın sahada kaç oyuncusu bulunur?",
       "answers": {
         "9": "9",
         "10": "10",
@@ -1647,16 +1647,16 @@
       }
     },
     "sports:62": {
-      "question": "Buz hokeyi oynanıyor mu?",
+      "question": "Buz hokeyi hangi zeminde oynanır?",
       "answers": {
         "Grass": "Çim",
         "Ice": "Buz",
         "Sand": "Kum",
-        "Clay": "Kil"
+        "Clay": "Toprak"
       }
     },
     "sports:63": {
-      "question": "Stanley Kupası hangi sporun ödülüdür?",
+      "question": "Stanley Kupası hangi spor dalının kupasıdır?",
       "answers": {
         "Basketball": "Basketbol",
         "Ice hockey": "Buz hokeyi",
@@ -1665,7 +1665,7 @@
       }
     },
     "sports:64": {
-      "question": "Buz hokeyinde buzda her tarafta kaç oyuncu var?",
+      "question": "Buz hokeyinde bir takım aynı anda buz üzerinde kaç oyuncuyla yer alır?",
       "answers": {
         "5": "5",
         "6": "6",
@@ -1674,7 +1674,7 @@
       }
     },
     "sports:65": {
-      "question": "Voleybol sahasında takım başına kaç oyuncu var?",
+      "question": "Voleybolda bir takım sahada kaç oyuncuyla yer alır?",
       "answers": {
         "5": "5",
         "6": "6",
@@ -1683,16 +1683,16 @@
       }
     },
     "sports:66": {
-      "question": "Masa tenisi aynı zamanda yaygın olarak mı adlandırılıyor?",
+      "question": "Masa tenisi yaygın olarak hangi adla da bilinir?",
       "answers": {
-        "Squash": "Kabak",
-        "Ping pong": "Masa tenisi",
+        "Squash": "Squash",
+        "Ping pong": "Ping pong",
         "Badminton": "Badminton",
         "Racquetball": "Raketbol"
       }
     },
     "sports:67": {
-      "question": "Hangi ülke uluslararası masa tenisine hakim?",
+      "question": "Uluslararası masa tenisinde en başarılı ülkelerden biri hangisidir?",
       "answers": {
         "Brazil": "Brezilya",
         "China": "Çin",
@@ -1701,25 +1701,25 @@
       }
     },
     "sports:68": {
-      "question": "Dört duvar arasında hangi raket sporu oynanır?",
+      "question": "Dört duvarla çevrili kortta oynanan raket sporu hangisidir?",
       "answers": {
         "Tennis": "Tenis",
-        "Squash": "Kabak",
+        "Squash": "Squash",
         "Badminton": "Badminton",
         "Table tennis": "Masa tenisi"
       }
     },
     "sports:69": {
-      "question": "Yeni Zelanda'nın milli ragbi takımı ne olarak biliniyor?",
+      "question": "Yeni Zelanda millî ragbi takımı hangi adla bilinir?",
       "answers": {
         "Wallabies": "Wallabies",
-        "All Blacks": "Tüm Siyahlar",
+        "All Blacks": "All Blacks",
         "Springboks": "Springboks",
-        "Pumas": "Pumalar"
+        "Pumas": "Pumas"
       }
     },
     "sports:70": {
-      "question": "'Scrum' hangi sporun bir özelliğidir?",
+      "question": "Scrum hangi sporun bir parçasıdır?",
       "answers": {
         "Rugby": "Ragbi",
         "Tennis": "Tenis",
@@ -1728,7 +1728,7 @@
       }
     },
     "sports:71": {
-      "question": "Ragbi birliğinde bir 'deneme' kaç puan değerindedir?",
+      "question": "Ragbi birliğinde bir try kaç sayı değerindedir?",
       "answers": {
         "2": "2",
         "3": "3",
@@ -1737,7 +1737,7 @@
       }
     },
     "sports:72": {
-      "question": "'Yüzyıl' (100 çalışma) bir terim midir?",
+      "question": "Century, yani 100 run, hangi sporda kullanılan bir terimdir?",
       "answers": {
         "Baseball": "Beyzbol",
         "Cricket": "Kriket",
@@ -1746,7 +1746,7 @@
       }
     },
     "sports:73": {
-      "question": "Kriket özellikle hangi ülkede popüler?",
+      "question": "Kriket özellikle hangi ülkede popülerdir?",
       "answers": {
         "USA": "ABD",
         "India": "Hindistan",
@@ -1755,25 +1755,25 @@
       }
     },
     "sports:74": {
-      "question": "Cirit hangi spor dalında atılır?",
+      "question": "Cirit atma hangi spor dalının bir branşıdır?",
       "answers": {
         "Gymnastics": "Jimnastik",
         "Athletics": "Atletizm",
-        "Cycling": "Bisiklete binme",
-        "Rowing": "Kürek çekme"
+        "Cycling": "Bisiklet",
+        "Rowing": "Kürek"
       }
     },
     "sports:75": {
-      "question": "Uzun atlama hangi spor dalındaki bir yarıştır?",
+      "question": "Uzun atlama hangi spor dalının bir branşıdır?",
       "answers": {
         "Swimming": "Yüzme",
         "Athletics": "Atletizm",
-        "Cycling": "Bisiklete binme",
+        "Cycling": "Bisiklet",
         "Gymnastics": "Jimnastik"
       }
     },
     "sports:76": {
-      "question": "Olimpiyatlardaki en kısa sprint mesafesi nedir?",
+      "question": "Olimpiyatlardaki en kısa sprint mesafesi kaç metredir?",
       "answers": {
         "50 m": "50 m",
         "100 m": "100 m",
@@ -1791,25 +1791,25 @@
       }
     },
     "sports:78": {
-      "question": "'Slalom' hangi spor dalındaki bir etkinliktir?",
+      "question": "Slalom hangi spor dalındaki bir yarış türüdür?",
       "answers": {
         "Swimming": "Yüzme",
         "Skiing": "Kayak",
-        "Cycling": "Bisiklete binme",
+        "Cycling": "Bisiklet",
         "Boxing": "Boks"
       }
     },
     "sports:79": {
-      "question": "Kayak genellikle hangi spor türüdür?",
+      "question": "Kayak genellikle hangi tür sporlar arasında yer alır?",
       "answers": {
-        "Water": "Su",
-        "Winter": "Kış",
-        "Desert": "Çöl",
-        "Indoor": "İç mekan"
+        "Water": "Su sporu",
+        "Winter": "Kış sporu",
+        "Desert": "Çöl sporu",
+        "Indoor": "Salon sporu"
       }
     },
     "sports:80": {
-      "question": "Sürat pateni hangi tarihte yapılıyor?",
+      "question": "Sürat pateni hangi zeminde yapılır?",
       "answers": {
         "Grass": "Çim",
         "Ice": "Buz",
@@ -1818,7 +1818,7 @@
       }
     },
     "sports:81": {
-      "question": "Hangi sporda 'grev' ve 'yedek' terimleri kullanılır?",
+      "question": "Strike ve spare terimleri hangi sporda kullanılır?",
       "answers": {
         "Bowling": "Bowling",
         "Golf": "Golf",
@@ -1827,7 +1827,7 @@
       }
     },
     "sports:82": {
-      "question": "Bilardoda maksimum mola nedir?",
+      "question": "Snooker'da yapılabilecek en yüksek seri kaç sayıdır?",
       "answers": {
         "100": "100",
         "147": "147",
@@ -1836,7 +1836,7 @@
       }
     },
     "sports:83": {
-      "question": "Üç dartla maksimum puan nedir?",
+      "question": "Üç dartla elde edilebilecek en yüksek puan kaçtır?",
       "answers": {
         "120": "120",
         "150": "150",
@@ -1845,16 +1845,16 @@
       }
     },
     "sports:84": {
-      "question": "'Peloton' hangi spor dalındaki binicilerden oluşan bir gruptur?",
+      "question": "Peloton, hangi spor dalındaki sporculardan oluşan gruba verilen addır?",
       "answers": {
-        "Cycling": "Bisiklete binme",
+        "Cycling": "Bisiklet",
         "Swimming": "Yüzme",
         "Boxing": "Boks",
         "Golf": "Golf"
       }
     },
     "sports:85": {
-      "question": "Tour de France esas olarak nerede yapılıyor?",
+      "question": "Tour de France'ın büyük bölümü hangi ülkede düzenlenir?",
       "answers": {
         "Italy": "İtalya",
         "Spain": "İspanya",
@@ -1863,7 +1863,7 @@
       }
     },
     "sports:86": {
-      "question": "2022 FIFA Dünya Kupası'na ev sahipliği yapan kişi hangisidir?",
+      "question": "2022 FIFA Dünya Kupası'na hangi ülke ev sahipliği yaptı?",
       "answers": {
         "Russia": "Rusya",
         "Qatar": "Katar",
@@ -1872,7 +1872,7 @@
       }
     },
     "sports:87": {
-      "question": "FIFA Dünya Kupası kupasını kim veriyor?",
+      "question": "FIFA Dünya Kupası kupasını hangi kuruluş verir?",
       "answers": {
         "UEFA": "UEFA",
         "FIFA": "FIFA",
@@ -1881,7 +1881,7 @@
       }
     },
     "sports:88": {
-      "question": "Futbolda penaltı vuruşu yaklaşık olarak nereden alınır?",
+      "question": "Futbolda penaltı vuruşu kaleye yaklaşık kaç metre uzaktan yapılır?",
       "answers": {
         "11 m": "11 m",
         "20 m": "20 m",
@@ -1890,7 +1890,7 @@
       }
     },
     "sports:89": {
-      "question": "Futbol maçının başında iki takımda toplam kaç oyuncu sahada olur?",
+      "question": "Bir futbol maçının başında iki takımda toplam kaç oyuncu sahada bulunur?",
       "answers": {
         "18": "18",
         "20": "20",
@@ -1899,7 +1899,7 @@
       }
     },
     "sports:90": {
-      "question": "Hangi sporda 'aşk', 'ikili' ve 'as' bulunur?",
+      "question": "Love, deuce ve ace terimleri hangi sporda kullanılır?",
       "answers": {
         "Golf": "Golf",
         "Tennis": "Tenis",
@@ -1908,7 +1908,7 @@
       }
     },
     "sports:91": {
-      "question": "Wimbledon, ABD ve Fransa Açık'la birlikte dördüncü tenis Grand Slam'i hangisi?",
+      "question": "Wimbledon, ABD Açık ve Fransa Açık'ın yanındaki dördüncü Grand Slam turnuvası hangisidir?",
       "answers": {
         "Italian Open": "İtalya Açık",
         "Australian Open": "Avustralya Açık",
@@ -1917,7 +1917,7 @@
       }
     },
     "sports:92": {
-      "question": "Artistik patinaj hangi Olimpiyatlarda yer alıyor?",
+      "question": "Artistik buz pateni hangi Olimpiyat Oyunları'nda yer alır?",
       "answers": {
         "Summer": "Yaz",
         "Winter": "Kış",
@@ -1926,7 +1926,7 @@
       }
     },
     "sports:93": {
-      "question": "Bir beyzbol takımında sahada kaç oyuncu vardır?",
+      "question": "Bir beyzbol takımı sahada kaç oyuncuyla yer alır?",
       "answers": {
         "8": "8",
         "9": "9",
@@ -1935,7 +1935,7 @@
       }
     },
     "sports:94": {
-      "question": "2008 Yaz Olimpiyatları'na ev sahipliği yapan kişi hangisiydi?",
+      "question": "2008 Yaz Olimpiyatları'na hangi şehir ev sahipliği yaptı?",
       "answers": {
         "London": "Londra",
         "Beijing": "Pekin",
@@ -1944,34 +1944,34 @@
       }
     },
     "sports:95": {
-      "question": "Kürek yarışları ne zaman yapılıyor?",
+      "question": "Kürek yarışları hangi zeminde yapılır?",
       "answers": {
-        "A track": "Bir parça",
-        "Water": "Su",
-        "Ice": "Buz",
-        "Grass": "Çim"
+        "A track": "Pistte",
+        "Water": "Suda",
+        "Ice": "Buzda",
+        "Grass": "Çimde"
       }
     },
     "sports:96": {
-      "question": "Hangi sporda 'caddie' kullanılır?",
+      "question": "Caddie hangi sporda görev yapar?",
       "answers": {
         "Golf": "Golf",
         "Tennis": "Tenis",
         "Boxing": "Boks",
-        "Cycling": "Bisiklete binme"
+        "Cycling": "Bisiklet"
       }
     },
     "sports:97": {
-      "question": "Yüksek atlama ve sırıkla atlama hangi spora aittir?",
+      "question": "Yüksek atlama ve sırıkla atlama hangi spor dalının branşlarıdır?",
       "answers": {
         "Gymnastics": "Jimnastik",
         "Athletics": "Atletizm",
         "Swimming": "Yüzme",
-        "Cycling": "Bisiklete binme"
+        "Cycling": "Bisiklet"
       }
     },
     "sports:98": {
-      "question": "Yaz Olimpiyatlarına en çok hangi ülke ev sahipliği yaptı?",
+      "question": "Yaz Olimpiyatları'na en çok kez hangi ülke ev sahipliği yapmıştır?",
       "answers": {
         "France": "Fransa",
         "USA": "ABD",
@@ -1980,25 +1980,25 @@
       }
     },
     "sports:99": {
-      "question": "Eskrim yarışmacıları ne kullanıyor?",
+      "question": "Eskrim sporcuları hangi ekipmanı kullanır?",
       "answers": {
-        "Bat": "Yarasa",
-        "Sword/blade": "Kılıç/kılıç",
+        "Bat": "Sopa",
+        "Sword/blade": "Kılıç",
         "Racket": "Raket",
-        "Club": "Kulüp"
+        "Club": "Golf sopası"
       }
     },
     "sports:100": {
-      "question": "Roland Garros'ta hangi spor oynanıyor?",
+      "question": "Roland Garros'ta hangi spor oynanır?",
       "answers": {
         "Golf": "Golf",
         "Tennis": "Tenis",
         "Rugby": "Ragbi",
-        "Cycling": "Bisiklete binme"
+        "Cycling": "Bisiklet"
       }
     },
     "sports:101": {
-      "question": "Altın madalya kazanan bir maraton koşucusu ne kazanır?",
+      "question": "Maratonda birinci olan sporcu hangi ödülü kazanır?",
       "answers": {
         "Trophy only": "Yalnızca kupa",
         "Gold medal": "Altın madalya",
@@ -2007,7 +2007,7 @@
       }
     },
     "art:0": {
-      "question": "Mona Lisa'yı kim boyadı?",
+      "question": "Mona Lisa'yı kim resmetti?",
       "answers": {
         "Van Gogh": "Van Gogh",
         "Picasso": "Picasso",
@@ -2016,7 +2016,7 @@
       }
     },
     "art:1": {
-      "question": "'Yıldızlı Gece'yi kim çizdi?",
+      "question": "Yıldızlı Gece tablosunu kim yaptı?",
       "answers": {
         "Monet": "Monet",
         "Van Gogh": "Van Gogh",
@@ -2025,16 +2025,16 @@
       }
     },
     "art:2": {
-      "question": "Mona Lisa hangi müzede sergileniyor?",
+      "question": "Mona Lisa hangi müzede sergilenir?",
       "answers": {
-        "The Met": "Buluştu",
-        "Louvre": "Panjur",
+        "The Met": "Metropolitan Sanat Müzesi",
+        "Louvre": "Louvre",
         "Prado": "Prado",
         "Uffizi": "Uffizi"
       }
     },
     "art:3": {
-      "question": "Hangi sanatçının kendi kulağının bir kısmını kestiği meşhurdur?",
+      "question": "Kendi kulağının bir kısmını kesmesiyle tanınan sanatçı kimdir?",
       "answers": {
         "Picasso": "Picasso",
         "Van Gogh": "Van Gogh",
@@ -2043,7 +2043,7 @@
       }
     },
     "art:4": {
-      "question": "Sistine Şapeli'nin tavanını kim boyadı?",
+      "question": "Sistine Şapeli'nin tavan fresklerini kim yaptı?",
       "answers": {
         "Raphael": "Raphael",
         "Michelangelo": "Michelangelo",
@@ -2052,7 +2052,7 @@
       }
     },
     "art:5": {
-      "question": "Pablo Picasso hangi sanat akımıyla ilişkilidir?",
+      "question": "Pablo Picasso hangi sanat akımıyla ilişkilendirilir?",
       "answers": {
         "Impressionism": "İzlenimcilik",
         "Cubism": "Kübizm",
@@ -2061,16 +2061,16 @@
       }
     },
     "art:6": {
-      "question": "Salvador Dalí hangi sanat tarzıyla tanınıyor?",
+      "question": "Salvador Dalí hangi sanat akımıyla tanınır?",
       "answers": {
         "Realism": "Gerçekçilik",
         "Surrealism": "Sürrealizm",
-        "Pop Art": "Popüler Sanat",
+        "Pop Art": "Pop Art",
         "Gothic": "Gotik"
       }
     },
     "art:7": {
-      "question": "'Çığlık'ı kim çizdi?",
+      "question": "Çığlık tablosunu kim yaptı?",
       "answers": {
         "Munch": "Munch",
         "Klimt": "Klimt",
@@ -2079,16 +2079,16 @@
       }
     },
     "art:8": {
-      "question": "Hangi sanatçı Campbell'in çorba kutularını boyamasıyla ünlüdür?",
+      "question": "Campbell's çorba kutularını resmetmesiyle tanınan sanatçı kimdir?",
       "answers": {
         "Warhol": "Warhol",
         "Pollock": "Pollock",
         "Rothko": "Rothko",
-        "Bacon": "Pastırma"
+        "Bacon": "Bacon"
       }
     },
     "art:9": {
-      "question": "'İnci Küpeli Kız' resmini kim yaptı?",
+      "question": "İnci Küpeli Kız tablosunu kim yaptı?",
       "answers": {
         "Vermeer": "Vermeer",
         "Rembrandt": "Rembrandt",
@@ -2097,7 +2097,7 @@
       }
     },
     "art:10": {
-      "question": "Mavi ve sarı boyanın karıştırılması hangi rengi oluşturur?",
+      "question": "Mavi ve sarı boya karıştırıldığında hangi renk elde edilir?",
       "answers": {
         "Purple": "Mor",
         "Green": "Yeşil",
@@ -2106,7 +2106,7 @@
       }
     },
     "art:11": {
-      "question": "Claude Monet hangi hareketin önde gelen isimlerinden biriydi?",
+      "question": "Claude Monet hangi sanat akımının önde gelen isimlerindendir?",
       "answers": {
         "Impressionism": "İzlenimcilik",
         "Cubism": "Kübizm",
@@ -2124,7 +2124,7 @@
       }
     },
     "art:13": {
-      "question": "Bunlardan hangisi ana renktir?",
+      "question": "Hangisi ana renklerden biridir?",
       "answers": {
         "Green": "Yeşil",
         "Orange": "Turuncu",
@@ -2133,7 +2133,7 @@
       }
     },
     "art:14": {
-      "question": "'Guernica' hangi sanatçının ünlü eseridir?",
+      "question": "Guernica hangi sanatçının eseridir?",
       "answers": {
         "Dalí": "Dalí",
         "Picasso": "Picasso",
@@ -2142,7 +2142,7 @@
       }
     },
     "art:15": {
-      "question": "Islak sıva üzerine resim yapmak bir teknik midir?",
+      "question": "Islak sıva üzerine resim yapma tekniğine ne denir?",
       "answers": {
         "Fresco": "Fresk",
         "Collage": "Kolaj",
@@ -2151,7 +2151,7 @@
       }
     },
     "art:16": {
-      "question": "'Düşünen Adam' heykeli kim tarafından yaratıldı?",
+      "question": "Düşünen Adam heykelini kim yaptı?",
       "answers": {
         "Rodin": "Rodin",
         "Michelangelo": "Michelangelo",
@@ -2169,7 +2169,7 @@
       }
     },
     "art:18": {
-      "question": "'Ayçiçekleri' ünlü bir tablo serisidir?",
+      "question": "Ayçiçekleri adlı ünlü tablo serisini kim yaptı?",
       "answers": {
         "Monet": "Monet",
         "Van Gogh": "Van Gogh",
@@ -2178,7 +2178,7 @@
       }
     },
     "art:19": {
-      "question": "'Son Akşam Yemeği' duvar resmi kim tarafından yapıldı?",
+      "question": "Son Akşam Yemeği duvar resmini kim yaptı?",
       "answers": {
         "Raphael": "Raphael",
         "Leonardo da Vinci": "Leonardo da Vinci",
@@ -2187,7 +2187,7 @@
       }
     },
     "art:20": {
-      "question": "Hangi sanatçı 'damlama' resimleriyle ünlüdür?",
+      "question": "Damlatarak yaptığı tablolarla tanınan sanatçı kimdir?",
       "answers": {
         "Jackson Pollock": "Jackson Pollock",
         "Rothko": "Rothko",
@@ -2196,7 +2196,7 @@
       }
     },
     "art:21": {
-      "question": "'Belleğin Kalıcılığı' (saatlerin erimesi) nedir?",
+      "question": "Eriyen saatleriyle tanınan Belleğin Azmi tablosu kime aittir?",
       "answers": {
         "Magritte": "Magritte",
         "Dalí": "Dalí",
@@ -2205,7 +2205,7 @@
       }
     },
     "art:22": {
-      "question": "Frida Kahlo en çok onunla mı tanınıyor?",
+      "question": "Frida Kahlo en çok hangi eserleriyle tanınır?",
       "answers": {
         "Landscapes": "Manzaralar",
         "Self-portraits": "Otoportreler",
@@ -2214,7 +2214,7 @@
       }
     },
     "art:23": {
-      "question": "Özgürlük Anıtı ABD'ye hangi ülkeden hediye edildi?",
+      "question": "Özgürlük Heykeli'ni ABD'ye hangi ülke hediye etti?",
       "answers": {
         "Britain": "Britanya",
         "France": "Fransa",
@@ -2223,7 +2223,7 @@
       }
     },
     "art:24": {
-      "question": "Kırmızı ve sarı boyayı karıştırmak ne yapar?",
+      "question": "Kırmızı ve sarı boya karıştırıldığında hangi renk elde edilir?",
       "answers": {
         "Green": "Yeşil",
         "Orange": "Turuncu",
@@ -2232,7 +2232,7 @@
       }
     },
     "art:25": {
-      "question": "Kırmızı ve mavi boyayı karıştırmak ne yapar?",
+      "question": "Kırmızı ve mavi boya karıştırıldığında hangi renk elde edilir?",
       "answers": {
         "Green": "Yeşil",
         "Purple": "Mor",
@@ -2241,7 +2241,7 @@
       }
     },
     "art:26": {
-      "question": "Üç ana boya rengi kırmızı, sarı ve?",
+      "question": "Boyadaki üç ana renk kırmızı, sarı ve hangisidir?",
       "answers": {
         "Green": "Yeşil",
         "Blue": "Mavi",
@@ -2250,7 +2250,7 @@
       }
     },
     "art:27": {
-      "question": "Hangi sanatçı nilüfer resimleriyle ünlüdür?",
+      "question": "Nilüferleri resmettiği tablolarıyla tanınan sanatçı kimdir?",
       "answers": {
         "Monet": "Monet",
         "Manet": "Manet",
@@ -2259,7 +2259,7 @@
       }
     },
     "art:28": {
-      "question": "Michelangelo'nun ünlü Floransa heykeli ne tasvir ediyor?",
+      "question": "Michelangelo'nun Floransa'daki ünlü heykeli kimi tasvir eder?",
       "answers": {
         "Caesar": "Sezar",
         "David": "David",
@@ -2268,7 +2268,7 @@
       }
     },
     "art:29": {
-      "question": "Güzel el yazısı sanatının adı nedir?",
+      "question": "Güzel yazı yazma sanatına ne denir?",
       "answers": {
         "Origami": "Origami",
         "Calligraphy": "Kaligrafi",
@@ -2277,25 +2277,25 @@
       }
     },
     "art:30": {
-      "question": "Bir insanı tasvir eden bir resim nedir?",
+      "question": "Bir kişiyi betimleyen resme ne ad verilir?",
       "answers": {
         "Landscape": "Manzara",
         "Portrait": "Portre",
         "Still life": "Natürmort",
-        "Mural": "Duvar Resmi"
+        "Mural": "Duvar resmi"
       }
     },
     "art:31": {
-      "question": "Bir meyve ya da nesne resmi nedir?",
+      "question": "Meyve veya cansız nesneleri betimleyen resme ne ad verilir?",
       "answers": {
         "Portrait": "Portre",
         "Still life": "Natürmort",
         "Landscape": "Manzara",
-        "Mural": "Duvar Resmi"
+        "Mural": "Duvar resmi"
       }
     },
     "art:32": {
-      "question": "Klasik heykeller geleneksel olarak mı oyulmuş?",
+      "question": "Klasik heykeller geleneksel olarak hangi malzemeden oyulur?",
       "answers": {
         "Marble": "Mermer",
         "Plastic": "Plastik",
@@ -2304,16 +2304,16 @@
       }
     },
     "art:33": {
-      "question": "Andy Warhol hangi hareketin lideriydi?",
+      "question": "Andy Warhol hangi sanat akımının önde gelen isimlerindendir?",
       "answers": {
-        "Pop Art": "Popüler Sanat",
+        "Pop Art": "Pop Art",
         "Cubism": "Kübizm",
         "Baroque": "Barok",
         "Gothic": "Gotik"
       }
     },
     "art:34": {
-      "question": "Vincent van Gogh hangi ülkedendi?",
+      "question": "Vincent van Gogh hangi ülkede doğmuştur?",
       "answers": {
         "France": "Fransa",
         "Netherlands": "Hollanda",
@@ -2322,7 +2322,7 @@
       }
     },
     "art:35": {
-      "question": "Pablo Picasso hangi ülkedendi?",
+      "question": "Pablo Picasso hangi ülkede doğmuştur?",
       "answers": {
         "Italy": "İtalya",
         "Spain": "İspanya",
@@ -2331,7 +2331,7 @@
       }
     },
     "art:36": {
-      "question": "Leonardo da Vinci hangi ülkedendi?",
+      "question": "Leonardo da Vinci hangi ülkede doğmuştur?",
       "answers": {
         "France": "Fransa",
         "Italy": "İtalya",
@@ -2340,7 +2340,7 @@
       }
     },
     "art:37": {
-      "question": "Louvre müzesi hangi şehirde bulunuyor?",
+      "question": "Louvre Müzesi hangi şehirdedir?",
       "answers": {
         "Rome": "Roma",
         "Paris": "Paris",
@@ -2349,16 +2349,16 @@
       }
     },
     "art:38": {
-      "question": "Sanat yapmak için malzemeleri yüzeye yapıştırmaya ne denir?",
+      "question": "Farklı malzemeleri bir yüzeye yapıştırarak sanat eseri oluşturma tekniğine ne denir?",
       "answers": {
         "Fresco": "Fresk",
         "Collage": "Kolaj",
         "Etching": "Gravür",
-        "Casting": "Oyuncu Seçimi"
+        "Casting": "Döküm"
       }
     },
     "art:39": {
-      "question": "İzlenimcilik hangi ülkede başladı?",
+      "question": "İzlenimcilik hangi ülkede doğmuştur?",
       "answers": {
         "Italy": "İtalya",
         "France": "Fransa",
@@ -2367,7 +2367,7 @@
       }
     },
     "art:40": {
-      "question": "Hangisi ana boya rengi DEĞİLDİR?",
+      "question": "Hangisi boyadaki ana renklerden biri değildir?",
       "answers": {
         "Red": "Kırmızı",
         "Blue": "Mavi",
@@ -2376,7 +2376,7 @@
       }
     },
     "art:41": {
-      "question": "Michelangelo'nun en ünlü tavanı hangi şapeldedir?",
+      "question": "Michelangelo'nun en ünlü tavan freskleri hangi şapeldedir?",
       "answers": {
         "Sistine Chapel": "Sistine Şapeli",
         "King's Chapel": "Kral Şapeli",
@@ -2385,7 +2385,7 @@
       }
     },
     "art:42": {
-      "question": "Hangi sanatçının 'Mavi Dönemi' vardı?",
+      "question": "Mavi Dönem'iyle tanınan sanatçı kimdir?",
       "answers": {
         "Picasso": "Picasso",
         "Monet": "Monet",
@@ -2394,7 +2394,7 @@
       }
     },
     "art:43": {
-      "question": "Rembrandt hangi ülkenin usta ressamıydı?",
+      "question": "Rembrandt hangi ülkeden bir ressamdır?",
       "answers": {
         "Netherlands": "Hollanda",
         "France": "Fransa",
@@ -2403,16 +2403,16 @@
       }
     },
     "art:44": {
-      "question": "'Gece Nöbeti' tablosunu kim yaptı?",
+      "question": "Gece Devriyesi tablosunu kim yaptı?",
       "answers": {
         "Vermeer": "Vermeer",
         "Rembrandt": "Rembrandt",
         "Rubens": "Rubens",
-        "Hals": "Haller"
+        "Hals": "Hals"
       }
     },
     "art:45": {
-      "question": "Resim, heykel ve çizim türleri nelerdir?",
+      "question": "Resim, heykel ve çizim hangi sanat grubuna girer?",
       "answers": {
         "Music": "Müzik",
         "Visual arts": "Görsel sanatlar",
@@ -2421,7 +2421,7 @@
       }
     },
     "art:46": {
-      "question": "Suluboya bir tür mü?",
+      "question": "Suluboya hangi malzeme türüdür?",
       "answers": {
         "Sculpture": "Heykel",
         "Paint": "Boya",
@@ -2430,16 +2430,16 @@
       }
     },
     "art:47": {
-      "question": "'Şövale' neye alışkın?",
+      "question": "Şövale ne için kullanılır?",
       "answers": {
-        "Mix clay": "Kili karıştırın",
-        "Hold a canvas while painting": "Resim yaparken tuvali tutun",
-        "Cut marble": "Mermer kesme",
-        "Frame photos": "Fotoğrafları çerçevele"
+        "Mix clay": "Kil karıştırmak",
+        "Hold a canvas while painting": "Resim yaparken tuvali tutmak",
+        "Cut marble": "Mermer kesmek",
+        "Frame photos": "Fotoğrafları çerçevelemek"
       }
     },
     "art:48": {
-      "question": "Mona Lisa gizemiyle mi ünlü?",
+      "question": "Mona Lisa hangi gizemli özelliğiyle tanınır?",
       "answers": {
         "Hat": "Şapka",
         "Smile": "Gülümseme",
@@ -2448,7 +2448,7 @@
       }
     },
     "art:49": {
-      "question": "Banksy'nin tanıdığı sanatçı?",
+      "question": "Banksy hangi sanat türüyle tanınır?",
       "answers": {
         "Classical portraits": "Klasik portreler",
         "Street art": "Sokak sanatı",
@@ -2457,7 +2457,7 @@
       }
     },
     "art:50": {
-      "question": "Işığın ana renkleri kırmızı, yeşil ve?",
+      "question": "Işığın ana renkleri kırmızı, yeşil ve hangisidir?",
       "answers": {
         "Yellow": "Sarı",
         "Blue": "Mavi",
@@ -2466,11 +2466,11 @@
       }
     },
     "art:51": {
-      "question": "Kübizm konuları hangisini kullanarak temsil ediyor?",
+      "question": "Kübizm, konularını genellikle ne kullanarak betimler?",
       "answers": {
         "Realistic detail": "Gerçekçi detay",
         "Geometric shapes": "Geometrik şekiller",
-        "Only circles": "Yalnızca çevreler",
+        "Only circles": "Yalnızca daireler",
         "Photographs": "Fotoğraflar"
       }
     },
@@ -2484,7 +2484,7 @@
       }
     },
     "art:53": {
-      "question": "'Venüs'ün Doğuşu' resmini kim yaptı?",
+      "question": "Venüs'ün Doğuşu tablosunu kim yaptı?",
       "answers": {
         "Botticelli": "Botticelli",
         "Raphael": "Raphael",
@@ -2493,7 +2493,7 @@
       }
     },
     "art:54": {
-      "question": "Rönesans sanatı dönemi ne zaman başladı?",
+      "question": "Rönesans sanat dönemi hangi ülkede başladı?",
       "answers": {
         "France": "Fransa",
         "Italy": "İtalya",
@@ -2502,7 +2502,7 @@
       }
     },
     "art:55": {
-      "question": "Salvador Dalí kendine özgü özelliğiyle mi tanınıyordu?",
+      "question": "Salvador Dalí kendine özgü hangi görünümüyle tanınırdı?",
       "answers": {
         "Beard": "Sakal",
         "Moustache": "Bıyık",
@@ -2511,7 +2511,7 @@
       }
     },
     "art:56": {
-      "question": "Çömlekçilik öncelikle nelerden yapılıyor?",
+      "question": "Çömlek yapımında temel olarak hangi malzeme kullanılır?",
       "answers": {
         "Metal": "Metal",
         "Clay": "Kil",
@@ -2520,7 +2520,7 @@
       }
     },
     "art:57": {
-      "question": "Hangisi sıcak renk olarak kabul edilir?",
+      "question": "Hangisi sıcak renklerden biridir?",
       "answers": {
         "Blue": "Mavi",
         "Red": "Kırmızı",
@@ -2529,7 +2529,7 @@
       }
     },
     "art:58": {
-      "question": "Hangisi havalı renk olarak kabul edilir?",
+      "question": "Hangisi soğuk renklerden biridir?",
       "answers": {
         "Red": "Kırmızı",
         "Orange": "Turuncu",
@@ -2538,7 +2538,7 @@
       }
     },
     "art:59": {
-      "question": "Hangi sanatçı bale dansçılarını resmetmesiyle ünlüdür?",
+      "question": "Bale dansçılarını resmetmesiyle tanınan sanatçı kimdir?",
       "answers": {
         "Degas": "Degas",
         "Monet": "Monet",
@@ -2547,7 +2547,7 @@
       }
     },
     "art:60": {
-      "question": "'Noktacılık' (noktalarla boyama) ile bağlantılı mı?",
+      "question": "Noktalarla resim yapma tekniği olan noktacılık hangi sanatçıyla ilişkilendirilir?",
       "answers": {
         "Seurat": "Seurat",
         "Van Gogh": "Van Gogh",
@@ -2556,7 +2556,7 @@
       }
     },
     "art:61": {
-      "question": "Gustav Klimt'in 'The Kiss' eserinde çokça kullanılan ünlü bir eser var mı?",
+      "question": "Gustav Klimt'in Öpücük adlı eserinde hangi renk yoğun olarak kullanılmıştır?",
       "answers": {
         "Silver": "Gümüş",
         "Gold": "Altın",
@@ -2565,7 +2565,7 @@
       }
     },
     "art:62": {
-      "question": "Hızlı bir eskiz genellikle?",
+      "question": "Hızlı bir eskiz genellikle hangi araçla yapılır?",
       "answers": {
         "Chisel": "Keski",
         "Pencil": "Kalem",
@@ -2574,16 +2574,16 @@
       }
     },
     "art:63": {
-      "question": "Soyut sanat genellikle bunu yapmaya ÇALIŞMAZ mı?",
+      "question": "Soyut sanat genellikle neyi amaçlamaz?",
       "answers": {
-        "Use color": "Rengi kullan",
-        "Represent reality exactly": "Gerçekliği tam olarak temsil ediyor",
-        "Use shapes": "Şekilleri kullanma",
-        "Be creative": "Yaratıcı olun"
+        "Use color": "Renk kullanmayı",
+        "Represent reality exactly": "Gerçekliği birebir yansıtmayı",
+        "Use shapes": "Şekiller kullanmayı",
+        "Be creative": "Yaratıcı olmayı"
       }
     },
     "art:64": {
-      "question": "Hangi şehirde Van Gogh'a adanmış bir müze var?",
+      "question": "Van Gogh'a adanmış müze hangi şehirdedir?",
       "answers": {
         "Amsterdam": "Amsterdam",
         "London": "Londra",
@@ -2592,7 +2592,7 @@
       }
     },
     "art:65": {
-      "question": "Auguste Rodin öncelikle?",
+      "question": "Auguste Rodin esas olarak hangi sanat dalında çalışmıştır?",
       "answers": {
         "Painter": "Ressam",
         "Sculptor": "Heykeltıraş",
@@ -2601,7 +2601,7 @@
       }
     },
     "art:66": {
-      "question": "MoMA (Modern Sanat Müzesi) nerede bulunuyor?",
+      "question": "MoMA, yani Modern Sanat Müzesi, hangi şehirdedir?",
       "answers": {
         "Paris": "Paris",
         "New York": "New York",
@@ -2610,7 +2610,7 @@
       }
     },
     "art:67": {
-      "question": "Prado Müzesi nerede?",
+      "question": "Prado Müzesi hangi şehirdedir?",
       "answers": {
         "Madrid": "Madrid",
         "Paris": "Paris",
@@ -2619,7 +2619,7 @@
       }
     },
     "art:68": {
-      "question": "'Chiaroscuro' güçlü kullanımını ifade eder?",
+      "question": "Chiaroscuro tekniğinde hangi iki unsur arasındaki güçlü karşıtlık kullanılır?",
       "answers": {
         "Bright colors": "Parlak renkler",
         "Light and shadow": "Işık ve gölge",
@@ -2628,16 +2628,16 @@
       }
     },
     "art:69": {
-      "question": "Bir resim tuvali genellikle hangi şekle sahiptir?",
+      "question": "Resim tuvalleri genellikle hangi biçimdedir?",
       "answers": {
-        "Round": "Tur",
+        "Round": "Yuvarlak",
         "Rectangular": "Dikdörtgen",
         "Triangular": "Üçgen",
         "Star-shaped": "Yıldız şeklinde"
       }
     },
     "art:70": {
-      "question": "Bir otoportre mi gösteriliyor?",
+      "question": "Otoportrede kim betimlenir?",
       "answers": {
         "The artist themselves": "Sanatçının kendisi",
         "A landscape": "Bir manzara",
@@ -2646,7 +2646,7 @@
       }
     },
     "art:71": {
-      "question": "Michelangelo, Leonardo ve Raphael hangi gruba aittir?",
+      "question": "Michelangelo, Leonardo ve Raphael hangi sanat döneminin ustalarıdır?",
       "answers": {
         "Baroque": "Barok",
         "Renaissance": "Rönesans",
@@ -2655,7 +2655,7 @@
       }
     },
     "art:72": {
-      "question": "Sürrealizm sıklıkla tasvir ediyor mu?",
+      "question": "Sürrealist eserlerde genellikle ne tür sahneler görülür?",
       "answers": {
         "Everyday realism": "Gündelik gerçekçilik",
         "Dreamlike, strange scenes": "Rüya gibi, tuhaf sahneler",
@@ -2664,7 +2664,7 @@
       }
     },
     "art:73": {
-      "question": "Kırmızı ile beyaz karıştırıldığında hangi renk oluşur?",
+      "question": "Kırmızı ve beyaz karıştırıldığında hangi renk elde edilir?",
       "answers": {
         "Blue": "Mavi",
         "Pink": "Pembe",
@@ -2673,16 +2673,16 @@
       }
     },
     "art:74": {
-      "question": "Oturan düşünen adamın ünlü heykelinin adı nedir?",
+      "question": "Oturarak düşünen bir adamı betimleyen ünlü heykelin adı nedir?",
       "answers": {
         "The Dreamer": "Hayalperest",
-        "The Thinker": "Düşünür",
+        "The Thinker": "Düşünen Adam",
         "The Watcher": "Gözcü",
-        "The Sitter": "Bakıcı"
+        "The Sitter": "Oturan"
       }
     },
     "art:75": {
-      "question": "Sanat olarak fotoğrafçılık, görüntüleri bir ?",
+      "question": "Fotoğraf sanatında görüntüler hangi araçla kaydedilir?",
       "answers": {
         "Brush": "Fırça",
         "Camera": "Kamera",
@@ -2691,7 +2691,7 @@
       }
     },
     "art:76": {
-      "question": "'Vincent' hangi ressamın ilk adıdır?",
+      "question": "Vincent hangi ressamın adıdır?",
       "answers": {
         "Monet": "Monet",
         "Van Gogh": "Van Gogh",
@@ -2700,7 +2700,7 @@
       }
     },
     "art:77": {
-      "question": "Uffizi Galerisi hangi ülkede bulunuyor?",
+      "question": "Uffizi Galerisi hangi ülkededir?",
       "answers": {
         "Italy": "İtalya",
         "France": "Fransa",
@@ -2709,16 +2709,16 @@
       }
     },
     "art:78": {
-      "question": "Origami sanatı mıdır?",
+      "question": "Origami hangi malzemeyi katlama sanatıdır?",
       "answers": {
-        "Paper folding": "Kağıt katlama",
+        "Paper folding": "Kâğıt katlama",
         "Metalwork": "Metal işleri",
         "Glassblowing": "Cam üfleme",
         "Painting": "Resim"
       }
     },
     "art:79": {
-      "question": "Hangi sanatçı hayatı boyunca pek çok otoportre çizdi?",
+      "question": "Yaşamı boyunca çok sayıda otoportre yapan sanatçı kimdir?",
       "answers": {
         "Rembrandt": "Rembrandt",
         "Botticelli": "Botticelli",
@@ -2727,43 +2727,43 @@
       }
     },
     "art:80": {
-      "question": "Bir 'palet' ne için kullanılır?",
+      "question": "Palet ne için kullanılır?",
       "answers": {
-        "Hold and mix paints": "Boyaları tutun ve karıştırın",
-        "Cut wood": "Kesilmiş ağaç",
-        "Frame art": "Çerçeve resmi",
-        "Fire clay": "Ateş kili"
+        "Hold and mix paints": "Boyaları taşımak ve karıştırmak",
+        "Cut wood": "Ahşap kesmek",
+        "Frame art": "Sanat eserini çerçevelemek",
+        "Fire clay": "Kili pişirmek"
       }
     },
     "art:81": {
-      "question": "Kanagawa’nın Büyük Dalgası ne tür bir Japon sanat eseridir?",
+      "question": "Kanagawa Açıklarında Büyük Dalga ne tür bir Japon sanat eseridir?",
       "answers": {
         "Sculpture": "Heykel",
-        "Woodblock print": "Tahta baskı",
+        "Woodblock print": "Ahşap baskı",
         "Oil painting": "Yağlı boya tablo",
         "Photograph": "Fotoğraf"
       }
     },
     "art:82": {
-      "question": "Yaygın bir heykel malzemesi hangisidir?",
+      "question": "Hangisi heykel yapımında yaygın olarak kullanılan bir malzemedir?",
       "answers": {
         "Bronze": "Bronz",
         "Watercolor": "Suluboya",
-        "Charcoal": "Kömür",
+        "Charcoal": "Füzen",
         "Ink": "Mürekkep"
       }
     },
     "art:83": {
-      "question": "'Ufuk noktası' nerede kullanılıyor?",
+      "question": "Kaçış noktası hangi alanda kullanılır?",
       "answers": {
         "Music": "Müzik",
         "Perspective drawing": "Perspektif çizimi",
-        "Casting": "Oyuncu Seçimi",
+        "Casting": "Döküm",
         "Weaving": "Dokuma"
       }
     },
     "art:84": {
-      "question": "Leonardo da Vinci aynı zamanda ünlü müydü?",
+      "question": "Leonardo da Vinci sanatçılığının yanı sıra hangi yönüyle de tanınır?",
       "answers": {
         "Athlete": "Sporcu",
         "Inventor": "Mucit",
@@ -2772,16 +2772,16 @@
       }
     },
     "art:85": {
-      "question": "Bir 'galeri' gidilecek yer midir?",
+      "question": "Galeri ne amaçla kullanılan bir yerdir?",
       "answers": {
-        "Store food": "Yiyecekleri saklayın",
-        "Display artworks": "Sanat eserlerini sergileyin",
-        "Repair cars": "Arabaları tamir et",
-        "Grow plants": "Bitki yetiştirme"
+        "Store food": "Yiyecek saklamak",
+        "Display artworks": "Sanat eserlerini sergilemek",
+        "Repair cars": "Araba tamir etmek",
+        "Grow plants": "Bitki yetiştirmek"
       }
     },
     "art:86": {
-      "question": "Barok sanatının varlığı biliniyor mu?",
+      "question": "Barok sanat en çok hangi özelliğiyle tanınır?",
       "answers": {
         "Minimal and plain": "Minimal ve sade",
         "Dramatic and ornate": "Dramatik ve süslü",
@@ -2790,7 +2790,7 @@
       }
     },
     "art:87": {
-      "question": "Ünlü bir sanat müzayede evi hangisidir?",
+      "question": "Hangisi ünlü bir sanat müzayede evidir?",
       "answers": {
         "Sotheby's": "Sotheby's",
         "Nasdaq": "Nasdaq",
@@ -2799,7 +2799,7 @@
       }
     },
     "art:88": {
-      "question": "Milo Venüsü ne tür bir antik sanat eseridir?",
+      "question": "Milo Venüsü hangi tür antik sanat eseridir?",
       "answers": {
         "Painting": "Resim",
         "Statue": "Heykel",
@@ -2808,7 +2808,7 @@
       }
     },
     "art:89": {
-      "question": "Vitray sanatı yaygın olarak hangi bölgelerde bulunur?",
+      "question": "Vitray sanatı en sık nerelerde görülür?",
       "answers": {
         "Cathedrals": "Katedraller",
         "Kitchens": "Mutfaklar",
@@ -2817,16 +2817,16 @@
       }
     },
     "art:90": {
-      "question": "Kömür genellikle ne için kullanılır?",
+      "question": "Füzen genellikle ne için kullanılır?",
       "answers": {
         "Painting walls": "Duvarları boyamak",
-        "Drawing/sketching": "Çizim/eskiz",
+        "Drawing/sketching": "Çizim ve eskiz",
         "Carving marble": "Mermer oymak",
-        "Printing": "Yazdırma"
+        "Printing": "Baskı yapmak"
       }
     },
     "art:91": {
-      "question": "Tate hangi şehirde bir sanat müzesidir?",
+      "question": "Tate sanat müzesi hangi şehirdedir?",
       "answers": {
         "Paris": "Paris",
         "London": "Londra",
@@ -2835,7 +2835,7 @@
       }
     },
     "art:92": {
-      "question": "'Heykel'i en iyi hangisi tanımlar?",
+      "question": "Heykeli en iyi tanımlayan ifade hangisidir?",
       "answers": {
         "A 2D painting": "2 boyutlu bir tablo",
         "A 3D work of art": "3 boyutlu bir sanat eseri",
@@ -2844,7 +2844,7 @@
       }
     },
     "art:93": {
-      "question": "'Modern sanat' genellikle sanatı kabaca ifade eder mi?",
+      "question": "Modern sanat genel olarak hangi dönemden sonraki eserleri kapsar?",
       "answers": {
         "Ancient times": "Eski zamanlar",
         "The late 1800s onward": "1800'lerin sonlarından itibaren",
@@ -2853,7 +2853,7 @@
       }
     },
     "art:94": {
-      "question": "Hangi sanatçı Tahiti resimleriyle ilişkilendirilir?",
+      "question": "Tahiti'yi konu alan tablolarıyla tanınan sanatçı kimdir?",
       "answers": {
         "Gauguin": "Gauguin",
         "Monet": "Monet",
@@ -2862,16 +2862,16 @@
       }
     },
     "art:95": {
-      "question": "Üzerine bir fresk mi boyanmış?",
+      "question": "Fresk hangi yüzeye yapılır?",
       "answers": {
-        "Canvas": "Kanvas",
+        "Canvas": "Tuval",
         "Wet plaster": "Islak sıva",
         "Paper": "Kâğıt",
         "Wood panel": "Ahşap panel"
       }
     },
     "art:96": {
-      "question": "Sistine Şapeli nerede bulunuyor?",
+      "question": "Sistine Şapeli nerededir?",
       "answers": {
         "Vatican City": "Vatikan Şehri",
         "Florence": "Floransa",
@@ -2880,7 +2880,7 @@
       }
     },
     "art:97": {
-      "question": "Bunlardan hangisi bir sanat tarzıdır?",
+      "question": "Hangisi bir sanat akımıdır?",
       "answers": {
         "Impressionism": "İzlenimcilik",
         "Photosynthesis": "Fotosentez",
@@ -2889,7 +2889,7 @@
       }
     },
     "art:98": {
-      "question": "Heykel yapan kişi nedir?",
+      "question": "Heykel yapan sanatçıya ne denir?",
       "answers": {
         "Painter": "Ressam",
         "Sculptor": "Heykeltıraş",
@@ -2898,7 +2898,7 @@
       }
     },
     "art:99": {
-      "question": "Empresyonizm adını taşıyan 'İzlenim, Gündoğumu' tablosunu kim yaptı?",
+      "question": "İzlenimciliğe adını veren İzlenim: Gün Doğumu tablosunu kim yaptı?",
       "answers": {
         "Monet": "Monet",
         "Manet": "Manet",
@@ -2907,7 +2907,7 @@
       }
     },
     "history:0": {
-      "question": "İkinci Dünya Savaşı hangi yılda sona erdi?",
+      "question": "İkinci Dünya Savaşı hangi yıl sona erdi?",
       "answers": {
         "1918": "1918",
         "1943": "1943",
@@ -2916,7 +2916,7 @@
       }
     },
     "history:1": {
-      "question": "Amerika Birleşik Devletleri'nin ilk Başkanı kimdi?",
+      "question": "Amerika Birleşik Devletleri'nin ilk başkanı kimdi?",
       "answers": {
         "Lincoln": "Lincoln",
         "Washington": "Washington",
@@ -2934,7 +2934,7 @@
       }
     },
     "history:3": {
-      "question": "Berlin Duvarı hangi yılda yıkıldı?",
+      "question": "Berlin Duvarı hangi yıl yıkıldı?",
       "answers": {
         "1979": "1979",
         "1985": "1985",
@@ -2943,16 +2943,16 @@
       }
     },
     "history:4": {
-      "question": "Hangi filozof Sokrates'in öğrencisiydi?",
+      "question": "Sokrates'in öğrencisi olan filozof kimdir?",
       "answers": {
         "Aristotle": "Aristoteles",
         "Plato": "Platon",
         "Pythagoras": "Pisagor",
-        "Homer": "Homer"
+        "Homer": "Homeros"
       }
     },
     "history:5": {
-      "question": "Hangi gemi 1912'de buzdağına çarptıktan sonra battı?",
+      "question": "1912'de bir buzdağına çarparak batan gemi hangisidir?",
       "answers": {
         "Lusitania": "Lusitania",
         "Titanic": "Titanik",
@@ -2961,16 +2961,16 @@
       }
     },
     "history:6": {
-      "question": "1492'de Amerika'ya kim ulaştı?",
+      "question": "1492'de Amerika kıtasına ulaşan denizci kimdir?",
       "answers": {
-        "Magellan": "Magellan",
-        "Columbus": "Columbus",
+        "Magellan": "Macellan",
+        "Columbus": "Kristof Kolomb",
         "Vespucci": "Vespucci",
-        "Cook": "Aşçı"
+        "Cook": "James Cook"
       }
     },
     "history:7": {
-      "question": "Fransız Devrimi hangi yılda başladı?",
+      "question": "Fransız Devrimi hangi yıl başladı?",
       "answers": {
         "1776": "1776",
         "1789": "1789",
@@ -2983,12 +2983,12 @@
       "answers": {
         "Ottoman": "Osmanlı",
         "Mongol": "Moğol",
-        "Persian": "Farsça",
+        "Persian": "Pers",
         "Roman": "Roma"
       }
     },
     "history:9": {
-      "question": "İkinci Dünya Savaşı sırasında Nazi Almanya'sını kim yönetti?",
+      "question": "İkinci Dünya Savaşı sırasında Nazi Almanyası'nı kim yönetti?",
       "answers": {
         "Mussolini": "Mussolini",
         "Hitler": "Hitler",
@@ -2997,7 +2997,7 @@
       }
     },
     "history:10": {
-      "question": "Kolezyum hangi şehirde bulunuyor?",
+      "question": "Kolezyum hangi şehirdedir?",
       "answers": {
         "Athens": "Atina",
         "Rome": "Roma",
@@ -3006,16 +3006,16 @@
       }
     },
     "history:11": {
-      "question": "Hangi Mısır kraliçesi Sezar ve Mark Antony ile ittifak kurdu?",
+      "question": "Sezar ve Marcus Antonius ile ittifak kuran Mısır kraliçesi kimdir?",
       "answers": {
         "Nefertiti": "Nefertiti",
         "Cleopatra": "Kleopatra",
         "Hatshepsut": "Hatşepsut",
-        "Isis": "IŞİD"
+        "Isis": "İsis"
       }
     },
     "history:12": {
-      "question": "Soğuk Savaş esas olarak ABD ile hangi devlet arasında yaşandı?",
+      "question": "Soğuk Savaş'ın iki ana tarafı ABD ve hangi devletti?",
       "answers": {
         "China": "Çin",
         "USSR": "SSCB",
@@ -3024,7 +3024,7 @@
       }
     },
     "history:13": {
-      "question": "İnsanlar Ay'a ilk kez hangi yılda indiler?",
+      "question": "İnsanlar Ay'a ilk kez hangi yıl ayak bastı?",
       "answers": {
         "1959": "1959",
         "1965": "1965",
@@ -3042,7 +3042,7 @@
       }
     },
     "history:15": {
-      "question": "Amerikan İç Savaşı Kuzey ve Kuzey Amerika arasında yaşandı.",
+      "question": "Amerikan İç Savaşı Kuzey ile hangi bölge arasında yaşandı?",
       "answers": {
         "East": "Doğu",
         "South": "Güney",
@@ -3051,16 +3051,16 @@
       }
     },
     "history:16": {
-      "question": "Demokrasiyi hangi eski uygarlık yarattı?",
+      "question": "Demokrasinin doğduğu antik uygarlık hangisidir?",
       "answers": {
         "Rome": "Roma",
         "Greece": "Yunanistan",
         "Egypt": "Mısır",
-        "Persia": "İran"
+        "Persia": "Pers İmparatorluğu"
       }
     },
     "history:17": {
-      "question": "Matbaa kim tarafından icat edildi?",
+      "question": "Matbaayı kim icat etti?",
       "answers": {
         "Newton": "Newton",
         "Gutenberg": "Gutenberg",
@@ -3069,7 +3069,7 @@
       }
     },
     "history:18": {
-      "question": "Antik Çin Seddi hangi ülkede inşa edildi?",
+      "question": "Çin Seddi hangi ülkede inşa edildi?",
       "answers": {
         "India": "Hindistan",
         "China": "Çin",
@@ -3078,16 +3078,16 @@
       }
     },
     "history:19": {
-      "question": "Berlin'de hangi Mısır kraliçesinin ünlü bir büstü sergileniyor?",
+      "question": "Ünlü büstü Berlin'de sergilenen Mısır kraliçesi kimdir?",
       "answers": {
         "Cleopatra": "Kleopatra",
         "Nefertiti": "Nefertiti",
         "Hatshepsut": "Hatşepsut",
-        "Isis": "IŞİD"
+        "Isis": "İsis"
       }
     },
     "history:20": {
-      "question": "Birinci Dünya Savaşı hangi yılda başladı?",
+      "question": "Birinci Dünya Savaşı hangi yıl başladı?",
       "answers": {
         "1912": "1912",
         "1914": "1914",
@@ -3096,7 +3096,7 @@
       }
     },
     "history:21": {
-      "question": "Birinci Dünya Savaşı hangi yılda sona erdi?",
+      "question": "Birinci Dünya Savaşı hangi yıl sona erdi?",
       "answers": {
         "1916": "1916",
         "1918": "1918",
@@ -3105,7 +3105,7 @@
       }
     },
     "history:22": {
-      "question": "Roma İmparatorluğu hangi şehirde yoğunlaşmıştı?",
+      "question": "Roma İmparatorluğu'nun merkezi hangi şehirdi?",
       "answers": {
         "Athens": "Atina",
         "Rome": "Roma",
@@ -3114,16 +3114,16 @@
       }
     },
     "history:23": {
-      "question": "Julius Caesar antik çağın lideri miydi?",
+      "question": "Julius Caesar hangi antik devletin lideriydi?",
       "answers": {
         "Greece": "Yunanistan",
         "Rome": "Roma",
         "Egypt": "Mısır",
-        "Persia": "İran"
+        "Persia": "Pers İmparatorluğu"
       }
     },
     "history:24": {
-      "question": "ABD Bağımsızlık Bildirgesi imzalandı mı?",
+      "question": "ABD Bağımsızlık Bildirgesi hangi yıl imzalandı?",
       "answers": {
         "1776": "1776",
         "1789": "1789",
@@ -3141,7 +3141,7 @@
       }
     },
     "history:26": {
-      "question": "Napolyon'un ünlü yenilgisi?",
+      "question": "Napolyon hangi savaşta ünlü yenilgisini aldı?",
       "answers": {
         "Hastings": "Hastings",
         "Waterloo": "Waterloo",
@@ -3150,16 +3150,16 @@
       }
     },
     "history:27": {
-      "question": "Berlin Duvarı hangi şehri böldü?",
+      "question": "Berlin Duvarı hangi şehri ikiye böldü?",
       "answers": {
         "Munich": "Münih",
         "Berlin": "Berlin",
-        "Frankfurt": "Frankfurt'ta",
+        "Frankfurt": "Frankfurt",
         "Vienna": "Viyana"
       }
     },
     "history:28": {
-      "question": "Machu Picchu'yu hangi medeniyet inşa etti?",
+      "question": "Machu Picchu'yu hangi uygarlık inşa etti?",
       "answers": {
         "Aztec": "Aztek",
         "Inca": "İnka",
@@ -3168,7 +3168,7 @@
       }
     },
     "history:29": {
-      "question": "Giza piramitleri nerede bulunuyor?",
+      "question": "Gize Piramitleri hangi ülkededir?",
       "answers": {
         "Iraq": "Irak",
         "Egypt": "Mısır",
@@ -3177,7 +3177,7 @@
       }
     },
     "history:30": {
-      "question": "İkinci Dünya Savaşı'nın çoğunda İngiltere Başbakanı kimdi?",
+      "question": "İkinci Dünya Savaşı'nın büyük bölümünde Birleşik Krallık başbakanı kimdi?",
       "answers": {
         "Chamberlain": "Chamberlain",
         "Churchill": "Churchill",
@@ -3186,7 +3186,7 @@
       }
     },
     "history:31": {
-      "question": "Titanik battığında hangi şehre doğru gidiyordu?",
+      "question": "Titanik battığı sırada hangi şehre gidiyordu?",
       "answers": {
         "London": "Londra",
         "New York": "New York",
@@ -3195,25 +3195,25 @@
       }
     },
     "history:32": {
-      "question": "Dünyanın çevresini ilk kez hangi kaşif yönetti?",
+      "question": "Dünyanın çevresini dolaşan ilk deniz seferine hangi kâşif liderlik etti?",
       "answers": {
-        "Columbus": "Columbus",
-        "Magellan": "Magellan",
+        "Columbus": "Kristof Kolomb",
+        "Magellan": "Macellan",
         "Da Gama": "Da Gama",
-        "Cook": "Aşçı"
+        "Cook": "James Cook"
       }
     },
     "history:33": {
-      "question": "'Rönesans' kelimesi kelimenin tam anlamıyla ne anlama geliyor?",
+      "question": "Rönesans sözcüğünün kelime anlamı nedir?",
       "answers": {
         "Rebirth": "Yeniden Doğuş",
         "Revolution": "Devrim",
         "Reform": "Reform",
-        "Return": "Geri Dön"
+        "Return": "Geri dönüş"
       }
     },
     "history:34": {
-      "question": "Eski Mısırlılar kullanarak mı yazdılar?",
+      "question": "Eski Mısırlılar hangi yazı sistemini kullanırdı?",
       "answers": {
         "Latin": "Latince",
         "Hieroglyphics": "Hiyeroglifler",
@@ -3222,7 +3222,7 @@
       }
     },
     "history:35": {
-      "question": "Osmanlı İmparatorluğu günümüzün merkezinde miydi?",
+      "question": "Osmanlı İmparatorluğu'nun merkezi günümüzde hangi ülkededir?",
       "answers": {
         "Egypt": "Mısır",
         "Turkey": "Türkiye",
@@ -3240,12 +3240,12 @@
       }
     },
     "history:37": {
-      "question": "Hangi belge 1215'te İngiliz kralının gücünü sınırladı?",
+      "question": "1215'te İngiliz kralının yetkilerini sınırlayan belge hangisidir?",
       "answers": {
         "Magna Carta": "Magna Carta",
         "Bill of Rights": "Haklar Bildirgesi",
         "Constitution": "Anayasa",
-        "Domesday Book": "Kıyamet Günü Kitabı"
+        "Domesday Book": "Domesday Book"
       }
     },
     "history:38": {
@@ -3258,7 +3258,7 @@
       }
     },
     "history:39": {
-      "question": "1963'te hangi ABD Başkanı suikasta kurban gitti?",
+      "question": "1963'te suikasta uğrayan ABD başkanı kimdir?",
       "answers": {
         "Lincoln": "Lincoln",
         "Kennedy": "Kennedy",
@@ -3267,7 +3267,7 @@
       }
     },
     "history:40": {
-      "question": "1 dolarlık banknotta hangi ABD başkanı görünüyor?",
+      "question": "1 dolarlık banknotun üzerinde hangi ABD başkanı yer alır?",
       "answers": {
         "Lincoln": "Lincoln",
         "Washington": "Washington",
@@ -3276,7 +3276,7 @@
       }
     },
     "history:41": {
-      "question": "Hindistan'ın şiddet içermeyen bağımsızlık hareketine kim liderlik etti?",
+      "question": "Hindistan'ın şiddet karşıtı bağımsızlık hareketine kim liderlik etti?",
       "answers": {
         "Nehru": "Nehru",
         "Gandhi": "Gandi",
@@ -3285,7 +3285,7 @@
       }
     },
     "history:42": {
-      "question": "Berlin Duvarı hangi tarafta inşa edildi?",
+      "question": "Berlin Duvarı hangi tarafın yönetimi tarafından inşa edildi?",
       "answers": {
         "West Germany": "Batı Almanya",
         "East Germany": "Doğu Almanya",
@@ -3294,16 +3294,16 @@
       }
     },
     "history:43": {
-      "question": "Hangi antik uygarlık mumyalamayla ünlüdür?",
+      "question": "Mumyalama uygulamasıyla tanınan antik uygarlık hangisidir?",
       "answers": {
-        "Greek": "Yunanca",
-        "Egyptian": "Mısırlı",
+        "Greek": "Yunan",
+        "Egyptian": "Mısır",
         "Roman": "Roma",
-        "Persian": "Farsça"
+        "Persian": "Pers"
       }
     },
     "history:44": {
-      "question": "Kara Ölüm yıkıcı bir olay mıydı?",
+      "question": "Kara Ölüm olarak bilinen yıkıcı olay neydi?",
       "answers": {
         "War": "Savaş",
         "Plague": "Veba",
@@ -3312,7 +3312,7 @@
       }
     },
     "history:45": {
-      "question": "Protestan Reformu kim tarafından başlatıldı?",
+      "question": "Protestan Reformu'nu kim başlattı?",
       "answers": {
         "Martin Luther": "Martin Luther",
         "Henry VIII": "Henry VIII",
@@ -3321,7 +3321,7 @@
       }
     },
     "history:46": {
-      "question": "Antik Olimpiyat Oyunları ne zaman ortaya çıktı?",
+      "question": "Antik Olimpiyat Oyunları hangi ülkede doğdu?",
       "answers": {
         "Rome": "Roma",
         "Greece": "Yunanistan",
@@ -3330,7 +3330,7 @@
       }
     },
     "history:47": {
-      "question": "Uzaya çıkan ilk insan kimdi?",
+      "question": "Uzaya çıkan ilk insan kimdir?",
       "answers": {
         "Armstrong": "Armstrong",
         "Gagarin": "Gagarin",
@@ -3339,16 +3339,16 @@
       }
     },
     "history:48": {
-      "question": "Neil Armstrong bunu yapan ilk kişi miydi?",
+      "question": "Neil Armstrong neyi başaran ilk insan oldu?",
       "answers": {
-        "Fly a plane": "Bir uçağı uçurun",
-        "Walk on the Moon": "Ay'da Yürümek",
-        "Reach the South Pole": "Güney Kutbuna Ulaşın",
-        "Climb Everest": "Everest'e tırmanın"
+        "Fly a plane": "Uçak kullanmak",
+        "Walk on the Moon": "Ay'da yürümek",
+        "Reach the South Pole": "Güney Kutbu'na ulaşmak",
+        "Climb Everest": "Everest'e tırmanmak"
       }
     },
     "history:49": {
-      "question": "Sovyetler Birliği (SSCB) hangi yılda dağıldı?",
+      "question": "Sovyetler Birliği hangi yıl dağıldı?",
       "answers": {
         "1985": "1985",
         "1989": "1989",
@@ -3357,7 +3357,7 @@
       }
     },
     "history:50": {
-      "question": "ABD Bağımsızlık Bildirgesi esas olarak kim tarafından yazılmıştır?",
+      "question": "ABD Bağımsızlık Bildirgesi'nin ana yazarı kimdir?",
       "answers": {
         "Washington": "Washington",
         "Jefferson": "Jefferson",
@@ -3366,7 +3366,7 @@
       }
     },
     "history:51": {
-      "question": "Hacıları 1620'de Amerika'ya hangi gemi getirdi?",
+      "question": "1620'de Pilgrimleri Amerika'ya taşıyan gemi hangisidir?",
       "answers": {
         "Mayflower": "Mayflower",
         "Titanic": "Titanik",
@@ -3375,7 +3375,7 @@
       }
     },
     "history:52": {
-      "question": "Kristof Kolomb hangi ülkenin bayrağı altında denize açıldı?",
+      "question": "Kristof Kolomb hangi ülkenin bayrağı altında sefere çıktı?",
       "answers": {
         "Portugal": "Portekiz",
         "Spain": "İspanya",
@@ -3384,16 +3384,16 @@
       }
     },
     "history:53": {
-      "question": "Fransız Devrimi,?",
+      "question": "Fransız Devrimi hangi yapının basılmasıyla başladı?",
       "answers": {
-        "Louvre": "Panjur",
+        "Louvre": "Louvre",
         "Bastille": "Bastille",
         "Versailles": "Versay",
         "Notre-Dame": "Notre-Dame"
       }
     },
     "history:54": {
-      "question": "Mısır'da hangi antik harika hâlâ duruyor?",
+      "question": "Antik Dünyanın Yedi Harikası'ndan hangisi Mısır'da hâlâ ayaktadır?",
       "answers": {
         "Great Pyramid of Giza": "Büyük Giza Piramidi",
         "Colosseum": "Kolezyum",
@@ -3402,7 +3402,7 @@
       }
     },
     "history:55": {
-      "question": "Tac Mahal hangi ülkede bulunuyor?",
+      "question": "Tac Mahal hangi ülkededir?",
       "answers": {
         "Pakistan": "Pakistan",
         "India": "Hindistan",
@@ -3411,7 +3411,7 @@
       }
     },
     "history:56": {
-      "question": "İkinci Dünya Savaşı sırasında Sovyetler Birliği'ne kim liderlik etti?",
+      "question": "İkinci Dünya Savaşı sırasında Sovyetler Birliği'ni kim yönetti?",
       "answers": {
         "Lenin": "Lenin",
         "Stalin": "Stalin",
@@ -3420,7 +3420,7 @@
       }
     },
     "history:57": {
-      "question": "İkinci Dünya Savaşı'nda atom bombaları Hiroşima'ya çarptı ve?",
+      "question": "İkinci Dünya Savaşı'nda atom bombası Hiroşima'nın yanı sıra hangi şehre atıldı?",
       "answers": {
         "Tokyo": "Tokyo",
         "Nagasaki": "Nagazaki",
@@ -3429,16 +3429,16 @@
       }
     },
     "history:58": {
-      "question": "Milletler Cemiyeti, ?",
+      "question": "Milletler Cemiyeti hangi örgütün öncüsüydü?",
       "answers": {
         "EU": "AB",
         "United Nations": "Birleşmiş Milletler",
         "NATO": "NATO",
-        "WHO": "KİM"
+        "WHO": "DSÖ"
       }
     },
     "history:59": {
-      "question": "Birleşmiş Milletler hangi yılda kuruldu?",
+      "question": "Birleşmiş Milletler hangi yıl kuruldu?",
       "answers": {
         "1919": "1919",
         "1945": "1945",
@@ -3447,16 +3447,16 @@
       }
     },
     "history:60": {
-      "question": "Büyük İskender hangi antik krallıktan geldi?",
+      "question": "Büyük İskender hangi antik krallıktan geliyordu?",
       "answers": {
         "Rome": "Roma",
         "Macedonia": "Makedonya",
         "Egypt": "Mısır",
-        "Persia": "İran"
+        "Persia": "Pers İmparatorluğu"
       }
     },
     "history:61": {
-      "question": "Antik Sparta'nın evi hangi ülkeydi?",
+      "question": "Antik Sparta günümüzde hangi ülkenin sınırları içindedir?",
       "answers": {
         "Italy": "İtalya",
         "Greece": "Yunanistan",
@@ -3465,7 +3465,7 @@
       }
     },
     "history:62": {
-      "question": "Soğuk Savaş hangi yılda sona erdi?",
+      "question": "Soğuk Savaş yaklaşık olarak hangi yıl sona erdi?",
       "answers": {
         "1965": "1965",
         "1975": "1975",
@@ -3474,7 +3474,7 @@
       }
     },
     "history:63": {
-      "question": "Wright kardeşler?",
+      "question": "Wright kardeşler hangi aracı icat etmeleriyle tanınır?",
       "answers": {
         "Car": "Araba",
         "Airplane": "Uçak",
@@ -3483,7 +3483,7 @@
       }
     },
     "history:64": {
-      "question": "İkinci Dünya Savaşı'nın D Günü çıkarmaları hangi tarihte gerçekleşti?",
+      "question": "İkinci Dünya Savaşı'ndaki D-Day çıkarmaları nerede gerçekleşti?",
       "answers": {
         "Italy": "İtalya",
         "Normandy, France": "Normandiya, Fransa",
@@ -3492,7 +3492,7 @@
       }
     },
     "history:65": {
-      "question": "Yüz Yıl Savaşları esas olarak İngiltere ile?",
+      "question": "Yüz Yıl Savaşları esas olarak İngiltere ile hangi ülke arasında yaşandı?",
       "answers": {
         "Spain": "İspanya",
         "France": "Fransa",
@@ -3501,37 +3501,37 @@
       }
     },
     "history:66": {
-      "question": "1980'lerde İngiltere'nin 'Demir Leydi' Başbakanı kimdi?",
+      "question": "1980'lerde Birleşik Krallık'ın “Demir Leydi” lakaplı başbakanı kimdi?",
       "answers": {
         "Elizabeth II": "Elizabeth II",
         "Thatcher": "Thatcher",
-        "May": "Mayıs",
+        "May": "Theresa May",
         "Merkel": "Merkel"
       }
     },
     "history:67": {
-      "question": "Antik Pompei kenti kimler tarafından yok edildi?",
+      "question": "Antik Pompei kenti hangi felaket sonucu yok oldu?",
       "answers": {
         "A flood": "Sel",
-        "A volcano (Vesuvius)": "Bir yanardağ (Vesuvius)",
+        "A volcano (Vesuvius)": "Vezüv Yanardağı'nın patlaması",
         "An earthquake": "Deprem",
-        "A war": "Bir savaş"
+        "A war": "Savaş"
       }
     },
     "history:68": {
-      "question": "Hangi antik ülke firavunlar tarafından yönetiliyordu?",
+      "question": "Firavunlar hangi antik ülkeyi yönetirdi?",
       "answers": {
         "Greece": "Yunanistan",
         "Egypt": "Mısır",
         "Rome": "Roma",
-        "Persia": "İran"
+        "Persia": "Pers İmparatorluğu"
       }
     },
     "history:69": {
-      "question": "Kırım Savaşı'nda hangi ünlü hemşire görev yaptı?",
+      "question": "Kırım Savaşı'nda görev yapan ünlü hemşire kimdir?",
       "answers": {
         "Curie": "Curie",
-        "Nightingale": "Bülbül",
+        "Nightingale": "Florence Nightingale",
         "Earhart": "Earhart",
         "Keller": "Keller"
       }
@@ -3546,7 +3546,7 @@
       }
     },
     "history:71": {
-      "question": "Nobel Ödülünü kazanan ilk kadın kimdi?",
+      "question": "Nobel Ödülü kazanan ilk kadın kimdir?",
       "answers": {
         "Curie": "Curie",
         "Franklin": "Franklin",
@@ -3555,7 +3555,7 @@
       }
     },
     "history:72": {
-      "question": "Vikingler aslen nereli?",
+      "question": "Vikingler aslen hangi bölgeden geliyordu?",
       "answers": {
         "Scandinavia": "İskandinavya",
         "Spain": "İspanya",
@@ -3564,7 +3564,7 @@
       }
     },
     "history:73": {
-      "question": "Büyük Londra Yangını hangi yılda meydana geldi?",
+      "question": "Büyük Londra Yangını hangi yıl çıktı?",
       "answers": {
         "1620": "1620",
         "1666": "1666",
@@ -3573,7 +3573,7 @@
       }
     },
     "history:74": {
-      "question": "Büyük Bunalım'ı başlatan Wall Street Çöküşü neredeydi?",
+      "question": "Büyük Buhran'ı başlatan Wall Street Çöküşü hangi yıl yaşandı?",
       "answers": {
         "1919": "1919",
         "1929": "1929",
@@ -3582,7 +3582,7 @@
       }
     },
     "history:75": {
-      "question": "Sovyet reformları 'glasnost' ve 'perestroyka'yı kim uygulamaya koydu?",
+      "question": "Glasnost ve perestroyka reformlarını kim başlattı?",
       "answers": {
         "Stalin": "Stalin",
         "Gorbachev": "Gorbaçov",
@@ -3600,16 +3600,16 @@
       }
     },
     "history:77": {
-      "question": "Hangi kaşif 1498'de deniz yoluyla Hindistan'a ulaştı?",
+      "question": "1498'de deniz yoluyla Hindistan'a ulaşan kâşif kimdir?",
       "answers": {
-        "Columbus": "Columbus",
+        "Columbus": "Kristof Kolomb",
         "Vasco da Gama": "Vasco da Gama",
         "Magellan": "Macellan",
-        "Cook": "Aşçı"
+        "Cook": "James Cook"
       }
     },
     "history:78": {
-      "question": "Antik Mayalar çoğunlukla hangi bölgede yaşıyordu?",
+      "question": "Antik Mayalar ağırlıklı olarak hangi bölgede yaşadı?",
       "answers": {
         "Central America": "Orta Amerika",
         "North Africa": "Kuzey Afrika",
@@ -3618,7 +3618,7 @@
       }
     },
     "history:79": {
-      "question": "Aztek uygarlığı esas olarak günümüzde mi bulunuyordu?",
+      "question": "Aztek uygarlığı günümüzde ağırlıklı olarak hangi ülkenin sınırları içindeydi?",
       "answers": {
         "Peru": "Peru",
         "Mexico": "Meksika",
@@ -3627,7 +3627,7 @@
       }
     },
     "history:80": {
-      "question": "Soğuk Savaş uzay yarışı meşhur?",
+      "question": "Soğuk Savaş dönemindeki uzay yarışı hangi gök cismine inişle doruğa ulaştı?",
       "answers": {
         "Sun": "Güneş",
         "Moon": "Ay",
@@ -3636,7 +3636,7 @@
       }
     },
     "history:81": {
-      "question": "Eyfel Kulesi 1889 Dünya Fuarı için mi inşa edildi?",
+      "question": "Eyfel Kulesi, 1889 Dünya Fuarı için hangi şehirde inşa edildi?",
       "answers": {
         "London": "Londra",
         "Paris": "Paris",
@@ -3645,7 +3645,7 @@
       }
     },
     "history:82": {
-      "question": "'95 Tez'i kim yazdı?",
+      "question": "95 Tez'i kim yazdı?",
       "answers": {
         "Calvin": "Calvin",
         "Martin Luther": "Martin Luther",
@@ -3654,7 +3654,7 @@
       }
     },
     "history:83": {
-      "question": "Hangi savaşta (1914-1918) yaygın siper savaşı yaşandı?",
+      "question": "1914 ile 1918 arasında süren ve siper savaşlarıyla tanınan savaş hangisidir?",
       "answers": {
         "WWII": "İkinci Dünya Savaşı",
         "WWI": "Birinci Dünya Savaşı",
@@ -3663,7 +3663,7 @@
       }
     },
     "history:84": {
-      "question": "Amerikan İç Savaşı hangi yılda sona erdi?",
+      "question": "Amerikan İç Savaşı hangi yıl sona erdi?",
       "answers": {
         "1776": "1776",
         "1812": "1812",
@@ -3681,7 +3681,7 @@
       }
     },
     "history:86": {
-      "question": "Avrupa'yı birbirine bağlayan İpek Yolu mu?",
+      "question": "İpek Yolu Avrupa'yı hangi kıtaya bağladı?",
       "answers": {
         "Africa": "Afrika",
         "Asia": "Asya",
@@ -3699,7 +3699,7 @@
       }
     },
     "history:88": {
-      "question": "Orta Çağ dönemi başka hangi adla bilinir?",
+      "question": "Orta Çağ dönemi İngilizcede hangi adla da bilinir?",
       "answers": {
         "Middle Ages": "Orta Çağ",
         "Stone Age": "Taş Devri",
@@ -3708,7 +3708,7 @@
       }
     },
     "history:89": {
-      "question": "Küba Devrimi'ne kim öncülük etti?",
+      "question": "Küba Devrimi'ne kim liderlik etti?",
       "answers": {
         "Guevara": "Guevara",
         "Castro": "Castro",
@@ -3717,7 +3717,7 @@
       }
     },
     "history:90": {
-      "question": "İlk atom bombasını hangi ülke yaptı?",
+      "question": "İlk atom bombasını hangi ülke geliştirdi?",
       "answers": {
         "Germany": "Almanya",
         "USA": "ABD",
@@ -3726,16 +3726,16 @@
       }
     },
     "history:91": {
-      "question": "Rönesans hangi dönemden hemen sonra geldi?",
+      "question": "Rönesans hangi dönemin hemen ardından geldi?",
       "answers": {
         "Middle Ages": "Orta Çağ",
         "Modern era": "Modern çağ",
         "Space Age": "Uzay Çağı",
-        "Industrial era": "Endüstriyel dönem"
+        "Industrial era": "Sanayi Çağı"
       }
     },
     "history:92": {
-      "question": "Antik Parthenon tapınağı nerede bulunuyor?",
+      "question": "Antik Parthenon tapınağı hangi şehirdedir?",
       "answers": {
         "Rome": "Roma",
         "Athens": "Atina",
@@ -3746,14 +3746,14 @@
     "history:93": {
       "question": "Persepolis hangi antik imparatorluğun başkentiydi?",
       "answers": {
-        "Roman": "Roma",
-        "Persian": "Farsça",
-        "Greek": "Yunanca",
-        "Egyptian": "Mısırlı"
+        "Roman": "Roma İmparatorluğu",
+        "Persian": "Pers İmparatorluğu",
+        "Greek": "Antik Yunan",
+        "Egyptian": "Antik Mısır"
       }
     },
     "history:94": {
-      "question": "Keşif Çağı Avrupalıların ne aradığını gördü?",
+      "question": "Keşif Çağı'nda Avrupalılar ağırlıklı olarak ne arıyordu?",
       "answers": {
         "The Moon": "Ay",
         "New trade routes and lands": "Yeni ticaret yolları ve topraklar",
@@ -3762,7 +3762,7 @@
       }
     },
     "history:95": {
-      "question": "1941'de Japonya hangi ABD deniz üssüne saldırdı?",
+      "question": "Japonya 1941'de hangi ABD deniz üssüne saldırdı?",
       "answers": {
         "San Diego": "San Diego",
         "Pearl Harbor": "Pearl Harbor",
@@ -3771,7 +3771,7 @@
       }
     },
     "history:96": {
-      "question": "100'ün Roma rakamı nedir?",
+      "question": "100 sayısının Roma rakamıyla karşılığı nedir?",
       "answers": {
         "C": "C",
         "D": "D",
@@ -3780,7 +3780,7 @@
       }
     },
     "history:97": {
-      "question": "Rosetta Taşı hangi antik yazının şifresinin çözülmesine yardımcı oldu?",
+      "question": "Rosetta Taşı hangi antik yazının çözülmesine yardımcı oldu?",
       "answers": {
         "Latin": "Latince",
         "Egyptian hieroglyphs": "Mısır hiyeroglifleri",
@@ -3789,7 +3789,7 @@
       }
     },
     "history:98": {
-      "question": "Hangi İkinci Dünya Savaşı ABD generali daha sonra ABD Başkanı oldu?",
+      "question": "İkinci Dünya Savaşı'nda general olup daha sonra ABD başkanı seçilen kişi kimdir?",
       "answers": {
         "Patton": "Patton",
         "Eisenhower": "Eisenhower",
@@ -3798,12 +3798,12 @@
       }
     },
     "history:99": {
-      "question": "Hangi kraliçe 2022'ye kadar 70 yıl boyunca Birleşik Krallık'ta hüküm sürdü?",
+      "question": "2022'ye kadar Birleşik Krallık'ta 70 yıl hüküm süren kraliçe kimdir?",
       "answers": {
         "Victoria": "Victoria",
         "Elizabeth II": "Elizabeth II",
         "Anne": "Anne",
-        "Mary": "Meryem"
+        "Mary": "Mary"
       }
     },
     "science:0": {
@@ -3816,7 +3816,7 @@
       }
     },
     "science:1": {
-      "question": "Güneş sistemimizde kaç gezegen var?",
+      "question": "Güneş sisteminde kaç gezegen vardır?",
       "answers": {
         "7": "7",
         "8": "8",
@@ -3825,7 +3825,7 @@
       }
     },
     "science:2": {
-      "question": "Bitkiler havadan hangi gazı emer?",
+      "question": "Bitkiler havadan hangi gazı alır?",
       "answers": {
         "Oxygen": "Oksijen",
         "Carbon dioxide": "Karbondioksit",
@@ -3843,25 +3843,25 @@
       }
     },
     "science:4": {
-      "question": "Hücrenin güç merkezi olarak bilinen şey nedir?",
+      "question": "Hücrenin enerji santrali olarak bilinen organel hangisidir?",
       "answers": {
         "Nucleus": "Çekirdek",
         "Mitochondria": "Mitokondri",
         "Ribosome": "Ribozom",
-        "Membrane": "Membran"
+        "Membrane": "Hücre zarı"
       }
     },
     "science:5": {
-      "question": "Altının kimyasal sembolü nedir?",
+      "question": "Altının kimyasal simgesi nedir?",
       "answers": {
         "Go": "Go",
-        "Gd": "Tanrım",
+        "Gd": "Gd",
         "Au": "Au",
         "Ag": "Ag"
       }
     },
     "science:6": {
-      "question": "Yetişkin insan vücudunda kaç kemik vardır?",
+      "question": "Yetişkin bir insanın vücudunda kaç kemik bulunur?",
       "answers": {
         "101": "101",
         "150": "150",
@@ -3879,7 +3879,7 @@
       }
     },
     "science:8": {
-      "question": "Görelilik teorisini kim geliştirdi?",
+      "question": "Görelilik kuramını kim geliştirdi?",
       "answers": {
         "Newton": "Newton",
         "Einstein": "Einstein",
@@ -3888,34 +3888,34 @@
       }
     },
     "science:9": {
-      "question": "Hangi kuvvet nesneleri Dünya'ya doğru çeker?",
+      "question": "Cisimleri Dünya'ya doğru çeken kuvvet hangisidir?",
       "answers": {
         "Magnetism": "Manyetizma",
-        "Gravity": "Yerçekimi",
+        "Gravity": "Kütle çekimi",
         "Friction": "Sürtünme",
         "Inertia": "Eylemsizlik"
       }
     },
     "science:10": {
-      "question": "Hangi kan hücreleri enfeksiyonla savaşır?",
+      "question": "Enfeksiyonlarla savaşan kan hücreleri hangileridir?",
       "answers": {
-        "Red cells": "Kırmızı hücreler",
-        "White cells": "Beyaz hücreler",
+        "Red cells": "Alyuvarlar",
+        "White cells": "Akyuvarlar",
         "Platelets": "Trombositler",
         "Plasma": "Plazma"
       }
     },
     "science:11": {
-      "question": "İnsan vücudundaki en büyük organ nedir?",
+      "question": "İnsan vücudunun en büyük organı hangisidir?",
       "answers": {
         "Liver": "Karaciğer",
-        "Skin": "Görünüm",
+        "Skin": "Deri",
         "Heart": "Kalp",
         "Brain": "Beyin"
       }
     },
     "science:12": {
-      "question": "Deniz seviyesinde su hangi sıcaklıkta (°C) kaynar?",
+      "question": "Deniz seviyesinde su kaç °C'de kaynar?",
       "answers": {
         "80": "80",
         "90": "90",
@@ -3924,16 +3924,16 @@
       }
     },
     "science:13": {
-      "question": "Yalnızca bitkilerle beslenen hayvanlara ne ad verilir?",
+      "question": "Yalnızca bitkilerle beslenen hayvanlara ne denir?",
       "answers": {
         "Carnivores": "Etoburlar",
-        "Herbivores": "Otoburlar",
+        "Herbivores": "Otçullar",
         "Omnivores": "Hepçiller",
         "Predators": "Yırtıcılar"
       }
     },
     "science:14": {
-      "question": "Güneş sistemimizdeki en büyük gezegen hangisidir?",
+      "question": "Güneş sisteminin en büyük gezegeni hangisidir?",
       "answers": {
         "Saturn": "Satürn",
         "Jupiter": "Jüpiter",
@@ -3942,7 +3942,7 @@
       }
     },
     "science:15": {
-      "question": "Bitkiler güneş ışığını kullanarak mı besin üretir?",
+      "question": "Bitkiler güneş ışığını kullanarak hangi süreçle besin üretir?",
       "answers": {
         "Respiration": "Solunum",
         "Photosynthesis": "Fotosentez",
@@ -3951,16 +3951,16 @@
       }
     },
     "science:16": {
-      "question": "Oksijenin kimyasal sembolü nedir?",
+      "question": "Oksijenin kimyasal simgesi nedir?",
       "answers": {
         "O": "O",
-        "Ox": "Öküz",
+        "Ox": "Ox",
         "Og": "Og",
-        "On": "Açık"
+        "On": "On"
       }
     },
     "science:17": {
-      "question": "Dünyadaki en sert doğal madde nedir?",
+      "question": "Dünya'daki en sert doğal madde hangisidir?",
       "answers": {
         "Gold": "Altın",
         "Iron": "Demir",
@@ -3969,20 +3969,20 @@
       }
     },
     "science:18": {
-      "question": "Demirin kimyasal sembolü nedir?",
+      "question": "Demirin kimyasal simgesi nedir?",
       "answers": {
-        "Ir": "IR",
+        "Ir": "Ir",
         "Fe": "Fe",
-        "In": "İçeride",
+        "In": "In",
         "Io": "Io"
       }
     },
     "science:19": {
-      "question": "Sodyumun kimyasal sembolü nedir?",
+      "question": "Sodyumun kimyasal simgesi nedir?",
       "answers": {
-        "So": "Yani",
+        "So": "So",
         "Sd": "Sd",
-        "Na": "Hayır",
+        "Na": "Na",
         "S": "S"
       }
     },
@@ -4005,7 +4005,7 @@
       }
     },
     "science:22": {
-      "question": "Bir atomun merkezine ne denir?",
+      "question": "Atomun merkezine ne ad verilir?",
       "answers": {
         "Electron": "Elektron",
         "Nucleus": "Çekirdek",
@@ -4014,7 +4014,7 @@
       }
     },
     "science:23": {
-      "question": "İnsanların hayatta kalmak için hangi gazı soluması gerekir?",
+      "question": "İnsanların yaşamını sürdürmek için soluması gereken gaz hangisidir?",
       "answers": {
         "Carbon dioxide": "Karbondioksit",
         "Oxygen": "Oksijen",
@@ -4023,7 +4023,7 @@
       }
     },
     "science:24": {
-      "question": "Santigrat cinsinden suyun donma noktası nedir?",
+      "question": "Suyun santigrat ölçekte donma noktası kaç derecedir?",
       "answers": {
         "0": "0",
         "10": "10",
@@ -4032,7 +4032,7 @@
       }
     },
     "science:25": {
-      "question": "Dünya neyin etrafında dönüyor?",
+      "question": "Dünya hangi gök cisminin çevresinde dolanır?",
       "answers": {
         "Moon": "Ay",
         "Sun": "Güneş",
@@ -4041,7 +4041,7 @@
       }
     },
     "science:26": {
-      "question": "Dünyanın Güneş'in etrafında dönmesi ne kadar sürer?",
+      "question": "Dünya'nın Güneş çevresindeki bir turu ne kadar sürer?",
       "answers": {
         "1 day": "1 gün",
         "1 month": "1 ay",
@@ -4050,16 +4050,16 @@
       }
     },
     "science:27": {
-      "question": "Gece ve gündüzün nedeni nedir?",
+      "question": "Gece ve gündüzün oluşmasının temel nedeni nedir?",
       "answers": {
-        "Earth's rotation": "Dünyanın dönüşü",
+        "Earth's rotation": "Dünya'nın kendi ekseni etrafında dönmesi",
         "The Moon": "Ay",
         "Clouds": "Bulutlar",
         "The tides": "Gelgitler"
       }
     },
     "science:28": {
-      "question": "Güneş sistemimizdeki en küçük gezegen nedir?",
+      "question": "Güneş sisteminin en küçük gezegeni hangisidir?",
       "answers": {
         "Mars": "Mars",
         "Mercury": "Merkür",
@@ -4068,16 +4068,16 @@
       }
     },
     "science:29": {
-      "question": "Hangi galakside yaşıyoruz?",
+      "question": "İçinde yaşadığımız galaksinin adı nedir?",
       "answers": {
         "Andromeda": "Andromeda",
         "Milky Way": "Samanyolu",
-        "Whirlpool": "Girdap",
-        "Sombrero": "Sombrero"
+        "Whirlpool": "Girdap Galaksisi",
+        "Sombrero": "Sombrero Galaksisi"
       }
     },
     "science:30": {
-      "question": "Güneş esas olarak aşağıdakilerden oluşur?",
+      "question": "Güneş büyük ölçüde hangi maddelerden oluşur?",
       "answers": {
         "Rock": "Kaya",
         "Hydrogen and helium": "Hidrojen ve helyum",
@@ -4095,7 +4095,7 @@
       }
     },
     "science:32": {
-      "question": "Dünya atmosferinin çoğunu hangi gaz oluşturuyor?",
+      "question": "Dünya atmosferinin büyük bölümünü hangi gaz oluşturur?",
       "answers": {
         "Oxygen": "Oksijen",
         "Nitrogen": "Azot",
@@ -4104,7 +4104,7 @@
       }
     },
     "science:33": {
-      "question": "Canlıları inceleyen bilime ne denir?",
+      "question": "Canlıları inceleyen bilim dalına ne denir?",
       "answers": {
         "Physics": "Fizik",
         "Biology": "Biyoloji",
@@ -4113,7 +4113,7 @@
       }
     },
     "science:34": {
-      "question": "Madde ve enerji bilimine ne denir?",
+      "question": "Madde ve enerjiyi inceleyen bilim dalı hangisidir?",
       "answers": {
         "Biology": "Biyoloji",
         "Physics": "Fizik",
@@ -4122,7 +4122,7 @@
       }
     },
     "science:35": {
-      "question": "Maddelerin ve reaksiyonların incelenmesine ne denir?",
+      "question": "Maddeleri ve kimyasal tepkimeleri inceleyen bilim dalı hangisidir?",
       "answers": {
         "Chemistry": "Kimya",
         "Astronomy": "Astronomi",
@@ -4131,7 +4131,7 @@
       }
     },
     "science:36": {
-      "question": "Hangi organ vücuda kan pompalar?",
+      "question": "Kanı vücuda pompalayan organ hangisidir?",
       "answers": {
         "Lungs": "Akciğerler",
         "Heart": "Kalp",
@@ -4140,7 +4140,7 @@
       }
     },
     "science:37": {
-      "question": "Nefes almak için hangi organ kullanılır?",
+      "question": "Solunumda görev alan temel organ hangisidir?",
       "answers": {
         "Heart": "Kalp",
         "Lungs": "Akciğerler",
@@ -4149,16 +4149,16 @@
       }
     },
     "science:38": {
-      "question": "İnsan vücudundaki en sert madde nedir?",
+      "question": "İnsan vücudundaki en sert madde hangisidir?",
       "answers": {
         "Bone": "Kemik",
         "Tooth enamel": "Diş minesi",
-        "Nails": "Çiviler",
+        "Nails": "Tırnaklar",
         "Cartilage": "Kıkırdak"
       }
     },
     "science:39": {
-      "question": "İnsan kalbi kaç odacıklıdır?",
+      "question": "İnsan kalbi kaç odacıktan oluşur?",
       "answers": {
         "2": "2",
         "3": "3",
@@ -4167,7 +4167,7 @@
       }
     },
     "science:40": {
-      "question": "DNA taşıyor mu?",
+      "question": "DNA ne taşır?",
       "answers": {
         "Water": "Su",
         "Genetic information": "Genetik bilgi",
@@ -4176,7 +4176,7 @@
       }
     },
     "science:41": {
-      "question": "Güneş ışığı vücudumuzun hangi vitamini üretmesine yardımcı olur?",
+      "question": "Güneş ışığı vücudun hangi vitamini üretmesine yardımcı olur?",
       "answers": {
         "Vitamin A": "A Vitamini",
         "Vitamin C": "C Vitamini",
@@ -4185,7 +4185,7 @@
       }
     },
     "science:42": {
-      "question": "Fahrenheit cinsinden suyun kaynama noktası nedir?",
+      "question": "Suyun Fahrenheit ölçeğindeki kaynama noktası kaç derecedir?",
       "answers": {
         "100": "100",
         "150": "150",
@@ -4194,16 +4194,16 @@
       }
     },
     "science:43": {
-      "question": "Ses en hızlı şekilde mi yayılır?",
+      "question": "Ses en hızlı hangi ortamda yayılır?",
       "answers": {
         "Vacuum": "Vakum",
         "Solids": "Katılar",
         "Gases": "Gazlar",
-        "Empty space": "Boş alan"
+        "Empty space": "Uzay boşluğu"
       }
     },
     "science:44": {
-      "question": "Işığın yaklaşık hızı nedir?",
+      "question": "Işığın boşluktaki yaklaşık hızı nedir?",
       "answers": {
         "300,000 km/s": "300.000 km/s",
         "1,000 km/s": "1.000 km/s",
@@ -4212,7 +4212,7 @@
       }
     },
     "science:45": {
-      "question": "Hangi gezegen halkalarıyla ünlüdür?",
+      "question": "Halkalarıyla tanınan gezegen hangisidir?",
       "answers": {
         "Mars": "Mars",
         "Saturn": "Satürn",
@@ -4221,7 +4221,7 @@
       }
     },
     "science:46": {
-      "question": "Dünyanın tek doğal uydusu nedir?",
+      "question": "Dünya'nın tek doğal uydusu hangisidir?",
       "answers": {
         "The Sun": "Güneş",
         "The Moon": "Ay",
@@ -4230,43 +4230,43 @@
       }
     },
     "science:47": {
-      "question": "Hangi kuvvet gezegenlerin Güneş'in etrafında dönmesini sağlar?",
+      "question": "Gezegenleri Güneş çevresindeki yörüngelerinde tutan kuvvet hangisidir?",
       "answers": {
         "Magnetism": "Manyetizma",
-        "Gravity": "Yerçekimi",
+        "Gravity": "Kütle çekimi",
         "Friction": "Sürtünme",
         "Electricity": "Elektrik"
       }
     },
     "science:48": {
-      "question": "Hem bitki hem de et yiyen hayvanlara ne ad verilir?",
+      "question": "Hem bitkilerle hem etle beslenen hayvanlara ne denir?",
       "answers": {
         "Herbivores": "Otçullar",
         "Carnivores": "Etoburlar",
-        "Omnivores": "Omnivorlar",
-        "Insectivores": "Böcek öldürücüler"
+        "Omnivores": "Hepçiller",
+        "Insectivores": "Böcekçiller"
       }
     },
     "science:49": {
-      "question": "Sadece et yiyen hayvanlara ne ad verilir?",
+      "question": "Yalnızca etle beslenen hayvanlara ne denir?",
       "answers": {
         "Herbivores": "Otçullar",
         "Carnivores": "Etoburlar",
-        "Omnivores": "Omnivorlar",
+        "Omnivores": "Hepçiller",
         "Detritivores": "Detritivorlar"
       }
     },
     "science:50": {
-      "question": "Hangi süreç sıvı suyu buhara dönüştürür?",
+      "question": "Sıvı suyu su buharına dönüştüren süreç hangisidir?",
       "answers": {
         "Condensation": "Yoğunlaşma",
         "Evaporation": "Buharlaşma",
-        "Freezing": "Donuyor",
+        "Freezing": "Donma",
         "Melting": "Erime"
       }
     },
     "science:51": {
-      "question": "Hangi süreç buharı tekrar sıvıya dönüştürür?",
+      "question": "Su buharını yeniden sıvıya dönüştüren süreç hangisidir?",
       "answers": {
         "Evaporation": "Buharlaşma",
         "Condensation": "Yoğunlaşma",
@@ -4275,7 +4275,7 @@
       }
     },
     "science:52": {
-      "question": "Maddenin üç temel hâli nedir?",
+      "question": "Maddenin yaygın üç hâli hangileridir?",
       "answers": {
         "Hot, cold, warm": "Sıcak, soğuk, ılık",
         "Solid, liquid, gas": "Katı, sıvı, gaz",
@@ -4284,7 +4284,7 @@
       }
     },
     "science:53": {
-      "question": "Buz, suyun ___ durumudur.",
+      "question": "Buz, suyun hangi hâlidir?",
       "answers": {
         "Gas": "Gaz",
         "Liquid": "Sıvı",
@@ -4293,7 +4293,7 @@
       }
     },
     "science:54": {
-      "question": "Evrim teorisini hangi bilim adamı öne sürdü?",
+      "question": "Evrim kuramını ortaya koyan bilim insanı kimdir?",
       "answers": {
         "Newton": "Newton",
         "Darwin": "Darwin",
@@ -4302,7 +4302,7 @@
       }
     },
     "science:55": {
-      "question": "Hareket ve yerçekimi yasalarını kim formüle etti?",
+      "question": "Hareket ve kütle çekimi yasalarını kim formüle etti?",
       "answers": {
         "Einstein": "Einstein",
         "Newton": "Newton",
@@ -4311,7 +4311,7 @@
       }
     },
     "science:56": {
-      "question": "Karbonun kimyasal sembolü nedir?",
+      "question": "Karbonun kimyasal simgesi nedir?",
       "answers": {
         "Ca": "Ca",
         "C": "C",
@@ -4320,16 +4320,16 @@
       }
     },
     "science:57": {
-      "question": "Helyumun kimyasal sembolü nedir?",
+      "question": "Helyumun kimyasal simgesi nedir?",
       "answers": {
         "H": "H",
-        "He": "O",
+        "He": "He",
         "Hl": "Hl",
         "Ha": "Ha"
       }
     },
     "science:58": {
-      "question": "Hangi gezegen kalın asit bulutları nedeniyle çok sıcaktır?",
+      "question": "Yoğun asit bulutlarıyla kaplı ve çok sıcak olan gezegen hangisidir?",
       "answers": {
         "Mars": "Mars",
         "Venus": "Venüs",
@@ -4338,7 +4338,7 @@
       }
     },
     "science:59": {
-      "question": "Tipik bir yetişkin insanın kaç dişi vardır?",
+      "question": "Yetişkin bir insanın genellikle kaç dişi vardır?",
       "answers": {
         "24": "24",
         "28": "28",
@@ -4347,16 +4347,16 @@
       }
     },
     "science:60": {
-      "question": "Bitkinin hangi kısmı topraktan suyu emer?",
+      "question": "Bitkinin hangi bölümü topraktaki suyu emer?",
       "answers": {
         "Leaves": "Yapraklar",
         "Roots": "Kökler",
         "Flowers": "Çiçekler",
-        "Stem": "Kök"
+        "Stem": "Gövde"
       }
     },
     "science:61": {
-      "question": "Bitkiler fotosentez sırasında hangi gazı serbest bırakır?",
+      "question": "Bitkiler fotosentez sırasında hangi gazı açığa çıkarır?",
       "answers": {
         "Carbon dioxide": "Karbondioksit",
         "Oxygen": "Oksijen",
@@ -4365,7 +4365,7 @@
       }
     },
     "science:62": {
-      "question": "Dünya'ya en yakın yıldız hangisi?",
+      "question": "Dünya'ya en yakın yıldız hangisidir?",
       "answers": {
         "Polaris": "Polaris",
         "The Sun": "Güneş",
@@ -4374,7 +4374,7 @@
       }
     },
     "science:63": {
-      "question": "Genel bağışçı hangi kan grubudur?",
+      "question": "Evrensel kan vericisi olarak kabul edilen kan grubu hangisidir?",
       "answers": {
         "A": "A",
         "B": "B",
@@ -4383,25 +4383,25 @@
       }
     },
     "science:64": {
-      "question": "Sıcaklığı hangi alet ölçer?",
+      "question": "Sıcaklığı ölçmek için hangi araç kullanılır?",
       "answers": {
         "Barometer": "Barometre",
         "Thermometer": "Termometre",
         "Ruler": "Cetvel",
-        "Scale": "Ölçek"
+        "Scale": "Terazi"
       }
     },
     "science:65": {
-      "question": "Minik hücreleri görmek için hangi alet kullanılır?",
+      "question": "Çok küçük hücreleri görmek için hangi araç kullanılır?",
       "answers": {
         "Telescope": "Teleskop",
         "Microscope": "Mikroskop",
-        "Periscope": "Periscope",
+        "Periscope": "Periskop",
         "Binoculars": "Dürbün"
       }
     },
     "science:66": {
-      "question": "Uzak yıldızları görüntülemek için hangi alet kullanılır?",
+      "question": "Uzak yıldızları gözlemlemek için hangi araç kullanılır?",
       "answers": {
         "Microscope": "Mikroskop",
         "Telescope": "Teleskop",
@@ -4410,20 +4410,20 @@
       }
     },
     "science:67": {
-      "question": "Dondurulmuş karbondioksite genel olarak ne denir?",
+      "question": "Katı hâlde bulunan karbondioksite ne ad verilir?",
       "answers": {
         "Dry ice": "Kuru buz",
         "Snow": "Kar",
         "Frost": "Don",
-        "Hail": "Selamlar"
+        "Hail": "Dolu"
       }
     },
     "science:68": {
-      "question": "İnsanlar çoğunlukla hangi gazı soluyor?",
+      "question": "İnsan vücudunun solunum sırasında dışarı verdiği temel atık gaz hangisidir?",
       "answers": {
         "Oxygen": "Oksijen",
         "Carbon dioxide": "Karbondioksit",
-        "Nitrogen only": "Yalnızca nitrojen",
+        "Nitrogen only": "Yalnızca azot",
         "Hydrogen": "Hidrojen"
       }
     },
@@ -4437,7 +4437,7 @@
       }
     },
     "science:70": {
-      "question": "Dünya yüzeyinin altındaki erimiş kayaya ne ad verilir?",
+      "question": "Yer kabuğunun altındaki erimiş kayaya ne denir?",
       "answers": {
         "Lava": "Lav",
         "Magma": "Magma",
@@ -4446,7 +4446,7 @@
       }
     },
     "science:71": {
-      "question": "Yüzeye çıkan erimiş kayaya ne ad verilir?",
+      "question": "Yeryüzüne çıkan erimiş kayaya ne denir?",
       "answers": {
         "Magma": "Magma",
         "Lava": "Lav",
@@ -4455,7 +4455,7 @@
       }
     },
     "science:72": {
-      "question": "Dünyanın çekirdeği çoğunlukla nelerden oluşuyor?",
+      "question": "Dünya'nın çekirdeği büyük ölçüde hangi elementlerden oluşur?",
       "answers": {
         "Water": "Su",
         "Iron and nickel": "Demir ve nikel",
@@ -4464,7 +4464,7 @@
       }
     },
     "science:73": {
-      "question": "Dünya’nın hangi katmanında yaşıyoruz?",
+      "question": "Dünya'nın hangi katmanında yaşarız?",
       "answers": {
         "Core": "Çekirdek",
         "Mantle": "Manto",
@@ -4473,25 +4473,25 @@
       }
     },
     "science:74": {
-      "question": "Okyanus gelgitlerine esas olarak ne sebep olur?",
+      "question": "Okyanuslardaki gelgitlerin temel nedeni nedir?",
       "answers": {
         "Wind only": "Yalnızca rüzgar",
-        "The Moon's gravity": "Ay'ın yerçekimi",
+        "The Moon's gravity": "Ay'ın kütle çekimi",
         "Fish": "Balık",
         "Rivers": "Nehirler"
       }
     },
     "science:75": {
-      "question": "Bir desen oluşturan yıldız grubu nedir?",
+      "question": "Belirli bir şekil oluşturuyormuş gibi görünen yıldız grubuna ne denir?",
       "answers": {
         "Galaxy": "Galaksi",
         "Constellation": "Takımyıldızı",
         "Comet": "Kuyruklu yıldız",
-        "Nebula": "Bulutsusu"
+        "Nebula": "Bulutsu"
       }
     },
     "science:76": {
-      "question": "Bir 'kayan yıldız' aslında bir midir?",
+      "question": "Kayan yıldız olarak gördüğümüz şey aslında nedir?",
       "answers": {
         "Dying star": "Ölen yıldız",
         "Meteor": "Meteor",
@@ -4500,7 +4500,7 @@
       }
     },
     "science:77": {
-      "question": "Ünlü 'Büyük Kırmızı Nokta' hangi gezegende var?",
+      "question": "Büyük Kırmızı Leke hangi gezegendedir?",
       "answers": {
         "Mars": "Mars",
         "Jupiter": "Jüpiter",
@@ -4518,7 +4518,7 @@
       }
     },
     "science:79": {
-      "question": "Hangi organ düşünceyi ve hareketi kontrol eder?",
+      "question": "Düşünceyi ve hareketi kontrol eden organ hangisidir?",
       "answers": {
         "Heart": "Kalp",
         "Brain": "Beyin",
@@ -4527,16 +4527,16 @@
       }
     },
     "science:80": {
-      "question": "Potasyumun kimyasal sembolü nedir?",
+      "question": "Potasyumun kimyasal simgesi nedir?",
       "answers": {
         "P": "P",
         "Po": "Po",
         "K": "K",
-        "Pt": "Nokta"
+        "Pt": "Pt"
       }
     },
     "science:81": {
-      "question": "Bunlardan hangisi soy gazdır?",
+      "question": "Hangisi soy gazlardan biridir?",
       "answers": {
         "Oxygen": "Oksijen",
         "Helium": "Helyum",
@@ -4545,7 +4545,7 @@
       }
     },
     "science:82": {
-      "question": "Bulutlardan düşen suya ne ad verilir?",
+      "question": "Bulutlardan yeryüzüne düşen suya genel olarak ne denir?",
       "answers": {
         "Evaporation": "Buharlaşma",
         "Precipitation": "Yağış",
@@ -4554,7 +4554,7 @@
       }
     },
     "science:83": {
-      "question": "Depremlerin büyüklüğünü hangi ölçek ölçer?",
+      "question": "Depremlerin büyüklüğünü ölçmek için hangi ölçek kullanılır?",
       "answers": {
         "Celsius": "Santigrat",
         "Richter": "Richter",
@@ -4563,7 +4563,7 @@
       }
     },
     "science:84": {
-      "question": "Elektrik akımını hangi ünite ölçer?",
+      "question": "Elektrik akımının ölçü birimi hangisidir?",
       "answers": {
         "Volt": "Volt",
         "Ampere": "Amper",
@@ -4572,7 +4572,7 @@
       }
     },
     "science:85": {
-      "question": "Ampul gücü neyle ölçülür?",
+      "question": "Ampullerin gücü hangi birimle ölçülür?",
       "answers": {
         "Watts": "Watt",
         "Meters": "Metre",
@@ -4581,7 +4581,7 @@
       }
     },
     "science:86": {
-      "question": "Hangi gezegen kendi tarafında dönüyor?",
+      "question": "Dönme ekseni neredeyse yana yatık olan gezegen hangisidir?",
       "answers": {
         "Uranus": "Uranüs",
         "Mars": "Mars",
@@ -4590,7 +4590,7 @@
       }
     },
     "science:87": {
-      "question": "Tırtılın kelebeğe dönüşmesine ne ad verilir?",
+      "question": "Tırtılın kelebeğe dönüşme sürecine ne denir?",
       "answers": {
         "Evolution": "Evrim",
         "Metamorphosis": "Metamorfoz",
@@ -4599,7 +4599,7 @@
       }
     },
     "science:88": {
-      "question": "Evrende en bol bulunan element nedir?",
+      "question": "Evrende en bol bulunan element hangisidir?",
       "answers": {
         "Oxygen": "Oksijen",
         "Hydrogen": "Hidrojen",
@@ -4608,7 +4608,7 @@
       }
     },
     "science:89": {
-      "question": "Boyut olarak Dünya'ya en yakın gezegen hangisidir?",
+      "question": "Boyut bakımından Dünya'ya en yakın gezegen hangisidir?",
       "answers": {
         "Mars": "Mars",
         "Venus": "Venüs",
@@ -4617,16 +4617,16 @@
       }
     },
     "science:90": {
-      "question": "İnsan vücudu çoğunlukla aşağıdakilerden oluşur?",
+      "question": "İnsan vücudunun büyük bölümü neden oluşur?",
       "answers": {
         "Bone": "Kemik",
         "Water": "Su",
         "Muscle": "Kas",
-        "Fat": "Şişman"
+        "Fat": "Yağ"
       }
     },
     "science:91": {
-      "question": "Hangi organ kandaki atıkları filtreler?",
+      "question": "Kandaki atıkları süzen organlar hangileridir?",
       "answers": {
         "Heart": "Kalp",
         "Kidneys": "Böbrekler",
@@ -4635,25 +4635,25 @@
       }
     },
     "science:92": {
-      "question": "Gözlerle hangi duyu bağlantılıdır?",
+      "question": "Gözlerle ilişkili duyu hangisidir?",
       "answers": {
         "Hearing": "İşitme",
         "Sight": "Görme",
-        "Smell": "Koku",
-        "Taste": "Tat"
+        "Smell": "Koklama",
+        "Taste": "Tatma"
       }
     },
     "science:93": {
-      "question": "Gümüşün kimyasal sembolü nedir?",
+      "question": "Gümüşün kimyasal simgesi nedir?",
       "answers": {
         "Si": "Si",
         "Ag": "Ag",
         "Au": "Au",
-        "Sr": "Kıdemli"
+        "Sr": "Sr"
       }
     },
     "science:94": {
-      "question": "Hangi gezegen Güneş'e en uzaktır?",
+      "question": "Güneş'e en uzak gezegen hangisidir?",
       "answers": {
         "Saturn": "Satürn",
         "Uranus": "Uranüs",
@@ -4662,7 +4662,7 @@
       }
     },
     "science:95": {
-      "question": "Bitkilerin besin üretmek için güneş ışığı ve suyun yanı sıra neye ihtiyacı vardır?",
+      "question": "Bitkiler besin üretmek için güneş ışığı ve suyun yanı sıra hangi gaza ihtiyaç duyar?",
       "answers": {
         "Oxygen": "Oksijen",
         "Carbon dioxide": "Karbondioksit",
@@ -4671,7 +4671,7 @@
       }
     },
     "science:96": {
-      "question": "Yıldızları ve uzayı inceleyen bilim adamına ne denir?",
+      "question": "Yıldızları ve uzayı inceleyen bilim insanına ne denir?",
       "answers": {
         "Biologist": "Biyolog",
         "Astronomer": "Gökbilimci",
@@ -4680,7 +4680,7 @@
       }
     },
     "science:97": {
-      "question": "Hangi gezegen 'sabah yıldızı' veya 'akşam yıldızı' olarak bilinir?",
+      "question": "Sabah yıldızı veya akşam yıldızı olarak bilinen gezegen hangisidir?",
       "answers": {
         "Mars": "Mars",
         "Venus": "Venüs",
@@ -4698,7 +4698,7 @@
       }
     },
     "science:99": {
-      "question": "Hangi gezegene genellikle 'Mavi Gezegen' denir?",
+      "question": "Mavi Gezegen olarak bilinen gezegen hangisidir?",
       "answers": {
         "Mars": "Mars",
         "Earth": "Dünya",
@@ -4707,7 +4707,7 @@
       }
     },
     "geography:0": {
-      "question": "Japonya'nın başkenti nedir?",
+      "question": "Japonya'nın başkenti neresidir?",
       "answers": {
         "Seoul": "Seul",
         "Beijing": "Pekin",
@@ -4716,16 +4716,16 @@
       }
     },
     "geography:1": {
-      "question": "Dünyadaki en büyük okyanus nedir?",
+      "question": "Dünya'nın en büyük okyanusu hangisidir?",
       "answers": {
         "Atlantic": "Atlantik",
-        "Indian": "Hintli",
-        "Arctic": "Arktik",
+        "Indian": "Hint Okyanusu",
+        "Arctic": "Arktik Okyanusu",
         "Pacific": "Pasifik"
       }
     },
     "geography:2": {
-      "question": "Hangi nehir genellikle dünyanın en uzun nehri olarak kabul edilir?",
+      "question": "Genel kabule göre dünyanın en uzun nehri hangisidir?",
       "answers": {
         "Amazon": "Amazon",
         "Nile": "Nil",
@@ -4734,16 +4734,16 @@
       }
     },
     "geography:3": {
-      "question": "Everest Dağı hangi sıradağların bir parçasıdır?",
+      "question": "Everest Dağı hangi sıradağların parçasıdır?",
       "answers": {
         "Andes": "And Dağları",
         "Alps": "Alpler",
         "Himalayas": "Himalayalar",
-        "Rockies": "Kayalıklar"
+        "Rockies": "Kayalık Dağları"
       }
     },
     "geography:4": {
-      "question": "Fransa'nın başkenti nedir?",
+      "question": "Fransa'nın başkenti neresidir?",
       "answers": {
         "Berlin": "Berlin",
         "Madrid": "Madrid",
@@ -4752,7 +4752,7 @@
       }
     },
     "geography:5": {
-      "question": "Arazi alanına göre en büyük ülke hangisidir?",
+      "question": "Yüzölçümü bakımından dünyanın en büyük ülkesi hangisidir?",
       "answers": {
         "Canada": "Kanada",
         "China": "Çin",
@@ -4770,7 +4770,7 @@
       }
     },
     "geography:7": {
-      "question": "Avustralya'nın başkenti nedir?",
+      "question": "Avustralya'nın başkenti neresidir?",
       "answers": {
         "Sydney": "Sidney",
         "Melbourne": "Melbourne",
@@ -4779,7 +4779,7 @@
       }
     },
     "geography:8": {
-      "question": "En küçük kıta hangisidir?",
+      "question": "Yüzölçümü bakımından en küçük kıta hangisidir?",
       "answers": {
         "Europe": "Avrupa",
         "Australia": "Avustralya",
@@ -4788,7 +4788,7 @@
       }
     },
     "geography:9": {
-      "question": "Büyük Set Resifi hangi ülkenin kıyısında yer alıyor?",
+      "question": "Büyük Set Resifi hangi ülkenin kıyılarındadır?",
       "answers": {
         "Brazil": "Brezilya",
         "Australia": "Avustralya",
@@ -4806,7 +4806,7 @@
       }
     },
     "geography:11": {
-      "question": "Mısır'ın başkenti nedir?",
+      "question": "Mısır'ın başkenti neresidir?",
       "answers": {
         "Cairo": "Kahire",
         "Alexandria": "İskenderiye",
@@ -4815,7 +4815,7 @@
       }
     },
     "geography:12": {
-      "question": "Kaç kıta var?",
+      "question": "Dünyada kaç kıta vardır?",
       "answers": {
         "5": "5",
         "6": "6",
@@ -4824,7 +4824,7 @@
       }
     },
     "geography:13": {
-      "question": "Londra'nın içinden hangi nehir geçiyor?",
+      "question": "Londra'nın içinden hangi nehir geçer?",
       "answers": {
         "Seine": "Seine",
         "Thames": "Thames",
@@ -4833,7 +4833,7 @@
       }
     },
     "geography:14": {
-      "question": "Amazon yağmur ormanları çoğunlukla hangi ülkede bulunuyor?",
+      "question": "Amazon yağmur ormanlarının büyük bölümü hangi ülkededir?",
       "answers": {
         "Peru": "Peru",
         "Colombia": "Kolombiya",
@@ -4847,11 +4847,11 @@
         "Gobi": "Gobi",
         "Sahara": "Sahra",
         "Kalahari": "Kalahari",
-        "Arabian": "Arap"
+        "Arabian": "Arabistan Çölü"
       }
     },
     "geography:16": {
-      "question": "İtalya'nın başkenti nedir?",
+      "question": "İtalya'nın başkenti neresidir?",
       "answers": {
         "Milan": "Milano",
         "Venice": "Venedik",
@@ -4860,7 +4860,7 @@
       }
     },
     "geography:17": {
-      "question": "Amazon Nehri hangi kıtada bulunur?",
+      "question": "Amazon Nehri hangi kıtadadır?",
       "answers": {
         "Africa": "Afrika",
         "Asia": "Asya",
@@ -4869,16 +4869,16 @@
       }
     },
     "geography:18": {
-      "question": "Almanya'nın başkenti nedir?",
+      "question": "Almanya'nın başkenti neresidir?",
       "answers": {
         "Munich": "Münih",
         "Berlin": "Berlin",
         "Hamburg": "Hamburg",
-        "Frankfurt": "Frankfurt'ta"
+        "Frankfurt": "Frankfurt"
       }
     },
     "geography:19": {
-      "question": "İspanya'nın başkenti nedir?",
+      "question": "İspanya'nın başkenti neresidir?",
       "answers": {
         "Barcelona": "Barselona",
         "Madrid": "Madrid",
@@ -4887,16 +4887,16 @@
       }
     },
     "geography:20": {
-      "question": "Rusya'nın başkenti nedir?",
+      "question": "Rusya'nın başkenti neresidir?",
       "answers": {
-        "St Petersburg": "St Petersburg",
+        "St Petersburg": "St. Petersburg",
         "Moscow": "Moskova",
-        "Kyiv": "Kiev",
+        "Kyiv": "Kıyiv",
         "Sochi": "Soçi"
       }
     },
     "geography:21": {
-      "question": "Çin'in başkenti nedir?",
+      "question": "Çin'in başkenti neresidir?",
       "answers": {
         "Shanghai": "Şangay",
         "Beijing": "Pekin",
@@ -4905,7 +4905,7 @@
       }
     },
     "geography:22": {
-      "question": "Kanada'nın başkenti nedir?",
+      "question": "Kanada'nın başkenti neresidir?",
       "answers": {
         "Toronto": "Toronto",
         "Ottawa": "Ottawa",
@@ -4914,7 +4914,7 @@
       }
     },
     "geography:23": {
-      "question": "Amerika Birleşik Devletleri'nin başkenti nedir?",
+      "question": "Amerika Birleşik Devletleri'nin başkenti neresidir?",
       "answers": {
         "New York": "New York",
         "Washington, D.C.": "Washington, D.C.",
@@ -4923,7 +4923,7 @@
       }
     },
     "geography:24": {
-      "question": "Birleşik Krallık'ın başkenti nedir?",
+      "question": "Birleşik Krallık'ın başkenti neresidir?",
       "answers": {
         "Manchester": "Manchester",
         "London": "Londra",
@@ -4932,25 +4932,25 @@
       }
     },
     "geography:25": {
-      "question": "Brezilya'nın başkenti nedir?",
+      "question": "Brezilya'nın başkenti neresidir?",
       "answers": {
         "Rio de Janeiro": "Rio de Janeiro",
-        "Brasília": "Brezilya",
+        "Brasília": "Brasília",
         "São Paulo": "São Paulo",
         "Salvador": "Salvador"
       }
     },
     "geography:26": {
-      "question": "Hindistan'ın başkenti nedir?",
+      "question": "Hindistan'ın başkenti neresidir?",
       "answers": {
-        "Mumbai": "Bombay",
+        "Mumbai": "Mumbai",
         "New Delhi": "Yeni Delhi",
-        "Kolkata": "Kalküta",
+        "Kolkata": "Kolkata",
         "Chennai": "Chennai"
       }
     },
     "geography:27": {
-      "question": "Güney Kore'nin başkenti nedir?",
+      "question": "Güney Kore'nin başkenti neresidir?",
       "answers": {
         "Busan": "Busan",
         "Seoul": "Seul",
@@ -4959,7 +4959,7 @@
       }
     },
     "geography:28": {
-      "question": "Yunanistan'ın başkenti nedir?",
+      "question": "Yunanistan'ın başkenti neresidir?",
       "answers": {
         "Thessaloniki": "Selanik",
         "Athens": "Atina",
@@ -4968,7 +4968,7 @@
       }
     },
     "geography:29": {
-      "question": "Türkiye'nin başkenti nedir?",
+      "question": "Türkiye'nin başkenti neresidir?",
       "answers": {
         "Istanbul": "İstanbul",
         "Ankara": "Ankara",
@@ -4977,7 +4977,7 @@
       }
     },
     "geography:30": {
-      "question": "Portekiz'in başkenti nedir?",
+      "question": "Portekiz'in başkenti neresidir?",
       "answers": {
         "Porto": "Porto",
         "Lisbon": "Lizbon",
@@ -4986,7 +4986,7 @@
       }
     },
     "geography:31": {
-      "question": "Hollanda'nın başkenti nedir?",
+      "question": "Hollanda'nın başkenti neresidir?",
       "answers": {
         "Rotterdam": "Rotterdam",
         "Amsterdam": "Amsterdam",
@@ -4995,16 +4995,16 @@
       }
     },
     "geography:32": {
-      "question": "Meksika'nın başkenti nedir?",
+      "question": "Meksika'nın başkenti neresidir?",
       "answers": {
-        "Cancún": "Cancun",
-        "Mexico City": "Meksiko Şehri",
+        "Cancún": "Cancún",
+        "Mexico City": "Meksiko",
         "Guadalajara": "Guadalajara",
         "Tijuana": "Tijuana"
       }
     },
     "geography:33": {
-      "question": "Arjantin'in başkenti nedir?",
+      "question": "Arjantin'in başkenti neresidir?",
       "answers": {
         "Córdoba": "Córdoba",
         "Buenos Aires": "Buenos Aires",
@@ -5013,7 +5013,7 @@
       }
     },
     "geography:34": {
-      "question": "İsveç'in başkenti nedir?",
+      "question": "İsveç'in başkenti neresidir?",
       "answers": {
         "Oslo": "Oslo",
         "Stockholm": "Stokholm",
@@ -5022,7 +5022,7 @@
       }
     },
     "geography:35": {
-      "question": "Norveç'in başkenti nedir?",
+      "question": "Norveç'in başkenti neresidir?",
       "answers": {
         "Oslo": "Oslo",
         "Bergen": "Bergen",
@@ -5031,7 +5031,7 @@
       }
     },
     "geography:36": {
-      "question": "Bölgeye göre en büyük kıta hangisidir?",
+      "question": "Yüzölçümü bakımından en büyük kıta hangisidir?",
       "answers": {
         "Africa": "Afrika",
         "Asia": "Asya",
@@ -5040,7 +5040,7 @@
       }
     },
     "geography:37": {
-      "question": "Hangi kıta en soğuktur?",
+      "question": "En soğuk kıta hangisidir?",
       "answers": {
         "Europe": "Avrupa",
         "Antarctica": "Antarktika",
@@ -5049,7 +5049,7 @@
       }
     },
     "geography:38": {
-      "question": "En çok ülkeye sahip kıta hangisidir?",
+      "question": "En fazla ülkeye sahip kıta hangisidir?",
       "answers": {
         "Asia": "Asya",
         "Africa": "Afrika",
@@ -5058,25 +5058,25 @@
       }
     },
     "geography:39": {
-      "question": "En küçük okyanus hangisidir?",
+      "question": "Dünyanın en küçük okyanusu hangisidir?",
       "answers": {
         "Atlantic": "Atlantik",
-        "Arctic": "Arktik",
-        "Indian": "Hintli",
+        "Arctic": "Arktik Okyanusu",
+        "Indian": "Hint Okyanusu",
         "Pacific": "Pasifik"
       }
     },
     "geography:40": {
-      "question": "İkinci en büyük okyanus hangisidir?",
+      "question": "Dünyanın en büyük ikinci okyanusu hangisidir?",
       "answers": {
-        "Atlantic": "Atlantik",
-        "Indian": "Hintli",
-        "Arctic": "Arktik",
-        "Southern": "Güney"
+        "Atlantic": "Atlas Okyanusu",
+        "Indian": "Hint Okyanusu",
+        "Arctic": "Arktik Okyanusu",
+        "Southern": "Güney Okyanusu"
       }
     },
     "geography:41": {
-      "question": "Hangi ülke hem Avrupa'da hem de Asya'da yer alıyor?",
+      "question": "Hem Avrupa'da hem Asya'da toprağı bulunan ülke hangisidir?",
       "answers": {
         "Egypt": "Mısır",
         "Turkey": "Türkiye",
@@ -5112,7 +5112,7 @@
       }
     },
     "geography:45": {
-      "question": "Alpler esas olarak hangi bölgede bulunur?",
+      "question": "Alpler ağırlıklı olarak hangi kıtadadır?",
       "answers": {
         "Asia": "Asya",
         "Europe": "Avrupa",
@@ -5121,7 +5121,7 @@
       }
     },
     "geography:46": {
-      "question": "Hangi ülke çizmeye benzer?",
+      "question": "Haritadaki şekli çizmeye benzeyen ülke hangisidir?",
       "answers": {
         "Spain": "İspanya",
         "Italy": "İtalya",
@@ -5130,7 +5130,7 @@
       }
     },
     "geography:47": {
-      "question": "Avrupa ile Afrika arasında hangi deniz var?",
+      "question": "Avrupa ile Afrika arasında hangi deniz bulunur?",
       "answers": {
         "Baltic Sea": "Baltık Denizi",
         "Mediterranean Sea": "Akdeniz",
@@ -5139,7 +5139,7 @@
       }
     },
     "geography:48": {
-      "question": "En büyük nüfusa sahip ülke hangisidir (2024 itibariyle)?",
+      "question": "2024 itibarıyla dünyanın en kalabalık ülkesi hangisidir?",
       "answers": {
         "China": "Çin",
         "India": "Hindistan",
@@ -5148,7 +5148,7 @@
       }
     },
     "geography:49": {
-      "question": "Fuji Dağı hangi ülkede bulunuyor?",
+      "question": "Fuji Dağı hangi ülkededir?",
       "answers": {
         "China": "Çin",
         "Japan": "Japonya",
@@ -5157,7 +5157,7 @@
       }
     },
     "geography:50": {
-      "question": "Özgürlük Anıtı hangi şehirde?",
+      "question": "Özgürlük Heykeli hangi şehirdedir?",
       "answers": {
         "Boston": "Boston",
         "New York": "New York",
@@ -5166,7 +5166,7 @@
       }
     },
     "geography:51": {
-      "question": "Big Ben hangi şehrin simgesidir?",
+      "question": "Big Ben hangi şehrin simgelerindendir?",
       "answers": {
         "Paris": "Paris",
         "London": "Londra",
@@ -5175,7 +5175,7 @@
       }
     },
     "geography:52": {
-      "question": "Eğik Kule hangi İtalyan şehrindedir?",
+      "question": "Pisa Kulesi hangi İtalyan şehrindedir?",
       "answers": {
         "Rome": "Roma",
         "Pisa": "Pisa",
@@ -5184,7 +5184,7 @@
       }
     },
     "geography:53": {
-      "question": "Kangurunun evi hangi ülkedir?",
+      "question": "Kanguruların doğal yaşam alanlarıyla tanınan ülke hangisidir?",
       "answers": {
         "South Africa": "Güney Afrika",
         "Australia": "Avustralya",
@@ -5193,7 +5193,7 @@
       }
     },
     "geography:54": {
-      "question": "Chichen Itza piramitleri hangi ülkede?",
+      "question": "Chichén Itzá piramitleri hangi ülkededir?",
       "answers": {
         "Peru": "Peru",
         "Mexico": "Meksika",
@@ -5202,7 +5202,7 @@
       }
     },
     "geography:55": {
-      "question": "Nil hangi denize akıyor?",
+      "question": "Nil Nehri hangi denize dökülür?",
       "answers": {
         "Red Sea": "Kızıldeniz",
         "Mediterranean Sea": "Akdeniz",
@@ -5211,7 +5211,7 @@
       }
     },
     "geography:56": {
-      "question": "Hangi ABD eyaleti Hollywood'la ünlüdür?",
+      "question": "Hollywood hangi ABD eyaletindedir?",
       "answers": {
         "Texas": "Teksas",
         "California": "Kaliforniya",
@@ -5220,25 +5220,25 @@
       }
     },
     "geography:57": {
-      "question": "Amerika ile Avrupa/Afrika arasında hangi okyanus var?",
+      "question": "Amerika kıtaları ile Avrupa ve Afrika arasında hangi okyanus bulunur?",
       "answers": {
-        "Pacific": "Pasifik",
-        "Atlantic": "Atlantik",
-        "Indian": "Hintli",
-        "Arctic": "Arktik"
+        "Pacific": "Pasifik Okyanusu",
+        "Atlantic": "Atlas Okyanusu",
+        "Indian": "Hint Okyanusu",
+        "Arctic": "Arktik Okyanusu"
       }
     },
     "geography:58": {
-      "question": "Afrika, Asya ve Avustralya arasında hangi okyanus var?",
+      "question": "Afrika, Asya ve Avustralya arasında hangi okyanus bulunur?",
       "answers": {
-        "Atlantic": "Atlantik",
-        "Indian": "Hintli",
-        "Arctic": "Arktik",
-        "Pacific": "Pasifik"
+        "Atlantic": "Atlas Okyanusu",
+        "Indian": "Hint Okyanusu",
+        "Arctic": "Arktik Okyanusu",
+        "Pacific": "Pasifik Okyanusu"
       }
     },
     "geography:59": {
-      "question": "Ekvator Dünya'yı hangi yarımlara böler?",
+      "question": "Ekvator, Dünya'yı hangi iki yarımküreye ayırır?",
       "answers": {
         "East and West": "Doğu ve Batı",
         "North and South": "Kuzey ve Güney",
@@ -5247,7 +5247,7 @@
       }
     },
     "geography:60": {
-      "question": "0° boylamdaki hayali çizgi nedir?",
+      "question": "0° boylamındaki hayalî çizgiye ne denir?",
       "answers": {
         "Equator": "Ekvator",
         "Prime Meridian": "Başlangıç Meridyeni",
@@ -5256,7 +5256,7 @@
       }
     },
     "geography:61": {
-      "question": "Dünyanın en küçük ülkesi hangisidir?",
+      "question": "Dünyanın yüzölçümü bakımından en küçük ülkesi hangisidir?",
       "answers": {
         "Monaco": "Monako",
         "Vatican City": "Vatikan Şehri",
@@ -5268,13 +5268,13 @@
       "question": "Dünyanın en büyük çölü hangisidir?",
       "answers": {
         "Sahara": "Sahra",
-        "Antarctic": "Antarktika",
+        "Antarctic": "Antarktika Çölü",
         "Gobi": "Gobi",
         "Kalahari": "Kalahari"
       }
     },
     "geography:63": {
-      "question": "Büyük Kanyon hangi ülkede bulunuyor?",
+      "question": "Büyük Kanyon hangi ülkededir?",
       "answers": {
         "Canada": "Kanada",
         "USA": "ABD",
@@ -5283,7 +5283,7 @@
       }
     },
     "geography:64": {
-      "question": "Hangi ülke laleleri ve yel değirmenleriyle ünlüdür?",
+      "question": "Laleleri ve yel değirmenleriyle tanınan ülke hangisidir?",
       "answers": {
         "Belgium": "Belçika",
         "Netherlands": "Hollanda",
@@ -5292,7 +5292,7 @@
       }
     },
     "geography:65": {
-      "question": "Avrupa ile Asya'yı hangi dağ sırası ayırıyor?",
+      "question": "Avrupa ile Asya arasındaki doğal sınırlardan biri olan sıradağ hangisidir?",
       "answers": {
         "Alps": "Alpler",
         "Ural": "Urallar",
@@ -5301,7 +5301,7 @@
       }
     },
     "geography:66": {
-      "question": "Ölü Deniz çok mu ünlü?",
+      "question": "Ölü Deniz hangi özelliğiyle ünlüdür?",
       "answers": {
         "Deep": "Derin",
         "Salty": "Tuzlu",
@@ -5310,7 +5310,7 @@
       }
     },
     "geography:67": {
-      "question": "Sidney ve Melbourne şehirleri hangi ülkede bulunuyor?",
+      "question": "Sidney ve Melbourne hangi ülkededir?",
       "answers": {
         "New Zealand": "Yeni Zelanda",
         "Australia": "Avustralya",
@@ -5319,7 +5319,7 @@
       }
     },
     "geography:68": {
-      "question": "Hangi Afrika ülkesi büyük ölçüde hiçbir zaman sömürgeleştirilmedi?",
+      "question": "Büyük ölçüde sömürgeleştirilmeden bağımsızlığını koruyan Afrika ülkesi hangisidir?",
       "answers": {
         "Kenya": "Kenya",
         "Ethiopia": "Etiyopya",
@@ -5328,16 +5328,16 @@
       }
     },
     "geography:69": {
-      "question": "Amazon dünyanın en büyük tropikal bölgesi mi?",
+      "question": "Amazon, dünyanın en büyük tropikal neyidir?",
       "answers": {
         "Desert": "Çöl",
-        "Rainforest": "Yağmur Ormanı",
+        "Rainforest": "Yağmur ormanı",
         "Savanna": "Savan",
         "Tundra": "Tundra"
       }
     },
     "geography:70": {
-      "question": "Hangi ülke en fazla zaman dilimini kapsıyor?",
+      "question": "En fazla saat dilimine yayılan ülke hangisidir?",
       "answers": {
         "USA": "ABD",
         "Russia": "Rusya",
@@ -5346,7 +5346,7 @@
       }
     },
     "geography:71": {
-      "question": "Hangi ABD şehrine 'Büyük Elma' takma adı verilmiştir?",
+      "question": "Büyük Elma lakabıyla bilinen ABD şehri hangisidir?",
       "answers": {
         "Los Angeles": "Los Angeles",
         "New York": "New York",
@@ -5355,7 +5355,7 @@
       }
     },
     "geography:72": {
-      "question": "Kilimanjaro Dağı hangi ülkede bulunuyor?",
+      "question": "Kilimanjaro Dağı hangi ülkededir?",
       "answers": {
         "Kenya": "Kenya",
         "Tanzania": "Tanzanya",
@@ -5364,7 +5364,7 @@
       }
     },
     "geography:73": {
-      "question": "Machu Picchu hangi ülkede bulunuyor?",
+      "question": "Machu Picchu hangi ülkededir?",
       "answers": {
         "Chile": "Şili",
         "Peru": "Peru",
@@ -5373,7 +5373,7 @@
       }
     },
     "geography:74": {
-      "question": "Hangi ülke tamamen Güney Afrika ile çevrilidir?",
+      "question": "Topraklarının tamamı Güney Afrika ile çevrili ülke hangisidir?",
       "answers": {
         "Lesotho": "Lesoto",
         "Eswatini": "Esvatini",
@@ -5382,7 +5382,7 @@
       }
     },
     "geography:75": {
-      "question": "Bunlardan hangisi denize kıyısı olmayan bir ülkedir?",
+      "question": "Hangisi denize kıyısı olmayan bir ülkedir?",
       "answers": {
         "Switzerland": "İsviçre",
         "Spain": "İspanya",
@@ -5391,7 +5391,7 @@
       }
     },
     "geography:76": {
-      "question": "Hangi ülkenin bayrağında akçaağaç yaprağı vardır?",
+      "question": "Bayrağında akçaağaç yaprağı bulunan ülke hangisidir?",
       "answers": {
         "USA": "ABD",
         "Canada": "Kanada",
@@ -5400,7 +5400,7 @@
       }
     },
     "geography:77": {
-      "question": "Su üzerine kurulu bir şehir olan Venedik hangi ülkededir?",
+      "question": "Su üzerine kurulu Venedik şehri hangi ülkededir?",
       "answers": {
         "Spain": "İspanya",
         "Italy": "İtalya",
@@ -5409,16 +5409,16 @@
       }
     },
     "geography:78": {
-      "question": "En derin okyanus hangisidir?",
+      "question": "Dünyanın en derin okyanusu hangisidir?",
       "answers": {
-        "Atlantic": "Atlantik",
-        "Pacific": "Pasifik",
-        "Indian": "Hintli",
-        "Arctic": "Arktik"
+        "Atlantic": "Atlas Okyanusu",
+        "Pacific": "Pasifik Okyanusu",
+        "Indian": "Hint Okyanusu",
+        "Arctic": "Arktik Okyanusu"
       }
     },
     "geography:79": {
-      "question": "Mississippi Nehri esas olarak hangi ülkededir?",
+      "question": "Mississippi Nehri ağırlıklı olarak hangi ülkeden geçer?",
       "answers": {
         "Canada": "Kanada",
         "USA": "ABD",
@@ -5430,13 +5430,13 @@
       "question": "Panama Kanalı hangi iki okyanusu birbirine bağlar?",
       "answers": {
         "Atlantic and Pacific": "Atlantik ve Pasifik",
-        "Indian and Pacific": "Hindistan ve Pasifik",
+        "Indian and Pacific": "Hint ve Pasifik",
         "Arctic and Atlantic": "Arktik ve Atlantik",
-        "Indian and Atlantic": "Hint ve Atlantik"
+        "Indian and Atlantic": "Hint ve Atlas"
       }
     },
     "geography:81": {
-      "question": "Süveyş Kanalı hangi ülkede bulunmaktadır?",
+      "question": "Süveyş Kanalı hangi ülkededir?",
       "answers": {
         "Turkey": "Türkiye",
         "Egypt": "Mısır",
@@ -5445,7 +5445,7 @@
       }
     },
     "geography:82": {
-      "question": "Hangi ülke 'Doğan Güneşin Ülkesi' olarak bilinir?",
+      "question": "Güneşin Doğduğu Ülke olarak bilinen ülke hangisidir?",
       "answers": {
         "China": "Çin",
         "Japan": "Japonya",
@@ -5454,7 +5454,7 @@
       }
     },
     "geography:83": {
-      "question": "Hangi kıtada kalıcı insan yerleşimi yoktur?",
+      "question": "Kalıcı insan yerleşimi bulunmayan kıta hangisidir?",
       "answers": {
         "Australia": "Avustralya",
         "Antarctica": "Antarktika",
@@ -5463,7 +5463,7 @@
       }
     },
     "geography:84": {
-      "question": "Rocky Dağları nerede bulunuyor?",
+      "question": "Kayalık Dağları hangi kıtadadır?",
       "answers": {
         "Europe": "Avrupa",
         "North America": "Kuzey Amerika",
@@ -5472,7 +5472,7 @@
       }
     },
     "geography:85": {
-      "question": "Marakeş şehri hangi ülkededir?",
+      "question": "Marakeş hangi ülkededir?",
       "answers": {
         "Egypt": "Mısır",
         "Morocco": "Fas",
@@ -5481,7 +5481,7 @@
       }
     },
     "geography:86": {
-      "question": "Hangi İskandinav ülkesi fiyortlarıyla ünlüdür?",
+      "question": "Fiyortlarıyla tanınan İskandinav ülkesi hangisidir?",
       "answers": {
         "Norway": "Norveç",
         "Spain": "İspanya",
@@ -5490,7 +5490,7 @@
       }
     },
     "geography:87": {
-      "question": "Japonya'nın başkenti nedir?",
+      "question": "Japonya'nın başkenti neresidir?",
       "answers": {
         "Osaka": "Osaka",
         "Tokyo": "Tokyo",
@@ -5499,7 +5499,7 @@
       }
     },
     "geography:88": {
-      "question": "Mısır’ın başkenti Kahire hangi nehrin kıyısında yer alır?",
+      "question": "Mısır'ın başkenti Kahire hangi nehrin kıyısındadır?",
       "answers": {
         "Tigris River": "Dicle Nehri",
         "Nile River": "Nil Nehri",
@@ -5508,7 +5508,7 @@
       }
     },
     "geography:89": {
-      "question": "Tac Mahal'le ünlü olan ülke hangisidir?",
+      "question": "Tac Mahal hangi ülkededir?",
       "answers": {
         "Pakistan": "Pakistan",
         "India": "Hindistan",
@@ -5517,7 +5517,7 @@
       }
     },
     "geography:90": {
-      "question": "Hangi ABD eyaletine 'Gün Işığı Eyaleti' takma adı verilmiştir?",
+      "question": "Güneşli Eyalet lakabıyla bilinen ABD eyaleti hangisidir?",
       "answers": {
         "California": "Kaliforniya",
         "Florida": "Florida",
@@ -5526,7 +5526,7 @@
       }
     },
     "geography:91": {
-      "question": "Sahra'nın en büyük payına hangi ülke ev sahipliği yapıyor?",
+      "question": "Sahra Çölü'nün en büyük bölümü hangi ülkededir?",
       "answers": {
         "Egypt": "Mısır",
         "Algeria": "Cezayir",
@@ -5535,25 +5535,25 @@
       }
     },
     "geography:92": {
-      "question": "Su üzerindeki en uzun dağ sırası hangisidir?",
+      "question": "Karada uzanan en uzun sıradağ hangisidir?",
       "answers": {
         "Himalayas": "Himalayalar",
         "Andes": "And Dağları",
-        "Rockies": "Kayalıklar",
+        "Rockies": "Kayalık Dağları",
         "Alps": "Alpler"
       }
     },
     "geography:93": {
-      "question": "İzlanda hangi okyanus bölgesinde yer alıyor?",
+      "question": "İzlanda hangi okyanus bölgesindedir?",
       "answers": {
         "Pacific": "Pasifik",
         "North Atlantic": "Kuzey Atlantik",
-        "Indian": "Hintli",
-        "Southern": "Güney"
+        "Indian": "Hint Okyanusu",
+        "Southern": "Güney Okyanusu"
       }
     },
     "geography:94": {
-      "question": "Hangi kıta tamamen Güney Yarımküre'de bulunuyor?",
+      "question": "Topraklarının tamamı Güney Yarımküre'de bulunan kıta hangisidir?",
       "answers": {
         "Europe": "Avrupa",
         "Antarctica": "Antarktika",
@@ -5562,7 +5562,7 @@
       }
     },
     "geography:95": {
-      "question": "Thames Nehri hangi şehrin içinden akıyor?",
+      "question": "Thames Nehri hangi şehrin içinden geçer?",
       "answers": {
         "Paris": "Paris",
         "London": "Londra",
@@ -5571,7 +5571,7 @@
       }
     },
     "geography:96": {
-      "question": "Hangi ülkenin bayrağında beyaz üzerine kırmızı daire (doğan güneş) var?",
+      "question": "Bayrağında beyaz zemin üzerinde kırmızı bir daire bulunan ülke hangisidir?",
       "answers": {
         "China": "Çin",
         "Japan": "Japonya",
@@ -5580,16 +5580,16 @@
       }
     },
     "geography:97": {
-      "question": "Amazon Nehri hangi okyanusa dökülüyor?",
+      "question": "Amazon Nehri hangi okyanusa dökülür?",
       "answers": {
-        "Pacific": "Pasifik",
-        "Atlantic": "Atlantik",
-        "Indian": "Hintli",
-        "Arctic": "Arktik"
+        "Pacific": "Pasifik Okyanusu",
+        "Atlantic": "Atlas Okyanusu",
+        "Indian": "Hint Okyanusu",
+        "Arctic": "Arktik Okyanusu"
       }
     },
     "geography:98": {
-      "question": "Hangi kıtanın tamamı Kuzey Yarımküre'dedir?",
+      "question": "Topraklarının tamamı Kuzey Yarımküre'de bulunan kıta hangisidir?",
       "answers": {
         "Europe": "Avrupa",
         "Africa": "Afrika",
@@ -5598,7 +5598,7 @@
       }
     },
     "geography:99": {
-      "question": "En yüksek şelale olan Angel Şelalesi nerede bulunuyor?",
+      "question": "Dünyanın en yüksek şelalesi Angel Şelalesi hangi ülkededir?",
       "answers": {
         "Brazil": "Brezilya",
         "Venezuela": "Venezuela",

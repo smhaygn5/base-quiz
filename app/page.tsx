@@ -18,7 +18,10 @@ import { CategoryCarousel } from "@/components/ui/category-carousel";
 import { BadgesRoadmap } from "@/components/ui/badges-roadmap";
 import { HomeHero } from "@/components/ui/home-hero";
 import { LanguageMenu } from "@/components/ui/language-menu";
-import { LeaderboardTable } from "@/components/ui/leaderboard-table";
+import {
+  LeaderboardTable,
+  type LeaderboardPeriod,
+} from "@/components/ui/leaderboard-table";
 import { QuizPanel } from "@/components/ui/quiz-panel";
 import { ResultPanel } from "@/components/ui/result-panel";
 import { useI18n } from "./i18n/context";
@@ -788,6 +791,14 @@ type LeaderRow = {
   name?: string | null;
   badgeIds: number[];
 };
+type PeriodScore = {
+  totalScore: number;
+  bestScore: number;
+};
+type PeriodScoreMaps = Record<
+  Exclude<LeaderboardPeriod, "allTime">,
+  Record<string, PeriodScore>
+>;
 type QuizQ = QuizSource & { id: string };
 type WalletKind = "base" | "metamask" | "okx" | "rabby" | "phantom";
 
@@ -984,6 +995,12 @@ export default function Home() {
   const [startTxError, setStartTxError] = useState("");
   const [board, setBoard] = useState<LeaderRow[]>([]);
   const [boardLoading, setBoardLoading] = useState(false);
+  const [boardPeriod, setBoardPeriod] = useState<LeaderboardPeriod>("allTime");
+  const [periodScores, setPeriodScores] = useState<PeriodScoreMaps>({
+    daily: {},
+    weekly: {},
+    monthly: {},
+  });
   const [shareMenuOpen, setShareMenuOpen] = useState(false);
   const [connectMenuOpen, setConnectMenuOpen] = useState(false);
   const [owned, setOwned] = useState<boolean[]>([false, false, false, false]);
@@ -1006,6 +1023,21 @@ export default function Home() {
   const walletVerified = Boolean(
     address && verifiedAddress === address.toLowerCase(),
   );
+  const visibleBoard = boardPeriod === "allTime"
+    ? board
+    : board
+      .flatMap((row) => {
+        const periodScore = periodScores[boardPeriod][row.addr.toLowerCase()];
+        return periodScore
+          ? [{ ...row, ...periodScore }]
+          : [];
+      })
+      .sort(
+        (a, b) =>
+          b.totalScore - a.totalScore
+          || b.bestScore - a.bestScore
+          || b.streak - a.streak,
+      );
 
   const authenticateWallet = useCallback((walletAddress: string) => {
     const normalizedAddress = walletAddress.toLowerCase();
@@ -1415,7 +1447,20 @@ export default function Home() {
   async function loadBoard() {
     setScreen("board");
     setBoardLoading(true);
+    setBoardPeriod("allTime");
     try {
+      const periodScoresRequest = fetch("/api/leaderboard-periods")
+        .then(async (response) => {
+          if (!response.ok) {
+            throw new Error(`Period scores returned ${response.status}`);
+          }
+          return response.json() as Promise<{ periods: PeriodScoreMaps }>;
+        })
+        .then((payload) => payload.periods)
+        .catch((error) => {
+          console.warn("Period leaderboard could not be loaded:", error);
+          return { daily: {}, weekly: {}, monthly: {} } as PeriodScoreMaps;
+        });
       const count = await publicClient.readContract({
         address: CONTRACT_ADDRESS as `0x${string}`,
         abi: CONTRACT_ABI,
@@ -1470,6 +1515,7 @@ export default function Home() {
         }
       }
 
+      setPeriodScores(await periodScoresRequest);
       setBoard(rows);
       setBoardLoading(false);
       // Resolve Basenames for the shown rows, sequentially to respect RPC limits
@@ -1888,10 +1934,12 @@ export default function Home() {
 
         {screen === "board" && (
           <LeaderboardTable
-            rows={board}
+            rows={visibleBoard}
             badges={localizedBadges}
             currentAddress={address}
             loading={boardLoading}
+            period={boardPeriod}
+            onPeriodChange={setBoardPeriod}
             onBack={() => setScreen("start")}
           />
         )}

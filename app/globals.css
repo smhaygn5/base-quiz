@@ -1708,6 +1708,51 @@
   transform: translateY(-2px);
 }
 
+.leaderboard-period-tabs {
+  width: min(100%, 420px);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  margin: 0 0 14px;
+  padding: 4px;
+  border: 1px solid var(--bq-border);
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--bq-surface) 92%, transparent);
+}
+
+.leaderboard-period-tabs button {
+  min-width: 0;
+  min-height: 38px;
+  padding: 8px 10px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--bq-text-dimmer);
+  cursor: pointer;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.leaderboard-period-tabs button:hover {
+  color: var(--bq-text);
+}
+
+.leaderboard-period-tabs button:focus-visible {
+  outline: 2px solid var(--bq-base-hi);
+  outline-offset: 1px;
+}
+
+.leaderboard-period-tabs button.is-active {
+  background: var(--bq-base);
+  color: #fff;
+  box-shadow: 0 5px 16px color-mix(in srgb, var(--bq-base) 30%, transparent);
+}
+
 .leaderboard-table-frame {
   overflow: hidden;
   border: 1px solid var(--bq-border);
@@ -2011,6 +2056,17 @@
   .leaderboard-back {
     min-height: 34px;
     padding-inline: 11px;
+  }
+
+  .leaderboard-period-tabs {
+    gap: 3px;
+    padding: 3px;
+  }
+
+  .leaderboard-period-tabs button {
+    min-height: 36px;
+    padding-inline: 5px;
+    font-size: 10px;
   }
 
   .leaderboard-footer-note {

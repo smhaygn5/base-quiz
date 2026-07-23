@@ -19,13 +19,24 @@ export type LeaderboardBadge = {
   color: string;
 };
 
+export type LeaderboardPeriod = "daily" | "weekly" | "monthly" | "allTime";
+
 type LeaderboardTableProps = {
   rows: LeaderboardTableRow[];
   badges: LeaderboardBadge[];
   currentAddress?: string;
   loading: boolean;
+  period: LeaderboardPeriod;
+  onPeriodChange: (period: LeaderboardPeriod) => void;
   onBack: () => void;
 };
+
+const LEADERBOARD_PERIODS: LeaderboardPeriod[] = [
+  "daily",
+  "weekly",
+  "monthly",
+  "allTime",
+];
 
 function shortAddress(address: string) {
   return `${address.slice(0, 6)}…${address.slice(-4)}`;
@@ -43,21 +54,47 @@ export function LeaderboardTable({
   badges,
   currentAddress,
   loading,
+  period,
+  onPeriodChange,
   onBack,
 }: LeaderboardTableProps) {
   const { formatNumber, t } = useI18n();
+  const isAllTime = period === "allTime";
 
   return (
     <section className="leaderboard-shell" aria-labelledby="leaderboard-title">
       <div className="leaderboard-heading">
         <div>
-          <p className="leaderboard-kicker">{t("leaderboard.kicker")}</p>
+          <p className="leaderboard-kicker">
+            {t("leaderboard.kickerNetwork")} · {t(`leaderboard.period.${period}`)}
+          </p>
           <h1 id="leaderboard-title">{t("leaderboard.title")}</h1>
-          <p>{t("leaderboard.description")}</p>
+          <p>
+            {t(isAllTime ? "leaderboard.description" : "leaderboard.periodDescription")}
+          </p>
         </div>
         <button type="button" className="leaderboard-back" onClick={onBack}>
           <span aria-hidden="true">←</span> {t("common.back")}
         </button>
+      </div>
+
+      <div
+        className="leaderboard-period-tabs"
+        role="tablist"
+        aria-label={t("leaderboard.periodsLabel")}
+      >
+        {LEADERBOARD_PERIODS.map((item) => (
+          <button
+            key={item}
+            type="button"
+            role="tab"
+            aria-selected={period === item}
+            className={period === item ? "is-active" : undefined}
+            onClick={() => onPeriodChange(item)}
+          >
+            {t(`leaderboard.period.${item}`)}
+          </button>
+        ))}
       </div>
 
       <div className="leaderboard-table-frame">
@@ -66,7 +103,9 @@ export function LeaderboardTable({
             <span className="leaderboard-loading-dot" /> {t("leaderboard.loading")}
           </div>
         ) : rows.length === 0 ? (
-          <div className="leaderboard-state">{t("leaderboard.empty")}</div>
+          <div className="leaderboard-state">
+            {t(isAllTime ? "leaderboard.empty" : "leaderboard.periodEmpty")}
+          </div>
         ) : (
           <div className="leaderboard-table-scroll">
             <table className="leaderboard-table">
@@ -74,7 +113,9 @@ export function LeaderboardTable({
                 <tr>
                   <th className="leaderboard-rank-column" scope="col">#</th>
                   <th scope="col">{t("leaderboard.player")}</th>
-                  <th className="leaderboard-number-column leaderboard-total-score" scope="col">{t("leaderboard.totalScore")}</th>
+                  <th className="leaderboard-number-column leaderboard-total-score" scope="col">
+                    {t(isAllTime ? "leaderboard.totalScore" : "leaderboard.periodScore")}
+                  </th>
                   <th className="leaderboard-number-column" scope="col">{t("leaderboard.bestScore")}</th>
                   <th className="leaderboard-number-column" scope="col">{t("leaderboard.streak")}</th>
                   <th className="leaderboard-badges-column" scope="col">{t("leaderboard.badges")}</th>

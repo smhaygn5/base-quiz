@@ -134,6 +134,7 @@
     "leaderboard.periodEmpty": "In diesem Zeitraum wurden noch keine Punkte gespeichert.",
     "leaderboard.title": "Bestenliste",
     "leaderboard.description": "Spieler werden nach ihrer gesamten Onchain-Punktzahl sortiert.",
+    "leaderboard.refresh": "Rangliste aktualisieren",
     "leaderboard.loading": "Punktzahlen werden von Base geladen…",
     "leaderboard.empty": "Noch keine Punktzahlen. Sei der Erste in der Bestenliste.",
     "leaderboard.player": "Spieler",

@@ -125,6 +125,7 @@
     "leaderboard.periodEmpty": "Bu dönemde henüz kaydedilmiş puan yok.",
     "leaderboard.title": "Liderlik tablosu",
     "leaderboard.description": "Oyuncular, Base’e kaydedilen toplam puanlarına göre sıralanır.",
+    "leaderboard.refresh": "Liderlik tablosunu yenile",
     "leaderboard.loading": "Puanlar Base’ten okunuyor…",
     "leaderboard.empty": "Henüz kaydedilmiş puan yok. Liderlik tablosuna giren ilk oyuncu sen ol.",
     "leaderboard.player": "Oyuncu",

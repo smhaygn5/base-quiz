@@ -1444,12 +1444,24 @@ export default function Home() {
     }
   }
 
-  async function loadBoard() {
+  async function loadBoard({
+    resetPeriod = true,
+    forceRefresh = false,
+  }: {
+    resetPeriod?: boolean;
+    forceRefresh?: boolean;
+  } = {}) {
     setScreen("board");
     setBoardLoading(true);
-    setBoardPeriod("allTime");
+    if (resetPeriod) setBoardPeriod("allTime");
     try {
-      const periodScoresRequest = fetch("/api/leaderboard-periods")
+      const periodScoresUrl = forceRefresh
+        ? `/api/leaderboard-periods?refresh=1&timestamp=${Date.now()}`
+        : "/api/leaderboard-periods";
+      const periodScoresRequest = fetch(
+        periodScoresUrl,
+        forceRefresh ? { cache: "no-store" } : undefined,
+      )
         .then(async (response) => {
           if (!response.ok) {
             throw new Error(`Period scores returned ${response.status}`);
@@ -1823,7 +1835,7 @@ export default function Home() {
             onStart={enterCategories}
             startPending={startTxPending || walletAuthPending}
             startError={startTxError}
-            onLeaderboard={loadBoard}
+            onLeaderboard={() => void loadBoard()}
             onBadges={loadBadges}
           />
         )}
@@ -1928,7 +1940,7 @@ export default function Home() {
             onPlayAgain={() => startGame(category)}
             onChooseCategory={() => setScreen("categories")}
             onBadges={loadBadges}
-            onLeaderboard={loadBoard}
+            onLeaderboard={() => void loadBoard()}
           />
         )}
 
@@ -1940,6 +1952,10 @@ export default function Home() {
             loading={boardLoading}
             period={boardPeriod}
             onPeriodChange={setBoardPeriod}
+            onRefresh={() => void loadBoard({
+              resetPeriod: false,
+              forceRefresh: true,
+            })}
             onBack={() => setScreen("start")}
           />
         )}

@@ -28,6 +28,7 @@ type LeaderboardTableProps = {
   loading: boolean;
   period: LeaderboardPeriod;
   onPeriodChange: (period: LeaderboardPeriod) => void;
+  onRefresh: () => void;
   onBack: () => void;
 };
 
@@ -56,6 +57,7 @@ export function LeaderboardTable({
   loading,
   period,
   onPeriodChange,
+  onRefresh,
   onBack,
 }: LeaderboardTableProps) {
   const { formatNumber, t } = useI18n();
@@ -73,9 +75,24 @@ export function LeaderboardTable({
             {t(isAllTime ? "leaderboard.description" : "leaderboard.periodDescription")}
           </p>
         </div>
-        <button type="button" className="leaderboard-back" onClick={onBack}>
-          <span aria-hidden="true">←</span> {t("common.back")}
-        </button>
+        <div className="leaderboard-actions">
+          <button
+            type="button"
+            className={`leaderboard-refresh${loading ? " is-loading" : ""}`}
+            onClick={onRefresh}
+            disabled={loading}
+            aria-label={t("leaderboard.refresh")}
+            title={t("leaderboard.refresh")}
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20 6v5h-5" />
+              <path d="M18.2 15a7 7 0 1 1-.6-7.8L20 11" />
+            </svg>
+          </button>
+          <button type="button" className="leaderboard-back" onClick={onBack}>
+            <span aria-hidden="true">←</span> {t("common.back")}
+          </button>
+        </div>
       </div>
 
       <div

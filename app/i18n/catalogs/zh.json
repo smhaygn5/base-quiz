@@ -125,6 +125,7 @@
     "leaderboard.periodEmpty": "该周期内还没有保存的分数。",
     "leaderboard.title": "排行榜",
     "leaderboard.description": "玩家按链上累计总分排名。",
+    "leaderboard.refresh": "刷新排行榜",
     "leaderboard.loading": "正在从 Base 读取分数…",
     "leaderboard.empty": "还没有分数。成为第一个上榜的玩家吧。",
     "leaderboard.player": "玩家",

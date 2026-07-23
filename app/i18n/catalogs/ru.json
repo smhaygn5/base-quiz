@@ -145,6 +145,7 @@
     "leaderboard.periodEmpty": "За этот период пока нет сохранённых очков.",
     "leaderboard.title": "Таблица лидеров",
     "leaderboard.description": "Игроки отсортированы по общему количеству очков, сохранённых ончейн.",
+    "leaderboard.refresh": "Обновить рейтинг",
     "leaderboard.loading": "Загружаем очки с Base…",
     "leaderboard.empty": "Результатов пока нет. Стань первым в таблице лидеров.",
     "leaderboard.player": "Игрок",

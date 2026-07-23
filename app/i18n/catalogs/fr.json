@@ -134,6 +134,7 @@
     "leaderboard.periodEmpty": "Aucun point n’a encore été enregistré pour cette période.",
     "leaderboard.title": "Classement",
     "leaderboard.description": "Les joueurs sont classés selon leur score total onchain.",
+    "leaderboard.refresh": "Actualiser le classement",
     "leaderboard.loading": "Lecture des scores sur Base…",
     "leaderboard.empty": "Aucun score pour l’instant. Sois le premier à entrer au classement.",
     "leaderboard.player": "Joueur",

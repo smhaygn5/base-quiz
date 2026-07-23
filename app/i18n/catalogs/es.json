@@ -134,6 +134,7 @@
     "leaderboard.periodEmpty": "Aún no hay puntos guardados en este periodo.",
     "leaderboard.title": "Clasificación",
     "leaderboard.description": "Los jugadores se ordenan por su puntuación total onchain.",
+    "leaderboard.refresh": "Actualizar clasificación",
     "leaderboard.loading": "Leyendo puntuaciones desde Base…",
     "leaderboard.empty": "Aún no hay puntuaciones. Sé la primera persona en entrar en la clasificación.",
     "leaderboard.player": "Jugador",

@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 import { CONTRACT_ADDRESS } from "@/app/contract";
 
 export const revalidate = 60;
@@ -65,15 +65,24 @@ function readParameter(log: BlockscoutLog, name: string) {
   return log.decoded?.parameters?.find((parameter) => parameter.name === name)?.value;
 }
 
-async function fetchBlockscoutPage(url: URL) {
+async function fetchBlockscoutPage(url: URL, forceRefresh: boolean) {
   let lastResponse: Response | null = null;
 
   for (let attempt = 0; attempt < 2; attempt += 1) {
-    lastResponse = await fetch(url, {
-      headers: { Accept: "application/json" },
-      next: { revalidate },
-      signal: AbortSignal.timeout(8_000),
-    });
+    lastResponse = await fetch(
+      url,
+      forceRefresh
+        ? {
+            cache: "no-store",
+            headers: { Accept: "application/json" },
+            signal: AbortSignal.timeout(8_000),
+          }
+        : {
+            headers: { Accept: "application/json" },
+            next: { revalidate },
+            signal: AbortSignal.timeout(8_000),
+          },
+    );
     if (lastResponse.ok || lastResponse.status < 500) return lastResponse;
   }
 
@@ -81,7 +90,8 @@ async function fetchBlockscoutPage(url: URL) {
   return lastResponse;
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const forceRefresh = request.nextUrl.searchParams.get("refresh") === "1";
   const now = new Date();
   const dailyStart = startOfUtcDay(now);
   const weeklyStart = startOfUtcWeek(now);
@@ -104,7 +114,7 @@ export async function GET() {
         });
       }
 
-      const response = await fetchBlockscoutPage(url);
+      const response = await fetchBlockscoutPage(url, forceRefresh);
       if (!response.ok) {
         throw new Error(`Blockscout responded with ${response.status}`);
       }
@@ -146,7 +156,9 @@ export async function GET() {
       },
       {
         headers: {
-          "Cache-Control": "s-maxage=60, stale-while-revalidate=300",
+          "Cache-Control": forceRefresh
+            ? "no-store"
+            : "s-maxage=60, stale-while-revalidate=300",
         },
       },
     );

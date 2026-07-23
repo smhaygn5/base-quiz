@@ -1683,6 +1683,57 @@
   font-size: 14px;
 }
 
+.leaderboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leaderboard-refresh {
+  width: 38px;
+  height: 38px;
+  display: inline-grid;
+  flex: 0 0 38px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--bq-border);
+  border-radius: 50%;
+  background: var(--bq-surface);
+  color: var(--bq-text-dim);
+  cursor: pointer;
+  transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.leaderboard-refresh svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.leaderboard-refresh:hover:not(:disabled) {
+  border-color: var(--bq-base);
+  color: var(--bq-base-hi);
+  transform: translateY(-2px) rotate(18deg);
+}
+
+.leaderboard-refresh:focus-visible {
+  outline: 2px solid var(--bq-base-hi);
+  outline-offset: 2px;
+}
+
+.leaderboard-refresh:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.leaderboard-refresh.is-loading svg {
+  animation: leaderboardRefreshSpin 800ms linear infinite;
+}
+
 .leaderboard-back {
   min-height: 38px;
   display: inline-flex;
@@ -1997,6 +2048,10 @@
   to { opacity: 0.35; transform: scale(0.72); }
 }
 
+@keyframes leaderboardRefreshSpin {
+  to { transform: rotate(360deg); }
+}
+
 .leaderboard-footer-note {
   display: flex;
   justify-content: space-between;
@@ -2011,7 +2066,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .leaderboard-loading-dot {
+  .leaderboard-loading-dot,
+  .leaderboard-refresh.is-loading svg {
     animation: none;
   }
 }
@@ -2056,6 +2112,12 @@
   .leaderboard-back {
     min-height: 34px;
     padding-inline: 11px;
+  }
+
+  .leaderboard-refresh {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
   }
 
   .leaderboard-period-tabs {

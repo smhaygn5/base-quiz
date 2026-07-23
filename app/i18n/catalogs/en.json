@@ -125,6 +125,7 @@
     "leaderboard.periodEmpty": "No scores have been saved in this period yet.",
     "leaderboard.title": "Leaderboard",
     "leaderboard.description": "Top players ranked by their total onchain score.",
+    "leaderboard.refresh": "Refresh leaderboard",
     "leaderboard.loading": "Reading scores from Base…",
     "leaderboard.empty": "No scores yet. Be the first player on the board.",
     "leaderboard.player": "Player",

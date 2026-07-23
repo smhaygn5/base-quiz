@@ -153,6 +153,7 @@
     "leaderboard.periodEmpty": "لم تُسجّل أي نقاط خلال هذه الفترة بعد.",
     "leaderboard.title": "لوحة الصدارة",
     "leaderboard.description": "يُرتّب اللاعبون حسب مجموع نقاطهم المحفوظة على السلسلة.",
+    "leaderboard.refresh": "تحديث لوحة المتصدرين",
     "leaderboard.loading": "جارٍ تحميل النقاط من Base…",
     "leaderboard.empty": "لا توجد نتائج بعد. كن أول من يدخل لوحة الصدارة.",
     "leaderboard.player": "لاعب",

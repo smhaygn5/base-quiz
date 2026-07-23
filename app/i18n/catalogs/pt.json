@@ -134,6 +134,7 @@
     "leaderboard.periodEmpty": "Ainda não há pontos salvos neste período.",
     "leaderboard.title": "Ranking",
     "leaderboard.description": "Os jogadores são ordenados pela pontuação total onchain.",
+    "leaderboard.refresh": "Atualizar ranking",
     "leaderboard.loading": "Lendo pontuações de Base…",
     "leaderboard.empty": "Ainda não há pontuações. Seja o primeiro a entrar no ranking.",
     "leaderboard.player": "Jogador",
